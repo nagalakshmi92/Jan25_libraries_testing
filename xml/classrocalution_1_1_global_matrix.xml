@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classrocalution_1_1_global_matrix" kind="class" language="C++" prot="public">
+    <compoundname>rocalution::GlobalMatrix</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename ValueType</type>
+      </param>
+    </templateparamlist>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="ROCm_Libraries/rocALUTION/src/base/parallel_manager.hpp" line="36" column="1" bodyfile="ROCm_Libraries/rocALUTION/src/base/parallel_manager.hpp" bodystart="36" bodyend="-1"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

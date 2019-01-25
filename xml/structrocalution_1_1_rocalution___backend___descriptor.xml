@@ -1,0 +1,295 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structrocalution_1_1_rocalution___backend___descriptor" kind="struct" language="C++" prot="public">
+    <compoundname>rocalution::Rocalution_Backend_Descriptor</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structrocalution_1_1_rocalution___backend___descriptor_1aca662bd6b411072db340b8d4cf097e2a" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool rocalution::Rocalution_Backend_Descriptor::init</definition>
+        <argsstring></argsstring>
+        <name>init</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/backend_manager.hpp" line="47" column="1" bodyfile="ROCm_Libraries/rocALUTION/src/base/backend_manager.hpp" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrocalution_1_1_rocalution___backend___descriptor_1abd87a8f7075e3ab83fefe4034c171c02" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int rocalution::Rocalution_Backend_Descriptor::backend</definition>
+        <argsstring></argsstring>
+        <name>backend</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/backend_manager.hpp" line="50" column="1" bodyfile="ROCm_Libraries/rocALUTION/src/base/backend_manager.hpp" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrocalution_1_1_rocalution___backend___descriptor_1a2211ba13f1a0573c12ebd6e23db0848f" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool rocalution::Rocalution_Backend_Descriptor::accelerator</definition>
+        <argsstring></argsstring>
+        <name>accelerator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/backend_manager.hpp" line="51" column="1" bodyfile="ROCm_Libraries/rocALUTION/src/base/backend_manager.hpp" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrocalution_1_1_rocalution___backend___descriptor_1a48895c68bf53a4017e29785cfdc0b39b" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool rocalution::Rocalution_Backend_Descriptor::disable_accelerator</definition>
+        <argsstring></argsstring>
+        <name>disable_accelerator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/backend_manager.hpp" line="52" column="1" bodyfile="ROCm_Libraries/rocALUTION/src/base/backend_manager.hpp" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrocalution_1_1_rocalution___backend___descriptor_1a839f723176d3a5b587d4c18df74221a6" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int rocalution::Rocalution_Backend_Descriptor::OpenMP_threads</definition>
+        <argsstring></argsstring>
+        <name>OpenMP_threads</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/backend_manager.hpp" line="55" column="1" bodyfile="ROCm_Libraries/rocALUTION/src/base/backend_manager.hpp" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrocalution_1_1_rocalution___backend___descriptor_1a089b8a5da04c0a21919a3b733f61958d" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int rocalution::Rocalution_Backend_Descriptor::OpenMP_def_threads</definition>
+        <argsstring></argsstring>
+        <name>OpenMP_def_threads</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/backend_manager.hpp" line="57" column="1" bodyfile="ROCm_Libraries/rocALUTION/src/base/backend_manager.hpp" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrocalution_1_1_rocalution___backend___descriptor_1a768cbf49d7b6fa4ace6da6b4bf859f7b" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int rocalution::Rocalution_Backend_Descriptor::OpenMP_def_nested</definition>
+        <argsstring></argsstring>
+        <name>OpenMP_def_nested</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/backend_manager.hpp" line="59" column="1" bodyfile="ROCm_Libraries/rocALUTION/src/base/backend_manager.hpp" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrocalution_1_1_rocalution___backend___descriptor_1a48db642e32d14754074a1289cef11a8a" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool rocalution::Rocalution_Backend_Descriptor::OpenMP_affinity</definition>
+        <argsstring></argsstring>
+        <name>OpenMP_affinity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/backend_manager.hpp" line="61" column="1" bodyfile="ROCm_Libraries/rocALUTION/src/base/backend_manager.hpp" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrocalution_1_1_rocalution___backend___descriptor_1a3fbdeec8447ca60e1c241b603a09064a" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int rocalution::Rocalution_Backend_Descriptor::OpenMP_threshold</definition>
+        <argsstring></argsstring>
+        <name>OpenMP_threshold</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/backend_manager.hpp" line="63" column="1" bodyfile="ROCm_Libraries/rocALUTION/src/base/backend_manager.hpp" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrocalution_1_1_rocalution___backend___descriptor_1a59252988257ae5302e0089867f33c2d5" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* rocalution::Rocalution_Backend_Descriptor::ROC_blas_handle</definition>
+        <argsstring></argsstring>
+        <name>ROC_blas_handle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/backend_manager.hpp" line="68" column="1" bodyfile="ROCm_Libraries/rocALUTION/src/base/backend_manager.hpp" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrocalution_1_1_rocalution___backend___descriptor_1a5103de1050e53d323208fb469bca6c5f" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* rocalution::Rocalution_Backend_Descriptor::ROC_sparse_handle</definition>
+        <argsstring></argsstring>
+        <name>ROC_sparse_handle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/backend_manager.hpp" line="70" column="1" bodyfile="ROCm_Libraries/rocALUTION/src/base/backend_manager.hpp" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrocalution_1_1_rocalution___backend___descriptor_1a6c8ca8b7ec77259b23054154ecb085ce" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int rocalution::Rocalution_Backend_Descriptor::HIP_dev</definition>
+        <argsstring></argsstring>
+        <name>HIP_dev</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/backend_manager.hpp" line="72" column="1" bodyfile="ROCm_Libraries/rocALUTION/src/base/backend_manager.hpp" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrocalution_1_1_rocalution___backend___descriptor_1a6fcfc7ee3a1da1eb97164966dbaeda6e" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int rocalution::Rocalution_Backend_Descriptor::HIP_warp</definition>
+        <argsstring></argsstring>
+        <name>HIP_warp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/backend_manager.hpp" line="73" column="1" bodyfile="ROCm_Libraries/rocALUTION/src/base/backend_manager.hpp" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrocalution_1_1_rocalution___backend___descriptor_1ab43aeb7de7e587529d6d42fa7a3916ae" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int rocalution::Rocalution_Backend_Descriptor::HIP_block_size</definition>
+        <argsstring></argsstring>
+        <name>HIP_block_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/backend_manager.hpp" line="74" column="1" bodyfile="ROCm_Libraries/rocALUTION/src/base/backend_manager.hpp" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrocalution_1_1_rocalution___backend___descriptor_1a6aa24730dec7f825cd429f52c02bee6a" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int rocalution::Rocalution_Backend_Descriptor::HIP_max_threads</definition>
+        <argsstring></argsstring>
+        <name>HIP_max_threads</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/backend_manager.hpp" line="75" column="1" bodyfile="ROCm_Libraries/rocALUTION/src/base/backend_manager.hpp" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrocalution_1_1_rocalution___backend___descriptor_1a62df4aba76998fcb4ac03bbdc5f46f08" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int rocalution::Rocalution_Backend_Descriptor::HIP_num_procs</definition>
+        <argsstring></argsstring>
+        <name>HIP_num_procs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/backend_manager.hpp" line="76" column="1" bodyfile="ROCm_Libraries/rocALUTION/src/base/backend_manager.hpp" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrocalution_1_1_rocalution___backend___descriptor_1a237d560d071a8886fd2770b461ced034" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int rocalution::Rocalution_Backend_Descriptor::HIP_threads_per_proc</definition>
+        <argsstring></argsstring>
+        <name>HIP_threads_per_proc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/backend_manager.hpp" line="77" column="1" bodyfile="ROCm_Libraries/rocALUTION/src/base/backend_manager.hpp" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrocalution_1_1_rocalution___backend___descriptor_1a21a308b72083fca5da6e00c92f8dc08f" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int rocalution::Rocalution_Backend_Descriptor::rank</definition>
+        <argsstring></argsstring>
+        <name>rank</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/backend_manager.hpp" line="80" column="1" bodyfile="ROCm_Libraries/rocALUTION/src/base/backend_manager.hpp" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrocalution_1_1_rocalution___backend___descriptor_1a64d35c76f6731af483ceb6ce2f197d36" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int rocalution::Rocalution_Backend_Descriptor::log_mode</definition>
+        <argsstring></argsstring>
+        <name>log_mode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/backend_manager.hpp" line="83" column="1" bodyfile="ROCm_Libraries/rocALUTION/src/base/backend_manager.hpp" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrocalution_1_1_rocalution___backend___descriptor_1a2e9c32e0667034e0cc43a84f8cfce2ae" prot="public" static="no" mutable="no">
+        <type>std::ofstream *</type>
+        <definition>std::ofstream* rocalution::Rocalution_Backend_Descriptor::log_file</definition>
+        <argsstring></argsstring>
+        <name>log_file</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/backend_manager.hpp" line="84" column="1" bodyfile="ROCm_Libraries/rocALUTION/src/base/backend_manager.hpp" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="ROCm_Libraries/rocALUTION/src/base/backend_manager.hpp" line="45" column="1" bodyfile="ROCm_Libraries/rocALUTION/src/base/backend_manager.hpp" bodystart="44" bodyend="85"/>
+    <listofallmembers>
+      <member refid="structrocalution_1_1_rocalution___backend___descriptor_1a2211ba13f1a0573c12ebd6e23db0848f" prot="public" virt="non-virtual"><scope>rocalution::Rocalution_Backend_Descriptor</scope><name>accelerator</name></member>
+      <member refid="structrocalution_1_1_rocalution___backend___descriptor_1abd87a8f7075e3ab83fefe4034c171c02" prot="public" virt="non-virtual"><scope>rocalution::Rocalution_Backend_Descriptor</scope><name>backend</name></member>
+      <member refid="structrocalution_1_1_rocalution___backend___descriptor_1a48895c68bf53a4017e29785cfdc0b39b" prot="public" virt="non-virtual"><scope>rocalution::Rocalution_Backend_Descriptor</scope><name>disable_accelerator</name></member>
+      <member refid="structrocalution_1_1_rocalution___backend___descriptor_1ab43aeb7de7e587529d6d42fa7a3916ae" prot="public" virt="non-virtual"><scope>rocalution::Rocalution_Backend_Descriptor</scope><name>HIP_block_size</name></member>
+      <member refid="structrocalution_1_1_rocalution___backend___descriptor_1a6c8ca8b7ec77259b23054154ecb085ce" prot="public" virt="non-virtual"><scope>rocalution::Rocalution_Backend_Descriptor</scope><name>HIP_dev</name></member>
+      <member refid="structrocalution_1_1_rocalution___backend___descriptor_1a6aa24730dec7f825cd429f52c02bee6a" prot="public" virt="non-virtual"><scope>rocalution::Rocalution_Backend_Descriptor</scope><name>HIP_max_threads</name></member>
+      <member refid="structrocalution_1_1_rocalution___backend___descriptor_1a62df4aba76998fcb4ac03bbdc5f46f08" prot="public" virt="non-virtual"><scope>rocalution::Rocalution_Backend_Descriptor</scope><name>HIP_num_procs</name></member>
+      <member refid="structrocalution_1_1_rocalution___backend___descriptor_1a237d560d071a8886fd2770b461ced034" prot="public" virt="non-virtual"><scope>rocalution::Rocalution_Backend_Descriptor</scope><name>HIP_threads_per_proc</name></member>
+      <member refid="structrocalution_1_1_rocalution___backend___descriptor_1a6fcfc7ee3a1da1eb97164966dbaeda6e" prot="public" virt="non-virtual"><scope>rocalution::Rocalution_Backend_Descriptor</scope><name>HIP_warp</name></member>
+      <member refid="structrocalution_1_1_rocalution___backend___descriptor_1aca662bd6b411072db340b8d4cf097e2a" prot="public" virt="non-virtual"><scope>rocalution::Rocalution_Backend_Descriptor</scope><name>init</name></member>
+      <member refid="structrocalution_1_1_rocalution___backend___descriptor_1a2e9c32e0667034e0cc43a84f8cfce2ae" prot="public" virt="non-virtual"><scope>rocalution::Rocalution_Backend_Descriptor</scope><name>log_file</name></member>
+      <member refid="structrocalution_1_1_rocalution___backend___descriptor_1a64d35c76f6731af483ceb6ce2f197d36" prot="public" virt="non-virtual"><scope>rocalution::Rocalution_Backend_Descriptor</scope><name>log_mode</name></member>
+      <member refid="structrocalution_1_1_rocalution___backend___descriptor_1a48db642e32d14754074a1289cef11a8a" prot="public" virt="non-virtual"><scope>rocalution::Rocalution_Backend_Descriptor</scope><name>OpenMP_affinity</name></member>
+      <member refid="structrocalution_1_1_rocalution___backend___descriptor_1a768cbf49d7b6fa4ace6da6b4bf859f7b" prot="public" virt="non-virtual"><scope>rocalution::Rocalution_Backend_Descriptor</scope><name>OpenMP_def_nested</name></member>
+      <member refid="structrocalution_1_1_rocalution___backend___descriptor_1a089b8a5da04c0a21919a3b733f61958d" prot="public" virt="non-virtual"><scope>rocalution::Rocalution_Backend_Descriptor</scope><name>OpenMP_def_threads</name></member>
+      <member refid="structrocalution_1_1_rocalution___backend___descriptor_1a839f723176d3a5b587d4c18df74221a6" prot="public" virt="non-virtual"><scope>rocalution::Rocalution_Backend_Descriptor</scope><name>OpenMP_threads</name></member>
+      <member refid="structrocalution_1_1_rocalution___backend___descriptor_1a3fbdeec8447ca60e1c241b603a09064a" prot="public" virt="non-virtual"><scope>rocalution::Rocalution_Backend_Descriptor</scope><name>OpenMP_threshold</name></member>
+      <member refid="structrocalution_1_1_rocalution___backend___descriptor_1a21a308b72083fca5da6e00c92f8dc08f" prot="public" virt="non-virtual"><scope>rocalution::Rocalution_Backend_Descriptor</scope><name>rank</name></member>
+      <member refid="structrocalution_1_1_rocalution___backend___descriptor_1a59252988257ae5302e0089867f33c2d5" prot="public" virt="non-virtual"><scope>rocalution::Rocalution_Backend_Descriptor</scope><name>ROC_blas_handle</name></member>
+      <member refid="structrocalution_1_1_rocalution___backend___descriptor_1a5103de1050e53d323208fb469bca6c5f" prot="public" virt="non-virtual"><scope>rocalution::Rocalution_Backend_Descriptor</scope><name>ROC_sparse_handle</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

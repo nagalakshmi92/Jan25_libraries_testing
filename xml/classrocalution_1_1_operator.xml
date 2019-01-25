@@ -1,0 +1,329 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classrocalution_1_1_operator" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>rocalution::Operator</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">BaseRocalution&lt; ValueType &gt;</basecompoundref>
+    <includes refid="operator_8hpp" local="no">operator.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename ValueType</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classrocalution_1_1_operator_1afcbc2abbfe58ce8c6a3d86a5a48b7fc7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>rocalution::Operator&lt; ValueType &gt;::Operator</definition>
+        <argsstring>()</argsstring>
+        <name>Operator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/operator.hpp" line="55" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_operator_1a17862759071f26a8bfc2ec7230c5f226" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual rocalution::Operator&lt; ValueType &gt;::~Operator</definition>
+        <argsstring>()</argsstring>
+        <name>~Operator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/operator.hpp" line="56" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_operator_1a6af0e81191e63d15e95b227cd9129c87" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>IndexType2</type>
+        <definition>virtual IndexType2 rocalution::Operator&lt; ValueType &gt;::GetM</definition>
+        <argsstring>(void) const =0</argsstring>
+        <name>GetM</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Return the number of rows in the matrix/stencil. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/operator.hpp" line="59" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_operator_1ac155a69301db3035abcd3beac9dbe7ce" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>IndexType2</type>
+        <definition>virtual IndexType2 rocalution::Operator&lt; ValueType &gt;::GetN</definition>
+        <argsstring>(void) const =0</argsstring>
+        <name>GetN</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Return the number of columns in the matrix/stencil. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/operator.hpp" line="61" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_operator_1af834a59b334d754e5e803bd6561b675d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>IndexType2</type>
+        <definition>virtual IndexType2 rocalution::Operator&lt; ValueType &gt;::GetNnz</definition>
+        <argsstring>(void) const =0</argsstring>
+        <name>GetNnz</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Return the number of non-zeros in the matrix/stencil. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/operator.hpp" line="63" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_operator_1ab070535791b24e8c8a190bca82cb30a3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>virtual int rocalution::Operator&lt; ValueType &gt;::GetLocalM</definition>
+        <argsstring>(void) const</argsstring>
+        <name>GetLocalM</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Return the number of rows in the local matrix/stencil. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/operator.hpp" line="66" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_operator_1a63a78d3258db4fdfe74e517484591246" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>virtual int rocalution::Operator&lt; ValueType &gt;::GetLocalN</definition>
+        <argsstring>(void) const</argsstring>
+        <name>GetLocalN</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Return the number of columns in the local matrix/stencil. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/operator.hpp" line="68" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_operator_1a7900eb19fb5ecb00adb18e4c8b498187" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>virtual int rocalution::Operator&lt; ValueType &gt;::GetLocalNnz</definition>
+        <argsstring>(void) const</argsstring>
+        <name>GetLocalNnz</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Return the number of non-zeros in the local matrix/stencil. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/operator.hpp" line="70" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_operator_1a47f59b41b12bb76fdc5dbc1c7155e282" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>virtual int rocalution::Operator&lt; ValueType &gt;::GetGhostM</definition>
+        <argsstring>(void) const</argsstring>
+        <name>GetGhostM</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Return the number of rows in the ghost matrix/stencil. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/operator.hpp" line="73" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_operator_1a88c39d124082dd9254fe21c0074fea07" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>virtual int rocalution::Operator&lt; ValueType &gt;::GetGhostN</definition>
+        <argsstring>(void) const</argsstring>
+        <name>GetGhostN</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Return the number of columns in the ghost matrix/stencil. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/operator.hpp" line="75" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_operator_1ae4d7fedf59d0fb6a2507dde507f7efb7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>virtual int rocalution::Operator&lt; ValueType &gt;::GetGhostNnz</definition>
+        <argsstring>(void) const</argsstring>
+        <name>GetGhostNnz</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Return the number of non-zeros in the ghost matrix/stencil. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/operator.hpp" line="77" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_operator_1a8dc56052b7fc57029c7cfc4eb5a8a25b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void rocalution::Operator&lt; ValueType &gt;::Apply</definition>
+        <argsstring>(const LocalVector&lt; ValueType &gt; &amp;in, LocalVector&lt; ValueType &gt; *out) const</argsstring>
+        <name>Apply</name>
+        <param>
+          <type>const <ref refid="classrocalution_1_1_local_vector" kindref="compound">LocalVector</ref>&lt; ValueType &gt; &amp;</type>
+          <declname>in</declname>
+        </param>
+        <param>
+          <type><ref refid="classrocalution_1_1_local_vector" kindref="compound">LocalVector</ref>&lt; ValueType &gt; *</type>
+          <declname>out</declname>
+        </param>
+        <briefdescription>
+<para>Apply the operator, out = Operator(in), where in and out are local vectors. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/operator.hpp" line="82" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_operator_1a9607876a1dc71ab7f4c03ade2e6bc952" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void rocalution::Operator&lt; ValueType &gt;::ApplyAdd</definition>
+        <argsstring>(const LocalVector&lt; ValueType &gt; &amp;in, ValueType scalar, LocalVector&lt; ValueType &gt; *out) const</argsstring>
+        <name>ApplyAdd</name>
+        <param>
+          <type>const <ref refid="classrocalution_1_1_local_vector" kindref="compound">LocalVector</ref>&lt; ValueType &gt; &amp;</type>
+          <declname>in</declname>
+        </param>
+        <param>
+          <type>ValueType</type>
+          <declname>scalar</declname>
+        </param>
+        <param>
+          <type><ref refid="classrocalution_1_1_local_vector" kindref="compound">LocalVector</ref>&lt; ValueType &gt; *</type>
+          <declname>out</declname>
+        </param>
+        <briefdescription>
+<para>Apply and add the operator, out += scalar * Operator(in), where in and out are local vectors. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/operator.hpp" line="88" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_operator_1a4ad4397df83f1fc6af9aecf0cb9af17c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void rocalution::Operator&lt; ValueType &gt;::Apply</definition>
+        <argsstring>(const GlobalVector&lt; ValueType &gt; &amp;in, GlobalVector&lt; ValueType &gt; *out) const</argsstring>
+        <name>Apply</name>
+        <param>
+          <type>const <ref refid="classrocalution_1_1_global_vector" kindref="compound">GlobalVector</ref>&lt; ValueType &gt; &amp;</type>
+          <declname>in</declname>
+        </param>
+        <param>
+          <type><ref refid="classrocalution_1_1_global_vector" kindref="compound">GlobalVector</ref>&lt; ValueType &gt; *</type>
+          <declname>out</declname>
+        </param>
+        <briefdescription>
+<para>Apply the operator, out = Operator(in), where in and out are global vectors. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/operator.hpp" line="93" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_operator_1a87f809dde4c8d7d98fe443c0fb9bc92b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void rocalution::Operator&lt; ValueType &gt;::ApplyAdd</definition>
+        <argsstring>(const GlobalVector&lt; ValueType &gt; &amp;in, ValueType scalar, GlobalVector&lt; ValueType &gt; *out) const</argsstring>
+        <name>ApplyAdd</name>
+        <param>
+          <type>const <ref refid="classrocalution_1_1_global_vector" kindref="compound">GlobalVector</ref>&lt; ValueType &gt; &amp;</type>
+          <declname>in</declname>
+        </param>
+        <param>
+          <type>ValueType</type>
+          <declname>scalar</declname>
+        </param>
+        <param>
+          <type><ref refid="classrocalution_1_1_global_vector" kindref="compound">GlobalVector</ref>&lt; ValueType &gt; *</type>
+          <declname>out</declname>
+        </param>
+        <briefdescription>
+<para>Apply and add the operator, out += scalar * Operator(in), where in and out are global vectors. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/operator.hpp" line="98" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="classrocalution_1_1_operator" kindref="compound">Operator</ref> class. </para>    </briefdescription>
+    <detaileddescription>
+<para>The <ref refid="classrocalution_1_1_operator" kindref="compound">Operator</ref> class defines the generic interface for applying an operator (e.g. matrix or stencil) from/to global and local vectors.</para><para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>ValueType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- can be int, float, double, std::complex&lt;float&gt; and std::complex&lt;double&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="19">
+        <label>BaseRocalution&lt; ValueType &gt;</label>
+      </node>
+      <node id="18">
+        <label>rocalution::Operator&lt; ValueType &gt;</label>
+        <link refid="classrocalution_1_1_operator"/>
+        <childnode refid="19" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="21">
+        <label>BaseRocalution&lt; ValueType &gt;</label>
+      </node>
+      <node id="20">
+        <label>rocalution::Operator&lt; ValueType &gt;</label>
+        <link refid="classrocalution_1_1_operator"/>
+        <childnode refid="21" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="ROCm_Libraries/rocALUTION/src/base/operator.hpp" line="53" column="1" bodyfile="ROCm_Libraries/rocALUTION/src/base/operator.hpp" bodystart="52" bodyend="101"/>
+    <listofallmembers>
+      <member refid="classrocalution_1_1_operator_1a8dc56052b7fc57029c7cfc4eb5a8a25b" prot="public" virt="virtual"><scope>rocalution::Operator</scope><name>Apply</name></member>
+      <member refid="classrocalution_1_1_operator_1a4ad4397df83f1fc6af9aecf0cb9af17c" prot="public" virt="virtual"><scope>rocalution::Operator</scope><name>Apply</name></member>
+      <member refid="classrocalution_1_1_operator_1a9607876a1dc71ab7f4c03ade2e6bc952" prot="public" virt="virtual"><scope>rocalution::Operator</scope><name>ApplyAdd</name></member>
+      <member refid="classrocalution_1_1_operator_1a87f809dde4c8d7d98fe443c0fb9bc92b" prot="public" virt="virtual"><scope>rocalution::Operator</scope><name>ApplyAdd</name></member>
+      <member refid="classrocalution_1_1_operator_1a47f59b41b12bb76fdc5dbc1c7155e282" prot="public" virt="virtual"><scope>rocalution::Operator</scope><name>GetGhostM</name></member>
+      <member refid="classrocalution_1_1_operator_1a88c39d124082dd9254fe21c0074fea07" prot="public" virt="virtual"><scope>rocalution::Operator</scope><name>GetGhostN</name></member>
+      <member refid="classrocalution_1_1_operator_1ae4d7fedf59d0fb6a2507dde507f7efb7" prot="public" virt="virtual"><scope>rocalution::Operator</scope><name>GetGhostNnz</name></member>
+      <member refid="classrocalution_1_1_operator_1ab070535791b24e8c8a190bca82cb30a3" prot="public" virt="virtual"><scope>rocalution::Operator</scope><name>GetLocalM</name></member>
+      <member refid="classrocalution_1_1_operator_1a63a78d3258db4fdfe74e517484591246" prot="public" virt="virtual"><scope>rocalution::Operator</scope><name>GetLocalN</name></member>
+      <member refid="classrocalution_1_1_operator_1a7900eb19fb5ecb00adb18e4c8b498187" prot="public" virt="virtual"><scope>rocalution::Operator</scope><name>GetLocalNnz</name></member>
+      <member refid="classrocalution_1_1_operator_1a6af0e81191e63d15e95b227cd9129c87" prot="public" virt="pure-virtual"><scope>rocalution::Operator</scope><name>GetM</name></member>
+      <member refid="classrocalution_1_1_operator_1ac155a69301db3035abcd3beac9dbe7ce" prot="public" virt="pure-virtual"><scope>rocalution::Operator</scope><name>GetN</name></member>
+      <member refid="classrocalution_1_1_operator_1af834a59b334d754e5e803bd6561b675d" prot="public" virt="pure-virtual"><scope>rocalution::Operator</scope><name>GetNnz</name></member>
+      <member refid="classrocalution_1_1_operator_1afcbc2abbfe58ce8c6a3d86a5a48b7fc7" prot="public" virt="non-virtual"><scope>rocalution::Operator</scope><name>Operator</name></member>
+      <member refid="classrocalution_1_1_operator_1a17862759071f26a8bfc2ec7230c5f226" prot="public" virt="virtual"><scope>rocalution::Operator</scope><name>~Operator</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

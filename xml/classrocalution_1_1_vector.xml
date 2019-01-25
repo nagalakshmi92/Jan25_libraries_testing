@@ -1,0 +1,1196 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classrocalution_1_1_vector" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>rocalution::Vector</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">BaseRocalution&lt; ValueType &gt;</basecompoundref>
+    <includes refid="vector_8hpp" local="no">vector.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename ValueType</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="user-defined">
+      <memberdef kind="function" id="classrocalution_1_1_vector_1a0a69b9fd8f7263d1444c331e8ce18f8b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void rocalution::Vector&lt; ValueType &gt;::CopyFrom</definition>
+        <argsstring>(const LocalVector&lt; ValueType &gt; &amp;src)</argsstring>
+        <name>CopyFrom</name>
+        <param>
+          <type>const <ref refid="classrocalution_1_1_local_vector" kindref="compound">LocalVector</ref>&lt; ValueType &gt; &amp;</type>
+          <declname>src</declname>
+        </param>
+        <briefdescription>
+<para>Copy vector from another vector. </para>        </briefdescription>
+        <detaileddescription>
+<para><computeroutput>CopyFrom</computeroutput> copies values from another vector.</para><para><simplesect kind="note"><para>This function allows cross platform copying. One of the objects could be allocated on the accelerator backend.</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">src</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classrocalution_1_1_vector" kindref="compound">Vector</ref>, where values should be copied from.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="par"><title>Example</title><para><programlisting><codeline><highlight class="normal">LocalVector&lt;ValueType&gt;<sp/>vec1,<sp/>vec2;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>Allocate<sp/>and<sp/>initialize<sp/>vec1<sp/>and<sp/>vec2</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>...</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>Move<sp/>vec1<sp/>to<sp/>accelerator</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>vec1.MoveToAccelerator();</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>Now,<sp/>vec1<sp/>is<sp/>on<sp/>the<sp/>accelerator<sp/>(if<sp/>available)</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>and<sp/>vec2<sp/>is<sp/>on<sp/>the<sp/>host</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>Copy<sp/>vec1<sp/>to<sp/>vec2<sp/>(or<sp/>vice<sp/>versa)<sp/>will<sp/>move<sp/>data<sp/>between<sp/>host<sp/>and</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>accelerator<sp/>backend</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">vec1.CopyFrom(vec2);</highlight></codeline>
+</programlisting> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/vector.hpp" line="211" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_vector_1a32a36abf74009fabb2af1f5250649680" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void rocalution::Vector&lt; ValueType &gt;::CopyFrom</definition>
+        <argsstring>(const GlobalVector&lt; ValueType &gt; &amp;src)</argsstring>
+        <name>CopyFrom</name>
+        <param>
+          <type>const <ref refid="classrocalution_1_1_global_vector" kindref="compound">GlobalVector</ref>&lt; ValueType &gt; &amp;</type>
+          <declname>src</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/vector.hpp" line="212" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <memberdef kind="function" id="classrocalution_1_1_vector_1a6c78a236e9c0b9ffefd237d8a76e5b8a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void rocalution::Vector&lt; ValueType &gt;::CloneFrom</definition>
+        <argsstring>(const LocalVector&lt; ValueType &gt; &amp;src)</argsstring>
+        <name>CloneFrom</name>
+        <param>
+          <type>const <ref refid="classrocalution_1_1_local_vector" kindref="compound">LocalVector</ref>&lt; ValueType &gt; &amp;</type>
+          <declname>src</declname>
+        </param>
+        <briefdescription>
+<para>Clone the vector. </para>        </briefdescription>
+        <detaileddescription>
+<para><computeroutput>CloneFrom</computeroutput> clones the entire vector, with data and backend descriptor from another <ref refid="classrocalution_1_1_vector" kindref="compound">Vector</ref>.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">src</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classrocalution_1_1_vector" kindref="compound">Vector</ref> to clone from.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="par"><title>Example</title><para><programlisting><codeline><highlight class="normal">LocalVector&lt;ValueType&gt;<sp/>vec;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>Allocate<sp/>and<sp/>initialize<sp/>vec<sp/>(host<sp/>or<sp/>accelerator)</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>...</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">LocalVector&lt;ValueType&gt;<sp/>tmp;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>By<sp/>cloning<sp/>vec,<sp/>tmp<sp/>will<sp/>have<sp/>identical<sp/>values<sp/>and<sp/>will<sp/>be<sp/>on<sp/>the<sp/>same</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>backend<sp/>as<sp/>vec</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">tmp.CloneFrom(vec);</highlight></codeline>
+</programlisting> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/vector.hpp" line="267" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_vector_1ab620189a4e55cd97bf86478ff0df6c3f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void rocalution::Vector&lt; ValueType &gt;::CloneFrom</definition>
+        <argsstring>(const GlobalVector&lt; ValueType &gt; &amp;src)</argsstring>
+        <name>CloneFrom</name>
+        <param>
+          <type>const <ref refid="classrocalution_1_1_global_vector" kindref="compound">GlobalVector</ref>&lt; ValueType &gt; &amp;</type>
+          <declname>src</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/vector.hpp" line="268" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classrocalution_1_1_vector_1ab7cc8dac1aaae183de2a26b9f2e891a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>rocalution::Vector&lt; ValueType &gt;::Vector</definition>
+        <argsstring>()</argsstring>
+        <name>Vector</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/vector.hpp" line="54" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_vector_1a1a5d1bd49e7ce33f80f1f71e9e681818" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual rocalution::Vector&lt; ValueType &gt;::~Vector</definition>
+        <argsstring>()</argsstring>
+        <name>~Vector</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/vector.hpp" line="55" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_vector_1a69a7295c57e35e030999c5764c05cfe7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>IndexType2</type>
+        <definition>virtual IndexType2 rocalution::Vector&lt; ValueType &gt;::GetSize</definition>
+        <argsstring>(void) const =0</argsstring>
+        <name>GetSize</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Return the size of the vector. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/vector.hpp" line="58" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_vector_1af4e80d10bbfd9a243d0dfa3a5481358c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>virtual int rocalution::Vector&lt; ValueType &gt;::GetLocalSize</definition>
+        <argsstring>(void) const</argsstring>
+        <name>GetLocalSize</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Return the size of the local vector. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/vector.hpp" line="60" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_vector_1abd0787513f949d91f445890ea4d2ce81" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>virtual int rocalution::Vector&lt; ValueType &gt;::GetGhostSize</definition>
+        <argsstring>(void) const</argsstring>
+        <name>GetGhostSize</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Return the size of the ghost vector. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/vector.hpp" line="62" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_vector_1afb8f27ffca2ff3d59995d56b7093330c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool rocalution::Vector&lt; ValueType &gt;::Check</definition>
+        <argsstring>(void) const =0</argsstring>
+        <name>Check</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Perform a sanity check of the vector. </para>        </briefdescription>
+        <detaileddescription>
+<para>Checks, if the vector contains valid data, i.e. if the values are not infinity and not NaN (not a number).</para><para><parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>true</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if the vector is ok (empty vector is also ok). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>false</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if there is something wrong with the values. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/vector.hpp" line="72" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_vector_1af0cc06112714483ae4af25fba1e9bd04" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void rocalution::Vector&lt; ValueType &gt;::Clear</definition>
+        <argsstring>(void)=0</argsstring>
+        <name>Clear</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/vector.hpp" line="74" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_vector_1ac61cd2a27428d8cb0b7325697ab54883" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void rocalution::Vector&lt; ValueType &gt;::Zeros</definition>
+        <argsstring>(void)=0</argsstring>
+        <name>Zeros</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Set all values of the vector to 0. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/vector.hpp" line="77" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_vector_1aa979fabb41b06ca0413ca44fa8ffe714" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void rocalution::Vector&lt; ValueType &gt;::Ones</definition>
+        <argsstring>(void)=0</argsstring>
+        <name>Ones</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Set all values of the vector to 1. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/vector.hpp" line="80" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_vector_1a3df2b00c6da1ac2f35a577a31cbe98b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void rocalution::Vector&lt; ValueType &gt;::SetValues</definition>
+        <argsstring>(ValueType val)=0</argsstring>
+        <name>SetValues</name>
+        <param>
+          <type>ValueType</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Set all values of the vector to given argument. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/vector.hpp" line="83" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_vector_1aed60d50ff54c05fd3e2227109b8d3588" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void rocalution::Vector&lt; ValueType &gt;::SetRandomUniform</definition>
+        <argsstring>(unsigned long long seed, ValueType a=static_cast&lt; ValueType &gt;(-1), ValueType b=static_cast&lt; ValueType &gt;(1))=0</argsstring>
+        <name>SetRandomUniform</name>
+        <param>
+          <type>unsigned long long</type>
+          <declname>seed</declname>
+        </param>
+        <param>
+          <type>ValueType</type>
+          <declname>a</declname>
+          <defval>static_cast&lt; ValueType &gt;(-1)</defval>
+        </param>
+        <param>
+          <type>ValueType</type>
+          <declname>b</declname>
+          <defval>static_cast&lt; ValueType &gt;(1)</defval>
+        </param>
+        <briefdescription>
+<para>Fill the vector with random values from interval [a,b]. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/vector.hpp" line="86" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_vector_1ac0bb252680207ce70ab871f371007e5a" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void rocalution::Vector&lt; ValueType &gt;::SetRandomNormal</definition>
+        <argsstring>(unsigned long long seed, ValueType mean=static_cast&lt; ValueType &gt;(0), ValueType var=static_cast&lt; ValueType &gt;(1))=0</argsstring>
+        <name>SetRandomNormal</name>
+        <param>
+          <type>unsigned long long</type>
+          <declname>seed</declname>
+        </param>
+        <param>
+          <type>ValueType</type>
+          <declname>mean</declname>
+          <defval>static_cast&lt; ValueType &gt;(0)</defval>
+        </param>
+        <param>
+          <type>ValueType</type>
+          <declname>var</declname>
+          <defval>static_cast&lt; ValueType &gt;(1)</defval>
+        </param>
+        <briefdescription>
+<para>Fill the vector with random values from normal distribution. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/vector.hpp" line="91" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_vector_1a35cefceac2c827b6f4a422113b06f3b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void rocalution::Vector&lt; ValueType &gt;::ReadFileASCII</definition>
+        <argsstring>(const std::string filename)=0</argsstring>
+        <name>ReadFileASCII</name>
+        <param>
+          <type>const std::string</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+<para>Read vector from ASCII file. </para>        </briefdescription>
+        <detaileddescription>
+<para>Read a vector from ASCII file.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>name of the file containing the ASCII data.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="par"><title>Example</title><para><programlisting><codeline><highlight class="normal">LocalVector&lt;ValueType&gt;<sp/>vec;</highlight></codeline>
+<codeline><highlight class="normal">vec.ReadFileASCII(</highlight><highlight class="stringliteral">&quot;my_vector.dat&quot;</highlight><highlight class="normal">);</highlight></codeline>
+</programlisting> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/vector.hpp" line="108" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_vector_1adf8762b6ad93bcc19b87675c63a67752" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void rocalution::Vector&lt; ValueType &gt;::WriteFileASCII</definition>
+        <argsstring>(const std::string filename) const =0</argsstring>
+        <name>WriteFileASCII</name>
+        <param>
+          <type>const std::string</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+<para>Write vector to ASCII file. </para>        </briefdescription>
+        <detaileddescription>
+<para>Write a vector to ASCII file.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>name of the file to write the ASCII data to.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="par"><title>Example</title><para><programlisting><codeline><highlight class="normal">LocalVector&lt;ValueType&gt;<sp/>vec;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>Allocate<sp/>and<sp/>fill<sp/>vec</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>...</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">vec.WriteFileASCII(</highlight><highlight class="stringliteral">&quot;my_vector.dat&quot;</highlight><highlight class="normal">);</highlight></codeline>
+</programlisting> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/vector.hpp" line="127" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_vector_1ae669ca94b6b19929b2b8483063fc70d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void rocalution::Vector&lt; ValueType &gt;::ReadFileBinary</definition>
+        <argsstring>(const std::string filename)=0</argsstring>
+        <name>ReadFileBinary</name>
+        <param>
+          <type>const std::string</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+<para>Read vector from binary file. </para>        </briefdescription>
+        <detaileddescription>
+<para>Read a vector from binary file. For details on the format, see <ref refid="classrocalution_1_1_vector_1ae03e3d74cf727f69bb1a8ca5d87d1fa7" kindref="member">WriteFileBinary()</ref>.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>name of the file containing the data.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="par"><title>Example</title><para><programlisting><codeline><highlight class="normal">LocalVector&lt;ValueType&gt;<sp/>vec;</highlight></codeline>
+<codeline><highlight class="normal">vec.ReadFileBinary(</highlight><highlight class="stringliteral">&quot;my_vector.bin&quot;</highlight><highlight class="normal">);</highlight></codeline>
+</programlisting> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/vector.hpp" line="142" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_vector_1ae03e3d74cf727f69bb1a8ca5d87d1fa7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void rocalution::Vector&lt; ValueType &gt;::WriteFileBinary</definition>
+        <argsstring>(const std::string filename) const =0</argsstring>
+        <name>WriteFileBinary</name>
+        <param>
+          <type>const std::string</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+<para>Write vector to binary file. </para>        </briefdescription>
+        <detaileddescription>
+<para>Write a vector to binary file.</para><para>The binary format contains a header, the rocALUTION version and the vector data as follows <programlisting><codeline><highlight class="comment">//<sp/>Header</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">out<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;#rocALUTION<sp/>binary<sp/>vector<sp/>file&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>rocALUTION<sp/>version</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">out.write((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)&amp;version,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">));</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>Vector<sp/>data</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">out.write((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)&amp;size,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">));</highlight></codeline>
+<codeline><highlight class="normal">out.write((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)vec_val,<sp/>size<sp/>*<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">));</highlight></codeline>
+</programlisting></para><para><simplesect kind="note"><para><ref refid="classrocalution_1_1_vector" kindref="compound">Vector</ref> values array is always stored in double precision (e.g. double or std::complex&lt;double&gt;).</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>name of the file to write the data to.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="par"><title>Example</title><para><programlisting><codeline><highlight class="normal">LocalVector&lt;ValueType&gt;<sp/>vec;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>Allocate<sp/>and<sp/>fill<sp/>vec</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>...</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">vec.WriteFileBinary(</highlight><highlight class="stringliteral">&quot;my_vector.bin&quot;</highlight><highlight class="normal">);</highlight></codeline>
+</programlisting> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/vector.hpp" line="179" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_vector_1a19b74819ca4d2d4aba804b4b3882d33e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void rocalution::Vector&lt; ValueType &gt;::CopyFromAsync</definition>
+        <argsstring>(const LocalVector&lt; ValueType &gt; &amp;src)</argsstring>
+        <name>CopyFromAsync</name>
+        <param>
+          <type>const <ref refid="classrocalution_1_1_local_vector" kindref="compound">LocalVector</ref>&lt; ValueType &gt; &amp;</type>
+          <declname>src</declname>
+        </param>
+        <briefdescription>
+<para>Async copy from another local vector. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/vector.hpp" line="216" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_vector_1af85033a1ee476fde1a8e595bf820aee7" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void rocalution::Vector&lt; ValueType &gt;::CopyFromFloat</definition>
+        <argsstring>(const LocalVector&lt; float &gt; &amp;src)</argsstring>
+        <name>CopyFromFloat</name>
+        <param>
+          <type>const <ref refid="classrocalution_1_1_local_vector" kindref="compound">LocalVector</ref>&lt; float &gt; &amp;</type>
+          <declname>src</declname>
+        </param>
+        <briefdescription>
+<para>Copy values from another local float vector. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/vector.hpp" line="219" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_vector_1a602f35cbb92908373b7eee02a097f006" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void rocalution::Vector&lt; ValueType &gt;::CopyFromDouble</definition>
+        <argsstring>(const LocalVector&lt; double &gt; &amp;src)</argsstring>
+        <name>CopyFromDouble</name>
+        <param>
+          <type>const <ref refid="classrocalution_1_1_local_vector" kindref="compound">LocalVector</ref>&lt; double &gt; &amp;</type>
+          <declname>src</declname>
+        </param>
+        <briefdescription>
+<para>Copy values from another local double vector. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/vector.hpp" line="222" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_vector_1a6a1781254d8a3d8a39c4624741babfb4" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void rocalution::Vector&lt; ValueType &gt;::CopyFrom</definition>
+        <argsstring>(const LocalVector&lt; ValueType &gt; &amp;src, int src_offset, int dst_offset, int size)</argsstring>
+        <name>CopyFrom</name>
+        <param>
+          <type>const <ref refid="classrocalution_1_1_local_vector" kindref="compound">LocalVector</ref>&lt; ValueType &gt; &amp;</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>src_offset</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>dst_offset</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>Copy vector from another vector with offsets and size. </para>        </briefdescription>
+        <detaileddescription>
+<para><computeroutput>CopyFrom</computeroutput> copies values with specific source and destination offsets and sizes from another vector.</para><para><simplesect kind="note"><para>This function allows cross platform copying. One of the objects could be allocated on the accelerator backend.</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">src</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classrocalution_1_1_vector" kindref="compound">Vector</ref>, where values should be copied from. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">src_offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>source offset. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">dst_offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>destination offset. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of entries to be copied. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/vector.hpp" line="243" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_vector_1ae1f6dd2e39e233b808101a0072a1db62" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void rocalution::Vector&lt; ValueType &gt;::AddScale</definition>
+        <argsstring>(const LocalVector&lt; ValueType &gt; &amp;x, ValueType alpha)</argsstring>
+        <name>AddScale</name>
+        <param>
+          <type>const <ref refid="classrocalution_1_1_local_vector" kindref="compound">LocalVector</ref>&lt; ValueType &gt; &amp;</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>ValueType</type>
+          <declname>alpha</declname>
+        </param>
+        <briefdescription>
+<para>Perform vector update of type this = this + alpha * x. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/vector.hpp" line="272" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_vector_1aedf4d64ae2c3b8ee1f37519f306d0041" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void rocalution::Vector&lt; ValueType &gt;::AddScale</definition>
+        <argsstring>(const GlobalVector&lt; ValueType &gt; &amp;x, ValueType alpha)</argsstring>
+        <name>AddScale</name>
+        <param>
+          <type>const <ref refid="classrocalution_1_1_global_vector" kindref="compound">GlobalVector</ref>&lt; ValueType &gt; &amp;</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>ValueType</type>
+          <declname>alpha</declname>
+        </param>
+        <briefdescription>
+<para>Perform vector update of type this = this + alpha * x. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/vector.hpp" line="274" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_vector_1aec3e1f31e60d088aa021160d12e3ecd7" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void rocalution::Vector&lt; ValueType &gt;::ScaleAdd</definition>
+        <argsstring>(ValueType alpha, const LocalVector&lt; ValueType &gt; &amp;x)</argsstring>
+        <name>ScaleAdd</name>
+        <param>
+          <type>ValueType</type>
+          <declname>alpha</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classrocalution_1_1_local_vector" kindref="compound">LocalVector</ref>&lt; ValueType &gt; &amp;</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+<para>Perform vector update of type this = alpha * this + x. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/vector.hpp" line="277" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_vector_1a9edf57a13c5aa7a01e6f86d84f382e66" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void rocalution::Vector&lt; ValueType &gt;::ScaleAdd</definition>
+        <argsstring>(ValueType alpha, const GlobalVector&lt; ValueType &gt; &amp;x)</argsstring>
+        <name>ScaleAdd</name>
+        <param>
+          <type>ValueType</type>
+          <declname>alpha</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classrocalution_1_1_global_vector" kindref="compound">GlobalVector</ref>&lt; ValueType &gt; &amp;</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+<para>Perform vector update of type this = alpha * this + x. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/vector.hpp" line="279" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_vector_1a4927a1c7ed1b32a7c1bfaa5e8ba260e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void rocalution::Vector&lt; ValueType &gt;::ScaleAddScale</definition>
+        <argsstring>(ValueType alpha, const LocalVector&lt; ValueType &gt; &amp;x, ValueType beta)</argsstring>
+        <name>ScaleAddScale</name>
+        <param>
+          <type>ValueType</type>
+          <declname>alpha</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classrocalution_1_1_local_vector" kindref="compound">LocalVector</ref>&lt; ValueType &gt; &amp;</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>ValueType</type>
+          <declname>beta</declname>
+        </param>
+        <briefdescription>
+<para>Perform vector update of type this = alpha * this + x * beta. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/vector.hpp" line="282" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_vector_1a390c2cc8415eaa3959622254194a48f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void rocalution::Vector&lt; ValueType &gt;::ScaleAddScale</definition>
+        <argsstring>(ValueType alpha, const GlobalVector&lt; ValueType &gt; &amp;x, ValueType beta)</argsstring>
+        <name>ScaleAddScale</name>
+        <param>
+          <type>ValueType</type>
+          <declname>alpha</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classrocalution_1_1_global_vector" kindref="compound">GlobalVector</ref>&lt; ValueType &gt; &amp;</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>ValueType</type>
+          <declname>beta</declname>
+        </param>
+        <briefdescription>
+<para>Perform vector update of type this = alpha * this + x * beta. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/vector.hpp" line="284" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_vector_1a7a14ed1246d3c835794c6c6f3a4b80c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void rocalution::Vector&lt; ValueType &gt;::ScaleAddScale</definition>
+        <argsstring>(ValueType alpha, const LocalVector&lt; ValueType &gt; &amp;x, ValueType beta, int src_offset, int dst_offset, int size)</argsstring>
+        <name>ScaleAddScale</name>
+        <param>
+          <type>ValueType</type>
+          <declname>alpha</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classrocalution_1_1_local_vector" kindref="compound">LocalVector</ref>&lt; ValueType &gt; &amp;</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>ValueType</type>
+          <declname>beta</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>src_offset</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>dst_offset</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>Perform vector update of type this = alpha * this + x * beta with offsets. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/vector.hpp" line="287" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_vector_1a4f710bdf88c54847a0c524715c129e83" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void rocalution::Vector&lt; ValueType &gt;::ScaleAddScale</definition>
+        <argsstring>(ValueType alpha, const GlobalVector&lt; ValueType &gt; &amp;x, ValueType beta, int src_offset, int dst_offset, int size)</argsstring>
+        <name>ScaleAddScale</name>
+        <param>
+          <type>ValueType</type>
+          <declname>alpha</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classrocalution_1_1_global_vector" kindref="compound">GlobalVector</ref>&lt; ValueType &gt; &amp;</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>ValueType</type>
+          <declname>beta</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>src_offset</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>dst_offset</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>Perform vector update of type this = alpha * this + x * beta with offsets. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/vector.hpp" line="294" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_vector_1ace75caff6cab8ebcc6dbbbe10ac38fad" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void rocalution::Vector&lt; ValueType &gt;::ScaleAdd2</definition>
+        <argsstring>(ValueType alpha, const LocalVector&lt; ValueType &gt; &amp;x, ValueType beta, const LocalVector&lt; ValueType &gt; &amp;y, ValueType gamma)</argsstring>
+        <name>ScaleAdd2</name>
+        <param>
+          <type>ValueType</type>
+          <declname>alpha</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classrocalution_1_1_local_vector" kindref="compound">LocalVector</ref>&lt; ValueType &gt; &amp;</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>ValueType</type>
+          <declname>beta</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classrocalution_1_1_local_vector" kindref="compound">LocalVector</ref>&lt; ValueType &gt; &amp;</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>ValueType</type>
+          <declname>gamma</declname>
+        </param>
+        <briefdescription>
+<para>Perform vector update of type this = alpha * this + x * beta + y * gamma. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/vector.hpp" line="302" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_vector_1ae85d99b6f2ba4f0f072d3f2ce3c59ea4" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void rocalution::Vector&lt; ValueType &gt;::ScaleAdd2</definition>
+        <argsstring>(ValueType alpha, const GlobalVector&lt; ValueType &gt; &amp;x, ValueType beta, const GlobalVector&lt; ValueType &gt; &amp;y, ValueType gamma)</argsstring>
+        <name>ScaleAdd2</name>
+        <param>
+          <type>ValueType</type>
+          <declname>alpha</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classrocalution_1_1_global_vector" kindref="compound">GlobalVector</ref>&lt; ValueType &gt; &amp;</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>ValueType</type>
+          <declname>beta</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classrocalution_1_1_global_vector" kindref="compound">GlobalVector</ref>&lt; ValueType &gt; &amp;</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>ValueType</type>
+          <declname>gamma</declname>
+        </param>
+        <briefdescription>
+<para>Perform vector update of type this = alpha * this + x * beta + y * gamma. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/vector.hpp" line="308" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_vector_1ad00973260f6b2ca585220060fa8f074c" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void rocalution::Vector&lt; ValueType &gt;::Scale</definition>
+        <argsstring>(ValueType alpha)=0</argsstring>
+        <name>Scale</name>
+        <param>
+          <type>ValueType</type>
+          <declname>alpha</declname>
+        </param>
+        <briefdescription>
+<para>Perform vector scaling this = alpha * this. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/vector.hpp" line="315" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_vector_1a4b8794f97529984f9eb0be2532e7a452" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>ValueType</type>
+        <definition>virtual ValueType rocalution::Vector&lt; ValueType &gt;::Dot</definition>
+        <argsstring>(const LocalVector&lt; ValueType &gt; &amp;x) const</argsstring>
+        <name>Dot</name>
+        <param>
+          <type>const <ref refid="classrocalution_1_1_local_vector" kindref="compound">LocalVector</ref>&lt; ValueType &gt; &amp;</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+<para>Compute dot (scalar) product, return this^T y. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/vector.hpp" line="318" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_vector_1ab43c0f9c89802ced75ac7e3b248cc798" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>ValueType</type>
+        <definition>virtual ValueType rocalution::Vector&lt; ValueType &gt;::Dot</definition>
+        <argsstring>(const GlobalVector&lt; ValueType &gt; &amp;x) const</argsstring>
+        <name>Dot</name>
+        <param>
+          <type>const <ref refid="classrocalution_1_1_global_vector" kindref="compound">GlobalVector</ref>&lt; ValueType &gt; &amp;</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+<para>Compute dot (scalar) product, return this^T y. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/vector.hpp" line="320" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_vector_1afc0de1e6246fb0a5e9a6b0bbaf481727" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>ValueType</type>
+        <definition>virtual ValueType rocalution::Vector&lt; ValueType &gt;::DotNonConj</definition>
+        <argsstring>(const LocalVector&lt; ValueType &gt; &amp;x) const</argsstring>
+        <name>DotNonConj</name>
+        <param>
+          <type>const <ref refid="classrocalution_1_1_local_vector" kindref="compound">LocalVector</ref>&lt; ValueType &gt; &amp;</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+<para>Compute non-conjugate dot (scalar) product, return this^T y. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/vector.hpp" line="323" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_vector_1a6ff165b83b46e200e76cef9be9fc3505" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>ValueType</type>
+        <definition>virtual ValueType rocalution::Vector&lt; ValueType &gt;::DotNonConj</definition>
+        <argsstring>(const GlobalVector&lt; ValueType &gt; &amp;x) const</argsstring>
+        <name>DotNonConj</name>
+        <param>
+          <type>const <ref refid="classrocalution_1_1_global_vector" kindref="compound">GlobalVector</ref>&lt; ValueType &gt; &amp;</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+<para>Compute non-conjugate dot (scalar) product, return this^T y. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/vector.hpp" line="325" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_vector_1ae497a40ab0a3c1b7927e53b856775d96" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>ValueType</type>
+        <definition>virtual ValueType rocalution::Vector&lt; ValueType &gt;::Norm</definition>
+        <argsstring>(void) const =0</argsstring>
+        <name>Norm</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Compute <formula id="1">$L_2$</formula> norm of the vector, return = srqt(this^T this) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/vector.hpp" line="328" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_vector_1a2fdb72cd02801525457e9ada7dd60ef2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>ValueType</type>
+        <definition>virtual ValueType rocalution::Vector&lt; ValueType &gt;::Reduce</definition>
+        <argsstring>(void) const =0</argsstring>
+        <name>Reduce</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Reduce the vector. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/vector.hpp" line="331" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_vector_1adcd00282279cb53befa5b684cfe1b810" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>ValueType</type>
+        <definition>virtual ValueType rocalution::Vector&lt; ValueType &gt;::Asum</definition>
+        <argsstring>(void) const =0</argsstring>
+        <name>Asum</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Compute the sum of absolute values of the vector, return = sum(|this|) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/vector.hpp" line="334" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_vector_1ad12fff786a24c4d5fccb452dea303767" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int rocalution::Vector&lt; ValueType &gt;::Amax</definition>
+        <argsstring>(ValueType &amp;value) const =0</argsstring>
+        <name>Amax</name>
+        <param>
+          <type>ValueType &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Compute the absolute max of the vector, return = index(max(|this|)) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/vector.hpp" line="337" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_vector_1a228c4dbf9570eb0e3ac63abf02ec2192" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void rocalution::Vector&lt; ValueType &gt;::PointWiseMult</definition>
+        <argsstring>(const LocalVector&lt; ValueType &gt; &amp;x)</argsstring>
+        <name>PointWiseMult</name>
+        <param>
+          <type>const <ref refid="classrocalution_1_1_local_vector" kindref="compound">LocalVector</ref>&lt; ValueType &gt; &amp;</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+<para>Perform point-wise multiplication (element-wise) of this = this * x. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/vector.hpp" line="340" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_vector_1a3d32315bcad3563dd1d7b793890fbad6" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void rocalution::Vector&lt; ValueType &gt;::PointWiseMult</definition>
+        <argsstring>(const GlobalVector&lt; ValueType &gt; &amp;x)</argsstring>
+        <name>PointWiseMult</name>
+        <param>
+          <type>const <ref refid="classrocalution_1_1_global_vector" kindref="compound">GlobalVector</ref>&lt; ValueType &gt; &amp;</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+<para>Perform point-wise multiplication (element-wise) of this = this * x. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/vector.hpp" line="342" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_vector_1a994a38ea43f642b09d11803ba126ca21" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void rocalution::Vector&lt; ValueType &gt;::PointWiseMult</definition>
+        <argsstring>(const LocalVector&lt; ValueType &gt; &amp;x, const LocalVector&lt; ValueType &gt; &amp;y)</argsstring>
+        <name>PointWiseMult</name>
+        <param>
+          <type>const <ref refid="classrocalution_1_1_local_vector" kindref="compound">LocalVector</ref>&lt; ValueType &gt; &amp;</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classrocalution_1_1_local_vector" kindref="compound">LocalVector</ref>&lt; ValueType &gt; &amp;</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+<para>Perform point-wise multiplication (element-wise) of this = x * y. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/vector.hpp" line="345" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_vector_1a5c540c12372d286b3de900937e0af809" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void rocalution::Vector&lt; ValueType &gt;::PointWiseMult</definition>
+        <argsstring>(const GlobalVector&lt; ValueType &gt; &amp;x, const GlobalVector&lt; ValueType &gt; &amp;y)</argsstring>
+        <name>PointWiseMult</name>
+        <param>
+          <type>const <ref refid="classrocalution_1_1_global_vector" kindref="compound">GlobalVector</ref>&lt; ValueType &gt; &amp;</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classrocalution_1_1_global_vector" kindref="compound">GlobalVector</ref>&lt; ValueType &gt; &amp;</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+<para>Perform point-wise multiplication (element-wise) of this = x * y. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/vector.hpp" line="347" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_vector_1ae7401d8c41da9c2d9977eaa26f56a9cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void rocalution::Vector&lt; ValueType &gt;::Power</definition>
+        <argsstring>(double power)=0</argsstring>
+        <name>Power</name>
+        <param>
+          <type>double</type>
+          <declname>power</declname>
+        </param>
+        <briefdescription>
+<para>Perform power operation to a vector. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/vector.hpp" line="350" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="classrocalution_1_1_vector" kindref="compound">Vector</ref> class. </para>    </briefdescription>
+    <detaileddescription>
+<para>The <ref refid="classrocalution_1_1_vector" kindref="compound">Vector</ref> class defines the generic interface for local and global vectors.</para><para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>ValueType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- can be int, float, double, std::complex&lt;float&gt; and std::complex&lt;double&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="29">
+        <label>BaseRocalution&lt; ValueType &gt;</label>
+      </node>
+      <node id="28">
+        <label>rocalution::Vector&lt; ValueType &gt;</label>
+        <link refid="classrocalution_1_1_vector"/>
+        <childnode refid="29" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="31">
+        <label>BaseRocalution&lt; ValueType &gt;</label>
+      </node>
+      <node id="30">
+        <label>rocalution::Vector&lt; ValueType &gt;</label>
+        <link refid="classrocalution_1_1_vector"/>
+        <childnode refid="31" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="ROCm_Libraries/rocALUTION/src/base/vector.hpp" line="52" column="1" bodyfile="ROCm_Libraries/rocALUTION/src/base/vector.hpp" bodystart="51" bodyend="351"/>
+    <listofallmembers>
+      <member refid="classrocalution_1_1_vector_1ae1f6dd2e39e233b808101a0072a1db62" prot="public" virt="virtual"><scope>rocalution::Vector</scope><name>AddScale</name></member>
+      <member refid="classrocalution_1_1_vector_1aedf4d64ae2c3b8ee1f37519f306d0041" prot="public" virt="virtual"><scope>rocalution::Vector</scope><name>AddScale</name></member>
+      <member refid="classrocalution_1_1_vector_1ad12fff786a24c4d5fccb452dea303767" prot="public" virt="pure-virtual"><scope>rocalution::Vector</scope><name>Amax</name></member>
+      <member refid="classrocalution_1_1_vector_1adcd00282279cb53befa5b684cfe1b810" prot="public" virt="pure-virtual"><scope>rocalution::Vector</scope><name>Asum</name></member>
+      <member refid="classrocalution_1_1_vector_1afb8f27ffca2ff3d59995d56b7093330c" prot="public" virt="pure-virtual"><scope>rocalution::Vector</scope><name>Check</name></member>
+      <member refid="classrocalution_1_1_vector_1af0cc06112714483ae4af25fba1e9bd04" prot="public" virt="pure-virtual"><scope>rocalution::Vector</scope><name>Clear</name></member>
+      <member refid="classrocalution_1_1_vector_1a6c78a236e9c0b9ffefd237d8a76e5b8a" prot="public" virt="virtual"><scope>rocalution::Vector</scope><name>CloneFrom</name></member>
+      <member refid="classrocalution_1_1_vector_1ab620189a4e55cd97bf86478ff0df6c3f" prot="public" virt="virtual"><scope>rocalution::Vector</scope><name>CloneFrom</name></member>
+      <member refid="classrocalution_1_1_vector_1a0a69b9fd8f7263d1444c331e8ce18f8b" prot="public" virt="virtual"><scope>rocalution::Vector</scope><name>CopyFrom</name></member>
+      <member refid="classrocalution_1_1_vector_1a32a36abf74009fabb2af1f5250649680" prot="public" virt="virtual"><scope>rocalution::Vector</scope><name>CopyFrom</name></member>
+      <member refid="classrocalution_1_1_vector_1a6a1781254d8a3d8a39c4624741babfb4" prot="public" virt="virtual"><scope>rocalution::Vector</scope><name>CopyFrom</name></member>
+      <member refid="classrocalution_1_1_vector_1a19b74819ca4d2d4aba804b4b3882d33e" prot="public" virt="virtual"><scope>rocalution::Vector</scope><name>CopyFromAsync</name></member>
+      <member refid="classrocalution_1_1_vector_1a602f35cbb92908373b7eee02a097f006" prot="public" virt="virtual"><scope>rocalution::Vector</scope><name>CopyFromDouble</name></member>
+      <member refid="classrocalution_1_1_vector_1af85033a1ee476fde1a8e595bf820aee7" prot="public" virt="virtual"><scope>rocalution::Vector</scope><name>CopyFromFloat</name></member>
+      <member refid="classrocalution_1_1_vector_1a4b8794f97529984f9eb0be2532e7a452" prot="public" virt="virtual"><scope>rocalution::Vector</scope><name>Dot</name></member>
+      <member refid="classrocalution_1_1_vector_1ab43c0f9c89802ced75ac7e3b248cc798" prot="public" virt="virtual"><scope>rocalution::Vector</scope><name>Dot</name></member>
+      <member refid="classrocalution_1_1_vector_1afc0de1e6246fb0a5e9a6b0bbaf481727" prot="public" virt="virtual"><scope>rocalution::Vector</scope><name>DotNonConj</name></member>
+      <member refid="classrocalution_1_1_vector_1a6ff165b83b46e200e76cef9be9fc3505" prot="public" virt="virtual"><scope>rocalution::Vector</scope><name>DotNonConj</name></member>
+      <member refid="classrocalution_1_1_vector_1abd0787513f949d91f445890ea4d2ce81" prot="public" virt="virtual"><scope>rocalution::Vector</scope><name>GetGhostSize</name></member>
+      <member refid="classrocalution_1_1_vector_1af4e80d10bbfd9a243d0dfa3a5481358c" prot="public" virt="virtual"><scope>rocalution::Vector</scope><name>GetLocalSize</name></member>
+      <member refid="classrocalution_1_1_vector_1a69a7295c57e35e030999c5764c05cfe7" prot="public" virt="pure-virtual"><scope>rocalution::Vector</scope><name>GetSize</name></member>
+      <member refid="classrocalution_1_1_vector_1ae497a40ab0a3c1b7927e53b856775d96" prot="public" virt="pure-virtual"><scope>rocalution::Vector</scope><name>Norm</name></member>
+      <member refid="classrocalution_1_1_vector_1aa979fabb41b06ca0413ca44fa8ffe714" prot="public" virt="pure-virtual"><scope>rocalution::Vector</scope><name>Ones</name></member>
+      <member refid="classrocalution_1_1_vector_1a228c4dbf9570eb0e3ac63abf02ec2192" prot="public" virt="virtual"><scope>rocalution::Vector</scope><name>PointWiseMult</name></member>
+      <member refid="classrocalution_1_1_vector_1a3d32315bcad3563dd1d7b793890fbad6" prot="public" virt="virtual"><scope>rocalution::Vector</scope><name>PointWiseMult</name></member>
+      <member refid="classrocalution_1_1_vector_1a994a38ea43f642b09d11803ba126ca21" prot="public" virt="virtual"><scope>rocalution::Vector</scope><name>PointWiseMult</name></member>
+      <member refid="classrocalution_1_1_vector_1a5c540c12372d286b3de900937e0af809" prot="public" virt="virtual"><scope>rocalution::Vector</scope><name>PointWiseMult</name></member>
+      <member refid="classrocalution_1_1_vector_1ae7401d8c41da9c2d9977eaa26f56a9cc" prot="public" virt="pure-virtual"><scope>rocalution::Vector</scope><name>Power</name></member>
+      <member refid="classrocalution_1_1_vector_1a35cefceac2c827b6f4a422113b06f3b5" prot="public" virt="pure-virtual"><scope>rocalution::Vector</scope><name>ReadFileASCII</name></member>
+      <member refid="classrocalution_1_1_vector_1ae669ca94b6b19929b2b8483063fc70d3" prot="public" virt="pure-virtual"><scope>rocalution::Vector</scope><name>ReadFileBinary</name></member>
+      <member refid="classrocalution_1_1_vector_1a2fdb72cd02801525457e9ada7dd60ef2" prot="public" virt="pure-virtual"><scope>rocalution::Vector</scope><name>Reduce</name></member>
+      <member refid="classrocalution_1_1_vector_1ad00973260f6b2ca585220060fa8f074c" prot="public" virt="pure-virtual"><scope>rocalution::Vector</scope><name>Scale</name></member>
+      <member refid="classrocalution_1_1_vector_1aec3e1f31e60d088aa021160d12e3ecd7" prot="public" virt="virtual"><scope>rocalution::Vector</scope><name>ScaleAdd</name></member>
+      <member refid="classrocalution_1_1_vector_1a9edf57a13c5aa7a01e6f86d84f382e66" prot="public" virt="virtual"><scope>rocalution::Vector</scope><name>ScaleAdd</name></member>
+      <member refid="classrocalution_1_1_vector_1ace75caff6cab8ebcc6dbbbe10ac38fad" prot="public" virt="virtual"><scope>rocalution::Vector</scope><name>ScaleAdd2</name></member>
+      <member refid="classrocalution_1_1_vector_1ae85d99b6f2ba4f0f072d3f2ce3c59ea4" prot="public" virt="virtual"><scope>rocalution::Vector</scope><name>ScaleAdd2</name></member>
+      <member refid="classrocalution_1_1_vector_1a4927a1c7ed1b32a7c1bfaa5e8ba260e2" prot="public" virt="virtual"><scope>rocalution::Vector</scope><name>ScaleAddScale</name></member>
+      <member refid="classrocalution_1_1_vector_1a390c2cc8415eaa3959622254194a48f8" prot="public" virt="virtual"><scope>rocalution::Vector</scope><name>ScaleAddScale</name></member>
+      <member refid="classrocalution_1_1_vector_1a7a14ed1246d3c835794c6c6f3a4b80c1" prot="public" virt="virtual"><scope>rocalution::Vector</scope><name>ScaleAddScale</name></member>
+      <member refid="classrocalution_1_1_vector_1a4f710bdf88c54847a0c524715c129e83" prot="public" virt="virtual"><scope>rocalution::Vector</scope><name>ScaleAddScale</name></member>
+      <member refid="classrocalution_1_1_vector_1ac0bb252680207ce70ab871f371007e5a" prot="public" virt="pure-virtual"><scope>rocalution::Vector</scope><name>SetRandomNormal</name></member>
+      <member refid="classrocalution_1_1_vector_1aed60d50ff54c05fd3e2227109b8d3588" prot="public" virt="pure-virtual"><scope>rocalution::Vector</scope><name>SetRandomUniform</name></member>
+      <member refid="classrocalution_1_1_vector_1a3df2b00c6da1ac2f35a577a31cbe98b1" prot="public" virt="pure-virtual"><scope>rocalution::Vector</scope><name>SetValues</name></member>
+      <member refid="classrocalution_1_1_vector_1ab7cc8dac1aaae183de2a26b9f2e891a1" prot="public" virt="non-virtual"><scope>rocalution::Vector</scope><name>Vector</name></member>
+      <member refid="classrocalution_1_1_vector_1adf8762b6ad93bcc19b87675c63a67752" prot="public" virt="pure-virtual"><scope>rocalution::Vector</scope><name>WriteFileASCII</name></member>
+      <member refid="classrocalution_1_1_vector_1ae03e3d74cf727f69bb1a8ca5d87d1fa7" prot="public" virt="pure-virtual"><scope>rocalution::Vector</scope><name>WriteFileBinary</name></member>
+      <member refid="classrocalution_1_1_vector_1ac61cd2a27428d8cb0b7325697ab54883" prot="public" virt="pure-virtual"><scope>rocalution::Vector</scope><name>Zeros</name></member>
+      <member refid="classrocalution_1_1_vector_1a1a5d1bd49e7ce33f80f1f71e9e681818" prot="public" virt="virtual"><scope>rocalution::Vector</scope><name>~Vector</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

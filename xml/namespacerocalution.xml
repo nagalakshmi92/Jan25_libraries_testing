@@ -1,0 +1,564 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="namespacerocalution" kind="namespace" language="C++">
+    <compoundname>rocalution</compoundname>
+    <innerclass refid="classrocalution_1_1_accelerator_matrix" prot="public">rocalution::AcceleratorMatrix</innerclass>
+    <innerclass refid="classrocalution_1_1_accelerator_vector" prot="public">rocalution::AcceleratorVector</innerclass>
+    <innerclass refid="classrocalution_1_1_global_matrix" prot="public">rocalution::GlobalMatrix</innerclass>
+    <innerclass refid="classrocalution_1_1_global_vector" prot="public">rocalution::GlobalVector</innerclass>
+    <innerclass refid="classrocalution_1_1_host_matrix" prot="public">rocalution::HostMatrix</innerclass>
+    <innerclass refid="classrocalution_1_1_local_vector" prot="public">rocalution::LocalVector</innerclass>
+    <innerclass refid="classrocalution_1_1_operator" prot="public">rocalution::Operator</innerclass>
+    <innerclass refid="classrocalution_1_1_parallel_manager" prot="public">rocalution::ParallelManager</innerclass>
+    <innerclass refid="structrocalution_1_1_rocalution___backend___descriptor" prot="public">rocalution::Rocalution_Backend_Descriptor</innerclass>
+    <innerclass refid="classrocalution_1_1_vector" prot="public">rocalution::Vector</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="backend__manager_8hpp_1a4151648a06269c44d03bd90974a9dfcb" prot="public" static="no">
+        <name>_rocalution_backend_id</name>
+        <enumvalue id="backend__manager_8hpp_1a4151648a06269c44d03bd90974a9dfcba655cef3a927d75fe99df08fc4348e7c8" prot="public">
+          <name>None</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="backend__manager_8hpp_1a4151648a06269c44d03bd90974a9dfcbab57ebff34d152840ef7ffa2f4d1645a6" prot="public">
+          <name>HIP</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/backend_manager.hpp" line="98" column="1" bodyfile="ROCm_Libraries/rocALUTION/src/base/backend_manager.hpp" bodystart="97" bodyend="101"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="backend__manager_8hpp_1af5e4f0fa4d05a5320a86d9880d2074bb" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structrocalution_1_1_rocalution___backend___descriptor" kindref="compound">Rocalution_Backend_Descriptor</ref></type>
+        <definition>struct Rocalution_Backend_Descriptor rocalution::_Backend_Descriptor</definition>
+        <argsstring></argsstring>
+        <name>_Backend_Descriptor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/backend_manager.hpp" line="248" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="backend__manager_8hpp_1a8ed81e0a2eab89cb1786dabaac44a74c" prot="public" static="no" mutable="no">
+        <type>const std::string</type>
+        <definition>const std::string rocalution::_rocalution_host_name[1]</definition>
+        <argsstring>[1]</argsstring>
+        <name>_rocalution_host_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/backend_manager.hpp" line="91" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="backend__manager_8hpp_1aa52a0e43c37ef0759b1ecada37090e0c" prot="public" static="no" mutable="no">
+        <type>const std::string</type>
+        <definition>const std::string rocalution::_rocalution_backend_name[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>_rocalution_backend_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/backend_manager.hpp" line="94" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="backend__manager_8hpp_1a044437ad21ae0e48c88f09bdb508cdae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int rocalution::init_rocalution</definition>
+        <argsstring>(int rank=-1, int dev_per_node=1)</argsstring>
+        <name>init_rocalution</name>
+        <param>
+          <type>int</type>
+          <declname>rank</declname>
+          <defval>-1</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>dev_per_node</declname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+<para>Initialize rocALUTION platform. </para>        </briefdescription>
+        <detaileddescription>
+<para><computeroutput>init_rocalution</computeroutput> defines a backend descriptor with information about the hardware and its specifications. All objects created after that contain a copy of this descriptor. If the specifications of the global descriptor are changed (e.g. set different number of threads) and new objects are created, only the new objects will use the new configurations.</para><para>For control, the library provides the following functions<itemizedlist>
+<listitem><para>set_device_rocalution() is a unified function to select a specific device. If you have compiled the library with a backend and for this backend there are several available devices, you can use this function to select a particular one. This function has to be called before init_rocalution().</para></listitem><listitem><para>set_omp_threads_rocalution() sets the number of OpenMP threads. This function has to be called after init_rocalution().</para></listitem></itemizedlist>
+</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">rank</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies MPI rank when multi-node environment </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">dev_per_node</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of accelerator devices per node, when in multi-GPU environment</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="par"><title>Example</title><para><programlisting><codeline><highlight class="preprocessor">#include<sp/>&lt;rocalution.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespacerocalution" kindref="compound">rocalution</ref>;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>argv[])</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>init_rocalution();</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>...</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>stop_rocalution();</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/backend_manager.hpp" line="143" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="backend__manager_8hpp_1af6098d8efba475358435f3b00da8c51b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int rocalution::stop_rocalution</definition>
+        <argsstring>(void)</argsstring>
+        <name>stop_rocalution</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Shutdown rocALUTION platform. </para>        </briefdescription>
+        <detaileddescription>
+<para><computeroutput>stop_rocalution</computeroutput> shuts down the rocALUTION platform. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/backend_manager.hpp" line="150" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="backend__manager_8hpp_1a90fb4a381beab8525d17988f2600a336" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rocalution::set_device_rocalution</definition>
+        <argsstring>(int dev)</argsstring>
+        <name>set_device_rocalution</name>
+        <param>
+          <type>int</type>
+          <declname>dev</declname>
+        </param>
+        <briefdescription>
+<para>Set the accelerator device. </para>        </briefdescription>
+        <detaileddescription>
+<para><computeroutput>set_device_rocalution</computeroutput> lets the user select the accelerator device that is supposed to be used for the computation.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">dev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>accelerator device ID for computation </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/backend_manager.hpp" line="161" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="backend__manager_8hpp_1a83e2a7e27ef32854ba4a34ff83b3285f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rocalution::set_omp_threads_rocalution</definition>
+        <argsstring>(int nthreads)</argsstring>
+        <name>set_omp_threads_rocalution</name>
+        <param>
+          <type>int</type>
+          <declname>nthreads</declname>
+        </param>
+        <briefdescription>
+<para>Set number of OpenMP threads. </para>        </briefdescription>
+        <detaileddescription>
+<para>The number of threads which rocALUTION will use can be set with <computeroutput>set_omp_threads_rocalution</computeroutput> or by the global OpenMP environment variable (for Unix-like OS this is <computeroutput>OMP_NUM_THREADS</computeroutput>). During the initialization phase, the library provides affinity thread-core mapping:<itemizedlist>
+<listitem><para>If the number of cores (including SMT cores) is greater or equal than two times the number of threads, then all the threads can occupy every second core ID (e.g. 0, 2, 4, <formula id="0">$\ldots$</formula>). This is to avoid having two threads working on the same physical core, when SMT is enabled.</para></listitem><listitem><para>If the number of threads is less or equal to the number of cores (including SMT), and the previous clause is false, then the threads can occupy every core ID (e.g. 0, 1, 2, 3, <formula id="0">$\ldots$</formula>).</para></listitem><listitem><para>If non of the above criteria is matched, then the default thread-core mapping is used (typically set by the OS).</para></listitem></itemizedlist>
+</para><para><simplesect kind="note"><para>The thread-core mapping is available only for Unix-like OS.</para></simplesect>
+<simplesect kind="note"><para>The user can disable the thread affinity by calling set_omp_affinity_rocalution(), before initializing the library (i.e. before init_rocalution()).</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">nthreads</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of OpenMP threads </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/backend_manager.hpp" line="190" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="backend__manager_8hpp_1a207aa4a91a2507c0e9f7b1ac8e8c8b28" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rocalution::set_omp_affinity_rocalution</definition>
+        <argsstring>(bool affinity)</argsstring>
+        <name>set_omp_affinity_rocalution</name>
+        <param>
+          <type>bool</type>
+          <declname>affinity</declname>
+        </param>
+        <briefdescription>
+<para>Enable/disable OpenMP host affinity. </para>        </briefdescription>
+        <detaileddescription>
+<para><computeroutput>set_omp_affinity_rocalution</computeroutput> enables / disables OpenMP host affinity.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">affinity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>boolean to turn on/off OpenMP host affinity </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/backend_manager.hpp" line="200" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="backend__manager_8hpp_1a63587ed85501959c6f34a9838b8f2ba8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rocalution::set_omp_threshold_rocalution</definition>
+        <argsstring>(int threshold)</argsstring>
+        <name>set_omp_threshold_rocalution</name>
+        <param>
+          <type>int</type>
+          <declname>threshold</declname>
+        </param>
+        <briefdescription>
+<para>Set OpenMP threshold size. </para>        </briefdescription>
+        <detaileddescription>
+<para>Whenever you want to work on a small problem, you might observe that the OpenMP host backend is (slightly) slower than using no OpenMP. This is mainly attributed to the small amount of work, which every thread should perform and the large overhead of forking/joining threads. This can be avoid by the OpenMP threshold size parameter in rocALUTION. The default threshold is set to 10000, which means that all matrices under (and equal) this size will use only one thread (disregarding the number of OpenMP threads set in the system). The threshold can be modified with <computeroutput>set_omp_threshold_rocalution</computeroutput>.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">threshold</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>OpenMP threshold size </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/backend_manager.hpp" line="217" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="backend__manager_8hpp_1ace30a89d8b0688fdfb425be39fa10633" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rocalution::info_rocalution</definition>
+        <argsstring>(void)</argsstring>
+        <name>info_rocalution</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Print info about rocALUTION. </para>        </briefdescription>
+        <detaileddescription>
+<para><computeroutput>info_rocalution</computeroutput> prints information about the rocALUTION platform </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/backend_manager.hpp" line="224" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="backend__manager_8hpp_1ad4d74134029d46a072420b2ca787f859" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rocalution::info_rocalution</definition>
+        <argsstring>(const struct Rocalution_Backend_Descriptor backend_descriptor)</argsstring>
+        <name>info_rocalution</name>
+        <param>
+          <type>const struct <ref refid="structrocalution_1_1_rocalution___backend___descriptor" kindref="compound">Rocalution_Backend_Descriptor</ref></type>
+          <declname>backend_descriptor</declname>
+        </param>
+        <briefdescription>
+<para>Print info about specific rocALUTION backend descriptor. </para>        </briefdescription>
+        <detaileddescription>
+<para><computeroutput>info_rocalution</computeroutput> prints information about the rocALUTION platform of the specific backend descriptor.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">backend_descriptor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>rocALUTION backend descriptor </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/backend_manager.hpp" line="235" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="backend__manager_8hpp_1ac17c61b30b39327cca408417ef68bb2a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rocalution::disable_accelerator_rocalution</definition>
+        <argsstring>(bool onoff=true)</argsstring>
+        <name>disable_accelerator_rocalution</name>
+        <param>
+          <type>bool</type>
+          <declname>onoff</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Disable/Enable the accelerator. </para>        </briefdescription>
+        <detaileddescription>
+<para>If you want to disable the accelerator (without re-compiling the code), you need to call <computeroutput>disable_accelerator_rocalution</computeroutput> before init_rocalution().</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">onoff</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>boolean to turn on/off the accelerator </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/backend_manager.hpp" line="246" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="backend__manager_8hpp_1ad27a35bf66caf667b73d3a5ba131e4fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool rocalution::_rocalution_available_accelerator</definition>
+        <argsstring>(void)</argsstring>
+        <name>_rocalution_available_accelerator</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/backend_manager.hpp" line="249" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="backend__manager_8hpp_1acc35243a8c09d91ba8106de301b54e0b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct <ref refid="structrocalution_1_1_rocalution___backend___descriptor" kindref="compound">Rocalution_Backend_Descriptor</ref> *</type>
+        <definition>struct Rocalution_Backend_Descriptor* rocalution::_get_backend_descriptor</definition>
+        <argsstring>(void)</argsstring>
+        <name>_get_backend_descriptor</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/backend_manager.hpp" line="252" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="backend__manager_8hpp_1af4814f498d85bf1134ef48fa45b759d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rocalution::_set_backend_descriptor</definition>
+        <argsstring>(const struct Rocalution_Backend_Descriptor backend_descriptor)</argsstring>
+        <name>_set_backend_descriptor</name>
+        <param>
+          <type>const struct <ref refid="structrocalution_1_1_rocalution___backend___descriptor" kindref="compound">Rocalution_Backend_Descriptor</ref></type>
+          <declname>backend_descriptor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/backend_manager.hpp" line="255" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="backend__manager_8hpp_1a77f335c8d8f1fd17cee83b4a3558e036" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rocalution::_set_omp_backend_threads</definition>
+        <argsstring>(const struct Rocalution_Backend_Descriptor backend_descriptor, int size)</argsstring>
+        <name>_set_omp_backend_threads</name>
+        <param>
+          <type>const struct <ref refid="structrocalution_1_1_rocalution___backend___descriptor" kindref="compound">Rocalution_Backend_Descriptor</ref></type>
+          <declname>backend_descriptor</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/backend_manager.hpp" line="258" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="backend__manager_8hpp_1afef01bb8131c6ec161d8d2c593881a51" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename ValueType</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classrocalution_1_1_accelerator_vector" kindref="compound">AcceleratorVector</ref>&lt; ValueType &gt; *</type>
+        <definition>AcceleratorVector&lt;ValueType&gt;* rocalution::_rocalution_init_base_backend_vector</definition>
+        <argsstring>(const struct Rocalution_Backend_Descriptor backend_descriptor)</argsstring>
+        <name>_rocalution_init_base_backend_vector</name>
+        <param>
+          <type>const struct <ref refid="structrocalution_1_1_rocalution___backend___descriptor" kindref="compound">Rocalution_Backend_Descriptor</ref></type>
+          <declname>backend_descriptor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/backend_manager.hpp" line="264" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="backend__manager_8hpp_1a2ebadccacd0621b0854c490032e52cca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename ValueType</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classrocalution_1_1_host_matrix" kindref="compound">HostMatrix</ref>&lt; ValueType &gt; *</type>
+        <definition>HostMatrix&lt;ValueType&gt;* rocalution::_rocalution_init_base_host_matrix</definition>
+        <argsstring>(const struct Rocalution_Backend_Descriptor backend_descriptor, unsigned int matrix_format)</argsstring>
+        <name>_rocalution_init_base_host_matrix</name>
+        <param>
+          <type>const struct <ref refid="structrocalution_1_1_rocalution___backend___descriptor" kindref="compound">Rocalution_Backend_Descriptor</ref></type>
+          <declname>backend_descriptor</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>matrix_format</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/backend_manager.hpp" line="269" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="backend__manager_8hpp_1a4a91640f9b6773d948a0894b39db70ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename ValueType</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classrocalution_1_1_accelerator_matrix" kindref="compound">AcceleratorMatrix</ref>&lt; ValueType &gt; *</type>
+        <definition>AcceleratorMatrix&lt;ValueType&gt;* rocalution::_rocalution_init_base_backend_matrix</definition>
+        <argsstring>(const struct Rocalution_Backend_Descriptor backend_descriptor, unsigned int matrix_format)</argsstring>
+        <name>_rocalution_init_base_backend_matrix</name>
+        <param>
+          <type>const struct <ref refid="structrocalution_1_1_rocalution___backend___descriptor" kindref="compound">Rocalution_Backend_Descriptor</ref></type>
+          <declname>backend_descriptor</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>matrix_format</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/backend_manager.hpp" line="275" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="backend__manager_8hpp_1a9858044e06189a81160646b5a7dbb154" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rocalution::_rocalution_sync</definition>
+        <argsstring>(void)</argsstring>
+        <name>_rocalution_sync</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Sync rocALUTION. </para>        </briefdescription>
+        <detaileddescription>
+<para><computeroutput>_rocalution_sync</computeroutput> blocks the host until all active asynchronous transfers are completed. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/backend_manager.hpp" line="283" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="backend__manager_8hpp_1ab4c2703e8bf1fea52fd5769bd46d2819" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t rocalution::_rocalution_add_obj</definition>
+        <argsstring>(class RocalutionObj *ptr)</argsstring>
+        <name>_rocalution_add_obj</name>
+        <param>
+          <type>class RocalutionObj *</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/backend_manager.hpp" line="285" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="backend__manager_8hpp_1a4dde7def59bd3c2c7f4ca8279882fcae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool rocalution::_rocalution_del_obj</definition>
+        <argsstring>(class RocalutionObj *ptr, size_t id)</argsstring>
+        <name>_rocalution_del_obj</name>
+        <param>
+          <type>class RocalutionObj *</type>
+          <declname>ptr</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/backend_manager.hpp" line="286" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="backend__manager_8hpp_1a9b877ec9f9377ec4a2b684d9baba7597" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rocalution::_rocalution_delete_all_obj</definition>
+        <argsstring>(void)</argsstring>
+        <name>_rocalution_delete_all_obj</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/backend_manager.hpp" line="287" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="backend__manager_8hpp_1afe55c51da782dcf07b26ab51270172bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool rocalution::_rocalution_check_if_any_obj</definition>
+        <argsstring>(void)</argsstring>
+        <name>_rocalution_check_if_any_obj</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/backend_manager.hpp" line="288" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="ROCm_Libraries/rocALUTION/src/base/backend_manager.hpp" line="33" column="1"/>
+  </compounddef>
+</doxygen>
