@@ -52,7 +52,7 @@ The code is open-source under MIT license and hosted on here: https://github.com
 .. _rocalution_contributing:
 
 Contributing
-*************
+#############
 
 Contribution License Agreement
 ```````````````````````````````
