@@ -1,20 +1,18 @@
-.. toctree::
-   :maxdepth: 4 
-   :caption: Contents:
+.. _ROCm_Libraries:
 
-.. |br| raw:: html
+=====================
+ROCm Libraries
+=====================
 
-  <br />
-
-==========
+***********
 rocALUTION
-==========
+***********
 
 Introduction
-------------
+##############
 
 Overview
-********
+##########
 rocALUTION is a sparse linear algebra library with focus on exploring fine-grained parallelism, targeting modern processors and accelerators including multi/many-core CPU and GPU platforms. The main goal of this package is to provide a portable library for iterative sparse methods on state of the art hardware. rocALUTION can be seen as middle-ware between different parallel backends and application specific packages.
 
 The major features and characteristics of the library are
