@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_38fdb61b3512cdb4abd7b219d35472ce" kind="dir">
+    <compoundname>ROCm_Libraries/rocALUTION/src/solvers/direct</compoundname>
+    <innerfile refid="inversion_8cpp">inversion.cpp</innerfile>
+    <innerfile refid="lu_8cpp">lu.cpp</innerfile>
+    <innerfile refid="qr_8cpp">qr.cpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="ROCm_Libraries/rocALUTION/src/solvers/direct/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,475 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classrocalution_1_1_local_stencil" kind="class" language="C++" prot="public">
+    <compoundname>rocalution::LocalStencil</compoundname>
+    <basecompoundref refid="classrocalution_1_1_operator" prot="public" virt="non-virtual">rocalution::Operator&lt; ValueType &gt;</basecompoundref>
+    <includes refid="local__stencil_8hpp" local="no">local_stencil.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename ValueType</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classrocalution_1_1_local_stencil_1a80b3cdf02eac6f9082c21edd2cba56ae" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string rocalution::LocalStencil&lt; ValueType &gt;::object_name_</definition>
+        <argsstring></argsstring>
+        <name>object_name_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/local_stencil.hpp" line="91" column="1" bodyfile="ROCm_Libraries/rocALUTION/src/base/local_stencil.hpp" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrocalution_1_1_local_stencil_1a32c5fbd14698544d46760e46c56ca32b" prot="private" static="no" mutable="no">
+        <type><ref refid="classrocalution_1_1_base_stencil" kindref="compound">BaseStencil</ref>&lt; ValueType &gt; *</type>
+        <definition>BaseStencil&lt;ValueType&gt;* rocalution::LocalStencil&lt; ValueType &gt;::stencil_</definition>
+        <argsstring></argsstring>
+        <name>stencil_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/local_stencil.hpp" line="93" column="1" bodyfile="ROCm_Libraries/rocALUTION/src/base/local_stencil.hpp" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrocalution_1_1_local_stencil_1a495b25980018d733ba56594fa0123c4a" prot="private" static="no" mutable="no">
+        <type><ref refid="classrocalution_1_1_host_stencil" kindref="compound">HostStencil</ref>&lt; ValueType &gt; *</type>
+        <definition>HostStencil&lt;ValueType&gt;* rocalution::LocalStencil&lt; ValueType &gt;::stencil_host_</definition>
+        <argsstring></argsstring>
+        <name>stencil_host_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/local_stencil.hpp" line="95" column="1" bodyfile="ROCm_Libraries/rocALUTION/src/base/local_stencil.hpp" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrocalution_1_1_local_stencil_1ae2f1ae111bd6a860a1b587883e3218b7" prot="private" static="no" mutable="no">
+        <type><ref refid="classrocalution_1_1_accelerator_stencil" kindref="compound">AcceleratorStencil</ref>&lt; ValueType &gt; *</type>
+        <definition>AcceleratorStencil&lt;ValueType&gt;* rocalution::LocalStencil&lt; ValueType &gt;::stencil_accel_</definition>
+        <argsstring></argsstring>
+        <name>stencil_accel_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/local_stencil.hpp" line="96" column="1" bodyfile="ROCm_Libraries/rocALUTION/src/base/local_stencil.hpp" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classrocalution_1_1_local_stencil_1a4332e063cc6b7350ea0ba7b29dbec2c5" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class LocalVector&lt; ValueType &gt;</definition>
+        <argsstring></argsstring>
+        <name>LocalVector&lt; ValueType &gt;</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/local_stencil.hpp" line="96" column="1" bodyfile="ROCm_Libraries/rocALUTION/src/base/local_stencil.hpp" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classrocalution_1_1_local_stencil_1ad50ce751e5dafbeb3ca73c65cd542fce" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class GlobalVector&lt; ValueType &gt;</definition>
+        <argsstring></argsstring>
+        <name>GlobalVector&lt; ValueType &gt;</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/local_stencil.hpp" line="96" column="1" bodyfile="ROCm_Libraries/rocALUTION/src/base/local_stencil.hpp" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classrocalution_1_1_local_stencil_1a03f501f3cb041d3de227c31fb10ae142" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>rocalution::LocalStencil&lt; ValueType &gt;::LocalStencil</definition>
+        <argsstring>()</argsstring>
+        <name>LocalStencil</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/local_stencil.hpp" line="61" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_local_stencil_1a5dbfda8bea951c06870c26e3a4637401" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>rocalution::LocalStencil&lt; ValueType &gt;::LocalStencil</definition>
+        <argsstring>(unsigned int type)</argsstring>
+        <name>LocalStencil</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>Initialize a local stencil with a type. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/local_stencil.hpp" line="63" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_local_stencil_1a35abb20d68827b3e515d51445ddb6b9b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual rocalution::LocalStencil&lt; ValueType &gt;::~LocalStencil</definition>
+        <argsstring>()</argsstring>
+        <name>~LocalStencil</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/local_stencil.hpp" line="64" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_local_stencil_1aa3c7b580398079ca5fac493fff9a25ce" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void rocalution::LocalStencil&lt; ValueType &gt;::Info</definition>
+        <argsstring>() const</argsstring>
+        <name>Info</name>
+        <reimplements refid="classrocalution_1_1_base_rocalution_1a62720e4ccdd3879dcf093abc2688076e">Info</reimplements>
+        <briefdescription>
+<para>Print object information. </para>        </briefdescription>
+        <detaileddescription>
+<para><computeroutput>Info</computeroutput> can print object information about any rocALUTION object. This information consists of object properties and backend data.</para><para><simplesect kind="par"><title>Example</title><para><programlisting><codeline><highlight class="normal">mat.Info();</highlight></codeline>
+<codeline><highlight class="normal">vec.Info();</highlight></codeline>
+</programlisting> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/local_stencil.hpp" line="66" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_local_stencil_1a61fa7d018580635e05578162a5d275f4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int rocalution::LocalStencil&lt; ValueType &gt;::GetNDim</definition>
+        <argsstring>(void) const</argsstring>
+        <name>GetNDim</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Return the dimension of the stencil. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/local_stencil.hpp" line="69" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_local_stencil_1a3bf19a55df03c450401f1bee48540a97" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>IndexType2</type>
+        <definition>virtual IndexType2 rocalution::LocalStencil&lt; ValueType &gt;::GetM</definition>
+        <argsstring>(void) const</argsstring>
+        <name>GetM</name>
+        <reimplements refid="classrocalution_1_1_operator_1a6af0e81191e63d15e95b227cd9129c87">GetM</reimplements>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Return the number of rows in the matrix/stencil. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/local_stencil.hpp" line="70" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_local_stencil_1ad8d6ba20012a45dfbee8ac7211f7d05c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>IndexType2</type>
+        <definition>virtual IndexType2 rocalution::LocalStencil&lt; ValueType &gt;::GetN</definition>
+        <argsstring>(void) const</argsstring>
+        <name>GetN</name>
+        <reimplements refid="classrocalution_1_1_operator_1ac155a69301db3035abcd3beac9dbe7ce">GetN</reimplements>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Return the number of columns in the matrix/stencil. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/local_stencil.hpp" line="71" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_local_stencil_1ae18aa3865d0bd503b41665542adbc89d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>IndexType2</type>
+        <definition>virtual IndexType2 rocalution::LocalStencil&lt; ValueType &gt;::GetNnz</definition>
+        <argsstring>(void) const</argsstring>
+        <name>GetNnz</name>
+        <reimplements refid="classrocalution_1_1_operator_1af834a59b334d754e5e803bd6561b675d">GetNnz</reimplements>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Return the number of non-zeros in the matrix/stencil. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/local_stencil.hpp" line="72" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_local_stencil_1ab2eccbd73572aa5dafdde0482e78638a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rocalution::LocalStencil&lt; ValueType &gt;::SetGrid</definition>
+        <argsstring>(int size)</argsstring>
+        <name>SetGrid</name>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>Set the stencil grid size. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/local_stencil.hpp" line="75" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_local_stencil_1a4b3311913e88a61f613a83f08dca1c80" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void rocalution::LocalStencil&lt; ValueType &gt;::Clear</definition>
+        <argsstring>()</argsstring>
+        <name>Clear</name>
+        <reimplements refid="classrocalution_1_1_base_rocalution_1a97c33fd007833bd22cd3ce142cebe06b">Clear</reimplements>
+        <briefdescription>
+<para>Clear (free all data) the object. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/local_stencil.hpp" line="77" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_local_stencil_1a6edab2ff02e64cff943666cb19543d64" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void rocalution::LocalStencil&lt; ValueType &gt;::Apply</definition>
+        <argsstring>(const LocalVector&lt; ValueType &gt; &amp;in, LocalVector&lt; ValueType &gt; *out) const</argsstring>
+        <name>Apply</name>
+        <reimplements refid="classrocalution_1_1_operator_1a8dc56052b7fc57029c7cfc4eb5a8a25b">Apply</reimplements>
+        <param>
+          <type>const <ref refid="classrocalution_1_1_local_vector" kindref="compound">LocalVector</ref>&lt; ValueType &gt; &amp;</type>
+          <declname>in</declname>
+        </param>
+        <param>
+          <type><ref refid="classrocalution_1_1_local_vector" kindref="compound">LocalVector</ref>&lt; ValueType &gt; *</type>
+          <declname>out</declname>
+        </param>
+        <briefdescription>
+<para>Apply the operator, out = Operator(in), where in and out are local vectors. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/local_stencil.hpp" line="79" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_local_stencil_1a2cf176e84fc5582ddb9cfc7218990c85" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void rocalution::LocalStencil&lt; ValueType &gt;::ApplyAdd</definition>
+        <argsstring>(const LocalVector&lt; ValueType &gt; &amp;in, ValueType scalar, LocalVector&lt; ValueType &gt; *out) const</argsstring>
+        <name>ApplyAdd</name>
+        <reimplements refid="classrocalution_1_1_operator_1a9607876a1dc71ab7f4c03ade2e6bc952">ApplyAdd</reimplements>
+        <param>
+          <type>const <ref refid="classrocalution_1_1_local_vector" kindref="compound">LocalVector</ref>&lt; ValueType &gt; &amp;</type>
+          <declname>in</declname>
+        </param>
+        <param>
+          <type>ValueType</type>
+          <declname>scalar</declname>
+        </param>
+        <param>
+          <type><ref refid="classrocalution_1_1_local_vector" kindref="compound">LocalVector</ref>&lt; ValueType &gt; *</type>
+          <declname>out</declname>
+        </param>
+        <briefdescription>
+<para>Apply and add the operator, out += scalar * Operator(in), where in and out are local vectors. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/local_stencil.hpp" line="81" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_local_stencil_1a202674432e0cc298d80ebc64bb2d0971" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void rocalution::LocalStencil&lt; ValueType &gt;::MoveToAccelerator</definition>
+        <argsstring>(void)</argsstring>
+        <name>MoveToAccelerator</name>
+        <reimplements refid="classrocalution_1_1_base_rocalution_1a2238fc9adc895dff8744a5e470b79282">MoveToAccelerator</reimplements>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Move the object to the accelerator backend. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/local_stencil.hpp" line="83" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_local_stencil_1a27d90bd5bc5c26ea28494309dc859791" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void rocalution::LocalStencil&lt; ValueType &gt;::MoveToHost</definition>
+        <argsstring>(void)</argsstring>
+        <name>MoveToHost</name>
+        <reimplements refid="classrocalution_1_1_base_rocalution_1a4e572619edf6570b746c263e3b9e82e9">MoveToHost</reimplements>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Move the object to the host backend. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/local_stencil.hpp" line="84" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classrocalution_1_1_local_stencil_1a21a31db491486b781603aae3edaf8424" prot="protected" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool rocalution::LocalStencil&lt; ValueType &gt;::is_host_</definition>
+        <argsstring>(void) const</argsstring>
+        <name>is_host_</name>
+        <reimplements refid="classrocalution_1_1_base_rocalution_1a4bf61bf87e25d66b63187e21d00e4f2d">is_host_</reimplements>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Return true if the object is on the host. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/local_stencil.hpp" line="87" column="1" bodyfile="ROCm_Libraries/rocALUTION/src/base/local_stencil.hpp" bodystart="87" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_local_stencil_1a2dee7dbdeca9713b9a580b490cabbd89" prot="protected" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool rocalution::LocalStencil&lt; ValueType &gt;::is_accel_</definition>
+        <argsstring>(void) const</argsstring>
+        <name>is_accel_</name>
+        <reimplements refid="classrocalution_1_1_base_rocalution_1a3fd4724cb23b135d6b6528674c3aec14">is_accel_</reimplements>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Return true if the object is on the accelerator. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/local_stencil.hpp" line="88" column="1" bodyfile="ROCm_Libraries/rocALUTION/src/base/local_stencil.hpp" bodystart="88" bodyend="88"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="classrocalution_1_1_local_stencil" kindref="compound">LocalStencil</ref> class. </para>    </briefdescription>
+    <detaileddescription>
+<para>A <ref refid="classrocalution_1_1_local_stencil" kindref="compound">LocalStencil</ref> is called local, because it will always stay on a single system. The system can contain several CPUs via UMA or NUMA memory system or it can contain an accelerator.</para><para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>ValueType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- can be int, float, double, std::complex&lt;float&gt; and std::complex&lt;double&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="61">
+        <label>rocalution::BaseRocalution&lt; ValueType &gt;</label>
+        <link refid="classrocalution_1_1_base_rocalution"/>
+        <childnode refid="62" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="60">
+        <label>rocalution::Operator&lt; ValueType &gt;</label>
+        <link refid="classrocalution_1_1_operator"/>
+        <childnode refid="61" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="62">
+        <label>rocalution::RocalutionObj</label>
+      </node>
+      <node id="59">
+        <label>rocalution::LocalStencil&lt; ValueType &gt;</label>
+        <link refid="classrocalution_1_1_local_stencil"/>
+        <childnode refid="60" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="65">
+        <label>rocalution::BaseRocalution&lt; ValueType &gt;</label>
+        <link refid="classrocalution_1_1_base_rocalution"/>
+        <childnode refid="66" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="64">
+        <label>rocalution::Operator&lt; ValueType &gt;</label>
+        <link refid="classrocalution_1_1_operator"/>
+        <childnode refid="65" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="66">
+        <label>rocalution::RocalutionObj</label>
+      </node>
+      <node id="63">
+        <label>rocalution::LocalStencil&lt; ValueType &gt;</label>
+        <link refid="classrocalution_1_1_local_stencil"/>
+        <childnode refid="64" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="ROCm_Libraries/rocALUTION/src/base/local_vector.hpp" line="43" column="1" bodyfile="ROCm_Libraries/rocALUTION/src/base/local_vector.hpp" bodystart="43" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="classrocalution_1_1_local_stencil_1a6edab2ff02e64cff943666cb19543d64" prot="public" virt="virtual"><scope>rocalution::LocalStencil</scope><name>Apply</name></member>
+      <member refid="classrocalution_1_1_operator_1a4ad4397df83f1fc6af9aecf0cb9af17c" prot="public" virt="virtual" ambiguityscope="rocalution::Operator::"><scope>rocalution::LocalStencil</scope><name>Apply</name></member>
+      <member refid="classrocalution_1_1_local_stencil_1a2cf176e84fc5582ddb9cfc7218990c85" prot="public" virt="virtual"><scope>rocalution::LocalStencil</scope><name>ApplyAdd</name></member>
+      <member refid="classrocalution_1_1_operator_1a87f809dde4c8d7d98fe443c0fb9bc92b" prot="public" virt="virtual" ambiguityscope="rocalution::Operator::"><scope>rocalution::LocalStencil</scope><name>ApplyAdd</name></member>
+      <member refid="classrocalution_1_1_base_rocalution_1ad248c147237baaf809978dba69edf342" prot="public" virt="non-virtual"><scope>rocalution::LocalStencil</scope><name>BaseRocalution</name></member>
+      <member refid="classrocalution_1_1_local_stencil_1a4b3311913e88a61f613a83f08dca1c80" prot="public" virt="virtual"><scope>rocalution::LocalStencil</scope><name>Clear</name></member>
+      <member refid="classrocalution_1_1_base_rocalution_1a85acdb9844b7c6a630f14ace59d99f5d" prot="public" virt="virtual"><scope>rocalution::LocalStencil</scope><name>CloneBackend</name></member>
+      <member refid="classrocalution_1_1_operator_1a47f59b41b12bb76fdc5dbc1c7155e282" prot="public" virt="virtual"><scope>rocalution::LocalStencil</scope><name>GetGhostM</name></member>
+      <member refid="classrocalution_1_1_operator_1a88c39d124082dd9254fe21c0074fea07" prot="public" virt="virtual"><scope>rocalution::LocalStencil</scope><name>GetGhostN</name></member>
+      <member refid="classrocalution_1_1_operator_1ae4d7fedf59d0fb6a2507dde507f7efb7" prot="public" virt="virtual"><scope>rocalution::LocalStencil</scope><name>GetGhostNnz</name></member>
+      <member refid="classrocalution_1_1_operator_1ab070535791b24e8c8a190bca82cb30a3" prot="public" virt="virtual"><scope>rocalution::LocalStencil</scope><name>GetLocalM</name></member>
+      <member refid="classrocalution_1_1_operator_1a63a78d3258db4fdfe74e517484591246" prot="public" virt="virtual"><scope>rocalution::LocalStencil</scope><name>GetLocalN</name></member>
+      <member refid="classrocalution_1_1_operator_1a7900eb19fb5ecb00adb18e4c8b498187" prot="public" virt="virtual"><scope>rocalution::LocalStencil</scope><name>GetLocalNnz</name></member>
+      <member refid="classrocalution_1_1_local_stencil_1a3bf19a55df03c450401f1bee48540a97" prot="public" virt="virtual"><scope>rocalution::LocalStencil</scope><name>GetM</name></member>
+      <member refid="classrocalution_1_1_local_stencil_1ad8d6ba20012a45dfbee8ac7211f7d05c" prot="public" virt="virtual"><scope>rocalution::LocalStencil</scope><name>GetN</name></member>
+      <member refid="classrocalution_1_1_local_stencil_1a61fa7d018580635e05578162a5d275f4" prot="public" virt="non-virtual"><scope>rocalution::LocalStencil</scope><name>GetNDim</name></member>
+      <member refid="classrocalution_1_1_local_stencil_1ae18aa3865d0bd503b41665542adbc89d" prot="public" virt="virtual"><scope>rocalution::LocalStencil</scope><name>GetNnz</name></member>
+      <member refid="classrocalution_1_1_rocalution_obj_1a4bba5aeaf4fd705efc00402f1f6ed40b" prot="protected" virt="non-virtual"><scope>rocalution::LocalStencil</scope><name>global_obj_id_</name></member>
+      <member refid="classrocalution_1_1_local_stencil_1ad50ce751e5dafbeb3ca73c65cd542fce" prot="private" virt="non-virtual"><scope>rocalution::LocalStencil</scope><name>GlobalVector&lt; ValueType &gt;</name></member>
+      <member refid="classrocalution_1_1_local_stencil_1aa3c7b580398079ca5fac493fff9a25ce" prot="public" virt="virtual"><scope>rocalution::LocalStencil</scope><name>Info</name></member>
+      <member refid="classrocalution_1_1_local_stencil_1a2dee7dbdeca9713b9a580b490cabbd89" prot="protected" virt="virtual"><scope>rocalution::LocalStencil</scope><name>is_accel_</name></member>
+      <member refid="classrocalution_1_1_local_stencil_1a21a31db491486b781603aae3edaf8424" prot="protected" virt="virtual"><scope>rocalution::LocalStencil</scope><name>is_host_</name></member>
+      <member refid="classrocalution_1_1_local_stencil_1a03f501f3cb041d3de227c31fb10ae142" prot="public" virt="non-virtual"><scope>rocalution::LocalStencil</scope><name>LocalStencil</name></member>
+      <member refid="classrocalution_1_1_local_stencil_1a5dbfda8bea951c06870c26e3a4637401" prot="public" virt="non-virtual"><scope>rocalution::LocalStencil</scope><name>LocalStencil</name></member>
+      <member refid="classrocalution_1_1_local_stencil_1a4332e063cc6b7350ea0ba7b29dbec2c5" prot="private" virt="non-virtual"><scope>rocalution::LocalStencil</scope><name>LocalVector&lt; ValueType &gt;</name></member>
+      <member refid="classrocalution_1_1_local_stencil_1a202674432e0cc298d80ebc64bb2d0971" prot="public" virt="virtual"><scope>rocalution::LocalStencil</scope><name>MoveToAccelerator</name></member>
+      <member refid="classrocalution_1_1_base_rocalution_1a1c37dbcf976261be544dc6c66502182a" prot="public" virt="virtual"><scope>rocalution::LocalStencil</scope><name>MoveToAcceleratorAsync</name></member>
+      <member refid="classrocalution_1_1_local_stencil_1a27d90bd5bc5c26ea28494309dc859791" prot="public" virt="virtual"><scope>rocalution::LocalStencil</scope><name>MoveToHost</name></member>
+      <member refid="classrocalution_1_1_base_rocalution_1a6491e18ff3f4809b42c3c3c94d1bc1f2" prot="public" virt="virtual"><scope>rocalution::LocalStencil</scope><name>MoveToHostAsync</name></member>
+      <member refid="classrocalution_1_1_local_stencil_1a80b3cdf02eac6f9082c21edd2cba56ae" prot="private" virt="non-virtual"><scope>rocalution::LocalStencil</scope><name>object_name_</name></member>
+      <member refid="classrocalution_1_1_operator_1afcbc2abbfe58ce8c6a3d86a5a48b7fc7" prot="public" virt="non-virtual"><scope>rocalution::LocalStencil</scope><name>Operator</name></member>
+      <member refid="classrocalution_1_1_rocalution_obj_1ad60a8b2047aad74e488c552264fa7737" prot="public" virt="non-virtual"><scope>rocalution::LocalStencil</scope><name>RocalutionObj</name></member>
+      <member refid="classrocalution_1_1_local_stencil_1ab2eccbd73572aa5dafdde0482e78638a" prot="public" virt="non-virtual"><scope>rocalution::LocalStencil</scope><name>SetGrid</name></member>
+      <member refid="classrocalution_1_1_local_stencil_1a32c5fbd14698544d46760e46c56ca32b" prot="private" virt="non-virtual"><scope>rocalution::LocalStencil</scope><name>stencil_</name></member>
+      <member refid="classrocalution_1_1_local_stencil_1ae2f1ae111bd6a860a1b587883e3218b7" prot="private" virt="non-virtual"><scope>rocalution::LocalStencil</scope><name>stencil_accel_</name></member>
+      <member refid="classrocalution_1_1_local_stencil_1a495b25980018d733ba56594fa0123c4a" prot="private" virt="non-virtual"><scope>rocalution::LocalStencil</scope><name>stencil_host_</name></member>
+      <member refid="classrocalution_1_1_base_rocalution_1a67986dbebc9b025e6ac30be4f85f784b" prot="public" virt="virtual"><scope>rocalution::LocalStencil</scope><name>Sync</name></member>
+      <member refid="classrocalution_1_1_base_rocalution_1aad8ac3188091c4683181bfe6d739b7fd" prot="public" virt="virtual"><scope>rocalution::LocalStencil</scope><name>~BaseRocalution</name></member>
+      <member refid="classrocalution_1_1_local_stencil_1a35abb20d68827b3e515d51445ddb6b9b" prot="public" virt="virtual"><scope>rocalution::LocalStencil</scope><name>~LocalStencil</name></member>
+      <member refid="classrocalution_1_1_operator_1a17862759071f26a8bfc2ec7230c5f226" prot="public" virt="virtual"><scope>rocalution::LocalStencil</scope><name>~Operator</name></member>
+      <member refid="classrocalution_1_1_rocalution_obj_1a55a2f93f798cebdda6343b20db959e2d" prot="public" virt="virtual"><scope>rocalution::LocalStencil</scope><name>~RocalutionObj</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

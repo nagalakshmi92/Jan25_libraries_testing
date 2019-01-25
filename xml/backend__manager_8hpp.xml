@@ -7,6 +7,8 @@
     <includes local="no">map</includes>
     <includes local="no">vector</includes>
     <includes local="no">string</includes>
+    <includedby refid="base__rocalution_8hpp" local="yes">ROCm_Libraries/rocALUTION/src/base/base_rocalution.hpp</includedby>
+    <includedby refid="local__matrix_8hpp" local="yes">ROCm_Libraries/rocALUTION/src/base/local_matrix.hpp</includedby>
     <incdepgraph>
       <node id="10">
         <label>ROCm_Libraries/rocALUTION/src/base/backend_manager.hpp</label>
@@ -38,6 +40,74 @@
         <label>iostream</label>
       </node>
     </incdepgraph>
+    <invincdepgraph>
+      <node id="18">
+        <label>ROCm_Libraries/rocALUTION/src/base/parallel_manager.hpp</label>
+        <link refid="parallel__manager_8hpp_source"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>ROCm_Libraries/rocALUTION/src/base/backend_manager.hpp</label>
+        <link refid="backend__manager_8hpp"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>ROCm_Libraries/rocALUTION/src/base/operator.hpp</label>
+        <link refid="operator_8hpp_source"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>ROCm_Libraries/rocALUTION/src/base/global_matrix.hpp</label>
+        <link refid="global__matrix_8hpp_source"/>
+      </node>
+      <node id="25">
+        <label>ROCm_Libraries/rocALUTION/src/base/local_vector.hpp</label>
+        <link refid="local__vector_8hpp_source"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>ROCm_Libraries/rocALUTION/src/base/base_rocalution.hpp</label>
+        <link refid="base__rocalution_8hpp_source"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>ROCm_Libraries/rocALUTION/src/base/local_matrix.hpp</label>
+        <link refid="local__matrix_8hpp_source"/>
+      </node>
+      <node id="19">
+        <label>ROCm_Libraries/rocALUTION/src/base/global_vector.hpp</label>
+        <link refid="global__vector_8hpp_source"/>
+      </node>
+      <node id="23">
+        <label>ROCm_Libraries/rocALUTION/src/base/local_stencil.hpp</label>
+        <link refid="local__stencil_8hpp_source"/>
+      </node>
+      <node id="24">
+        <label>ROCm_Libraries/rocALUTION/src/base/vector.hpp</label>
+        <link refid="vector_8hpp_source"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
     <innerclass refid="classrocalution_1_1_accelerator_vector" prot="public">rocalution::AcceleratorVector</innerclass>
     <innerclass refid="classrocalution_1_1_accelerator_matrix" prot="public">rocalution::AcceleratorMatrix</innerclass>
     <innerclass refid="classrocalution_1_1_host_matrix" prot="public">rocalution::HostMatrix</innerclass>

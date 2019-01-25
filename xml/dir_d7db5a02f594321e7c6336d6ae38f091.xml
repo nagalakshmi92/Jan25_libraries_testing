@@ -3,6 +3,12 @@
   <compounddef id="dir_d7db5a02f594321e7c6336d6ae38f091" kind="dir">
     <compoundname>ROCm_Libraries/rocALUTION/src/base</compoundname>
     <innerfile refid="backend__manager_8hpp">backend_manager.hpp</innerfile>
+    <innerfile refid="base__rocalution_8hpp">base_rocalution.hpp</innerfile>
+    <innerfile refid="global__matrix_8hpp">global_matrix.hpp</innerfile>
+    <innerfile refid="global__vector_8hpp">global_vector.hpp</innerfile>
+    <innerfile refid="local__matrix_8hpp">local_matrix.hpp</innerfile>
+    <innerfile refid="local__stencil_8hpp">local_stencil.hpp</innerfile>
+    <innerfile refid="local__vector_8hpp">local_vector.hpp</innerfile>
     <innerfile refid="operator_8hpp">operator.hpp</innerfile>
     <innerfile refid="parallel__manager_8hpp">parallel_manager.hpp</innerfile>
     <innerfile refid="vector_8hpp">vector.hpp</innerfile>

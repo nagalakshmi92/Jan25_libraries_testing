@@ -2,7 +2,7 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
   <compounddef id="classrocalution_1_1_parallel_manager" kind="class" language="C++" prot="public">
     <compoundname>rocalution::ParallelManager</compoundname>
-    <basecompoundref prot="public" virt="non-virtual">RocalutionObj</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">rocalution::RocalutionObj</basecompoundref>
     <includes refid="parallel__manager_8hpp" local="no">parallel_manager.hpp</includes>
       <sectiondef kind="private-attrib">
       <memberdef kind="variable" id="classrocalution_1_1_parallel_manager_1acc2db640bbd8ad02609f5b3789975714" prot="private" static="no" mutable="no">
@@ -658,25 +658,25 @@
     <detaileddescription>
 <para>The parallel manager class handles the communication and the mapping of the global operators. Each global operator and vector need to be initialized with a valid parallel manager in order to perform any operation. For many distributed simulations, the underlying operator is already distributed. This information need to be passed to the parallel manager. </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="22">
+      <node id="85">
+        <label>rocalution::RocalutionObj</label>
+      </node>
+      <node id="84">
         <label>rocalution::ParallelManager</label>
         <link refid="classrocalution_1_1_parallel_manager"/>
-        <childnode refid="23" relation="public-inheritance">
+        <childnode refid="85" relation="public-inheritance">
         </childnode>
-      </node>
-      <node id="23">
-        <label>RocalutionObj</label>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="24">
+      <node id="87">
+        <label>rocalution::RocalutionObj</label>
+      </node>
+      <node id="86">
         <label>rocalution::ParallelManager</label>
         <link refid="classrocalution_1_1_parallel_manager"/>
-        <childnode refid="25" relation="public-inheritance">
+        <childnode refid="87" relation="public-inheritance">
         </childnode>
-      </node>
-      <node id="25">
-        <label>RocalutionObj</label>
       </node>
     </collaborationgraph>
     <location file="ROCm_Libraries/rocALUTION/src/base/parallel_manager.hpp" line="50" column="1" bodyfile="ROCm_Libraries/rocALUTION/src/base/parallel_manager.hpp" bodystart="49" bodyend="145"/>
@@ -689,6 +689,7 @@
       <member refid="classrocalution_1_1_parallel_manager_1a504931964a2b65a5cac1f7acc08bd5b1" prot="public" virt="non-virtual"><scope>rocalution::ParallelManager</scope><name>GetNumProcs</name></member>
       <member refid="classrocalution_1_1_parallel_manager_1a601ceb971f16e0f44351f0953bd403c5" prot="public" virt="non-virtual"><scope>rocalution::ParallelManager</scope><name>GetNumReceivers</name></member>
       <member refid="classrocalution_1_1_parallel_manager_1a79f4ba4c2f552fbb5355bca1e11858ca" prot="public" virt="non-virtual"><scope>rocalution::ParallelManager</scope><name>GetNumSenders</name></member>
+      <member refid="classrocalution_1_1_rocalution_obj_1a4bba5aeaf4fd705efc00402f1f6ed40b" prot="protected" virt="non-virtual"><scope>rocalution::ParallelManager</scope><name>global_obj_id_</name></member>
       <member refid="classrocalution_1_1_parallel_manager_1a6f4d9ece34c486dd7d6747b86865379b" prot="private" virt="non-virtual"><scope>rocalution::ParallelManager</scope><name>global_size_</name></member>
       <member refid="classrocalution_1_1_parallel_manager_1abb67a62852ee7c728a306d175435b362" prot="private" virt="non-virtual"><scope>rocalution::ParallelManager</scope><name>GlobalMatrix&lt; double &gt;</name></member>
       <member refid="classrocalution_1_1_parallel_manager_1aa14497cf8d931cd5c3213671011bc22a" prot="private" virt="non-virtual"><scope>rocalution::ParallelManager</scope><name>GlobalMatrix&lt; float &gt;</name></member>
@@ -711,6 +712,7 @@
       <member refid="classrocalution_1_1_parallel_manager_1aac939b7fb15237270b51f315feb1fec5" prot="private" virt="non-virtual"><scope>rocalution::ParallelManager</scope><name>recv_index_size_</name></member>
       <member refid="classrocalution_1_1_parallel_manager_1a7758ec85441845c804d6e45e7bc0c27f" prot="private" virt="non-virtual"><scope>rocalution::ParallelManager</scope><name>recv_offset_index_</name></member>
       <member refid="classrocalution_1_1_parallel_manager_1a7edbf3d6529afd5aabfbd3987f0726db" prot="private" virt="non-virtual"><scope>rocalution::ParallelManager</scope><name>recvs_</name></member>
+      <member refid="classrocalution_1_1_rocalution_obj_1ad60a8b2047aad74e488c552264fa7737" prot="public" virt="non-virtual"><scope>rocalution::ParallelManager</scope><name>RocalutionObj</name></member>
       <member refid="classrocalution_1_1_parallel_manager_1a5d2a8a59b85e7f2be5e455e168b14a7b" prot="private" virt="non-virtual"><scope>rocalution::ParallelManager</scope><name>send_index_size_</name></member>
       <member refid="classrocalution_1_1_parallel_manager_1ac5b436a23d342a27dc116b4d67771cc8" prot="private" virt="non-virtual"><scope>rocalution::ParallelManager</scope><name>send_offset_index_</name></member>
       <member refid="classrocalution_1_1_parallel_manager_1a6cdc0d654b31a016b3e7270229a4e25d" prot="private" virt="non-virtual"><scope>rocalution::ParallelManager</scope><name>sends_</name></member>
@@ -723,6 +725,7 @@
       <member refid="classrocalution_1_1_parallel_manager_1a33a713fa35d63e581ec464fe175d3776" prot="public" virt="non-virtual"><scope>rocalution::ParallelManager</scope><name>Status</name></member>
       <member refid="classrocalution_1_1_parallel_manager_1af0b697c6a34544b3091c909def74eb9c" prot="public" virt="non-virtual"><scope>rocalution::ParallelManager</scope><name>WriteFileASCII</name></member>
       <member refid="classrocalution_1_1_parallel_manager_1a52203daa37007acaf57fe708147511a2" prot="public" virt="non-virtual"><scope>rocalution::ParallelManager</scope><name>~ParallelManager</name></member>
+      <member refid="classrocalution_1_1_rocalution_obj_1a55a2f93f798cebdda6343b20db959e2d" prot="public" virt="virtual"><scope>rocalution::ParallelManager</scope><name>~RocalutionObj</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_a1ee1ab676b34c8c7f965a7636587e0a" kind="dir">
+    <compoundname>ROCm_Libraries/rocALUTION/src/solvers/multigrid</compoundname>
+    <innerfile refid="base__amg_8cpp">base_amg.cpp</innerfile>
+    <innerfile refid="base__multigrid_8cpp">base_multigrid.cpp</innerfile>
+    <innerfile refid="global__pairwise__amg_8cpp">global_pairwise_amg.cpp</innerfile>
+    <innerfile refid="multigrid_8cpp">multigrid.cpp</innerfile>
+    <innerfile refid="pairwise__amg_8cpp">pairwise_amg.cpp</innerfile>
+    <innerfile refid="ruge__stueben__amg_8cpp">ruge_stueben_amg.cpp</innerfile>
+    <innerfile refid="smoothed__amg_8cpp">smoothed_amg.cpp</innerfile>
+    <innerfile refid="unsmoothed__amg_8cpp">unsmoothed_amg.cpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="ROCm_Libraries/rocALUTION/src/solvers/multigrid/"/>
+  </compounddef>
+</doxygen>

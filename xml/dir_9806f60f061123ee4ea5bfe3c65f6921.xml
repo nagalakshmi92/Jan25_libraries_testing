@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_9806f60f061123ee4ea5bfe3c65f6921" kind="dir">
+    <compoundname>ROCm_Libraries/rocALUTION/src/solvers/preconditioners</compoundname>
+    <innerfile refid="preconditioner_8cpp">preconditioner.cpp</innerfile>
+    <innerfile refid="preconditioner__ai_8cpp">preconditioner_ai.cpp</innerfile>
+    <innerfile refid="preconditioner__as_8cpp">preconditioner_as.cpp</innerfile>
+    <innerfile refid="preconditioner__blockjacobi_8cpp">preconditioner_blockjacobi.cpp</innerfile>
+    <innerfile refid="preconditioner__blockprecond_8cpp">preconditioner_blockprecond.cpp</innerfile>
+    <innerfile refid="preconditioner__multicolored_8cpp">preconditioner_multicolored.cpp</innerfile>
+    <innerfile refid="preconditioner__multicolored__gs_8cpp">preconditioner_multicolored_gs.cpp</innerfile>
+    <innerfile refid="preconditioner__multicolored__ilu_8cpp">preconditioner_multicolored_ilu.cpp</innerfile>
+    <innerfile refid="preconditioner__multielimination_8cpp">preconditioner_multielimination.cpp</innerfile>
+    <innerfile refid="preconditioner__saddlepoint_8cpp">preconditioner_saddlepoint.cpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="ROCm_Libraries/rocALUTION/src/solvers/preconditioners/"/>
+  </compounddef>
+</doxygen>

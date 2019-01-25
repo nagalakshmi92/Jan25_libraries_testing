@@ -3,14 +3,25 @@
   <compounddef id="namespacerocalution" kind="namespace" language="C++">
     <compoundname>rocalution</compoundname>
     <innerclass refid="classrocalution_1_1_accelerator_matrix" prot="public">rocalution::AcceleratorMatrix</innerclass>
+    <innerclass refid="classrocalution_1_1_accelerator_stencil" prot="public">rocalution::AcceleratorStencil</innerclass>
     <innerclass refid="classrocalution_1_1_accelerator_vector" prot="public">rocalution::AcceleratorVector</innerclass>
+    <innerclass refid="classrocalution_1_1_base_matrix" prot="public">rocalution::BaseMatrix</innerclass>
+    <innerclass refid="classrocalution_1_1_base_rocalution" prot="public">rocalution::BaseRocalution</innerclass>
+    <innerclass refid="classrocalution_1_1_base_stencil" prot="public">rocalution::BaseStencil</innerclass>
+    <innerclass refid="classrocalution_1_1_base_vector" prot="public">rocalution::BaseVector</innerclass>
     <innerclass refid="classrocalution_1_1_global_matrix" prot="public">rocalution::GlobalMatrix</innerclass>
     <innerclass refid="classrocalution_1_1_global_vector" prot="public">rocalution::GlobalVector</innerclass>
     <innerclass refid="classrocalution_1_1_host_matrix" prot="public">rocalution::HostMatrix</innerclass>
+    <innerclass refid="classrocalution_1_1_host_stencil" prot="public">rocalution::HostStencil</innerclass>
+    <innerclass refid="classrocalution_1_1_host_vector" prot="public">rocalution::HostVector</innerclass>
+    <innerclass refid="classrocalution_1_1_local_matrix" prot="public">rocalution::LocalMatrix</innerclass>
+    <innerclass refid="classrocalution_1_1_local_stencil" prot="public">rocalution::LocalStencil</innerclass>
     <innerclass refid="classrocalution_1_1_local_vector" prot="public">rocalution::LocalVector</innerclass>
     <innerclass refid="classrocalution_1_1_operator" prot="public">rocalution::Operator</innerclass>
     <innerclass refid="classrocalution_1_1_parallel_manager" prot="public">rocalution::ParallelManager</innerclass>
     <innerclass refid="structrocalution_1_1_rocalution___backend___descriptor" prot="public">rocalution::Rocalution_Backend_Descriptor</innerclass>
+    <innerclass refid="structrocalution_1_1_rocalution___object___data" prot="private">rocalution::Rocalution_Object_Data</innerclass>
+    <innerclass refid="classrocalution_1_1_rocalution_obj" prot="private">rocalution::RocalutionObj</innerclass>
     <innerclass refid="classrocalution_1_1_vector" prot="public">rocalution::Vector</innerclass>
       <sectiondef kind="enum">
       <memberdef kind="enum" id="backend__manager_8hpp_1a4151648a06269c44d03bd90974a9dfcb" prot="public" static="no">
@@ -79,6 +90,19 @@
         <inbodydescription>
         </inbodydescription>
         <location file="ROCm_Libraries/rocALUTION/src/base/backend_manager.hpp" line="94" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="base__rocalution_8hpp_1a3b510565699bf127449736ba1e56a362" prot="private" static="no" mutable="no">
+        <type>struct Rocalution_Object_Data</type>
+        <definition>struct Rocalution_Object_Data rocalution::Rocalution_Object_Data_Tracking</definition>
+        <argsstring></argsstring>
+        <name>Rocalution_Object_Data_Tracking</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/base_rocalution.hpp" line="350" column="1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
@@ -553,6 +577,158 @@
         <inbodydescription>
         </inbodydescription>
         <location file="ROCm_Libraries/rocALUTION/src/base/backend_manager.hpp" line="288" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="allocate__free_8hpp_1afedca46943a41c98cad95870fa180526" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename DataType</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void rocalution::allocate_host</definition>
+        <argsstring>(int size, DataType **ptr)</argsstring>
+        <name>allocate_host</name>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>DataType **</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+<para>Allocate buffer on the host. </para>        </briefdescription>
+        <detaileddescription>
+<para><computeroutput>allocate_host</computeroutput> allocates a buffer on the host.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of elements the buffer need to be allocated for </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the position in memory where the buffer should be allocated, it is expected that <computeroutput>*ptr</computeroutput> == <computeroutput>NULL</computeroutput> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>DataType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>can be char, int, unsigned int, float, double, std::complex&lt;float&gt; or std::complex&lt;double&gt;. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/utils/allocate_free.hpp" line="44" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="allocate__free_8hpp_1a020251e6c31a4c642dd0181c5022c9ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename DataType</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void rocalution::free_host</definition>
+        <argsstring>(DataType **ptr)</argsstring>
+        <name>free_host</name>
+        <param>
+          <type>DataType **</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+<para>Free buffer on the host. </para>        </briefdescription>
+        <detaileddescription>
+<para><computeroutput>free_host</computeroutput> deallocates a buffer on the host. <computeroutput>*ptr</computeroutput> will be set to NULL after successful deallocation.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the position in memory where the buffer should be deallocated, it is expected that <computeroutput>*ptr</computeroutput> != <computeroutput>NULL</computeroutput> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>DataType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>can be char, int, unsigned int, float, double, std::complex&lt;float&gt; or std::complex&lt;double&gt;. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/utils/allocate_free.hpp" line="60" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="allocate__free_8hpp_1aeedb5b330f76db3b821bdfa7eaa60351" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename DataType</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void rocalution::set_to_zero_host</definition>
+        <argsstring>(int size, DataType *ptr)</argsstring>
+        <name>set_to_zero_host</name>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>DataType *</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+<para>Set a host buffer to zero. </para>        </briefdescription>
+        <detaileddescription>
+<para><computeroutput>set_to_zero_host</computeroutput> sets a host buffer to zero.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of elements </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the host buffer</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>DataType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>can be char, int, unsigned int, float, double, std::complex&lt;float&gt; or std::complex&lt;double&gt;. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/utils/allocate_free.hpp" line="76" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="time__functions_8hpp_1af3ea06cd4a7a8e0cc12b2255b2779ee3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double rocalution::rocalution_time</definition>
+        <argsstring>(void)</argsstring>
+        <name>rocalution_time</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Return current time in microseconds. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/utils/time_functions.hpp" line="32" column="1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

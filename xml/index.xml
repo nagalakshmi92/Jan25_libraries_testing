@@ -2,7 +2,47 @@
 <doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.13">
   <compound refid="classrocalution_1_1_accelerator_matrix" kind="class"><name>rocalution::AcceleratorMatrix</name>
   </compound>
+  <compound refid="classrocalution_1_1_accelerator_stencil" kind="class"><name>rocalution::AcceleratorStencil</name>
+  </compound>
   <compound refid="classrocalution_1_1_accelerator_vector" kind="class"><name>rocalution::AcceleratorVector</name>
+  </compound>
+  <compound refid="classrocalution_1_1_base_matrix" kind="class"><name>rocalution::BaseMatrix</name>
+  </compound>
+  <compound refid="classrocalution_1_1_base_rocalution" kind="class"><name>rocalution::BaseRocalution</name>
+    <member refid="classrocalution_1_1_base_rocalution_1a5d818c77bc906d543c44d441bb589b46" kind="variable"><name>object_name_</name></member>
+    <member refid="classrocalution_1_1_base_rocalution_1a5f6459b7ee330d2d351f290bd5a9ef85" kind="variable"><name>pm_</name></member>
+    <member refid="classrocalution_1_1_base_rocalution_1ad5b6ffcc5ba6671893b4cb0e9898d16d" kind="variable"><name>local_backend_</name></member>
+    <member refid="classrocalution_1_1_base_rocalution_1a84eb0472b2c33effc351f22246942c3b" kind="variable"><name>asyncf_</name></member>
+    <member refid="classrocalution_1_1_base_rocalution_1a0707cf2609c0a995733e6f64ee260fc7" kind="friend"><name>BaseRocalution&lt; double &gt;</name></member>
+    <member refid="classrocalution_1_1_base_rocalution_1a2a7ef0960cf10545799ae63c478837c0" kind="friend"><name>BaseRocalution&lt; float &gt;</name></member>
+    <member refid="classrocalution_1_1_base_rocalution_1aeb7829fa19e28ba0bb9a2f272cf13642" kind="friend"><name>BaseRocalution&lt; std::complex&lt; double &gt; &gt;</name></member>
+    <member refid="classrocalution_1_1_base_rocalution_1ad3347ee9b7dae9c3a7bee7642f92639a" kind="friend"><name>BaseRocalution&lt; std::complex&lt; float &gt; &gt;</name></member>
+    <member refid="classrocalution_1_1_base_rocalution_1a16614e1990e01960bfc1152e91269e30" kind="friend"><name>BaseRocalution&lt; int &gt;</name></member>
+    <member refid="classrocalution_1_1_base_rocalution_1a7db0f2130f9b62f4fa005ed150e5db2c" kind="friend"><name>GlobalVector&lt; int &gt;</name></member>
+    <member refid="classrocalution_1_1_base_rocalution_1ad2e8267f9dccb1a2d96686124948ad72" kind="friend"><name>GlobalVector&lt; float &gt;</name></member>
+    <member refid="classrocalution_1_1_base_rocalution_1a8db423d2cb6277ff6e26d8312e61233b" kind="friend"><name>GlobalVector&lt; double &gt;</name></member>
+    <member refid="classrocalution_1_1_base_rocalution_1acee9dca56448de1a0128636e188c5a2c" kind="friend"><name>GlobalMatrix&lt; int &gt;</name></member>
+    <member refid="classrocalution_1_1_base_rocalution_1aa14497cf8d931cd5c3213671011bc22a" kind="friend"><name>GlobalMatrix&lt; float &gt;</name></member>
+    <member refid="classrocalution_1_1_base_rocalution_1abb67a62852ee7c728a306d175435b362" kind="friend"><name>GlobalMatrix&lt; double &gt;</name></member>
+    <member refid="classrocalution_1_1_base_rocalution_1ad248c147237baaf809978dba69edf342" kind="function"><name>BaseRocalution</name></member>
+    <member refid="classrocalution_1_1_base_rocalution_1aad8ac3188091c4683181bfe6d739b7fd" kind="function"><name>~BaseRocalution</name></member>
+    <member refid="classrocalution_1_1_base_rocalution_1a2238fc9adc895dff8744a5e470b79282" kind="function"><name>MoveToAccelerator</name></member>
+    <member refid="classrocalution_1_1_base_rocalution_1a4e572619edf6570b746c263e3b9e82e9" kind="function"><name>MoveToHost</name></member>
+    <member refid="classrocalution_1_1_base_rocalution_1a1c37dbcf976261be544dc6c66502182a" kind="function"><name>MoveToAcceleratorAsync</name></member>
+    <member refid="classrocalution_1_1_base_rocalution_1a6491e18ff3f4809b42c3c3c94d1bc1f2" kind="function"><name>MoveToHostAsync</name></member>
+    <member refid="classrocalution_1_1_base_rocalution_1a67986dbebc9b025e6ac30be4f85f784b" kind="function"><name>Sync</name></member>
+    <member refid="classrocalution_1_1_base_rocalution_1a85acdb9844b7c6a630f14ace59d99f5d" kind="function"><name>CloneBackend</name></member>
+    <member refid="classrocalution_1_1_base_rocalution_1a62720e4ccdd3879dcf093abc2688076e" kind="function"><name>Info</name></member>
+    <member refid="classrocalution_1_1_base_rocalution_1a97c33fd007833bd22cd3ce142cebe06b" kind="function"><name>Clear</name></member>
+    <member refid="classrocalution_1_1_base_rocalution_1a55a3855714fd3d386ca153759aa0f9d5" kind="function"><name>BaseRocalution</name></member>
+    <member refid="classrocalution_1_1_base_rocalution_1ab2140943ac9f738f67ec64da56c179ec" kind="function"><name>operator=</name></member>
+    <member refid="classrocalution_1_1_base_rocalution_1a1383fa7af442dd30e92e8aa7185907e8" kind="function"><name>CloneBackend</name></member>
+    <member refid="classrocalution_1_1_base_rocalution_1a4bf61bf87e25d66b63187e21d00e4f2d" kind="function"><name>is_host_</name></member>
+    <member refid="classrocalution_1_1_base_rocalution_1a3fd4724cb23b135d6b6528674c3aec14" kind="function"><name>is_accel_</name></member>
+  </compound>
+  <compound refid="classrocalution_1_1_base_stencil" kind="class"><name>rocalution::BaseStencil</name>
+  </compound>
+  <compound refid="classrocalution_1_1_base_vector" kind="class"><name>rocalution::BaseVector</name>
   </compound>
   <compound refid="structdim3" kind="struct"><name>dim3</name>
     <member refid="structdim3_1ac866c05f83a28dac20a153fc65b3b16c" kind="variable"><name>x</name></member>
@@ -10,8 +50,133 @@
     <member refid="structdim3_1a866e38993ecc4e76fd47311236c16b04" kind="variable"><name>z</name></member>
   </compound>
   <compound refid="classrocalution_1_1_global_matrix" kind="class"><name>rocalution::GlobalMatrix</name>
+    <member refid="classrocalution_1_1_global_matrix_1a6c0bad5e38e76fae726d93c33b818e49" kind="variable"><name>nnz_</name></member>
+    <member refid="classrocalution_1_1_global_matrix_1a7a917a710acd01a5bc53354d048a2424" kind="variable"><name>matrix_interior_</name></member>
+    <member refid="classrocalution_1_1_global_matrix_1a70e5ef92a6a37bc87ee470778f1bb9a1" kind="variable"><name>matrix_ghost_</name></member>
+    <member refid="classrocalution_1_1_global_matrix_1ad50ce751e5dafbeb3ca73c65cd542fce" kind="friend"><name>GlobalVector&lt; ValueType &gt;</name></member>
+    <member refid="classrocalution_1_1_global_matrix_1af6b5193a9183697399f1cfe579f62ce8" kind="friend"><name>LocalMatrix&lt; ValueType &gt;</name></member>
+    <member refid="classrocalution_1_1_global_matrix_1a4332e063cc6b7350ea0ba7b29dbec2c5" kind="friend"><name>LocalVector&lt; ValueType &gt;</name></member>
+    <member refid="classrocalution_1_1_global_matrix_1a87e57da1892018bbfef53305e614aeee" kind="function"><name>GlobalMatrix</name></member>
+    <member refid="classrocalution_1_1_global_matrix_1a239d1b9acaebee90bcafc46dba849dd5" kind="function"><name>GlobalMatrix</name></member>
+    <member refid="classrocalution_1_1_global_matrix_1a55127cdfe0a768db235eff066f8ff65b" kind="function"><name>~GlobalMatrix</name></member>
+    <member refid="classrocalution_1_1_global_matrix_1a8932d6188eac1af1b17b4a2f9f314ae7" kind="function"><name>GetM</name></member>
+    <member refid="classrocalution_1_1_global_matrix_1a00a41023e373bbc9e1a3949fecdb25c2" kind="function"><name>GetN</name></member>
+    <member refid="classrocalution_1_1_global_matrix_1a1829ae55194f1ebdb8988b0cd0bdbb5c" kind="function"><name>GetNnz</name></member>
+    <member refid="classrocalution_1_1_global_matrix_1a8d495da832312553ce87eba9e545d645" kind="function"><name>GetLocalM</name></member>
+    <member refid="classrocalution_1_1_global_matrix_1af500f5c9e18f923a5f1a98c2bfa66067" kind="function"><name>GetLocalN</name></member>
+    <member refid="classrocalution_1_1_global_matrix_1aea3b976ce5d334edd709756db2ad968d" kind="function"><name>GetLocalNnz</name></member>
+    <member refid="classrocalution_1_1_global_matrix_1aca83e998b4631b863849ba6f3186bcee" kind="function"><name>GetGhostM</name></member>
+    <member refid="classrocalution_1_1_global_matrix_1a8e9d2f67a90178055b7020b1059f7f47" kind="function"><name>GetGhostN</name></member>
+    <member refid="classrocalution_1_1_global_matrix_1a29ebbf7d43bb58b0b160c493200240c4" kind="function"><name>GetGhostNnz</name></member>
+    <member refid="classrocalution_1_1_global_matrix_1aaea5820fdc34b332ec60da1fa53fd5c7" kind="function"><name>MoveToAccelerator</name></member>
+    <member refid="classrocalution_1_1_global_matrix_1a95d5a480866e92862069e81ab3c68c24" kind="function"><name>MoveToHost</name></member>
+    <member refid="classrocalution_1_1_global_matrix_1a4e38a9f74b2bfbabfcfc3bba8a74008d" kind="function"><name>Info</name></member>
+    <member refid="classrocalution_1_1_global_matrix_1a870b6dec8536dc61b4c0476222ed28ca" kind="function"><name>Check</name></member>
+    <member refid="classrocalution_1_1_global_matrix_1a57abf518a59637c1dd680fcb08e91f20" kind="function"><name>AllocateCSR</name></member>
+    <member refid="classrocalution_1_1_global_matrix_1a1776519a7bd69f17a9a758109deed5b7" kind="function"><name>AllocateCOO</name></member>
+    <member refid="classrocalution_1_1_global_matrix_1a8cee4fcfe4f83a3af8d2b8bb5a7c1dc1" kind="function"><name>Clear</name></member>
+    <member refid="classrocalution_1_1_global_matrix_1a235ba2d1e7d61973cb6afb7b31e63b41" kind="function"><name>SetParallelManager</name></member>
+    <member refid="classrocalution_1_1_global_matrix_1adb74647122b335e93dc07efba6dd1ffa" kind="function"><name>SetDataPtrCSR</name></member>
+    <member refid="classrocalution_1_1_global_matrix_1abe4660e4b221c7b5ea0dbefafaf42737" kind="function"><name>SetDataPtrCOO</name></member>
+    <member refid="classrocalution_1_1_global_matrix_1aa77e5385d0cfaf8b93ee907388eefbfb" kind="function"><name>SetLocalDataPtrCSR</name></member>
+    <member refid="classrocalution_1_1_global_matrix_1a9b42628b4474eacbc2ed873664a4d0c2" kind="function"><name>SetLocalDataPtrCOO</name></member>
+    <member refid="classrocalution_1_1_global_matrix_1a1519578af67b67dcd088696d2b29cbff" kind="function"><name>SetGhostDataPtrCSR</name></member>
+    <member refid="classrocalution_1_1_global_matrix_1a4e77b2d884891c1a753cd40a246850a9" kind="function"><name>SetGhostDataPtrCOO</name></member>
+    <member refid="classrocalution_1_1_global_matrix_1a2eb0842687f4b546441a611ce7a0eb11" kind="function"><name>LeaveDataPtrCSR</name></member>
+    <member refid="classrocalution_1_1_global_matrix_1a0c80178f6e9496e7c8a17958354ef370" kind="function"><name>LeaveDataPtrCOO</name></member>
+    <member refid="classrocalution_1_1_global_matrix_1acf7aa8fda160287b78e8cb0e81327737" kind="function"><name>LeaveLocalDataPtrCSR</name></member>
+    <member refid="classrocalution_1_1_global_matrix_1a8ca7debf70f86214860b9fc614f1dff4" kind="function"><name>LeaveLocalDataPtrCOO</name></member>
+    <member refid="classrocalution_1_1_global_matrix_1a9ec19c7b90fd098db95b4c453f35043a" kind="function"><name>LeaveGhostDataPtrCSR</name></member>
+    <member refid="classrocalution_1_1_global_matrix_1a1c309c717ca2a28a9ec2f0495499ea29" kind="function"><name>LeaveGhostDataPtrCOO</name></member>
+    <member refid="classrocalution_1_1_global_matrix_1ae7cbc73a5ecf2acc932687afeffa3f05" kind="function"><name>CloneFrom</name></member>
+    <member refid="classrocalution_1_1_global_matrix_1a634e35f823363d5495a88df1a80f95ac" kind="function"><name>CopyFrom</name></member>
+    <member refid="classrocalution_1_1_global_matrix_1ac0a2733a5a4642fb29a20ca2f2f9eb55" kind="function"><name>ConvertToCSR</name></member>
+    <member refid="classrocalution_1_1_global_matrix_1afae4cfc7856dd52c6f87f31ca0fb318e" kind="function"><name>ConvertToMCSR</name></member>
+    <member refid="classrocalution_1_1_global_matrix_1ae722d756c1f26bb801a336ecf7813598" kind="function"><name>ConvertToBCSR</name></member>
+    <member refid="classrocalution_1_1_global_matrix_1a608a96dbfe9533945447aebfd26275e2" kind="function"><name>ConvertToCOO</name></member>
+    <member refid="classrocalution_1_1_global_matrix_1a86604a4ce8a1d53b03b96eaeb66fcfae" kind="function"><name>ConvertToELL</name></member>
+    <member refid="classrocalution_1_1_global_matrix_1ad4bc3367ffc225d98cd6070fadf9009d" kind="function"><name>ConvertToDIA</name></member>
+    <member refid="classrocalution_1_1_global_matrix_1a465ecd4ec49b3652632a43d4d85bb6af" kind="function"><name>ConvertToHYB</name></member>
+    <member refid="classrocalution_1_1_global_matrix_1a7b6da67732d07cd28ba630f51ee9e2a6" kind="function"><name>ConvertToDENSE</name></member>
+    <member refid="classrocalution_1_1_global_matrix_1ae615b1716a2a1021ee314a131a9fdf7d" kind="function"><name>ConvertTo</name></member>
+    <member refid="classrocalution_1_1_global_matrix_1abdfd9065b7efe135448032b8c2577c69" kind="function"><name>Apply</name></member>
+    <member refid="classrocalution_1_1_global_matrix_1a5be99571408e159d1ed3ece42aff4f03" kind="function"><name>ApplyAdd</name></member>
+    <member refid="classrocalution_1_1_global_matrix_1a0481a22957dc085d8ca1d244fa9ecea3" kind="function"><name>ReadFileMTX</name></member>
+    <member refid="classrocalution_1_1_global_matrix_1a42ffc73504340c27f2ca6b03cf0eba39" kind="function"><name>WriteFileMTX</name></member>
+    <member refid="classrocalution_1_1_global_matrix_1aff6ad8d5361550f1fb8fa4697acc5c04" kind="function"><name>ReadFileCSR</name></member>
+    <member refid="classrocalution_1_1_global_matrix_1ae3c9250612a612248f4e57810b6e3025" kind="function"><name>WriteFileCSR</name></member>
+    <member refid="classrocalution_1_1_global_matrix_1ae0e7123ccd0600ff538e2db868885a45" kind="function"><name>Sort</name></member>
+    <member refid="classrocalution_1_1_global_matrix_1a044d23c3e411d5034262acb28a4c1176" kind="function"><name>ExtractInverseDiagonal</name></member>
+    <member refid="classrocalution_1_1_global_matrix_1a7c30c6acb7080aea1d2272e7467da276" kind="function"><name>Scale</name></member>
+    <member refid="classrocalution_1_1_global_matrix_1a21b06650c4c022d8414e49cf2b90b98b" kind="function"><name>InitialPairwiseAggregation</name></member>
+    <member refid="classrocalution_1_1_global_matrix_1a5aaae97a058dd30859f6a4ab5d9babaf" kind="function"><name>FurtherPairwiseAggregation</name></member>
+    <member refid="classrocalution_1_1_global_matrix_1a891fe800ad6dead789354765471e9965" kind="function"><name>CoarsenOperator</name></member>
+    <member refid="classrocalution_1_1_global_matrix_1a06388f5fee7036aafbc89c5e3cccad8d" kind="function"><name>GetInterior</name></member>
+    <member refid="classrocalution_1_1_global_matrix_1a288b50d8be6f7e8673a6847cf8505b8f" kind="function"><name>GetGhost</name></member>
+    <member refid="classrocalution_1_1_global_matrix_1a4bd38b6e13c7a46e50cd18b53a96b96b" kind="function"><name>is_host_</name></member>
+    <member refid="classrocalution_1_1_global_matrix_1aba4776a93e5b76ddad6d8f57ec2895a1" kind="function"><name>is_accel_</name></member>
   </compound>
   <compound refid="classrocalution_1_1_global_vector" kind="class"><name>rocalution::GlobalVector</name>
+    <member refid="classrocalution_1_1_global_vector_1a66a51fc46b0922e9040c810d2c995c84" kind="variable"><name>recv_event_</name></member>
+    <member refid="classrocalution_1_1_global_vector_1a26732da1fcaa0bb71b901484d513110b" kind="variable"><name>send_event_</name></member>
+    <member refid="classrocalution_1_1_global_vector_1a538cfe2eb216f22b2597c3884eb4f400" kind="variable"><name>recv_boundary_</name></member>
+    <member refid="classrocalution_1_1_global_vector_1ad61d87e1ee788968ec82fbebe204bbb3" kind="variable"><name>send_boundary_</name></member>
+    <member refid="classrocalution_1_1_global_vector_1a890083b74e586f7f44cb64bea5c0d5ff" kind="variable"><name>vector_interior_</name></member>
+    <member refid="classrocalution_1_1_global_vector_1abf2424bc8bdfdfd4eda299840c11bc07" kind="variable"><name>vector_ghost_</name></member>
+    <member refid="classrocalution_1_1_global_vector_1af6b5193a9183697399f1cfe579f62ce8" kind="friend"><name>LocalMatrix&lt; ValueType &gt;</name></member>
+    <member refid="classrocalution_1_1_global_vector_1a350700fdc95d2918442f14af47bb3ff4" kind="friend"><name>GlobalMatrix&lt; ValueType &gt;</name></member>
+    <member refid="classrocalution_1_1_global_vector_1aa3d0e25f52cd44c8a4977fb38f71dc4b" kind="friend"><name>BaseRocalution&lt; ValueType &gt;</name></member>
+    <member refid="classrocalution_1_1_global_vector_1af6cb549a394eca6c0eb0eb3855ec6471" kind="function"><name>GlobalVector</name></member>
+    <member refid="classrocalution_1_1_global_vector_1a7c57816804998b0e6de83a6db9d57970" kind="function"><name>GlobalVector</name></member>
+    <member refid="classrocalution_1_1_global_vector_1a405dfba2b12b05f2e7b2490c5ec3c7bf" kind="function"><name>~GlobalVector</name></member>
+    <member refid="classrocalution_1_1_global_vector_1a94d52c5d6af6d72ad95fd40c3b4311f5" kind="function"><name>MoveToAccelerator</name></member>
+    <member refid="classrocalution_1_1_global_vector_1ac3d2919284a9b71fad591e356e357ffe" kind="function"><name>MoveToHost</name></member>
+    <member refid="classrocalution_1_1_global_vector_1adba19a166864f4edad7c2333d84782d0" kind="function"><name>Info</name></member>
+    <member refid="classrocalution_1_1_global_vector_1aaaf75d2ec850ee5646866ed1b6c0901c" kind="function"><name>Check</name></member>
+    <member refid="classrocalution_1_1_global_vector_1a5e804a659202e2bd824f2d3e583c9729" kind="function"><name>GetSize</name></member>
+    <member refid="classrocalution_1_1_global_vector_1a1a28e19929589726047f44ffbbdd1a02" kind="function"><name>GetLocalSize</name></member>
+    <member refid="classrocalution_1_1_global_vector_1ad7bcf809595d1c1701c4078c051b3e25" kind="function"><name>GetGhostSize</name></member>
+    <member refid="classrocalution_1_1_global_vector_1a778bad724e09e546ca92d051f0dee1b2" kind="function"><name>Allocate</name></member>
+    <member refid="classrocalution_1_1_global_vector_1abd727ab7d5d7f676f973e0a5664237a5" kind="function"><name>Clear</name></member>
+    <member refid="classrocalution_1_1_global_vector_1a3ac1694db485d9638f5c89b109560287" kind="function"><name>SetParallelManager</name></member>
+    <member refid="classrocalution_1_1_global_vector_1a9666aa5c811a3774a0d59f6810d7ca1a" kind="function"><name>Zeros</name></member>
+    <member refid="classrocalution_1_1_global_vector_1ae8d0ce7fa54fd86dce4612b3baa1ca31" kind="function"><name>Ones</name></member>
+    <member refid="classrocalution_1_1_global_vector_1a0cb9e9bf556bb5b6e375ebab7ddef750" kind="function"><name>SetValues</name></member>
+    <member refid="classrocalution_1_1_global_vector_1ab7fb7d3f1cc17ba065c64f9fc57769ee" kind="function"><name>SetRandomUniform</name></member>
+    <member refid="classrocalution_1_1_global_vector_1a6b4f089c92ce7885bcc867c806640cf0" kind="function"><name>SetRandomNormal</name></member>
+    <member refid="classrocalution_1_1_global_vector_1a0ebad2dd42e2051f897bb50c08531f55" kind="function"><name>CloneFrom</name></member>
+    <member refid="classrocalution_1_1_global_vector_1a7bd3dee898a678434b8a54e9de90fbc3" kind="function"><name>operator[]</name></member>
+    <member refid="classrocalution_1_1_global_vector_1a08dc9c0e2619d757bb57698d6a97dc02" kind="function"><name>operator[]</name></member>
+    <member refid="classrocalution_1_1_global_vector_1af0e3a1cc9f3df6003216b12516b62a7a" kind="function"><name>SetDataPtr</name></member>
+    <member refid="classrocalution_1_1_global_vector_1a855142bc4abe3c60fc28a3a847a0821b" kind="function"><name>LeaveDataPtr</name></member>
+    <member refid="classrocalution_1_1_global_vector_1abbbcd38528e2e8d206074ded7d057675" kind="function"><name>CopyFrom</name></member>
+    <member refid="classrocalution_1_1_global_vector_1a26597a91fbeac7b324f34e9c0af58582" kind="function"><name>ReadFileASCII</name></member>
+    <member refid="classrocalution_1_1_global_vector_1acffd8199e0ee1ed21abfe66612a2e39e" kind="function"><name>WriteFileASCII</name></member>
+    <member refid="classrocalution_1_1_global_vector_1a7f54dacddf4f3f5a615f7e2ac3b6a949" kind="function"><name>ReadFileBinary</name></member>
+    <member refid="classrocalution_1_1_global_vector_1a8562871e61d54369093bccfcf7045666" kind="function"><name>WriteFileBinary</name></member>
+    <member refid="classrocalution_1_1_global_vector_1a8c061e6f4715e9969861a08e6fce864f" kind="function"><name>AddScale</name></member>
+    <member refid="classrocalution_1_1_global_vector_1a0324a2852ec0c5bf5dde665860a068d5" kind="function"><name>ScaleAdd</name></member>
+    <member refid="classrocalution_1_1_global_vector_1a65839dc24fe2172f999ba5d1a1f37b25" kind="function"><name>ScaleAdd2</name></member>
+    <member refid="classrocalution_1_1_global_vector_1acdd79345b1ab83ca6b30e83136ff1003" kind="function"><name>ScaleAddScale</name></member>
+    <member refid="classrocalution_1_1_global_vector_1a03ecd5d92ee9b1b0b561b816cf6dca11" kind="function"><name>Scale</name></member>
+    <member refid="classrocalution_1_1_global_vector_1acff4d26fb485147fa4d5fddbfc9e5261" kind="function"><name>Dot</name></member>
+    <member refid="classrocalution_1_1_global_vector_1a86be26351b1935e3595ac4ff64cb6d98" kind="function"><name>DotNonConj</name></member>
+    <member refid="classrocalution_1_1_global_vector_1ac50685032c64d2b20f37502e2a085c7f" kind="function"><name>Norm</name></member>
+    <member refid="classrocalution_1_1_global_vector_1a7c777dba889c54bf7d42257a8f3fd9db" kind="function"><name>Reduce</name></member>
+    <member refid="classrocalution_1_1_global_vector_1a02a2f9e333cbdc26c917321ee0e833b9" kind="function"><name>Asum</name></member>
+    <member refid="classrocalution_1_1_global_vector_1a0609a049872a62a5218a38e4187d3ef9" kind="function"><name>Amax</name></member>
+    <member refid="classrocalution_1_1_global_vector_1a7d6ca3d4ab5460695e39b77ffbf8bcc0" kind="function"><name>PointWiseMult</name></member>
+    <member refid="classrocalution_1_1_global_vector_1ab63d13d318613fdd27619f53ef8f8a63" kind="function"><name>PointWiseMult</name></member>
+    <member refid="classrocalution_1_1_global_vector_1a6d5f5a56660fb6d970bae54be37d9162" kind="function"><name>Power</name></member>
+    <member refid="classrocalution_1_1_global_vector_1ab4eafcc8921e7ab30339e121c93995aa" kind="function"><name>Restriction</name></member>
+    <member refid="classrocalution_1_1_global_vector_1a0cf1f907d09b9eb6ef6bb67b0a25be07" kind="function"><name>Prolongation</name></member>
+    <member refid="classrocalution_1_1_global_vector_1ab751e276b6fc3ff9ae734a4ee21c207c" kind="function"><name>GetInterior</name></member>
+    <member refid="classrocalution_1_1_global_vector_1a2975c1146ee59b3f742e59413991b453" kind="function"><name>GetInterior</name></member>
+    <member refid="classrocalution_1_1_global_vector_1a52ebee33c61f1927434551845b35537c" kind="function"><name>GetGhost</name></member>
+    <member refid="classrocalution_1_1_global_vector_1a89724f2b33c55e669fe4a058237d7e97" kind="function"><name>is_host_</name></member>
+    <member refid="classrocalution_1_1_global_vector_1a3c381dab7f46657d59cf7a9858274a17" kind="function"><name>is_accel_</name></member>
+    <member refid="classrocalution_1_1_global_vector_1a69fbfaa93c76d79395d5bee39707daaa" kind="function"><name>UpdateGhostValuesAsync_</name></member>
+    <member refid="classrocalution_1_1_global_vector_1a612e63c1a7791a7cfdff210d7c1441c5" kind="function"><name>UpdateGhostValuesSync_</name></member>
   </compound>
   <compound refid="structhip_func_attributes" kind="struct"><name>hipFuncAttributes</name>
     <member refid="structhip_func_attributes_1a550579dd78e2ef9e4e5b85505204816c" kind="variable"><name>binaryVersion</name></member>
@@ -30,7 +195,259 @@
   </compound>
   <compound refid="classrocalution_1_1_host_matrix" kind="class"><name>rocalution::HostMatrix</name>
   </compound>
+  <compound refid="classrocalution_1_1_host_stencil" kind="class"><name>rocalution::HostStencil</name>
+  </compound>
+  <compound refid="classrocalution_1_1_host_vector" kind="class"><name>rocalution::HostVector</name>
+  </compound>
+  <compound refid="classrocalution_1_1_local_matrix" kind="class"><name>rocalution::LocalMatrix</name>
+    <member refid="classrocalution_1_1_local_matrix_1a9e2262ffb6ec53e72ebe079803616c67" kind="function"><name>AllocateCSR</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1a83eeb71afdf68f0aa91eadc46143034b" kind="function"><name>AllocateBCSR</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1af3e1c51e650ffad760b7dbfc508bd80e" kind="function"><name>AllocateMCSR</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1a5f8a0ce95e3c24b68dbc272bf0b979ed" kind="function"><name>AllocateCOO</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1ac22ce8c62c7f96aaf81f0ca252550d37" kind="function"><name>AllocateDIA</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1acb5702157228a7cf509d518ed85023a3" kind="function"><name>AllocateELL</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1a0f11424c97e09672c909d457d06cbccb" kind="function"><name>AllocateHYB</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1a0c79cf8ba3bcb18cfa5790bfcf874ce0" kind="function"><name>AllocateDENSE</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1acdfeb3a318104a38a539ce2e14497346" kind="function"><name>SetDataPtrCOO</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1ac4d2555ce3f1b82bedfbcd8d80a9990f" kind="function"><name>SetDataPtrCSR</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1aa5213597d99fc349aac27a72d1b26f8b" kind="function"><name>SetDataPtrMCSR</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1af7e5a78d103a2471cef1f1d59f011492" kind="function"><name>SetDataPtrELL</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1a0f2ba4a64a7dbcb539b4e553ac8f1fc6" kind="function"><name>SetDataPtrDIA</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1a7094a60209b0a690c9046357c841cac2" kind="function"><name>SetDataPtrDENSE</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1a9763c9317b9e3cee8410f79f54c879d3" kind="function"><name>LeaveDataPtrCOO</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1ad67e42bdef63ec1d31d51391edb71f06" kind="function"><name>LeaveDataPtrCSR</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1a1ac5d3d11c02ed8f2bb288c39a29f108" kind="function"><name>LeaveDataPtrMCSR</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1acd943926268fb9ddf641df08bb45069b" kind="function"><name>LeaveDataPtrELL</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1ae4214ba5874900000d5455e511010d90" kind="function"><name>LeaveDataPtrDIA</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1a396f929bbd45cba276a1e0ef8f9adece" kind="function"><name>LeaveDataPtrDENSE</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1a7d4a43dd8c29abce9387e5be3f8dbc70" kind="variable"><name>matrix_</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1a58a64cee344cbb36cc3e623e89b83da8" kind="variable"><name>matrix_host_</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1af98059809e70d04387b74f5ca2193ee5" kind="variable"><name>matrix_accel_</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1a4332e063cc6b7350ea0ba7b29dbec2c5" kind="friend"><name>LocalVector&lt; ValueType &gt;</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1ad50ce751e5dafbeb3ca73c65cd542fce" kind="friend"><name>GlobalVector&lt; ValueType &gt;</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1a350700fdc95d2918442f14af47bb3ff4" kind="friend"><name>GlobalMatrix&lt; ValueType &gt;</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1a24693e40cc06b807cec974b4fb7c0f22" kind="function"><name>LocalMatrix</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1a30380ef77093ef355c8d666401833c60" kind="function"><name>~LocalMatrix</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1a8f66294a7f7bf412dc44acdd6850e061" kind="function"><name>Info</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1a0a077e9b521fc8af41c7f18de1cad1d5" kind="function"><name>GetFormat</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1aeb0c36e210a0bbbc835874b5bac6437f" kind="function"><name>GetM</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1af87c058edc0aadb0b0c8b026f8d9b00a" kind="function"><name>GetN</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1afab6feb71269348bb0665338f167ac16" kind="function"><name>GetNnz</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1a69e093022f1ccd32d046422c4e6196f1" kind="function"><name>Check</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1a8df7184b26588a0d06d6c65a53fd7a73" kind="function"><name>Clear</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1a7218681c7054a12aae6057d96d3a4e54" kind="function"><name>Zeros</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1aeabad9b79068c70637ef311af34af61a" kind="function"><name>Scale</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1a8fb80b66e03ea77d2f74862e10fd90dc" kind="function"><name>ScaleDiagonal</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1ae5e6d84270b2e8a878134507a086dbf1" kind="function"><name>ScaleOffDiagonal</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1aae36bb533533cfa66a8be5ef2cca9d79" kind="function"><name>AddScalar</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1a6356bb9437e4d2c0f497a9180af4dc42" kind="function"><name>AddScalarDiagonal</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1a0b3eebe052f2084d66987e0a3cea2951" kind="function"><name>AddScalarOffDiagonal</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1aedb177d0e93bae5b39de9658ba9c94a7" kind="function"><name>ExtractSubMatrix</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1a7811d26ca30b8ec442565efe312d2d3d" kind="function"><name>ExtractSubMatrices</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1af8468d33ff07d255428536d6ddb5ac43" kind="function"><name>ExtractDiagonal</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1aaeec31daa2a51742f5c561cf22997c39" kind="function"><name>ExtractInverseDiagonal</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1aaa37a2beb38374a8b0dff4ba91080fd3" kind="function"><name>ExtractU</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1a00138976889bc73fa21db16a9c209daf" kind="function"><name>ExtractL</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1afc9486fee8f49d50db5c6cf49593aace" kind="function"><name>Permute</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1a0648ae8c06a0c0bcff3eda554eb168a8" kind="function"><name>PermuteBackward</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1a14788d661ea22a00f7a74601e132bb50" kind="function"><name>CMK</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1aaed8576707da922ffa1107f1ce427052" kind="function"><name>RCMK</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1a433a6b2f5e09f3260b269776e8322a4f" kind="function"><name>ConnectivityOrder</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1a55000bad263b499ab9638ec95b852a1e" kind="function"><name>MultiColoring</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1ac8448fee69b9c9be5335083878ae5aa9" kind="function"><name>MaximalIndependentSet</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1a378871e3f6570a110c844d4b77fdb5c9" kind="function"><name>ZeroBlockPermutation</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1ac94a0833f8c29fee3d4a9019f9b923bd" kind="function"><name>ILU0Factorize</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1a2d32b530636d756b878c5ff3ba08df99" kind="function"><name>LUFactorize</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1a61ba9e4902f01289697ae7f8e26b57b2" kind="function"><name>ILUTFactorize</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1a73e4e1d4f189884f9c428c3c2dad0da6" kind="function"><name>ILUpFactorize</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1ac731fe03bccfebcbd70feabdb144e0d9" kind="function"><name>LUAnalyse</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1a5e9eaaca1b947c97cd9069fbc80b7f8c" kind="function"><name>LUAnalyseClear</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1a353e62f96359c56f26d3c22e642b019e" kind="function"><name>LUSolve</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1a4ca38ea117584b77253a9a116fb03440" kind="function"><name>ICFactorize</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1a3536ca2f5595ab309fcda32d07e011fe" kind="function"><name>LLAnalyse</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1aa707f4992b07d0775840a8346c680e46" kind="function"><name>LLAnalyseClear</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1a58c25b8be2b7889b1a7e649e6432d967" kind="function"><name>LLSolve</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1a1cb66ea276d6420861757557092e5b43" kind="function"><name>LLSolve</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1a8d45e8ee1a1982d8041bf826d245fef9" kind="function"><name>LAnalyse</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1ab3ed5fbb875f957c3bb25735c0630b54" kind="function"><name>LAnalyseClear</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1a0ab35d3254b8406e1888951cfe0f2ca5" kind="function"><name>LSolve</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1a6317edc804d8c58adac000b6d9cf85e3" kind="function"><name>UAnalyse</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1a23c0d959e4bcbf2ab832f62c452f9338" kind="function"><name>UAnalyseClear</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1acf5119d230b9babddca4fc6211626b72" kind="function"><name>USolve</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1a74bf982628515f449051fd5a0d2f1a59" kind="function"><name>Householder</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1a2b1dfac5efdefe7193dc8f634685e6b9" kind="function"><name>QRDecompose</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1ad8626c5597ca310ef3366c7c8a135baa" kind="function"><name>QRSolve</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1a51514f7bd4213881a3a7d54cabfb4bcc" kind="function"><name>Invert</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1a22b9f4275cef954b889bf89a3b5889c9" kind="function"><name>ReadFileMTX</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1ab10a7e473601a9a1d368b48781816185" kind="function"><name>WriteFileMTX</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1a0c211ccae3c7b1f1c8f631786c552aa9" kind="function"><name>ReadFileCSR</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1af955765ef46e0a31967b87755c6053f5" kind="function"><name>WriteFileCSR</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1a3217ea740fbb231226dcf6a5def3c6e6" kind="function"><name>MoveToAccelerator</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1a7df391e420a6a364e0a062792c1324d5" kind="function"><name>MoveToAcceleratorAsync</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1a67f483ae6f80db8474a0af39a6e19e7b" kind="function"><name>MoveToHost</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1aced88c9ae65c7dba7f81a8d33ae4bb66" kind="function"><name>MoveToHostAsync</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1ae8919e66c49368d91ca8f8fe44dbe530" kind="function"><name>Sync</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1a2b667e9fd28f21eaaefdd194ed15158f" kind="function"><name>CopyFrom</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1a29d774edc6dd57d727c5cf885b6bd432" kind="function"><name>CopyFromAsync</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1acd9898aa33dc1f333a8eac885482e485" kind="function"><name>CloneFrom</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1ab192c147b9440ca3889523ee6f6f7cf9" kind="function"><name>UpdateValuesCSR</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1aea46a0ce5f1a5879ac7c594ed7ec9afd" kind="function"><name>CopyFromCSR</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1ac7af52ae1a880b6141ff96339d8cad30" kind="function"><name>CopyToCSR</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1a07c7170a8d5baac3249e6aace1c6f36b" kind="function"><name>CopyFromCOO</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1ab04f137dbfb7c951641a40e823d2546c" kind="function"><name>CopyToCOO</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1a4b22c7c6c5264370fa6c141b2ba7d5f1" kind="function"><name>CopyFromHostCSR</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1a909d0dc7a44dd03689f25122924b6a6f" kind="function"><name>CreateFromMap</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1a201bc2b46526e26a1d0164902792c850" kind="function"><name>CreateFromMap</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1a739b5c5b11aa393c0e88f5426f7a0071" kind="function"><name>ConvertToCSR</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1aef2306df38266d8ffc821f425f57c85d" kind="function"><name>ConvertToMCSR</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1a4002613db6485154f178c96ce4d44f1a" kind="function"><name>ConvertToBCSR</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1a77f6a603e33b25645942030aee1d2c5a" kind="function"><name>ConvertToCOO</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1adc7b89b41a3cd6b60659e8159ef13e35" kind="function"><name>ConvertToELL</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1aa1b9f8a330ade76c7f484a841102018b" kind="function"><name>ConvertToDIA</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1af2e44e2f4f18693de82aeb24cefe3353" kind="function"><name>ConvertToHYB</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1a72339728c2b5ec041621d9954a51c578" kind="function"><name>ConvertToDENSE</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1a9b2b21d5afcb1000e1a3cbac7dacb9db" kind="function"><name>ConvertTo</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1a9a172b7d9b1ef03e16797fb2aaa89091" kind="function"><name>Apply</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1a892f08f618568dfbe1c55ef5895a5eb7" kind="function"><name>ApplyAdd</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1a74ff5df228d07b024901af42e861ba1b" kind="function"><name>SymbolicPower</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1aff5cbf55130bbc230ef30cf7d288b9d5" kind="function"><name>MatrixAdd</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1a5aaed16ec266a65af00a810d30485158" kind="function"><name>MatrixMult</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1a12f274f560e2dc874d49951a5b1e1dd3" kind="function"><name>DiagonalMatrixMult</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1a542e55d43ee269119e0ef7b93d2f91a0" kind="function"><name>DiagonalMatrixMultL</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1ac02a9ef133bfac459ee3f2408d6b5cb1" kind="function"><name>DiagonalMatrixMultR</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1ac00dcabfacdb09128cd30f4870d6b946" kind="function"><name>Gershgorin</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1af55140e4df68bfc790fabd1d3599dc60" kind="function"><name>Compress</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1a331509a714652f0b1bd392492befdd1f" kind="function"><name>Transpose</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1af06a2e47ded5fba67bdffc4d78240351" kind="function"><name>Sort</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1a97e57c0b9a5637e2b067eab0636f0c31" kind="function"><name>Key</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1af9dd9cda7b02e65b668f96d7c9d042e1" kind="function"><name>ReplaceColumnVector</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1a5e9996e79994a0d1c365578ffc95c848" kind="function"><name>ReplaceRowVector</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1acb2b6de9c63df359ce9375efec15d688" kind="function"><name>ExtractColumnVector</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1a129c620b4d02dc7290cdc3f2c2bf49f8" kind="function"><name>ExtractRowVector</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1a96cbe9428a7723ebdf05c5df230ca053" kind="function"><name>AMGConnect</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1afbbe25c7f920d7bb1b2d4af3278e362c" kind="function"><name>AMGAggregate</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1a55efe34f4c2e43fdb03e58de0b1e139a" kind="function"><name>AMGSmoothedAggregation</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1a20f191b084461deb555bc23f91b50f3c" kind="function"><name>AMGAggregation</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1a4e808f6815264a27e7eb3ec8d80751ff" kind="function"><name>RugeStueben</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1adf8e7af5f894ca6f71aa5bec3cb4f241" kind="function"><name>FSAI</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1a321308ee427e0410a3a279bec202b807" kind="function"><name>SPAI</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1a697953de89ba60acfa0fbc4e3e609a95" kind="function"><name>InitialPairwiseAggregation</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1a483d8c54d44527af2609df026bc4fced" kind="function"><name>InitialPairwiseAggregation</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1a422b401c53da06552cc4246c5c6d1c10" kind="function"><name>FurtherPairwiseAggregation</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1a12ec36f0be7f8a93619da8e1977c3b51" kind="function"><name>FurtherPairwiseAggregation</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1afe5bc9c61ab6f2aa95e334a13b4fbba3" kind="function"><name>CoarsenOperator</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1a160ff82fbc0a88b6a5f7fece80976fcf" kind="function"><name>is_host_</name></member>
+    <member refid="classrocalution_1_1_local_matrix_1adde0a240b27720e9df7e2706433ddb25" kind="function"><name>is_accel_</name></member>
+  </compound>
+  <compound refid="classrocalution_1_1_local_stencil" kind="class"><name>rocalution::LocalStencil</name>
+    <member refid="classrocalution_1_1_local_stencil_1a80b3cdf02eac6f9082c21edd2cba56ae" kind="variable"><name>object_name_</name></member>
+    <member refid="classrocalution_1_1_local_stencil_1a32c5fbd14698544d46760e46c56ca32b" kind="variable"><name>stencil_</name></member>
+    <member refid="classrocalution_1_1_local_stencil_1a495b25980018d733ba56594fa0123c4a" kind="variable"><name>stencil_host_</name></member>
+    <member refid="classrocalution_1_1_local_stencil_1ae2f1ae111bd6a860a1b587883e3218b7" kind="variable"><name>stencil_accel_</name></member>
+    <member refid="classrocalution_1_1_local_stencil_1a4332e063cc6b7350ea0ba7b29dbec2c5" kind="friend"><name>LocalVector&lt; ValueType &gt;</name></member>
+    <member refid="classrocalution_1_1_local_stencil_1ad50ce751e5dafbeb3ca73c65cd542fce" kind="friend"><name>GlobalVector&lt; ValueType &gt;</name></member>
+    <member refid="classrocalution_1_1_local_stencil_1a03f501f3cb041d3de227c31fb10ae142" kind="function"><name>LocalStencil</name></member>
+    <member refid="classrocalution_1_1_local_stencil_1a5dbfda8bea951c06870c26e3a4637401" kind="function"><name>LocalStencil</name></member>
+    <member refid="classrocalution_1_1_local_stencil_1a35abb20d68827b3e515d51445ddb6b9b" kind="function"><name>~LocalStencil</name></member>
+    <member refid="classrocalution_1_1_local_stencil_1aa3c7b580398079ca5fac493fff9a25ce" kind="function"><name>Info</name></member>
+    <member refid="classrocalution_1_1_local_stencil_1a61fa7d018580635e05578162a5d275f4" kind="function"><name>GetNDim</name></member>
+    <member refid="classrocalution_1_1_local_stencil_1a3bf19a55df03c450401f1bee48540a97" kind="function"><name>GetM</name></member>
+    <member refid="classrocalution_1_1_local_stencil_1ad8d6ba20012a45dfbee8ac7211f7d05c" kind="function"><name>GetN</name></member>
+    <member refid="classrocalution_1_1_local_stencil_1ae18aa3865d0bd503b41665542adbc89d" kind="function"><name>GetNnz</name></member>
+    <member refid="classrocalution_1_1_local_stencil_1ab2eccbd73572aa5dafdde0482e78638a" kind="function"><name>SetGrid</name></member>
+    <member refid="classrocalution_1_1_local_stencil_1a4b3311913e88a61f613a83f08dca1c80" kind="function"><name>Clear</name></member>
+    <member refid="classrocalution_1_1_local_stencil_1a6edab2ff02e64cff943666cb19543d64" kind="function"><name>Apply</name></member>
+    <member refid="classrocalution_1_1_local_stencil_1a2cf176e84fc5582ddb9cfc7218990c85" kind="function"><name>ApplyAdd</name></member>
+    <member refid="classrocalution_1_1_local_stencil_1a202674432e0cc298d80ebc64bb2d0971" kind="function"><name>MoveToAccelerator</name></member>
+    <member refid="classrocalution_1_1_local_stencil_1a27d90bd5bc5c26ea28494309dc859791" kind="function"><name>MoveToHost</name></member>
+    <member refid="classrocalution_1_1_local_stencil_1a21a31db491486b781603aae3edaf8424" kind="function"><name>is_host_</name></member>
+    <member refid="classrocalution_1_1_local_stencil_1a2dee7dbdeca9713b9a580b490cabbd89" kind="function"><name>is_accel_</name></member>
+  </compound>
   <compound refid="classrocalution_1_1_local_vector" kind="class"><name>rocalution::LocalVector</name>
+    <member refid="classrocalution_1_1_local_vector_1a20913b1560bec91831c49351530d34e8" kind="function"><name>operator[]</name></member>
+    <member refid="classrocalution_1_1_local_vector_1ae584b51e9e91a17b5aeb5750cfd1d8d9" kind="function"><name>operator[]</name></member>
+    <member refid="classrocalution_1_1_local_vector_1a727a6a2779ff9706494503148692945a" kind="variable"><name>vector_</name></member>
+    <member refid="classrocalution_1_1_local_vector_1a0604a42470b999f35279350a1d25beea" kind="variable"><name>vector_host_</name></member>
+    <member refid="classrocalution_1_1_local_vector_1a2d0a61bac246791efe423eabf4da0882" kind="variable"><name>vector_accel_</name></member>
+    <member refid="classrocalution_1_1_local_vector_1ac92816b5a161c95a8ffbf20b7f730c23" kind="friend"><name>LocalVector&lt; double &gt;</name></member>
+    <member refid="classrocalution_1_1_local_vector_1a337d67c1a4d80c8882f68d2b6e595de6" kind="friend"><name>LocalVector&lt; float &gt;</name></member>
+    <member refid="classrocalution_1_1_local_vector_1af1c5280637f849dba6fd35f668596e65" kind="friend"><name>LocalVector&lt; std::complex&lt; double &gt; &gt;</name></member>
+    <member refid="classrocalution_1_1_local_vector_1a07c8dff4d321117f082e9ea978bcf44d" kind="friend"><name>LocalVector&lt; std::complex&lt; float &gt; &gt;</name></member>
+    <member refid="classrocalution_1_1_local_vector_1a2021b5a4bc5f656cc48f4e97525fc3b5" kind="friend"><name>LocalVector&lt; int &gt;</name></member>
+    <member refid="classrocalution_1_1_local_vector_1ac25414b59f0a5cf064e05213a5911a13" kind="friend"><name>LocalMatrix&lt; double &gt;</name></member>
+    <member refid="classrocalution_1_1_local_vector_1a249687a6b0f164407332088fe0b7a78a" kind="friend"><name>LocalMatrix&lt; float &gt;</name></member>
+    <member refid="classrocalution_1_1_local_vector_1a9165d56ef03f0ed265f5886e6eba2ec3" kind="friend"><name>LocalMatrix&lt; std::complex&lt; double &gt; &gt;</name></member>
+    <member refid="classrocalution_1_1_local_vector_1ae8b5abfac229493f26dba8f51d7c9178" kind="friend"><name>LocalMatrix&lt; std::complex&lt; float &gt; &gt;</name></member>
+    <member refid="classrocalution_1_1_local_vector_1a8e6e6047a29b30dafd58a02c2e948729" kind="friend"><name>LocalStencil&lt; double &gt;</name></member>
+    <member refid="classrocalution_1_1_local_vector_1a11a2b915fe0ab350b280035d273ebc66" kind="friend"><name>LocalStencil&lt; float &gt;</name></member>
+    <member refid="classrocalution_1_1_local_vector_1aeb080fc94d1a8c4450fe8512fa01c0b5" kind="friend"><name>LocalStencil&lt; std::complex&lt; double &gt; &gt;</name></member>
+    <member refid="classrocalution_1_1_local_vector_1a047ad5fb04fd8368e63e76453e185b21" kind="friend"><name>LocalStencil&lt; std::complex&lt; float &gt; &gt;</name></member>
+    <member refid="classrocalution_1_1_local_vector_1ad50ce751e5dafbeb3ca73c65cd542fce" kind="friend"><name>GlobalVector&lt; ValueType &gt;</name></member>
+    <member refid="classrocalution_1_1_local_vector_1af6b5193a9183697399f1cfe579f62ce8" kind="friend"><name>LocalMatrix&lt; ValueType &gt;</name></member>
+    <member refid="classrocalution_1_1_local_vector_1a350700fdc95d2918442f14af47bb3ff4" kind="friend"><name>GlobalMatrix&lt; ValueType &gt;</name></member>
+    <member refid="classrocalution_1_1_local_vector_1a39865280e6b5328820ff7d0fcea81b1f" kind="function"><name>LocalVector</name></member>
+    <member refid="classrocalution_1_1_local_vector_1a9d3f36859ea4d3e70ac03c8d180f82bd" kind="function"><name>~LocalVector</name></member>
+    <member refid="classrocalution_1_1_local_vector_1afffc0e56391b45874224e7003dca6076" kind="function"><name>MoveToAccelerator</name></member>
+    <member refid="classrocalution_1_1_local_vector_1a826bebed1f7008efcb99551e1fb0093e" kind="function"><name>MoveToAcceleratorAsync</name></member>
+    <member refid="classrocalution_1_1_local_vector_1ae3120701431e40e505554e98f55df533" kind="function"><name>MoveToHost</name></member>
+    <member refid="classrocalution_1_1_local_vector_1a8370ff1b9f590254ec0e8f4c28e1f7b3" kind="function"><name>MoveToHostAsync</name></member>
+    <member refid="classrocalution_1_1_local_vector_1aed0b8ba7c4968cddd589b4605b63120b" kind="function"><name>Sync</name></member>
+    <member refid="classrocalution_1_1_local_vector_1a174999811741be695665554df732aa0b" kind="function"><name>Info</name></member>
+    <member refid="classrocalution_1_1_local_vector_1a42d48bb3bb6a89218ede8fcff7bbc644" kind="function"><name>GetSize</name></member>
+    <member refid="classrocalution_1_1_local_vector_1a83a0ca326ebe939dac9cea93022dc663" kind="function"><name>Check</name></member>
+    <member refid="classrocalution_1_1_local_vector_1ae9ad82b77b1fa3f94112092d69354a15" kind="function"><name>Allocate</name></member>
+    <member refid="classrocalution_1_1_local_vector_1ae189cd6c550d72df04f2e7a15c9a5d4a" kind="function"><name>SetDataPtr</name></member>
+    <member refid="classrocalution_1_1_local_vector_1a9400481562559c79b10346b8af097e9f" kind="function"><name>LeaveDataPtr</name></member>
+    <member refid="classrocalution_1_1_local_vector_1ae58d9c9b346f80079f4028108b8dfdb2" kind="function"><name>Clear</name></member>
+    <member refid="classrocalution_1_1_local_vector_1a945331227cdbc7889ede1070ef502b81" kind="function"><name>Zeros</name></member>
+    <member refid="classrocalution_1_1_local_vector_1aee43d40aa4bd9347aa7f4757244a6d8e" kind="function"><name>Ones</name></member>
+    <member refid="classrocalution_1_1_local_vector_1a0d05ce53b50b21bbb2b80215c60acbdc" kind="function"><name>SetValues</name></member>
+    <member refid="classrocalution_1_1_local_vector_1a4a78f0acd7f8479717e811a032b1c36b" kind="function"><name>SetRandomUniform</name></member>
+    <member refid="classrocalution_1_1_local_vector_1a7385bcd27a52c94549a354799e23a7f9" kind="function"><name>SetRandomNormal</name></member>
+    <member refid="classrocalution_1_1_local_vector_1a4f93a990c2b1a89bed6b8f69f965a729" kind="function"><name>ReadFileASCII</name></member>
+    <member refid="classrocalution_1_1_local_vector_1ae25cac3e31ae90cfb0ed6cd26a0b820c" kind="function"><name>WriteFileASCII</name></member>
+    <member refid="classrocalution_1_1_local_vector_1a3ab863a463e4bfd2b1fc172ed9103c29" kind="function"><name>ReadFileBinary</name></member>
+    <member refid="classrocalution_1_1_local_vector_1a9c753058a01044c092079eade04d9fb1" kind="function"><name>WriteFileBinary</name></member>
+    <member refid="classrocalution_1_1_local_vector_1abf2ee09b2fccba75add5ca106026cb25" kind="function"><name>CopyFrom</name></member>
+    <member refid="classrocalution_1_1_local_vector_1a13217124fbe9532f6ef14ae160fd427d" kind="function"><name>CopyFromAsync</name></member>
+    <member refid="classrocalution_1_1_local_vector_1a4d0ef0ba1b9ba78136a71199a7a6b734" kind="function"><name>CopyFromFloat</name></member>
+    <member refid="classrocalution_1_1_local_vector_1a0910f630662262bb111c30de3e07815b" kind="function"><name>CopyFromDouble</name></member>
+    <member refid="classrocalution_1_1_local_vector_1a54ca27df605bb2c1567e3387ae7d57de" kind="function"><name>CopyFrom</name></member>
+    <member refid="classrocalution_1_1_local_vector_1a8bb052f38c9d5c2af40a7eeda2ace780" kind="function"><name>CopyFromPermute</name></member>
+    <member refid="classrocalution_1_1_local_vector_1a571cffb9722df69bebeb854cd05d041a" kind="function"><name>CopyFromPermuteBackward</name></member>
+    <member refid="classrocalution_1_1_local_vector_1a9eeae5cca8f0af5c5723510b1b280e60" kind="function"><name>CloneFrom</name></member>
+    <member refid="classrocalution_1_1_local_vector_1acecc27f2c96f010bb8f43749f1f643ce" kind="function"><name>CopyFromData</name></member>
+    <member refid="classrocalution_1_1_local_vector_1aad7c0fe9094784b24ca6fd1be7749e64" kind="function"><name>CopyToData</name></member>
+    <member refid="classrocalution_1_1_local_vector_1a92e2ca6e5fa325feda519fe53cbce6d0" kind="function"><name>Permute</name></member>
+    <member refid="classrocalution_1_1_local_vector_1a8d9df926f49cde234e10bfc4f7c14502" kind="function"><name>PermuteBackward</name></member>
+    <member refid="classrocalution_1_1_local_vector_1ac177710b65d6c47db97b1c7040d8afda" kind="function"><name>Restriction</name></member>
+    <member refid="classrocalution_1_1_local_vector_1a8b786211344f28ea1f88bdd4a9a79399" kind="function"><name>Prolongation</name></member>
+    <member refid="classrocalution_1_1_local_vector_1a83e7f8e6a99c29cf727a0782e2674bba" kind="function"><name>AddScale</name></member>
+    <member refid="classrocalution_1_1_local_vector_1a36c52c8148cdf904e89fabbb034246de" kind="function"><name>ScaleAdd</name></member>
+    <member refid="classrocalution_1_1_local_vector_1ad6f3ce6d5490f5a131eb6d417cdeea5b" kind="function"><name>ScaleAddScale</name></member>
+    <member refid="classrocalution_1_1_local_vector_1a678bc1b7f566cca0f8548a4cc806d4f5" kind="function"><name>ScaleAddScale</name></member>
+    <member refid="classrocalution_1_1_local_vector_1a789b6b7874da73bdd5e6698fec222a91" kind="function"><name>ScaleAdd2</name></member>
+    <member refid="classrocalution_1_1_local_vector_1a88b8838c303c6f0c43c763264fdad077" kind="function"><name>Scale</name></member>
+    <member refid="classrocalution_1_1_local_vector_1abfe1184d8f1432b03e2b42546273f11d" kind="function"><name>Dot</name></member>
+    <member refid="classrocalution_1_1_local_vector_1a5aa5910bdca4e1102e8d31af8d7e29a4" kind="function"><name>DotNonConj</name></member>
+    <member refid="classrocalution_1_1_local_vector_1a1941030d968ef965f8cf2abb864cbd0d" kind="function"><name>Norm</name></member>
+    <member refid="classrocalution_1_1_local_vector_1a49e4cfe29ae2e155ff4b79d7e907b71c" kind="function"><name>Reduce</name></member>
+    <member refid="classrocalution_1_1_local_vector_1a781d7827180d02a253b59698f6228863" kind="function"><name>Asum</name></member>
+    <member refid="classrocalution_1_1_local_vector_1a20c79273550b3a82a409ef3cbcbc7e6b" kind="function"><name>Amax</name></member>
+    <member refid="classrocalution_1_1_local_vector_1ac1369d49e5715c4b75e52ccca7f368a7" kind="function"><name>PointWiseMult</name></member>
+    <member refid="classrocalution_1_1_local_vector_1abc0e63a78bd3ca01505986783c815736" kind="function"><name>PointWiseMult</name></member>
+    <member refid="classrocalution_1_1_local_vector_1a203456f8c05ce0af1993f9465f1908ac" kind="function"><name>Power</name></member>
+    <member refid="classrocalution_1_1_local_vector_1a7f57311a7117ebd71f0047b929a29ebb" kind="function"><name>SetIndexArray</name></member>
+    <member refid="classrocalution_1_1_local_vector_1acf3ca0c6d88caa78a3fd7e87b7ccd360" kind="function"><name>GetIndexValues</name></member>
+    <member refid="classrocalution_1_1_local_vector_1a4b8bc1b9e3f0ea7a2382d4174f520de6" kind="function"><name>SetIndexValues</name></member>
+    <member refid="classrocalution_1_1_local_vector_1a8dfec518f2b82a365a8b6802bfc01ac8" kind="function"><name>GetContinuousValues</name></member>
+    <member refid="classrocalution_1_1_local_vector_1a28a42f5430f54fec8be7b4bd6d084f01" kind="function"><name>SetContinuousValues</name></member>
+    <member refid="classrocalution_1_1_local_vector_1af166cb6cfd14a2eb0d35eb08bbe21329" kind="function"><name>ExtractCoarseMapping</name></member>
+    <member refid="classrocalution_1_1_local_vector_1a3814baf9e0a6ee7ff7cda823a71a2b67" kind="function"><name>ExtractCoarseBoundary</name></member>
+    <member refid="classrocalution_1_1_local_vector_1aeacc3a01597143a1f1f0d741eab7abde" kind="function"><name>GetInterior</name></member>
+    <member refid="classrocalution_1_1_local_vector_1a2fc99dadb5f2ba7bbd6de62ef4f4a8ce" kind="function"><name>GetInterior</name></member>
+    <member refid="classrocalution_1_1_local_vector_1afbdf8d167e9e7b2b0b9de28ddd79fca9" kind="function"><name>is_host_</name></member>
+    <member refid="classrocalution_1_1_local_vector_1ace8f5b57d245fe498a5e4c97be7f5355" kind="function"><name>is_accel_</name></member>
   </compound>
   <compound refid="classrocalution_1_1_operator" kind="class"><name>rocalution::Operator</name>
     <member refid="classrocalution_1_1_operator_1afcbc2abbfe58ce8c6a3d86a5a48b7fc7" kind="function"><name>Operator</name></member>
@@ -115,6 +532,15 @@
     <member refid="structrocalution_1_1_rocalution___backend___descriptor_1a64d35c76f6731af483ceb6ce2f197d36" kind="variable"><name>log_mode</name></member>
     <member refid="structrocalution_1_1_rocalution___backend___descriptor_1a2e9c32e0667034e0cc43a84f8cfce2ae" kind="variable"><name>log_file</name></member>
   </compound>
+  <compound refid="structrocalution_1_1_rocalution___object___data" kind="struct"><name>rocalution::Rocalution_Object_Data</name>
+    <member refid="structrocalution_1_1_rocalution___object___data_1add0958ffc8b000730a46902e22f0ff9c" kind="variable"><name>all_obj</name></member>
+  </compound>
+  <compound refid="classrocalution_1_1_rocalution_obj" kind="class"><name>rocalution::RocalutionObj</name>
+    <member refid="classrocalution_1_1_rocalution_obj_1a4bba5aeaf4fd705efc00402f1f6ed40b" kind="variable"><name>global_obj_id_</name></member>
+    <member refid="classrocalution_1_1_rocalution_obj_1ad60a8b2047aad74e488c552264fa7737" kind="function"><name>RocalutionObj</name></member>
+    <member refid="classrocalution_1_1_rocalution_obj_1a55a2f93f798cebdda6343b20db959e2d" kind="function"><name>~RocalutionObj</name></member>
+    <member refid="classrocalution_1_1_rocalution_obj_1ae775c603a6abb9bc78417d06741364ce" kind="function"><name>Clear</name></member>
+  </compound>
   <compound refid="classrocalution_1_1_vector" kind="class"><name>rocalution::Vector</name>
     <member refid="classrocalution_1_1_vector_1a0a69b9fd8f7263d1444c331e8ce18f8b" kind="function"><name>CopyFrom</name></member>
     <member refid="classrocalution_1_1_vector_1a32a36abf74009fabb2af1f5250649680" kind="function"><name>CopyFrom</name></member>
@@ -172,6 +598,7 @@
     <member refid="backend__manager_8hpp_1af5e4f0fa4d05a5320a86d9880d2074bb" kind="variable"><name>_Backend_Descriptor</name></member>
     <member refid="backend__manager_8hpp_1a8ed81e0a2eab89cb1786dabaac44a74c" kind="variable"><name>_rocalution_host_name</name></member>
     <member refid="backend__manager_8hpp_1aa52a0e43c37ef0759b1ecada37090e0c" kind="variable"><name>_rocalution_backend_name</name></member>
+    <member refid="base__rocalution_8hpp_1a3b510565699bf127449736ba1e56a362" kind="variable"><name>Rocalution_Object_Data_Tracking</name></member>
     <member refid="backend__manager_8hpp_1a044437ad21ae0e48c88f09bdb508cdae" kind="function"><name>init_rocalution</name></member>
     <member refid="backend__manager_8hpp_1af6098d8efba475358435f3b00da8c51b" kind="function"><name>stop_rocalution</name></member>
     <member refid="backend__manager_8hpp_1a90fb4a381beab8525d17988f2600a336" kind="function"><name>set_device_rocalution</name></member>
@@ -193,6 +620,10 @@
     <member refid="backend__manager_8hpp_1a4dde7def59bd3c2c7f4ca8279882fcae" kind="function"><name>_rocalution_del_obj</name></member>
     <member refid="backend__manager_8hpp_1a9b877ec9f9377ec4a2b684d9baba7597" kind="function"><name>_rocalution_delete_all_obj</name></member>
     <member refid="backend__manager_8hpp_1afe55c51da782dcf07b26ab51270172bd" kind="function"><name>_rocalution_check_if_any_obj</name></member>
+    <member refid="allocate__free_8hpp_1afedca46943a41c98cad95870fa180526" kind="function"><name>allocate_host</name></member>
+    <member refid="allocate__free_8hpp_1a020251e6c31a4c642dd0181c5022c9ca" kind="function"><name>free_host</name></member>
+    <member refid="allocate__free_8hpp_1aeedb5b330f76db3b821bdfa7eaa60351" kind="function"><name>set_to_zero_host</name></member>
+    <member refid="time__functions_8hpp_1af3ea06cd4a7a8e0cc12b2255b2779ee3" kind="function"><name>rocalution_time</name></member>
   </compound>
   <compound refid="hip__runtime__api_8h" kind="file"><name>hip_runtime_api.h</name>
     <member refid="hip__runtime__api_8h_1a9a93afd2ec3f43ce2612feb962c67ced" kind="define"><name>GENERIC_GRID_LAUNCH</name></member>
@@ -430,11 +861,95 @@
   </compound>
   <compound refid="backend__manager_8hpp" kind="file"><name>backend_manager.hpp</name>
   </compound>
+  <compound refid="base__rocalution_8hpp" kind="file"><name>base_rocalution.hpp</name>
+  </compound>
+  <compound refid="global__matrix_8hpp" kind="file"><name>global_matrix.hpp</name>
+  </compound>
+  <compound refid="global__vector_8hpp" kind="file"><name>global_vector.hpp</name>
+  </compound>
+  <compound refid="local__matrix_8hpp" kind="file"><name>local_matrix.hpp</name>
+  </compound>
+  <compound refid="local__stencil_8hpp" kind="file"><name>local_stencil.hpp</name>
+  </compound>
+  <compound refid="local__vector_8hpp" kind="file"><name>local_vector.hpp</name>
+  </compound>
   <compound refid="operator_8hpp" kind="file"><name>operator.hpp</name>
   </compound>
   <compound refid="parallel__manager_8hpp" kind="file"><name>parallel_manager.hpp</name>
   </compound>
   <compound refid="vector_8hpp" kind="file"><name>vector.hpp</name>
+  </compound>
+  <compound refid="chebyshev_8cpp" kind="file"><name>chebyshev.cpp</name>
+  </compound>
+  <compound refid="inversion_8cpp" kind="file"><name>inversion.cpp</name>
+  </compound>
+  <compound refid="lu_8cpp" kind="file"><name>lu.cpp</name>
+  </compound>
+  <compound refid="qr_8cpp" kind="file"><name>qr.cpp</name>
+  </compound>
+  <compound refid="iter__ctrl_8cpp" kind="file"><name>iter_ctrl.cpp</name>
+  </compound>
+  <compound refid="bicgstab_8cpp" kind="file"><name>bicgstab.cpp</name>
+  </compound>
+  <compound refid="bicgstabl_8cpp" kind="file"><name>bicgstabl.cpp</name>
+  </compound>
+  <compound refid="cg_8cpp" kind="file"><name>cg.cpp</name>
+  </compound>
+  <compound refid="cr_8cpp" kind="file"><name>cr.cpp</name>
+  </compound>
+  <compound refid="fcg_8cpp" kind="file"><name>fcg.cpp</name>
+  </compound>
+  <compound refid="fgmres_8cpp" kind="file"><name>fgmres.cpp</name>
+  </compound>
+  <compound refid="gmres_8cpp" kind="file"><name>gmres.cpp</name>
+  </compound>
+  <compound refid="idr_8cpp" kind="file"><name>idr.cpp</name>
+  </compound>
+  <compound refid="qmrcgstab_8cpp" kind="file"><name>qmrcgstab.cpp</name>
+  </compound>
+  <compound refid="mixed__precision_8cpp" kind="file"><name>mixed_precision.cpp</name>
+  </compound>
+  <compound refid="base__amg_8cpp" kind="file"><name>base_amg.cpp</name>
+  </compound>
+  <compound refid="base__multigrid_8cpp" kind="file"><name>base_multigrid.cpp</name>
+  </compound>
+  <compound refid="global__pairwise__amg_8cpp" kind="file"><name>global_pairwise_amg.cpp</name>
+  </compound>
+  <compound refid="multigrid_8cpp" kind="file"><name>multigrid.cpp</name>
+  </compound>
+  <compound refid="pairwise__amg_8cpp" kind="file"><name>pairwise_amg.cpp</name>
+  </compound>
+  <compound refid="ruge__stueben__amg_8cpp" kind="file"><name>ruge_stueben_amg.cpp</name>
+  </compound>
+  <compound refid="smoothed__amg_8cpp" kind="file"><name>smoothed_amg.cpp</name>
+  </compound>
+  <compound refid="unsmoothed__amg_8cpp" kind="file"><name>unsmoothed_amg.cpp</name>
+  </compound>
+  <compound refid="preconditioner_8cpp" kind="file"><name>preconditioner.cpp</name>
+  </compound>
+  <compound refid="preconditioner__ai_8cpp" kind="file"><name>preconditioner_ai.cpp</name>
+  </compound>
+  <compound refid="preconditioner__as_8cpp" kind="file"><name>preconditioner_as.cpp</name>
+  </compound>
+  <compound refid="preconditioner__blockjacobi_8cpp" kind="file"><name>preconditioner_blockjacobi.cpp</name>
+  </compound>
+  <compound refid="preconditioner__blockprecond_8cpp" kind="file"><name>preconditioner_blockprecond.cpp</name>
+  </compound>
+  <compound refid="preconditioner__multicolored_8cpp" kind="file"><name>preconditioner_multicolored.cpp</name>
+  </compound>
+  <compound refid="preconditioner__multicolored__gs_8cpp" kind="file"><name>preconditioner_multicolored_gs.cpp</name>
+  </compound>
+  <compound refid="preconditioner__multicolored__ilu_8cpp" kind="file"><name>preconditioner_multicolored_ilu.cpp</name>
+  </compound>
+  <compound refid="preconditioner__multielimination_8cpp" kind="file"><name>preconditioner_multielimination.cpp</name>
+  </compound>
+  <compound refid="preconditioner__saddlepoint_8cpp" kind="file"><name>preconditioner_saddlepoint.cpp</name>
+  </compound>
+  <compound refid="solver_8cpp" kind="file"><name>solver.cpp</name>
+  </compound>
+  <compound refid="allocate__free_8hpp" kind="file"><name>allocate_free.hpp</name>
+  </compound>
+  <compound refid="time__functions_8hpp" kind="file"><name>time_functions.hpp</name>
   </compound>
   <compound refid="group___a_p_i" kind="group"><name>API</name>
     <member refid="group___a_p_i_1gafd8c80f7e3b6426a630fff768409be70" kind="function"><name>hipIpcGetMemHandle</name></member>
@@ -680,6 +1195,8 @@
   </compound>
   <compound refid="dir_d7db5a02f594321e7c6336d6ae38f091" kind="dir"><name>ROCm_Libraries/rocALUTION/src/base</name>
   </compound>
+  <compound refid="dir_38fdb61b3512cdb4abd7b219d35472ce" kind="dir"><name>ROCm_Libraries/rocALUTION/src/solvers/direct</name>
+  </compound>
   <compound refid="dir_c2b33b6ec3bcdcb197ddb8221bded60a" kind="dir"><name>ROCm_API_References/HIP/include/hip/hcc_detail</name>
   </compound>
   <compound refid="dir_cddc8ce188c1145a5212a95235526c2a" kind="dir"><name>ROCm_API_References/HIP</name>
@@ -688,12 +1205,22 @@
   </compound>
   <compound refid="dir_b28f3b0ee61db4a71fad52144a163a7d" kind="dir"><name>ROCm_API_References/HIP/include</name>
   </compound>
+  <compound refid="dir_61a982d355ccdf528c3b19a2527138e7" kind="dir"><name>ROCm_Libraries/rocALUTION/src/solvers/krylov</name>
+  </compound>
+  <compound refid="dir_a1ee1ab676b34c8c7f965a7636587e0a" kind="dir"><name>ROCm_Libraries/rocALUTION/src/solvers/multigrid</name>
+  </compound>
+  <compound refid="dir_9806f60f061123ee4ea5bfe3c65f6921" kind="dir"><name>ROCm_Libraries/rocALUTION/src/solvers/preconditioners</name>
+  </compound>
   <compound refid="dir_90edf3454520669c7f798061b876b19a" kind="dir"><name>ROCm_Libraries/rocALUTION</name>
   </compound>
   <compound refid="dir_e0b5a003ae0c9b7b27ac8d4146e57323" kind="dir"><name>ROCm_API_References</name>
   </compound>
   <compound refid="dir_96edc4a395950aafa2f54996a59552f7" kind="dir"><name>ROCm_Libraries</name>
   </compound>
+  <compound refid="dir_07b087b0a832c7dd14daad07f351f53e" kind="dir"><name>ROCm_Libraries/rocALUTION/src/solvers</name>
+  </compound>
   <compound refid="dir_2483e7c9b720094d558c1ba058a8067b" kind="dir"><name>ROCm_Libraries/rocALUTION/src</name>
+  </compound>
+  <compound refid="dir_fa917f053f0a760dab9ae831f77e347c" kind="dir"><name>ROCm_Libraries/rocALUTION/src/utils</name>
   </compound>
 </doxygenindex>

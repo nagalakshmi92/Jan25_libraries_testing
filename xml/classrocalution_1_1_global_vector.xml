@@ -2,17 +2,1312 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
   <compounddef id="classrocalution_1_1_global_vector" kind="class" language="C++" prot="public">
     <compoundname>rocalution::GlobalVector</compoundname>
+    <basecompoundref refid="classrocalution_1_1_vector" prot="public" virt="non-virtual">rocalution::Vector&lt; ValueType &gt;</basecompoundref>
+    <includes refid="global__vector_8hpp" local="no">global_vector.hpp</includes>
     <templateparamlist>
       <param>
-        <type>typename ValueType</type>
+        <type>typename</type>
+        <declname>ValueType</declname>
+        <defname>ValueType</defname>
       </param>
     </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classrocalution_1_1_global_vector_1a66a51fc46b0922e9040c810d2c995c84" prot="private" static="no" mutable="no">
+        <type>MRequest *</type>
+        <definition>MRequest* rocalution::GlobalVector&lt; ValueType &gt;::recv_event_</definition>
+        <argsstring></argsstring>
+        <name>recv_event_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/global_vector.hpp" line="151" column="1" bodyfile="ROCm_Libraries/rocALUTION/src/base/global_vector.hpp" bodystart="151" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrocalution_1_1_global_vector_1a26732da1fcaa0bb71b901484d513110b" prot="private" static="no" mutable="no">
+        <type>MRequest *</type>
+        <definition>MRequest* rocalution::GlobalVector&lt; ValueType &gt;::send_event_</definition>
+        <argsstring></argsstring>
+        <name>send_event_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/global_vector.hpp" line="152" column="1" bodyfile="ROCm_Libraries/rocALUTION/src/base/global_vector.hpp" bodystart="152" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrocalution_1_1_global_vector_1a538cfe2eb216f22b2597c3884eb4f400" prot="private" static="no" mutable="no">
+        <type>ValueType *</type>
+        <definition>ValueType* rocalution::GlobalVector&lt; ValueType &gt;::recv_boundary_</definition>
+        <argsstring></argsstring>
+        <name>recv_boundary_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/global_vector.hpp" line="154" column="1" bodyfile="ROCm_Libraries/rocALUTION/src/base/global_vector.hpp" bodystart="154" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrocalution_1_1_global_vector_1ad61d87e1ee788968ec82fbebe204bbb3" prot="private" static="no" mutable="no">
+        <type>ValueType *</type>
+        <definition>ValueType* rocalution::GlobalVector&lt; ValueType &gt;::send_boundary_</definition>
+        <argsstring></argsstring>
+        <name>send_boundary_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/global_vector.hpp" line="155" column="1" bodyfile="ROCm_Libraries/rocALUTION/src/base/global_vector.hpp" bodystart="155" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrocalution_1_1_global_vector_1a890083b74e586f7f44cb64bea5c0d5ff" prot="private" static="no" mutable="no">
+        <type><ref refid="classrocalution_1_1_local_vector" kindref="compound">LocalVector</ref>&lt; ValueType &gt;</type>
+        <definition>LocalVector&lt;ValueType&gt; rocalution::GlobalVector&lt; ValueType &gt;::vector_interior_</definition>
+        <argsstring></argsstring>
+        <name>vector_interior_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/global_vector.hpp" line="157" column="1" bodyfile="ROCm_Libraries/rocALUTION/src/base/global_vector.hpp" bodystart="157" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrocalution_1_1_global_vector_1abf2424bc8bdfdfd4eda299840c11bc07" prot="private" static="no" mutable="no">
+        <type><ref refid="classrocalution_1_1_local_vector" kindref="compound">LocalVector</ref>&lt; ValueType &gt;</type>
+        <definition>LocalVector&lt;ValueType&gt; rocalution::GlobalVector&lt; ValueType &gt;::vector_ghost_</definition>
+        <argsstring></argsstring>
+        <name>vector_ghost_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/global_vector.hpp" line="158" column="1" bodyfile="ROCm_Libraries/rocALUTION/src/base/global_vector.hpp" bodystart="158" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classrocalution_1_1_global_vector_1af6b5193a9183697399f1cfe579f62ce8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class LocalMatrix&lt; ValueType &gt;</definition>
+        <argsstring></argsstring>
+        <name>LocalMatrix&lt; ValueType &gt;</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/global_vector.hpp" line="158" column="1" bodyfile="ROCm_Libraries/rocALUTION/src/base/global_vector.hpp" bodystart="160" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classrocalution_1_1_global_vector_1a350700fdc95d2918442f14af47bb3ff4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class GlobalMatrix&lt; ValueType &gt;</definition>
+        <argsstring></argsstring>
+        <name>GlobalMatrix&lt; ValueType &gt;</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/global_vector.hpp" line="158" column="1" bodyfile="ROCm_Libraries/rocALUTION/src/base/global_vector.hpp" bodystart="161" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classrocalution_1_1_global_vector_1aa3d0e25f52cd44c8a4977fb38f71dc4b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class BaseRocalution&lt; ValueType &gt;</definition>
+        <argsstring></argsstring>
+        <name>BaseRocalution&lt; ValueType &gt;</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/global_vector.hpp" line="158" column="1" bodyfile="ROCm_Libraries/rocALUTION/src/base/global_vector.hpp" bodystart="163" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classrocalution_1_1_global_vector_1af6cb549a394eca6c0eb0eb3855ec6471" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>rocalution::GlobalVector&lt; ValueType &gt;::GlobalVector</definition>
+        <argsstring>()</argsstring>
+        <name>GlobalVector</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/global_vector.hpp" line="55" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_global_vector_1a7c57816804998b0e6de83a6db9d57970" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>rocalution::GlobalVector&lt; ValueType &gt;::GlobalVector</definition>
+        <argsstring>(const ParallelManager &amp;pm)</argsstring>
+        <name>GlobalVector</name>
+        <param>
+          <type>const <ref refid="classrocalution_1_1_parallel_manager" kindref="compound">ParallelManager</ref> &amp;</type>
+          <declname>pm</declname>
+        </param>
+        <briefdescription>
+<para>Initialize a global vector with a parallel manager. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/global_vector.hpp" line="57" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_global_vector_1a405dfba2b12b05f2e7b2490c5ec3c7bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual rocalution::GlobalVector&lt; ValueType &gt;::~GlobalVector</definition>
+        <argsstring>()</argsstring>
+        <name>~GlobalVector</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/global_vector.hpp" line="58" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_global_vector_1a94d52c5d6af6d72ad95fd40c3b4311f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void rocalution::GlobalVector&lt; ValueType &gt;::MoveToAccelerator</definition>
+        <argsstring>(void)</argsstring>
+        <name>MoveToAccelerator</name>
+        <reimplements refid="classrocalution_1_1_base_rocalution_1a2238fc9adc895dff8744a5e470b79282">MoveToAccelerator</reimplements>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Move the object to the accelerator backend. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/global_vector.hpp" line="60" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_global_vector_1ac3d2919284a9b71fad591e356e357ffe" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void rocalution::GlobalVector&lt; ValueType &gt;::MoveToHost</definition>
+        <argsstring>(void)</argsstring>
+        <name>MoveToHost</name>
+        <reimplements refid="classrocalution_1_1_base_rocalution_1a4e572619edf6570b746c263e3b9e82e9">MoveToHost</reimplements>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Move the object to the host backend. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/global_vector.hpp" line="61" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_global_vector_1adba19a166864f4edad7c2333d84782d0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void rocalution::GlobalVector&lt; ValueType &gt;::Info</definition>
+        <argsstring>(void) const</argsstring>
+        <name>Info</name>
+        <reimplements refid="classrocalution_1_1_base_rocalution_1a62720e4ccdd3879dcf093abc2688076e">Info</reimplements>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Print object information. </para>        </briefdescription>
+        <detaileddescription>
+<para><computeroutput>Info</computeroutput> can print object information about any rocALUTION object. This information consists of object properties and backend data.</para><para><simplesect kind="par"><title>Example</title><para><programlisting><codeline><highlight class="normal">mat.Info();</highlight></codeline>
+<codeline><highlight class="normal">vec.Info();</highlight></codeline>
+</programlisting> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/global_vector.hpp" line="63" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_global_vector_1aaaf75d2ec850ee5646866ed1b6c0901c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool rocalution::GlobalVector&lt; ValueType &gt;::Check</definition>
+        <argsstring>(void) const</argsstring>
+        <name>Check</name>
+        <reimplements refid="classrocalution_1_1_vector_1afb8f27ffca2ff3d59995d56b7093330c">Check</reimplements>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Perform a sanity check of the vector. </para>        </briefdescription>
+        <detaileddescription>
+<para>Checks, if the vector contains valid data, i.e. if the values are not infinity and not NaN (not a number).</para><para><parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>true</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if the vector is ok (empty vector is also ok). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>false</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if there is something wrong with the values. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/global_vector.hpp" line="64" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_global_vector_1a5e804a659202e2bd824f2d3e583c9729" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>IndexType2</type>
+        <definition>virtual IndexType2 rocalution::GlobalVector&lt; ValueType &gt;::GetSize</definition>
+        <argsstring>(void) const</argsstring>
+        <name>GetSize</name>
+        <reimplements refid="classrocalution_1_1_vector_1a69a7295c57e35e030999c5764c05cfe7">GetSize</reimplements>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Return the size of the vector. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/global_vector.hpp" line="66" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_global_vector_1a1a28e19929589726047f44ffbbdd1a02" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>virtual int rocalution::GlobalVector&lt; ValueType &gt;::GetLocalSize</definition>
+        <argsstring>(void) const</argsstring>
+        <name>GetLocalSize</name>
+        <reimplements refid="classrocalution_1_1_vector_1af4e80d10bbfd9a243d0dfa3a5481358c">GetLocalSize</reimplements>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Return the size of the local vector. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/global_vector.hpp" line="67" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_global_vector_1ad7bcf809595d1c1701c4078c051b3e25" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>virtual int rocalution::GlobalVector&lt; ValueType &gt;::GetGhostSize</definition>
+        <argsstring>(void) const</argsstring>
+        <name>GetGhostSize</name>
+        <reimplements refid="classrocalution_1_1_vector_1abd0787513f949d91f445890ea4d2ce81">GetGhostSize</reimplements>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Return the size of the ghost vector. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/global_vector.hpp" line="68" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_global_vector_1a778bad724e09e546ca92d051f0dee1b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void rocalution::GlobalVector&lt; ValueType &gt;::Allocate</definition>
+        <argsstring>(std::string name, IndexType2 size)</argsstring>
+        <name>Allocate</name>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>IndexType2</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>Allocate a global vector with name and size. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/global_vector.hpp" line="78" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_global_vector_1abd727ab7d5d7f676f973e0a5664237a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void rocalution::GlobalVector&lt; ValueType &gt;::Clear</definition>
+        <argsstring>(void)</argsstring>
+        <name>Clear</name>
+        <reimplements refid="classrocalution_1_1_vector_1af0cc06112714483ae4af25fba1e9bd04">Clear</reimplements>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Clear (free all data) the object. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/global_vector.hpp" line="79" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_global_vector_1a3ac1694db485d9638f5c89b109560287" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rocalution::GlobalVector&lt; ValueType &gt;::SetParallelManager</definition>
+        <argsstring>(const ParallelManager &amp;pm)</argsstring>
+        <name>SetParallelManager</name>
+        <param>
+          <type>const <ref refid="classrocalution_1_1_parallel_manager" kindref="compound">ParallelManager</ref> &amp;</type>
+          <declname>pm</declname>
+        </param>
+        <briefdescription>
+<para>Set the parallel manager of a global vector. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/global_vector.hpp" line="82" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_global_vector_1a9666aa5c811a3774a0d59f6810d7ca1a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void rocalution::GlobalVector&lt; ValueType &gt;::Zeros</definition>
+        <argsstring>(void)</argsstring>
+        <name>Zeros</name>
+        <reimplements refid="classrocalution_1_1_vector_1ac61cd2a27428d8cb0b7325697ab54883">Zeros</reimplements>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Set all values of the vector to 0. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/global_vector.hpp" line="84" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_global_vector_1ae8d0ce7fa54fd86dce4612b3baa1ca31" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void rocalution::GlobalVector&lt; ValueType &gt;::Ones</definition>
+        <argsstring>(void)</argsstring>
+        <name>Ones</name>
+        <reimplements refid="classrocalution_1_1_vector_1aa979fabb41b06ca0413ca44fa8ffe714">Ones</reimplements>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Set all values of the vector to 1. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/global_vector.hpp" line="85" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_global_vector_1a0cb9e9bf556bb5b6e375ebab7ddef750" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void rocalution::GlobalVector&lt; ValueType &gt;::SetValues</definition>
+        <argsstring>(ValueType val)</argsstring>
+        <name>SetValues</name>
+        <reimplements refid="classrocalution_1_1_vector_1a3df2b00c6da1ac2f35a577a31cbe98b1">SetValues</reimplements>
+        <param>
+          <type>ValueType</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Set all values of the vector to given argument. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/global_vector.hpp" line="86" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_global_vector_1ab7fb7d3f1cc17ba065c64f9fc57769ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void rocalution::GlobalVector&lt; ValueType &gt;::SetRandomUniform</definition>
+        <argsstring>(unsigned long long seed, ValueType a=static_cast&lt; ValueType &gt;(-1), ValueType b=static_cast&lt; ValueType &gt;(1))</argsstring>
+        <name>SetRandomUniform</name>
+        <reimplements refid="classrocalution_1_1_vector_1aed60d50ff54c05fd3e2227109b8d3588">SetRandomUniform</reimplements>
+        <param>
+          <type>unsigned long long</type>
+          <declname>seed</declname>
+        </param>
+        <param>
+          <type>ValueType</type>
+          <declname>a</declname>
+          <defval>static_cast&lt; ValueType &gt;(-1)</defval>
+        </param>
+        <param>
+          <type>ValueType</type>
+          <declname>b</declname>
+          <defval>static_cast&lt; ValueType &gt;(1)</defval>
+        </param>
+        <briefdescription>
+<para>Fill the vector with random values from interval [a,b]. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/global_vector.hpp" line="87" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_global_vector_1a6b4f089c92ce7885bcc867c806640cf0" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void rocalution::GlobalVector&lt; ValueType &gt;::SetRandomNormal</definition>
+        <argsstring>(unsigned long long seed, ValueType mean=static_cast&lt; ValueType &gt;(0), ValueType var=static_cast&lt; ValueType &gt;(1))</argsstring>
+        <name>SetRandomNormal</name>
+        <reimplements refid="classrocalution_1_1_vector_1ac0bb252680207ce70ab871f371007e5a">SetRandomNormal</reimplements>
+        <param>
+          <type>unsigned long long</type>
+          <declname>seed</declname>
+        </param>
+        <param>
+          <type>ValueType</type>
+          <declname>mean</declname>
+          <defval>static_cast&lt; ValueType &gt;(0)</defval>
+        </param>
+        <param>
+          <type>ValueType</type>
+          <declname>var</declname>
+          <defval>static_cast&lt; ValueType &gt;(1)</defval>
+        </param>
+        <briefdescription>
+<para>Fill the vector with random values from normal distribution. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/global_vector.hpp" line="90" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_global_vector_1a0ebad2dd42e2051f897bb50c08531f55" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void rocalution::GlobalVector&lt; ValueType &gt;::CloneFrom</definition>
+        <argsstring>(const GlobalVector&lt; ValueType &gt; &amp;src)</argsstring>
+        <name>CloneFrom</name>
+        <reimplements refid="classrocalution_1_1_vector_1ab620189a4e55cd97bf86478ff0df6c3f">CloneFrom</reimplements>
+        <param>
+          <type>const <ref refid="classrocalution_1_1_global_vector" kindref="compound">GlobalVector</ref>&lt; ValueType &gt; &amp;</type>
+          <declname>src</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/global_vector.hpp" line="93" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_global_vector_1a7bd3dee898a678434b8a54e9de90fbc3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ValueType &amp;</type>
+        <definition>ValueType&amp; rocalution::GlobalVector&lt; ValueType &gt;::operator[]</definition>
+        <argsstring>(int i)</argsstring>
+        <name>operator[]</name>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+<para>Access operator (only for host data) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/global_vector.hpp" line="96" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_global_vector_1a08dc9c0e2619d757bb57698d6a97dc02" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const ValueType &amp;</type>
+        <definition>const ValueType&amp; rocalution::GlobalVector&lt; ValueType &gt;::operator[]</definition>
+        <argsstring>(int i) const</argsstring>
+        <name>operator[]</name>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+<para>Access operator (only for host data) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/global_vector.hpp" line="98" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_global_vector_1af0e3a1cc9f3df6003216b12516b62a7a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rocalution::GlobalVector&lt; ValueType &gt;::SetDataPtr</definition>
+        <argsstring>(ValueType **ptr, std::string name, IndexType2 size)</argsstring>
+        <name>SetDataPtr</name>
+        <param>
+          <type>ValueType **</type>
+          <declname>ptr</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>IndexType2</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>Initialize the local part of a global vector with externally allocated data. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/global_vector.hpp" line="103" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_global_vector_1a855142bc4abe3c60fc28a3a847a0821b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rocalution::GlobalVector&lt; ValueType &gt;::LeaveDataPtr</definition>
+        <argsstring>(ValueType **ptr)</argsstring>
+        <name>LeaveDataPtr</name>
+        <param>
+          <type>ValueType **</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+<para>Get a pointer to the data from the local part of a global vector and free the global vector object. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/global_vector.hpp" line="107" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_global_vector_1abbbcd38528e2e8d206074ded7d057675" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void rocalution::GlobalVector&lt; ValueType &gt;::CopyFrom</definition>
+        <argsstring>(const GlobalVector&lt; ValueType &gt; &amp;src)</argsstring>
+        <name>CopyFrom</name>
+        <reimplements refid="classrocalution_1_1_vector_1a32a36abf74009fabb2af1f5250649680">CopyFrom</reimplements>
+        <param>
+          <type>const <ref refid="classrocalution_1_1_global_vector" kindref="compound">GlobalVector</ref>&lt; ValueType &gt; &amp;</type>
+          <declname>src</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/global_vector.hpp" line="109" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_global_vector_1a26597a91fbeac7b324f34e9c0af58582" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void rocalution::GlobalVector&lt; ValueType &gt;::ReadFileASCII</definition>
+        <argsstring>(const std::string filename)</argsstring>
+        <name>ReadFileASCII</name>
+        <reimplements refid="classrocalution_1_1_vector_1a35cefceac2c827b6f4a422113b06f3b5">ReadFileASCII</reimplements>
+        <param>
+          <type>const std::string</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+<para>Read vector from ASCII file. </para>        </briefdescription>
+        <detaileddescription>
+<para>Read a vector from ASCII file.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>name of the file containing the ASCII data.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="par"><title>Example</title><para><programlisting><codeline><highlight class="normal">LocalVector&lt;ValueType&gt;<sp/>vec;</highlight></codeline>
+<codeline><highlight class="normal">vec.ReadFileASCII(</highlight><highlight class="stringliteral">&quot;my_vector.dat&quot;</highlight><highlight class="normal">);</highlight></codeline>
+</programlisting> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/global_vector.hpp" line="110" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_global_vector_1acffd8199e0ee1ed21abfe66612a2e39e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void rocalution::GlobalVector&lt; ValueType &gt;::WriteFileASCII</definition>
+        <argsstring>(const std::string filename) const</argsstring>
+        <name>WriteFileASCII</name>
+        <reimplements refid="classrocalution_1_1_vector_1adf8762b6ad93bcc19b87675c63a67752">WriteFileASCII</reimplements>
+        <param>
+          <type>const std::string</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+<para>Write vector to ASCII file. </para>        </briefdescription>
+        <detaileddescription>
+<para>Write a vector to ASCII file.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>name of the file to write the ASCII data to.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="par"><title>Example</title><para><programlisting><codeline><highlight class="normal">LocalVector&lt;ValueType&gt;<sp/>vec;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>Allocate<sp/>and<sp/>fill<sp/>vec</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>...</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">vec.WriteFileASCII(</highlight><highlight class="stringliteral">&quot;my_vector.dat&quot;</highlight><highlight class="normal">);</highlight></codeline>
+</programlisting> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/global_vector.hpp" line="111" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_global_vector_1a7f54dacddf4f3f5a615f7e2ac3b6a949" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void rocalution::GlobalVector&lt; ValueType &gt;::ReadFileBinary</definition>
+        <argsstring>(const std::string filename)</argsstring>
+        <name>ReadFileBinary</name>
+        <reimplements refid="classrocalution_1_1_vector_1ae669ca94b6b19929b2b8483063fc70d3">ReadFileBinary</reimplements>
+        <param>
+          <type>const std::string</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+<para>Read vector from binary file. </para>        </briefdescription>
+        <detaileddescription>
+<para>Read a vector from binary file. For details on the format, see <ref refid="classrocalution_1_1_global_vector_1a8562871e61d54369093bccfcf7045666" kindref="member">WriteFileBinary()</ref>.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>name of the file containing the data.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="par"><title>Example</title><para><programlisting><codeline><highlight class="normal">LocalVector&lt;ValueType&gt;<sp/>vec;</highlight></codeline>
+<codeline><highlight class="normal">vec.ReadFileBinary(</highlight><highlight class="stringliteral">&quot;my_vector.bin&quot;</highlight><highlight class="normal">);</highlight></codeline>
+</programlisting> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/global_vector.hpp" line="112" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_global_vector_1a8562871e61d54369093bccfcf7045666" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void rocalution::GlobalVector&lt; ValueType &gt;::WriteFileBinary</definition>
+        <argsstring>(const std::string filename) const</argsstring>
+        <name>WriteFileBinary</name>
+        <reimplements refid="classrocalution_1_1_vector_1ae03e3d74cf727f69bb1a8ca5d87d1fa7">WriteFileBinary</reimplements>
+        <param>
+          <type>const std::string</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+<para>Write vector to binary file. </para>        </briefdescription>
+        <detaileddescription>
+<para>Write a vector to binary file.</para><para>The binary format contains a header, the rocALUTION version and the vector data as follows <programlisting><codeline><highlight class="comment">//<sp/>Header</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">out<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;#rocALUTION<sp/>binary<sp/>vector<sp/>file&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>rocALUTION<sp/>version</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">out.write((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)&amp;version,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">));</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>Vector<sp/>data</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">out.write((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)&amp;size,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">));</highlight></codeline>
+<codeline><highlight class="normal">out.write((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)vec_val,<sp/>size<sp/>*<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">));</highlight></codeline>
+</programlisting></para><para><simplesect kind="note"><para><ref refid="classrocalution_1_1_vector" kindref="compound">Vector</ref> values array is always stored in double precision (e.g. double or std::complex&lt;double&gt;).</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>name of the file to write the data to.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="par"><title>Example</title><para><programlisting><codeline><highlight class="normal">LocalVector&lt;ValueType&gt;<sp/>vec;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>Allocate<sp/>and<sp/>fill<sp/>vec</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>...</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">vec.WriteFileBinary(</highlight><highlight class="stringliteral">&quot;my_vector.bin&quot;</highlight><highlight class="normal">);</highlight></codeline>
+</programlisting> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/global_vector.hpp" line="113" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_global_vector_1a8c061e6f4715e9969861a08e6fce864f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void rocalution::GlobalVector&lt; ValueType &gt;::AddScale</definition>
+        <argsstring>(const GlobalVector&lt; ValueType &gt; &amp;x, ValueType alpha)</argsstring>
+        <name>AddScale</name>
+        <reimplements refid="classrocalution_1_1_vector_1aedf4d64ae2c3b8ee1f37519f306d0041">AddScale</reimplements>
+        <param>
+          <type>const <ref refid="classrocalution_1_1_global_vector" kindref="compound">GlobalVector</ref>&lt; ValueType &gt; &amp;</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>ValueType</type>
+          <declname>alpha</declname>
+        </param>
+        <briefdescription>
+<para>Perform vector update of type this = this + alpha * x. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/global_vector.hpp" line="115" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_global_vector_1a0324a2852ec0c5bf5dde665860a068d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void rocalution::GlobalVector&lt; ValueType &gt;::ScaleAdd</definition>
+        <argsstring>(ValueType alpha, const GlobalVector&lt; ValueType &gt; &amp;x)</argsstring>
+        <name>ScaleAdd</name>
+        <reimplements refid="classrocalution_1_1_vector_1a9edf57a13c5aa7a01e6f86d84f382e66">ScaleAdd</reimplements>
+        <param>
+          <type>ValueType</type>
+          <declname>alpha</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classrocalution_1_1_global_vector" kindref="compound">GlobalVector</ref>&lt; ValueType &gt; &amp;</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+<para>Perform vector update of type this = alpha * this + x. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/global_vector.hpp" line="116" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_global_vector_1a65839dc24fe2172f999ba5d1a1f37b25" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void rocalution::GlobalVector&lt; ValueType &gt;::ScaleAdd2</definition>
+        <argsstring>(ValueType alpha, const GlobalVector&lt; ValueType &gt; &amp;x, ValueType beta, const GlobalVector&lt; ValueType &gt; &amp;y, ValueType gamma)</argsstring>
+        <name>ScaleAdd2</name>
+        <reimplements refid="classrocalution_1_1_vector_1ae85d99b6f2ba4f0f072d3f2ce3c59ea4">ScaleAdd2</reimplements>
+        <param>
+          <type>ValueType</type>
+          <declname>alpha</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classrocalution_1_1_global_vector" kindref="compound">GlobalVector</ref>&lt; ValueType &gt; &amp;</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>ValueType</type>
+          <declname>beta</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classrocalution_1_1_global_vector" kindref="compound">GlobalVector</ref>&lt; ValueType &gt; &amp;</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>ValueType</type>
+          <declname>gamma</declname>
+        </param>
+        <briefdescription>
+<para>Perform vector update of type this = alpha * this + x * beta + y * gamma. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/global_vector.hpp" line="117" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_global_vector_1acdd79345b1ab83ca6b30e83136ff1003" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void rocalution::GlobalVector&lt; ValueType &gt;::ScaleAddScale</definition>
+        <argsstring>(ValueType alpha, const GlobalVector&lt; ValueType &gt; &amp;x, ValueType beta)</argsstring>
+        <name>ScaleAddScale</name>
+        <reimplements refid="classrocalution_1_1_vector_1a390c2cc8415eaa3959622254194a48f8">ScaleAddScale</reimplements>
+        <param>
+          <type>ValueType</type>
+          <declname>alpha</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classrocalution_1_1_global_vector" kindref="compound">GlobalVector</ref>&lt; ValueType &gt; &amp;</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>ValueType</type>
+          <declname>beta</declname>
+        </param>
+        <briefdescription>
+<para>Perform vector update of type this = alpha * this + x * beta. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/global_vector.hpp" line="122" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_global_vector_1a03ecd5d92ee9b1b0b561b816cf6dca11" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void rocalution::GlobalVector&lt; ValueType &gt;::Scale</definition>
+        <argsstring>(ValueType alpha)</argsstring>
+        <name>Scale</name>
+        <reimplements refid="classrocalution_1_1_vector_1ad00973260f6b2ca585220060fa8f074c">Scale</reimplements>
+        <param>
+          <type>ValueType</type>
+          <declname>alpha</declname>
+        </param>
+        <briefdescription>
+<para>Perform vector scaling this = alpha * this. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/global_vector.hpp" line="123" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_global_vector_1acff4d26fb485147fa4d5fddbfc9e5261" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>ValueType</type>
+        <definition>virtual ValueType rocalution::GlobalVector&lt; ValueType &gt;::Dot</definition>
+        <argsstring>(const GlobalVector&lt; ValueType &gt; &amp;x) const</argsstring>
+        <name>Dot</name>
+        <reimplements refid="classrocalution_1_1_vector_1ab43c0f9c89802ced75ac7e3b248cc798">Dot</reimplements>
+        <param>
+          <type>const <ref refid="classrocalution_1_1_global_vector" kindref="compound">GlobalVector</ref>&lt; ValueType &gt; &amp;</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+<para>Compute dot (scalar) product, return this^T y. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/global_vector.hpp" line="124" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_global_vector_1a86be26351b1935e3595ac4ff64cb6d98" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>ValueType</type>
+        <definition>virtual ValueType rocalution::GlobalVector&lt; ValueType &gt;::DotNonConj</definition>
+        <argsstring>(const GlobalVector&lt; ValueType &gt; &amp;x) const</argsstring>
+        <name>DotNonConj</name>
+        <reimplements refid="classrocalution_1_1_vector_1a6ff165b83b46e200e76cef9be9fc3505">DotNonConj</reimplements>
+        <param>
+          <type>const <ref refid="classrocalution_1_1_global_vector" kindref="compound">GlobalVector</ref>&lt; ValueType &gt; &amp;</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+<para>Compute non-conjugate dot (scalar) product, return this^T y. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/global_vector.hpp" line="125" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_global_vector_1ac50685032c64d2b20f37502e2a085c7f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>ValueType</type>
+        <definition>virtual ValueType rocalution::GlobalVector&lt; ValueType &gt;::Norm</definition>
+        <argsstring>(void) const</argsstring>
+        <name>Norm</name>
+        <reimplements refid="classrocalution_1_1_vector_1ae497a40ab0a3c1b7927e53b856775d96">Norm</reimplements>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Compute <formula id="1">$L_2$</formula> norm of the vector, return = srqt(this^T this) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/global_vector.hpp" line="126" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_global_vector_1a7c777dba889c54bf7d42257a8f3fd9db" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>ValueType</type>
+        <definition>virtual ValueType rocalution::GlobalVector&lt; ValueType &gt;::Reduce</definition>
+        <argsstring>(void) const</argsstring>
+        <name>Reduce</name>
+        <reimplements refid="classrocalution_1_1_vector_1a2fdb72cd02801525457e9ada7dd60ef2">Reduce</reimplements>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Reduce the vector. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/global_vector.hpp" line="127" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_global_vector_1a02a2f9e333cbdc26c917321ee0e833b9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>ValueType</type>
+        <definition>virtual ValueType rocalution::GlobalVector&lt; ValueType &gt;::Asum</definition>
+        <argsstring>(void) const</argsstring>
+        <name>Asum</name>
+        <reimplements refid="classrocalution_1_1_vector_1adcd00282279cb53befa5b684cfe1b810">Asum</reimplements>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Compute the sum of absolute values of the vector, return = sum(|this|) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/global_vector.hpp" line="128" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_global_vector_1a0609a049872a62a5218a38e4187d3ef9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>virtual int rocalution::GlobalVector&lt; ValueType &gt;::Amax</definition>
+        <argsstring>(ValueType &amp;value) const</argsstring>
+        <name>Amax</name>
+        <reimplements refid="classrocalution_1_1_vector_1ad12fff786a24c4d5fccb452dea303767">Amax</reimplements>
+        <param>
+          <type>ValueType &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Compute the absolute max of the vector, return = index(max(|this|)) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/global_vector.hpp" line="129" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_global_vector_1a7d6ca3d4ab5460695e39b77ffbf8bcc0" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void rocalution::GlobalVector&lt; ValueType &gt;::PointWiseMult</definition>
+        <argsstring>(const GlobalVector&lt; ValueType &gt; &amp;x)</argsstring>
+        <name>PointWiseMult</name>
+        <reimplements refid="classrocalution_1_1_vector_1a3d32315bcad3563dd1d7b793890fbad6">PointWiseMult</reimplements>
+        <param>
+          <type>const <ref refid="classrocalution_1_1_global_vector" kindref="compound">GlobalVector</ref>&lt; ValueType &gt; &amp;</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+<para>Perform point-wise multiplication (element-wise) of this = this * x. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/global_vector.hpp" line="130" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_global_vector_1ab63d13d318613fdd27619f53ef8f8a63" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void rocalution::GlobalVector&lt; ValueType &gt;::PointWiseMult</definition>
+        <argsstring>(const GlobalVector&lt; ValueType &gt; &amp;x, const GlobalVector&lt; ValueType &gt; &amp;y)</argsstring>
+        <name>PointWiseMult</name>
+        <reimplements refid="classrocalution_1_1_vector_1a5c540c12372d286b3de900937e0af809">PointWiseMult</reimplements>
+        <param>
+          <type>const <ref refid="classrocalution_1_1_global_vector" kindref="compound">GlobalVector</ref>&lt; ValueType &gt; &amp;</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classrocalution_1_1_global_vector" kindref="compound">GlobalVector</ref>&lt; ValueType &gt; &amp;</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+<para>Perform point-wise multiplication (element-wise) of this = x * y. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/global_vector.hpp" line="131" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_global_vector_1a6d5f5a56660fb6d970bae54be37d9162" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void rocalution::GlobalVector&lt; ValueType &gt;::Power</definition>
+        <argsstring>(double power)</argsstring>
+        <name>Power</name>
+        <reimplements refid="classrocalution_1_1_vector_1ae7401d8c41da9c2d9977eaa26f56a9cc">Power</reimplements>
+        <param>
+          <type>double</type>
+          <declname>power</declname>
+        </param>
+        <briefdescription>
+<para>Perform power operation to a vector. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/global_vector.hpp" line="133" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_global_vector_1ab4eafcc8921e7ab30339e121c93995aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rocalution::GlobalVector&lt; ValueType &gt;::Restriction</definition>
+        <argsstring>(const GlobalVector&lt; ValueType &gt; &amp;vec_fine, const LocalVector&lt; int &gt; &amp;map)</argsstring>
+        <name>Restriction</name>
+        <param>
+          <type>const <ref refid="classrocalution_1_1_global_vector" kindref="compound">GlobalVector</ref>&lt; ValueType &gt; &amp;</type>
+          <declname>vec_fine</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classrocalution_1_1_local_vector" kindref="compound">LocalVector</ref>&lt; int &gt; &amp;</type>
+          <declname>map</declname>
+        </param>
+        <briefdescription>
+<para>Restriction operator based on restriction mapping vector. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/global_vector.hpp" line="136" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_global_vector_1a0cf1f907d09b9eb6ef6bb67b0a25be07" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rocalution::GlobalVector&lt; ValueType &gt;::Prolongation</definition>
+        <argsstring>(const GlobalVector&lt; ValueType &gt; &amp;vec_coarse, const LocalVector&lt; int &gt; &amp;map)</argsstring>
+        <name>Prolongation</name>
+        <param>
+          <type>const <ref refid="classrocalution_1_1_global_vector" kindref="compound">GlobalVector</ref>&lt; ValueType &gt; &amp;</type>
+          <declname>vec_coarse</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classrocalution_1_1_local_vector" kindref="compound">LocalVector</ref>&lt; int &gt; &amp;</type>
+          <declname>map</declname>
+        </param>
+        <briefdescription>
+<para>Prolongation operator based on restriction mapping vector. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/global_vector.hpp" line="139" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classrocalution_1_1_global_vector_1ab751e276b6fc3ff9ae734a4ee21c207c" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="classrocalution_1_1_local_vector" kindref="compound">LocalVector</ref>&lt; ValueType &gt; &amp;</type>
+        <definition>const LocalVector&lt;ValueType&gt;&amp; rocalution::GlobalVector&lt; ValueType &gt;::GetInterior</definition>
+        <argsstring>() const</argsstring>
+        <name>GetInterior</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/global_vector.hpp" line="71" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_global_vector_1a2975c1146ee59b3f742e59413991b453" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classrocalution_1_1_local_vector" kindref="compound">LocalVector</ref>&lt; ValueType &gt; &amp;</type>
+        <definition>LocalVector&lt;ValueType&gt;&amp; rocalution::GlobalVector&lt; ValueType &gt;::GetInterior</definition>
+        <argsstring>()</argsstring>
+        <name>GetInterior</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/global_vector.hpp" line="73" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_global_vector_1a52ebee33c61f1927434551845b35537c" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="classrocalution_1_1_local_vector" kindref="compound">LocalVector</ref>&lt; ValueType &gt; &amp;</type>
+        <definition>const LocalVector&lt;ValueType&gt;&amp; rocalution::GlobalVector&lt; ValueType &gt;::GetGhost</definition>
+        <argsstring>() const</argsstring>
+        <name>GetGhost</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/global_vector.hpp" line="75" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classrocalution_1_1_global_vector_1a89724f2b33c55e669fe4a058237d7e97" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool rocalution::GlobalVector&lt; ValueType &gt;::is_host_</definition>
+        <argsstring>(void) const</argsstring>
+        <name>is_host_</name>
+        <reimplements refid="classrocalution_1_1_base_rocalution_1a4bf61bf87e25d66b63187e21d00e4f2d">is_host_</reimplements>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Return true if the object is on the host. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/global_vector.hpp" line="142" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_global_vector_1a3c381dab7f46657d59cf7a9858274a17" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool rocalution::GlobalVector&lt; ValueType &gt;::is_accel_</definition>
+        <argsstring>(void) const</argsstring>
+        <name>is_accel_</name>
+        <reimplements refid="classrocalution_1_1_base_rocalution_1a3fd4724cb23b135d6b6528674c3aec14">is_accel_</reimplements>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Return true if the object is on the accelerator. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/global_vector.hpp" line="143" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_global_vector_1a69fbfaa93c76d79395d5bee39707daaa" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rocalution::GlobalVector&lt; ValueType &gt;::UpdateGhostValuesAsync_</definition>
+        <argsstring>(const GlobalVector&lt; ValueType &gt; &amp;in)</argsstring>
+        <name>UpdateGhostValuesAsync_</name>
+        <param>
+          <type>const <ref refid="classrocalution_1_1_global_vector" kindref="compound">GlobalVector</ref>&lt; ValueType &gt; &amp;</type>
+          <declname>in</declname>
+        </param>
+        <briefdescription>
+<para>Update ghost values asynchronously. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/global_vector.hpp" line="146" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_global_vector_1a612e63c1a7791a7cfdff210d7c1441c5" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rocalution::GlobalVector&lt; ValueType &gt;::UpdateGhostValuesSync_</definition>
+        <argsstring>(void)</argsstring>
+        <name>UpdateGhostValuesSync_</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Update ghost values synchronously. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/global_vector.hpp" line="148" column="1"/>
+      </memberdef>
+      </sectiondef>
     <briefdescription>
-    </briefdescription>
+<para><ref refid="classrocalution_1_1_global_vector" kindref="compound">GlobalVector</ref> class. </para>    </briefdescription>
     <detaileddescription>
-    </detaileddescription>
+<para>A <ref refid="classrocalution_1_1_global_vector" kindref="compound">GlobalVector</ref> is called global, because it can stay on a single or on multiple nodes in a network. For this type of communication, MPI is used.</para><para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>ValueType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- can be int, float, double, std::complex&lt;float&gt; and std::complex&lt;double&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="35">
+        <label>rocalution::BaseRocalution&lt; ValueType &gt;</label>
+        <link refid="classrocalution_1_1_base_rocalution"/>
+        <childnode refid="36" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>rocalution::Vector&lt; ValueType &gt;</label>
+        <link refid="classrocalution_1_1_vector"/>
+        <childnode refid="35" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>rocalution::RocalutionObj</label>
+      </node>
+      <node id="33">
+        <label>rocalution::GlobalVector&lt; ValueType &gt;</label>
+        <link refid="classrocalution_1_1_global_vector"/>
+        <childnode refid="34" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="39">
+        <label>rocalution::BaseRocalution&lt; ValueType &gt;</label>
+        <link refid="classrocalution_1_1_base_rocalution"/>
+        <childnode refid="40" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>rocalution::Vector&lt; ValueType &gt;</label>
+        <link refid="classrocalution_1_1_vector"/>
+        <childnode refid="39" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>rocalution::RocalutionObj</label>
+      </node>
+      <node id="37">
+        <label>rocalution::GlobalVector&lt; ValueType &gt;</label>
+        <link refid="classrocalution_1_1_global_vector"/>
+        <childnode refid="38" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
     <location file="ROCm_Libraries/rocALUTION/src/base/parallel_manager.hpp" line="38" column="1" bodyfile="ROCm_Libraries/rocALUTION/src/base/parallel_manager.hpp" bodystart="38" bodyend="-1"/>
     <listofallmembers>
+      <member refid="classrocalution_1_1_global_vector_1a8c061e6f4715e9969861a08e6fce864f" prot="public" virt="virtual"><scope>rocalution::GlobalVector</scope><name>AddScale</name></member>
+      <member refid="classrocalution_1_1_vector_1ae1f6dd2e39e233b808101a0072a1db62" prot="public" virt="virtual" ambiguityscope="rocalution::Vector::"><scope>rocalution::GlobalVector</scope><name>AddScale</name></member>
+      <member refid="classrocalution_1_1_global_vector_1a778bad724e09e546ca92d051f0dee1b2" prot="public" virt="virtual"><scope>rocalution::GlobalVector</scope><name>Allocate</name></member>
+      <member refid="classrocalution_1_1_global_vector_1a0609a049872a62a5218a38e4187d3ef9" prot="public" virt="virtual"><scope>rocalution::GlobalVector</scope><name>Amax</name></member>
+      <member refid="classrocalution_1_1_global_vector_1a02a2f9e333cbdc26c917321ee0e833b9" prot="public" virt="virtual"><scope>rocalution::GlobalVector</scope><name>Asum</name></member>
+      <member refid="classrocalution_1_1_base_rocalution_1ad248c147237baaf809978dba69edf342" prot="public" virt="non-virtual"><scope>rocalution::GlobalVector</scope><name>BaseRocalution</name></member>
+      <member refid="classrocalution_1_1_global_vector_1aa3d0e25f52cd44c8a4977fb38f71dc4b" prot="private" virt="non-virtual"><scope>rocalution::GlobalVector</scope><name>BaseRocalution&lt; ValueType &gt;</name></member>
+      <member refid="classrocalution_1_1_global_vector_1aaaf75d2ec850ee5646866ed1b6c0901c" prot="public" virt="virtual"><scope>rocalution::GlobalVector</scope><name>Check</name></member>
+      <member refid="classrocalution_1_1_global_vector_1abd727ab7d5d7f676f973e0a5664237a5" prot="public" virt="virtual"><scope>rocalution::GlobalVector</scope><name>Clear</name></member>
+      <member refid="classrocalution_1_1_base_rocalution_1a85acdb9844b7c6a630f14ace59d99f5d" prot="public" virt="virtual"><scope>rocalution::GlobalVector</scope><name>CloneBackend</name></member>
+      <member refid="classrocalution_1_1_global_vector_1a0ebad2dd42e2051f897bb50c08531f55" prot="public" virt="virtual"><scope>rocalution::GlobalVector</scope><name>CloneFrom</name></member>
+      <member refid="classrocalution_1_1_vector_1a6c78a236e9c0b9ffefd237d8a76e5b8a" prot="public" virt="virtual" ambiguityscope="rocalution::Vector::"><scope>rocalution::GlobalVector</scope><name>CloneFrom</name></member>
+      <member refid="classrocalution_1_1_global_vector_1abbbcd38528e2e8d206074ded7d057675" prot="public" virt="virtual"><scope>rocalution::GlobalVector</scope><name>CopyFrom</name></member>
+      <member refid="classrocalution_1_1_vector_1a0a69b9fd8f7263d1444c331e8ce18f8b" prot="public" virt="virtual" ambiguityscope="rocalution::Vector::"><scope>rocalution::GlobalVector</scope><name>CopyFrom</name></member>
+      <member refid="classrocalution_1_1_vector_1a6a1781254d8a3d8a39c4624741babfb4" prot="public" virt="virtual" ambiguityscope="rocalution::Vector::"><scope>rocalution::GlobalVector</scope><name>CopyFrom</name></member>
+      <member refid="classrocalution_1_1_vector_1a19b74819ca4d2d4aba804b4b3882d33e" prot="public" virt="virtual"><scope>rocalution::GlobalVector</scope><name>CopyFromAsync</name></member>
+      <member refid="classrocalution_1_1_vector_1a602f35cbb92908373b7eee02a097f006" prot="public" virt="virtual"><scope>rocalution::GlobalVector</scope><name>CopyFromDouble</name></member>
+      <member refid="classrocalution_1_1_vector_1af85033a1ee476fde1a8e595bf820aee7" prot="public" virt="virtual"><scope>rocalution::GlobalVector</scope><name>CopyFromFloat</name></member>
+      <member refid="classrocalution_1_1_global_vector_1acff4d26fb485147fa4d5fddbfc9e5261" prot="public" virt="virtual"><scope>rocalution::GlobalVector</scope><name>Dot</name></member>
+      <member refid="classrocalution_1_1_vector_1a4b8794f97529984f9eb0be2532e7a452" prot="public" virt="virtual" ambiguityscope="rocalution::Vector::"><scope>rocalution::GlobalVector</scope><name>Dot</name></member>
+      <member refid="classrocalution_1_1_global_vector_1a86be26351b1935e3595ac4ff64cb6d98" prot="public" virt="virtual"><scope>rocalution::GlobalVector</scope><name>DotNonConj</name></member>
+      <member refid="classrocalution_1_1_vector_1afc0de1e6246fb0a5e9a6b0bbaf481727" prot="public" virt="virtual" ambiguityscope="rocalution::Vector::"><scope>rocalution::GlobalVector</scope><name>DotNonConj</name></member>
+      <member refid="classrocalution_1_1_global_vector_1a52ebee33c61f1927434551845b35537c" prot="private" virt="non-virtual"><scope>rocalution::GlobalVector</scope><name>GetGhost</name></member>
+      <member refid="classrocalution_1_1_global_vector_1ad7bcf809595d1c1701c4078c051b3e25" prot="public" virt="virtual"><scope>rocalution::GlobalVector</scope><name>GetGhostSize</name></member>
+      <member refid="classrocalution_1_1_global_vector_1ab751e276b6fc3ff9ae734a4ee21c207c" prot="private" virt="non-virtual"><scope>rocalution::GlobalVector</scope><name>GetInterior</name></member>
+      <member refid="classrocalution_1_1_global_vector_1a2975c1146ee59b3f742e59413991b453" prot="private" virt="non-virtual"><scope>rocalution::GlobalVector</scope><name>GetInterior</name></member>
+      <member refid="classrocalution_1_1_global_vector_1a1a28e19929589726047f44ffbbdd1a02" prot="public" virt="virtual"><scope>rocalution::GlobalVector</scope><name>GetLocalSize</name></member>
+      <member refid="classrocalution_1_1_global_vector_1a5e804a659202e2bd824f2d3e583c9729" prot="public" virt="virtual"><scope>rocalution::GlobalVector</scope><name>GetSize</name></member>
+      <member refid="classrocalution_1_1_rocalution_obj_1a4bba5aeaf4fd705efc00402f1f6ed40b" prot="protected" virt="non-virtual"><scope>rocalution::GlobalVector</scope><name>global_obj_id_</name></member>
+      <member refid="classrocalution_1_1_global_vector_1a350700fdc95d2918442f14af47bb3ff4" prot="private" virt="non-virtual"><scope>rocalution::GlobalVector</scope><name>GlobalMatrix&lt; ValueType &gt;</name></member>
+      <member refid="classrocalution_1_1_global_vector_1af6cb549a394eca6c0eb0eb3855ec6471" prot="public" virt="non-virtual"><scope>rocalution::GlobalVector</scope><name>GlobalVector</name></member>
+      <member refid="classrocalution_1_1_global_vector_1a7c57816804998b0e6de83a6db9d57970" prot="public" virt="non-virtual"><scope>rocalution::GlobalVector</scope><name>GlobalVector</name></member>
+      <member refid="classrocalution_1_1_global_vector_1adba19a166864f4edad7c2333d84782d0" prot="public" virt="virtual"><scope>rocalution::GlobalVector</scope><name>Info</name></member>
+      <member refid="classrocalution_1_1_global_vector_1a3c381dab7f46657d59cf7a9858274a17" prot="protected" virt="virtual"><scope>rocalution::GlobalVector</scope><name>is_accel_</name></member>
+      <member refid="classrocalution_1_1_global_vector_1a89724f2b33c55e669fe4a058237d7e97" prot="protected" virt="virtual"><scope>rocalution::GlobalVector</scope><name>is_host_</name></member>
+      <member refid="classrocalution_1_1_global_vector_1a855142bc4abe3c60fc28a3a847a0821b" prot="public" virt="non-virtual"><scope>rocalution::GlobalVector</scope><name>LeaveDataPtr</name></member>
+      <member refid="classrocalution_1_1_global_vector_1af6b5193a9183697399f1cfe579f62ce8" prot="private" virt="non-virtual"><scope>rocalution::GlobalVector</scope><name>LocalMatrix&lt; ValueType &gt;</name></member>
+      <member refid="classrocalution_1_1_global_vector_1a94d52c5d6af6d72ad95fd40c3b4311f5" prot="public" virt="virtual"><scope>rocalution::GlobalVector</scope><name>MoveToAccelerator</name></member>
+      <member refid="classrocalution_1_1_base_rocalution_1a1c37dbcf976261be544dc6c66502182a" prot="public" virt="virtual"><scope>rocalution::GlobalVector</scope><name>MoveToAcceleratorAsync</name></member>
+      <member refid="classrocalution_1_1_global_vector_1ac3d2919284a9b71fad591e356e357ffe" prot="public" virt="virtual"><scope>rocalution::GlobalVector</scope><name>MoveToHost</name></member>
+      <member refid="classrocalution_1_1_base_rocalution_1a6491e18ff3f4809b42c3c3c94d1bc1f2" prot="public" virt="virtual"><scope>rocalution::GlobalVector</scope><name>MoveToHostAsync</name></member>
+      <member refid="classrocalution_1_1_global_vector_1ac50685032c64d2b20f37502e2a085c7f" prot="public" virt="virtual"><scope>rocalution::GlobalVector</scope><name>Norm</name></member>
+      <member refid="classrocalution_1_1_base_rocalution_1a5d818c77bc906d543c44d441bb589b46" prot="protected" virt="non-virtual"><scope>rocalution::GlobalVector</scope><name>object_name_</name></member>
+      <member refid="classrocalution_1_1_global_vector_1ae8d0ce7fa54fd86dce4612b3baa1ca31" prot="public" virt="virtual"><scope>rocalution::GlobalVector</scope><name>Ones</name></member>
+      <member refid="classrocalution_1_1_global_vector_1a7bd3dee898a678434b8a54e9de90fbc3" prot="public" virt="non-virtual"><scope>rocalution::GlobalVector</scope><name>operator[]</name></member>
+      <member refid="classrocalution_1_1_global_vector_1a08dc9c0e2619d757bb57698d6a97dc02" prot="public" virt="non-virtual"><scope>rocalution::GlobalVector</scope><name>operator[]</name></member>
+      <member refid="classrocalution_1_1_global_vector_1a7d6ca3d4ab5460695e39b77ffbf8bcc0" prot="public" virt="virtual"><scope>rocalution::GlobalVector</scope><name>PointWiseMult</name></member>
+      <member refid="classrocalution_1_1_global_vector_1ab63d13d318613fdd27619f53ef8f8a63" prot="public" virt="virtual"><scope>rocalution::GlobalVector</scope><name>PointWiseMult</name></member>
+      <member refid="classrocalution_1_1_vector_1a228c4dbf9570eb0e3ac63abf02ec2192" prot="public" virt="virtual" ambiguityscope="rocalution::Vector::"><scope>rocalution::GlobalVector</scope><name>PointWiseMult</name></member>
+      <member refid="classrocalution_1_1_vector_1a994a38ea43f642b09d11803ba126ca21" prot="public" virt="virtual" ambiguityscope="rocalution::Vector::"><scope>rocalution::GlobalVector</scope><name>PointWiseMult</name></member>
+      <member refid="classrocalution_1_1_global_vector_1a6d5f5a56660fb6d970bae54be37d9162" prot="public" virt="virtual"><scope>rocalution::GlobalVector</scope><name>Power</name></member>
+      <member refid="classrocalution_1_1_global_vector_1a0cf1f907d09b9eb6ef6bb67b0a25be07" prot="public" virt="non-virtual"><scope>rocalution::GlobalVector</scope><name>Prolongation</name></member>
+      <member refid="classrocalution_1_1_global_vector_1a26597a91fbeac7b324f34e9c0af58582" prot="public" virt="virtual"><scope>rocalution::GlobalVector</scope><name>ReadFileASCII</name></member>
+      <member refid="classrocalution_1_1_global_vector_1a7f54dacddf4f3f5a615f7e2ac3b6a949" prot="public" virt="virtual"><scope>rocalution::GlobalVector</scope><name>ReadFileBinary</name></member>
+      <member refid="classrocalution_1_1_global_vector_1a538cfe2eb216f22b2597c3884eb4f400" prot="private" virt="non-virtual"><scope>rocalution::GlobalVector</scope><name>recv_boundary_</name></member>
+      <member refid="classrocalution_1_1_global_vector_1a66a51fc46b0922e9040c810d2c995c84" prot="private" virt="non-virtual"><scope>rocalution::GlobalVector</scope><name>recv_event_</name></member>
+      <member refid="classrocalution_1_1_global_vector_1a7c777dba889c54bf7d42257a8f3fd9db" prot="public" virt="virtual"><scope>rocalution::GlobalVector</scope><name>Reduce</name></member>
+      <member refid="classrocalution_1_1_global_vector_1ab4eafcc8921e7ab30339e121c93995aa" prot="public" virt="non-virtual"><scope>rocalution::GlobalVector</scope><name>Restriction</name></member>
+      <member refid="classrocalution_1_1_rocalution_obj_1ad60a8b2047aad74e488c552264fa7737" prot="public" virt="non-virtual"><scope>rocalution::GlobalVector</scope><name>RocalutionObj</name></member>
+      <member refid="classrocalution_1_1_global_vector_1a03ecd5d92ee9b1b0b561b816cf6dca11" prot="public" virt="virtual"><scope>rocalution::GlobalVector</scope><name>Scale</name></member>
+      <member refid="classrocalution_1_1_global_vector_1a0324a2852ec0c5bf5dde665860a068d5" prot="public" virt="virtual"><scope>rocalution::GlobalVector</scope><name>ScaleAdd</name></member>
+      <member refid="classrocalution_1_1_vector_1aec3e1f31e60d088aa021160d12e3ecd7" prot="public" virt="virtual" ambiguityscope="rocalution::Vector::"><scope>rocalution::GlobalVector</scope><name>ScaleAdd</name></member>
+      <member refid="classrocalution_1_1_global_vector_1a65839dc24fe2172f999ba5d1a1f37b25" prot="public" virt="virtual"><scope>rocalution::GlobalVector</scope><name>ScaleAdd2</name></member>
+      <member refid="classrocalution_1_1_vector_1ace75caff6cab8ebcc6dbbbe10ac38fad" prot="public" virt="virtual" ambiguityscope="rocalution::Vector::"><scope>rocalution::GlobalVector</scope><name>ScaleAdd2</name></member>
+      <member refid="classrocalution_1_1_global_vector_1acdd79345b1ab83ca6b30e83136ff1003" prot="public" virt="virtual"><scope>rocalution::GlobalVector</scope><name>ScaleAddScale</name></member>
+      <member refid="classrocalution_1_1_vector_1a4927a1c7ed1b32a7c1bfaa5e8ba260e2" prot="public" virt="virtual" ambiguityscope="rocalution::Vector::"><scope>rocalution::GlobalVector</scope><name>ScaleAddScale</name></member>
+      <member refid="classrocalution_1_1_vector_1a7a14ed1246d3c835794c6c6f3a4b80c1" prot="public" virt="virtual" ambiguityscope="rocalution::Vector::"><scope>rocalution::GlobalVector</scope><name>ScaleAddScale</name></member>
+      <member refid="classrocalution_1_1_vector_1a4f710bdf88c54847a0c524715c129e83" prot="public" virt="virtual" ambiguityscope="rocalution::Vector::"><scope>rocalution::GlobalVector</scope><name>ScaleAddScale</name></member>
+      <member refid="classrocalution_1_1_global_vector_1ad61d87e1ee788968ec82fbebe204bbb3" prot="private" virt="non-virtual"><scope>rocalution::GlobalVector</scope><name>send_boundary_</name></member>
+      <member refid="classrocalution_1_1_global_vector_1a26732da1fcaa0bb71b901484d513110b" prot="private" virt="non-virtual"><scope>rocalution::GlobalVector</scope><name>send_event_</name></member>
+      <member refid="classrocalution_1_1_global_vector_1af0e3a1cc9f3df6003216b12516b62a7a" prot="public" virt="non-virtual"><scope>rocalution::GlobalVector</scope><name>SetDataPtr</name></member>
+      <member refid="classrocalution_1_1_global_vector_1a3ac1694db485d9638f5c89b109560287" prot="public" virt="non-virtual"><scope>rocalution::GlobalVector</scope><name>SetParallelManager</name></member>
+      <member refid="classrocalution_1_1_global_vector_1a6b4f089c92ce7885bcc867c806640cf0" prot="public" virt="virtual"><scope>rocalution::GlobalVector</scope><name>SetRandomNormal</name></member>
+      <member refid="classrocalution_1_1_global_vector_1ab7fb7d3f1cc17ba065c64f9fc57769ee" prot="public" virt="virtual"><scope>rocalution::GlobalVector</scope><name>SetRandomUniform</name></member>
+      <member refid="classrocalution_1_1_global_vector_1a0cb9e9bf556bb5b6e375ebab7ddef750" prot="public" virt="virtual"><scope>rocalution::GlobalVector</scope><name>SetValues</name></member>
+      <member refid="classrocalution_1_1_base_rocalution_1a67986dbebc9b025e6ac30be4f85f784b" prot="public" virt="virtual"><scope>rocalution::GlobalVector</scope><name>Sync</name></member>
+      <member refid="classrocalution_1_1_global_vector_1a69fbfaa93c76d79395d5bee39707daaa" prot="protected" virt="non-virtual"><scope>rocalution::GlobalVector</scope><name>UpdateGhostValuesAsync_</name></member>
+      <member refid="classrocalution_1_1_global_vector_1a612e63c1a7791a7cfdff210d7c1441c5" prot="protected" virt="non-virtual"><scope>rocalution::GlobalVector</scope><name>UpdateGhostValuesSync_</name></member>
+      <member refid="classrocalution_1_1_vector_1ab7cc8dac1aaae183de2a26b9f2e891a1" prot="public" virt="non-virtual"><scope>rocalution::GlobalVector</scope><name>Vector</name></member>
+      <member refid="classrocalution_1_1_global_vector_1abf2424bc8bdfdfd4eda299840c11bc07" prot="private" virt="non-virtual"><scope>rocalution::GlobalVector</scope><name>vector_ghost_</name></member>
+      <member refid="classrocalution_1_1_global_vector_1a890083b74e586f7f44cb64bea5c0d5ff" prot="private" virt="non-virtual"><scope>rocalution::GlobalVector</scope><name>vector_interior_</name></member>
+      <member refid="classrocalution_1_1_global_vector_1acffd8199e0ee1ed21abfe66612a2e39e" prot="public" virt="virtual"><scope>rocalution::GlobalVector</scope><name>WriteFileASCII</name></member>
+      <member refid="classrocalution_1_1_global_vector_1a8562871e61d54369093bccfcf7045666" prot="public" virt="virtual"><scope>rocalution::GlobalVector</scope><name>WriteFileBinary</name></member>
+      <member refid="classrocalution_1_1_global_vector_1a9666aa5c811a3774a0d59f6810d7ca1a" prot="public" virt="virtual"><scope>rocalution::GlobalVector</scope><name>Zeros</name></member>
+      <member refid="classrocalution_1_1_base_rocalution_1aad8ac3188091c4683181bfe6d739b7fd" prot="public" virt="virtual"><scope>rocalution::GlobalVector</scope><name>~BaseRocalution</name></member>
+      <member refid="classrocalution_1_1_global_vector_1a405dfba2b12b05f2e7b2490c5ec3c7bf" prot="public" virt="virtual"><scope>rocalution::GlobalVector</scope><name>~GlobalVector</name></member>
+      <member refid="classrocalution_1_1_rocalution_obj_1a55a2f93f798cebdda6343b20db959e2d" prot="public" virt="virtual"><scope>rocalution::GlobalVector</scope><name>~RocalutionObj</name></member>
+      <member refid="classrocalution_1_1_vector_1a1a5d1bd49e7ce33f80f1f71e9e681818" prot="public" virt="virtual"><scope>rocalution::GlobalVector</scope><name>~Vector</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

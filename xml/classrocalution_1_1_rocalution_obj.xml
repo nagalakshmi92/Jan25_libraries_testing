@@ -1,0 +1,134 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classrocalution_1_1_rocalution_obj" kind="class" language="C++" prot="private" abstract="yes">
+    <compoundname>rocalution::RocalutionObj</compoundname>
+    <derivedcompoundref refid="classrocalution_1_1_base_rocalution" prot="public" virt="non-virtual">rocalution::BaseRocalution&lt; ValueType &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classrocalution_1_1_parallel_manager" prot="public" virt="non-virtual">rocalution::ParallelManager</derivedcompoundref>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classrocalution_1_1_rocalution_obj_1a4bba5aeaf4fd705efc00402f1f6ed40b" prot="protected" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t rocalution::RocalutionObj::global_obj_id_</definition>
+        <argsstring></argsstring>
+        <name>global_obj_id_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/base_rocalution.hpp" line="50" column="1" bodyfile="ROCm_Libraries/rocALUTION/src/base/base_rocalution.hpp" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classrocalution_1_1_rocalution_obj_1ad60a8b2047aad74e488c552264fa7737" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>rocalution::RocalutionObj::RocalutionObj</definition>
+        <argsstring>()</argsstring>
+        <name>RocalutionObj</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/base_rocalution.hpp" line="44" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_rocalution_obj_1a55a2f93f798cebdda6343b20db959e2d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual rocalution::RocalutionObj::~RocalutionObj</definition>
+        <argsstring>()</argsstring>
+        <name>~RocalutionObj</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/base_rocalution.hpp" line="45" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_rocalution_obj_1ae775c603a6abb9bc78417d06741364ce" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void rocalution::RocalutionObj::Clear</definition>
+        <argsstring>()=0</argsstring>
+        <name>Clear</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ROCm_Libraries/rocALUTION/src/base/base_rocalution.hpp" line="47" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="96">
+        <label>rocalution::LocalMatrix&lt; ValueType &gt;</label>
+        <link refid="classrocalution_1_1_local_matrix"/>
+        <childnode refid="94" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="93">
+        <label>rocalution::BaseRocalution&lt; ValueType &gt;</label>
+        <link refid="classrocalution_1_1_base_rocalution"/>
+        <childnode refid="92" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="98">
+        <label>rocalution::Vector&lt; ValueType &gt;</label>
+        <link refid="classrocalution_1_1_vector"/>
+        <childnode refid="93" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="94">
+        <label>rocalution::Operator&lt; ValueType &gt;</label>
+        <link refid="classrocalution_1_1_operator"/>
+        <childnode refid="93" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="100">
+        <label>rocalution::LocalVector&lt; ValueType &gt;</label>
+        <link refid="classrocalution_1_1_local_vector"/>
+        <childnode refid="98" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="92">
+        <label>rocalution::RocalutionObj</label>
+      </node>
+      <node id="99">
+        <label>rocalution::GlobalVector&lt; ValueType &gt;</label>
+        <link refid="classrocalution_1_1_global_vector"/>
+        <childnode refid="98" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="101">
+        <label>rocalution::ParallelManager</label>
+        <link refid="classrocalution_1_1_parallel_manager"/>
+        <childnode refid="92" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="97">
+        <label>rocalution::LocalStencil&lt; ValueType &gt;</label>
+        <link refid="classrocalution_1_1_local_stencil"/>
+        <childnode refid="94" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="95">
+        <label>rocalution::GlobalMatrix&lt; ValueType &gt;</label>
+        <link refid="classrocalution_1_1_global_matrix"/>
+        <childnode refid="94" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="ROCm_Libraries/rocALUTION/src/base/base_rocalution.hpp" line="42" column="1" bodyfile="ROCm_Libraries/rocALUTION/src/base/base_rocalution.hpp" bodystart="41" bodyend="51"/>
+    <listofallmembers>
+      <member refid="classrocalution_1_1_rocalution_obj_1ae775c603a6abb9bc78417d06741364ce" prot="public" virt="pure-virtual"><scope>rocalution::RocalutionObj</scope><name>Clear</name></member>
+      <member refid="classrocalution_1_1_rocalution_obj_1a4bba5aeaf4fd705efc00402f1f6ed40b" prot="protected" virt="non-virtual"><scope>rocalution::RocalutionObj</scope><name>global_obj_id_</name></member>
+      <member refid="classrocalution_1_1_rocalution_obj_1ad60a8b2047aad74e488c552264fa7737" prot="public" virt="non-virtual"><scope>rocalution::RocalutionObj</scope><name>RocalutionObj</name></member>
+      <member refid="classrocalution_1_1_rocalution_obj_1a55a2f93f798cebdda6343b20db959e2d" prot="public" virt="virtual"><scope>rocalution::RocalutionObj</scope><name>~RocalutionObj</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
