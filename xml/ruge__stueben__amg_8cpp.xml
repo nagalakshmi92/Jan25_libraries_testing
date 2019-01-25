@@ -15,160 +15,160 @@
     <includes local="yes">../../utils/log.hpp</includes>
     <includes local="yes">../../utils/math_functions.hpp</includes>
     <incdepgraph>
-      <node id="769">
+      <node id="759">
         <label>/home/tcs/Jan24/Jan24_libraries_testing/ROCm_Libraries/rocALUTION/src/solvers/preconditioners/preconditioner_multicolored.hpp</label>
       </node>
-      <node id="757">
+      <node id="747">
         <label>backend_manager.hpp</label>
         <link refid="backend__manager_8hpp_source"/>
-        <childnode refid="758" relation="include">
-        </childnode>
-        <childnode refid="759" relation="include">
-        </childnode>
-        <childnode refid="760" relation="include">
-        </childnode>
-        <childnode refid="752" relation="include">
-        </childnode>
-        <childnode refid="761" relation="include">
-        </childnode>
-      </node>
-      <node id="755">
-        <label>operator.hpp</label>
-        <link refid="operator_8hpp_source"/>
-        <childnode refid="754" relation="include">
-        </childnode>
-        <childnode refid="756" relation="include">
-        </childnode>
-        <childnode refid="758" relation="include">
-        </childnode>
-        <childnode refid="761" relation="include">
-        </childnode>
-        <childnode refid="763" relation="include">
-        </childnode>
-      </node>
-      <node id="761">
-        <label>string</label>
-      </node>
-      <node id="760">
-        <label>map</label>
-      </node>
-      <node id="768">
-        <label>/home/tcs/Jan24/Jan24_libraries_testing/ROCm_Libraries/rocALUTION/src/solvers/preconditioners/preconditioner.hpp</label>
-      </node>
-      <node id="759">
-        <label>fstream</label>
-      </node>
-      <node id="764">
-        <label>matrix_formats.hpp</label>
-      </node>
-      <node id="765">
-        <label>../../base/local_vector.hpp</label>
-        <link refid="local__vector_8hpp_source"/>
-        <childnode refid="754" relation="include">
-        </childnode>
-        <childnode refid="766" relation="include">
-        </childnode>
-      </node>
-      <node id="756">
-        <label>base_rocalution.hpp</label>
-        <link refid="base__rocalution_8hpp_source"/>
-        <childnode refid="757" relation="include">
-        </childnode>
-        <childnode refid="762" relation="include">
-        </childnode>
-        <childnode refid="752" relation="include">
-        </childnode>
-      </node>
-      <node id="753">
-        <label>../../base/local_matrix.hpp</label>
-        <link refid="local__matrix_8hpp_source"/>
-        <childnode refid="754" relation="include">
-        </childnode>
-        <childnode refid="755" relation="include">
-        </childnode>
-        <childnode refid="757" relation="include">
-        </childnode>
-        <childnode refid="764" relation="include">
-        </childnode>
-        <childnode refid="761" relation="include">
-        </childnode>
-      </node>
-      <node id="754">
-        <label>../utils/types.hpp</label>
-      </node>
-      <node id="752">
-        <label>vector</label>
-      </node>
-      <node id="748">
-        <label>../../utils/def.hpp</label>
-      </node>
-      <node id="770">
-        <label>../../utils/log.hpp</label>
-      </node>
-      <node id="749">
-        <label>ruge_stueben_amg.hpp</label>
-      </node>
-      <node id="763">
-        <label>cstdlib</label>
-      </node>
-      <node id="751">
-        <label>/home/tcs/Jan24/Jan24_libraries_testing/ROCm_Libraries/rocALUTION/src/solvers/multigrid/base_amg.hpp</label>
-      </node>
-      <node id="758">
-        <label>iostream</label>
-      </node>
-      <node id="750">
-        <label>/home/tcs/Jan24/Jan24_libraries_testing/ROCm_Libraries/rocALUTION/src/solvers/solver.hpp</label>
-      </node>
-      <node id="767">
-        <label>../preconditioners/preconditioner_multicolored_gs.hpp</label>
-      </node>
-      <node id="766">
-        <label>vector.hpp</label>
-        <link refid="vector_8hpp_source"/>
-        <childnode refid="754" relation="include">
-        </childnode>
-        <childnode refid="756" relation="include">
-        </childnode>
-        <childnode refid="758" relation="include">
-        </childnode>
-        <childnode refid="761" relation="include">
-        </childnode>
-        <childnode refid="763" relation="include">
-        </childnode>
-      </node>
-      <node id="762">
-        <label>complex</label>
-      </node>
-      <node id="747">
-        <label>ROCm_Libraries/rocALUTION/src/solvers/multigrid/ruge_stueben_amg.cpp</label>
-        <link refid="ruge__stueben__amg_8cpp"/>
         <childnode refid="748" relation="include">
         </childnode>
         <childnode refid="749" relation="include">
         </childnode>
         <childnode refid="750" relation="include">
         </childnode>
+        <childnode refid="742" relation="include">
+        </childnode>
         <childnode refid="751" relation="include">
         </childnode>
-        <childnode refid="752" relation="include">
+      </node>
+      <node id="745">
+        <label>operator.hpp</label>
+        <link refid="operator_8hpp_source"/>
+        <childnode refid="744" relation="include">
+        </childnode>
+        <childnode refid="746" relation="include">
+        </childnode>
+        <childnode refid="748" relation="include">
+        </childnode>
+        <childnode refid="751" relation="include">
         </childnode>
         <childnode refid="753" relation="include">
         </childnode>
-        <childnode refid="765" relation="include">
+      </node>
+      <node id="751">
+        <label>string</label>
+      </node>
+      <node id="750">
+        <label>map</label>
+      </node>
+      <node id="758">
+        <label>/home/tcs/Jan24/Jan24_libraries_testing/ROCm_Libraries/rocALUTION/src/solvers/preconditioners/preconditioner.hpp</label>
+      </node>
+      <node id="749">
+        <label>fstream</label>
+      </node>
+      <node id="754">
+        <label>matrix_formats.hpp</label>
+      </node>
+      <node id="755">
+        <label>../../base/local_vector.hpp</label>
+        <link refid="local__vector_8hpp_source"/>
+        <childnode refid="744" relation="include">
         </childnode>
-        <childnode refid="767" relation="include">
-        </childnode>
-        <childnode refid="768" relation="include">
-        </childnode>
-        <childnode refid="769" relation="include">
-        </childnode>
-        <childnode refid="770" relation="include">
-        </childnode>
-        <childnode refid="771" relation="include">
+        <childnode refid="756" relation="include">
         </childnode>
       </node>
-      <node id="771">
+      <node id="746">
+        <label>base_rocalution.hpp</label>
+        <link refid="base__rocalution_8hpp_source"/>
+        <childnode refid="747" relation="include">
+        </childnode>
+        <childnode refid="752" relation="include">
+        </childnode>
+        <childnode refid="742" relation="include">
+        </childnode>
+      </node>
+      <node id="743">
+        <label>../../base/local_matrix.hpp</label>
+        <link refid="local__matrix_8hpp_source"/>
+        <childnode refid="744" relation="include">
+        </childnode>
+        <childnode refid="745" relation="include">
+        </childnode>
+        <childnode refid="747" relation="include">
+        </childnode>
+        <childnode refid="754" relation="include">
+        </childnode>
+        <childnode refid="751" relation="include">
+        </childnode>
+      </node>
+      <node id="744">
+        <label>../utils/types.hpp</label>
+      </node>
+      <node id="742">
+        <label>vector</label>
+      </node>
+      <node id="738">
+        <label>../../utils/def.hpp</label>
+      </node>
+      <node id="760">
+        <label>../../utils/log.hpp</label>
+      </node>
+      <node id="739">
+        <label>ruge_stueben_amg.hpp</label>
+      </node>
+      <node id="753">
+        <label>cstdlib</label>
+      </node>
+      <node id="741">
+        <label>/home/tcs/Jan24/Jan24_libraries_testing/ROCm_Libraries/rocALUTION/src/solvers/multigrid/base_amg.hpp</label>
+      </node>
+      <node id="748">
+        <label>iostream</label>
+      </node>
+      <node id="740">
+        <label>/home/tcs/Jan24/Jan24_libraries_testing/ROCm_Libraries/rocALUTION/src/solvers/solver.hpp</label>
+      </node>
+      <node id="757">
+        <label>../preconditioners/preconditioner_multicolored_gs.hpp</label>
+      </node>
+      <node id="756">
+        <label>vector.hpp</label>
+        <link refid="vector_8hpp_source"/>
+        <childnode refid="744" relation="include">
+        </childnode>
+        <childnode refid="746" relation="include">
+        </childnode>
+        <childnode refid="748" relation="include">
+        </childnode>
+        <childnode refid="751" relation="include">
+        </childnode>
+        <childnode refid="753" relation="include">
+        </childnode>
+      </node>
+      <node id="752">
+        <label>complex</label>
+      </node>
+      <node id="737">
+        <label>ROCm_Libraries/rocALUTION/src/solvers/multigrid/ruge_stueben_amg.cpp</label>
+        <link refid="ruge__stueben__amg_8cpp"/>
+        <childnode refid="738" relation="include">
+        </childnode>
+        <childnode refid="739" relation="include">
+        </childnode>
+        <childnode refid="740" relation="include">
+        </childnode>
+        <childnode refid="741" relation="include">
+        </childnode>
+        <childnode refid="742" relation="include">
+        </childnode>
+        <childnode refid="743" relation="include">
+        </childnode>
+        <childnode refid="755" relation="include">
+        </childnode>
+        <childnode refid="757" relation="include">
+        </childnode>
+        <childnode refid="758" relation="include">
+        </childnode>
+        <childnode refid="759" relation="include">
+        </childnode>
+        <childnode refid="760" relation="include">
+        </childnode>
+        <childnode refid="761" relation="include">
+        </childnode>
+      </node>
+      <node id="761">
         <label>../../utils/math_functions.hpp</label>
       </node>
     </incdepgraph>

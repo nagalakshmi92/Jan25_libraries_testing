@@ -773,8 +773,9 @@ WARN_LOGFILE           =
 #                         ../../src/
 #INPUT                  = ../../include/hip/hcc_detail/hip_runtime_api.h
 
-INPUT                  = ROCm_API_References/HIP/include/hip/hcc_detail/hip_runtime_api.h \
-			 ROCm_Libraries/rocALUTION/src/base/backend_manager.hpp \
+#INPUT                  = ROCm_API_References/HIP/include/hip/hcc_detail/hip_runtime_api.h \
+
+INPUT                  = ROCm_Libraries/rocALUTION/src/base/backend_manager.hpp \
 			 ROCm_Libraries/rocALUTION/src/base/parallel_manager.hpp \
 			 ROCm_Libraries/rocALUTION/src/base/operator.hpp \
 			 ROCm_Libraries/rocALUTION/src/base/vector.hpp \

@@ -310,12 +310,41 @@
 </parameterlist>
 </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="79">
+      <node id="73">
         <label>rocalution::LocalMatrix&lt; ValueType &gt;</label>
         <link refid="classrocalution_1_1_local_matrix"/>
-        <childnode refid="75" relation="public-inheritance">
+        <childnode refid="69" relation="public-inheritance">
         </childnode>
       </node>
+      <node id="70">
+        <label>rocalution::BaseRocalution&lt; ValueType &gt;</label>
+        <link refid="classrocalution_1_1_base_rocalution"/>
+        <childnode refid="71" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="69">
+        <label>rocalution::Operator&lt; ValueType &gt;</label>
+        <link refid="classrocalution_1_1_operator"/>
+        <childnode refid="70" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="71">
+        <label>rocalution::RocalutionObj</label>
+      </node>
+      <node id="74">
+        <label>rocalution::LocalStencil&lt; ValueType &gt;</label>
+        <link refid="classrocalution_1_1_local_stencil"/>
+        <childnode refid="69" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="72">
+        <label>rocalution::GlobalMatrix&lt; ValueType &gt;</label>
+        <link refid="classrocalution_1_1_global_matrix"/>
+        <childnode refid="69" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
       <node id="76">
         <label>rocalution::BaseRocalution&lt; ValueType &gt;</label>
         <link refid="classrocalution_1_1_base_rocalution"/>
@@ -329,35 +358,6 @@
         </childnode>
       </node>
       <node id="77">
-        <label>rocalution::RocalutionObj</label>
-      </node>
-      <node id="80">
-        <label>rocalution::LocalStencil&lt; ValueType &gt;</label>
-        <link refid="classrocalution_1_1_local_stencil"/>
-        <childnode refid="75" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="78">
-        <label>rocalution::GlobalMatrix&lt; ValueType &gt;</label>
-        <link refid="classrocalution_1_1_global_matrix"/>
-        <childnode refid="75" relation="public-inheritance">
-        </childnode>
-      </node>
-    </inheritancegraph>
-    <collaborationgraph>
-      <node id="82">
-        <label>rocalution::BaseRocalution&lt; ValueType &gt;</label>
-        <link refid="classrocalution_1_1_base_rocalution"/>
-        <childnode refid="83" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="81">
-        <label>rocalution::Operator&lt; ValueType &gt;</label>
-        <link refid="classrocalution_1_1_operator"/>
-        <childnode refid="82" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="83">
         <label>rocalution::RocalutionObj</label>
       </node>
     </collaborationgraph>

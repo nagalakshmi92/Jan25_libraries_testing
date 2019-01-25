@@ -19,233 +19,233 @@
     <includes local="no">math.h</includes>
     <includes local="no">complex</includes>
     <incdepgraph>
-      <node id="500">
+      <node id="490">
         <label>limits</label>
       </node>
-      <node id="497">
+      <node id="487">
         <label>parallel_manager.hpp</label>
         <link refid="parallel__manager_8hpp_source"/>
-        <childnode refid="483" relation="include">
+        <childnode refid="473" relation="include">
         </childnode>
-        <childnode refid="481" relation="include">
-        </childnode>
-        <childnode refid="498" relation="include">
-        </childnode>
-        <childnode refid="499" relation="include">
-        </childnode>
-        <childnode refid="500" relation="include">
+        <childnode refid="471" relation="include">
         </childnode>
         <childnode refid="488" relation="include">
         </childnode>
         <childnode refid="489" relation="include">
-        </childnode>
-      </node>
-      <node id="499">
-        <label>assert.h</label>
-      </node>
-      <node id="484">
-        <label>backend_manager.hpp</label>
-        <link refid="backend__manager_8hpp_source"/>
-        <childnode refid="485" relation="include">
-        </childnode>
-        <childnode refid="486" relation="include">
-        </childnode>
-        <childnode refid="487" relation="include">
-        </childnode>
-        <childnode refid="477" relation="include">
-        </childnode>
-        <childnode refid="488" relation="include">
-        </childnode>
-      </node>
-      <node id="482">
-        <label>operator.hpp</label>
-        <link refid="operator_8hpp_source"/>
-        <childnode refid="481" relation="include">
-        </childnode>
-        <childnode refid="483" relation="include">
-        </childnode>
-        <childnode refid="485" relation="include">
-        </childnode>
-        <childnode refid="488" relation="include">
         </childnode>
         <childnode refid="490" relation="include">
         </childnode>
-      </node>
-      <node id="488">
-        <label>string</label>
-      </node>
-      <node id="487">
-        <label>map</label>
-      </node>
-      <node id="498">
-        <label>/home/tcs/Jan24/Jan24_libraries_testing/ROCm_Libraries/rocALUTION/src/utils/def.hpp</label>
-      </node>
-      <node id="479">
-        <label>../../base/matrix_formats_ind.hpp</label>
-      </node>
-      <node id="475">
-        <label>gmres.hpp</label>
-      </node>
-      <node id="486">
-        <label>fstream</label>
-      </node>
-      <node id="496">
-        <label>../../base/global_matrix.hpp</label>
-        <link refid="global__matrix_8hpp_source"/>
-        <childnode refid="481" relation="include">
+        <childnode refid="478" relation="include">
         </childnode>
-        <childnode refid="482" relation="include">
-        </childnode>
-        <childnode refid="497" relation="include">
+        <childnode refid="479" relation="include">
         </childnode>
       </node>
-      <node id="495">
-        <label>stencil_types.hpp</label>
+      <node id="489">
+        <label>assert.h</label>
       </node>
-      <node id="491">
-        <label>matrix_formats.hpp</label>
-      </node>
-      <node id="493">
-        <label>local_vector.hpp</label>
-        <link refid="local__vector_8hpp_source"/>
-        <childnode refid="481" relation="include">
-        </childnode>
-        <childnode refid="494" relation="include">
-        </childnode>
-      </node>
-      <node id="483">
-        <label>base_rocalution.hpp</label>
-        <link refid="base__rocalution_8hpp_source"/>
-        <childnode refid="484" relation="include">
-        </childnode>
-        <childnode refid="489" relation="include">
-        </childnode>
-        <childnode refid="477" relation="include">
-        </childnode>
-      </node>
-      <node id="480">
-        <label>../../base/local_matrix.hpp</label>
-        <link refid="local__matrix_8hpp_source"/>
-        <childnode refid="481" relation="include">
-        </childnode>
-        <childnode refid="482" relation="include">
-        </childnode>
-        <childnode refid="484" relation="include">
-        </childnode>
-        <childnode refid="491" relation="include">
-        </childnode>
-        <childnode refid="488" relation="include">
-        </childnode>
-      </node>
-      <node id="481">
-        <label>../utils/types.hpp</label>
-      </node>
-      <node id="501">
-        <label>../../base/global_vector.hpp</label>
-        <link refid="global__vector_8hpp_source"/>
-        <childnode refid="481" relation="include">
-        </childnode>
-        <childnode refid="494" relation="include">
-        </childnode>
-        <childnode refid="497" relation="include">
-        </childnode>
-      </node>
-      <node id="473">
-        <label>ROCm_Libraries/rocALUTION/src/solvers/krylov/gmres.cpp</label>
-        <link refid="gmres_8cpp"/>
-        <childnode refid="474" relation="include">
-        </childnode>
+      <node id="474">
+        <label>backend_manager.hpp</label>
+        <link refid="backend__manager_8hpp_source"/>
         <childnode refid="475" relation="include">
         </childnode>
         <childnode refid="476" relation="include">
         </childnode>
         <childnode refid="477" relation="include">
         </childnode>
+        <childnode refid="467" relation="include">
+        </childnode>
         <childnode refid="478" relation="include">
+        </childnode>
+      </node>
+      <node id="472">
+        <label>operator.hpp</label>
+        <link refid="operator_8hpp_source"/>
+        <childnode refid="471" relation="include">
+        </childnode>
+        <childnode refid="473" relation="include">
+        </childnode>
+        <childnode refid="475" relation="include">
+        </childnode>
+        <childnode refid="478" relation="include">
+        </childnode>
+        <childnode refid="480" relation="include">
+        </childnode>
+      </node>
+      <node id="478">
+        <label>string</label>
+      </node>
+      <node id="477">
+        <label>map</label>
+      </node>
+      <node id="488">
+        <label>/home/tcs/Jan24/Jan24_libraries_testing/ROCm_Libraries/rocALUTION/src/utils/def.hpp</label>
+      </node>
+      <node id="469">
+        <label>../../base/matrix_formats_ind.hpp</label>
+      </node>
+      <node id="465">
+        <label>gmres.hpp</label>
+      </node>
+      <node id="476">
+        <label>fstream</label>
+      </node>
+      <node id="486">
+        <label>../../base/global_matrix.hpp</label>
+        <link refid="global__matrix_8hpp_source"/>
+        <childnode refid="471" relation="include">
+        </childnode>
+        <childnode refid="472" relation="include">
+        </childnode>
+        <childnode refid="487" relation="include">
+        </childnode>
+      </node>
+      <node id="485">
+        <label>stencil_types.hpp</label>
+      </node>
+      <node id="481">
+        <label>matrix_formats.hpp</label>
+      </node>
+      <node id="483">
+        <label>local_vector.hpp</label>
+        <link refid="local__vector_8hpp_source"/>
+        <childnode refid="471" relation="include">
+        </childnode>
+        <childnode refid="484" relation="include">
+        </childnode>
+      </node>
+      <node id="473">
+        <label>base_rocalution.hpp</label>
+        <link refid="base__rocalution_8hpp_source"/>
+        <childnode refid="474" relation="include">
         </childnode>
         <childnode refid="479" relation="include">
         </childnode>
-        <childnode refid="480" relation="include">
+        <childnode refid="467" relation="include">
+        </childnode>
+      </node>
+      <node id="470">
+        <label>../../base/local_matrix.hpp</label>
+        <link refid="local__matrix_8hpp_source"/>
+        <childnode refid="471" relation="include">
+        </childnode>
+        <childnode refid="472" relation="include">
+        </childnode>
+        <childnode refid="474" relation="include">
+        </childnode>
+        <childnode refid="481" relation="include">
+        </childnode>
+        <childnode refid="478" relation="include">
+        </childnode>
+      </node>
+      <node id="471">
+        <label>../utils/types.hpp</label>
+      </node>
+      <node id="491">
+        <label>../../base/global_vector.hpp</label>
+        <link refid="global__vector_8hpp_source"/>
+        <childnode refid="471" relation="include">
+        </childnode>
+        <childnode refid="484" relation="include">
+        </childnode>
+        <childnode refid="487" relation="include">
+        </childnode>
+      </node>
+      <node id="463">
+        <label>ROCm_Libraries/rocALUTION/src/solvers/krylov/gmres.cpp</label>
+        <link refid="gmres_8cpp"/>
+        <childnode refid="464" relation="include">
+        </childnode>
+        <childnode refid="465" relation="include">
+        </childnode>
+        <childnode refid="466" relation="include">
+        </childnode>
+        <childnode refid="467" relation="include">
+        </childnode>
+        <childnode refid="468" relation="include">
+        </childnode>
+        <childnode refid="469" relation="include">
+        </childnode>
+        <childnode refid="470" relation="include">
+        </childnode>
+        <childnode refid="482" relation="include">
+        </childnode>
+        <childnode refid="483" relation="include">
+        </childnode>
+        <childnode refid="486" relation="include">
+        </childnode>
+        <childnode refid="491" relation="include">
         </childnode>
         <childnode refid="492" relation="include">
         </childnode>
         <childnode refid="493" relation="include">
         </childnode>
-        <childnode refid="496" relation="include">
-        </childnode>
-        <childnode refid="501" relation="include">
-        </childnode>
-        <childnode refid="502" relation="include">
-        </childnode>
-        <childnode refid="503" relation="include">
-        </childnode>
-        <childnode refid="504" relation="include">
-        </childnode>
-        <childnode refid="505" relation="include">
-        </childnode>
-        <childnode refid="489" relation="include">
-        </childnode>
-      </node>
-      <node id="477">
-        <label>vector</label>
-      </node>
-      <node id="503">
-        <label>../../utils/allocate_free.hpp</label>
-        <link refid="allocate__free_8hpp_source"/>
-      </node>
-      <node id="474">
-        <label>../../utils/def.hpp</label>
-      </node>
-      <node id="502">
-        <label>../../utils/log.hpp</label>
-      </node>
-      <node id="505">
-        <label>math.h</label>
-      </node>
-      <node id="492">
-        <label>../../base/local_stencil.hpp</label>
-        <link refid="local__stencil_8hpp_source"/>
-        <childnode refid="481" relation="include">
-        </childnode>
-        <childnode refid="482" relation="include">
-        </childnode>
-        <childnode refid="493" relation="include">
+        <childnode refid="494" relation="include">
         </childnode>
         <childnode refid="495" relation="include">
         </childnode>
-        <childnode refid="488" relation="include">
+        <childnode refid="479" relation="include">
         </childnode>
       </node>
-      <node id="490">
-        <label>cstdlib</label>
+      <node id="467">
+        <label>vector</label>
       </node>
-      <node id="478">
-        <label>../iter_ctrl.hpp</label>
+      <node id="493">
+        <label>../../utils/allocate_free.hpp</label>
+        <link refid="allocate__free_8hpp_source"/>
       </node>
-      <node id="485">
-        <label>iostream</label>
+      <node id="464">
+        <label>../../utils/def.hpp</label>
       </node>
-      <node id="476">
-        <label>/home/tcs/Jan24/Jan24_libraries_testing/ROCm_Libraries/rocALUTION/src/solvers/solver.hpp</label>
+      <node id="492">
+        <label>../../utils/log.hpp</label>
       </node>
-      <node id="494">
-        <label>vector.hpp</label>
-        <link refid="vector_8hpp_source"/>
-        <childnode refid="481" relation="include">
+      <node id="495">
+        <label>math.h</label>
+      </node>
+      <node id="482">
+        <label>../../base/local_stencil.hpp</label>
+        <link refid="local__stencil_8hpp_source"/>
+        <childnode refid="471" relation="include">
+        </childnode>
+        <childnode refid="472" relation="include">
         </childnode>
         <childnode refid="483" relation="include">
         </childnode>
         <childnode refid="485" relation="include">
         </childnode>
-        <childnode refid="488" relation="include">
-        </childnode>
-        <childnode refid="490" relation="include">
+        <childnode refid="478" relation="include">
         </childnode>
       </node>
-      <node id="489">
+      <node id="480">
+        <label>cstdlib</label>
+      </node>
+      <node id="468">
+        <label>../iter_ctrl.hpp</label>
+      </node>
+      <node id="475">
+        <label>iostream</label>
+      </node>
+      <node id="466">
+        <label>/home/tcs/Jan24/Jan24_libraries_testing/ROCm_Libraries/rocALUTION/src/solvers/solver.hpp</label>
+      </node>
+      <node id="484">
+        <label>vector.hpp</label>
+        <link refid="vector_8hpp_source"/>
+        <childnode refid="471" relation="include">
+        </childnode>
+        <childnode refid="473" relation="include">
+        </childnode>
+        <childnode refid="475" relation="include">
+        </childnode>
+        <childnode refid="478" relation="include">
+        </childnode>
+        <childnode refid="480" relation="include">
+        </childnode>
+      </node>
+      <node id="479">
         <label>complex</label>
       </node>
-      <node id="504">
+      <node id="494">
         <label>../../utils/math_functions.hpp</label>
       </node>
     </incdepgraph>

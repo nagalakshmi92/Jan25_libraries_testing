@@ -13,150 +13,150 @@
     <includes local="yes">../../utils/log.hpp</includes>
     <includes local="yes">../../utils/math_functions.hpp</includes>
     <incdepgraph>
-      <node id="783">
+      <node id="773">
         <label>backend_manager.hpp</label>
         <link refid="backend__manager_8hpp_source"/>
-        <childnode refid="784" relation="include">
-        </childnode>
-        <childnode refid="785" relation="include">
-        </childnode>
-        <childnode refid="786" relation="include">
-        </childnode>
-        <childnode refid="778" relation="include">
-        </childnode>
-        <childnode refid="787" relation="include">
-        </childnode>
-      </node>
-      <node id="781">
-        <label>operator.hpp</label>
-        <link refid="operator_8hpp_source"/>
-        <childnode refid="780" relation="include">
-        </childnode>
-        <childnode refid="782" relation="include">
-        </childnode>
-        <childnode refid="784" relation="include">
-        </childnode>
-        <childnode refid="787" relation="include">
-        </childnode>
-        <childnode refid="789" relation="include">
-        </childnode>
-      </node>
-      <node id="787">
-        <label>string</label>
-      </node>
-      <node id="786">
-        <label>map</label>
-      </node>
-      <node id="785">
-        <label>fstream</label>
-      </node>
-      <node id="790">
-        <label>matrix_formats.hpp</label>
-      </node>
-      <node id="791">
-        <label>../../base/local_vector.hpp</label>
-        <link refid="local__vector_8hpp_source"/>
-        <childnode refid="780" relation="include">
-        </childnode>
-        <childnode refid="792" relation="include">
-        </childnode>
-      </node>
-      <node id="782">
-        <label>base_rocalution.hpp</label>
-        <link refid="base__rocalution_8hpp_source"/>
-        <childnode refid="783" relation="include">
-        </childnode>
-        <childnode refid="788" relation="include">
-        </childnode>
-        <childnode refid="778" relation="include">
-        </childnode>
-      </node>
-      <node id="793">
-        <label>../../solvers/preconditioners/preconditioner_multicolored_gs.hpp</label>
-      </node>
-      <node id="779">
-        <label>../../base/local_matrix.hpp</label>
-        <link refid="local__matrix_8hpp_source"/>
-        <childnode refid="780" relation="include">
-        </childnode>
-        <childnode refid="781" relation="include">
-        </childnode>
-        <childnode refid="783" relation="include">
-        </childnode>
-        <childnode refid="790" relation="include">
-        </childnode>
-        <childnode refid="787" relation="include">
-        </childnode>
-      </node>
-      <node id="780">
-        <label>../utils/types.hpp</label>
-      </node>
-      <node id="778">
-        <label>vector</label>
-      </node>
-      <node id="774">
-        <label>../../utils/def.hpp</label>
-      </node>
-      <node id="794">
-        <label>../../utils/log.hpp</label>
-      </node>
-      <node id="775">
-        <label>smoothed_amg.hpp</label>
-      </node>
-      <node id="789">
-        <label>cstdlib</label>
-      </node>
-      <node id="777">
-        <label>/home/tcs/Jan24/Jan24_libraries_testing/ROCm_Libraries/rocALUTION/src/solvers/multigrid/base_amg.hpp</label>
-      </node>
-      <node id="784">
-        <label>iostream</label>
-      </node>
-      <node id="776">
-        <label>/home/tcs/Jan24/Jan24_libraries_testing/ROCm_Libraries/rocALUTION/src/solvers/solver.hpp</label>
-      </node>
-      <node id="792">
-        <label>vector.hpp</label>
-        <link refid="vector_8hpp_source"/>
-        <childnode refid="780" relation="include">
-        </childnode>
-        <childnode refid="782" relation="include">
-        </childnode>
-        <childnode refid="784" relation="include">
-        </childnode>
-        <childnode refid="787" relation="include">
-        </childnode>
-        <childnode refid="789" relation="include">
-        </childnode>
-      </node>
-      <node id="788">
-        <label>complex</label>
-      </node>
-      <node id="773">
-        <label>ROCm_Libraries/rocALUTION/src/solvers/multigrid/smoothed_amg.cpp</label>
-        <link refid="smoothed__amg_8cpp"/>
         <childnode refid="774" relation="include">
         </childnode>
         <childnode refid="775" relation="include">
         </childnode>
         <childnode refid="776" relation="include">
         </childnode>
+        <childnode refid="768" relation="include">
+        </childnode>
         <childnode refid="777" relation="include">
         </childnode>
-        <childnode refid="778" relation="include">
+      </node>
+      <node id="771">
+        <label>operator.hpp</label>
+        <link refid="operator_8hpp_source"/>
+        <childnode refid="770" relation="include">
+        </childnode>
+        <childnode refid="772" relation="include">
+        </childnode>
+        <childnode refid="774" relation="include">
+        </childnode>
+        <childnode refid="777" relation="include">
         </childnode>
         <childnode refid="779" relation="include">
         </childnode>
-        <childnode refid="791" relation="include">
+      </node>
+      <node id="777">
+        <label>string</label>
+      </node>
+      <node id="776">
+        <label>map</label>
+      </node>
+      <node id="775">
+        <label>fstream</label>
+      </node>
+      <node id="780">
+        <label>matrix_formats.hpp</label>
+      </node>
+      <node id="781">
+        <label>../../base/local_vector.hpp</label>
+        <link refid="local__vector_8hpp_source"/>
+        <childnode refid="770" relation="include">
         </childnode>
-        <childnode refid="793" relation="include">
-        </childnode>
-        <childnode refid="794" relation="include">
-        </childnode>
-        <childnode refid="795" relation="include">
+        <childnode refid="782" relation="include">
         </childnode>
       </node>
-      <node id="795">
+      <node id="772">
+        <label>base_rocalution.hpp</label>
+        <link refid="base__rocalution_8hpp_source"/>
+        <childnode refid="773" relation="include">
+        </childnode>
+        <childnode refid="778" relation="include">
+        </childnode>
+        <childnode refid="768" relation="include">
+        </childnode>
+      </node>
+      <node id="783">
+        <label>../../solvers/preconditioners/preconditioner_multicolored_gs.hpp</label>
+      </node>
+      <node id="769">
+        <label>../../base/local_matrix.hpp</label>
+        <link refid="local__matrix_8hpp_source"/>
+        <childnode refid="770" relation="include">
+        </childnode>
+        <childnode refid="771" relation="include">
+        </childnode>
+        <childnode refid="773" relation="include">
+        </childnode>
+        <childnode refid="780" relation="include">
+        </childnode>
+        <childnode refid="777" relation="include">
+        </childnode>
+      </node>
+      <node id="770">
+        <label>../utils/types.hpp</label>
+      </node>
+      <node id="768">
+        <label>vector</label>
+      </node>
+      <node id="764">
+        <label>../../utils/def.hpp</label>
+      </node>
+      <node id="784">
+        <label>../../utils/log.hpp</label>
+      </node>
+      <node id="765">
+        <label>smoothed_amg.hpp</label>
+      </node>
+      <node id="779">
+        <label>cstdlib</label>
+      </node>
+      <node id="767">
+        <label>/home/tcs/Jan24/Jan24_libraries_testing/ROCm_Libraries/rocALUTION/src/solvers/multigrid/base_amg.hpp</label>
+      </node>
+      <node id="774">
+        <label>iostream</label>
+      </node>
+      <node id="766">
+        <label>/home/tcs/Jan24/Jan24_libraries_testing/ROCm_Libraries/rocALUTION/src/solvers/solver.hpp</label>
+      </node>
+      <node id="782">
+        <label>vector.hpp</label>
+        <link refid="vector_8hpp_source"/>
+        <childnode refid="770" relation="include">
+        </childnode>
+        <childnode refid="772" relation="include">
+        </childnode>
+        <childnode refid="774" relation="include">
+        </childnode>
+        <childnode refid="777" relation="include">
+        </childnode>
+        <childnode refid="779" relation="include">
+        </childnode>
+      </node>
+      <node id="778">
+        <label>complex</label>
+      </node>
+      <node id="763">
+        <label>ROCm_Libraries/rocALUTION/src/solvers/multigrid/smoothed_amg.cpp</label>
+        <link refid="smoothed__amg_8cpp"/>
+        <childnode refid="764" relation="include">
+        </childnode>
+        <childnode refid="765" relation="include">
+        </childnode>
+        <childnode refid="766" relation="include">
+        </childnode>
+        <childnode refid="767" relation="include">
+        </childnode>
+        <childnode refid="768" relation="include">
+        </childnode>
+        <childnode refid="769" relation="include">
+        </childnode>
+        <childnode refid="781" relation="include">
+        </childnode>
+        <childnode refid="783" relation="include">
+        </childnode>
+        <childnode refid="784" relation="include">
+        </childnode>
+        <childnode refid="785" relation="include">
+        </childnode>
+      </node>
+      <node id="785">
         <label>../../utils/math_functions.hpp</label>
       </node>
     </incdepgraph>

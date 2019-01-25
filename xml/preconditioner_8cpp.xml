@@ -13,191 +13,191 @@
     <includes local="no">math.h</includes>
     <includes local="no">complex</includes>
     <incdepgraph>
-      <node id="840">
+      <node id="830">
         <label>limits</label>
       </node>
-      <node id="837">
+      <node id="827">
         <label>parallel_manager.hpp</label>
         <link refid="parallel__manager_8hpp_source"/>
+        <childnode refid="818" relation="include">
+        </childnode>
+        <childnode refid="816" relation="include">
+        </childnode>
         <childnode refid="828" relation="include">
         </childnode>
-        <childnode refid="826" relation="include">
+        <childnode refid="829" relation="include">
         </childnode>
-        <childnode refid="838" relation="include">
+        <childnode refid="830" relation="include">
         </childnode>
-        <childnode refid="839" relation="include">
+        <childnode refid="824" relation="include">
         </childnode>
-        <childnode refid="840" relation="include">
+        <childnode refid="825" relation="include">
         </childnode>
-        <childnode refid="834" relation="include">
+      </node>
+      <node id="829">
+        <label>assert.h</label>
+      </node>
+      <node id="811">
+        <label>ROCm_Libraries/rocALUTION/src/solvers/preconditioners/preconditioner.cpp</label>
+        <link refid="preconditioner_8cpp"/>
+        <childnode refid="812" relation="include">
+        </childnode>
+        <childnode refid="813" relation="include">
+        </childnode>
+        <childnode refid="814" relation="include">
+        </childnode>
+        <childnode refid="815" relation="include">
+        </childnode>
+        <childnode refid="831" relation="include">
+        </childnode>
+        <childnode refid="833" relation="include">
         </childnode>
         <childnode refid="835" relation="include">
         </childnode>
+        <childnode refid="836" relation="include">
+        </childnode>
+        <childnode refid="837" relation="include">
+        </childnode>
+        <childnode refid="825" relation="include">
+        </childnode>
       </node>
-      <node id="839">
-        <label>assert.h</label>
-      </node>
-      <node id="821">
-        <label>ROCm_Libraries/rocALUTION/src/solvers/preconditioners/preconditioner.cpp</label>
-        <link refid="preconditioner_8cpp"/>
+      <node id="819">
+        <label>backend_manager.hpp</label>
+        <link refid="backend__manager_8hpp_source"/>
+        <childnode refid="820" relation="include">
+        </childnode>
+        <childnode refid="821" relation="include">
+        </childnode>
         <childnode refid="822" relation="include">
         </childnode>
         <childnode refid="823" relation="include">
         </childnode>
         <childnode refid="824" relation="include">
         </childnode>
-        <childnode refid="825" relation="include">
+      </node>
+      <node id="817">
+        <label>operator.hpp</label>
+        <link refid="operator_8hpp_source"/>
+        <childnode refid="816" relation="include">
         </childnode>
-        <childnode refid="841" relation="include">
+        <childnode refid="818" relation="include">
         </childnode>
-        <childnode refid="843" relation="include">
+        <childnode refid="820" relation="include">
         </childnode>
-        <childnode refid="845" relation="include">
+        <childnode refid="824" relation="include">
         </childnode>
-        <childnode refid="846" relation="include">
-        </childnode>
-        <childnode refid="847" relation="include">
-        </childnode>
-        <childnode refid="835" relation="include">
+        <childnode refid="826" relation="include">
         </childnode>
       </node>
-      <node id="829">
-        <label>backend_manager.hpp</label>
-        <link refid="backend__manager_8hpp_source"/>
-        <childnode refid="830" relation="include">
+      <node id="824">
+        <label>string</label>
+      </node>
+      <node id="822">
+        <label>map</label>
+      </node>
+      <node id="828">
+        <label>/home/tcs/Jan24/Jan24_libraries_testing/ROCm_Libraries/rocALUTION/src/utils/def.hpp</label>
+      </node>
+      <node id="814">
+        <label>../solver.hpp</label>
+      </node>
+      <node id="821">
+        <label>fstream</label>
+      </node>
+      <node id="813">
+        <label>preconditioner.hpp</label>
+      </node>
+      <node id="815">
+        <label>../../base/global_matrix.hpp</label>
+        <link refid="global__matrix_8hpp_source"/>
+        <childnode refid="816" relation="include">
         </childnode>
-        <childnode refid="831" relation="include">
+        <childnode refid="817" relation="include">
+        </childnode>
+        <childnode refid="827" relation="include">
+        </childnode>
+      </node>
+      <node id="832">
+        <label>matrix_formats.hpp</label>
+      </node>
+      <node id="835">
+        <label>../../base/local_vector.hpp</label>
+        <link refid="local__vector_8hpp_source"/>
+        <childnode refid="816" relation="include">
+        </childnode>
+        <childnode refid="834" relation="include">
+        </childnode>
+      </node>
+      <node id="818">
+        <label>base_rocalution.hpp</label>
+        <link refid="base__rocalution_8hpp_source"/>
+        <childnode refid="819" relation="include">
+        </childnode>
+        <childnode refid="825" relation="include">
+        </childnode>
+        <childnode refid="823" relation="include">
+        </childnode>
+      </node>
+      <node id="831">
+        <label>../../base/local_matrix.hpp</label>
+        <link refid="local__matrix_8hpp_source"/>
+        <childnode refid="816" relation="include">
+        </childnode>
+        <childnode refid="817" relation="include">
+        </childnode>
+        <childnode refid="819" relation="include">
         </childnode>
         <childnode refid="832" relation="include">
         </childnode>
-        <childnode refid="833" relation="include">
-        </childnode>
-        <childnode refid="834" relation="include">
+        <childnode refid="824" relation="include">
         </childnode>
       </node>
-      <node id="827">
-        <label>operator.hpp</label>
-        <link refid="operator_8hpp_source"/>
-        <childnode refid="826" relation="include">
-        </childnode>
-        <childnode refid="828" relation="include">
-        </childnode>
-        <childnode refid="830" relation="include">
-        </childnode>
-        <childnode refid="834" relation="include">
-        </childnode>
-        <childnode refid="836" relation="include">
-        </childnode>
-      </node>
-      <node id="834">
-        <label>string</label>
-      </node>
-      <node id="832">
-        <label>map</label>
-      </node>
-      <node id="838">
-        <label>/home/tcs/Jan24/Jan24_libraries_testing/ROCm_Libraries/rocALUTION/src/utils/def.hpp</label>
-      </node>
-      <node id="824">
-        <label>../solver.hpp</label>
-      </node>
-      <node id="831">
-        <label>fstream</label>
-      </node>
-      <node id="823">
-        <label>preconditioner.hpp</label>
-      </node>
-      <node id="825">
-        <label>../../base/global_matrix.hpp</label>
-        <link refid="global__matrix_8hpp_source"/>
-        <childnode refid="826" relation="include">
-        </childnode>
-        <childnode refid="827" relation="include">
-        </childnode>
-        <childnode refid="837" relation="include">
-        </childnode>
-      </node>
-      <node id="842">
-        <label>matrix_formats.hpp</label>
-      </node>
-      <node id="845">
-        <label>../../base/local_vector.hpp</label>
-        <link refid="local__vector_8hpp_source"/>
-        <childnode refid="826" relation="include">
-        </childnode>
-        <childnode refid="844" relation="include">
-        </childnode>
-      </node>
-      <node id="828">
-        <label>base_rocalution.hpp</label>
-        <link refid="base__rocalution_8hpp_source"/>
-        <childnode refid="829" relation="include">
-        </childnode>
-        <childnode refid="835" relation="include">
-        </childnode>
-        <childnode refid="833" relation="include">
-        </childnode>
-      </node>
-      <node id="841">
-        <label>../../base/local_matrix.hpp</label>
-        <link refid="local__matrix_8hpp_source"/>
-        <childnode refid="826" relation="include">
-        </childnode>
-        <childnode refid="827" relation="include">
-        </childnode>
-        <childnode refid="829" relation="include">
-        </childnode>
-        <childnode refid="842" relation="include">
-        </childnode>
-        <childnode refid="834" relation="include">
-        </childnode>
-      </node>
-      <node id="826">
+      <node id="816">
         <label>../utils/types.hpp</label>
       </node>
-      <node id="843">
+      <node id="833">
         <label>../../base/global_vector.hpp</label>
         <link refid="global__vector_8hpp_source"/>
-        <childnode refid="826" relation="include">
-        </childnode>
-        <childnode refid="844" relation="include">
-        </childnode>
-        <childnode refid="837" relation="include">
-        </childnode>
-      </node>
-      <node id="833">
-        <label>vector</label>
-      </node>
-      <node id="822">
-        <label>../../utils/def.hpp</label>
-      </node>
-      <node id="846">
-        <label>../../utils/log.hpp</label>
-      </node>
-      <node id="847">
-        <label>math.h</label>
-      </node>
-      <node id="836">
-        <label>cstdlib</label>
-      </node>
-      <node id="830">
-        <label>iostream</label>
-      </node>
-      <node id="844">
-        <label>vector.hpp</label>
-        <link refid="vector_8hpp_source"/>
-        <childnode refid="826" relation="include">
-        </childnode>
-        <childnode refid="828" relation="include">
-        </childnode>
-        <childnode refid="830" relation="include">
+        <childnode refid="816" relation="include">
         </childnode>
         <childnode refid="834" relation="include">
         </childnode>
-        <childnode refid="836" relation="include">
+        <childnode refid="827" relation="include">
         </childnode>
       </node>
-      <node id="835">
+      <node id="823">
+        <label>vector</label>
+      </node>
+      <node id="812">
+        <label>../../utils/def.hpp</label>
+      </node>
+      <node id="836">
+        <label>../../utils/log.hpp</label>
+      </node>
+      <node id="837">
+        <label>math.h</label>
+      </node>
+      <node id="826">
+        <label>cstdlib</label>
+      </node>
+      <node id="820">
+        <label>iostream</label>
+      </node>
+      <node id="834">
+        <label>vector.hpp</label>
+        <link refid="vector_8hpp_source"/>
+        <childnode refid="816" relation="include">
+        </childnode>
+        <childnode refid="818" relation="include">
+        </childnode>
+        <childnode refid="820" relation="include">
+        </childnode>
+        <childnode refid="824" relation="include">
+        </childnode>
+        <childnode refid="826" relation="include">
+        </childnode>
+      </node>
+      <node id="825">
         <label>complex</label>
       </node>
     </incdepgraph>

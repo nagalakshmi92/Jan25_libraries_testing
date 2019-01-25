@@ -23,103 +23,103 @@
     <includedby refid="preconditioner__blockjacobi_8cpp" local="yes">ROCm_Libraries/rocALUTION/src/solvers/preconditioners/preconditioner_blockjacobi.cpp</includedby>
     <includedby refid="solver_8cpp" local="yes">ROCm_Libraries/rocALUTION/src/solvers/solver.cpp</includedby>
     <incdepgraph>
-      <node id="58">
+      <node id="48">
         <label>limits</label>
       </node>
-      <node id="55">
+      <node id="45">
         <label>parallel_manager.hpp</label>
         <link refid="parallel__manager_8hpp_source"/>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
         <childnode refid="46" relation="include">
         </childnode>
-        <childnode refid="44" relation="include">
+        <childnode refid="47" relation="include">
         </childnode>
-        <childnode refid="56" relation="include">
+        <childnode refid="48" relation="include">
         </childnode>
-        <childnode refid="57" relation="include">
+        <childnode refid="42" relation="include">
         </childnode>
-        <childnode refid="58" relation="include">
+        <childnode refid="43" relation="include">
         </childnode>
-        <childnode refid="52" relation="include">
-        </childnode>
-        <childnode refid="53" relation="include">
-        </childnode>
-      </node>
-      <node id="57">
-        <label>assert.h</label>
       </node>
       <node id="47">
+        <label>assert.h</label>
+      </node>
+      <node id="37">
         <label>backend_manager.hpp</label>
         <link refid="backend__manager_8hpp_source"/>
-        <childnode refid="48" relation="include">
+        <childnode refid="38" relation="include">
         </childnode>
-        <childnode refid="49" relation="include">
+        <childnode refid="39" relation="include">
         </childnode>
-        <childnode refid="50" relation="include">
+        <childnode refid="40" relation="include">
         </childnode>
-        <childnode refid="51" relation="include">
+        <childnode refid="41" relation="include">
         </childnode>
-        <childnode refid="52" relation="include">
+        <childnode refid="42" relation="include">
         </childnode>
       </node>
-      <node id="45">
+      <node id="35">
         <label>operator.hpp</label>
         <link refid="operator_8hpp_source"/>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
         <childnode refid="44" relation="include">
         </childnode>
-        <childnode refid="46" relation="include">
-        </childnode>
-        <childnode refid="48" relation="include">
-        </childnode>
-        <childnode refid="52" relation="include">
-        </childnode>
-        <childnode refid="54" relation="include">
-        </childnode>
       </node>
-      <node id="52">
+      <node id="42">
         <label>string</label>
       </node>
-      <node id="50">
+      <node id="40">
         <label>map</label>
       </node>
-      <node id="56">
+      <node id="46">
         <label>/home/tcs/Jan24/Jan24_libraries_testing/ROCm_Libraries/rocALUTION/src/utils/def.hpp</label>
       </node>
-      <node id="49">
+      <node id="39">
         <label>fstream</label>
       </node>
-      <node id="43">
+      <node id="33">
         <label>ROCm_Libraries/rocALUTION/src/base/global_matrix.hpp</label>
         <link refid="global__matrix_8hpp"/>
-        <childnode refid="44" relation="include">
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
         </childnode>
         <childnode refid="45" relation="include">
         </childnode>
-        <childnode refid="55" relation="include">
-        </childnode>
       </node>
-      <node id="46">
+      <node id="36">
         <label>base_rocalution.hpp</label>
         <link refid="base__rocalution_8hpp_source"/>
-        <childnode refid="47" relation="include">
+        <childnode refid="37" relation="include">
         </childnode>
-        <childnode refid="53" relation="include">
+        <childnode refid="43" relation="include">
         </childnode>
-        <childnode refid="51" relation="include">
+        <childnode refid="41" relation="include">
         </childnode>
       </node>
-      <node id="44">
+      <node id="34">
         <label>../utils/types.hpp</label>
       </node>
-      <node id="51">
+      <node id="41">
         <label>vector</label>
       </node>
-      <node id="54">
+      <node id="44">
         <label>cstdlib</label>
       </node>
-      <node id="48">
+      <node id="38">
         <label>iostream</label>
       </node>
-      <node id="53">
+      <node id="43">
         <label>complex</label>
       </node>
     </incdepgraph>

@@ -13,150 +13,150 @@
     <includes local="yes">../../utils/log.hpp</includes>
     <includes local="yes">../../utils/math_functions.hpp</includes>
     <incdepgraph>
-      <node id="797">
+      <node id="787">
         <label>ROCm_Libraries/rocALUTION/src/solvers/multigrid/unsmoothed_amg.cpp</label>
         <link refid="unsmoothed__amg_8cpp"/>
+        <childnode refid="788" relation="include">
+        </childnode>
+        <childnode refid="789" relation="include">
+        </childnode>
+        <childnode refid="790" relation="include">
+        </childnode>
+        <childnode refid="791" relation="include">
+        </childnode>
+        <childnode refid="792" relation="include">
+        </childnode>
+        <childnode refid="793" relation="include">
+        </childnode>
+        <childnode refid="805" relation="include">
+        </childnode>
+        <childnode refid="807" relation="include">
+        </childnode>
+        <childnode refid="808" relation="include">
+        </childnode>
+        <childnode refid="809" relation="include">
+        </childnode>
+      </node>
+      <node id="797">
+        <label>backend_manager.hpp</label>
+        <link refid="backend__manager_8hpp_source"/>
         <childnode refid="798" relation="include">
         </childnode>
         <childnode refid="799" relation="include">
         </childnode>
         <childnode refid="800" relation="include">
         </childnode>
+        <childnode refid="792" relation="include">
+        </childnode>
         <childnode refid="801" relation="include">
         </childnode>
-        <childnode refid="802" relation="include">
+      </node>
+      <node id="795">
+        <label>operator.hpp</label>
+        <link refid="operator_8hpp_source"/>
+        <childnode refid="794" relation="include">
+        </childnode>
+        <childnode refid="796" relation="include">
+        </childnode>
+        <childnode refid="798" relation="include">
+        </childnode>
+        <childnode refid="801" relation="include">
         </childnode>
         <childnode refid="803" relation="include">
         </childnode>
-        <childnode refid="815" relation="include">
+      </node>
+      <node id="801">
+        <label>string</label>
+      </node>
+      <node id="800">
+        <label>map</label>
+      </node>
+      <node id="799">
+        <label>fstream</label>
+      </node>
+      <node id="804">
+        <label>matrix_formats.hpp</label>
+      </node>
+      <node id="805">
+        <label>../../base/local_vector.hpp</label>
+        <link refid="local__vector_8hpp_source"/>
+        <childnode refid="794" relation="include">
         </childnode>
-        <childnode refid="817" relation="include">
+        <childnode refid="806" relation="include">
         </childnode>
-        <childnode refid="818" relation="include">
+      </node>
+      <node id="796">
+        <label>base_rocalution.hpp</label>
+        <link refid="base__rocalution_8hpp_source"/>
+        <childnode refid="797" relation="include">
         </childnode>
-        <childnode refid="819" relation="include">
+        <childnode refid="802" relation="include">
+        </childnode>
+        <childnode refid="792" relation="include">
         </childnode>
       </node>
       <node id="807">
-        <label>backend_manager.hpp</label>
-        <link refid="backend__manager_8hpp_source"/>
-        <childnode refid="808" relation="include">
-        </childnode>
-        <childnode refid="809" relation="include">
-        </childnode>
-        <childnode refid="810" relation="include">
-        </childnode>
-        <childnode refid="802" relation="include">
-        </childnode>
-        <childnode refid="811" relation="include">
-        </childnode>
-      </node>
-      <node id="805">
-        <label>operator.hpp</label>
-        <link refid="operator_8hpp_source"/>
-        <childnode refid="804" relation="include">
-        </childnode>
-        <childnode refid="806" relation="include">
-        </childnode>
-        <childnode refid="808" relation="include">
-        </childnode>
-        <childnode refid="811" relation="include">
-        </childnode>
-        <childnode refid="813" relation="include">
-        </childnode>
-      </node>
-      <node id="811">
-        <label>string</label>
-      </node>
-      <node id="810">
-        <label>map</label>
-      </node>
-      <node id="809">
-        <label>fstream</label>
-      </node>
-      <node id="814">
-        <label>matrix_formats.hpp</label>
-      </node>
-      <node id="815">
-        <label>../../base/local_vector.hpp</label>
-        <link refid="local__vector_8hpp_source"/>
-        <childnode refid="804" relation="include">
-        </childnode>
-        <childnode refid="816" relation="include">
-        </childnode>
-      </node>
-      <node id="806">
-        <label>base_rocalution.hpp</label>
-        <link refid="base__rocalution_8hpp_source"/>
-        <childnode refid="807" relation="include">
-        </childnode>
-        <childnode refid="812" relation="include">
-        </childnode>
-        <childnode refid="802" relation="include">
-        </childnode>
-      </node>
-      <node id="817">
         <label>../../solvers/preconditioners/preconditioner_multicolored_gs.hpp</label>
       </node>
-      <node id="803">
+      <node id="793">
         <label>../../base/local_matrix.hpp</label>
         <link refid="local__matrix_8hpp_source"/>
+        <childnode refid="794" relation="include">
+        </childnode>
+        <childnode refid="795" relation="include">
+        </childnode>
+        <childnode refid="797" relation="include">
+        </childnode>
         <childnode refid="804" relation="include">
         </childnode>
-        <childnode refid="805" relation="include">
-        </childnode>
-        <childnode refid="807" relation="include">
-        </childnode>
-        <childnode refid="814" relation="include">
-        </childnode>
-        <childnode refid="811" relation="include">
+        <childnode refid="801" relation="include">
         </childnode>
       </node>
-      <node id="804">
+      <node id="794">
         <label>../utils/types.hpp</label>
       </node>
-      <node id="799">
+      <node id="789">
         <label>unsmoothed_amg.hpp</label>
       </node>
-      <node id="802">
+      <node id="792">
         <label>vector</label>
       </node>
-      <node id="798">
+      <node id="788">
         <label>../../utils/def.hpp</label>
       </node>
-      <node id="818">
+      <node id="808">
         <label>../../utils/log.hpp</label>
       </node>
-      <node id="813">
+      <node id="803">
         <label>cstdlib</label>
       </node>
-      <node id="801">
+      <node id="791">
         <label>/home/tcs/Jan24/Jan24_libraries_testing/ROCm_Libraries/rocALUTION/src/solvers/multigrid/base_amg.hpp</label>
       </node>
-      <node id="808">
+      <node id="798">
         <label>iostream</label>
       </node>
-      <node id="800">
+      <node id="790">
         <label>/home/tcs/Jan24/Jan24_libraries_testing/ROCm_Libraries/rocALUTION/src/solvers/solver.hpp</label>
       </node>
-      <node id="816">
+      <node id="806">
         <label>vector.hpp</label>
         <link refid="vector_8hpp_source"/>
-        <childnode refid="804" relation="include">
+        <childnode refid="794" relation="include">
         </childnode>
-        <childnode refid="806" relation="include">
+        <childnode refid="796" relation="include">
         </childnode>
-        <childnode refid="808" relation="include">
+        <childnode refid="798" relation="include">
         </childnode>
-        <childnode refid="811" relation="include">
+        <childnode refid="801" relation="include">
         </childnode>
-        <childnode refid="813" relation="include">
+        <childnode refid="803" relation="include">
         </childnode>
       </node>
-      <node id="812">
+      <node id="802">
         <label>complex</label>
       </node>
-      <node id="819">
+      <node id="809">
         <label>../../utils/math_functions.hpp</label>
       </node>
     </incdepgraph>

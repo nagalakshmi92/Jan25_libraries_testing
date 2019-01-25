@@ -63,7 +63,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/backend_manager.hpp" line="248" column="1"/>
+        <location file="ROCm_Libraries/rocALUTION/src/base/backend_manager.hpp" line="1" column="1"/>
       </memberdef>
       <memberdef kind="variable" id="backend__manager_8hpp_1a8ed81e0a2eab89cb1786dabaac44a74c" prot="public" static="no" mutable="no">
         <type>const std::string</type>

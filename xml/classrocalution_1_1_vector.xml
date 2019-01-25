@@ -1186,48 +1186,48 @@
 </parameterlist>
 </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="104">
+      <node id="98">
         <label>rocalution::BaseRocalution&lt; ValueType &gt;</label>
         <link refid="classrocalution_1_1_base_rocalution"/>
-        <childnode refid="105" relation="public-inheritance">
+        <childnode refid="99" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="103">
+      <node id="97">
         <label>rocalution::Vector&lt; ValueType &gt;</label>
         <link refid="classrocalution_1_1_vector"/>
-        <childnode refid="104" relation="public-inheritance">
+        <childnode refid="98" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="107">
+      <node id="101">
         <label>rocalution::LocalVector&lt; ValueType &gt;</label>
         <link refid="classrocalution_1_1_local_vector"/>
-        <childnode refid="103" relation="public-inheritance">
+        <childnode refid="97" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="105">
+      <node id="99">
         <label>rocalution::RocalutionObj</label>
       </node>
-      <node id="106">
+      <node id="100">
         <label>rocalution::GlobalVector&lt; ValueType &gt;</label>
         <link refid="classrocalution_1_1_global_vector"/>
-        <childnode refid="103" relation="public-inheritance">
+        <childnode refid="97" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="109">
+      <node id="103">
         <label>rocalution::BaseRocalution&lt; ValueType &gt;</label>
         <link refid="classrocalution_1_1_base_rocalution"/>
-        <childnode refid="110" relation="public-inheritance">
+        <childnode refid="104" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="108">
+      <node id="102">
         <label>rocalution::Vector&lt; ValueType &gt;</label>
         <link refid="classrocalution_1_1_vector"/>
-        <childnode refid="109" relation="public-inheritance">
+        <childnode refid="103" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="110">
+      <node id="104">
         <label>rocalution::RocalutionObj</label>
       </node>
     </collaborationgraph>

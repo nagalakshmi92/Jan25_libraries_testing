@@ -382,48 +382,48 @@
 </parameterlist>
 </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="61">
+      <node id="55">
         <label>rocalution::BaseRocalution&lt; ValueType &gt;</label>
         <link refid="classrocalution_1_1_base_rocalution"/>
-        <childnode refid="62" relation="public-inheritance">
+        <childnode refid="56" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="60">
+      <node id="54">
         <label>rocalution::Operator&lt; ValueType &gt;</label>
         <link refid="classrocalution_1_1_operator"/>
-        <childnode refid="61" relation="public-inheritance">
+        <childnode refid="55" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="62">
+      <node id="56">
         <label>rocalution::RocalutionObj</label>
       </node>
-      <node id="59">
+      <node id="53">
         <label>rocalution::LocalStencil&lt; ValueType &gt;</label>
         <link refid="classrocalution_1_1_local_stencil"/>
-        <childnode refid="60" relation="public-inheritance">
+        <childnode refid="54" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="65">
+      <node id="59">
         <label>rocalution::BaseRocalution&lt; ValueType &gt;</label>
         <link refid="classrocalution_1_1_base_rocalution"/>
-        <childnode refid="66" relation="public-inheritance">
+        <childnode refid="60" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="64">
+      <node id="58">
         <label>rocalution::Operator&lt; ValueType &gt;</label>
         <link refid="classrocalution_1_1_operator"/>
-        <childnode refid="65" relation="public-inheritance">
+        <childnode refid="59" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="66">
+      <node id="60">
         <label>rocalution::RocalutionObj</label>
       </node>
-      <node id="63">
+      <node id="57">
         <label>rocalution::LocalStencil&lt; ValueType &gt;</label>
         <link refid="classrocalution_1_1_local_stencil"/>
-        <childnode refid="64" relation="public-inheritance">
+        <childnode refid="58" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

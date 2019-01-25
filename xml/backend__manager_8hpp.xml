@@ -10,101 +10,101 @@
     <includedby refid="base__rocalution_8hpp" local="yes">ROCm_Libraries/rocALUTION/src/base/base_rocalution.hpp</includedby>
     <includedby refid="local__matrix_8hpp" local="yes">ROCm_Libraries/rocALUTION/src/base/local_matrix.hpp</includedby>
     <incdepgraph>
-      <node id="10">
+      <node id="0">
         <label>ROCm_Libraries/rocALUTION/src/base/backend_manager.hpp</label>
         <link refid="backend__manager_8hpp"/>
-        <childnode refid="11" relation="include">
+        <childnode refid="1" relation="include">
         </childnode>
-        <childnode refid="12" relation="include">
+        <childnode refid="2" relation="include">
         </childnode>
-        <childnode refid="13" relation="include">
+        <childnode refid="3" relation="include">
         </childnode>
-        <childnode refid="14" relation="include">
+        <childnode refid="4" relation="include">
         </childnode>
-        <childnode refid="15" relation="include">
+        <childnode refid="5" relation="include">
         </childnode>
       </node>
-      <node id="15">
+      <node id="5">
         <label>string</label>
       </node>
-      <node id="13">
+      <node id="3">
         <label>map</label>
       </node>
-      <node id="12">
+      <node id="2">
         <label>fstream</label>
       </node>
-      <node id="14">
+      <node id="4">
         <label>vector</label>
       </node>
-      <node id="11">
+      <node id="1">
         <label>iostream</label>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="18">
+      <node id="8">
         <label>ROCm_Libraries/rocALUTION/src/base/parallel_manager.hpp</label>
         <link refid="parallel__manager_8hpp_source"/>
-        <childnode refid="19" relation="include">
+        <childnode refid="9" relation="include">
         </childnode>
-        <childnode refid="20" relation="include">
+        <childnode refid="10" relation="include">
         </childnode>
       </node>
-      <node id="16">
+      <node id="6">
         <label>ROCm_Libraries/rocALUTION/src/base/backend_manager.hpp</label>
         <link refid="backend__manager_8hpp"/>
-        <childnode refid="17" relation="include">
+        <childnode refid="7" relation="include">
         </childnode>
-        <childnode refid="22" relation="include">
+        <childnode refid="12" relation="include">
         </childnode>
       </node>
-      <node id="21">
+      <node id="11">
         <label>ROCm_Libraries/rocALUTION/src/base/operator.hpp</label>
         <link refid="operator_8hpp_source"/>
-        <childnode refid="22" relation="include">
+        <childnode refid="12" relation="include">
         </childnode>
-        <childnode refid="20" relation="include">
+        <childnode refid="10" relation="include">
         </childnode>
-        <childnode refid="23" relation="include">
+        <childnode refid="13" relation="include">
         </childnode>
       </node>
-      <node id="20">
+      <node id="10">
         <label>ROCm_Libraries/rocALUTION/src/base/global_matrix.hpp</label>
         <link refid="global__matrix_8hpp_source"/>
       </node>
-      <node id="25">
+      <node id="15">
         <label>ROCm_Libraries/rocALUTION/src/base/local_vector.hpp</label>
         <link refid="local__vector_8hpp_source"/>
-        <childnode refid="23" relation="include">
+        <childnode refid="13" relation="include">
         </childnode>
       </node>
-      <node id="17">
+      <node id="7">
         <label>ROCm_Libraries/rocALUTION/src/base/base_rocalution.hpp</label>
         <link refid="base__rocalution_8hpp_source"/>
-        <childnode refid="18" relation="include">
+        <childnode refid="8" relation="include">
         </childnode>
-        <childnode refid="21" relation="include">
+        <childnode refid="11" relation="include">
         </childnode>
-        <childnode refid="24" relation="include">
+        <childnode refid="14" relation="include">
         </childnode>
       </node>
-      <node id="22">
+      <node id="12">
         <label>ROCm_Libraries/rocALUTION/src/base/local_matrix.hpp</label>
         <link refid="local__matrix_8hpp_source"/>
       </node>
-      <node id="19">
+      <node id="9">
         <label>ROCm_Libraries/rocALUTION/src/base/global_vector.hpp</label>
         <link refid="global__vector_8hpp_source"/>
       </node>
-      <node id="23">
+      <node id="13">
         <label>ROCm_Libraries/rocALUTION/src/base/local_stencil.hpp</label>
         <link refid="local__stencil_8hpp_source"/>
       </node>
-      <node id="24">
+      <node id="14">
         <label>ROCm_Libraries/rocALUTION/src/base/vector.hpp</label>
         <link refid="vector_8hpp_source"/>
-        <childnode refid="25" relation="include">
+        <childnode refid="15" relation="include">
         </childnode>
-        <childnode refid="19" relation="include">
+        <childnode refid="9" relation="include">
         </childnode>
       </node>
     </invincdepgraph>
