@@ -1,20 +1,29 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
-  <compounddef id="dir_61a982d355ccdf528c3b19a2527138e7" kind="dir">
-    <compoundname>ROCm_Libraries/rocALUTION/src/solvers/krylov</compoundname>
+  <compounddef id="dir_620171d157a8bd520fe3f69b27b55ba1" kind="dir">
+    <compoundname>/home/tcs/rocALUTION/src/solvers/krylov</compoundname>
     <innerfile refid="bicgstab_8cpp">bicgstab.cpp</innerfile>
+    <innerfile refid="bicgstab_8hpp">bicgstab.hpp</innerfile>
     <innerfile refid="bicgstabl_8cpp">bicgstabl.cpp</innerfile>
+    <innerfile refid="bicgstabl_8hpp">bicgstabl.hpp</innerfile>
     <innerfile refid="cg_8cpp">cg.cpp</innerfile>
+    <innerfile refid="cg_8hpp">cg.hpp</innerfile>
     <innerfile refid="cr_8cpp">cr.cpp</innerfile>
+    <innerfile refid="cr_8hpp">cr.hpp</innerfile>
     <innerfile refid="fcg_8cpp">fcg.cpp</innerfile>
+    <innerfile refid="fcg_8hpp">fcg.hpp</innerfile>
     <innerfile refid="fgmres_8cpp">fgmres.cpp</innerfile>
+    <innerfile refid="fgmres_8hpp">fgmres.hpp</innerfile>
     <innerfile refid="gmres_8cpp">gmres.cpp</innerfile>
+    <innerfile refid="gmres_8hpp">gmres.hpp</innerfile>
     <innerfile refid="idr_8cpp">idr.cpp</innerfile>
+    <innerfile refid="idr_8hpp">idr.hpp</innerfile>
     <innerfile refid="qmrcgstab_8cpp">qmrcgstab.cpp</innerfile>
+    <innerfile refid="qmrcgstab_8hpp">qmrcgstab.hpp</innerfile>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="ROCm_Libraries/rocALUTION/src/solvers/krylov/"/>
+    <location file="/home/tcs/rocALUTION/src/solvers/krylov/"/>
   </compounddef>
 </doxygen>

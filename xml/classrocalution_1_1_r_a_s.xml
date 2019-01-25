@@ -1,0 +1,243 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classrocalution_1_1_r_a_s" kind="class" language="C++" prot="public">
+    <compoundname>rocalution::RAS</compoundname>
+    <basecompoundref refid="classrocalution_1_1_a_s" prot="public" virt="non-virtual">rocalution::AS&lt; OperatorType, VectorType, ValueType &gt;</basecompoundref>
+    <includes refid="preconditioner__as_8hpp" local="no">preconditioner_as.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>class OperatorType</type>
+      </param>
+      <param>
+        <type>class VectorType</type>
+      </param>
+      <param>
+        <type>typename ValueType</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classrocalution_1_1_r_a_s_1a44c67e84538a309a1335a924128285f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>rocalution::RAS&lt; OperatorType, VectorType, ValueType &gt;::RAS</definition>
+        <argsstring>()</argsstring>
+        <name>RAS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_as.hpp" line="108" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_as.cpp" bodystart="310" bodyend="313"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_r_a_s_1a5a18e02e86ecf02e6a36e3281761b1d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>rocalution::RAS&lt; OperatorType, VectorType, ValueType &gt;::~RAS</definition>
+        <argsstring>()</argsstring>
+        <name>~RAS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_as.hpp" line="109" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_as.cpp" bodystart="316" bodyend="319"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_r_a_s_1a87799131080d64d658e5221954a08f16" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void rocalution::RAS&lt; OperatorType, VectorType, ValueType &gt;::Print</definition>
+        <argsstring>(void) const</argsstring>
+        <name>Print</name>
+        <reimplements refid="classrocalution_1_1_a_s_1a052bab51a8257b9c9b3d4e2d3074fe89">Print</reimplements>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Print information about the solver. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_as.hpp" line="111" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_as.cpp" bodystart="322" bodyend="339"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_r_a_s_1a8ef8295a98c35fca0669965b024c270d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void rocalution::RAS&lt; OperatorType, VectorType, ValueType &gt;::Solve</definition>
+        <argsstring>(const VectorType &amp;rhs, VectorType *x)</argsstring>
+        <name>Solve</name>
+        <reimplements refid="classrocalution_1_1_a_s_1a50b11d14e46915b8b69c0f5cb07ffb3f">Solve</reimplements>
+        <param>
+          <type>const VectorType &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <param>
+          <type>VectorType *</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+<para>Solve <ref refid="classrocalution_1_1_operator" kindref="compound">Operator</ref> x = rhs. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_as.hpp" line="113" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_as.cpp" bodystart="342" bodyend="372"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Restricted Additive Schwarz <ref refid="classrocalution_1_1_preconditioner" kindref="compound">Preconditioner</ref>. </para>    </briefdescription>
+    <detaileddescription>
+<para>The Restricted Additive Schwarz preconditioner relies on a preconditioning technique, where the linear system <formula id="7">$Ax=b$</formula> can be decomposed into small sub-problems based on <formula id="38">$A_{i} = R_{i}^{T}AR_{i}$</formula>, where <formula id="39">$R_{i}$</formula> are restriction operators. The <ref refid="classrocalution_1_1_r_a_s" kindref="compound">RAS</ref> method is a mixture of block <ref refid="classrocalution_1_1_jacobi" kindref="compound">Jacobi</ref> and the <ref refid="classrocalution_1_1_a_s" kindref="compound">AS</ref> scheme. In this case, the sub-matrices contain overlapped areas from other blocks, too. RAS</para><para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>OperatorType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- can be <ref refid="classrocalution_1_1_local_matrix" kindref="compound">LocalMatrix</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>VectorType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- can be <ref refid="classrocalution_1_1_local_vector" kindref="compound">LocalVector</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ValueType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- can be float, double, std::complex&lt;float&gt; or std::complex&lt;double&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="628">
+        <label>rocalution::Preconditioner&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_preconditioner"/>
+        <childnode refid="629" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="629">
+        <label>rocalution::Solver&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_solver"/>
+        <childnode refid="630" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="626">
+        <label>rocalution::RAS&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_r_a_s"/>
+        <childnode refid="627" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="630">
+        <label>rocalution::RocalutionObj</label>
+      </node>
+      <node id="627">
+        <label>rocalution::AS&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_a_s"/>
+        <childnode refid="628" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="637">
+        <label>rocalution::Vector&lt; int &gt;</label>
+        <link refid="classrocalution_1_1_vector"/>
+        <childnode refid="638" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="638">
+        <label>rocalution::BaseRocalution&lt; ValueType &gt;</label>
+        <link refid="classrocalution_1_1_base_rocalution"/>
+        <childnode refid="635" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="633">
+        <label>rocalution::Preconditioner&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_preconditioner"/>
+        <childnode refid="634" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="634">
+        <label>rocalution::Solver&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_solver"/>
+        <childnode refid="635" relation="public-inheritance">
+        </childnode>
+        <childnode refid="636" relation="usage">
+          <edgelabel>permutation_</edgelabel>
+        </childnode>
+        <childnode refid="639" relation="usage">
+          <edgelabel>op_</edgelabel>
+        </childnode>
+      </node>
+      <node id="631">
+        <label>rocalution::RAS&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_r_a_s"/>
+        <childnode refid="632" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="636">
+        <label>rocalution::LocalVector&lt; int &gt;</label>
+        <link refid="classrocalution_1_1_local_vector"/>
+        <childnode refid="637" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="635">
+        <label>rocalution::RocalutionObj</label>
+      </node>
+      <node id="639">
+        <label>OperatorType</label>
+      </node>
+      <node id="632">
+        <label>rocalution::AS&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_a_s"/>
+        <childnode refid="633" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_as.hpp" line="106" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_as.hpp" bodystart="105" bodyend="114"/>
+    <listofallmembers>
+      <member refid="classrocalution_1_1_a_s_1aa76ad74135994eb03488d5fe245c07d0" prot="public" virt="non-virtual"><scope>rocalution::RAS</scope><name>AS</name></member>
+      <member refid="classrocalution_1_1_a_s_1a4d7a50be9c60f769a219cdd8541084b5" prot="public" virt="virtual"><scope>rocalution::RAS</scope><name>Build</name></member>
+      <member refid="classrocalution_1_1_solver_1a64924a0c87d60d2e4bf9fa295d0152cb" prot="protected" virt="non-virtual"><scope>rocalution::RAS</scope><name>build_</name></member>
+      <member refid="classrocalution_1_1_solver_1a0d11ee9943f785db285f0ef5c08c64eb" prot="public" virt="virtual"><scope>rocalution::RAS</scope><name>BuildMoveToAcceleratorAsync</name></member>
+      <member refid="classrocalution_1_1_a_s_1ac5f628a0bce1c23fa468e3d429b0e29f" prot="public" virt="virtual"><scope>rocalution::RAS</scope><name>Clear</name></member>
+      <member refid="classrocalution_1_1_rocalution_obj_1a4bba5aeaf4fd705efc00402f1f6ed40b" prot="protected" virt="non-virtual"><scope>rocalution::RAS</scope><name>global_obj_id_</name></member>
+      <member refid="classrocalution_1_1_a_s_1aaf123da97bfd9c87e84f99cb7d7901a9" prot="protected" virt="non-virtual"><scope>rocalution::RAS</scope><name>local_mat_</name></member>
+      <member refid="classrocalution_1_1_a_s_1ab72a269157434163ee0dd0ca3750297d" prot="protected" virt="non-virtual"><scope>rocalution::RAS</scope><name>local_precond_</name></member>
+      <member refid="classrocalution_1_1_solver_1ab1b6410cd134c9ad00c1851d400cf0f8" prot="public" virt="virtual"><scope>rocalution::RAS</scope><name>MoveToAccelerator</name></member>
+      <member refid="classrocalution_1_1_a_s_1a7ee4380cbf87e2d0e0402ea8d451308c" prot="protected" virt="virtual"><scope>rocalution::RAS</scope><name>MoveToAcceleratorLocalData_</name></member>
+      <member refid="classrocalution_1_1_solver_1a3c263e65898816f5838184c0af78a044" prot="public" virt="virtual"><scope>rocalution::RAS</scope><name>MoveToHost</name></member>
+      <member refid="classrocalution_1_1_a_s_1a1c314f5a46550262cde06bd65109de99" prot="protected" virt="virtual"><scope>rocalution::RAS</scope><name>MoveToHostLocalData_</name></member>
+      <member refid="classrocalution_1_1_a_s_1a9172e3c741705e8911355b559ee27de8" prot="protected" virt="non-virtual"><scope>rocalution::RAS</scope><name>num_blocks_</name></member>
+      <member refid="classrocalution_1_1_solver_1ad338b5f99cf339fb33218dd8b958cac4" prot="protected" virt="non-virtual"><scope>rocalution::RAS</scope><name>op_</name></member>
+      <member refid="classrocalution_1_1_a_s_1ab4b8f1af1398c0ba39af1fc4868a726c" prot="protected" virt="non-virtual"><scope>rocalution::RAS</scope><name>overlap_</name></member>
+      <member refid="classrocalution_1_1_solver_1ac46ab4d19fba48ece463666d37a7dc86" prot="protected" virt="non-virtual"><scope>rocalution::RAS</scope><name>permutation_</name></member>
+      <member refid="classrocalution_1_1_a_s_1acc4c15f28bf6b3d2582f20d0d940cd40" prot="protected" virt="non-virtual"><scope>rocalution::RAS</scope><name>pos_</name></member>
+      <member refid="classrocalution_1_1_solver_1a2acdb829fa657a7b3e680d1ee6005c9b" prot="protected" virt="non-virtual"><scope>rocalution::RAS</scope><name>precond_</name></member>
+      <member refid="classrocalution_1_1_preconditioner_1a964b8c3f97a675f8a098b7539d8a6600" prot="public" virt="non-virtual"><scope>rocalution::RAS</scope><name>Preconditioner</name></member>
+      <member refid="classrocalution_1_1_r_a_s_1a87799131080d64d658e5221954a08f16" prot="public" virt="virtual"><scope>rocalution::RAS</scope><name>Print</name></member>
+      <member refid="classrocalution_1_1_preconditioner_1aa16516bd94c4e5a931ec3adad6b2081b" prot="protected" virt="virtual"><scope>rocalution::RAS</scope><name>PrintEnd_</name></member>
+      <member refid="classrocalution_1_1_preconditioner_1abf90b743371c8d0159a6cad44e8595f3" prot="protected" virt="virtual"><scope>rocalution::RAS</scope><name>PrintStart_</name></member>
+      <member refid="classrocalution_1_1_a_s_1a8c58747fcab2cbf855e6501c4e7db690" prot="protected" virt="non-virtual"><scope>rocalution::RAS</scope><name>r_</name></member>
+      <member refid="classrocalution_1_1_r_a_s_1a44c67e84538a309a1335a924128285f4" prot="public" virt="non-virtual"><scope>rocalution::RAS</scope><name>RAS</name></member>
+      <member refid="classrocalution_1_1_solver_1acd20a051f0560a77645e35361df8f87c" prot="public" virt="virtual"><scope>rocalution::RAS</scope><name>ReBuildNumeric</name></member>
+      <member refid="classrocalution_1_1_solver_1a91354c5c116742c58d9eb2094cc6a68e" prot="public" virt="virtual"><scope>rocalution::RAS</scope><name>ResetOperator</name></member>
+      <member refid="classrocalution_1_1_rocalution_obj_1ad60a8b2047aad74e488c552264fa7737" prot="public" virt="non-virtual"><scope>rocalution::RAS</scope><name>RocalutionObj</name></member>
+      <member refid="classrocalution_1_1_a_s_1ae9fb0702e70b520204b4c56459a48076" prot="public" virt="non-virtual"><scope>rocalution::RAS</scope><name>Set</name></member>
+      <member refid="classrocalution_1_1_solver_1a12765b63efe75bc88406a8d6ebb5aacc" prot="public" virt="non-virtual"><scope>rocalution::RAS</scope><name>SetOperator</name></member>
+      <member refid="classrocalution_1_1_a_s_1a8d2ffb525e929f82aef14f5241f7d7c7" prot="protected" virt="non-virtual"><scope>rocalution::RAS</scope><name>sizes_</name></member>
+      <member refid="classrocalution_1_1_r_a_s_1a8ef8295a98c35fca0669965b024c270d" prot="public" virt="virtual"><scope>rocalution::RAS</scope><name>Solve</name></member>
+      <member refid="classrocalution_1_1_solver_1a009956b05d4d5d1d38e4c24341b14a66" prot="public" virt="non-virtual"><scope>rocalution::RAS</scope><name>Solver</name></member>
+      <member refid="classrocalution_1_1_preconditioner_1a2d2f41ddc040d777783d2591c8324508" prot="public" virt="virtual"><scope>rocalution::RAS</scope><name>SolveZeroSol</name></member>
+      <member refid="classrocalution_1_1_solver_1a17c2830a0ede8d82d1336aa25da6f907" prot="public" virt="virtual"><scope>rocalution::RAS</scope><name>Sync</name></member>
+      <member refid="classrocalution_1_1_solver_1a2ee162346e0d52543f9d3d25fe70ea8a" prot="protected" virt="non-virtual"><scope>rocalution::RAS</scope><name>verb_</name></member>
+      <member refid="classrocalution_1_1_solver_1aa2ab9c17de96add5e3ad30e7cabf0ea7" prot="public" virt="virtual"><scope>rocalution::RAS</scope><name>Verbose</name></member>
+      <member refid="classrocalution_1_1_a_s_1a9c4c7158030cb26b3398fa0e9831f0ae" prot="protected" virt="non-virtual"><scope>rocalution::RAS</scope><name>weight_</name></member>
+      <member refid="classrocalution_1_1_a_s_1a22dbf65299ec4cb48da846c9c9ce36b7" prot="protected" virt="non-virtual"><scope>rocalution::RAS</scope><name>z_</name></member>
+      <member refid="classrocalution_1_1_a_s_1aa8af5e85ab59961977b14b663f4a58f4" prot="public" virt="virtual"><scope>rocalution::RAS</scope><name>~AS</name></member>
+      <member refid="classrocalution_1_1_preconditioner_1aac6cfbb3d6c5cd248d7b7dabac096a76" prot="public" virt="virtual"><scope>rocalution::RAS</scope><name>~Preconditioner</name></member>
+      <member refid="classrocalution_1_1_r_a_s_1a5a18e02e86ecf02e6a36e3281761b1d9" prot="public" virt="virtual"><scope>rocalution::RAS</scope><name>~RAS</name></member>
+      <member refid="classrocalution_1_1_rocalution_obj_1a55a2f93f798cebdda6343b20db959e2d" prot="public" virt="virtual"><scope>rocalution::RAS</scope><name>~RocalutionObj</name></member>
+      <member refid="classrocalution_1_1_solver_1af861566a540fc6cc399c844bbc789ec6" prot="public" virt="virtual"><scope>rocalution::RAS</scope><name>~Solver</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

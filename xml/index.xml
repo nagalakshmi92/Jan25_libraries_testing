@@ -6,7 +6,124 @@
   </compound>
   <compound refid="classrocalution_1_1_accelerator_vector" kind="class"><name>rocalution::AcceleratorVector</name>
   </compound>
+  <compound refid="classrocalution_1_1_a_i_chebyshev" kind="class"><name>rocalution::AIChebyshev</name>
+    <member refid="classrocalution_1_1_a_i_chebyshev_1ab565dc70fe4830d0e103587f0f244997" kind="variable"><name>AIChebyshev_</name></member>
+    <member refid="classrocalution_1_1_a_i_chebyshev_1ae7430951d9ba8ceecd21a75c82c8e139" kind="variable"><name>p_</name></member>
+    <member refid="classrocalution_1_1_a_i_chebyshev_1a0387abec739b20ee95b1feb700a37afd" kind="variable"><name>lambda_min_</name></member>
+    <member refid="classrocalution_1_1_a_i_chebyshev_1ad9ebe693e397365903d088238c4c4fd2" kind="variable"><name>lambda_max_</name></member>
+    <member refid="classrocalution_1_1_a_i_chebyshev_1a6403474fe6fe66ea4df8a48ebec60a3f" kind="function"><name>AIChebyshev</name></member>
+    <member refid="classrocalution_1_1_a_i_chebyshev_1aae3cdda8e2cd36d7925823a554f55e30" kind="function"><name>~AIChebyshev</name></member>
+    <member refid="classrocalution_1_1_a_i_chebyshev_1ae8301a13fa24e6238efd377744c8edd6" kind="function"><name>Print</name></member>
+    <member refid="classrocalution_1_1_a_i_chebyshev_1ae919eada6f7cb6bed9a40c011a6a7da8" kind="function"><name>Solve</name></member>
+    <member refid="classrocalution_1_1_a_i_chebyshev_1ae116b80069f8757508ba15b478f32d5b" kind="function"><name>Set</name></member>
+    <member refid="classrocalution_1_1_a_i_chebyshev_1acc48fa12fccc718d174cd6245ef2d8a2" kind="function"><name>Build</name></member>
+    <member refid="classrocalution_1_1_a_i_chebyshev_1a0808f60a064abb134d83fabeb543659b" kind="function"><name>Clear</name></member>
+    <member refid="classrocalution_1_1_a_i_chebyshev_1acb0d3f172cbecdc0ec658b1d0ab552fc" kind="function"><name>MoveToHostLocalData_</name></member>
+    <member refid="classrocalution_1_1_a_i_chebyshev_1acddb953f21b6bdc973edbc28d647a9f2" kind="function"><name>MoveToAcceleratorLocalData_</name></member>
+  </compound>
+  <compound refid="classrocalution_1_1_a_s" kind="class"><name>rocalution::AS</name>
+    <member refid="classrocalution_1_1_a_s_1a9172e3c741705e8911355b559ee27de8" kind="variable"><name>num_blocks_</name></member>
+    <member refid="classrocalution_1_1_a_s_1ab4b8f1af1398c0ba39af1fc4868a726c" kind="variable"><name>overlap_</name></member>
+    <member refid="classrocalution_1_1_a_s_1acc4c15f28bf6b3d2582f20d0d940cd40" kind="variable"><name>pos_</name></member>
+    <member refid="classrocalution_1_1_a_s_1a8d2ffb525e929f82aef14f5241f7d7c7" kind="variable"><name>sizes_</name></member>
+    <member refid="classrocalution_1_1_a_s_1ab72a269157434163ee0dd0ca3750297d" kind="variable"><name>local_precond_</name></member>
+    <member refid="classrocalution_1_1_a_s_1aaf123da97bfd9c87e84f99cb7d7901a9" kind="variable"><name>local_mat_</name></member>
+    <member refid="classrocalution_1_1_a_s_1a8c58747fcab2cbf855e6501c4e7db690" kind="variable"><name>r_</name></member>
+    <member refid="classrocalution_1_1_a_s_1a22dbf65299ec4cb48da846c9c9ce36b7" kind="variable"><name>z_</name></member>
+    <member refid="classrocalution_1_1_a_s_1a9c4c7158030cb26b3398fa0e9831f0ae" kind="variable"><name>weight_</name></member>
+    <member refid="classrocalution_1_1_a_s_1aa76ad74135994eb03488d5fe245c07d0" kind="function"><name>AS</name></member>
+    <member refid="classrocalution_1_1_a_s_1aa8af5e85ab59961977b14b663f4a58f4" kind="function"><name>~AS</name></member>
+    <member refid="classrocalution_1_1_a_s_1a052bab51a8257b9c9b3d4e2d3074fe89" kind="function"><name>Print</name></member>
+    <member refid="classrocalution_1_1_a_s_1ae9fb0702e70b520204b4c56459a48076" kind="function"><name>Set</name></member>
+    <member refid="classrocalution_1_1_a_s_1a50b11d14e46915b8b69c0f5cb07ffb3f" kind="function"><name>Solve</name></member>
+    <member refid="classrocalution_1_1_a_s_1a4d7a50be9c60f769a219cdd8541084b5" kind="function"><name>Build</name></member>
+    <member refid="classrocalution_1_1_a_s_1ac5f628a0bce1c23fa468e3d429b0e29f" kind="function"><name>Clear</name></member>
+    <member refid="classrocalution_1_1_a_s_1a1c314f5a46550262cde06bd65109de99" kind="function"><name>MoveToHostLocalData_</name></member>
+    <member refid="classrocalution_1_1_a_s_1a7ee4380cbf87e2d0e0402ea8d451308c" kind="function"><name>MoveToAcceleratorLocalData_</name></member>
+  </compound>
+  <compound refid="classrocalution_1_1_base_a_m_g" kind="class"><name>rocalution::BaseAMG</name>
+    <member refid="classrocalution_1_1_base_a_m_g_1a261410980028e43e018570a939ff105a" kind="variable"><name>coarse_size_</name></member>
+    <member refid="classrocalution_1_1_base_a_m_g_1a3b77edbbb72d656885c33d1dcc079d78" kind="variable"><name>set_sm_</name></member>
+    <member refid="classrocalution_1_1_base_a_m_g_1af79ea2a688e8b3299a6cbad3ee45e12e" kind="variable"><name>sm_default_</name></member>
+    <member refid="classrocalution_1_1_base_a_m_g_1ab274f3d941409be0aa48922bde76f8b2" kind="variable"><name>set_s_</name></member>
+    <member refid="classrocalution_1_1_base_a_m_g_1a34bb3af2f3daba77e83effa0f3a692a2" kind="variable"><name>hierarchy_</name></member>
+    <member refid="classrocalution_1_1_base_a_m_g_1ab87cef5490a041aedd913794d3a24250" kind="variable"><name>sm_format_</name></member>
+    <member refid="classrocalution_1_1_base_a_m_g_1a77d8f3909d848028af69a6db4e31158a" kind="variable"><name>op_format_</name></member>
+    <member refid="classrocalution_1_1_base_a_m_g_1a3cd266501e4d3854cb2fe9094bb8dcd5" kind="function"><name>BaseAMG</name></member>
+    <member refid="classrocalution_1_1_base_a_m_g_1acfc1799091ff559328d993f5c1c68bb7" kind="function"><name>~BaseAMG</name></member>
+    <member refid="classrocalution_1_1_base_a_m_g_1a8e5f2b01e79664c95b67af35781d16d9" kind="function"><name>Build</name></member>
+    <member refid="classrocalution_1_1_base_a_m_g_1a2c81fabb935f751c5771df8836ce922b" kind="function"><name>Clear</name></member>
+    <member refid="classrocalution_1_1_base_a_m_g_1a557868487252ec0b6c94eda581372a0a" kind="function"><name>ClearLocal</name></member>
+    <member refid="classrocalution_1_1_base_a_m_g_1af6d4defc5f8a6fc67a4fec46c8f1bd66" kind="function"><name>BuildHierarchy</name></member>
+    <member refid="classrocalution_1_1_base_a_m_g_1a3f76e7e8ceb1772e77772f2c3995f2d7" kind="function"><name>BuildSmoothers</name></member>
+    <member refid="classrocalution_1_1_base_a_m_g_1a96281a009e8cb941f8ff269035302d4c" kind="function"><name>SetCoarsestLevel</name></member>
+    <member refid="classrocalution_1_1_base_a_m_g_1adf20402c86435116ad68911a26e15a4e" kind="function"><name>SetManualSmoothers</name></member>
+    <member refid="classrocalution_1_1_base_a_m_g_1a590e1b7401d3b73c63d5bd9d20b92eb4" kind="function"><name>SetManualSolver</name></member>
+    <member refid="classrocalution_1_1_base_a_m_g_1aa359bb6dff698912e524d3d1a45f84fb" kind="function"><name>SetDefaultSmootherFormat</name></member>
+    <member refid="classrocalution_1_1_base_a_m_g_1a0b96ffa5244f9a4ef008aebcb0491e46" kind="function"><name>SetOperatorFormat</name></member>
+    <member refid="classrocalution_1_1_base_a_m_g_1a615e88d5a7abc5a0d3d556e7974ab9e9" kind="function"><name>GetNumLevels</name></member>
+    <member refid="classrocalution_1_1_base_a_m_g_1ac5477b055e029fb8f23565a8c3314714" kind="function"><name>SetRestrictOperator</name></member>
+    <member refid="classrocalution_1_1_base_a_m_g_1a930a43d15e964486edd68dbf8601ea70" kind="function"><name>SetProlongOperator</name></member>
+    <member refid="classrocalution_1_1_base_a_m_g_1a0bd37a42d1fa874d845b98f3339d2cfb" kind="function"><name>SetOperatorHierarchy</name></member>
+    <member refid="classrocalution_1_1_base_a_m_g_1a927139d6e2fc999ea798400b548d2cfe" kind="function"><name>Aggregate_</name></member>
+  </compound>
   <compound refid="classrocalution_1_1_base_matrix" kind="class"><name>rocalution::BaseMatrix</name>
+  </compound>
+  <compound refid="classrocalution_1_1_base_multi_grid" kind="class"><name>rocalution::BaseMultiGrid</name>
+    <member refid="classrocalution_1_1_base_multi_grid_1ae7e6d70d62e4d1b508c5dee5b564ac8c" kind="variable"><name>levels_</name></member>
+    <member refid="classrocalution_1_1_base_multi_grid_1a4bd0cefc5fbc2c72b49d706df486b75a" kind="variable"><name>host_level_</name></member>
+    <member refid="classrocalution_1_1_base_multi_grid_1a9130ac18ccfc5fab6cffeccae87f042a" kind="variable"><name>current_level_</name></member>
+    <member refid="classrocalution_1_1_base_multi_grid_1a3d675487dab4993050c7aca5d89d5125" kind="variable"><name>scaling_</name></member>
+    <member refid="classrocalution_1_1_base_multi_grid_1a01b4f210ce27bd79de7d2d2b0898dc70" kind="variable"><name>iter_pre_smooth_</name></member>
+    <member refid="classrocalution_1_1_base_multi_grid_1abccaffa0d661c69e0566a52fc1fc6dc9" kind="variable"><name>iter_post_smooth_</name></member>
+    <member refid="classrocalution_1_1_base_multi_grid_1a2e81fd615a4a51ab8f19ba4c9c7972cc" kind="variable"><name>cycle_</name></member>
+    <member refid="classrocalution_1_1_base_multi_grid_1a94c05b3ae3cc54df2fb67f3c3c8b7fa1" kind="variable"><name>kcycle_full_</name></member>
+    <member refid="classrocalution_1_1_base_multi_grid_1a88738e5a1c0cc29a10e0743dc4b50d82" kind="variable"><name>res_norm_</name></member>
+    <member refid="classrocalution_1_1_base_multi_grid_1a178ba768db8dfeb591e169dc40e3c375" kind="variable"><name>op_level_</name></member>
+    <member refid="classrocalution_1_1_base_multi_grid_1a64632f10e50c6125efb8a888931a3a9c" kind="variable"><name>restrict_op_level_</name></member>
+    <member refid="classrocalution_1_1_base_multi_grid_1abf39fa332db98f9e4ca414f15d8bff1d" kind="variable"><name>prolong_op_level_</name></member>
+    <member refid="classrocalution_1_1_base_multi_grid_1a97135288abf5453813cedd8900a77fb8" kind="variable"><name>solver_coarse_</name></member>
+    <member refid="classrocalution_1_1_base_multi_grid_1aebe3210adb254b24838ac52fa39421fc" kind="variable"><name>smoother_level_</name></member>
+    <member refid="classrocalution_1_1_base_multi_grid_1a730da9f8111a731ad3e933f57966c86f" kind="variable"><name>d_level_</name></member>
+    <member refid="classrocalution_1_1_base_multi_grid_1aa20b79e3892dd955c2e7fcf552ce70a8" kind="variable"><name>r_level_</name></member>
+    <member refid="classrocalution_1_1_base_multi_grid_1acbeede754af9754f85f383edfd242034" kind="variable"><name>t_level_</name></member>
+    <member refid="classrocalution_1_1_base_multi_grid_1aeb821b4645827c3e6fac4e6bd9fe7aae" kind="variable"><name>s_level_</name></member>
+    <member refid="classrocalution_1_1_base_multi_grid_1a6dfc0b58438c7333ebd672dce97d436f" kind="variable"><name>p_level_</name></member>
+    <member refid="classrocalution_1_1_base_multi_grid_1a30de3b26106d0fdc09b76b660ed5bf5c" kind="variable"><name>q_level_</name></member>
+    <member refid="classrocalution_1_1_base_multi_grid_1ab8c1eaaa7a7ee30340e68967c120f392" kind="variable"><name>k_level_</name></member>
+    <member refid="classrocalution_1_1_base_multi_grid_1ac1897b53f3b250889938a1a810716f04" kind="variable"><name>l_level_</name></member>
+    <member refid="classrocalution_1_1_base_multi_grid_1a1c94a61b80074241d291ddd8d8b1ec6a" kind="function"><name>BaseMultiGrid</name></member>
+    <member refid="classrocalution_1_1_base_multi_grid_1a1805421215c37b88de6cf5f4dbb6bf77" kind="function"><name>~BaseMultiGrid</name></member>
+    <member refid="classrocalution_1_1_base_multi_grid_1aea69e285bccd07d36d20f74742b00fbc" kind="function"><name>Print</name></member>
+    <member refid="classrocalution_1_1_base_multi_grid_1a615908da426fd0eba8bac32fdd1889f2" kind="function"><name>SetSolver</name></member>
+    <member refid="classrocalution_1_1_base_multi_grid_1a63b544d6472034cd6fbed2bc46620fcd" kind="function"><name>SetSmoother</name></member>
+    <member refid="classrocalution_1_1_base_multi_grid_1a9d3b928ff5f0084ed908206fdb9a2f6a" kind="function"><name>SetSmootherPreIter</name></member>
+    <member refid="classrocalution_1_1_base_multi_grid_1a7f4ea4a24e58cb85e97d2cf9089cf864" kind="function"><name>SetSmootherPostIter</name></member>
+    <member refid="classrocalution_1_1_base_multi_grid_1abd9e0991d0f8763bbd7123cb72fc65d6" kind="function"><name>SetRestrictOperator</name></member>
+    <member refid="classrocalution_1_1_base_multi_grid_1abf35908266996bfc32d2761ead15f282" kind="function"><name>SetProlongOperator</name></member>
+    <member refid="classrocalution_1_1_base_multi_grid_1aa8b8b1799df1b79f3a55b371d5cb4798" kind="function"><name>SetOperatorHierarchy</name></member>
+    <member refid="classrocalution_1_1_base_multi_grid_1a5c506dbb924ed9c80d236d17eb86c59a" kind="function"><name>SetScaling</name></member>
+    <member refid="classrocalution_1_1_base_multi_grid_1abe050a8ca55c360ee796c9528f16a8a4" kind="function"><name>SetHostLevels</name></member>
+    <member refid="classrocalution_1_1_base_multi_grid_1aace391f37b16ebd17df2f68dd0959418" kind="function"><name>SetCycle</name></member>
+    <member refid="classrocalution_1_1_base_multi_grid_1af3c6a55fe6368ad87537c56a8b58e454" kind="function"><name>SetKcycleFull</name></member>
+    <member refid="classrocalution_1_1_base_multi_grid_1a53997c872f3761e09b820a30145d462c" kind="function"><name>InitLevels</name></member>
+    <member refid="classrocalution_1_1_base_multi_grid_1afbe44b1d105248260a6076d4a1b86138" kind="function"><name>Solve</name></member>
+    <member refid="classrocalution_1_1_base_multi_grid_1a4033705acbf717fa5f23d219a8f7b765" kind="function"><name>Build</name></member>
+    <member refid="classrocalution_1_1_base_multi_grid_1ab8c35436568aacce432f6f253d296c20" kind="function"><name>Clear</name></member>
+    <member refid="classrocalution_1_1_base_multi_grid_1a2af851fe4950ab0b6ef06e39444da2e7" kind="function"><name>SetPreconditioner</name></member>
+    <member refid="classrocalution_1_1_base_multi_grid_1ac7b00bcd0349e42f30fdd41189b6ca22" kind="function"><name>SolveNonPrecond_</name></member>
+    <member refid="classrocalution_1_1_base_multi_grid_1af00f0da1244176857513511b92073cd9" kind="function"><name>SolvePrecond_</name></member>
+    <member refid="classrocalution_1_1_base_multi_grid_1aff8d20e7b82a3304182d1174553fe57f" kind="function"><name>Restrict_</name></member>
+    <member refid="classrocalution_1_1_base_multi_grid_1a11e6b521ec3b31bd9c968f21300b7025" kind="function"><name>Prolong_</name></member>
+    <member refid="classrocalution_1_1_base_multi_grid_1afe0fc8a80c73931c74caa11fe1359681" kind="function"><name>Vcycle_</name></member>
+    <member refid="classrocalution_1_1_base_multi_grid_1a3fdd941d9589636afd0629a57b5eecdc" kind="function"><name>Wcycle_</name></member>
+    <member refid="classrocalution_1_1_base_multi_grid_1a0ddf4d043f8d8447a16f309b060aa1a2" kind="function"><name>Fcycle_</name></member>
+    <member refid="classrocalution_1_1_base_multi_grid_1a8bfaab7c7be3920e179c4281da1af609" kind="function"><name>Kcycle_</name></member>
+    <member refid="classrocalution_1_1_base_multi_grid_1a949c187616ebc08671f528a575b22705" kind="function"><name>PrintStart_</name></member>
+    <member refid="classrocalution_1_1_base_multi_grid_1af7e6d055515f253a8381f8da34658501" kind="function"><name>PrintEnd_</name></member>
+    <member refid="classrocalution_1_1_base_multi_grid_1aa966335651f12b246995d91e798d53dc" kind="function"><name>MoveToHostLocalData_</name></member>
+    <member refid="classrocalution_1_1_base_multi_grid_1a932c769ff0896be30bda0e81a6854367" kind="function"><name>MoveToAcceleratorLocalData_</name></member>
+    <member refid="classrocalution_1_1_base_multi_grid_1a1a470cc6f123f820aeeea16378275684" kind="function"><name>MoveHostLevels_</name></member>
   </compound>
   <compound refid="classrocalution_1_1_base_rocalution" kind="class"><name>rocalution::BaseRocalution</name>
     <member refid="classrocalution_1_1_base_rocalution_1a5d818c77bc906d543c44d441bb589b46" kind="variable"><name>object_name_</name></member>
@@ -43,6 +160,271 @@
   <compound refid="classrocalution_1_1_base_stencil" kind="class"><name>rocalution::BaseStencil</name>
   </compound>
   <compound refid="classrocalution_1_1_base_vector" kind="class"><name>rocalution::BaseVector</name>
+  </compound>
+  <compound refid="classrocalution_1_1_bi_c_g_stab" kind="class"><name>rocalution::BiCGStab</name>
+    <member refid="classrocalution_1_1_bi_c_g_stab_1a15389715a346fb69f0828993037fe9fd" kind="variable"><name>r_</name></member>
+    <member refid="classrocalution_1_1_bi_c_g_stab_1a86bdc02e1f9f9cdccd2bb2bd017ac089" kind="variable"><name>r0_</name></member>
+    <member refid="classrocalution_1_1_bi_c_g_stab_1a3c12419626c935753813cb2138506d61" kind="variable"><name>p_</name></member>
+    <member refid="classrocalution_1_1_bi_c_g_stab_1a50b2074542e558dfac63bc77f7e14a7c" kind="variable"><name>q_</name></member>
+    <member refid="classrocalution_1_1_bi_c_g_stab_1a973f3770f89f3c01c2ebc749bd04ab9a" kind="variable"><name>t_</name></member>
+    <member refid="classrocalution_1_1_bi_c_g_stab_1a66d6a080f6c54d139dc836cdfd958f8a" kind="variable"><name>v_</name></member>
+    <member refid="classrocalution_1_1_bi_c_g_stab_1a425665863f1dd8f6b7867e2394880f17" kind="variable"><name>z_</name></member>
+    <member refid="classrocalution_1_1_bi_c_g_stab_1ad2a78e824515f97bb8461d67598ad379" kind="function"><name>BiCGStab</name></member>
+    <member refid="classrocalution_1_1_bi_c_g_stab_1acb1a616094643ed7d9528dab77706c9e" kind="function"><name>~BiCGStab</name></member>
+    <member refid="classrocalution_1_1_bi_c_g_stab_1aba0ff689a2d6386c03a65ce1d925dbe3" kind="function"><name>Print</name></member>
+    <member refid="classrocalution_1_1_bi_c_g_stab_1acc189160437704c993c4df9d2f151670" kind="function"><name>Build</name></member>
+    <member refid="classrocalution_1_1_bi_c_g_stab_1a55f4d407bfa563cb27a5f0f4e04fa0e0" kind="function"><name>ReBuildNumeric</name></member>
+    <member refid="classrocalution_1_1_bi_c_g_stab_1ac328f8cd707e7011ad8ad8eca8738e09" kind="function"><name>Clear</name></member>
+    <member refid="classrocalution_1_1_bi_c_g_stab_1a94d7fa3a3dae8201fbe2531049ad2663" kind="function"><name>SolveNonPrecond_</name></member>
+    <member refid="classrocalution_1_1_bi_c_g_stab_1ae2534b287ab72d8b2979dcf4efe9dd95" kind="function"><name>SolvePrecond_</name></member>
+    <member refid="classrocalution_1_1_bi_c_g_stab_1ad63e8592814df7bf111709ae848e229b" kind="function"><name>PrintStart_</name></member>
+    <member refid="classrocalution_1_1_bi_c_g_stab_1a115ad28f50641d7dfe272f4ac37892e5" kind="function"><name>PrintEnd_</name></member>
+    <member refid="classrocalution_1_1_bi_c_g_stab_1a6c60c0862e7b624bc197e7ccf630f439" kind="function"><name>MoveToHostLocalData_</name></member>
+    <member refid="classrocalution_1_1_bi_c_g_stab_1a38f29682c2dd9d6e1fd24902af401f62" kind="function"><name>MoveToAcceleratorLocalData_</name></member>
+  </compound>
+  <compound refid="classrocalution_1_1_bi_c_g_stabl" kind="class"><name>rocalution::BiCGStabl</name>
+    <member refid="classrocalution_1_1_bi_c_g_stabl_1ab670ed1a87676a5f718fafaabe25864f" kind="variable"><name>l_</name></member>
+    <member refid="classrocalution_1_1_bi_c_g_stabl_1a399190a854ca0e3c297f1a76afc1b8df" kind="variable"><name>gamma0_</name></member>
+    <member refid="classrocalution_1_1_bi_c_g_stabl_1aaeba687cd5c10199260d663cbade1874" kind="variable"><name>gamma1_</name></member>
+    <member refid="classrocalution_1_1_bi_c_g_stabl_1a21bd242f618c1135cef65d89ba22279b" kind="variable"><name>gamma2_</name></member>
+    <member refid="classrocalution_1_1_bi_c_g_stabl_1a643c1e54047526df726396dfec96f5b7" kind="variable"><name>sigma_</name></member>
+    <member refid="classrocalution_1_1_bi_c_g_stabl_1a6e389ff1b6dfc570d30d6f1f74f1bafc" kind="variable"><name>tau_</name></member>
+    <member refid="classrocalution_1_1_bi_c_g_stabl_1a90b7112c79c7891979d442fa0e0cec32" kind="variable"><name>r0_</name></member>
+    <member refid="classrocalution_1_1_bi_c_g_stabl_1a3856f6d0edda3a3718b7bf4e96374e79" kind="variable"><name>z_</name></member>
+    <member refid="classrocalution_1_1_bi_c_g_stabl_1ac65c30e56443d39b87dd22f2bc4493cc" kind="variable"><name>r_</name></member>
+    <member refid="classrocalution_1_1_bi_c_g_stabl_1a125d246a812da259b054099d8f9a9447" kind="variable"><name>u_</name></member>
+    <member refid="classrocalution_1_1_bi_c_g_stabl_1a6cc9e770ba48f26f511e60646b39b91a" kind="function"><name>BiCGStabl</name></member>
+    <member refid="classrocalution_1_1_bi_c_g_stabl_1a683086bfeab52907ffa34de4dcc42b30" kind="function"><name>~BiCGStabl</name></member>
+    <member refid="classrocalution_1_1_bi_c_g_stabl_1a96916631711d48787e94d04d5b15d57d" kind="function"><name>Print</name></member>
+    <member refid="classrocalution_1_1_bi_c_g_stabl_1a2840e0a99394da5154b02583272e43f7" kind="function"><name>Build</name></member>
+    <member refid="classrocalution_1_1_bi_c_g_stabl_1a4991e1ca3d20ccf255c226d60f993553" kind="function"><name>ReBuildNumeric</name></member>
+    <member refid="classrocalution_1_1_bi_c_g_stabl_1a67f19ffe19aaa01ef7bbbf42a8e28b0f" kind="function"><name>Clear</name></member>
+    <member refid="classrocalution_1_1_bi_c_g_stabl_1af0084f3f7f847151973e9f25de96a50b" kind="function"><name>SetOrder</name></member>
+    <member refid="classrocalution_1_1_bi_c_g_stabl_1ab8da03c868c275be3948576a17cfb4e6" kind="function"><name>SolveNonPrecond_</name></member>
+    <member refid="classrocalution_1_1_bi_c_g_stabl_1a7c93b26d023ca83c69bbb25198f8f485" kind="function"><name>SolvePrecond_</name></member>
+    <member refid="classrocalution_1_1_bi_c_g_stabl_1a57ffb8c0029ae4d48f7fddd2ca09face" kind="function"><name>PrintStart_</name></member>
+    <member refid="classrocalution_1_1_bi_c_g_stabl_1a91f97ec3b92024aa39973078fd05dc6b" kind="function"><name>PrintEnd_</name></member>
+    <member refid="classrocalution_1_1_bi_c_g_stabl_1a1e8b53c73393a18ed50e6aa8d991f458" kind="function"><name>MoveToHostLocalData_</name></member>
+    <member refid="classrocalution_1_1_bi_c_g_stabl_1ab547a46aac096a36b45190d5e4dab6fb" kind="function"><name>MoveToAcceleratorLocalData_</name></member>
+  </compound>
+  <compound refid="classrocalution_1_1_block_jacobi" kind="class"><name>rocalution::BlockJacobi</name>
+    <member refid="classrocalution_1_1_block_jacobi_1a27bf78d11479699f331295645bc154f9" kind="variable"><name>local_precond_</name></member>
+    <member refid="classrocalution_1_1_block_jacobi_1a4ddac951e278794dcfae84693a88afc5" kind="function"><name>BlockJacobi</name></member>
+    <member refid="classrocalution_1_1_block_jacobi_1a37da4f2d333f5afb2e252cd39eb828b2" kind="function"><name>~BlockJacobi</name></member>
+    <member refid="classrocalution_1_1_block_jacobi_1a1d9db043116f4fe7c67458cdf3b55799" kind="function"><name>Print</name></member>
+    <member refid="classrocalution_1_1_block_jacobi_1ae3e6bd6708cd0826c616a410161378c5" kind="function"><name>Set</name></member>
+    <member refid="classrocalution_1_1_block_jacobi_1ada46c7d22ae45c7199e4be0c3e976b1e" kind="function"><name>Solve</name></member>
+    <member refid="classrocalution_1_1_block_jacobi_1a0a570c03d241d1400753bd64efe4cbe5" kind="function"><name>SolveZeroSol</name></member>
+    <member refid="classrocalution_1_1_block_jacobi_1a899a0698954ab33853ff4c3860e6da5b" kind="function"><name>Build</name></member>
+    <member refid="classrocalution_1_1_block_jacobi_1ad7f5e520bcfd7724f49c4a8fdd8853d8" kind="function"><name>ReBuildNumeric</name></member>
+    <member refid="classrocalution_1_1_block_jacobi_1a671699b5f06ba3fa57e094c7161a81fd" kind="function"><name>Clear</name></member>
+    <member refid="classrocalution_1_1_block_jacobi_1ad62061b2592072f278db6c7806c4b7cd" kind="function"><name>MoveToHostLocalData_</name></member>
+    <member refid="classrocalution_1_1_block_jacobi_1a62cb96e202a7f3aa5ac7853451b31780" kind="function"><name>MoveToAcceleratorLocalData_</name></member>
+  </compound>
+  <compound refid="classrocalution_1_1_block_preconditioner" kind="class"><name>rocalution::BlockPreconditioner</name>
+    <member refid="classrocalution_1_1_block_preconditioner_1a2bafb3a99429fd965d760e1e94d1bb0c" kind="variable"><name>A_block_</name></member>
+    <member refid="classrocalution_1_1_block_preconditioner_1a1193769ca8dd1156bf1f512c3910abe9" kind="variable"><name>A_last_</name></member>
+    <member refid="classrocalution_1_1_block_preconditioner_1a675a7de523203d5fc16e0d8942f42321" kind="variable"><name>op_mat_format_</name></member>
+    <member refid="classrocalution_1_1_block_preconditioner_1ae5e98133a9020500ded8d0d48f0051c6" kind="variable"><name>precond_mat_format_</name></member>
+    <member refid="classrocalution_1_1_block_preconditioner_1ac8f0149b6289a6499cec7d3ab16ef7f9" kind="variable"><name>x_block_</name></member>
+    <member refid="classrocalution_1_1_block_preconditioner_1abe3b13ef31f5ac9374a83b6b914f0961" kind="variable"><name>tmp_block_</name></member>
+    <member refid="classrocalution_1_1_block_preconditioner_1a336b749035dcc2cf0d279e87e946f9f6" kind="variable"><name>x_</name></member>
+    <member refid="classrocalution_1_1_block_preconditioner_1aec950a38ae4b653fa70b02f2e5eb94c7" kind="variable"><name>num_blocks_</name></member>
+    <member refid="classrocalution_1_1_block_preconditioner_1a775de33d658db90583efad37a0c74e87" kind="variable"><name>block_sizes_</name></member>
+    <member refid="classrocalution_1_1_block_preconditioner_1a89c069cbb2e1a650b1c136807abdcd7e" kind="variable"><name>D_solver_</name></member>
+    <member refid="classrocalution_1_1_block_preconditioner_1a67762fb88fdc72192ec1ae8e2fbd2c6b" kind="variable"><name>diag_solve_</name></member>
+    <member refid="classrocalution_1_1_block_preconditioner_1ac20b5434ec2d79d69247c012fcc96cbd" kind="function"><name>BlockPreconditioner</name></member>
+    <member refid="classrocalution_1_1_block_preconditioner_1a5caf2872d3e7dca35d3827d5e458cfd5" kind="function"><name>~BlockPreconditioner</name></member>
+    <member refid="classrocalution_1_1_block_preconditioner_1a8bd967edd8f8c227c901bf191f3ed556" kind="function"><name>Print</name></member>
+    <member refid="classrocalution_1_1_block_preconditioner_1a895e518898a4ee40a307c915c0a521e9" kind="function"><name>Clear</name></member>
+    <member refid="classrocalution_1_1_block_preconditioner_1a9657b8371b17b04aae9b0612df42b94e" kind="function"><name>Set</name></member>
+    <member refid="classrocalution_1_1_block_preconditioner_1a26dc097dd5ea4752d45194761a3d1416" kind="function"><name>SetDiagonalSolver</name></member>
+    <member refid="classrocalution_1_1_block_preconditioner_1aada7f537faa69378b3bdd7b3d7e2cb35" kind="function"><name>SetLSolver</name></member>
+    <member refid="classrocalution_1_1_block_preconditioner_1a994e8ff9b247c946d3d52621fa43d2bb" kind="function"><name>SetExternalLastMatrix</name></member>
+    <member refid="classrocalution_1_1_block_preconditioner_1a5ec1e5c49befe88fd2de732affcf86fe" kind="function"><name>SetPermutation</name></member>
+    <member refid="classrocalution_1_1_block_preconditioner_1a3b0eb481110166de3f8a65056bb6f8e7" kind="function"><name>Build</name></member>
+    <member refid="classrocalution_1_1_block_preconditioner_1a8a07c7de9b3e16160443024881e5d66b" kind="function"><name>Solve</name></member>
+    <member refid="classrocalution_1_1_block_preconditioner_1add7207316fcf38a241954b5b06d8fb63" kind="function"><name>MoveToHostLocalData_</name></member>
+    <member refid="classrocalution_1_1_block_preconditioner_1ad4508716d3a46dc0cf90a40c93fff051" kind="function"><name>MoveToAcceleratorLocalData_</name></member>
+  </compound>
+  <compound refid="classrocalution_1_1_c_g" kind="class"><name>rocalution::CG</name>
+    <member refid="classrocalution_1_1_c_g_1a96289cb19553831f77cee1712fba779f" kind="variable"><name>r_</name></member>
+    <member refid="classrocalution_1_1_c_g_1ad4d78e02a76ea6c876562aaa44cbffae" kind="variable"><name>z_</name></member>
+    <member refid="classrocalution_1_1_c_g_1a76b5a29eb1f14f320336b780bdc16a88" kind="variable"><name>p_</name></member>
+    <member refid="classrocalution_1_1_c_g_1a2cfdd2ab9834b04f1ae22fabc74ee5dd" kind="variable"><name>q_</name></member>
+    <member refid="classrocalution_1_1_c_g_1a639debb647444e36380077afa9086c28" kind="function"><name>CG</name></member>
+    <member refid="classrocalution_1_1_c_g_1aaea334bfcc6b0a12f8275d80c940faa5" kind="function"><name>~CG</name></member>
+    <member refid="classrocalution_1_1_c_g_1ab6262e58cd3d6ba2ab039ec2d7e44ef9" kind="function"><name>Print</name></member>
+    <member refid="classrocalution_1_1_c_g_1a4860cf3e1fea631fc1fb1d2c9f9a1b96" kind="function"><name>Build</name></member>
+    <member refid="classrocalution_1_1_c_g_1ab3ea5f05bfd1dda2665b32fbd7aaf161" kind="function"><name>BuildMoveToAcceleratorAsync</name></member>
+    <member refid="classrocalution_1_1_c_g_1aca5693b548a5d5d7c0df92cf91ddcdea" kind="function"><name>Sync</name></member>
+    <member refid="classrocalution_1_1_c_g_1aa8c7c3c405baded18f66a5facf7f5843" kind="function"><name>ReBuildNumeric</name></member>
+    <member refid="classrocalution_1_1_c_g_1ab53457ca8abd9813cf14d8f00dfe2ea6" kind="function"><name>Clear</name></member>
+    <member refid="classrocalution_1_1_c_g_1a441b2318e7a92dcce8bc523ed9bbb117" kind="function"><name>SolveNonPrecond_</name></member>
+    <member refid="classrocalution_1_1_c_g_1a26856e793c50bfcbbba089e071dad3d6" kind="function"><name>SolvePrecond_</name></member>
+    <member refid="classrocalution_1_1_c_g_1ae7f9b4dbd4adabea40b21b779169c947" kind="function"><name>PrintStart_</name></member>
+    <member refid="classrocalution_1_1_c_g_1a720d12dd1a019def3042c2122e398ac7" kind="function"><name>PrintEnd_</name></member>
+    <member refid="classrocalution_1_1_c_g_1afab1ff5a64489d736c555e7bdb3552bd" kind="function"><name>MoveToHostLocalData_</name></member>
+    <member refid="classrocalution_1_1_c_g_1aaece656cb6650f377ac3d55c0d772b43" kind="function"><name>MoveToAcceleratorLocalData_</name></member>
+  </compound>
+  <compound refid="classrocalution_1_1_chebyshev" kind="class"><name>rocalution::Chebyshev</name>
+    <member refid="classrocalution_1_1_chebyshev_1ac18d4eb4a1c47eb18bccb87911c63aed" kind="variable"><name>init_lambda_</name></member>
+    <member refid="classrocalution_1_1_chebyshev_1ad61f37ad402ffa6c8955a8aea28b7264" kind="variable"><name>lambda_min_</name></member>
+    <member refid="classrocalution_1_1_chebyshev_1a092486e5bafbd522e467eb22f3b09428" kind="variable"><name>lambda_max_</name></member>
+    <member refid="classrocalution_1_1_chebyshev_1a164197db918548e2f7e528a4371154a8" kind="variable"><name>r_</name></member>
+    <member refid="classrocalution_1_1_chebyshev_1a45d8ba03264007aee4defe80f3c44afa" kind="variable"><name>z_</name></member>
+    <member refid="classrocalution_1_1_chebyshev_1a22b12fe27003176c9cc0c6e6bdf057d9" kind="variable"><name>p_</name></member>
+    <member refid="classrocalution_1_1_chebyshev_1a8429d0eaff7010deb9e7d8f2bdd6eb98" kind="function"><name>Chebyshev</name></member>
+    <member refid="classrocalution_1_1_chebyshev_1a51418de133dd8b0ee916dd218fc44776" kind="function"><name>~Chebyshev</name></member>
+    <member refid="classrocalution_1_1_chebyshev_1a409914d12c3bf628d1e72e5a16b9365f" kind="function"><name>Print</name></member>
+    <member refid="classrocalution_1_1_chebyshev_1a82ad1ed3760e42f0e20d98a503f209bd" kind="function"><name>Set</name></member>
+    <member refid="classrocalution_1_1_chebyshev_1a818dbc6712795dfd0072205b80ab2a74" kind="function"><name>Build</name></member>
+    <member refid="classrocalution_1_1_chebyshev_1aeedc05f5aee09d82bf83eae2a69cb429" kind="function"><name>ReBuildNumeric</name></member>
+    <member refid="classrocalution_1_1_chebyshev_1ae80d6e0addd110e1022634da1b0b459c" kind="function"><name>Clear</name></member>
+    <member refid="classrocalution_1_1_chebyshev_1a1ab571b8d7b97a6c814a5a304e492d89" kind="function"><name>SolveNonPrecond_</name></member>
+    <member refid="classrocalution_1_1_chebyshev_1aaa2f6f507f723edc40de5489f8c57cb2" kind="function"><name>SolvePrecond_</name></member>
+    <member refid="classrocalution_1_1_chebyshev_1a819e5d91436bd18c6223bb2a64986597" kind="function"><name>PrintStart_</name></member>
+    <member refid="classrocalution_1_1_chebyshev_1a7450905e0ee92e26f6340e6ae8c13637" kind="function"><name>PrintEnd_</name></member>
+    <member refid="classrocalution_1_1_chebyshev_1a656093906c28ef870d81b3bd0604fa1d" kind="function"><name>MoveToHostLocalData_</name></member>
+    <member refid="classrocalution_1_1_chebyshev_1a8535f610aaf815d435eaa2ee6a5331ac" kind="function"><name>MoveToAcceleratorLocalData_</name></member>
+  </compound>
+  <compound refid="classrocalution_1_1_c_r" kind="class"><name>rocalution::CR</name>
+    <member refid="classrocalution_1_1_c_r_1af7d2827ed7cd4926d7d8ad76b4a5d5e2" kind="variable"><name>r_</name></member>
+    <member refid="classrocalution_1_1_c_r_1a2c6db2f0f75e25d27a6c806916025cb9" kind="variable"><name>z_</name></member>
+    <member refid="classrocalution_1_1_c_r_1ad90512af7ed0e504bcaea60afb7238f0" kind="variable"><name>t_</name></member>
+    <member refid="classrocalution_1_1_c_r_1a05990152a2691ca19a5bea2f18024cc7" kind="variable"><name>p_</name></member>
+    <member refid="classrocalution_1_1_c_r_1a1dc870f8ccf1c4d3933c9db01116b25d" kind="variable"><name>q_</name></member>
+    <member refid="classrocalution_1_1_c_r_1a51f6b0e0cd64e745de7d4d7a062d8ec1" kind="variable"><name>v_</name></member>
+    <member refid="classrocalution_1_1_c_r_1a9d1d713fe38ed9dd445801a194cf38cc" kind="function"><name>CR</name></member>
+    <member refid="classrocalution_1_1_c_r_1abc9cf487678cfb3ddce37a0588cbea63" kind="function"><name>~CR</name></member>
+    <member refid="classrocalution_1_1_c_r_1a0778eefac8f75109b22d1b547e972e30" kind="function"><name>Print</name></member>
+    <member refid="classrocalution_1_1_c_r_1a81a7222bf650e346deffde245bd613d8" kind="function"><name>Build</name></member>
+    <member refid="classrocalution_1_1_c_r_1a99df35923a0f5a5d01fa5cc494d93da6" kind="function"><name>ReBuildNumeric</name></member>
+    <member refid="classrocalution_1_1_c_r_1ad7324248c0ef280bb39617b8201b41e5" kind="function"><name>Clear</name></member>
+    <member refid="classrocalution_1_1_c_r_1aee6027fd407eaee8df648c69f913d9e1" kind="function"><name>SolveNonPrecond_</name></member>
+    <member refid="classrocalution_1_1_c_r_1ae85ad29b69c9a44af24f319e40fb7bef" kind="function"><name>SolvePrecond_</name></member>
+    <member refid="classrocalution_1_1_c_r_1ab973ca128001eb6c6e5cce2e0c4f9f46" kind="function"><name>PrintStart_</name></member>
+    <member refid="classrocalution_1_1_c_r_1a99b484a616bd4ac1db08e7b9746a8a35" kind="function"><name>PrintEnd_</name></member>
+    <member refid="classrocalution_1_1_c_r_1af4675a942a9c79c3bd91a8cf9b1bbd7e" kind="function"><name>MoveToHostLocalData_</name></member>
+    <member refid="classrocalution_1_1_c_r_1a1c2f3c954f2c221e66afa2382b3c0543" kind="function"><name>MoveToAcceleratorLocalData_</name></member>
+  </compound>
+  <compound refid="classrocalution_1_1_diag_jacobi_saddle_point_precond" kind="class"><name>rocalution::DiagJacobiSaddlePointPrecond</name>
+    <member refid="classrocalution_1_1_diag_jacobi_saddle_point_precond_1a35deda8cf598243ca6a03b736f882792" kind="variable"><name>A_</name></member>
+    <member refid="classrocalution_1_1_diag_jacobi_saddle_point_precond_1ae9178ee667f4a7f471cb72820dcdc0b3" kind="variable"><name>K_</name></member>
+    <member refid="classrocalution_1_1_diag_jacobi_saddle_point_precond_1a9f07c62267b4982122a63b3a1a1ea7e3" kind="variable"><name>S_</name></member>
+    <member refid="classrocalution_1_1_diag_jacobi_saddle_point_precond_1ac784042d0f171ce64f6cf9460dc4b0aa" kind="variable"><name>K_nrow_</name></member>
+    <member refid="classrocalution_1_1_diag_jacobi_saddle_point_precond_1a129f42bbed9854516723dd86735c3bba" kind="variable"><name>K_nnz_</name></member>
+    <member refid="classrocalution_1_1_diag_jacobi_saddle_point_precond_1a854149929f019686c8fe21f455f63629" kind="variable"><name>op_mat_format_</name></member>
+    <member refid="classrocalution_1_1_diag_jacobi_saddle_point_precond_1a377796d6fa924dd6611665307964f225" kind="variable"><name>precond_mat_format_</name></member>
+    <member refid="classrocalution_1_1_diag_jacobi_saddle_point_precond_1afe624dff82431f9adca9b40f7d82344f" kind="variable"><name>x_</name></member>
+    <member refid="classrocalution_1_1_diag_jacobi_saddle_point_precond_1a933e126d4702ad207b1c2192a146ab78" kind="variable"><name>x_1_</name></member>
+    <member refid="classrocalution_1_1_diag_jacobi_saddle_point_precond_1a608d9c6e3132f2b93688e85fb722f0a5" kind="variable"><name>x_2_</name></member>
+    <member refid="classrocalution_1_1_diag_jacobi_saddle_point_precond_1aadd3e3c67feb39749a155a5c0ec547d3" kind="variable"><name>x_1tmp_</name></member>
+    <member refid="classrocalution_1_1_diag_jacobi_saddle_point_precond_1a81cdf6853ef9ade9f83d4d99724b979e" kind="variable"><name>rhs_</name></member>
+    <member refid="classrocalution_1_1_diag_jacobi_saddle_point_precond_1a28261da44012e342fb9920719fe95bbe" kind="variable"><name>rhs_1_</name></member>
+    <member refid="classrocalution_1_1_diag_jacobi_saddle_point_precond_1aa9164758db14b3b62085daa9940ee119" kind="variable"><name>rhs_2_</name></member>
+    <member refid="classrocalution_1_1_diag_jacobi_saddle_point_precond_1ab4c830ea6e0d65a7cc1edea97b38f5bc" kind="variable"><name>K_solver_</name></member>
+    <member refid="classrocalution_1_1_diag_jacobi_saddle_point_precond_1ae568d22db29f0cd3b83948e10ad19cbd" kind="variable"><name>S_solver_</name></member>
+    <member refid="classrocalution_1_1_diag_jacobi_saddle_point_precond_1a63f91566373af3863173415396b5caf6" kind="variable"><name>permutation_</name></member>
+    <member refid="classrocalution_1_1_diag_jacobi_saddle_point_precond_1a437c30fbf7c94b2e5be5a58802b4a420" kind="variable"><name>size_</name></member>
+    <member refid="classrocalution_1_1_diag_jacobi_saddle_point_precond_1aabd45e0deb73d5f106df9390c62c9e32" kind="function"><name>DiagJacobiSaddlePointPrecond</name></member>
+    <member refid="classrocalution_1_1_diag_jacobi_saddle_point_precond_1a484b32ba2cc33bb2566d7660234f4415" kind="function"><name>~DiagJacobiSaddlePointPrecond</name></member>
+    <member refid="classrocalution_1_1_diag_jacobi_saddle_point_precond_1a25a5ae4f6c652c3c35e7783597ffa76d" kind="function"><name>Print</name></member>
+    <member refid="classrocalution_1_1_diag_jacobi_saddle_point_precond_1a9f0f248482e5ec4aa3c2936d707e527e" kind="function"><name>Clear</name></member>
+    <member refid="classrocalution_1_1_diag_jacobi_saddle_point_precond_1a565eeff2293d71a97b9fd1d00423945e" kind="function"><name>Set</name></member>
+    <member refid="classrocalution_1_1_diag_jacobi_saddle_point_precond_1a579420d51b2460889552d551a50a5567" kind="function"><name>Build</name></member>
+    <member refid="classrocalution_1_1_diag_jacobi_saddle_point_precond_1a3ef5a66eaaac329c912a75b21450fa36" kind="function"><name>Solve</name></member>
+    <member refid="classrocalution_1_1_diag_jacobi_saddle_point_precond_1adca53d1e7a84dc1a2eaa1aac405e1661" kind="function"><name>MoveToHostLocalData_</name></member>
+    <member refid="classrocalution_1_1_diag_jacobi_saddle_point_precond_1a0dc2ce0ee37ee2cd7aea15e9a885a161" kind="function"><name>MoveToAcceleratorLocalData_</name></member>
+  </compound>
+  <compound refid="classrocalution_1_1_direct_linear_solver" kind="class"><name>rocalution::DirectLinearSolver</name>
+    <member refid="classrocalution_1_1_direct_linear_solver_1adef97b269c9e61a15eef4d648bc85f18" kind="function"><name>DirectLinearSolver</name></member>
+    <member refid="classrocalution_1_1_direct_linear_solver_1a36be7fcc66dbafa71da5fd50aa25ecc8" kind="function"><name>~DirectLinearSolver</name></member>
+    <member refid="classrocalution_1_1_direct_linear_solver_1a4feccca7c61e39e8f5628767f2a86c28" kind="function"><name>Verbose</name></member>
+    <member refid="classrocalution_1_1_direct_linear_solver_1ae8295100cd76f64ff83efd8024a48728" kind="function"><name>Solve</name></member>
+    <member refid="classrocalution_1_1_direct_linear_solver_1abad2f9333921b2e2faea18b144e13a87" kind="function"><name>Solve_</name></member>
+  </compound>
+  <compound refid="classrocalution_1_1_f_c_g" kind="class"><name>rocalution::FCG</name>
+    <member refid="classrocalution_1_1_f_c_g_1a192a03813f85fb2ba22859221fe067be" kind="variable"><name>r_</name></member>
+    <member refid="classrocalution_1_1_f_c_g_1a742aad7cfc1f61b0f03ec6fbfc8cd23f" kind="variable"><name>w_</name></member>
+    <member refid="classrocalution_1_1_f_c_g_1a56dbd9b994d6171e75c22b056146c2a7" kind="variable"><name>z_</name></member>
+    <member refid="classrocalution_1_1_f_c_g_1a74c9569b95ed75f35c8b692483472aad" kind="variable"><name>p_</name></member>
+    <member refid="classrocalution_1_1_f_c_g_1a50199c1c2c8e68c21d195f5a85540b90" kind="variable"><name>q_</name></member>
+    <member refid="classrocalution_1_1_f_c_g_1a7244cc3777536e2ede35af4dd3711c6a" kind="function"><name>FCG</name></member>
+    <member refid="classrocalution_1_1_f_c_g_1aeec58bfe6b772a71e75e113e40f3cdf2" kind="function"><name>~FCG</name></member>
+    <member refid="classrocalution_1_1_f_c_g_1ab97e0859741d926edee0390f676e71c0" kind="function"><name>Print</name></member>
+    <member refid="classrocalution_1_1_f_c_g_1a3acf1bf92fedc1349d7ab1662beed05c" kind="function"><name>Build</name></member>
+    <member refid="classrocalution_1_1_f_c_g_1acbe9d30d2bc4ff0d64d3f6b371a31f3a" kind="function"><name>ReBuildNumeric</name></member>
+    <member refid="classrocalution_1_1_f_c_g_1a1c7985bfe10e42c8b9aab224fb925138" kind="function"><name>Clear</name></member>
+    <member refid="classrocalution_1_1_f_c_g_1ad06481e3a538c0c5ecb22cba594dde2c" kind="function"><name>SolveNonPrecond_</name></member>
+    <member refid="classrocalution_1_1_f_c_g_1a7cc416b9d4a6494325089cb0b9cf7202" kind="function"><name>SolvePrecond_</name></member>
+    <member refid="classrocalution_1_1_f_c_g_1a8d228a466dfe7a4e3f48d9ed2562f432" kind="function"><name>PrintStart_</name></member>
+    <member refid="classrocalution_1_1_f_c_g_1ac03d39259f40b251a69ab3a9b338f4ac" kind="function"><name>PrintEnd_</name></member>
+    <member refid="classrocalution_1_1_f_c_g_1a2f65271069f43621edf02d1807dda5ff" kind="function"><name>MoveToHostLocalData_</name></member>
+    <member refid="classrocalution_1_1_f_c_g_1a42a8233aa607dd24deb630a892ad3678" kind="function"><name>MoveToAcceleratorLocalData_</name></member>
+  </compound>
+  <compound refid="classrocalution_1_1_f_g_m_r_e_s" kind="class"><name>rocalution::FGMRES</name>
+    <member refid="classrocalution_1_1_f_g_m_r_e_s_1adc19575e2a8c0082bcef3942f3ebb5e7" kind="variable"><name>v_</name></member>
+    <member refid="classrocalution_1_1_f_g_m_r_e_s_1a341569e17b65df09f78cbeff9eed11de" kind="variable"><name>z_</name></member>
+    <member refid="classrocalution_1_1_f_g_m_r_e_s_1a5de42cd39328699f03bb4855c3237a53" kind="variable"><name>c_</name></member>
+    <member refid="classrocalution_1_1_f_g_m_r_e_s_1aaec96c26ffeb67a31a2a90f57f6db1d1" kind="variable"><name>s_</name></member>
+    <member refid="classrocalution_1_1_f_g_m_r_e_s_1abe49d995433284cd18ab6e7314ffc7cb" kind="variable"><name>r_</name></member>
+    <member refid="classrocalution_1_1_f_g_m_r_e_s_1a84c846e5211d5d23746755792befdbb1" kind="variable"><name>H_</name></member>
+    <member refid="classrocalution_1_1_f_g_m_r_e_s_1a32c930aa8ea48ec4e1e6f1aa5bb2b754" kind="variable"><name>size_basis_</name></member>
+    <member refid="classrocalution_1_1_f_g_m_r_e_s_1a0e66e860da2741c3826561b7e5f36660" kind="function"><name>FGMRES</name></member>
+    <member refid="classrocalution_1_1_f_g_m_r_e_s_1ae73e479df6e8eccfd4425c63d4afa67a" kind="function"><name>~FGMRES</name></member>
+    <member refid="classrocalution_1_1_f_g_m_r_e_s_1a19804cfcc80fad220ec0bdb934643858" kind="function"><name>Print</name></member>
+    <member refid="classrocalution_1_1_f_g_m_r_e_s_1a414bd37cdda192492b10d3bf1608272c" kind="function"><name>Build</name></member>
+    <member refid="classrocalution_1_1_f_g_m_r_e_s_1a4329cbd6a8ccaf5e99959e989f139376" kind="function"><name>ReBuildNumeric</name></member>
+    <member refid="classrocalution_1_1_f_g_m_r_e_s_1a8fc9d8bf97cd4f4d8f5b3ad133b7808b" kind="function"><name>Clear</name></member>
+    <member refid="classrocalution_1_1_f_g_m_r_e_s_1aca2ae523796ca1ec710b6b7f864dd82c" kind="function"><name>SetBasisSize</name></member>
+    <member refid="classrocalution_1_1_f_g_m_r_e_s_1aedd3018559df038f1e9bed1fb1d7e8ca" kind="function"><name>SolveNonPrecond_</name></member>
+    <member refid="classrocalution_1_1_f_g_m_r_e_s_1af20bf069b1007389f728d4efda41d65f" kind="function"><name>SolvePrecond_</name></member>
+    <member refid="classrocalution_1_1_f_g_m_r_e_s_1a0f59f29afc78053852c77f105ce1dc8d" kind="function"><name>PrintStart_</name></member>
+    <member refid="classrocalution_1_1_f_g_m_r_e_s_1af71bd8f9505b49fe21b7933a91918ba9" kind="function"><name>PrintEnd_</name></member>
+    <member refid="classrocalution_1_1_f_g_m_r_e_s_1af3851547b9558db84a79eb058cbca53e" kind="function"><name>MoveToHostLocalData_</name></member>
+    <member refid="classrocalution_1_1_f_g_m_r_e_s_1ad9fcaedd2b0746b6da5c87276a549cd9" kind="function"><name>MoveToAcceleratorLocalData_</name></member>
+    <member refid="classrocalution_1_1_f_g_m_r_e_s_1a071c5ea581c098e9bba96abb212e0213" kind="function"><name>GenerateGivensRotation_</name></member>
+    <member refid="classrocalution_1_1_f_g_m_r_e_s_1add46c663efb7be53f9936a9ea577e97e" kind="function"><name>ApplyGivensRotation_</name></member>
+  </compound>
+  <compound refid="classrocalution_1_1_fixed_point" kind="class"><name>rocalution::FixedPoint</name>
+    <member refid="classrocalution_1_1_fixed_point_1a57bcfb57fc8389ce53530d9991187bb4" kind="variable"><name>omega_</name></member>
+    <member refid="classrocalution_1_1_fixed_point_1a76458b0d24225376e632a24d8d9eab89" kind="variable"><name>x_old_</name></member>
+    <member refid="classrocalution_1_1_fixed_point_1a7e52fb0af4053aa415573ac2e56b76b6" kind="variable"><name>x_res_</name></member>
+    <member refid="classrocalution_1_1_fixed_point_1afb0285d4bb3079c69061536450e6bfc6" kind="function"><name>FixedPoint</name></member>
+    <member refid="classrocalution_1_1_fixed_point_1af4b80b4c50b98c4a301843fc86c4c444" kind="function"><name>~FixedPoint</name></member>
+    <member refid="classrocalution_1_1_fixed_point_1aa930cc6a54e2485bf3e11c32f263c132" kind="function"><name>Print</name></member>
+    <member refid="classrocalution_1_1_fixed_point_1ac277e5e97c6ddb7d8b93ce48088bace4" kind="function"><name>ReBuildNumeric</name></member>
+    <member refid="classrocalution_1_1_fixed_point_1a3aaa22bef74ae87f76051850a002d041" kind="function"><name>SetRelaxation</name></member>
+    <member refid="classrocalution_1_1_fixed_point_1ac23ae9d59403c088e60326a7b7ad04e0" kind="function"><name>Build</name></member>
+    <member refid="classrocalution_1_1_fixed_point_1ae1395eec08363e71d6ad4872c54ffd2b" kind="function"><name>Clear</name></member>
+    <member refid="classrocalution_1_1_fixed_point_1a2e849b1bfc377d7d476867787546867d" kind="function"><name>SolveNonPrecond_</name></member>
+    <member refid="classrocalution_1_1_fixed_point_1a3047483789605d524104679f8fae7f05" kind="function"><name>SolvePrecond_</name></member>
+    <member refid="classrocalution_1_1_fixed_point_1ab65130c9a035d906e4830739db9a778a" kind="function"><name>PrintStart_</name></member>
+    <member refid="classrocalution_1_1_fixed_point_1a9e03618ba35e34c74038aa9fc6077a3f" kind="function"><name>PrintEnd_</name></member>
+    <member refid="classrocalution_1_1_fixed_point_1a49d0b5f5733143b15f5418b54b479100" kind="function"><name>MoveToHostLocalData_</name></member>
+    <member refid="classrocalution_1_1_fixed_point_1ac426f998b3cd0c38d367cf57104f39a1" kind="function"><name>MoveToAcceleratorLocalData_</name></member>
+  </compound>
+  <compound refid="classrocalution_1_1_f_s_a_i" kind="class"><name>rocalution::FSAI</name>
+    <member refid="classrocalution_1_1_f_s_a_i_1a6548d8d4753bc5d9d07f6603c2c766a3" kind="variable"><name>FSAI_L_</name></member>
+    <member refid="classrocalution_1_1_f_s_a_i_1af86b07663be9bab50224fbd0c5b4e0f3" kind="variable"><name>FSAI_LT_</name></member>
+    <member refid="classrocalution_1_1_f_s_a_i_1a99e386eccc0d4aaa3e0abe99fcb80f38" kind="variable"><name>t_</name></member>
+    <member refid="classrocalution_1_1_f_s_a_i_1a9edaa039f24f0d183582dca4372043b9" kind="variable"><name>matrix_power_</name></member>
+    <member refid="classrocalution_1_1_f_s_a_i_1ae023a18d2080a1953673e4d1a2c3279c" kind="variable"><name>external_pattern_</name></member>
+    <member refid="classrocalution_1_1_f_s_a_i_1ad6f5e21a87b8bbd74dd691b01c9a741f" kind="variable"><name>matrix_pattern_</name></member>
+    <member refid="classrocalution_1_1_f_s_a_i_1a45d92980b74b7046a145bef3cc038f73" kind="variable"><name>op_mat_format_</name></member>
+    <member refid="classrocalution_1_1_f_s_a_i_1ae5179ad2337459b1d87b055a9598a1c0" kind="variable"><name>precond_mat_format_</name></member>
+    <member refid="classrocalution_1_1_f_s_a_i_1a208b926810af93ff6a79f86e5d9057bd" kind="function"><name>FSAI</name></member>
+    <member refid="classrocalution_1_1_f_s_a_i_1a8970d0ed4b80f641b7b71510e39bb902" kind="function"><name>~FSAI</name></member>
+    <member refid="classrocalution_1_1_f_s_a_i_1acc64b80be4f6240eccc9b985f2352b28" kind="function"><name>Print</name></member>
+    <member refid="classrocalution_1_1_f_s_a_i_1ac0640f3b11782b81b239ad6b8ed0f073" kind="function"><name>Solve</name></member>
+    <member refid="classrocalution_1_1_f_s_a_i_1ae02e8110161e34558861c7b307b4c286" kind="function"><name>Set</name></member>
+    <member refid="classrocalution_1_1_f_s_a_i_1ae39d0ddfea02610a76c09ac6b0e0d738" kind="function"><name>Set</name></member>
+    <member refid="classrocalution_1_1_f_s_a_i_1a1911b168f63bf7e089aea9f8fd8b4de9" kind="function"><name>Build</name></member>
+    <member refid="classrocalution_1_1_f_s_a_i_1a2f6d402249b59f86d9257cb94d889f00" kind="function"><name>Clear</name></member>
+    <member refid="classrocalution_1_1_f_s_a_i_1a8ee271df7007285accc0ed3db03552fc" kind="function"><name>SetPrecondMatrixFormat</name></member>
+    <member refid="classrocalution_1_1_f_s_a_i_1aaa61e05eb32c7e2e4bb31c68024b7de1" kind="function"><name>MoveToHostLocalData_</name></member>
+    <member refid="classrocalution_1_1_f_s_a_i_1a4d93c5f71adb9004d30f560a4cff8110" kind="function"><name>MoveToAcceleratorLocalData_</name></member>
   </compound>
   <compound refid="classrocalution_1_1_global_matrix" kind="class"><name>rocalution::GlobalMatrix</name>
     <member refid="classrocalution_1_1_global_matrix_1a6c0bad5e38e76fae726d93c33b818e49" kind="variable"><name>nnz_</name></member>
@@ -111,6 +493,30 @@
     <member refid="classrocalution_1_1_global_matrix_1a4bd38b6e13c7a46e50cd18b53a96b96b" kind="function"><name>is_host_</name></member>
     <member refid="classrocalution_1_1_global_matrix_1aba4776a93e5b76ddad6d8f57ec2895a1" kind="function"><name>is_accel_</name></member>
   </compound>
+  <compound refid="classrocalution_1_1_global_pairwise_a_m_g" kind="class"><name>rocalution::GlobalPairwiseAMG</name>
+    <member refid="classrocalution_1_1_global_pairwise_a_m_g_1ab996fe3d8d17d5406f77bca64731162b" kind="variable"><name>beta_</name></member>
+    <member refid="classrocalution_1_1_global_pairwise_a_m_g_1a4b26c06c9600fa5139496f228b2b34c9" kind="variable"><name>coarsening_factor_</name></member>
+    <member refid="classrocalution_1_1_global_pairwise_a_m_g_1a8f12884885db23af9d116616aaa8019e" kind="variable"><name>aggregation_ordering_</name></member>
+    <member refid="classrocalution_1_1_global_pairwise_a_m_g_1ab924295bb365aa4f474c4823ce327db6" kind="variable"><name>pm_level_</name></member>
+    <member refid="classrocalution_1_1_global_pairwise_a_m_g_1a386d4ab4c9d43f5f8d740c4bfab0f7f2" kind="variable"><name>trans_level_</name></member>
+    <member refid="classrocalution_1_1_global_pairwise_a_m_g_1a8d99989415784c65368d251294917140" kind="variable"><name>dim_level_</name></member>
+    <member refid="classrocalution_1_1_global_pairwise_a_m_g_1a07c9d9691e71d45a65e480e9d6b3d4b4" kind="variable"><name>Gsize_level_</name></member>
+    <member refid="classrocalution_1_1_global_pairwise_a_m_g_1ab6c4c854240b96c072c6d2b95b9fd4b6" kind="variable"><name>rGsize_level_</name></member>
+    <member refid="classrocalution_1_1_global_pairwise_a_m_g_1a0afd1fbb52a91a829d57a46557540827" kind="variable"><name>rG_level_</name></member>
+    <member refid="classrocalution_1_1_global_pairwise_a_m_g_1a3867c4bd612b7a550a2fe848314fb79a" kind="function"><name>GlobalPairwiseAMG</name></member>
+    <member refid="classrocalution_1_1_global_pairwise_a_m_g_1a6dce2153c239cb655714443f5ad84aa9" kind="function"><name>~GlobalPairwiseAMG</name></member>
+    <member refid="classrocalution_1_1_global_pairwise_a_m_g_1a9fa1e90d8b81b9db2a9ece03f30fad5f" kind="function"><name>Print</name></member>
+    <member refid="classrocalution_1_1_global_pairwise_a_m_g_1a5fbd48f3fecff4ec5410459070037a38" kind="function"><name>BuildHierarchy</name></member>
+    <member refid="classrocalution_1_1_global_pairwise_a_m_g_1a188b9a8972ff95fb92879dfdb8fd4e84" kind="function"><name>ClearLocal</name></member>
+    <member refid="classrocalution_1_1_global_pairwise_a_m_g_1aa42c48d9800f72d10b38ff790f72dddd" kind="function"><name>SetBeta</name></member>
+    <member refid="classrocalution_1_1_global_pairwise_a_m_g_1a9607399db49f8b761f6154ea01786721" kind="function"><name>SetOrdering</name></member>
+    <member refid="classrocalution_1_1_global_pairwise_a_m_g_1a4c9654bf648e8ee1811513602764d5f3" kind="function"><name>SetCoarseningFactor</name></member>
+    <member refid="classrocalution_1_1_global_pairwise_a_m_g_1ad166212a6ea2c76b36f6e176254c3acc" kind="function"><name>ReBuildNumeric</name></member>
+    <member refid="classrocalution_1_1_global_pairwise_a_m_g_1a4581d8a2759d3a4019133890c456feb3" kind="function"><name>Aggregate_</name></member>
+    <member refid="classrocalution_1_1_global_pairwise_a_m_g_1ad4827cde819b3c0ac7cae37bbce59a00" kind="function"><name>PrintStart_</name></member>
+    <member refid="classrocalution_1_1_global_pairwise_a_m_g_1a58cc5c3ef997f71e853703d3724a0942" kind="function"><name>PrintEnd_</name></member>
+    <member refid="classrocalution_1_1_global_pairwise_a_m_g_1ad3e383251e19412b4fed812a532d18c2" kind="function"><name>Aggregate_</name></member>
+  </compound>
   <compound refid="classrocalution_1_1_global_vector" kind="class"><name>rocalution::GlobalVector</name>
     <member refid="classrocalution_1_1_global_vector_1a66a51fc46b0922e9040c810d2c995c84" kind="variable"><name>recv_event_</name></member>
     <member refid="classrocalution_1_1_global_vector_1a26732da1fcaa0bb71b901484d513110b" kind="variable"><name>send_event_</name></member>
@@ -173,11 +579,205 @@
     <member refid="classrocalution_1_1_global_vector_1a69fbfaa93c76d79395d5bee39707daaa" kind="function"><name>UpdateGhostValuesAsync_</name></member>
     <member refid="classrocalution_1_1_global_vector_1a612e63c1a7791a7cfdff210d7c1441c5" kind="function"><name>UpdateGhostValuesSync_</name></member>
   </compound>
+  <compound refid="classrocalution_1_1_g_m_r_e_s" kind="class"><name>rocalution::GMRES</name>
+    <member refid="classrocalution_1_1_g_m_r_e_s_1a3ab63cdf29ea6f64a40545b697a2631e" kind="variable"><name>v_</name></member>
+    <member refid="classrocalution_1_1_g_m_r_e_s_1a2494e504bdf62ad923bc445f5693d9e2" kind="variable"><name>z_</name></member>
+    <member refid="classrocalution_1_1_g_m_r_e_s_1a09f64a74c8d3e0532ff736d9edee2ee6" kind="variable"><name>c_</name></member>
+    <member refid="classrocalution_1_1_g_m_r_e_s_1a48b8bd532c310328a964d0fa8376c6a2" kind="variable"><name>s_</name></member>
+    <member refid="classrocalution_1_1_g_m_r_e_s_1adc689907a94b25a08a0bb6b76544ac6c" kind="variable"><name>r_</name></member>
+    <member refid="classrocalution_1_1_g_m_r_e_s_1ad4f8c2b278419302dfb0c726f7477f9b" kind="variable"><name>H_</name></member>
+    <member refid="classrocalution_1_1_g_m_r_e_s_1a5accb4528693dfdc908bfd92901e08fb" kind="variable"><name>size_basis_</name></member>
+    <member refid="classrocalution_1_1_g_m_r_e_s_1a2cf59fca8fe81ac9eb8284bbd0565f89" kind="function"><name>GMRES</name></member>
+    <member refid="classrocalution_1_1_g_m_r_e_s_1ae39e412e105f3cb30b436bb58ffa8dad" kind="function"><name>~GMRES</name></member>
+    <member refid="classrocalution_1_1_g_m_r_e_s_1a13336a82d64e481ef0b8aa8d7633f23e" kind="function"><name>Print</name></member>
+    <member refid="classrocalution_1_1_g_m_r_e_s_1a63939f5a09aeca89f883ae806fd93443" kind="function"><name>Build</name></member>
+    <member refid="classrocalution_1_1_g_m_r_e_s_1a5a8a8893adc3f3834a802a159e9d2ddb" kind="function"><name>ReBuildNumeric</name></member>
+    <member refid="classrocalution_1_1_g_m_r_e_s_1a909155a04511c64fbc580cae36d7680d" kind="function"><name>Clear</name></member>
+    <member refid="classrocalution_1_1_g_m_r_e_s_1a10653ae4ae57d6ff8025d34ebf5231c8" kind="function"><name>SetBasisSize</name></member>
+    <member refid="classrocalution_1_1_g_m_r_e_s_1a779f90031b487d5320e97b477a526b3b" kind="function"><name>SolveNonPrecond_</name></member>
+    <member refid="classrocalution_1_1_g_m_r_e_s_1aabb1a2b87370d09b1992bd0683c5e03a" kind="function"><name>SolvePrecond_</name></member>
+    <member refid="classrocalution_1_1_g_m_r_e_s_1a9017eaad7c9b34ead189dcc431d0104e" kind="function"><name>PrintStart_</name></member>
+    <member refid="classrocalution_1_1_g_m_r_e_s_1a3ce16a0786cd2f4787166dbf72d46382" kind="function"><name>PrintEnd_</name></member>
+    <member refid="classrocalution_1_1_g_m_r_e_s_1a0f2a954bae675a9d2b385a405f367f31" kind="function"><name>MoveToHostLocalData_</name></member>
+    <member refid="classrocalution_1_1_g_m_r_e_s_1a022be296736ded421af758f3a10fd292" kind="function"><name>MoveToAcceleratorLocalData_</name></member>
+    <member refid="classrocalution_1_1_g_m_r_e_s_1a98ab588e122bd5c9edf4536bd0ab408b" kind="function"><name>GenerateGivensRotation_</name></member>
+    <member refid="classrocalution_1_1_g_m_r_e_s_1a97685f58935dcf12cd67d1345b599ece" kind="function"><name>ApplyGivensRotation_</name></member>
+  </compound>
+  <compound refid="classrocalution_1_1_g_s" kind="class"><name>rocalution::GS</name>
+    <member refid="classrocalution_1_1_g_s_1a3a445886c6f61fa1960ac7dada3c9073" kind="variable"><name>GS_</name></member>
+    <member refid="classrocalution_1_1_g_s_1a8558e10c5475c4895786213c87485d96" kind="function"><name>GS</name></member>
+    <member refid="classrocalution_1_1_g_s_1abb239f803dfa6e3de31aa6e5d6f932eb" kind="function"><name>~GS</name></member>
+    <member refid="classrocalution_1_1_g_s_1ab12697d17918694a697cb2293d1074fd" kind="function"><name>Print</name></member>
+    <member refid="classrocalution_1_1_g_s_1a8eb1e40f064605f9905eba331f4977fb" kind="function"><name>Solve</name></member>
+    <member refid="classrocalution_1_1_g_s_1aa4a4f93810a3fccb77e8e529b98a4160" kind="function"><name>Build</name></member>
+    <member refid="classrocalution_1_1_g_s_1ac694faf59a4e0064d5ded99d2d879d72" kind="function"><name>Clear</name></member>
+    <member refid="classrocalution_1_1_g_s_1a8c7cc04be7eb669e824eebecce8a929a" kind="function"><name>ResetOperator</name></member>
+    <member refid="classrocalution_1_1_g_s_1aa3e4faced26514b08ef62bf827529d1e" kind="function"><name>MoveToHostLocalData_</name></member>
+    <member refid="classrocalution_1_1_g_s_1aa1100324fd017154cd1238de11724943" kind="function"><name>MoveToAcceleratorLocalData_</name></member>
+  </compound>
   <compound refid="classrocalution_1_1_host_matrix" kind="class"><name>rocalution::HostMatrix</name>
   </compound>
   <compound refid="classrocalution_1_1_host_stencil" kind="class"><name>rocalution::HostStencil</name>
   </compound>
   <compound refid="classrocalution_1_1_host_vector" kind="class"><name>rocalution::HostVector</name>
+  </compound>
+  <compound refid="classrocalution_1_1_i_c" kind="class"><name>rocalution::IC</name>
+    <member refid="classrocalution_1_1_i_c_1aac518473ed2495c56bbc62d7083672e9" kind="variable"><name>IC_</name></member>
+    <member refid="classrocalution_1_1_i_c_1a1becc09c17a96f3fa957f74013befc98" kind="variable"><name>inv_diag_entries_</name></member>
+    <member refid="classrocalution_1_1_i_c_1a61bf6759313ef54d0b25521eeee98459" kind="function"><name>IC</name></member>
+    <member refid="classrocalution_1_1_i_c_1af7915b319f5a4347fc5f48fbb1647c0d" kind="function"><name>~IC</name></member>
+    <member refid="classrocalution_1_1_i_c_1a3262b929dcb62079620310b51811ec2f" kind="function"><name>Print</name></member>
+    <member refid="classrocalution_1_1_i_c_1aeefae9c5faf7e7ad26e6c154e9a5b09e" kind="function"><name>Solve</name></member>
+    <member refid="classrocalution_1_1_i_c_1a7e255460eca34f35c7f7871436e89695" kind="function"><name>Build</name></member>
+    <member refid="classrocalution_1_1_i_c_1a3078ebbe71122a589b46ff2da7c1cafe" kind="function"><name>Clear</name></member>
+    <member refid="classrocalution_1_1_i_c_1a4d63dd66ae2a45b9f4e1491b27dd21d4" kind="function"><name>MoveToHostLocalData_</name></member>
+    <member refid="classrocalution_1_1_i_c_1ae0845a1667964bb36cf08f176fcc2844" kind="function"><name>MoveToAcceleratorLocalData_</name></member>
+  </compound>
+  <compound refid="classrocalution_1_1_i_d_r" kind="class"><name>rocalution::IDR</name>
+    <member refid="classrocalution_1_1_i_d_r_1a7cb7a386ebb8c469b9ad7e9ee6627c02" kind="variable"><name>s_</name></member>
+    <member refid="classrocalution_1_1_i_d_r_1a6f255f522ed4b9b7190b95e1a81de2ea" kind="variable"><name>seed_</name></member>
+    <member refid="classrocalution_1_1_i_d_r_1aad86b58794428426d75ffa8e6517ed58" kind="variable"><name>kappa_</name></member>
+    <member refid="classrocalution_1_1_i_d_r_1aab41b8ed521069ced9a2dd062431af5b" kind="variable"><name>c_</name></member>
+    <member refid="classrocalution_1_1_i_d_r_1aef9e2fa2051703217295efcb1345e0ca" kind="variable"><name>f_</name></member>
+    <member refid="classrocalution_1_1_i_d_r_1a147df498f74291f35bd6bfaf2ad96eb9" kind="variable"><name>M_</name></member>
+    <member refid="classrocalution_1_1_i_d_r_1ab25d2a2d05da035d75c7a751cecc579c" kind="variable"><name>r_</name></member>
+    <member refid="classrocalution_1_1_i_d_r_1af6e14767118ecac5646b99e2f52d2555" kind="variable"><name>v_</name></member>
+    <member refid="classrocalution_1_1_i_d_r_1a6d9dc29f8215be9195a8e2c8f723c2eb" kind="variable"><name>t_</name></member>
+    <member refid="classrocalution_1_1_i_d_r_1ac97f4889c850c375fef08b121ccf3277" kind="variable"><name>G_</name></member>
+    <member refid="classrocalution_1_1_i_d_r_1af0df0abb41ff0efac2116efdcbfc250a" kind="variable"><name>U_</name></member>
+    <member refid="classrocalution_1_1_i_d_r_1a6d3507f4c700eb7926eed17ca52d4e46" kind="variable"><name>P_</name></member>
+    <member refid="classrocalution_1_1_i_d_r_1a123ffa56c7b053e59a5772bca6c8c0d2" kind="function"><name>IDR</name></member>
+    <member refid="classrocalution_1_1_i_d_r_1ae60ddc1e18307e54968189c49b52b6cd" kind="function"><name>~IDR</name></member>
+    <member refid="classrocalution_1_1_i_d_r_1acd9fe3e00e5f520b03903a895f8c5e2b" kind="function"><name>Print</name></member>
+    <member refid="classrocalution_1_1_i_d_r_1ac04b951d408a3ebaabcaa7ac7c9dcb3e" kind="function"><name>Build</name></member>
+    <member refid="classrocalution_1_1_i_d_r_1a01bc5a8ee5353b99c5b27909b975e6dd" kind="function"><name>ReBuildNumeric</name></member>
+    <member refid="classrocalution_1_1_i_d_r_1a9ffdd18ba55fd4471a6499c3927e3364" kind="function"><name>Clear</name></member>
+    <member refid="classrocalution_1_1_i_d_r_1ae6ecd7dcdfc8fa84714d2dea452ef6e2" kind="function"><name>SetShadowSpace</name></member>
+    <member refid="classrocalution_1_1_i_d_r_1a01376ac1cbf7abea04ce173c55086e25" kind="function"><name>SetRandomSeed</name></member>
+    <member refid="classrocalution_1_1_i_d_r_1afe5cb5239986204a3eb1432f52d48adb" kind="function"><name>SolveNonPrecond_</name></member>
+    <member refid="classrocalution_1_1_i_d_r_1a353018c132eeedb7625b2037f58fdf85" kind="function"><name>SolvePrecond_</name></member>
+    <member refid="classrocalution_1_1_i_d_r_1a95f7e8a99093bf46079344d01ef3a56a" kind="function"><name>PrintStart_</name></member>
+    <member refid="classrocalution_1_1_i_d_r_1a5a912146f8a3762afd46272ec7cbce04" kind="function"><name>PrintEnd_</name></member>
+    <member refid="classrocalution_1_1_i_d_r_1a07136a096dce96a175ecdb54be40379d" kind="function"><name>MoveToHostLocalData_</name></member>
+    <member refid="classrocalution_1_1_i_d_r_1a7c55c5ad42e52093a35433b5c5e0bc61" kind="function"><name>MoveToAcceleratorLocalData_</name></member>
+  </compound>
+  <compound refid="classrocalution_1_1_i_l_u" kind="class"><name>rocalution::ILU</name>
+    <member refid="classrocalution_1_1_i_l_u_1a3d10ab902afd550a094af97f4cd00f44" kind="variable"><name>ILU_</name></member>
+    <member refid="classrocalution_1_1_i_l_u_1a78c47b2f5277d63d374f4420ec1be728" kind="variable"><name>p_</name></member>
+    <member refid="classrocalution_1_1_i_l_u_1a6a611b213e66c58b5a4fcaa0f60f3891" kind="variable"><name>level_</name></member>
+    <member refid="classrocalution_1_1_i_l_u_1a27a98e664a69fac88a552bb210d6de7f" kind="function"><name>ILU</name></member>
+    <member refid="classrocalution_1_1_i_l_u_1a6fc9bdc045a6cd97f4a84003a574565a" kind="function"><name>~ILU</name></member>
+    <member refid="classrocalution_1_1_i_l_u_1a2939f393aa131c09d1af657135edb21e" kind="function"><name>Print</name></member>
+    <member refid="classrocalution_1_1_i_l_u_1a3a1743824ec8df048f2165d4ecc1bbc1" kind="function"><name>Solve</name></member>
+    <member refid="classrocalution_1_1_i_l_u_1ad4e4160e6277870985110fbd479ed670" kind="function"><name>Set</name></member>
+    <member refid="classrocalution_1_1_i_l_u_1a11f7e53ed961efd89e04d66b3e9e96a8" kind="function"><name>Build</name></member>
+    <member refid="classrocalution_1_1_i_l_u_1ab73f8e80f6d20b7d7e7316f08b377593" kind="function"><name>Clear</name></member>
+    <member refid="classrocalution_1_1_i_l_u_1a17a40f9ff7782ceaaa7bc5af12cefb1a" kind="function"><name>MoveToHostLocalData_</name></member>
+    <member refid="classrocalution_1_1_i_l_u_1aa34bec388216ac0f892b5732d748498d" kind="function"><name>MoveToAcceleratorLocalData_</name></member>
+  </compound>
+  <compound refid="classrocalution_1_1_i_l_u_t" kind="class"><name>rocalution::ILUT</name>
+    <member refid="classrocalution_1_1_i_l_u_t_1ad7de04883a657b62daaa38161db2eb97" kind="variable"><name>ILUT_</name></member>
+    <member refid="classrocalution_1_1_i_l_u_t_1a479d0e53cdb57dccba6f3ce26ef8bfcf" kind="variable"><name>t_</name></member>
+    <member refid="classrocalution_1_1_i_l_u_t_1ab6083723cdb8a11dff42d425adf48d38" kind="variable"><name>max_row_</name></member>
+    <member refid="classrocalution_1_1_i_l_u_t_1ac3a0d157628762344712403dc099e40c" kind="function"><name>ILUT</name></member>
+    <member refid="classrocalution_1_1_i_l_u_t_1a950b39a20e834a136d7eaa3dd03b1cf5" kind="function"><name>~ILUT</name></member>
+    <member refid="classrocalution_1_1_i_l_u_t_1a297136e53d030491de05b3f3321165c4" kind="function"><name>Print</name></member>
+    <member refid="classrocalution_1_1_i_l_u_t_1a0bd890cab03a80e483d6f32efd15ad0e" kind="function"><name>Solve</name></member>
+    <member refid="classrocalution_1_1_i_l_u_t_1aeb87440eca213964f7e226d8a6fa9f8a" kind="function"><name>Set</name></member>
+    <member refid="classrocalution_1_1_i_l_u_t_1af8c3d02dd76842598f6e4f7b6a625598" kind="function"><name>Set</name></member>
+    <member refid="classrocalution_1_1_i_l_u_t_1ab9b03fd8daede6f30006fabe1cb6c307" kind="function"><name>Build</name></member>
+    <member refid="classrocalution_1_1_i_l_u_t_1a421db5c318d9ae63587ffbc4b75ff05c" kind="function"><name>Clear</name></member>
+    <member refid="classrocalution_1_1_i_l_u_t_1ae54661639b3d67fd004912a5323a80dd" kind="function"><name>MoveToHostLocalData_</name></member>
+    <member refid="classrocalution_1_1_i_l_u_t_1a3ba005e3220db06c723260e43d2a98d6" kind="function"><name>MoveToAcceleratorLocalData_</name></member>
+  </compound>
+  <compound refid="classrocalution_1_1_inversion" kind="class"><name>rocalution::Inversion</name>
+    <member refid="classrocalution_1_1_inversion_1ad5aafcc7a67f1441bb43e4426fdc54cd" kind="variable"><name>inverse_</name></member>
+    <member refid="classrocalution_1_1_inversion_1a95c73b22a62e063bc46d942b6bbb0d0a" kind="function"><name>Inversion</name></member>
+    <member refid="classrocalution_1_1_inversion_1ae966899d417d9f63e4b99781547c2ad9" kind="function"><name>~Inversion</name></member>
+    <member refid="classrocalution_1_1_inversion_1ae35c9dccd66853fc5469e5f3cee45f41" kind="function"><name>Print</name></member>
+    <member refid="classrocalution_1_1_inversion_1a6deaef562832478df1ec6318f6541e1c" kind="function"><name>Build</name></member>
+    <member refid="classrocalution_1_1_inversion_1a13737fb5e791533d3c25f2f5797eb70b" kind="function"><name>Clear</name></member>
+    <member refid="classrocalution_1_1_inversion_1a25de1f348f05556e5b57a007051f2759" kind="function"><name>Solve_</name></member>
+    <member refid="classrocalution_1_1_inversion_1ae8a8ec399cd9fac4ffa160525c93e97a" kind="function"><name>PrintStart_</name></member>
+    <member refid="classrocalution_1_1_inversion_1a25e7444710404658d13633ad53b80a38" kind="function"><name>PrintEnd_</name></member>
+    <member refid="classrocalution_1_1_inversion_1aad034332f9e3df24feebf44df3d9795f" kind="function"><name>MoveToHostLocalData_</name></member>
+    <member refid="classrocalution_1_1_inversion_1ae20fe54c86c996a7b4006c2626c7d65d" kind="function"><name>MoveToAcceleratorLocalData_</name></member>
+  </compound>
+  <compound refid="classrocalution_1_1_iteration_control" kind="class"><name>rocalution::IterationControl</name>
+    <member refid="classrocalution_1_1_iteration_control_1ad7643ef9c6658dc810d0889ff4a4f8d1" kind="variable"><name>verb_</name></member>
+    <member refid="classrocalution_1_1_iteration_control_1a08fa43ae1ee4c6df9f797ff4f175d6fb" kind="variable"><name>iteration_</name></member>
+    <member refid="classrocalution_1_1_iteration_control_1a7dda67cbab1c325a61fde7e78a23331f" kind="variable"><name>init_res_</name></member>
+    <member refid="classrocalution_1_1_iteration_control_1a1e77c434065b1bba30fe58257f5b6dce" kind="variable"><name>initial_residual_</name></member>
+    <member refid="classrocalution_1_1_iteration_control_1a1fb0a8c90250dec3bede3ef0eb8e8ab7" kind="variable"><name>absolute_tol_</name></member>
+    <member refid="classrocalution_1_1_iteration_control_1a102da4e07c4807230396e1a4cb7b968a" kind="variable"><name>relative_tol_</name></member>
+    <member refid="classrocalution_1_1_iteration_control_1a1431087451207d5c5ae4aaa964f1cd54" kind="variable"><name>divergence_tol_</name></member>
+    <member refid="classrocalution_1_1_iteration_control_1ae4b7c75f1778a6fe7178311af0b442a7" kind="variable"><name>minimum_iter_</name></member>
+    <member refid="classrocalution_1_1_iteration_control_1adda29f2eb601c03710b475625857c598" kind="variable"><name>maximum_iter_</name></member>
+    <member refid="classrocalution_1_1_iteration_control_1aa3b104b27bc1e9e719ada6cefe13fd31" kind="variable"><name>reached_</name></member>
+    <member refid="classrocalution_1_1_iteration_control_1aee747cfef3173b5a8e9ad7a87da64fe7" kind="variable"><name>residual_history_</name></member>
+    <member refid="classrocalution_1_1_iteration_control_1ab03d2405a951c2cb28abee1c25197833" kind="variable"><name>current_res_</name></member>
+    <member refid="classrocalution_1_1_iteration_control_1aa5d0d4a13b18999ce572197afa606930" kind="variable"><name>current_index_</name></member>
+    <member refid="classrocalution_1_1_iteration_control_1acf7092ac3871c6d483e3414fce423f7c" kind="variable"><name>rec_</name></member>
+    <member refid="classrocalution_1_1_iteration_control_1a7c1953cc4e61a6338dbf2c688f992ca7" kind="function"><name>IterationControl</name></member>
+    <member refid="classrocalution_1_1_iteration_control_1aaf045c23ed543b7e31aa529ab1963126" kind="function"><name>~IterationControl</name></member>
+    <member refid="classrocalution_1_1_iteration_control_1a7f58e5a43eccee754ea8e6198ad41e50" kind="function"><name>Init</name></member>
+    <member refid="classrocalution_1_1_iteration_control_1ae9c1fcfabe298b7869bbf8e9ed3212fe" kind="function"><name>Init</name></member>
+    <member refid="classrocalution_1_1_iteration_control_1a5ac72e4b352cefc6c1a04631831a5c83" kind="function"><name>InitTolerance</name></member>
+    <member refid="classrocalution_1_1_iteration_control_1abbe6b3e3cba8cd52d80e233c2a867e60" kind="function"><name>InitMinimumIterations</name></member>
+    <member refid="classrocalution_1_1_iteration_control_1a7c3370177b98c428eb94dd5d08a9d66e" kind="function"><name>InitMaximumIterations</name></member>
+    <member refid="classrocalution_1_1_iteration_control_1a32a19460627b4b0d6049e0a151407a2c" kind="function"><name>GetMinimumIterations</name></member>
+    <member refid="classrocalution_1_1_iteration_control_1a44765667b61418f573501b6c40780466" kind="function"><name>GetMaximumIterations</name></member>
+    <member refid="classrocalution_1_1_iteration_control_1ac78edc38b3480378616900ca0cae559e" kind="function"><name>InitResidual</name></member>
+    <member refid="classrocalution_1_1_iteration_control_1a0a4df30cf297756836ac869724fa8c89" kind="function"><name>Clear</name></member>
+    <member refid="classrocalution_1_1_iteration_control_1ab47c7a0458c0431fd8a66c548826a17b" kind="function"><name>CheckResidual</name></member>
+    <member refid="classrocalution_1_1_iteration_control_1ac6b5381f4fe80928c64fd6c2049ee90e" kind="function"><name>CheckResidual</name></member>
+    <member refid="classrocalution_1_1_iteration_control_1a463f0de6f78d0eb8581e7c35e11cba10" kind="function"><name>CheckResidualNoCount</name></member>
+    <member refid="classrocalution_1_1_iteration_control_1a22a8b36552aabe4b0e5e72f9cc334e93" kind="function"><name>RecordHistory</name></member>
+    <member refid="classrocalution_1_1_iteration_control_1a9c534149cd32d1c820ae263cd040f0e0" kind="function"><name>WriteHistoryToFile</name></member>
+    <member refid="classrocalution_1_1_iteration_control_1a9933308843d4d6b84e5b1e8cbf9b7264" kind="function"><name>Verbose</name></member>
+    <member refid="classrocalution_1_1_iteration_control_1adfe4b74c9ef5af83a0e0b67a44064c5f" kind="function"><name>PrintInit</name></member>
+    <member refid="classrocalution_1_1_iteration_control_1ab616c19bfb98e8cdb2b97fd9735b6cbb" kind="function"><name>PrintStatus</name></member>
+    <member refid="classrocalution_1_1_iteration_control_1aafa481b50459f4363eacef0aac662ea0" kind="function"><name>GetIterationCount</name></member>
+    <member refid="classrocalution_1_1_iteration_control_1a9bb2c5bea06abfbabc3916b2c0a6cbf5" kind="function"><name>GetCurrentResidual</name></member>
+    <member refid="classrocalution_1_1_iteration_control_1ac0b0386196d97d87e4d3251aa0c7e2d5" kind="function"><name>GetSolverStatus</name></member>
+    <member refid="classrocalution_1_1_iteration_control_1ad4f12306c173cb428dc3e996c9724ca2" kind="function"><name>GetAmaxResidualIndex</name></member>
+  </compound>
+  <compound refid="classrocalution_1_1_iterative_linear_solver" kind="class"><name>rocalution::IterativeLinearSolver</name>
+    <member refid="classrocalution_1_1_iterative_linear_solver_1a727c67c81489a601627a25802b1ad206" kind="variable"><name>iter_ctrl_</name></member>
+    <member refid="classrocalution_1_1_iterative_linear_solver_1ae811fa65d83729b92bb9573667162a4c" kind="variable"><name>res_norm_</name></member>
+    <member refid="classrocalution_1_1_iterative_linear_solver_1a30d12c17029094a3f46a0fa1ce491887" kind="variable"><name>index_</name></member>
+    <member refid="classrocalution_1_1_iterative_linear_solver_1a6fcfd0b77d13d84d36156abbaa100fa0" kind="function"><name>IterativeLinearSolver</name></member>
+    <member refid="classrocalution_1_1_iterative_linear_solver_1a89c416ba136cf16ac4b38d41ae4e745b" kind="function"><name>~IterativeLinearSolver</name></member>
+    <member refid="classrocalution_1_1_iterative_linear_solver_1a2a8eebb0b187469ed92c675bd75e34b8" kind="function"><name>Init</name></member>
+    <member refid="classrocalution_1_1_iterative_linear_solver_1a0c6fb1aeaf491a1e4891dc13d4b893b2" kind="function"><name>Init</name></member>
+    <member refid="classrocalution_1_1_iterative_linear_solver_1a025c99dd56f7b09ebfd9df3905093c8e" kind="function"><name>InitMinIter</name></member>
+    <member refid="classrocalution_1_1_iterative_linear_solver_1a3b248faab2ff42e9106b6e38e5e0bbe2" kind="function"><name>InitMaxIter</name></member>
+    <member refid="classrocalution_1_1_iterative_linear_solver_1a05b570833a869738be46986d255b3c39" kind="function"><name>InitTol</name></member>
+    <member refid="classrocalution_1_1_iterative_linear_solver_1a9a7610d7c31f7259f4365d79187cfa78" kind="function"><name>SetResidualNorm</name></member>
+    <member refid="classrocalution_1_1_iterative_linear_solver_1a0a5fd39c7f75f4339eaa41b67868653d" kind="function"><name>RecordResidualHistory</name></member>
+    <member refid="classrocalution_1_1_iterative_linear_solver_1ae13555f823f7cd1a5c3a7ef3b4427f74" kind="function"><name>RecordHistory</name></member>
+    <member refid="classrocalution_1_1_iterative_linear_solver_1ac88dc520e41c9d1a2de5ad8c95e644c2" kind="function"><name>Verbose</name></member>
+    <member refid="classrocalution_1_1_iterative_linear_solver_1a4c8e806ae8a7776fa5306598afe7e076" kind="function"><name>Solve</name></member>
+    <member refid="classrocalution_1_1_iterative_linear_solver_1ac40a58d97330f7bf41d2ae116bc45f80" kind="function"><name>SetPreconditioner</name></member>
+    <member refid="classrocalution_1_1_iterative_linear_solver_1a7f70fb4d7ce86daa75b2796a0dc12044" kind="function"><name>GetIterationCount</name></member>
+    <member refid="classrocalution_1_1_iterative_linear_solver_1a364ed49d060f8c24ba7af2398d1f54f5" kind="function"><name>GetCurrentResidual</name></member>
+    <member refid="classrocalution_1_1_iterative_linear_solver_1a814064201608ca980284fbea51792137" kind="function"><name>GetSolverStatus</name></member>
+    <member refid="classrocalution_1_1_iterative_linear_solver_1a20f2516ef96cebecbe83ba153bfacc8e" kind="function"><name>GetAmaxResidualIndex</name></member>
+    <member refid="classrocalution_1_1_iterative_linear_solver_1a35666e9af2a4abbc6d7e7be278a310e6" kind="function"><name>SolveNonPrecond_</name></member>
+    <member refid="classrocalution_1_1_iterative_linear_solver_1adfb05c58ea0bf7443c039115dd27bfba" kind="function"><name>SolvePrecond_</name></member>
+    <member refid="classrocalution_1_1_iterative_linear_solver_1a45c0602171dda0391e5574e0310504fb" kind="function"><name>Norm_</name></member>
+  </compound>
+  <compound refid="classrocalution_1_1_jacobi" kind="class"><name>rocalution::Jacobi</name>
+    <member refid="classrocalution_1_1_jacobi_1a31c3c3f066aab377c48153306d3a6bdb" kind="variable"><name>inv_diag_entries_</name></member>
+    <member refid="classrocalution_1_1_jacobi_1a3370acef4b3e924dc5a199d0e637cc5c" kind="function"><name>Jacobi</name></member>
+    <member refid="classrocalution_1_1_jacobi_1af792c835982ae0e62adc56b2b88b3608" kind="function"><name>~Jacobi</name></member>
+    <member refid="classrocalution_1_1_jacobi_1ac32b28d3da946310b69b6bdf89ca54d0" kind="function"><name>Print</name></member>
+    <member refid="classrocalution_1_1_jacobi_1af8c96c5220d787c7d0a1895f186aa199" kind="function"><name>Solve</name></member>
+    <member refid="classrocalution_1_1_jacobi_1a0d326f942385a91da4f3bbe36c2c14fe" kind="function"><name>Build</name></member>
+    <member refid="classrocalution_1_1_jacobi_1ab63abc5475d21eb7915338b820f4c76c" kind="function"><name>Clear</name></member>
+    <member refid="classrocalution_1_1_jacobi_1ac87a48f14f4a7f82381299a1f588fe91" kind="function"><name>ResetOperator</name></member>
+    <member refid="classrocalution_1_1_jacobi_1a40d5b6e969bc2958839ab894bfe71836" kind="function"><name>MoveToHostLocalData_</name></member>
+    <member refid="classrocalution_1_1_jacobi_1a227eb0e6e07e981decf7130cfaa547c3" kind="function"><name>MoveToAcceleratorLocalData_</name></member>
   </compound>
   <compound refid="classrocalution_1_1_local_matrix" kind="class"><name>rocalution::LocalMatrix</name>
     <member refid="classrocalution_1_1_local_matrix_1a9e2262ffb6ec53e72ebe079803616c67" kind="function"><name>AllocateCSR</name></member>
@@ -429,6 +1029,166 @@
     <member refid="classrocalution_1_1_local_vector_1afbdf8d167e9e7b2b0b9de28ddd79fca9" kind="function"><name>is_host_</name></member>
     <member refid="classrocalution_1_1_local_vector_1ace8f5b57d245fe498a5e4c97be7f5355" kind="function"><name>is_accel_</name></member>
   </compound>
+  <compound refid="classrocalution_1_1_l_u" kind="class"><name>rocalution::LU</name>
+    <member refid="classrocalution_1_1_l_u_1ab102f95e2b43ad4b5190a0345c84d943" kind="variable"><name>lu_</name></member>
+    <member refid="classrocalution_1_1_l_u_1a8198193bebd01b9143d4c89367077e31" kind="function"><name>LU</name></member>
+    <member refid="classrocalution_1_1_l_u_1ad7fbac58e774b513b7a4ac0b8c5c1de0" kind="function"><name>~LU</name></member>
+    <member refid="classrocalution_1_1_l_u_1aa222d4587198b51ca18faa148d3b31b5" kind="function"><name>Print</name></member>
+    <member refid="classrocalution_1_1_l_u_1aad55ff7e7088aef969adff4ff30d6fb7" kind="function"><name>Build</name></member>
+    <member refid="classrocalution_1_1_l_u_1ac9f35ac3119735b864b5cfa9afdd3c41" kind="function"><name>Clear</name></member>
+    <member refid="classrocalution_1_1_l_u_1a74a02f4555468fb7644e2cfaeda9171a" kind="function"><name>Solve_</name></member>
+    <member refid="classrocalution_1_1_l_u_1afb2647c4e156cf298c8be355a2c7bdb6" kind="function"><name>PrintStart_</name></member>
+    <member refid="classrocalution_1_1_l_u_1a80a191beb1bcaad6a7a19ca73d1e4219" kind="function"><name>PrintEnd_</name></member>
+    <member refid="classrocalution_1_1_l_u_1afdbde4c7c76d81b3063c9d734499277b" kind="function"><name>MoveToHostLocalData_</name></member>
+    <member refid="classrocalution_1_1_l_u_1a0cbff78e1e5d991b53ae1e47f4985374" kind="function"><name>MoveToAcceleratorLocalData_</name></member>
+  </compound>
+  <compound refid="classrocalution_1_1_mixed_precision_d_c" kind="class"><name>rocalution::MixedPrecisionDC</name>
+    <member refid="classrocalution_1_1_mixed_precision_d_c_1ab4c7417510538374862c52d5b7e42a4f" kind="variable"><name>Solver_L_</name></member>
+    <member refid="classrocalution_1_1_mixed_precision_d_c_1aa23c984297649da581d1cdd848cf957d" kind="variable"><name>r_h_</name></member>
+    <member refid="classrocalution_1_1_mixed_precision_d_c_1ae3530441020bb821f421645b4f5b4bb0" kind="variable"><name>r_l_</name></member>
+    <member refid="classrocalution_1_1_mixed_precision_d_c_1ac2f8e0857e4eaa8fa5d13037a8c28eaa" kind="variable"><name>x_h_</name></member>
+    <member refid="classrocalution_1_1_mixed_precision_d_c_1a4eed6489dc4fa5cc2733700dba93531c" kind="variable"><name>d_l_</name></member>
+    <member refid="classrocalution_1_1_mixed_precision_d_c_1a00f4abcb8b46f3aa0351e29f6a21eaea" kind="variable"><name>d_h_</name></member>
+    <member refid="classrocalution_1_1_mixed_precision_d_c_1ac56bdb1113bdc81a6d729b622d88e67d" kind="variable"><name>op_h_</name></member>
+    <member refid="classrocalution_1_1_mixed_precision_d_c_1ab93e10299d1a1af8c5745d407f2f02d9" kind="variable"><name>op_l_</name></member>
+    <member refid="classrocalution_1_1_mixed_precision_d_c_1a05c56467c7bd367692c2fae183aa04b9" kind="function"><name>MixedPrecisionDC</name></member>
+    <member refid="classrocalution_1_1_mixed_precision_d_c_1a52d45893f0bf8dfbf7a7f68227259547" kind="function"><name>~MixedPrecisionDC</name></member>
+    <member refid="classrocalution_1_1_mixed_precision_d_c_1aab5b1e59486abf2e806447a8b3478887" kind="function"><name>Print</name></member>
+    <member refid="classrocalution_1_1_mixed_precision_d_c_1a9f76aa89e2750d225ba74925cb9064e9" kind="function"><name>Set</name></member>
+    <member refid="classrocalution_1_1_mixed_precision_d_c_1a5391da24f6421aab942ca4bba084ca39" kind="function"><name>Build</name></member>
+    <member refid="classrocalution_1_1_mixed_precision_d_c_1a23094047366fbc00a96e2ccdd6e2b445" kind="function"><name>ReBuildNumeric</name></member>
+    <member refid="classrocalution_1_1_mixed_precision_d_c_1a67a42841717ae12dcee57d94b168f873" kind="function"><name>Clear</name></member>
+    <member refid="classrocalution_1_1_mixed_precision_d_c_1a765bf505d14a758c30c72af3d3331fe2" kind="function"><name>SolveNonPrecond_</name></member>
+    <member refid="classrocalution_1_1_mixed_precision_d_c_1a7ac0487a86c27eb8e0e2470d913483ef" kind="function"><name>SolvePrecond_</name></member>
+    <member refid="classrocalution_1_1_mixed_precision_d_c_1a9be28f95aa0a5db88316393fae14b9c6" kind="function"><name>PrintStart_</name></member>
+    <member refid="classrocalution_1_1_mixed_precision_d_c_1a92b19b1ffc5a0a6e392ca1f7b708774f" kind="function"><name>PrintEnd_</name></member>
+    <member refid="classrocalution_1_1_mixed_precision_d_c_1a9fadd98f12314b051ed20048641ccb52" kind="function"><name>MoveToHostLocalData_</name></member>
+    <member refid="classrocalution_1_1_mixed_precision_d_c_1a2ec922896d422bf9198669b147308b9c" kind="function"><name>MoveToAcceleratorLocalData_</name></member>
+  </compound>
+  <compound refid="classrocalution_1_1_multi_colored" kind="class"><name>rocalution::MultiColored</name>
+    <member refid="classrocalution_1_1_multi_colored_1a08c1dd80b79a578a53b66183b82062ac" kind="variable"><name>analyzer_op_</name></member>
+    <member refid="classrocalution_1_1_multi_colored_1a923d0705c49f5fd26103ebfaef8c8d96" kind="variable"><name>preconditioner_</name></member>
+    <member refid="classrocalution_1_1_multi_colored_1a12d77f464d01684c93b1c7b5d4856659" kind="variable"><name>preconditioner_block_</name></member>
+    <member refid="classrocalution_1_1_multi_colored_1ab6bde62eb411d8691272f8912bbf3d3e" kind="variable"><name>x_block_</name></member>
+    <member refid="classrocalution_1_1_multi_colored_1af89cee670aa2e5b2efeca7cb6824e1c6" kind="variable"><name>diag_block_</name></member>
+    <member refid="classrocalution_1_1_multi_colored_1a2fdcd833df040665595a7180ec579f1e" kind="variable"><name>x_</name></member>
+    <member refid="classrocalution_1_1_multi_colored_1a73dc2009eff4372a60db0e937d2e74ce" kind="variable"><name>diag_</name></member>
+    <member refid="classrocalution_1_1_multi_colored_1acda8d3075137cbdeaf4ed9a81f7ddda9" kind="variable"><name>diag_solver_</name></member>
+    <member refid="classrocalution_1_1_multi_colored_1ad8a9d9d79a2d489cafc2577aa624032d" kind="variable"><name>num_blocks_</name></member>
+    <member refid="classrocalution_1_1_multi_colored_1a08d3b5ab1187bec10b4091c4efd529bb" kind="variable"><name>block_sizes_</name></member>
+    <member refid="classrocalution_1_1_multi_colored_1a763a1b39feb1f26c36d2ef03db816879" kind="variable"><name>op_mat_format_</name></member>
+    <member refid="classrocalution_1_1_multi_colored_1a5d223988f3d34d524775b140b45d7863" kind="variable"><name>precond_mat_format_</name></member>
+    <member refid="classrocalution_1_1_multi_colored_1ad3bfb130276792d98a4823636acd2134" kind="variable"><name>decomp_</name></member>
+    <member refid="classrocalution_1_1_multi_colored_1aef02b9dc4925516780b6f202c3a96e73" kind="function"><name>MultiColored</name></member>
+    <member refid="classrocalution_1_1_multi_colored_1a25f11a60db8777e30eddb59898a0d4e4" kind="function"><name>~MultiColored</name></member>
+    <member refid="classrocalution_1_1_multi_colored_1aa49ba96569f4fda030192946ff5eb6ba" kind="function"><name>Clear</name></member>
+    <member refid="classrocalution_1_1_multi_colored_1a9efbb40dd24b15572d087856308b4031" kind="function"><name>Build</name></member>
+    <member refid="classrocalution_1_1_multi_colored_1a62aa6b45c0c1cd0945f1283889403bcc" kind="function"><name>SetPrecondMatrixFormat</name></member>
+    <member refid="classrocalution_1_1_multi_colored_1afc5e5067e7d904f2dbcf1e3f786cb1c1" kind="function"><name>SetDecomposition</name></member>
+    <member refid="classrocalution_1_1_multi_colored_1a23536c79b952e5213a41465cfc7333a8" kind="function"><name>Solve</name></member>
+    <member refid="classrocalution_1_1_multi_colored_1a042a1677905cbf7998cf1d930e37f7c5" kind="function"><name>ExtractRHSinX_</name></member>
+    <member refid="classrocalution_1_1_multi_colored_1ab26eb816bae93f786480e4fd59551a4f" kind="function"><name>SolveL_</name></member>
+    <member refid="classrocalution_1_1_multi_colored_1a7584a812a285376053b026c32a9703a2" kind="function"><name>SolveD_</name></member>
+    <member refid="classrocalution_1_1_multi_colored_1a77ed0a51d8b96510341633a59b0ce9a8" kind="function"><name>SolveR_</name></member>
+    <member refid="classrocalution_1_1_multi_colored_1a8c4e91725997d7bb3750aaf30c0c9864" kind="function"><name>Solve_</name></member>
+    <member refid="classrocalution_1_1_multi_colored_1a6b0e14af8c49772178f5e6faa454f62f" kind="function"><name>InsertSolution_</name></member>
+    <member refid="classrocalution_1_1_multi_colored_1a7718e70c640bbad245f4f1665e1b6f96" kind="function"><name>Build_Analyser_</name></member>
+    <member refid="classrocalution_1_1_multi_colored_1aa42f88752d940720af405e6830df4731" kind="function"><name>Analyse_</name></member>
+    <member refid="classrocalution_1_1_multi_colored_1a548c0de36972965450b46fb326ca7930" kind="function"><name>Permute_</name></member>
+    <member refid="classrocalution_1_1_multi_colored_1a920038e454ddb83010d19fc11183171a" kind="function"><name>Factorize_</name></member>
+    <member refid="classrocalution_1_1_multi_colored_1a9ad601cd1e7b507d195604a21bfe2441" kind="function"><name>Decompose_</name></member>
+    <member refid="classrocalution_1_1_multi_colored_1ad138d643ab947f18a1cdbfb5adc53233" kind="function"><name>PostAnalyse_</name></member>
+    <member refid="classrocalution_1_1_multi_colored_1a6babbe62884ef9a5f997122f23aa7230" kind="function"><name>MoveToHostLocalData_</name></member>
+    <member refid="classrocalution_1_1_multi_colored_1a17ddc5533a57bb0a40d87e331c4d891d" kind="function"><name>MoveToAcceleratorLocalData_</name></member>
+  </compound>
+  <compound refid="classrocalution_1_1_multi_colored_g_s" kind="class"><name>rocalution::MultiColoredGS</name>
+    <member refid="classrocalution_1_1_multi_colored_g_s_1a6e1d7573d8677d651e3dd9edbe1c7b4b" kind="function"><name>MultiColoredGS</name></member>
+    <member refid="classrocalution_1_1_multi_colored_g_s_1a1ce5aeee5b1156630e3272cb16615773" kind="function"><name>~MultiColoredGS</name></member>
+    <member refid="classrocalution_1_1_multi_colored_g_s_1afefb587669df95791536836579cd91c6" kind="function"><name>Print</name></member>
+    <member refid="classrocalution_1_1_multi_colored_g_s_1acee5c874ce79cd08e641554c09f2df7a" kind="function"><name>PostAnalyse_</name></member>
+    <member refid="classrocalution_1_1_multi_colored_g_s_1a6c74296edf89b02b3cba02c4a033cfbd" kind="function"><name>SolveL_</name></member>
+    <member refid="classrocalution_1_1_multi_colored_g_s_1a0a0845efa3cd329655cb7c968740531a" kind="function"><name>SolveD_</name></member>
+    <member refid="classrocalution_1_1_multi_colored_g_s_1a3e6f4f591513368773177ac8dfebcebb" kind="function"><name>SolveR_</name></member>
+    <member refid="classrocalution_1_1_multi_colored_g_s_1a72877491da0d2d50fc2ac3bbdec90641" kind="function"><name>Solve_</name></member>
+  </compound>
+  <compound refid="classrocalution_1_1_multi_colored_i_l_u" kind="class"><name>rocalution::MultiColoredILU</name>
+    <member refid="classrocalution_1_1_multi_colored_i_l_u_1a79a29fd2d9f79a9994e9bc461747ed26" kind="variable"><name>q_</name></member>
+    <member refid="classrocalution_1_1_multi_colored_i_l_u_1a44fa933854af5fd6e2f1f20ddd431eff" kind="variable"><name>p_</name></member>
+    <member refid="classrocalution_1_1_multi_colored_i_l_u_1aa152badf75381447f17ae23d8e96b903" kind="variable"><name>level_</name></member>
+    <member refid="classrocalution_1_1_multi_colored_i_l_u_1a95ad87bca6a634793b0c293cd87423e2" kind="variable"><name>nnz_</name></member>
+    <member refid="classrocalution_1_1_multi_colored_i_l_u_1ab77ccdf2f47190587db6a487121ddd2f" kind="function"><name>MultiColoredILU</name></member>
+    <member refid="classrocalution_1_1_multi_colored_i_l_u_1a63d75cb8b906e8a3e689c4214b9cba5f" kind="function"><name>~MultiColoredILU</name></member>
+    <member refid="classrocalution_1_1_multi_colored_i_l_u_1ae64d2fe56dc32d03fcf135b771fea7b9" kind="function"><name>Print</name></member>
+    <member refid="classrocalution_1_1_multi_colored_i_l_u_1af3eb0f49e962ecf9fd898bc6ab8730e8" kind="function"><name>ReBuildNumeric</name></member>
+    <member refid="classrocalution_1_1_multi_colored_i_l_u_1acd59157d2ba766220e500bc76aaabab0" kind="function"><name>Set</name></member>
+    <member refid="classrocalution_1_1_multi_colored_i_l_u_1a451c62d8cc9a04b9708465f31b652e27" kind="function"><name>Set</name></member>
+    <member refid="classrocalution_1_1_multi_colored_i_l_u_1a9eda7963f193ac3c42970ec9c1a6aca8" kind="function"><name>Build_Analyser_</name></member>
+    <member refid="classrocalution_1_1_multi_colored_i_l_u_1ae8cc83c2d0041a763561d6de58198c45" kind="function"><name>Factorize_</name></member>
+    <member refid="classrocalution_1_1_multi_colored_i_l_u_1a2344f37e0682132d8ade34abcfa5152e" kind="function"><name>PostAnalyse_</name></member>
+    <member refid="classrocalution_1_1_multi_colored_i_l_u_1a00e9f13f74f12f1a961fc043f7a271c0" kind="function"><name>SolveL_</name></member>
+    <member refid="classrocalution_1_1_multi_colored_i_l_u_1af4bd478ab978d3f3b558020b5a2f27cb" kind="function"><name>SolveD_</name></member>
+    <member refid="classrocalution_1_1_multi_colored_i_l_u_1a15c0a023fa8a373a6ba081dde4e30983" kind="function"><name>SolveR_</name></member>
+    <member refid="classrocalution_1_1_multi_colored_i_l_u_1ab0668be316af59261dfe397a94418944" kind="function"><name>Solve_</name></member>
+  </compound>
+  <compound refid="classrocalution_1_1_multi_colored_s_g_s" kind="class"><name>rocalution::MultiColoredSGS</name>
+    <member refid="classrocalution_1_1_multi_colored_s_g_s_1a36c6a091cdbc312a4204d0dd5eec6823" kind="variable"><name>omega_</name></member>
+    <member refid="classrocalution_1_1_multi_colored_s_g_s_1a1c7848d12e9d2a67550aa68bd2af0550" kind="function"><name>MultiColoredSGS</name></member>
+    <member refid="classrocalution_1_1_multi_colored_s_g_s_1a87ee3e87bb024a0d18d5b4b279cc00c1" kind="function"><name>~MultiColoredSGS</name></member>
+    <member refid="classrocalution_1_1_multi_colored_s_g_s_1acfc1f1cfbbf4f2b054276632f51f3796" kind="function"><name>Print</name></member>
+    <member refid="classrocalution_1_1_multi_colored_s_g_s_1a3a10b63078d6230071e902ee11b42b66" kind="function"><name>ReBuildNumeric</name></member>
+    <member refid="classrocalution_1_1_multi_colored_s_g_s_1ae876aae50f9b6e676e2ee77802303c15" kind="function"><name>SetRelaxation</name></member>
+    <member refid="classrocalution_1_1_multi_colored_s_g_s_1ad1bd02ffaf6a57bf853eef7ed86e2ce7" kind="function"><name>PostAnalyse_</name></member>
+    <member refid="classrocalution_1_1_multi_colored_s_g_s_1a35bd748445811e71e879b0a4717095fb" kind="function"><name>SolveL_</name></member>
+    <member refid="classrocalution_1_1_multi_colored_s_g_s_1a311ee759ca6e5ec0e61e245a81a1d03e" kind="function"><name>SolveD_</name></member>
+    <member refid="classrocalution_1_1_multi_colored_s_g_s_1a4d35e91e86016d1f2fc39f2d7d650538" kind="function"><name>SolveR_</name></member>
+    <member refid="classrocalution_1_1_multi_colored_s_g_s_1ac8f7393fb48c1ac99788718a98358a06" kind="function"><name>Solve_</name></member>
+  </compound>
+  <compound refid="classrocalution_1_1_multi_elimination" kind="class"><name>rocalution::MultiElimination</name>
+    <member refid="classrocalution_1_1_multi_elimination_1a38a1563eaff8d49042471467846f7e97" kind="variable"><name>A_</name></member>
+    <member refid="classrocalution_1_1_multi_elimination_1a336a676d6685d7f4a5340f20ff60ff02" kind="variable"><name>D_</name></member>
+    <member refid="classrocalution_1_1_multi_elimination_1abf421eac09c0bb4d0549f1eb88e8467c" kind="variable"><name>E_</name></member>
+    <member refid="classrocalution_1_1_multi_elimination_1ab8ad4e7abc74bf472d8f8e070614878a" kind="variable"><name>F_</name></member>
+    <member refid="classrocalution_1_1_multi_elimination_1a4a6e4d04cf5c628b5776c9b0ea0c1e15" kind="variable"><name>C_</name></member>
+    <member refid="classrocalution_1_1_multi_elimination_1a38f1b0f6a18aba289df31032dc0e56df" kind="variable"><name>AA_</name></member>
+    <member refid="classrocalution_1_1_multi_elimination_1ad390fdf8e26357f5c83b03ba9c166ca2" kind="variable"><name>AA_nrow_</name></member>
+    <member refid="classrocalution_1_1_multi_elimination_1a002483103e06a2b216f3d5079e29bf84" kind="variable"><name>AA_nnz_</name></member>
+    <member refid="classrocalution_1_1_multi_elimination_1a396d6908f2b70e8f91fdb7d48357d2f5" kind="variable"><name>op_mat_format_</name></member>
+    <member refid="classrocalution_1_1_multi_elimination_1abc53265e38c6d3d906397f640c1d62cb" kind="variable"><name>precond_mat_format_</name></member>
+    <member refid="classrocalution_1_1_multi_elimination_1a9f60bd037338af60f67001572351e055" kind="variable"><name>x_</name></member>
+    <member refid="classrocalution_1_1_multi_elimination_1a55a89a86f6c13590fc63154d766944d3" kind="variable"><name>x_1_</name></member>
+    <member refid="classrocalution_1_1_multi_elimination_1afbe8b61a8af0d33e9002d0e106fa82b4" kind="variable"><name>x_2_</name></member>
+    <member refid="classrocalution_1_1_multi_elimination_1a947542a57a659412cf223f58fc5c9c60" kind="variable"><name>rhs_</name></member>
+    <member refid="classrocalution_1_1_multi_elimination_1a46d730d8bb4ffdae92bb8c186ebc9154" kind="variable"><name>rhs_1_</name></member>
+    <member refid="classrocalution_1_1_multi_elimination_1ad4defb98ff998a2244d0855ad4c3f809" kind="variable"><name>rhs_2_</name></member>
+    <member refid="classrocalution_1_1_multi_elimination_1a605768b1761f21fce8b5a2c713f7d8bd" kind="variable"><name>AA_me_</name></member>
+    <member refid="classrocalution_1_1_multi_elimination_1a2fe71dd02982547e77751eb888de18b0" kind="variable"><name>AA_solver_</name></member>
+    <member refid="classrocalution_1_1_multi_elimination_1a9e52ab71b79583bc277cddfdb0f47ac1" kind="variable"><name>diag_solver_init_</name></member>
+    <member refid="classrocalution_1_1_multi_elimination_1ac44c864b522f3a5ae0db4d8fb2290ece" kind="variable"><name>level_</name></member>
+    <member refid="classrocalution_1_1_multi_elimination_1a22c60739a663fdb31e1cb83d01df9b70" kind="variable"><name>drop_off_</name></member>
+    <member refid="classrocalution_1_1_multi_elimination_1ae9194e3d8f56c8b0b72dd82b616d5c2b" kind="variable"><name>inv_vec_D_</name></member>
+    <member refid="classrocalution_1_1_multi_elimination_1a26ed77ccc1d0b4e50a9546465997d527" kind="variable"><name>vec_D_</name></member>
+    <member refid="classrocalution_1_1_multi_elimination_1a013b971558a0674ce4b900e342ed6d1a" kind="variable"><name>permutation_</name></member>
+    <member refid="classrocalution_1_1_multi_elimination_1a10b6af07b0913829d5d626676e0ba945" kind="variable"><name>size_</name></member>
+    <member refid="classrocalution_1_1_multi_elimination_1aef6e7e09b832f11b2ae9128551aba1c2" kind="function"><name>MultiElimination</name></member>
+    <member refid="classrocalution_1_1_multi_elimination_1abe39b5a88741c885da363945c55866b9" kind="function"><name>~MultiElimination</name></member>
+    <member refid="classrocalution_1_1_multi_elimination_1a1e477e9f38017bea89d7d022d0a5ce0f" kind="function"><name>GetSizeDiagBlock</name></member>
+    <member refid="classrocalution_1_1_multi_elimination_1ad9da13d305752da8c082d75d3ee477db" kind="function"><name>GetLevel</name></member>
+    <member refid="classrocalution_1_1_multi_elimination_1ad12a355d05f6379a980af64334703732" kind="function"><name>Print</name></member>
+    <member refid="classrocalution_1_1_multi_elimination_1a68bc12e2a463e6adc4eca8c48c008fc4" kind="function"><name>Clear</name></member>
+    <member refid="classrocalution_1_1_multi_elimination_1a332a7c50fb62ccb9631f58b881acb621" kind="function"><name>Set</name></member>
+    <member refid="classrocalution_1_1_multi_elimination_1a6ec26a31af3b2b142bc67af672ca0c9d" kind="function"><name>SetPrecondMatrixFormat</name></member>
+    <member refid="classrocalution_1_1_multi_elimination_1ab4a54648616d62a3d4a390c6f7b13eaf" kind="function"><name>Build</name></member>
+    <member refid="classrocalution_1_1_multi_elimination_1a42a0951eda58472c2971761140f5b787" kind="function"><name>Solve</name></member>
+    <member refid="classrocalution_1_1_multi_elimination_1a5bd792143c25d5d5c8e13d56e2685625" kind="function"><name>MoveToHostLocalData_</name></member>
+    <member refid="classrocalution_1_1_multi_elimination_1adef57227b295ee3d20084d83267dd7bc" kind="function"><name>MoveToAcceleratorLocalData_</name></member>
+  </compound>
+  <compound refid="classrocalution_1_1_multi_grid" kind="class"><name>rocalution::MultiGrid</name>
+    <member refid="classrocalution_1_1_multi_grid_1aa7c77d0058d354385e31bed99fe5fe9a" kind="function"><name>MultiGrid</name></member>
+    <member refid="classrocalution_1_1_multi_grid_1a9c8f97515e9d2a9084168423f63bc210" kind="function"><name>~MultiGrid</name></member>
+    <member refid="classrocalution_1_1_multi_grid_1a7f0a4b40740bf74d7650f917c9d4e7d4" kind="function"><name>SetRestrictOperator</name></member>
+    <member refid="classrocalution_1_1_multi_grid_1afa44bae7e2b142deeb0c4de6a36808a4" kind="function"><name>SetProlongOperator</name></member>
+    <member refid="classrocalution_1_1_multi_grid_1af1797ee9e32a269aa408e0671558cfb9" kind="function"><name>SetOperatorHierarchy</name></member>
+  </compound>
   <compound refid="classrocalution_1_1_operator" kind="class"><name>rocalution::Operator</name>
     <member refid="classrocalution_1_1_operator_1afcbc2abbfe58ce8c6a3d86a5a48b7fc7" kind="function"><name>Operator</name></member>
     <member refid="classrocalution_1_1_operator_1a17862759071f26a8bfc2ec7230c5f226" kind="function"><name>~Operator</name></member>
@@ -445,6 +1205,30 @@
     <member refid="classrocalution_1_1_operator_1a9607876a1dc71ab7f4c03ade2e6bc952" kind="function"><name>ApplyAdd</name></member>
     <member refid="classrocalution_1_1_operator_1a4ad4397df83f1fc6af9aecf0cb9af17c" kind="function"><name>Apply</name></member>
     <member refid="classrocalution_1_1_operator_1a87f809dde4c8d7d98fe443c0fb9bc92b" kind="function"><name>ApplyAdd</name></member>
+  </compound>
+  <compound refid="classrocalution_1_1_pairwise_a_m_g" kind="class"><name>rocalution::PairwiseAMG</name>
+    <member refid="classrocalution_1_1_pairwise_a_m_g_1a9ec33983110e44bcd3e3b2839dd767b6" kind="variable"><name>beta_</name></member>
+    <member refid="classrocalution_1_1_pairwise_a_m_g_1aa0158483a87c249f81d9915b276be113" kind="variable"><name>coarsening_factor_</name></member>
+    <member refid="classrocalution_1_1_pairwise_a_m_g_1ad9a9e0d9756e6c784d67e8158c6b2ae0" kind="variable"><name>aggregation_ordering_</name></member>
+    <member refid="classrocalution_1_1_pairwise_a_m_g_1a7fe92cfa9ec5007401c334eadf2c0b4d" kind="variable"><name>trans_level_</name></member>
+    <member refid="classrocalution_1_1_pairwise_a_m_g_1a6881cd16e89368cb05aacf6b75a30cd2" kind="variable"><name>dim_level_</name></member>
+    <member refid="classrocalution_1_1_pairwise_a_m_g_1acc65c8339a5b2b71f5ed91e2231862ed" kind="variable"><name>Gsize_level_</name></member>
+    <member refid="classrocalution_1_1_pairwise_a_m_g_1af12ad7ae21fed27907fe6160a0a7c119" kind="variable"><name>rGsize_level_</name></member>
+    <member refid="classrocalution_1_1_pairwise_a_m_g_1ad6d6074b24067f51b8d47de7325c6c10" kind="variable"><name>rG_level_</name></member>
+    <member refid="classrocalution_1_1_pairwise_a_m_g_1a19737e4df2be30e8aafeba3d5995ae59" kind="function"><name>PairwiseAMG</name></member>
+    <member refid="classrocalution_1_1_pairwise_a_m_g_1a590c5514eebea7f047c4a13a084a324d" kind="function"><name>~PairwiseAMG</name></member>
+    <member refid="classrocalution_1_1_pairwise_a_m_g_1ae7517d16fa91981f9ab8d9d852b8b129" kind="function"><name>Print</name></member>
+    <member refid="classrocalution_1_1_pairwise_a_m_g_1a22f45c940431dc7318105d5bc7c0c7cc" kind="function"><name>BuildHierarchy</name></member>
+    <member refid="classrocalution_1_1_pairwise_a_m_g_1ab415d49a3f2a7837ad229a4a7a0dafde" kind="function"><name>ClearLocal</name></member>
+    <member refid="classrocalution_1_1_pairwise_a_m_g_1aedc419a3d733f0d710a52f2f9e3d5811" kind="function"><name>BuildSmoothers</name></member>
+    <member refid="classrocalution_1_1_pairwise_a_m_g_1a6dc95d19d2c5fbee5350603310fad12f" kind="function"><name>SetBeta</name></member>
+    <member refid="classrocalution_1_1_pairwise_a_m_g_1a3a0227c2b228a0afb0a431dfea874b00" kind="function"><name>SetOrdering</name></member>
+    <member refid="classrocalution_1_1_pairwise_a_m_g_1ac4b383708d9957bca2a2c454f7707f17" kind="function"><name>SetCoarseningFactor</name></member>
+    <member refid="classrocalution_1_1_pairwise_a_m_g_1a6f0fde48bd04a0adb27dc8e0506260c2" kind="function"><name>ReBuildNumeric</name></member>
+    <member refid="classrocalution_1_1_pairwise_a_m_g_1ae9495cd4c96c964341f6daa11c604998" kind="function"><name>Aggregate_</name></member>
+    <member refid="classrocalution_1_1_pairwise_a_m_g_1a8b1142526735b1440b12286c820d14f3" kind="function"><name>PrintStart_</name></member>
+    <member refid="classrocalution_1_1_pairwise_a_m_g_1ac2ce08dc444b1d9dafc93be9e517050c" kind="function"><name>PrintEnd_</name></member>
+    <member refid="classrocalution_1_1_pairwise_a_m_g_1a71a9cfe00a77bf51e5bd50a2c195fb95" kind="function"><name>Aggregate_</name></member>
   </compound>
   <compound refid="classrocalution_1_1_parallel_manager" kind="class"><name>rocalution::ParallelManager</name>
     <member refid="classrocalution_1_1_parallel_manager_1acc2db640bbd8ad02609f5b3789975714" kind="variable"><name>comm_</name></member>
@@ -490,6 +1274,53 @@
     <member refid="classrocalution_1_1_parallel_manager_1a159317f7d0b72501de8c452ad07286e3" kind="function"><name>ReadFileASCII</name></member>
     <member refid="classrocalution_1_1_parallel_manager_1af0b697c6a34544b3091c909def74eb9c" kind="function"><name>WriteFileASCII</name></member>
   </compound>
+  <compound refid="classrocalution_1_1_preconditioner" kind="class"><name>rocalution::Preconditioner</name>
+    <member refid="classrocalution_1_1_preconditioner_1a964b8c3f97a675f8a098b7539d8a6600" kind="function"><name>Preconditioner</name></member>
+    <member refid="classrocalution_1_1_preconditioner_1aac6cfbb3d6c5cd248d7b7dabac096a76" kind="function"><name>~Preconditioner</name></member>
+    <member refid="classrocalution_1_1_preconditioner_1a2d2f41ddc040d777783d2591c8324508" kind="function"><name>SolveZeroSol</name></member>
+    <member refid="classrocalution_1_1_preconditioner_1abf90b743371c8d0159a6cad44e8595f3" kind="function"><name>PrintStart_</name></member>
+    <member refid="classrocalution_1_1_preconditioner_1aa16516bd94c4e5a931ec3adad6b2081b" kind="function"><name>PrintEnd_</name></member>
+  </compound>
+  <compound refid="classrocalution_1_1_q_m_r_c_g_stab" kind="class"><name>rocalution::QMRCGStab</name>
+    <member refid="classrocalution_1_1_q_m_r_c_g_stab_1a1bad8f405aa8b527a2570311dfdc3f36" kind="variable"><name>r0_</name></member>
+    <member refid="classrocalution_1_1_q_m_r_c_g_stab_1ae4a76d3f5f0726f2fcb58ac5c903c0ec" kind="variable"><name>r_</name></member>
+    <member refid="classrocalution_1_1_q_m_r_c_g_stab_1a1a2f79a4be841c8514da9165e5d5853a" kind="variable"><name>t_</name></member>
+    <member refid="classrocalution_1_1_q_m_r_c_g_stab_1a64dda5b8b1b083a3bfd364b25a8ef702" kind="variable"><name>p_</name></member>
+    <member refid="classrocalution_1_1_q_m_r_c_g_stab_1a66cddd3ad5cd2f0414d6fe6e3346877f" kind="variable"><name>v_</name></member>
+    <member refid="classrocalution_1_1_q_m_r_c_g_stab_1afa23f2fcd357cf9786e7a8d826276656" kind="variable"><name>d_</name></member>
+    <member refid="classrocalution_1_1_q_m_r_c_g_stab_1a4efd35bcc092d7f0f3f6196b365d3855" kind="variable"><name>z_</name></member>
+    <member refid="classrocalution_1_1_q_m_r_c_g_stab_1a029b186088a31c0131906c51c3de5612" kind="function"><name>QMRCGStab</name></member>
+    <member refid="classrocalution_1_1_q_m_r_c_g_stab_1aa8cff75ab8243839e5e5dd1eeaf24a41" kind="function"><name>~QMRCGStab</name></member>
+    <member refid="classrocalution_1_1_q_m_r_c_g_stab_1a49c4ed8174c1de615903b36c77c098b7" kind="function"><name>Print</name></member>
+    <member refid="classrocalution_1_1_q_m_r_c_g_stab_1a2e6541d0c2ae4f4be763c833fa6b5a4b" kind="function"><name>Build</name></member>
+    <member refid="classrocalution_1_1_q_m_r_c_g_stab_1a227131b698307b0ca9647f215b751dfd" kind="function"><name>ReBuildNumeric</name></member>
+    <member refid="classrocalution_1_1_q_m_r_c_g_stab_1a3af0179f855aa069b0e9c2bf0dce3f41" kind="function"><name>Clear</name></member>
+    <member refid="classrocalution_1_1_q_m_r_c_g_stab_1ac72cf24d57a9b5c613ad61e20daf0905" kind="function"><name>SolveNonPrecond_</name></member>
+    <member refid="classrocalution_1_1_q_m_r_c_g_stab_1ab5d01d10d9932b32e6d1c27295ac738f" kind="function"><name>SolvePrecond_</name></member>
+    <member refid="classrocalution_1_1_q_m_r_c_g_stab_1a5ba1221ffe8cc78240d5567c0a63871c" kind="function"><name>PrintStart_</name></member>
+    <member refid="classrocalution_1_1_q_m_r_c_g_stab_1a4acbd3db151135afe32856aa3d6ef37e" kind="function"><name>PrintEnd_</name></member>
+    <member refid="classrocalution_1_1_q_m_r_c_g_stab_1ad24d3d35033c8182eb9a7e1b0cbe057e" kind="function"><name>MoveToHostLocalData_</name></member>
+    <member refid="classrocalution_1_1_q_m_r_c_g_stab_1ac4eb19fca30d2e66c27184cd6d87d793" kind="function"><name>MoveToAcceleratorLocalData_</name></member>
+  </compound>
+  <compound refid="classrocalution_1_1_q_r" kind="class"><name>rocalution::QR</name>
+    <member refid="classrocalution_1_1_q_r_1a64057125b013a065d262da520be38193" kind="variable"><name>qr_</name></member>
+    <member refid="classrocalution_1_1_q_r_1a7cf9073ae17ccc86bf666538c2c6d7eb" kind="function"><name>QR</name></member>
+    <member refid="classrocalution_1_1_q_r_1a20cdfebf38ce346cf6f5d5e9f7c794b3" kind="function"><name>~QR</name></member>
+    <member refid="classrocalution_1_1_q_r_1a31410f39a5167304e07975d68d5541fe" kind="function"><name>Print</name></member>
+    <member refid="classrocalution_1_1_q_r_1aaf3b95c896cae46db1e2d4919f007a03" kind="function"><name>Build</name></member>
+    <member refid="classrocalution_1_1_q_r_1a45fa4bb4ca9d6838bdf905ff67993dff" kind="function"><name>Clear</name></member>
+    <member refid="classrocalution_1_1_q_r_1ab7b665e9dff538407f30bd3dc4b2e8b2" kind="function"><name>Solve_</name></member>
+    <member refid="classrocalution_1_1_q_r_1a94767d9051e83f31196f7201d644167c" kind="function"><name>PrintStart_</name></member>
+    <member refid="classrocalution_1_1_q_r_1a26f486140f8621baf8a260deb8388bae" kind="function"><name>PrintEnd_</name></member>
+    <member refid="classrocalution_1_1_q_r_1a94b13ef63445174bd57fd608209cba56" kind="function"><name>MoveToHostLocalData_</name></member>
+    <member refid="classrocalution_1_1_q_r_1a6cdd675d717963af8387bcb1fc17f8fa" kind="function"><name>MoveToAcceleratorLocalData_</name></member>
+  </compound>
+  <compound refid="classrocalution_1_1_r_a_s" kind="class"><name>rocalution::RAS</name>
+    <member refid="classrocalution_1_1_r_a_s_1a44c67e84538a309a1335a924128285f4" kind="function"><name>RAS</name></member>
+    <member refid="classrocalution_1_1_r_a_s_1a5a18e02e86ecf02e6a36e3281761b1d9" kind="function"><name>~RAS</name></member>
+    <member refid="classrocalution_1_1_r_a_s_1a87799131080d64d658e5221954a08f16" kind="function"><name>Print</name></member>
+    <member refid="classrocalution_1_1_r_a_s_1a8ef8295a98c35fca0669965b024c270d" kind="function"><name>Solve</name></member>
+  </compound>
   <compound refid="structrocalution_1_1_rocalution___backend___descriptor" kind="struct"><name>rocalution::Rocalution_Backend_Descriptor</name>
     <member refid="structrocalution_1_1_rocalution___backend___descriptor_1aca662bd6b411072db340b8d4cf097e2a" kind="variable"><name>init</name></member>
     <member refid="structrocalution_1_1_rocalution___backend___descriptor_1abd87a8f7075e3ab83fefe4034c171c02" kind="variable"><name>backend</name></member>
@@ -520,6 +1351,135 @@
     <member refid="classrocalution_1_1_rocalution_obj_1ad60a8b2047aad74e488c552264fa7737" kind="function"><name>RocalutionObj</name></member>
     <member refid="classrocalution_1_1_rocalution_obj_1a55a2f93f798cebdda6343b20db959e2d" kind="function"><name>~RocalutionObj</name></member>
     <member refid="classrocalution_1_1_rocalution_obj_1ae775c603a6abb9bc78417d06741364ce" kind="function"><name>Clear</name></member>
+  </compound>
+  <compound refid="classrocalution_1_1_ruge_stueben_a_m_g" kind="class"><name>rocalution::RugeStuebenAMG</name>
+    <member refid="classrocalution_1_1_ruge_stueben_a_m_g_1a872ff22a70d7b7d0dc6a1efa2c7b90f6" kind="variable"><name>eps_</name></member>
+    <member refid="classrocalution_1_1_ruge_stueben_a_m_g_1a65e9502eb72db73928f80c755104e4ce" kind="function"><name>RugeStuebenAMG</name></member>
+    <member refid="classrocalution_1_1_ruge_stueben_a_m_g_1ab1759ba9411b0e4fbdfd830c8ca848f4" kind="function"><name>~RugeStuebenAMG</name></member>
+    <member refid="classrocalution_1_1_ruge_stueben_a_m_g_1a24bed949ec7685f2f81913a71b7e2eee" kind="function"><name>Print</name></member>
+    <member refid="classrocalution_1_1_ruge_stueben_a_m_g_1ab3eb89cfda28a8aa74fe56d147652833" kind="function"><name>BuildSmoothers</name></member>
+    <member refid="classrocalution_1_1_ruge_stueben_a_m_g_1a20d71c64006c0d6008d6ce0fbdf58985" kind="function"><name>SetCouplingStrength</name></member>
+    <member refid="classrocalution_1_1_ruge_stueben_a_m_g_1a8a5a7518350a5e6d7108e6c7fbf922e3" kind="function"><name>ReBuildNumeric</name></member>
+    <member refid="classrocalution_1_1_ruge_stueben_a_m_g_1a8737c45af98cd6e721dbca5ad13c7b57" kind="function"><name>Aggregate_</name></member>
+    <member refid="classrocalution_1_1_ruge_stueben_a_m_g_1ad8909fc2b44f1528845f33875b2ae4a4" kind="function"><name>PrintStart_</name></member>
+    <member refid="classrocalution_1_1_ruge_stueben_a_m_g_1a8462f17320c42c5d13cc5f7d86bd7a4c" kind="function"><name>PrintEnd_</name></member>
+  </compound>
+  <compound refid="classrocalution_1_1_s_a_a_m_g" kind="class"><name>rocalution::SAAMG</name>
+    <member refid="classrocalution_1_1_s_a_a_m_g_1aae591cdc8b8f80168e11d85aff11e127" kind="variable"><name>eps_</name></member>
+    <member refid="classrocalution_1_1_s_a_a_m_g_1a62bbd0e7cd414d10ba1853ac42b4b90f" kind="variable"><name>relax_</name></member>
+    <member refid="classrocalution_1_1_s_a_a_m_g_1a623c903ea7e6965ee70df053b22f632c" kind="function"><name>SAAMG</name></member>
+    <member refid="classrocalution_1_1_s_a_a_m_g_1ada0a2a67daabc30949fac62f1bfa48db" kind="function"><name>~SAAMG</name></member>
+    <member refid="classrocalution_1_1_s_a_a_m_g_1a4e99070759e54b07e4fc99916a858b40" kind="function"><name>Print</name></member>
+    <member refid="classrocalution_1_1_s_a_a_m_g_1a13a28023ab80de22b2975336c911b8a6" kind="function"><name>BuildSmoothers</name></member>
+    <member refid="classrocalution_1_1_s_a_a_m_g_1ad2a730cf911b3202de51f79dd9a7f775" kind="function"><name>SetCouplingStrength</name></member>
+    <member refid="classrocalution_1_1_s_a_a_m_g_1a65159c53b41708651925a9d31c1120b0" kind="function"><name>SetInterpRelax</name></member>
+    <member refid="classrocalution_1_1_s_a_a_m_g_1a6c5cc4f49828dc2cadaa3d4176ab0191" kind="function"><name>ReBuildNumeric</name></member>
+    <member refid="classrocalution_1_1_s_a_a_m_g_1a6239bde7c8f7e8b85cf9d7c367138b05" kind="function"><name>Aggregate_</name></member>
+    <member refid="classrocalution_1_1_s_a_a_m_g_1a551a63126edb0ad526d891f6fc164eae" kind="function"><name>PrintStart_</name></member>
+    <member refid="classrocalution_1_1_s_a_a_m_g_1ae265816563fc1574b54fc1f5410e64f8" kind="function"><name>PrintEnd_</name></member>
+  </compound>
+  <compound refid="classrocalution_1_1_s_g_s" kind="class"><name>rocalution::SGS</name>
+    <member refid="classrocalution_1_1_s_g_s_1a93f6e177b58306a3eb4843552aafe382" kind="variable"><name>SGS_</name></member>
+    <member refid="classrocalution_1_1_s_g_s_1abdd00928e82b42be1171e36e9b5358ea" kind="variable"><name>diag_entries_</name></member>
+    <member refid="classrocalution_1_1_s_g_s_1af8339ea6e4d9ef83b8fce87222e6da9a" kind="variable"><name>v_</name></member>
+    <member refid="classrocalution_1_1_s_g_s_1a5db9d8096b152ec4617298616b0f900b" kind="function"><name>SGS</name></member>
+    <member refid="classrocalution_1_1_s_g_s_1a715bb936f2b4daaaf1f30e989739d5d5" kind="function"><name>~SGS</name></member>
+    <member refid="classrocalution_1_1_s_g_s_1a2dee34e0055567638d420b71c5fe0e47" kind="function"><name>Print</name></member>
+    <member refid="classrocalution_1_1_s_g_s_1a99a6fbe6e707d900fda4186b2c4b211e" kind="function"><name>Solve</name></member>
+    <member refid="classrocalution_1_1_s_g_s_1a206e93228cec6b1cb07f364f556b158d" kind="function"><name>Build</name></member>
+    <member refid="classrocalution_1_1_s_g_s_1ac44bbdfd556a93311495222180b53f3e" kind="function"><name>Clear</name></member>
+    <member refid="classrocalution_1_1_s_g_s_1a06d600923c92c65f9a200507fa7e20a2" kind="function"><name>ResetOperator</name></member>
+    <member refid="classrocalution_1_1_s_g_s_1a879a1521ed4a296f94a18f2c2783eaf6" kind="function"><name>MoveToHostLocalData_</name></member>
+    <member refid="classrocalution_1_1_s_g_s_1a642c4cf6e75422aee85925879ac77fe2" kind="function"><name>MoveToAcceleratorLocalData_</name></member>
+  </compound>
+  <compound refid="classrocalution_1_1_solver" kind="class"><name>rocalution::Solver</name>
+    <member refid="classrocalution_1_1_solver_1ad338b5f99cf339fb33218dd8b958cac4" kind="variable"><name>op_</name></member>
+    <member refid="classrocalution_1_1_solver_1a2acdb829fa657a7b3e680d1ee6005c9b" kind="variable"><name>precond_</name></member>
+    <member refid="classrocalution_1_1_solver_1a64924a0c87d60d2e4bf9fa295d0152cb" kind="variable"><name>build_</name></member>
+    <member refid="classrocalution_1_1_solver_1ac46ab4d19fba48ece463666d37a7dc86" kind="variable"><name>permutation_</name></member>
+    <member refid="classrocalution_1_1_solver_1a2ee162346e0d52543f9d3d25fe70ea8a" kind="variable"><name>verb_</name></member>
+    <member refid="classrocalution_1_1_solver_1a009956b05d4d5d1d38e4c24341b14a66" kind="function"><name>Solver</name></member>
+    <member refid="classrocalution_1_1_solver_1af861566a540fc6cc399c844bbc789ec6" kind="function"><name>~Solver</name></member>
+    <member refid="classrocalution_1_1_solver_1a12765b63efe75bc88406a8d6ebb5aacc" kind="function"><name>SetOperator</name></member>
+    <member refid="classrocalution_1_1_solver_1a91354c5c116742c58d9eb2094cc6a68e" kind="function"><name>ResetOperator</name></member>
+    <member refid="classrocalution_1_1_solver_1a57992cfc687f3bf260964ad2fc19c467" kind="function"><name>Print</name></member>
+    <member refid="classrocalution_1_1_solver_1a69025eb1d2bc7f1266899c2739c82725" kind="function"><name>Solve</name></member>
+    <member refid="classrocalution_1_1_solver_1a034b434a4340a52430deed9b210e5003" kind="function"><name>SolveZeroSol</name></member>
+    <member refid="classrocalution_1_1_solver_1aa8839d3ba527d75fedd29fdbe9bd651f" kind="function"><name>Clear</name></member>
+    <member refid="classrocalution_1_1_solver_1a84754d7422ad3fb35c17c61f0a609c7a" kind="function"><name>Build</name></member>
+    <member refid="classrocalution_1_1_solver_1a0d11ee9943f785db285f0ef5c08c64eb" kind="function"><name>BuildMoveToAcceleratorAsync</name></member>
+    <member refid="classrocalution_1_1_solver_1a17c2830a0ede8d82d1336aa25da6f907" kind="function"><name>Sync</name></member>
+    <member refid="classrocalution_1_1_solver_1acd20a051f0560a77645e35361df8f87c" kind="function"><name>ReBuildNumeric</name></member>
+    <member refid="classrocalution_1_1_solver_1a3c263e65898816f5838184c0af78a044" kind="function"><name>MoveToHost</name></member>
+    <member refid="classrocalution_1_1_solver_1ab1b6410cd134c9ad00c1851d400cf0f8" kind="function"><name>MoveToAccelerator</name></member>
+    <member refid="classrocalution_1_1_solver_1aa2ab9c17de96add5e3ad30e7cabf0ea7" kind="function"><name>Verbose</name></member>
+    <member refid="classrocalution_1_1_solver_1a9e6a5ceb6a8c35cd8d54ebff0664d27e" kind="function"><name>PrintStart_</name></member>
+    <member refid="classrocalution_1_1_solver_1add2b6aec27eeaffbbd1130cc846c1019" kind="function"><name>PrintEnd_</name></member>
+    <member refid="classrocalution_1_1_solver_1aa1e8be1bd2107543c7390a81f8cee8cb" kind="function"><name>MoveToHostLocalData_</name></member>
+    <member refid="classrocalution_1_1_solver_1a8ce29de0bdda9f35a6a687fd06ac9b11" kind="function"><name>MoveToAcceleratorLocalData_</name></member>
+  </compound>
+  <compound refid="classrocalution_1_1_s_p_a_i" kind="class"><name>rocalution::SPAI</name>
+    <member refid="classrocalution_1_1_s_p_a_i_1af578e79ec65dae194d371b6021141a43" kind="variable"><name>SPAI_</name></member>
+    <member refid="classrocalution_1_1_s_p_a_i_1a32dc19d327da409a1619d02011aae226" kind="variable"><name>op_mat_format_</name></member>
+    <member refid="classrocalution_1_1_s_p_a_i_1ad09569550d19fea4aaa1b37e9ec8b3b7" kind="variable"><name>precond_mat_format_</name></member>
+    <member refid="classrocalution_1_1_s_p_a_i_1a4aa9703aca525d9abdaff95c8c844398" kind="function"><name>SPAI</name></member>
+    <member refid="classrocalution_1_1_s_p_a_i_1a5b50c08d564fc9977fb9189296ab9e5a" kind="function"><name>~SPAI</name></member>
+    <member refid="classrocalution_1_1_s_p_a_i_1a2ce222910c28e53e30a0ee3798a9b9d0" kind="function"><name>Print</name></member>
+    <member refid="classrocalution_1_1_s_p_a_i_1a2961bfe410fc6f7ae326f152e171e673" kind="function"><name>Solve</name></member>
+    <member refid="classrocalution_1_1_s_p_a_i_1af73c93da31d188528699c37892793827" kind="function"><name>Build</name></member>
+    <member refid="classrocalution_1_1_s_p_a_i_1a362c64e956b989c50a1afe8158b32862" kind="function"><name>Clear</name></member>
+    <member refid="classrocalution_1_1_s_p_a_i_1a20d070e44f7f64197ad9bb1c56d3d6c7" kind="function"><name>SetPrecondMatrixFormat</name></member>
+    <member refid="classrocalution_1_1_s_p_a_i_1ad28b6648a1a7f331d1e7cf3d81321967" kind="function"><name>MoveToHostLocalData_</name></member>
+    <member refid="classrocalution_1_1_s_p_a_i_1acc84e3b8a64f06d27174cf1c7e2833db" kind="function"><name>MoveToAcceleratorLocalData_</name></member>
+  </compound>
+  <compound refid="classrocalution_1_1_t_n_s" kind="class"><name>rocalution::TNS</name>
+    <member refid="classrocalution_1_1_t_n_s_1a9659cf40dcef37aa8d7027f21fd29503" kind="variable"><name>L_</name></member>
+    <member refid="classrocalution_1_1_t_n_s_1a274260a35018afdb1496e2bb2a8b7232" kind="variable"><name>LT_</name></member>
+    <member refid="classrocalution_1_1_t_n_s_1aaad2521c20f2b6fa65e6200de0c8c144" kind="variable"><name>TNS_</name></member>
+    <member refid="classrocalution_1_1_t_n_s_1aeed6741419841215f29ec4ad84c86756" kind="variable"><name>Dinv_</name></member>
+    <member refid="classrocalution_1_1_t_n_s_1abf297e67ff943bbb886d9e9987037bc2" kind="variable"><name>tmp1_</name></member>
+    <member refid="classrocalution_1_1_t_n_s_1a18e4134cb036fa29ae20dac2021c8093" kind="variable"><name>tmp2_</name></member>
+    <member refid="classrocalution_1_1_t_n_s_1a13935e82c189249d618d4e828eae1bfa" kind="variable"><name>op_mat_format_</name></member>
+    <member refid="classrocalution_1_1_t_n_s_1a6c2ab1cb84f2bb1391d9d5d143a8ad7b" kind="variable"><name>precond_mat_format_</name></member>
+    <member refid="classrocalution_1_1_t_n_s_1ac5143e42c3cf431a5d89dd524e23404c" kind="variable"><name>impl_</name></member>
+    <member refid="classrocalution_1_1_t_n_s_1a8b8a2ae614ebc476f7c5bc83773b1a00" kind="function"><name>TNS</name></member>
+    <member refid="classrocalution_1_1_t_n_s_1abdf76fcbab659932c4231f651fc4e8c4" kind="function"><name>~TNS</name></member>
+    <member refid="classrocalution_1_1_t_n_s_1af4b7b265540f0bb5ecca897e076a8ead" kind="function"><name>Print</name></member>
+    <member refid="classrocalution_1_1_t_n_s_1ac7ebac11443d6fab77dd0c05c77c8860" kind="function"><name>Set</name></member>
+    <member refid="classrocalution_1_1_t_n_s_1acc6c93ab6ee9364f2d74b69793404321" kind="function"><name>Solve</name></member>
+    <member refid="classrocalution_1_1_t_n_s_1a046089ec15c54667418c80c5fd408692" kind="function"><name>Build</name></member>
+    <member refid="classrocalution_1_1_t_n_s_1a8c8a447c215cb80f05762a18292ebf95" kind="function"><name>Clear</name></member>
+    <member refid="classrocalution_1_1_t_n_s_1ac8e54cad485a413740d44543bacbc497" kind="function"><name>SetPrecondMatrixFormat</name></member>
+    <member refid="classrocalution_1_1_t_n_s_1aa6344a86945819eccfb35abe6b7c3da8" kind="function"><name>MoveToHostLocalData_</name></member>
+    <member refid="classrocalution_1_1_t_n_s_1a66060b5d8d81a63b69ba946bb9020c6d" kind="function"><name>MoveToAcceleratorLocalData_</name></member>
+  </compound>
+  <compound refid="classrocalution_1_1_u_a_a_m_g" kind="class"><name>rocalution::UAAMG</name>
+    <member refid="classrocalution_1_1_u_a_a_m_g_1af441a837f4ca8f43ac6727e1eed94f5d" kind="variable"><name>eps_</name></member>
+    <member refid="classrocalution_1_1_u_a_a_m_g_1a407040fda8894e2a51b82f32a929f351" kind="variable"><name>over_interp_</name></member>
+    <member refid="classrocalution_1_1_u_a_a_m_g_1a0b5d99d2832d6d90e6c69bac399c91fe" kind="function"><name>UAAMG</name></member>
+    <member refid="classrocalution_1_1_u_a_a_m_g_1aece487aef75c3e7c0f3fbd0395842180" kind="function"><name>~UAAMG</name></member>
+    <member refid="classrocalution_1_1_u_a_a_m_g_1a413eeb6538f062541db405652d3667c5" kind="function"><name>Print</name></member>
+    <member refid="classrocalution_1_1_u_a_a_m_g_1aa7d5a037d6552044b7fac6ff7e6a8b49" kind="function"><name>BuildSmoothers</name></member>
+    <member refid="classrocalution_1_1_u_a_a_m_g_1a7d42a31f416971e4566a8db0c519dd7b" kind="function"><name>SetCouplingStrength</name></member>
+    <member refid="classrocalution_1_1_u_a_a_m_g_1a37661f011d64a05a3dff0b2cb74d3b9b" kind="function"><name>SetOverInterp</name></member>
+    <member refid="classrocalution_1_1_u_a_a_m_g_1a84ac9a588c8081474912e8adde2b8a0f" kind="function"><name>ReBuildNumeric</name></member>
+    <member refid="classrocalution_1_1_u_a_a_m_g_1a76d9ee2250b9626808cdcfe881c6b9a8" kind="function"><name>Aggregate_</name></member>
+    <member refid="classrocalution_1_1_u_a_a_m_g_1aa594849af2e708e94b8b65e286fcb119" kind="function"><name>PrintStart_</name></member>
+    <member refid="classrocalution_1_1_u_a_a_m_g_1a5068d9ebe8169d7eb83b16f8eca122d6" kind="function"><name>PrintEnd_</name></member>
+  </compound>
+  <compound refid="classrocalution_1_1_variable_preconditioner" kind="class"><name>rocalution::VariablePreconditioner</name>
+    <member refid="classrocalution_1_1_variable_preconditioner_1a8dbde3175aa80f1f23546898c3cf0243" kind="variable"><name>num_precond_</name></member>
+    <member refid="classrocalution_1_1_variable_preconditioner_1aa7a3e9365b4fb75b64ac5f11cd3ed594" kind="variable"><name>counter_</name></member>
+    <member refid="classrocalution_1_1_variable_preconditioner_1abcc40b9c8e41b779b0aefbc6e75bec50" kind="variable"><name>precond_</name></member>
+    <member refid="classrocalution_1_1_variable_preconditioner_1aa4ae357bff10bf2114ccba4e1b19c707" kind="function"><name>VariablePreconditioner</name></member>
+    <member refid="classrocalution_1_1_variable_preconditioner_1a3e50883c655f70374db639756f602588" kind="function"><name>~VariablePreconditioner</name></member>
+    <member refid="classrocalution_1_1_variable_preconditioner_1a5785b7067df5d14da1baadb238a93877" kind="function"><name>Print</name></member>
+    <member refid="classrocalution_1_1_variable_preconditioner_1af5edf6dd914d4c4e62834f086582d555" kind="function"><name>Solve</name></member>
+    <member refid="classrocalution_1_1_variable_preconditioner_1a5afbdaa5b1460137900df2c84fe3591c" kind="function"><name>Build</name></member>
+    <member refid="classrocalution_1_1_variable_preconditioner_1a50a3887b4ab076eaa780e1f75ee4d857" kind="function"><name>Clear</name></member>
+    <member refid="classrocalution_1_1_variable_preconditioner_1aca967cd3b1365901ff36b56df9be1319" kind="function"><name>SetPreconditioner</name></member>
+    <member refid="classrocalution_1_1_variable_preconditioner_1a7945630187fb9422324072c0b174dd66" kind="function"><name>MoveToHostLocalData_</name></member>
+    <member refid="classrocalution_1_1_variable_preconditioner_1a0ed152885be7001a1d86454ff8ece808" kind="function"><name>MoveToAcceleratorLocalData_</name></member>
   </compound>
   <compound refid="classrocalution_1_1_vector" kind="class"><name>rocalution::Vector</name>
     <member refid="classrocalution_1_1_vector_1a0a69b9fd8f7263d1444c331e8ce18f8b" kind="function"><name>CopyFrom</name></member>
@@ -575,19 +1535,31 @@
     <member refid="backend__manager_8hpp_1a4151648a06269c44d03bd90974a9dfcb" kind="enum"><name>_rocalution_backend_id</name></member>
     <member refid="backend__manager_8hpp_1a4151648a06269c44d03bd90974a9dfcba655cef3a927d75fe99df08fc4348e7c8" kind="enumvalue"><name>None</name></member>
     <member refid="backend__manager_8hpp_1a4151648a06269c44d03bd90974a9dfcbab57ebff34d152840ef7ffa2f4d1645a6" kind="enumvalue"><name>HIP</name></member>
+    <member refid="base__multigrid_8hpp_1a1fe882264d14ecff11d369483161d5ee" kind="enum"><name>_cycle</name></member>
+    <member refid="base__multigrid_8hpp_1a1fe882264d14ecff11d369483161d5eea963e399d8950b90f933db0367326614c" kind="enumvalue"><name>Vcycle</name></member>
+    <member refid="base__multigrid_8hpp_1a1fe882264d14ecff11d369483161d5eeada1d0b7042704f78fcd8ad3ae863b6ed" kind="enumvalue"><name>Wcycle</name></member>
+    <member refid="base__multigrid_8hpp_1a1fe882264d14ecff11d369483161d5eeaa87f2794c702af3d0750cc5ae019c5be" kind="enumvalue"><name>Kcycle</name></member>
+    <member refid="base__multigrid_8hpp_1a1fe882264d14ecff11d369483161d5eea972bd4c5999a140019e2bf4bd929997f" kind="enumvalue"><name>Fcycle</name></member>
+    <member refid="pairwise__amg_8hpp_1a0560bee79c4162b6a1076095c1532245" kind="enum"><name>_aggregation_ordering</name></member>
+    <member refid="pairwise__amg_8hpp_1a0560bee79c4162b6a1076095c1532245aff2a6b2b4f16b2bea80ab63224d9dbd8" kind="enumvalue"><name>NoOrdering</name></member>
+    <member refid="pairwise__amg_8hpp_1a0560bee79c4162b6a1076095c1532245ae47636aa0853d2253bbe3e5e695caf95" kind="enumvalue"><name>Connectivity</name></member>
+    <member refid="pairwise__amg_8hpp_1a0560bee79c4162b6a1076095c1532245aa2ea75924fdf199c0d8f5348f3232e6f" kind="enumvalue"><name>CMK</name></member>
+    <member refid="pairwise__amg_8hpp_1a0560bee79c4162b6a1076095c1532245a0c5b237d08ca07ed5724959d2b478f70" kind="enumvalue"><name>RCMK</name></member>
+    <member refid="pairwise__amg_8hpp_1a0560bee79c4162b6a1076095c1532245a01638d36b17a428f2b25c0695b6983fb" kind="enumvalue"><name>MIS</name></member>
+    <member refid="pairwise__amg_8hpp_1a0560bee79c4162b6a1076095c1532245a7809f0645b36b85b4af6892cdbb1cc6b" kind="enumvalue"><name>MultiColoring</name></member>
     <member refid="backend__manager_8hpp_1af5e4f0fa4d05a5320a86d9880d2074bb" kind="variable"><name>_Backend_Descriptor</name></member>
     <member refid="backend__manager_8hpp_1a8ed81e0a2eab89cb1786dabaac44a74c" kind="variable"><name>_rocalution_host_name</name></member>
     <member refid="backend__manager_8hpp_1aa52a0e43c37ef0759b1ecada37090e0c" kind="variable"><name>_rocalution_backend_name</name></member>
     <member refid="base__rocalution_8hpp_1a3b510565699bf127449736ba1e56a362" kind="variable"><name>Rocalution_Object_Data_Tracking</name></member>
-    <member refid="backend__manager_8hpp_1a044437ad21ae0e48c88f09bdb508cdae" kind="function"><name>init_rocalution</name></member>
-    <member refid="backend__manager_8hpp_1af6098d8efba475358435f3b00da8c51b" kind="function"><name>stop_rocalution</name></member>
-    <member refid="backend__manager_8hpp_1a90fb4a381beab8525d17988f2600a336" kind="function"><name>set_device_rocalution</name></member>
-    <member refid="backend__manager_8hpp_1a83e2a7e27ef32854ba4a34ff83b3285f" kind="function"><name>set_omp_threads_rocalution</name></member>
-    <member refid="backend__manager_8hpp_1a207aa4a91a2507c0e9f7b1ac8e8c8b28" kind="function"><name>set_omp_affinity_rocalution</name></member>
-    <member refid="backend__manager_8hpp_1a63587ed85501959c6f34a9838b8f2ba8" kind="function"><name>set_omp_threshold_rocalution</name></member>
-    <member refid="backend__manager_8hpp_1ace30a89d8b0688fdfb425be39fa10633" kind="function"><name>info_rocalution</name></member>
-    <member refid="backend__manager_8hpp_1ad4d74134029d46a072420b2ca787f859" kind="function"><name>info_rocalution</name></member>
-    <member refid="backend__manager_8hpp_1ac17c61b30b39327cca408417ef68bb2a" kind="function"><name>disable_accelerator_rocalution</name></member>
+    <member refid="group__backend__module_1ga044437ad21ae0e48c88f09bdb508cdae" kind="function"><name>init_rocalution</name></member>
+    <member refid="group__backend__module_1gaf6098d8efba475358435f3b00da8c51b" kind="function"><name>stop_rocalution</name></member>
+    <member refid="group__backend__module_1ga90fb4a381beab8525d17988f2600a336" kind="function"><name>set_device_rocalution</name></member>
+    <member refid="group__backend__module_1ga83e2a7e27ef32854ba4a34ff83b3285f" kind="function"><name>set_omp_threads_rocalution</name></member>
+    <member refid="group__backend__module_1ga207aa4a91a2507c0e9f7b1ac8e8c8b28" kind="function"><name>set_omp_affinity_rocalution</name></member>
+    <member refid="group__backend__module_1ga63587ed85501959c6f34a9838b8f2ba8" kind="function"><name>set_omp_threshold_rocalution</name></member>
+    <member refid="group__backend__module_1gace30a89d8b0688fdfb425be39fa10633" kind="function"><name>info_rocalution</name></member>
+    <member refid="group__backend__module_1gad4d74134029d46a072420b2ca787f859" kind="function"><name>info_rocalution</name></member>
+    <member refid="group__backend__module_1gac17c61b30b39327cca408417ef68bb2a" kind="function"><name>disable_accelerator_rocalution</name></member>
     <member refid="backend__manager_8hpp_1ad27a35bf66caf667b73d3a5ba131e4fa" kind="function"><name>_rocalution_available_accelerator</name></member>
     <member refid="backend__manager_8hpp_1acc35243a8c09d91ba8106de301b54e0b" kind="function"><name>_get_backend_descriptor</name></member>
     <member refid="backend__manager_8hpp_1af4814f498d85bf1134ef48fa45b759d2" kind="function"><name>_set_backend_descriptor</name></member>
@@ -595,15 +1567,17 @@
     <member refid="backend__manager_8hpp_1afef01bb8131c6ec161d8d2c593881a51" kind="function"><name>_rocalution_init_base_backend_vector</name></member>
     <member refid="backend__manager_8hpp_1a2ebadccacd0621b0854c490032e52cca" kind="function"><name>_rocalution_init_base_host_matrix</name></member>
     <member refid="backend__manager_8hpp_1a4a91640f9b6773d948a0894b39db70ff" kind="function"><name>_rocalution_init_base_backend_matrix</name></member>
-    <member refid="backend__manager_8hpp_1a9858044e06189a81160646b5a7dbb154" kind="function"><name>_rocalution_sync</name></member>
+    <member refid="group__backend__module_1ga9858044e06189a81160646b5a7dbb154" kind="function"><name>_rocalution_sync</name></member>
     <member refid="backend__manager_8hpp_1ab4c2703e8bf1fea52fd5769bd46d2819" kind="function"><name>_rocalution_add_obj</name></member>
     <member refid="backend__manager_8hpp_1a4dde7def59bd3c2c7f4ca8279882fcae" kind="function"><name>_rocalution_del_obj</name></member>
     <member refid="backend__manager_8hpp_1a9b877ec9f9377ec4a2b684d9baba7597" kind="function"><name>_rocalution_delete_all_obj</name></member>
     <member refid="backend__manager_8hpp_1afe55c51da782dcf07b26ab51270172bd" kind="function"><name>_rocalution_check_if_any_obj</name></member>
-    <member refid="allocate__free_8hpp_1afedca46943a41c98cad95870fa180526" kind="function"><name>allocate_host</name></member>
-    <member refid="allocate__free_8hpp_1a020251e6c31a4c642dd0181c5022c9ca" kind="function"><name>free_host</name></member>
-    <member refid="allocate__free_8hpp_1aeedb5b330f76db3b821bdfa7eaa60351" kind="function"><name>set_to_zero_host</name></member>
-    <member refid="time__functions_8hpp_1af3ea06cd4a7a8e0cc12b2255b2779ee3" kind="function"><name>rocalution_time</name></member>
+    <member refid="group__backend__module_1gafedca46943a41c98cad95870fa180526" kind="function"><name>allocate_host</name></member>
+    <member refid="group__backend__module_1ga020251e6c31a4c642dd0181c5022c9ca" kind="function"><name>free_host</name></member>
+    <member refid="group__backend__module_1gaeedb5b330f76db3b821bdfa7eaa60351" kind="function"><name>set_to_zero_host</name></member>
+    <member refid="group__backend__module_1gaf3ea06cd4a7a8e0cc12b2255b2779ee3" kind="function"><name>rocalution_time</name></member>
+  </compound>
+  <compound refid="modules_8dox" kind="file"><name>modules.dox</name>
   </compound>
   <compound refid="backend__manager_8hpp" kind="file"><name>backend_manager.hpp</name>
   </compound>
@@ -627,94 +1601,180 @@
   </compound>
   <compound refid="chebyshev_8cpp" kind="file"><name>chebyshev.cpp</name>
   </compound>
+  <compound refid="chebyshev_8hpp" kind="file"><name>chebyshev.hpp</name>
+  </compound>
   <compound refid="inversion_8cpp" kind="file"><name>inversion.cpp</name>
+  </compound>
+  <compound refid="inversion_8hpp" kind="file"><name>inversion.hpp</name>
   </compound>
   <compound refid="lu_8cpp" kind="file"><name>lu.cpp</name>
   </compound>
+  <compound refid="lu_8hpp" kind="file"><name>lu.hpp</name>
+  </compound>
   <compound refid="qr_8cpp" kind="file"><name>qr.cpp</name>
+  </compound>
+  <compound refid="qr_8hpp" kind="file"><name>qr.hpp</name>
   </compound>
   <compound refid="iter__ctrl_8cpp" kind="file"><name>iter_ctrl.cpp</name>
   </compound>
+  <compound refid="iter__ctrl_8hpp" kind="file"><name>iter_ctrl.hpp</name>
+  </compound>
   <compound refid="bicgstab_8cpp" kind="file"><name>bicgstab.cpp</name>
+  </compound>
+  <compound refid="bicgstab_8hpp" kind="file"><name>bicgstab.hpp</name>
   </compound>
   <compound refid="bicgstabl_8cpp" kind="file"><name>bicgstabl.cpp</name>
   </compound>
+  <compound refid="bicgstabl_8hpp" kind="file"><name>bicgstabl.hpp</name>
+  </compound>
   <compound refid="cg_8cpp" kind="file"><name>cg.cpp</name>
+  </compound>
+  <compound refid="cg_8hpp" kind="file"><name>cg.hpp</name>
   </compound>
   <compound refid="cr_8cpp" kind="file"><name>cr.cpp</name>
   </compound>
+  <compound refid="cr_8hpp" kind="file"><name>cr.hpp</name>
+  </compound>
   <compound refid="fcg_8cpp" kind="file"><name>fcg.cpp</name>
+  </compound>
+  <compound refid="fcg_8hpp" kind="file"><name>fcg.hpp</name>
   </compound>
   <compound refid="fgmres_8cpp" kind="file"><name>fgmres.cpp</name>
   </compound>
+  <compound refid="fgmres_8hpp" kind="file"><name>fgmres.hpp</name>
+  </compound>
   <compound refid="gmres_8cpp" kind="file"><name>gmres.cpp</name>
+  </compound>
+  <compound refid="gmres_8hpp" kind="file"><name>gmres.hpp</name>
   </compound>
   <compound refid="idr_8cpp" kind="file"><name>idr.cpp</name>
   </compound>
+  <compound refid="idr_8hpp" kind="file"><name>idr.hpp</name>
+  </compound>
   <compound refid="qmrcgstab_8cpp" kind="file"><name>qmrcgstab.cpp</name>
+  </compound>
+  <compound refid="qmrcgstab_8hpp" kind="file"><name>qmrcgstab.hpp</name>
   </compound>
   <compound refid="mixed__precision_8cpp" kind="file"><name>mixed_precision.cpp</name>
   </compound>
+  <compound refid="mixed__precision_8hpp" kind="file"><name>mixed_precision.hpp</name>
+  </compound>
   <compound refid="base__amg_8cpp" kind="file"><name>base_amg.cpp</name>
+  </compound>
+  <compound refid="base__amg_8hpp" kind="file"><name>base_amg.hpp</name>
   </compound>
   <compound refid="base__multigrid_8cpp" kind="file"><name>base_multigrid.cpp</name>
   </compound>
+  <compound refid="base__multigrid_8hpp" kind="file"><name>base_multigrid.hpp</name>
+  </compound>
   <compound refid="global__pairwise__amg_8cpp" kind="file"><name>global_pairwise_amg.cpp</name>
+  </compound>
+  <compound refid="global__pairwise__amg_8hpp" kind="file"><name>global_pairwise_amg.hpp</name>
   </compound>
   <compound refid="multigrid_8cpp" kind="file"><name>multigrid.cpp</name>
   </compound>
+  <compound refid="multigrid_8hpp" kind="file"><name>multigrid.hpp</name>
+  </compound>
   <compound refid="pairwise__amg_8cpp" kind="file"><name>pairwise_amg.cpp</name>
+  </compound>
+  <compound refid="pairwise__amg_8hpp" kind="file"><name>pairwise_amg.hpp</name>
   </compound>
   <compound refid="ruge__stueben__amg_8cpp" kind="file"><name>ruge_stueben_amg.cpp</name>
   </compound>
+  <compound refid="ruge__stueben__amg_8hpp" kind="file"><name>ruge_stueben_amg.hpp</name>
+  </compound>
   <compound refid="smoothed__amg_8cpp" kind="file"><name>smoothed_amg.cpp</name>
+  </compound>
+  <compound refid="smoothed__amg_8hpp" kind="file"><name>smoothed_amg.hpp</name>
   </compound>
   <compound refid="unsmoothed__amg_8cpp" kind="file"><name>unsmoothed_amg.cpp</name>
   </compound>
+  <compound refid="unsmoothed__amg_8hpp" kind="file"><name>unsmoothed_amg.hpp</name>
+  </compound>
   <compound refid="preconditioner_8cpp" kind="file"><name>preconditioner.cpp</name>
+  </compound>
+  <compound refid="preconditioner_8hpp" kind="file"><name>preconditioner.hpp</name>
   </compound>
   <compound refid="preconditioner__ai_8cpp" kind="file"><name>preconditioner_ai.cpp</name>
   </compound>
+  <compound refid="preconditioner__ai_8hpp" kind="file"><name>preconditioner_ai.hpp</name>
+  </compound>
   <compound refid="preconditioner__as_8cpp" kind="file"><name>preconditioner_as.cpp</name>
+  </compound>
+  <compound refid="preconditioner__as_8hpp" kind="file"><name>preconditioner_as.hpp</name>
   </compound>
   <compound refid="preconditioner__blockjacobi_8cpp" kind="file"><name>preconditioner_blockjacobi.cpp</name>
   </compound>
+  <compound refid="preconditioner__blockjacobi_8hpp" kind="file"><name>preconditioner_blockjacobi.hpp</name>
+  </compound>
   <compound refid="preconditioner__blockprecond_8cpp" kind="file"><name>preconditioner_blockprecond.cpp</name>
+  </compound>
+  <compound refid="preconditioner__blockprecond_8hpp" kind="file"><name>preconditioner_blockprecond.hpp</name>
   </compound>
   <compound refid="preconditioner__multicolored_8cpp" kind="file"><name>preconditioner_multicolored.cpp</name>
   </compound>
+  <compound refid="preconditioner__multicolored_8hpp" kind="file"><name>preconditioner_multicolored.hpp</name>
+  </compound>
   <compound refid="preconditioner__multicolored__gs_8cpp" kind="file"><name>preconditioner_multicolored_gs.cpp</name>
+  </compound>
+  <compound refid="preconditioner__multicolored__gs_8hpp" kind="file"><name>preconditioner_multicolored_gs.hpp</name>
   </compound>
   <compound refid="preconditioner__multicolored__ilu_8cpp" kind="file"><name>preconditioner_multicolored_ilu.cpp</name>
   </compound>
+  <compound refid="preconditioner__multicolored__ilu_8hpp" kind="file"><name>preconditioner_multicolored_ilu.hpp</name>
+  </compound>
   <compound refid="preconditioner__multielimination_8cpp" kind="file"><name>preconditioner_multielimination.cpp</name>
+  </compound>
+  <compound refid="preconditioner__multielimination_8hpp" kind="file"><name>preconditioner_multielimination.hpp</name>
   </compound>
   <compound refid="preconditioner__saddlepoint_8cpp" kind="file"><name>preconditioner_saddlepoint.cpp</name>
   </compound>
+  <compound refid="preconditioner__saddlepoint_8hpp" kind="file"><name>preconditioner_saddlepoint.hpp</name>
+  </compound>
   <compound refid="solver_8cpp" kind="file"><name>solver.cpp</name>
+  </compound>
+  <compound refid="solver_8hpp" kind="file"><name>solver.hpp</name>
   </compound>
   <compound refid="allocate__free_8hpp" kind="file"><name>allocate_free.hpp</name>
   </compound>
   <compound refid="time__functions_8hpp" kind="file"><name>time_functions.hpp</name>
   </compound>
-  <compound refid="dir_d7db5a02f594321e7c6336d6ae38f091" kind="dir"><name>ROCm_Libraries/rocALUTION/src/base</name>
+  <compound refid="group__solver__module" kind="group"><name>solver_module</name>
   </compound>
-  <compound refid="dir_38fdb61b3512cdb4abd7b219d35472ce" kind="dir"><name>ROCm_Libraries/rocALUTION/src/solvers/direct</name>
+  <compound refid="group__precond__module" kind="group"><name>precond_module</name>
   </compound>
-  <compound refid="dir_61a982d355ccdf528c3b19a2527138e7" kind="dir"><name>ROCm_Libraries/rocALUTION/src/solvers/krylov</name>
+  <compound refid="group__op__vec__module" kind="group"><name>op_vec_module</name>
   </compound>
-  <compound refid="dir_a1ee1ab676b34c8c7f965a7636587e0a" kind="dir"><name>ROCm_Libraries/rocALUTION/src/solvers/multigrid</name>
+  <compound refid="group__backend__module" kind="group"><name>backend_module</name>
+    <member refid="group__backend__module_1ga044437ad21ae0e48c88f09bdb508cdae" kind="function"><name>init_rocalution</name></member>
+    <member refid="group__backend__module_1gaf6098d8efba475358435f3b00da8c51b" kind="function"><name>stop_rocalution</name></member>
+    <member refid="group__backend__module_1ga90fb4a381beab8525d17988f2600a336" kind="function"><name>set_device_rocalution</name></member>
+    <member refid="group__backend__module_1ga83e2a7e27ef32854ba4a34ff83b3285f" kind="function"><name>set_omp_threads_rocalution</name></member>
+    <member refid="group__backend__module_1ga207aa4a91a2507c0e9f7b1ac8e8c8b28" kind="function"><name>set_omp_affinity_rocalution</name></member>
+    <member refid="group__backend__module_1ga63587ed85501959c6f34a9838b8f2ba8" kind="function"><name>set_omp_threshold_rocalution</name></member>
+    <member refid="group__backend__module_1gace30a89d8b0688fdfb425be39fa10633" kind="function"><name>info_rocalution</name></member>
+    <member refid="group__backend__module_1gad4d74134029d46a072420b2ca787f859" kind="function"><name>info_rocalution</name></member>
+    <member refid="group__backend__module_1gac17c61b30b39327cca408417ef68bb2a" kind="function"><name>disable_accelerator_rocalution</name></member>
+    <member refid="group__backend__module_1ga9858044e06189a81160646b5a7dbb154" kind="function"><name>_rocalution_sync</name></member>
+    <member refid="group__backend__module_1gafedca46943a41c98cad95870fa180526" kind="function"><name>allocate_host</name></member>
+    <member refid="group__backend__module_1ga020251e6c31a4c642dd0181c5022c9ca" kind="function"><name>free_host</name></member>
+    <member refid="group__backend__module_1gaeedb5b330f76db3b821bdfa7eaa60351" kind="function"><name>set_to_zero_host</name></member>
+    <member refid="group__backend__module_1gaf3ea06cd4a7a8e0cc12b2255b2779ee3" kind="function"><name>rocalution_time</name></member>
   </compound>
-  <compound refid="dir_9806f60f061123ee4ea5bfe3c65f6921" kind="dir"><name>ROCm_Libraries/rocALUTION/src/solvers/preconditioners</name>
+  <compound refid="dir_0af1587c8378955de40f48b4bd1869f0" kind="dir"><name>/home/tcs/rocALUTION/src/base</name>
   </compound>
-  <compound refid="dir_90edf3454520669c7f798061b876b19a" kind="dir"><name>ROCm_Libraries/rocALUTION</name>
+  <compound refid="dir_570d91e34c75c44b0442a597b8f1329a" kind="dir"><name>/home/tcs/rocALUTION/src/solvers/direct</name>
   </compound>
-  <compound refid="dir_96edc4a395950aafa2f54996a59552f7" kind="dir"><name>ROCm_Libraries</name>
+  <compound refid="dir_620171d157a8bd520fe3f69b27b55ba1" kind="dir"><name>/home/tcs/rocALUTION/src/solvers/krylov</name>
   </compound>
-  <compound refid="dir_07b087b0a832c7dd14daad07f351f53e" kind="dir"><name>ROCm_Libraries/rocALUTION/src/solvers</name>
+  <compound refid="dir_472d298e91c75470043af5fe84ed047e" kind="dir"><name>/home/tcs/rocALUTION/src/solvers/multigrid</name>
   </compound>
-  <compound refid="dir_2483e7c9b720094d558c1ba058a8067b" kind="dir"><name>ROCm_Libraries/rocALUTION/src</name>
+  <compound refid="dir_15fb247b97d8730ba3313bf88d10a343" kind="dir"><name>/home/tcs/rocALUTION/src/solvers/preconditioners</name>
   </compound>
-  <compound refid="dir_fa917f053f0a760dab9ae831f77e347c" kind="dir"><name>ROCm_Libraries/rocALUTION/src/utils</name>
+  <compound refid="dir_19373f467389307dc54ab8a6e9e19559" kind="dir"><name>/home/tcs/rocALUTION/src/solvers</name>
+  </compound>
+  <compound refid="dir_68267d1309a1af8e8297ef4c3efbcdba" kind="dir"><name>/home/tcs/rocALUTION/src</name>
+  </compound>
+  <compound refid="dir_313caf1132e152dd9b58bea13a4052ca" kind="dir"><name>/home/tcs/rocALUTION/src/utils</name>
   </compound>
 </doxygenindex>

@@ -148,7 +148,7 @@ Also, githooks can be installed to format the code per-commit:
   ./.githooks/install
 
 Building and Installing
------------------------
+########################
 
 Installing from AMD ROCm repositories
 **************************************
@@ -299,7 +299,7 @@ You can test the installation by running a CG solver on a Laplace matrix. After 
   ./cg gr_30_30.mtx
 
 Basics
-------
+########
 
 Design and Philosophy
 *********************

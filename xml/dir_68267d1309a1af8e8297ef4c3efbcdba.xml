@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_68267d1309a1af8e8297ef4c3efbcdba" kind="dir">
+    <compoundname>/home/tcs/rocALUTION/src</compoundname>
+    <innerdir refid="dir_0af1587c8378955de40f48b4bd1869f0">/home/tcs/rocALUTION/src/base</innerdir>
+    <innerdir refid="dir_19373f467389307dc54ab8a6e9e19559">/home/tcs/rocALUTION/src/solvers</innerdir>
+    <innerdir refid="dir_313caf1132e152dd9b58bea13a4052ca">/home/tcs/rocALUTION/src/utils</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/tcs/rocALUTION/src/"/>
+  </compounddef>
+</doxygen>

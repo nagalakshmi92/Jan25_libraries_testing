@@ -1,0 +1,572 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classrocalution_1_1_diag_jacobi_saddle_point_precond" kind="class" language="C++" prot="public">
+    <compoundname>rocalution::DiagJacobiSaddlePointPrecond</compoundname>
+    <basecompoundref refid="classrocalution_1_1_preconditioner" prot="public" virt="non-virtual">rocalution::Preconditioner&lt; OperatorType, VectorType, ValueType &gt;</basecompoundref>
+    <includes refid="preconditioner__saddlepoint_8hpp" local="no">preconditioner_saddlepoint.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>class OperatorType</type>
+      </param>
+      <param>
+        <type>class VectorType</type>
+      </param>
+      <param>
+        <type>typename ValueType</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classrocalution_1_1_diag_jacobi_saddle_point_precond_1a35deda8cf598243ca6a03b736f882792" prot="protected" static="no" mutable="no">
+        <type>OperatorType</type>
+        <definition>OperatorType rocalution::DiagJacobiSaddlePointPrecond&lt; OperatorType, VectorType, ValueType &gt;::A_</definition>
+        <argsstring></argsstring>
+        <name>A_</name>
+        <briefdescription>
+<para>A_ is decomposed into <formula id="55">$[K,F;E,0]$</formula>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_saddlepoint.hpp" line="76" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_saddlepoint.hpp" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrocalution_1_1_diag_jacobi_saddle_point_precond_1ae9178ee667f4a7f471cb72820dcdc0b3" prot="protected" static="no" mutable="no">
+        <type>OperatorType</type>
+        <definition>OperatorType rocalution::DiagJacobiSaddlePointPrecond&lt; OperatorType, VectorType, ValueType &gt;::K_</definition>
+        <argsstring></argsstring>
+        <name>K_</name>
+        <briefdescription>
+<para><ref refid="classrocalution_1_1_operator" kindref="compound">Operator</ref> <formula id="53">$K$</formula>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_saddlepoint.hpp" line="78" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_saddlepoint.hpp" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrocalution_1_1_diag_jacobi_saddle_point_precond_1a9f07c62267b4982122a63b3a1a1ea7e3" prot="protected" static="no" mutable="no">
+        <type>OperatorType</type>
+        <definition>OperatorType rocalution::DiagJacobiSaddlePointPrecond&lt; OperatorType, VectorType, ValueType &gt;::S_</definition>
+        <argsstring></argsstring>
+        <name>S_</name>
+        <briefdescription>
+<para><ref refid="classrocalution_1_1_operator" kindref="compound">Operator</ref> <formula id="54">$S$</formula>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_saddlepoint.hpp" line="80" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_saddlepoint.hpp" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrocalution_1_1_diag_jacobi_saddle_point_precond_1ac784042d0f171ce64f6cf9460dc4b0aa" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int rocalution::DiagJacobiSaddlePointPrecond&lt; OperatorType, VectorType, ValueType &gt;::K_nrow_</definition>
+        <argsstring></argsstring>
+        <name>K_nrow_</name>
+        <briefdescription>
+<para>The sizes of the <formula id="53">$K$</formula> matrix. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_saddlepoint.hpp" line="83" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_saddlepoint.hpp" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrocalution_1_1_diag_jacobi_saddle_point_precond_1a129f42bbed9854516723dd86735c3bba" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int rocalution::DiagJacobiSaddlePointPrecond&lt; OperatorType, VectorType, ValueType &gt;::K_nnz_</definition>
+        <argsstring></argsstring>
+        <name>K_nnz_</name>
+        <briefdescription>
+<para>The sizes of the <formula id="53">$K$</formula> matrix. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_saddlepoint.hpp" line="85" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_saddlepoint.hpp" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrocalution_1_1_diag_jacobi_saddle_point_precond_1a854149929f019686c8fe21f455f63629" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool rocalution::DiagJacobiSaddlePointPrecond&lt; OperatorType, VectorType, ValueType &gt;::op_mat_format_</definition>
+        <argsstring></argsstring>
+        <name>op_mat_format_</name>
+        <briefdescription>
+<para>Keep the precond matrix in CSR or not. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_saddlepoint.hpp" line="88" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_saddlepoint.hpp" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrocalution_1_1_diag_jacobi_saddle_point_precond_1a377796d6fa924dd6611665307964f225" prot="protected" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int rocalution::DiagJacobiSaddlePointPrecond&lt; OperatorType, VectorType, ValueType &gt;::precond_mat_format_</definition>
+        <argsstring></argsstring>
+        <name>precond_mat_format_</name>
+        <briefdescription>
+<para>Precond matrix format. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_saddlepoint.hpp" line="90" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_saddlepoint.hpp" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrocalution_1_1_diag_jacobi_saddle_point_precond_1afe624dff82431f9adca9b40f7d82344f" prot="protected" static="no" mutable="no">
+        <type>VectorType</type>
+        <definition>VectorType rocalution::DiagJacobiSaddlePointPrecond&lt; OperatorType, VectorType, ValueType &gt;::x_</definition>
+        <argsstring></argsstring>
+        <name>x_</name>
+        <briefdescription>
+<para><ref refid="classrocalution_1_1_vector" kindref="compound">Vector</ref> x_. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_saddlepoint.hpp" line="93" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_saddlepoint.hpp" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrocalution_1_1_diag_jacobi_saddle_point_precond_1a933e126d4702ad207b1c2192a146ab78" prot="protected" static="no" mutable="no">
+        <type>VectorType</type>
+        <definition>VectorType rocalution::DiagJacobiSaddlePointPrecond&lt; OperatorType, VectorType, ValueType &gt;::x_1_</definition>
+        <argsstring></argsstring>
+        <name>x_1_</name>
+        <briefdescription>
+<para><ref refid="classrocalution_1_1_vector" kindref="compound">Vector</ref> x_1_. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_saddlepoint.hpp" line="95" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_saddlepoint.hpp" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrocalution_1_1_diag_jacobi_saddle_point_precond_1a608d9c6e3132f2b93688e85fb722f0a5" prot="protected" static="no" mutable="no">
+        <type>VectorType</type>
+        <definition>VectorType rocalution::DiagJacobiSaddlePointPrecond&lt; OperatorType, VectorType, ValueType &gt;::x_2_</definition>
+        <argsstring></argsstring>
+        <name>x_2_</name>
+        <briefdescription>
+<para><ref refid="classrocalution_1_1_vector" kindref="compound">Vector</ref> x_2_. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_saddlepoint.hpp" line="97" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_saddlepoint.hpp" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrocalution_1_1_diag_jacobi_saddle_point_precond_1aadd3e3c67feb39749a155a5c0ec547d3" prot="protected" static="no" mutable="no">
+        <type>VectorType</type>
+        <definition>VectorType rocalution::DiagJacobiSaddlePointPrecond&lt; OperatorType, VectorType, ValueType &gt;::x_1tmp_</definition>
+        <argsstring></argsstring>
+        <name>x_1tmp_</name>
+        <briefdescription>
+<para><ref refid="classrocalution_1_1_vector" kindref="compound">Vector</ref> x_1tmp_. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_saddlepoint.hpp" line="99" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_saddlepoint.hpp" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrocalution_1_1_diag_jacobi_saddle_point_precond_1a81cdf6853ef9ade9f83d4d99724b979e" prot="protected" static="no" mutable="no">
+        <type>VectorType</type>
+        <definition>VectorType rocalution::DiagJacobiSaddlePointPrecond&lt; OperatorType, VectorType, ValueType &gt;::rhs_</definition>
+        <argsstring></argsstring>
+        <name>rhs_</name>
+        <briefdescription>
+<para><ref refid="classrocalution_1_1_vector" kindref="compound">Vector</ref> rhs_. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_saddlepoint.hpp" line="102" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_saddlepoint.hpp" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrocalution_1_1_diag_jacobi_saddle_point_precond_1a28261da44012e342fb9920719fe95bbe" prot="protected" static="no" mutable="no">
+        <type>VectorType</type>
+        <definition>VectorType rocalution::DiagJacobiSaddlePointPrecond&lt; OperatorType, VectorType, ValueType &gt;::rhs_1_</definition>
+        <argsstring></argsstring>
+        <name>rhs_1_</name>
+        <briefdescription>
+<para><ref refid="classrocalution_1_1_vector" kindref="compound">Vector</ref> rhs_1_. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_saddlepoint.hpp" line="104" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_saddlepoint.hpp" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrocalution_1_1_diag_jacobi_saddle_point_precond_1aa9164758db14b3b62085daa9940ee119" prot="protected" static="no" mutable="no">
+        <type>VectorType</type>
+        <definition>VectorType rocalution::DiagJacobiSaddlePointPrecond&lt; OperatorType, VectorType, ValueType &gt;::rhs_2_</definition>
+        <argsstring></argsstring>
+        <name>rhs_2_</name>
+        <briefdescription>
+<para><ref refid="classrocalution_1_1_vector" kindref="compound">Vector</ref> rhs_2_. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_saddlepoint.hpp" line="106" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_saddlepoint.hpp" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrocalution_1_1_diag_jacobi_saddle_point_precond_1ab4c830ea6e0d65a7cc1edea97b38f5bc" prot="protected" static="no" mutable="no">
+        <type><ref refid="classrocalution_1_1_solver" kindref="compound">Solver</ref>&lt; OperatorType, VectorType, ValueType &gt; *</type>
+        <definition>Solver&lt;OperatorType, VectorType, ValueType&gt;* rocalution::DiagJacobiSaddlePointPrecond&lt; OperatorType, VectorType, ValueType &gt;::K_solver_</definition>
+        <argsstring></argsstring>
+        <name>K_solver_</name>
+        <briefdescription>
+<para><ref refid="classrocalution_1_1_solver" kindref="compound">Solver</ref> for <formula id="53">$K$</formula>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_saddlepoint.hpp" line="109" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_saddlepoint.hpp" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrocalution_1_1_diag_jacobi_saddle_point_precond_1ae568d22db29f0cd3b83948e10ad19cbd" prot="protected" static="no" mutable="no">
+        <type><ref refid="classrocalution_1_1_solver" kindref="compound">Solver</ref>&lt; OperatorType, VectorType, ValueType &gt; *</type>
+        <definition>Solver&lt;OperatorType, VectorType, ValueType&gt;* rocalution::DiagJacobiSaddlePointPrecond&lt; OperatorType, VectorType, ValueType &gt;::S_solver_</definition>
+        <argsstring></argsstring>
+        <name>S_solver_</name>
+        <briefdescription>
+<para><ref refid="classrocalution_1_1_solver" kindref="compound">Solver</ref> for <formula id="54">$S$</formula>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_saddlepoint.hpp" line="111" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_saddlepoint.hpp" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrocalution_1_1_diag_jacobi_saddle_point_precond_1a63f91566373af3863173415396b5caf6" prot="protected" static="no" mutable="no">
+        <type><ref refid="classrocalution_1_1_local_vector" kindref="compound">LocalVector</ref>&lt; int &gt;</type>
+        <definition>LocalVector&lt;int&gt; rocalution::DiagJacobiSaddlePointPrecond&lt; OperatorType, VectorType, ValueType &gt;::permutation_</definition>
+        <argsstring></argsstring>
+        <name>permutation_</name>
+        <briefdescription>
+<para>Permutation vector. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_saddlepoint.hpp" line="114" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_saddlepoint.hpp" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrocalution_1_1_diag_jacobi_saddle_point_precond_1a437c30fbf7c94b2e5be5a58802b4a420" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int rocalution::DiagJacobiSaddlePointPrecond&lt; OperatorType, VectorType, ValueType &gt;::size_</definition>
+        <argsstring></argsstring>
+        <name>size_</name>
+        <briefdescription>
+<para>Size. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_saddlepoint.hpp" line="116" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_saddlepoint.hpp" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classrocalution_1_1_diag_jacobi_saddle_point_precond_1aabd45e0deb73d5f106df9390c62c9e32" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>rocalution::DiagJacobiSaddlePointPrecond&lt; OperatorType, VectorType, ValueType &gt;::DiagJacobiSaddlePointPrecond</definition>
+        <argsstring>()</argsstring>
+        <name>DiagJacobiSaddlePointPrecond</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_saddlepoint.hpp" line="60" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_saddlepoint.cpp" bodystart="40" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_diag_jacobi_saddle_point_precond_1a484b32ba2cc33bb2566d7660234f4415" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>rocalution::DiagJacobiSaddlePointPrecond&lt; OperatorType, VectorType, ValueType &gt;::~DiagJacobiSaddlePointPrecond</definition>
+        <argsstring>()</argsstring>
+        <name>~DiagJacobiSaddlePointPrecond</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_saddlepoint.hpp" line="61" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_saddlepoint.cpp" bodystart="56" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_diag_jacobi_saddle_point_precond_1a25a5ae4f6c652c3c35e7783597ffa76d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void rocalution::DiagJacobiSaddlePointPrecond&lt; OperatorType, VectorType, ValueType &gt;::Print</definition>
+        <argsstring>(void) const</argsstring>
+        <name>Print</name>
+        <reimplements refid="classrocalution_1_1_solver_1a57992cfc687f3bf260964ad2fc19c467">Print</reimplements>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Print information about the solver. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_saddlepoint.hpp" line="63" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_saddlepoint.cpp" bodystart="111" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_diag_jacobi_saddle_point_precond_1a9f0f248482e5ec4aa3c2936d707e527e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void rocalution::DiagJacobiSaddlePointPrecond&lt; OperatorType, VectorType, ValueType &gt;::Clear</definition>
+        <argsstring>(void)</argsstring>
+        <name>Clear</name>
+        <reimplements refid="classrocalution_1_1_solver_1aa8839d3ba527d75fedd29fdbe9bd651f">Clear</reimplements>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Clear (free all local data) the solver. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_saddlepoint.hpp" line="64" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_saddlepoint.cpp" bodystart="64" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_diag_jacobi_saddle_point_precond_1a565eeff2293d71a97b9fd1d00423945e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rocalution::DiagJacobiSaddlePointPrecond&lt; OperatorType, VectorType, ValueType &gt;::Set</definition>
+        <argsstring>(Solver&lt; OperatorType, VectorType, ValueType &gt; &amp;K_Solver, Solver&lt; OperatorType, VectorType, ValueType &gt; &amp;S_Solver)</argsstring>
+        <name>Set</name>
+        <param>
+          <type><ref refid="classrocalution_1_1_solver" kindref="compound">Solver</ref>&lt; OperatorType, VectorType, ValueType &gt; &amp;</type>
+          <declname>K_Solver</declname>
+        </param>
+        <param>
+          <type><ref refid="classrocalution_1_1_solver" kindref="compound">Solver</ref>&lt; OperatorType, VectorType, ValueType &gt; &amp;</type>
+          <declname>S_Solver</declname>
+        </param>
+        <briefdescription>
+<para>Initialize solver for <formula id="53">$K$</formula> and <formula id="54">$S$</formula>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_saddlepoint.hpp" line="67" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_saddlepoint.cpp" bodystart="130" bodyend="141"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_diag_jacobi_saddle_point_precond_1a579420d51b2460889552d551a50a5567" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void rocalution::DiagJacobiSaddlePointPrecond&lt; OperatorType, VectorType, ValueType &gt;::Build</definition>
+        <argsstring>(void)</argsstring>
+        <name>Build</name>
+        <reimplements refid="classrocalution_1_1_solver_1a84754d7422ad3fb35c17c61f0a609c7a">Build</reimplements>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Build the solver (data allocation, structure and numerical computation) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_saddlepoint.hpp" line="70" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_saddlepoint.cpp" bodystart="144" bodyend="228"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_diag_jacobi_saddle_point_precond_1a3ef5a66eaaac329c912a75b21450fa36" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void rocalution::DiagJacobiSaddlePointPrecond&lt; OperatorType, VectorType, ValueType &gt;::Solve</definition>
+        <argsstring>(const VectorType &amp;rhs, VectorType *x)</argsstring>
+        <name>Solve</name>
+        <reimplements refid="classrocalution_1_1_solver_1a69025eb1d2bc7f1266899c2739c82725">Solve</reimplements>
+        <param>
+          <type>const VectorType &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <param>
+          <type>VectorType *</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+<para>Solve <ref refid="classrocalution_1_1_operator" kindref="compound">Operator</ref> x = rhs. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_saddlepoint.hpp" line="72" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_saddlepoint.cpp" bodystart="231" bodyend="258"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classrocalution_1_1_diag_jacobi_saddle_point_precond_1adca53d1e7a84dc1a2eaa1aac405e1661" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void rocalution::DiagJacobiSaddlePointPrecond&lt; OperatorType, VectorType, ValueType &gt;::MoveToHostLocalData_</definition>
+        <argsstring>(void)</argsstring>
+        <name>MoveToHostLocalData_</name>
+        <reimplements refid="classrocalution_1_1_solver_1aa1e8be1bd2107543c7390a81f8cee8cb">MoveToHostLocalData_</reimplements>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Move all local data to the host. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_saddlepoint.hpp" line="118" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_saddlepoint.cpp" bodystart="261" bodyend="288"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_diag_jacobi_saddle_point_precond_1a0dc2ce0ee37ee2cd7aea15e9a885a161" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void rocalution::DiagJacobiSaddlePointPrecond&lt; OperatorType, VectorType, ValueType &gt;::MoveToAcceleratorLocalData_</definition>
+        <argsstring>(void)</argsstring>
+        <name>MoveToAcceleratorLocalData_</name>
+        <reimplements refid="classrocalution_1_1_solver_1a8ce29de0bdda9f35a6a687fd06ac9b11">MoveToAcceleratorLocalData_</reimplements>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Move all local data to the accelerator. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_saddlepoint.hpp" line="119" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_saddlepoint.cpp" bodystart="291" bodyend="319"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Diagonal <ref refid="classrocalution_1_1_preconditioner" kindref="compound">Preconditioner</ref> for Saddle-Point Problems. </para>    </briefdescription>
+    <detaileddescription>
+<para>Consider the following saddle-point problem <formula id="50">\[ A = \begin{pmatrix} K &amp; F \\ E &amp; 0 \end{pmatrix}. \]</formula> For such problems we can construct a diagonal Jacobi-type preconditioner of type <formula id="51">\[ P = \begin{pmatrix} K &amp; 0 \\ 0 &amp; S \end{pmatrix}, \]</formula> with <formula id="52">$S=ED^{-1}F$</formula>, where <formula id="36">$D$</formula> are the diagonal elements of <formula id="53">$K$</formula>. The matrix <formula id="54">$S$</formula> is fully constructed (via sparse matrix-matrix multiplication). The preconditioner needs to be initialized with two external solvers/preconditioners - one for the matrix <formula id="53">$K$</formula> and one for the matrix <formula id="54">$S$</formula>.</para><para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>OperatorType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- can be <ref refid="classrocalution_1_1_local_matrix" kindref="compound">LocalMatrix</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>VectorType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- can be <ref refid="classrocalution_1_1_local_vector" kindref="compound">LocalVector</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ValueType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- can be float, double, std::complex&lt;float&gt; or std::complex&lt;double&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="172">
+        <label>rocalution::Preconditioner&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_preconditioner"/>
+        <childnode refid="173" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="173">
+        <label>rocalution::Solver&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_solver"/>
+        <childnode refid="174" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="174">
+        <label>rocalution::RocalutionObj</label>
+      </node>
+      <node id="171">
+        <label>rocalution::DiagJacobiSaddlePointPrecond&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_diag_jacobi_saddle_point_precond"/>
+        <childnode refid="172" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="180">
+        <label>rocalution::Vector&lt; int &gt;</label>
+        <link refid="classrocalution_1_1_vector"/>
+        <childnode refid="181" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="181">
+        <label>rocalution::BaseRocalution&lt; ValueType &gt;</label>
+        <link refid="classrocalution_1_1_base_rocalution"/>
+        <childnode refid="178" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="176">
+        <label>rocalution::Preconditioner&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_preconditioner"/>
+        <childnode refid="177" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="177">
+        <label>rocalution::Solver&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_solver"/>
+        <childnode refid="178" relation="public-inheritance">
+        </childnode>
+        <childnode refid="179" relation="usage">
+          <edgelabel>permutation_</edgelabel>
+        </childnode>
+        <childnode refid="182" relation="usage">
+          <edgelabel>op_</edgelabel>
+        </childnode>
+      </node>
+      <node id="179">
+        <label>rocalution::LocalVector&lt; int &gt;</label>
+        <link refid="classrocalution_1_1_local_vector"/>
+        <childnode refid="180" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="178">
+        <label>rocalution::RocalutionObj</label>
+      </node>
+      <node id="182">
+        <label>OperatorType</label>
+      </node>
+      <node id="175">
+        <label>rocalution::DiagJacobiSaddlePointPrecond&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_diag_jacobi_saddle_point_precond"/>
+        <childnode refid="176" relation="public-inheritance">
+        </childnode>
+        <childnode refid="179" relation="usage">
+          <edgelabel>permutation_</edgelabel>
+        </childnode>
+        <childnode refid="182" relation="usage">
+          <edgelabel>K_</edgelabel>
+          <edgelabel>S_</edgelabel>
+          <edgelabel>A_</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_saddlepoint.hpp" line="58" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_saddlepoint.hpp" bodystart="57" bodyend="120"/>
+    <listofallmembers>
+      <member refid="classrocalution_1_1_diag_jacobi_saddle_point_precond_1a35deda8cf598243ca6a03b736f882792" prot="protected" virt="non-virtual"><scope>rocalution::DiagJacobiSaddlePointPrecond</scope><name>A_</name></member>
+      <member refid="classrocalution_1_1_diag_jacobi_saddle_point_precond_1a579420d51b2460889552d551a50a5567" prot="public" virt="virtual"><scope>rocalution::DiagJacobiSaddlePointPrecond</scope><name>Build</name></member>
+      <member refid="classrocalution_1_1_solver_1a64924a0c87d60d2e4bf9fa295d0152cb" prot="protected" virt="non-virtual"><scope>rocalution::DiagJacobiSaddlePointPrecond</scope><name>build_</name></member>
+      <member refid="classrocalution_1_1_solver_1a0d11ee9943f785db285f0ef5c08c64eb" prot="public" virt="virtual"><scope>rocalution::DiagJacobiSaddlePointPrecond</scope><name>BuildMoveToAcceleratorAsync</name></member>
+      <member refid="classrocalution_1_1_diag_jacobi_saddle_point_precond_1a9f0f248482e5ec4aa3c2936d707e527e" prot="public" virt="virtual"><scope>rocalution::DiagJacobiSaddlePointPrecond</scope><name>Clear</name></member>
+      <member refid="classrocalution_1_1_diag_jacobi_saddle_point_precond_1aabd45e0deb73d5f106df9390c62c9e32" prot="public" virt="non-virtual"><scope>rocalution::DiagJacobiSaddlePointPrecond</scope><name>DiagJacobiSaddlePointPrecond</name></member>
+      <member refid="classrocalution_1_1_rocalution_obj_1a4bba5aeaf4fd705efc00402f1f6ed40b" prot="protected" virt="non-virtual"><scope>rocalution::DiagJacobiSaddlePointPrecond</scope><name>global_obj_id_</name></member>
+      <member refid="classrocalution_1_1_diag_jacobi_saddle_point_precond_1ae9178ee667f4a7f471cb72820dcdc0b3" prot="protected" virt="non-virtual"><scope>rocalution::DiagJacobiSaddlePointPrecond</scope><name>K_</name></member>
+      <member refid="classrocalution_1_1_diag_jacobi_saddle_point_precond_1a129f42bbed9854516723dd86735c3bba" prot="protected" virt="non-virtual"><scope>rocalution::DiagJacobiSaddlePointPrecond</scope><name>K_nnz_</name></member>
+      <member refid="classrocalution_1_1_diag_jacobi_saddle_point_precond_1ac784042d0f171ce64f6cf9460dc4b0aa" prot="protected" virt="non-virtual"><scope>rocalution::DiagJacobiSaddlePointPrecond</scope><name>K_nrow_</name></member>
+      <member refid="classrocalution_1_1_diag_jacobi_saddle_point_precond_1ab4c830ea6e0d65a7cc1edea97b38f5bc" prot="protected" virt="non-virtual"><scope>rocalution::DiagJacobiSaddlePointPrecond</scope><name>K_solver_</name></member>
+      <member refid="classrocalution_1_1_solver_1ab1b6410cd134c9ad00c1851d400cf0f8" prot="public" virt="virtual"><scope>rocalution::DiagJacobiSaddlePointPrecond</scope><name>MoveToAccelerator</name></member>
+      <member refid="classrocalution_1_1_diag_jacobi_saddle_point_precond_1a0dc2ce0ee37ee2cd7aea15e9a885a161" prot="protected" virt="virtual"><scope>rocalution::DiagJacobiSaddlePointPrecond</scope><name>MoveToAcceleratorLocalData_</name></member>
+      <member refid="classrocalution_1_1_solver_1a3c263e65898816f5838184c0af78a044" prot="public" virt="virtual"><scope>rocalution::DiagJacobiSaddlePointPrecond</scope><name>MoveToHost</name></member>
+      <member refid="classrocalution_1_1_diag_jacobi_saddle_point_precond_1adca53d1e7a84dc1a2eaa1aac405e1661" prot="protected" virt="virtual"><scope>rocalution::DiagJacobiSaddlePointPrecond</scope><name>MoveToHostLocalData_</name></member>
+      <member refid="classrocalution_1_1_solver_1ad338b5f99cf339fb33218dd8b958cac4" prot="protected" virt="non-virtual"><scope>rocalution::DiagJacobiSaddlePointPrecond</scope><name>op_</name></member>
+      <member refid="classrocalution_1_1_diag_jacobi_saddle_point_precond_1a854149929f019686c8fe21f455f63629" prot="protected" virt="non-virtual"><scope>rocalution::DiagJacobiSaddlePointPrecond</scope><name>op_mat_format_</name></member>
+      <member refid="classrocalution_1_1_diag_jacobi_saddle_point_precond_1a63f91566373af3863173415396b5caf6" prot="protected" virt="non-virtual"><scope>rocalution::DiagJacobiSaddlePointPrecond</scope><name>permutation_</name></member>
+      <member refid="classrocalution_1_1_solver_1a2acdb829fa657a7b3e680d1ee6005c9b" prot="protected" virt="non-virtual"><scope>rocalution::DiagJacobiSaddlePointPrecond</scope><name>precond_</name></member>
+      <member refid="classrocalution_1_1_diag_jacobi_saddle_point_precond_1a377796d6fa924dd6611665307964f225" prot="protected" virt="non-virtual"><scope>rocalution::DiagJacobiSaddlePointPrecond</scope><name>precond_mat_format_</name></member>
+      <member refid="classrocalution_1_1_preconditioner_1a964b8c3f97a675f8a098b7539d8a6600" prot="public" virt="non-virtual"><scope>rocalution::DiagJacobiSaddlePointPrecond</scope><name>Preconditioner</name></member>
+      <member refid="classrocalution_1_1_diag_jacobi_saddle_point_precond_1a25a5ae4f6c652c3c35e7783597ffa76d" prot="public" virt="virtual"><scope>rocalution::DiagJacobiSaddlePointPrecond</scope><name>Print</name></member>
+      <member refid="classrocalution_1_1_preconditioner_1aa16516bd94c4e5a931ec3adad6b2081b" prot="protected" virt="virtual"><scope>rocalution::DiagJacobiSaddlePointPrecond</scope><name>PrintEnd_</name></member>
+      <member refid="classrocalution_1_1_preconditioner_1abf90b743371c8d0159a6cad44e8595f3" prot="protected" virt="virtual"><scope>rocalution::DiagJacobiSaddlePointPrecond</scope><name>PrintStart_</name></member>
+      <member refid="classrocalution_1_1_solver_1acd20a051f0560a77645e35361df8f87c" prot="public" virt="virtual"><scope>rocalution::DiagJacobiSaddlePointPrecond</scope><name>ReBuildNumeric</name></member>
+      <member refid="classrocalution_1_1_solver_1a91354c5c116742c58d9eb2094cc6a68e" prot="public" virt="virtual"><scope>rocalution::DiagJacobiSaddlePointPrecond</scope><name>ResetOperator</name></member>
+      <member refid="classrocalution_1_1_diag_jacobi_saddle_point_precond_1a81cdf6853ef9ade9f83d4d99724b979e" prot="protected" virt="non-virtual"><scope>rocalution::DiagJacobiSaddlePointPrecond</scope><name>rhs_</name></member>
+      <member refid="classrocalution_1_1_diag_jacobi_saddle_point_precond_1a28261da44012e342fb9920719fe95bbe" prot="protected" virt="non-virtual"><scope>rocalution::DiagJacobiSaddlePointPrecond</scope><name>rhs_1_</name></member>
+      <member refid="classrocalution_1_1_diag_jacobi_saddle_point_precond_1aa9164758db14b3b62085daa9940ee119" prot="protected" virt="non-virtual"><scope>rocalution::DiagJacobiSaddlePointPrecond</scope><name>rhs_2_</name></member>
+      <member refid="classrocalution_1_1_rocalution_obj_1ad60a8b2047aad74e488c552264fa7737" prot="public" virt="non-virtual"><scope>rocalution::DiagJacobiSaddlePointPrecond</scope><name>RocalutionObj</name></member>
+      <member refid="classrocalution_1_1_diag_jacobi_saddle_point_precond_1a9f07c62267b4982122a63b3a1a1ea7e3" prot="protected" virt="non-virtual"><scope>rocalution::DiagJacobiSaddlePointPrecond</scope><name>S_</name></member>
+      <member refid="classrocalution_1_1_diag_jacobi_saddle_point_precond_1ae568d22db29f0cd3b83948e10ad19cbd" prot="protected" virt="non-virtual"><scope>rocalution::DiagJacobiSaddlePointPrecond</scope><name>S_solver_</name></member>
+      <member refid="classrocalution_1_1_diag_jacobi_saddle_point_precond_1a565eeff2293d71a97b9fd1d00423945e" prot="public" virt="non-virtual"><scope>rocalution::DiagJacobiSaddlePointPrecond</scope><name>Set</name></member>
+      <member refid="classrocalution_1_1_solver_1a12765b63efe75bc88406a8d6ebb5aacc" prot="public" virt="non-virtual"><scope>rocalution::DiagJacobiSaddlePointPrecond</scope><name>SetOperator</name></member>
+      <member refid="classrocalution_1_1_diag_jacobi_saddle_point_precond_1a437c30fbf7c94b2e5be5a58802b4a420" prot="protected" virt="non-virtual"><scope>rocalution::DiagJacobiSaddlePointPrecond</scope><name>size_</name></member>
+      <member refid="classrocalution_1_1_diag_jacobi_saddle_point_precond_1a3ef5a66eaaac329c912a75b21450fa36" prot="public" virt="virtual"><scope>rocalution::DiagJacobiSaddlePointPrecond</scope><name>Solve</name></member>
+      <member refid="classrocalution_1_1_solver_1a009956b05d4d5d1d38e4c24341b14a66" prot="public" virt="non-virtual"><scope>rocalution::DiagJacobiSaddlePointPrecond</scope><name>Solver</name></member>
+      <member refid="classrocalution_1_1_preconditioner_1a2d2f41ddc040d777783d2591c8324508" prot="public" virt="virtual"><scope>rocalution::DiagJacobiSaddlePointPrecond</scope><name>SolveZeroSol</name></member>
+      <member refid="classrocalution_1_1_solver_1a17c2830a0ede8d82d1336aa25da6f907" prot="public" virt="virtual"><scope>rocalution::DiagJacobiSaddlePointPrecond</scope><name>Sync</name></member>
+      <member refid="classrocalution_1_1_solver_1a2ee162346e0d52543f9d3d25fe70ea8a" prot="protected" virt="non-virtual"><scope>rocalution::DiagJacobiSaddlePointPrecond</scope><name>verb_</name></member>
+      <member refid="classrocalution_1_1_solver_1aa2ab9c17de96add5e3ad30e7cabf0ea7" prot="public" virt="virtual"><scope>rocalution::DiagJacobiSaddlePointPrecond</scope><name>Verbose</name></member>
+      <member refid="classrocalution_1_1_diag_jacobi_saddle_point_precond_1afe624dff82431f9adca9b40f7d82344f" prot="protected" virt="non-virtual"><scope>rocalution::DiagJacobiSaddlePointPrecond</scope><name>x_</name></member>
+      <member refid="classrocalution_1_1_diag_jacobi_saddle_point_precond_1a933e126d4702ad207b1c2192a146ab78" prot="protected" virt="non-virtual"><scope>rocalution::DiagJacobiSaddlePointPrecond</scope><name>x_1_</name></member>
+      <member refid="classrocalution_1_1_diag_jacobi_saddle_point_precond_1aadd3e3c67feb39749a155a5c0ec547d3" prot="protected" virt="non-virtual"><scope>rocalution::DiagJacobiSaddlePointPrecond</scope><name>x_1tmp_</name></member>
+      <member refid="classrocalution_1_1_diag_jacobi_saddle_point_precond_1a608d9c6e3132f2b93688e85fb722f0a5" prot="protected" virt="non-virtual"><scope>rocalution::DiagJacobiSaddlePointPrecond</scope><name>x_2_</name></member>
+      <member refid="classrocalution_1_1_diag_jacobi_saddle_point_precond_1a484b32ba2cc33bb2566d7660234f4415" prot="public" virt="virtual"><scope>rocalution::DiagJacobiSaddlePointPrecond</scope><name>~DiagJacobiSaddlePointPrecond</name></member>
+      <member refid="classrocalution_1_1_preconditioner_1aac6cfbb3d6c5cd248d7b7dabac096a76" prot="public" virt="virtual"><scope>rocalution::DiagJacobiSaddlePointPrecond</scope><name>~Preconditioner</name></member>
+      <member refid="classrocalution_1_1_rocalution_obj_1a55a2f93f798cebdda6343b20db959e2d" prot="public" virt="virtual"><scope>rocalution::DiagJacobiSaddlePointPrecond</scope><name>~RocalutionObj</name></member>
+      <member refid="classrocalution_1_1_solver_1af861566a540fc6cc399c844bbc789ec6" prot="public" virt="virtual"><scope>rocalution::DiagJacobiSaddlePointPrecond</scope><name>~Solver</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -3,161 +3,218 @@
   <compounddef id="unsmoothed__amg_8cpp" kind="file" language="C++">
     <compoundname>unsmoothed_amg.cpp</compoundname>
     <includes local="yes">../../utils/def.hpp</includes>
-    <includes local="yes">unsmoothed_amg.hpp</includes>
-    <includes local="yes">/home/tcs/Jan24/Jan24_libraries_testing/ROCm_Libraries/rocALUTION/src/solvers/solver.hpp</includes>
-    <includes local="yes">/home/tcs/Jan24/Jan24_libraries_testing/ROCm_Libraries/rocALUTION/src/solvers/multigrid/base_amg.hpp</includes>
-    <includes local="no">vector</includes>
+    <includes refid="unsmoothed__amg_8hpp" local="yes">unsmoothed_amg.hpp</includes>
     <includes refid="local__matrix_8hpp" local="yes">../../base/local_matrix.hpp</includes>
     <includes refid="local__vector_8hpp" local="yes">../../base/local_vector.hpp</includes>
-    <includes local="yes">../../solvers/preconditioners/preconditioner_multicolored_gs.hpp</includes>
+    <includes refid="preconditioner__multicolored__gs_8hpp" local="yes">../../solvers/preconditioners/preconditioner_multicolored_gs.hpp</includes>
     <includes local="yes">../../utils/log.hpp</includes>
     <includes local="yes">../../utils/math_functions.hpp</includes>
     <incdepgraph>
-      <node id="787">
-        <label>ROCm_Libraries/rocALUTION/src/solvers/multigrid/unsmoothed_amg.cpp</label>
-        <link refid="unsmoothed__amg_8cpp"/>
-        <childnode refid="788" relation="include">
-        </childnode>
-        <childnode refid="789" relation="include">
-        </childnode>
-        <childnode refid="790" relation="include">
-        </childnode>
-        <childnode refid="791" relation="include">
-        </childnode>
-        <childnode refid="792" relation="include">
-        </childnode>
-        <childnode refid="793" relation="include">
-        </childnode>
-        <childnode refid="805" relation="include">
-        </childnode>
-        <childnode refid="807" relation="include">
-        </childnode>
-        <childnode refid="808" relation="include">
-        </childnode>
-        <childnode refid="809" relation="include">
-        </childnode>
-      </node>
-      <node id="797">
-        <label>backend_manager.hpp</label>
-        <link refid="backend__manager_8hpp_source"/>
-        <childnode refid="798" relation="include">
-        </childnode>
-        <childnode refid="799" relation="include">
-        </childnode>
-        <childnode refid="800" relation="include">
-        </childnode>
-        <childnode refid="792" relation="include">
-        </childnode>
-        <childnode refid="801" relation="include">
-        </childnode>
-      </node>
-      <node id="795">
-        <label>operator.hpp</label>
-        <link refid="operator_8hpp_source"/>
-        <childnode refid="794" relation="include">
-        </childnode>
-        <childnode refid="796" relation="include">
-        </childnode>
-        <childnode refid="798" relation="include">
-        </childnode>
-        <childnode refid="801" relation="include">
-        </childnode>
-        <childnode refid="803" relation="include">
-        </childnode>
-      </node>
-      <node id="801">
-        <label>string</label>
-      </node>
-      <node id="800">
-        <label>map</label>
-      </node>
-      <node id="799">
-        <label>fstream</label>
-      </node>
-      <node id="804">
-        <label>matrix_formats.hpp</label>
-      </node>
-      <node id="805">
-        <label>../../base/local_vector.hpp</label>
+      <node id="1365">
+        <label>../base/local_vector.hpp</label>
         <link refid="local__vector_8hpp_source"/>
-        <childnode refid="794" relation="include">
+        <childnode refid="1366" relation="include">
         </childnode>
-        <childnode refid="806" relation="include">
-        </childnode>
-      </node>
-      <node id="796">
-        <label>base_rocalution.hpp</label>
-        <link refid="base__rocalution_8hpp_source"/>
-        <childnode refid="797" relation="include">
-        </childnode>
-        <childnode refid="802" relation="include">
-        </childnode>
-        <childnode refid="792" relation="include">
+        <childnode refid="1367" relation="include">
         </childnode>
       </node>
-      <node id="807">
-        <label>../../solvers/preconditioners/preconditioner_multicolored_gs.hpp</label>
-      </node>
-      <node id="793">
-        <label>../../base/local_matrix.hpp</label>
-        <link refid="local__matrix_8hpp_source"/>
-        <childnode refid="794" relation="include">
-        </childnode>
-        <childnode refid="795" relation="include">
-        </childnode>
-        <childnode refid="797" relation="include">
-        </childnode>
-        <childnode refid="804" relation="include">
-        </childnode>
-        <childnode refid="801" relation="include">
+      <node id="1375">
+        <label>preconditioner.hpp</label>
+        <link refid="preconditioner_8hpp_source"/>
+        <childnode refid="1355" relation="include">
         </childnode>
       </node>
-      <node id="794">
-        <label>../utils/types.hpp</label>
-      </node>
-      <node id="789">
+      <node id="1354">
         <label>unsmoothed_amg.hpp</label>
+        <link refid="unsmoothed__amg_8hpp_source"/>
+        <childnode refid="1355" relation="include">
+        </childnode>
+        <childnode refid="1369" relation="include">
+        </childnode>
+        <childnode refid="1357" relation="include">
+        </childnode>
       </node>
-      <node id="792">
-        <label>vector</label>
-      </node>
-      <node id="788">
-        <label>../../utils/def.hpp</label>
-      </node>
-      <node id="808">
-        <label>../../utils/log.hpp</label>
-      </node>
-      <node id="803">
-        <label>cstdlib</label>
-      </node>
-      <node id="791">
-        <label>/home/tcs/Jan24/Jan24_libraries_testing/ROCm_Libraries/rocALUTION/src/solvers/multigrid/base_amg.hpp</label>
-      </node>
-      <node id="798">
-        <label>iostream</label>
-      </node>
-      <node id="790">
-        <label>/home/tcs/Jan24/Jan24_libraries_testing/ROCm_Libraries/rocALUTION/src/solvers/solver.hpp</label>
-      </node>
-      <node id="806">
+      <node id="1367">
         <label>vector.hpp</label>
         <link refid="vector_8hpp_source"/>
-        <childnode refid="794" relation="include">
+        <childnode refid="1366" relation="include">
         </childnode>
-        <childnode refid="796" relation="include">
+        <childnode refid="1359" relation="include">
         </childnode>
-        <childnode refid="798" relation="include">
+        <childnode refid="1361" relation="include">
         </childnode>
-        <childnode refid="801" relation="include">
+        <childnode refid="1358" relation="include">
         </childnode>
-        <childnode refid="803" relation="include">
+        <childnode refid="1368" relation="include">
         </childnode>
       </node>
-      <node id="802">
+      <node id="1371">
+        <label>../../base/operator.hpp</label>
+        <link refid="operator_8hpp_source"/>
+        <childnode refid="1366" relation="include">
+        </childnode>
+        <childnode refid="1359" relation="include">
+        </childnode>
+        <childnode refid="1361" relation="include">
+        </childnode>
+        <childnode refid="1358" relation="include">
+        </childnode>
+        <childnode refid="1368" relation="include">
+        </childnode>
+      </node>
+      <node id="1358">
+        <label>string</label>
+      </node>
+      <node id="1363">
+        <label>map</label>
+      </node>
+      <node id="1355">
+        <label>../solver.hpp</label>
+        <link refid="solver_8hpp_source"/>
+        <childnode refid="1356" relation="include">
+        </childnode>
+        <childnode refid="1359" relation="include">
+        </childnode>
+        <childnode refid="1365" relation="include">
+        </childnode>
+      </node>
+      <node id="1374">
+        <label>../../solvers/preconditioners/preconditioner_multicolored_gs.hpp</label>
+        <link refid="preconditioner__multicolored__gs_8hpp_source"/>
+        <childnode refid="1355" relation="include">
+        </childnode>
+        <childnode refid="1375" relation="include">
+        </childnode>
+        <childnode refid="1376" relation="include">
+        </childnode>
+        <childnode refid="1365" relation="include">
+        </childnode>
+        <childnode refid="1357" relation="include">
+        </childnode>
+      </node>
+      <node id="1362">
+        <label>fstream</label>
+      </node>
+      <node id="1373">
+        <label>matrix_formats.hpp</label>
+      </node>
+      <node id="1370">
+        <label>base_multigrid.hpp</label>
+        <link refid="base__multigrid_8hpp_source"/>
+        <childnode refid="1355" relation="include">
+        </childnode>
+        <childnode refid="1371" relation="include">
+        </childnode>
+      </node>
+      <node id="1366">
+        <label>../utils/types.hpp</label>
+      </node>
+      <node id="1359">
+        <label>../base/base_rocalution.hpp</label>
+        <link refid="base__rocalution_8hpp_source"/>
+        <childnode refid="1360" relation="include">
+        </childnode>
+        <childnode refid="1364" relation="include">
+        </childnode>
+        <childnode refid="1357" relation="include">
+        </childnode>
+      </node>
+      <node id="1357">
+        <label>vector</label>
+      </node>
+      <node id="1353">
+        <label>../../utils/def.hpp</label>
+      </node>
+      <node id="1377">
+        <label>../../utils/log.hpp</label>
+      </node>
+      <node id="1368">
+        <label>cstdlib</label>
+      </node>
+      <node id="1376">
+        <label>preconditioner_multicolored.hpp</label>
+        <link refid="preconditioner__multicolored_8hpp_source"/>
+        <childnode refid="1355" relation="include">
+        </childnode>
+        <childnode refid="1375" relation="include">
+        </childnode>
+        <childnode refid="1365" relation="include">
+        </childnode>
+        <childnode refid="1357" relation="include">
+        </childnode>
+      </node>
+      <node id="1361">
+        <label>iostream</label>
+      </node>
+      <node id="1360">
+        <label>backend_manager.hpp</label>
+        <link refid="backend__manager_8hpp_source"/>
+        <childnode refid="1361" relation="include">
+        </childnode>
+        <childnode refid="1362" relation="include">
+        </childnode>
+        <childnode refid="1363" relation="include">
+        </childnode>
+        <childnode refid="1357" relation="include">
+        </childnode>
+        <childnode refid="1358" relation="include">
+        </childnode>
+      </node>
+      <node id="1369">
+        <label>base_amg.hpp</label>
+        <link refid="base__amg_8hpp_source"/>
+        <childnode refid="1355" relation="include">
+        </childnode>
+        <childnode refid="1370" relation="include">
+        </childnode>
+        <childnode refid="1357" relation="include">
+        </childnode>
+      </node>
+      <node id="1356">
+        <label>iter_ctrl.hpp</label>
+        <link refid="iter__ctrl_8hpp_source"/>
+        <childnode refid="1357" relation="include">
+        </childnode>
+        <childnode refid="1358" relation="include">
+        </childnode>
+      </node>
+      <node id="1352">
+        <label>/home/tcs/rocALUTION/src/solvers/multigrid/unsmoothed_amg.cpp</label>
+        <link refid="unsmoothed__amg_8cpp"/>
+        <childnode refid="1353" relation="include">
+        </childnode>
+        <childnode refid="1354" relation="include">
+        </childnode>
+        <childnode refid="1372" relation="include">
+        </childnode>
+        <childnode refid="1365" relation="include">
+        </childnode>
+        <childnode refid="1374" relation="include">
+        </childnode>
+        <childnode refid="1377" relation="include">
+        </childnode>
+        <childnode refid="1378" relation="include">
+        </childnode>
+      </node>
+      <node id="1364">
         <label>complex</label>
       </node>
-      <node id="809">
+      <node id="1378">
         <label>../../utils/math_functions.hpp</label>
+      </node>
+      <node id="1372">
+        <label>../../base/local_matrix.hpp</label>
+        <link refid="local__matrix_8hpp_source"/>
+        <childnode refid="1366" relation="include">
+        </childnode>
+        <childnode refid="1371" relation="include">
+        </childnode>
+        <childnode refid="1360" relation="include">
+        </childnode>
+        <childnode refid="1373" relation="include">
+        </childnode>
+        <childnode refid="1358" relation="include">
+        </childnode>
       </node>
     </incdepgraph>
     <innernamespace refid="namespacerocalution">rocalution</innernamespace>
@@ -221,7 +278,7 @@
 <codeline lineno="53"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="54"><highlight class="normal"></highlight></codeline>
 <codeline lineno="55"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="56"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>UAAMG&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::Print(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_u_a_a_m_g_1a413eeb6538f062541db405652d3667c5" kindref="member">UAAMG&lt;OperatorType, VectorType, ValueType&gt;::Print</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
 <codeline lineno="57"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
 <codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>LOG_INFO(</highlight><highlight class="stringliteral">&quot;UAAMG<sp/>solver&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>LOG_INFO(</highlight><highlight class="stringliteral">&quot;UAAMG<sp/>number<sp/>of<sp/>levels<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>this-&gt;levels_);</highlight></codeline>
@@ -233,7 +290,7 @@
 <codeline lineno="65"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="66"><highlight class="normal"></highlight></codeline>
 <codeline lineno="67"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="68"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>UAAMG&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::PrintStart_(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_u_a_a_m_g_1aa594849af2e708e94b8b65e286fcb119" kindref="member">UAAMG&lt;OperatorType, VectorType, ValueType&gt;::PrintStart_</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
 <codeline lineno="69"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
 <codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>assert(this-&gt;levels_<sp/>&gt;<sp/>0);</highlight></codeline>
 <codeline lineno="71"><highlight class="normal"></highlight></codeline>
@@ -247,13 +304,13 @@
 <codeline lineno="79"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="80"><highlight class="normal"></highlight></codeline>
 <codeline lineno="81"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="82"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>UAAMG&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::PrintEnd_(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_u_a_a_m_g_1a5068d9ebe8169d7eb83b16f8eca122d6" kindref="member">UAAMG&lt;OperatorType, VectorType, ValueType&gt;::PrintEnd_</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
 <codeline lineno="83"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
 <codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>LOG_INFO(</highlight><highlight class="stringliteral">&quot;UAAMG<sp/>ends&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="85"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="86"><highlight class="normal"></highlight></codeline>
 <codeline lineno="87"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="88"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>UAAMG&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::SetOverInterp(ValueType<sp/>overInterp)</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_u_a_a_m_g_1a37661f011d64a05a3dff0b2cb74d3b9b" kindref="member">UAAMG&lt;OperatorType, VectorType, ValueType&gt;::SetOverInterp</ref>(ValueType<sp/>overInterp)</highlight></codeline>
 <codeline lineno="89"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>log_debug(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;UAAMG::SetOverInterp()&quot;</highlight><highlight class="normal">,<sp/>overInterp);</highlight></codeline>
 <codeline lineno="91"><highlight class="normal"></highlight></codeline>
@@ -261,7 +318,7 @@
 <codeline lineno="93"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="94"><highlight class="normal"></highlight></codeline>
 <codeline lineno="95"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="96"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>UAAMG&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::SetCouplingStrength(ValueType<sp/>eps)</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_u_a_a_m_g_1a7d42a31f416971e4566a8db0c519dd7b" kindref="member">UAAMG&lt;OperatorType, VectorType, ValueType&gt;::SetCouplingStrength</ref>(ValueType<sp/>eps)</highlight></codeline>
 <codeline lineno="97"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>log_debug(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;UAAMG::SetCouplingStrength()&quot;</highlight><highlight class="normal">,<sp/>eps);</highlight></codeline>
 <codeline lineno="99"><highlight class="normal"></highlight></codeline>
@@ -269,7 +326,7 @@
 <codeline lineno="101"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="102"><highlight class="normal"></highlight></codeline>
 <codeline lineno="103"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="104"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>UAAMG&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::BuildSmoothers(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_u_a_a_m_g_1aa7d5a037d6552044b7fac6ff7e6a8b49" kindref="member">UAAMG&lt;OperatorType, VectorType, ValueType&gt;::BuildSmoothers</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
 <codeline lineno="105"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/>log_debug(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;UAAMG::BuildSmoothers()&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;<sp/>#*#<sp/>begin&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="107"><highlight class="normal"></highlight></codeline>
@@ -296,7 +353,7 @@
 <codeline lineno="128"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="129"><highlight class="normal"></highlight></codeline>
 <codeline lineno="130"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="131"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>UAAMG&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::ReBuildNumeric(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_u_a_a_m_g_1a84ac9a588c8081474912e8adde2b8a0f" kindref="member">UAAMG&lt;OperatorType, VectorType, ValueType&gt;::ReBuildNumeric</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
 <codeline lineno="132"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/>log_debug(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;UAAMG::ReBuildNumeric()&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;<sp/>#*#<sp/>begin&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="134"><highlight class="normal"></highlight></codeline>
@@ -401,7 +458,7 @@
 <codeline lineno="233"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="234"><highlight class="normal"></highlight></codeline>
 <codeline lineno="235"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="236"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>UAAMG&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::Aggregate_(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>OperatorType&amp;<sp/>op,</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_u_a_a_m_g_1a76d9ee2250b9626808cdcfe881c6b9a8" kindref="member">UAAMG&lt;OperatorType, VectorType, ValueType&gt;::Aggregate_</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>OperatorType&amp;<sp/>op,</highlight></codeline>
 <codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Operator&lt;ValueType&gt;*<sp/>pro,</highlight></codeline>
 <codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Operator&lt;ValueType&gt;*<sp/>res,</highlight></codeline>
 <codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>OperatorType*<sp/>coarse)</highlight></codeline>
@@ -464,6 +521,6 @@
 <codeline lineno="296"><highlight class="normal"></highlight></codeline>
 <codeline lineno="297"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>rocalution</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
-    <location file="ROCm_Libraries/rocALUTION/src/solvers/multigrid/unsmoothed_amg.cpp"/>
+    <location file="/home/tcs/rocALUTION/src/solvers/multigrid/unsmoothed_amg.cpp"/>
   </compounddef>
 </doxygen>

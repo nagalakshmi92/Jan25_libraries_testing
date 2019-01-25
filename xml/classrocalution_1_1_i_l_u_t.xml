@@ -1,0 +1,373 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classrocalution_1_1_i_l_u_t" kind="class" language="C++" prot="public">
+    <compoundname>rocalution::ILUT</compoundname>
+    <basecompoundref refid="classrocalution_1_1_preconditioner" prot="public" virt="non-virtual">rocalution::Preconditioner&lt; OperatorType, VectorType, ValueType &gt;</basecompoundref>
+    <includes refid="preconditioner_8hpp" local="no">preconditioner.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>class OperatorType</type>
+      </param>
+      <param>
+        <type>class VectorType</type>
+      </param>
+      <param>
+        <type>typename ValueType</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classrocalution_1_1_i_l_u_t_1ad7de04883a657b62daaa38161db2eb97" prot="private" static="no" mutable="no">
+        <type>OperatorType</type>
+        <definition>OperatorType rocalution::ILUT&lt; OperatorType, VectorType, ValueType &gt;::ILUT_</definition>
+        <argsstring></argsstring>
+        <name>ILUT_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner.hpp" line="250" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner.hpp" bodystart="250" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrocalution_1_1_i_l_u_t_1a479d0e53cdb57dccba6f3ce26ef8bfcf" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double rocalution::ILUT&lt; OperatorType, VectorType, ValueType &gt;::t_</definition>
+        <argsstring></argsstring>
+        <name>t_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner.hpp" line="251" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner.hpp" bodystart="251" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrocalution_1_1_i_l_u_t_1ab6083723cdb8a11dff42d425adf48d38" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int rocalution::ILUT&lt; OperatorType, VectorType, ValueType &gt;::max_row_</definition>
+        <argsstring></argsstring>
+        <name>max_row_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner.hpp" line="252" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner.hpp" bodystart="252" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classrocalution_1_1_i_l_u_t_1ac3a0d157628762344712403dc099e40c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>rocalution::ILUT&lt; OperatorType, VectorType, ValueType &gt;::ILUT</definition>
+        <argsstring>()</argsstring>
+        <name>ILUT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner.hpp" line="230" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner.cpp" bodystart="499" bodyend="505"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_i_l_u_t_1a950b39a20e834a136d7eaa3dd03b1cf5" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>rocalution::ILUT&lt; OperatorType, VectorType, ValueType &gt;::~ILUT</definition>
+        <argsstring>()</argsstring>
+        <name>~ILUT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner.hpp" line="231" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner.cpp" bodystart="508" bodyend="513"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_i_l_u_t_1a297136e53d030491de05b3f3321165c4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void rocalution::ILUT&lt; OperatorType, VectorType, ValueType &gt;::Print</definition>
+        <argsstring>(void) const</argsstring>
+        <name>Print</name>
+        <reimplements refid="classrocalution_1_1_solver_1a57992cfc687f3bf260964ad2fc19c467">Print</reimplements>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Print information about the solver. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner.hpp" line="233" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner.cpp" bodystart="516" bodyend="524"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_i_l_u_t_1a0bd890cab03a80e483d6f32efd15ad0e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void rocalution::ILUT&lt; OperatorType, VectorType, ValueType &gt;::Solve</definition>
+        <argsstring>(const VectorType &amp;rhs, VectorType *x)</argsstring>
+        <name>Solve</name>
+        <reimplements refid="classrocalution_1_1_solver_1a69025eb1d2bc7f1266899c2739c82725">Solve</reimplements>
+        <param>
+          <type>const VectorType &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <param>
+          <type>VectorType *</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+<para>Solve <ref refid="classrocalution_1_1_operator" kindref="compound">Operator</ref> x = rhs. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner.hpp" line="234" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner.cpp" bodystart="598" bodyend="609"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_i_l_u_t_1aeb87440eca213964f7e226d8a6fa9f8a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void rocalution::ILUT&lt; OperatorType, VectorType, ValueType &gt;::Set</definition>
+        <argsstring>(double t)</argsstring>
+        <name>Set</name>
+        <param>
+          <type>double</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+<para>Set drop-off threshold. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner.hpp" line="237" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner.cpp" bodystart="527" bodyend="535"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_i_l_u_t_1af8c3d02dd76842598f6e4f7b6a625598" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void rocalution::ILUT&lt; OperatorType, VectorType, ValueType &gt;::Set</definition>
+        <argsstring>(double t, int maxrow)</argsstring>
+        <name>Set</name>
+        <param>
+          <type>double</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>maxrow</declname>
+        </param>
+        <briefdescription>
+<para>Set drop-off threshold and maximum fill-ins per row. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner.hpp" line="240" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner.cpp" bodystart="538" bodyend="547"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_i_l_u_t_1ab9b03fd8daede6f30006fabe1cb6c307" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void rocalution::ILUT&lt; OperatorType, VectorType, ValueType &gt;::Build</definition>
+        <argsstring>(void)</argsstring>
+        <name>Build</name>
+        <reimplements refid="classrocalution_1_1_solver_1a84754d7422ad3fb35c17c61f0a609c7a">Build</reimplements>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Build the solver (data allocation, structure and numerical computation) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner.hpp" line="242" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner.cpp" bodystart="550" bodyend="569"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_i_l_u_t_1a421db5c318d9ae63587ffbc4b75ff05c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void rocalution::ILUT&lt; OperatorType, VectorType, ValueType &gt;::Clear</definition>
+        <argsstring>(void)</argsstring>
+        <name>Clear</name>
+        <reimplements refid="classrocalution_1_1_solver_1aa8839d3ba527d75fedd29fdbe9bd651f">Clear</reimplements>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Clear (free all local data) the solver. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner.hpp" line="243" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner.cpp" bodystart="572" bodyend="579"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classrocalution_1_1_i_l_u_t_1ae54661639b3d67fd004912a5323a80dd" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void rocalution::ILUT&lt; OperatorType, VectorType, ValueType &gt;::MoveToHostLocalData_</definition>
+        <argsstring>(void)</argsstring>
+        <name>MoveToHostLocalData_</name>
+        <reimplements refid="classrocalution_1_1_solver_1aa1e8be1bd2107543c7390a81f8cee8cb">MoveToHostLocalData_</reimplements>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Move all local data to the host. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner.hpp" line="246" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner.cpp" bodystart="582" bodyend="587"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_i_l_u_t_1a3ba005e3220db06c723260e43d2a98d6" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void rocalution::ILUT&lt; OperatorType, VectorType, ValueType &gt;::MoveToAcceleratorLocalData_</definition>
+        <argsstring>(void)</argsstring>
+        <name>MoveToAcceleratorLocalData_</name>
+        <reimplements refid="classrocalution_1_1_solver_1a8ce29de0bdda9f35a6a687fd06ac9b11">MoveToAcceleratorLocalData_</reimplements>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Move all local data to the accelerator. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner.hpp" line="247" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner.cpp" bodystart="590" bodyend="595"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Incomplete <ref refid="classrocalution_1_1_l_u" kindref="compound">LU</ref> Factorization based on threshold. </para>    </briefdescription>
+    <detaileddescription>
+<para>The Incomplete <ref refid="classrocalution_1_1_l_u" kindref="compound">LU</ref> Factorization based on threshold computes a sparse lower and sparse upper triangular matrix such that <formula id="25">$A = LU - R$</formula>. Fill-in values are dropped depending on a threshold and number of maximal fill-ins per row. SAAD</para><para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>OperatorType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- can be <ref refid="classrocalution_1_1_local_matrix" kindref="compound">LocalMatrix</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>VectorType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- can be <ref refid="classrocalution_1_1_local_vector" kindref="compound">LocalVector</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ValueType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- can be float, double, std::complex&lt;float&gt; or std::complex&lt;double&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="343">
+        <label>rocalution::Preconditioner&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_preconditioner"/>
+        <childnode refid="344" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="344">
+        <label>rocalution::Solver&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_solver"/>
+        <childnode refid="345" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="342">
+        <label>rocalution::ILUT&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_i_l_u_t"/>
+        <childnode refid="343" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="345">
+        <label>rocalution::RocalutionObj</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="351">
+        <label>rocalution::Vector&lt; int &gt;</label>
+        <link refid="classrocalution_1_1_vector"/>
+        <childnode refid="352" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="352">
+        <label>rocalution::BaseRocalution&lt; ValueType &gt;</label>
+        <link refid="classrocalution_1_1_base_rocalution"/>
+        <childnode refid="349" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="347">
+        <label>rocalution::Preconditioner&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_preconditioner"/>
+        <childnode refid="348" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="348">
+        <label>rocalution::Solver&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_solver"/>
+        <childnode refid="349" relation="public-inheritance">
+        </childnode>
+        <childnode refid="350" relation="usage">
+          <edgelabel>permutation_</edgelabel>
+        </childnode>
+        <childnode refid="353" relation="usage">
+          <edgelabel>op_</edgelabel>
+        </childnode>
+      </node>
+      <node id="346">
+        <label>rocalution::ILUT&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_i_l_u_t"/>
+        <childnode refid="347" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="350">
+        <label>rocalution::LocalVector&lt; int &gt;</label>
+        <link refid="classrocalution_1_1_local_vector"/>
+        <childnode refid="351" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="349">
+        <label>rocalution::RocalutionObj</label>
+      </node>
+      <node id="353">
+        <label>OperatorType</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner.hpp" line="228" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner.hpp" bodystart="227" bodyend="253"/>
+    <listofallmembers>
+      <member refid="classrocalution_1_1_i_l_u_t_1ab9b03fd8daede6f30006fabe1cb6c307" prot="public" virt="virtual"><scope>rocalution::ILUT</scope><name>Build</name></member>
+      <member refid="classrocalution_1_1_solver_1a64924a0c87d60d2e4bf9fa295d0152cb" prot="protected" virt="non-virtual"><scope>rocalution::ILUT</scope><name>build_</name></member>
+      <member refid="classrocalution_1_1_solver_1a0d11ee9943f785db285f0ef5c08c64eb" prot="public" virt="virtual"><scope>rocalution::ILUT</scope><name>BuildMoveToAcceleratorAsync</name></member>
+      <member refid="classrocalution_1_1_i_l_u_t_1a421db5c318d9ae63587ffbc4b75ff05c" prot="public" virt="virtual"><scope>rocalution::ILUT</scope><name>Clear</name></member>
+      <member refid="classrocalution_1_1_rocalution_obj_1a4bba5aeaf4fd705efc00402f1f6ed40b" prot="protected" virt="non-virtual"><scope>rocalution::ILUT</scope><name>global_obj_id_</name></member>
+      <member refid="classrocalution_1_1_i_l_u_t_1ac3a0d157628762344712403dc099e40c" prot="public" virt="non-virtual"><scope>rocalution::ILUT</scope><name>ILUT</name></member>
+      <member refid="classrocalution_1_1_i_l_u_t_1ad7de04883a657b62daaa38161db2eb97" prot="private" virt="non-virtual"><scope>rocalution::ILUT</scope><name>ILUT_</name></member>
+      <member refid="classrocalution_1_1_i_l_u_t_1ab6083723cdb8a11dff42d425adf48d38" prot="private" virt="non-virtual"><scope>rocalution::ILUT</scope><name>max_row_</name></member>
+      <member refid="classrocalution_1_1_solver_1ab1b6410cd134c9ad00c1851d400cf0f8" prot="public" virt="virtual"><scope>rocalution::ILUT</scope><name>MoveToAccelerator</name></member>
+      <member refid="classrocalution_1_1_i_l_u_t_1a3ba005e3220db06c723260e43d2a98d6" prot="protected" virt="virtual"><scope>rocalution::ILUT</scope><name>MoveToAcceleratorLocalData_</name></member>
+      <member refid="classrocalution_1_1_solver_1a3c263e65898816f5838184c0af78a044" prot="public" virt="virtual"><scope>rocalution::ILUT</scope><name>MoveToHost</name></member>
+      <member refid="classrocalution_1_1_i_l_u_t_1ae54661639b3d67fd004912a5323a80dd" prot="protected" virt="virtual"><scope>rocalution::ILUT</scope><name>MoveToHostLocalData_</name></member>
+      <member refid="classrocalution_1_1_solver_1ad338b5f99cf339fb33218dd8b958cac4" prot="protected" virt="non-virtual"><scope>rocalution::ILUT</scope><name>op_</name></member>
+      <member refid="classrocalution_1_1_solver_1ac46ab4d19fba48ece463666d37a7dc86" prot="protected" virt="non-virtual"><scope>rocalution::ILUT</scope><name>permutation_</name></member>
+      <member refid="classrocalution_1_1_solver_1a2acdb829fa657a7b3e680d1ee6005c9b" prot="protected" virt="non-virtual"><scope>rocalution::ILUT</scope><name>precond_</name></member>
+      <member refid="classrocalution_1_1_preconditioner_1a964b8c3f97a675f8a098b7539d8a6600" prot="public" virt="non-virtual"><scope>rocalution::ILUT</scope><name>Preconditioner</name></member>
+      <member refid="classrocalution_1_1_i_l_u_t_1a297136e53d030491de05b3f3321165c4" prot="public" virt="virtual"><scope>rocalution::ILUT</scope><name>Print</name></member>
+      <member refid="classrocalution_1_1_preconditioner_1aa16516bd94c4e5a931ec3adad6b2081b" prot="protected" virt="virtual"><scope>rocalution::ILUT</scope><name>PrintEnd_</name></member>
+      <member refid="classrocalution_1_1_preconditioner_1abf90b743371c8d0159a6cad44e8595f3" prot="protected" virt="virtual"><scope>rocalution::ILUT</scope><name>PrintStart_</name></member>
+      <member refid="classrocalution_1_1_solver_1acd20a051f0560a77645e35361df8f87c" prot="public" virt="virtual"><scope>rocalution::ILUT</scope><name>ReBuildNumeric</name></member>
+      <member refid="classrocalution_1_1_solver_1a91354c5c116742c58d9eb2094cc6a68e" prot="public" virt="virtual"><scope>rocalution::ILUT</scope><name>ResetOperator</name></member>
+      <member refid="classrocalution_1_1_rocalution_obj_1ad60a8b2047aad74e488c552264fa7737" prot="public" virt="non-virtual"><scope>rocalution::ILUT</scope><name>RocalutionObj</name></member>
+      <member refid="classrocalution_1_1_i_l_u_t_1aeb87440eca213964f7e226d8a6fa9f8a" prot="public" virt="virtual"><scope>rocalution::ILUT</scope><name>Set</name></member>
+      <member refid="classrocalution_1_1_i_l_u_t_1af8c3d02dd76842598f6e4f7b6a625598" prot="public" virt="virtual"><scope>rocalution::ILUT</scope><name>Set</name></member>
+      <member refid="classrocalution_1_1_solver_1a12765b63efe75bc88406a8d6ebb5aacc" prot="public" virt="non-virtual"><scope>rocalution::ILUT</scope><name>SetOperator</name></member>
+      <member refid="classrocalution_1_1_i_l_u_t_1a0bd890cab03a80e483d6f32efd15ad0e" prot="public" virt="virtual"><scope>rocalution::ILUT</scope><name>Solve</name></member>
+      <member refid="classrocalution_1_1_solver_1a009956b05d4d5d1d38e4c24341b14a66" prot="public" virt="non-virtual"><scope>rocalution::ILUT</scope><name>Solver</name></member>
+      <member refid="classrocalution_1_1_preconditioner_1a2d2f41ddc040d777783d2591c8324508" prot="public" virt="virtual"><scope>rocalution::ILUT</scope><name>SolveZeroSol</name></member>
+      <member refid="classrocalution_1_1_solver_1a17c2830a0ede8d82d1336aa25da6f907" prot="public" virt="virtual"><scope>rocalution::ILUT</scope><name>Sync</name></member>
+      <member refid="classrocalution_1_1_i_l_u_t_1a479d0e53cdb57dccba6f3ce26ef8bfcf" prot="private" virt="non-virtual"><scope>rocalution::ILUT</scope><name>t_</name></member>
+      <member refid="classrocalution_1_1_solver_1a2ee162346e0d52543f9d3d25fe70ea8a" prot="protected" virt="non-virtual"><scope>rocalution::ILUT</scope><name>verb_</name></member>
+      <member refid="classrocalution_1_1_solver_1aa2ab9c17de96add5e3ad30e7cabf0ea7" prot="public" virt="virtual"><scope>rocalution::ILUT</scope><name>Verbose</name></member>
+      <member refid="classrocalution_1_1_i_l_u_t_1a950b39a20e834a136d7eaa3dd03b1cf5" prot="public" virt="virtual"><scope>rocalution::ILUT</scope><name>~ILUT</name></member>
+      <member refid="classrocalution_1_1_preconditioner_1aac6cfbb3d6c5cd248d7b7dabac096a76" prot="public" virt="virtual"><scope>rocalution::ILUT</scope><name>~Preconditioner</name></member>
+      <member refid="classrocalution_1_1_rocalution_obj_1a55a2f93f798cebdda6343b20db959e2d" prot="public" virt="virtual"><scope>rocalution::ILUT</scope><name>~RocalutionObj</name></member>
+      <member refid="classrocalution_1_1_solver_1af861566a540fc6cc399c844bbc789ec6" prot="public" virt="virtual"><scope>rocalution::ILUT</scope><name>~Solver</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

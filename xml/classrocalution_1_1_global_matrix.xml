@@ -21,7 +21,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/global_matrix.hpp" line="230" column="1" bodyfile="ROCm_Libraries/rocALUTION/src/base/global_matrix.hpp" bodystart="230" bodyend="-1"/>
+        <location file="/home/tcs/rocALUTION/src/base/global_matrix.hpp" line="230" column="1" bodyfile="/home/tcs/rocALUTION/src/base/global_matrix.hpp" bodystart="230" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classrocalution_1_1_global_matrix_1a7a917a710acd01a5bc53354d048a2424" prot="private" static="no" mutable="no">
         <type><ref refid="classrocalution_1_1_local_matrix" kindref="compound">LocalMatrix</ref>&lt; ValueType &gt;</type>
@@ -34,7 +34,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/global_matrix.hpp" line="232" column="1" bodyfile="ROCm_Libraries/rocALUTION/src/base/global_matrix.hpp" bodystart="232" bodyend="-1"/>
+        <location file="/home/tcs/rocALUTION/src/base/global_matrix.hpp" line="232" column="1" bodyfile="/home/tcs/rocALUTION/src/base/global_matrix.hpp" bodystart="232" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classrocalution_1_1_global_matrix_1a70e5ef92a6a37bc87ee470778f1bb9a1" prot="private" static="no" mutable="no">
         <type><ref refid="classrocalution_1_1_local_matrix" kindref="compound">LocalMatrix</ref>&lt; ValueType &gt;</type>
@@ -47,7 +47,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/global_matrix.hpp" line="233" column="1" bodyfile="ROCm_Libraries/rocALUTION/src/base/global_matrix.hpp" bodystart="233" bodyend="-1"/>
+        <location file="/home/tcs/rocALUTION/src/base/global_matrix.hpp" line="233" column="1" bodyfile="/home/tcs/rocALUTION/src/base/global_matrix.hpp" bodystart="233" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="friend">
@@ -62,7 +62,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/global_matrix.hpp" line="233" column="1" bodyfile="ROCm_Libraries/rocALUTION/src/base/global_matrix.hpp" bodystart="235" bodyend="-1"/>
+        <location file="/home/tcs/rocALUTION/src/base/global_matrix.hpp" line="233" column="1" bodyfile="/home/tcs/rocALUTION/src/base/global_matrix.hpp" bodystart="235" bodyend="-1"/>
       </memberdef>
       <memberdef kind="friend" id="classrocalution_1_1_global_matrix_1af6b5193a9183697399f1cfe579f62ce8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>friend class</type>
@@ -75,7 +75,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/global_matrix.hpp" line="233" column="1" bodyfile="ROCm_Libraries/rocALUTION/src/base/global_matrix.hpp" bodystart="236" bodyend="-1"/>
+        <location file="/home/tcs/rocALUTION/src/base/global_matrix.hpp" line="233" column="1" bodyfile="/home/tcs/rocALUTION/src/base/global_matrix.hpp" bodystart="236" bodyend="-1"/>
       </memberdef>
       <memberdef kind="friend" id="classrocalution_1_1_global_matrix_1a4332e063cc6b7350ea0ba7b29dbec2c5" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>friend class</type>
@@ -88,7 +88,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/global_matrix.hpp" line="233" column="1" bodyfile="ROCm_Libraries/rocALUTION/src/base/global_matrix.hpp" bodystart="237" bodyend="-1"/>
+        <location file="/home/tcs/rocALUTION/src/base/global_matrix.hpp" line="233" column="1" bodyfile="/home/tcs/rocALUTION/src/base/global_matrix.hpp" bodystart="237" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -103,7 +103,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/global_matrix.hpp" line="54" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/global_matrix.hpp" line="54" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_global_matrix_1a239d1b9acaebee90bcafc46dba849dd5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -120,7 +120,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/global_matrix.hpp" line="56" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/global_matrix.hpp" line="56" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_global_matrix_1a55127cdfe0a768db235eff066f8ff65b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type></type>
@@ -133,7 +133,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/global_matrix.hpp" line="57" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/global_matrix.hpp" line="57" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_global_matrix_1a8932d6188eac1af1b17b4a2f9f314ae7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
         <type>IndexType2</type>
@@ -150,7 +150,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/global_matrix.hpp" line="59" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/global_matrix.hpp" line="59" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_global_matrix_1a00a41023e373bbc9e1a3949fecdb25c2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
         <type>IndexType2</type>
@@ -167,7 +167,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/global_matrix.hpp" line="60" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/global_matrix.hpp" line="60" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_global_matrix_1a1829ae55194f1ebdb8988b0cd0bdbb5c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
         <type>IndexType2</type>
@@ -184,7 +184,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/global_matrix.hpp" line="61" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/global_matrix.hpp" line="61" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_global_matrix_1a8d495da832312553ce87eba9e545d645" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
         <type>int</type>
@@ -201,7 +201,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/global_matrix.hpp" line="62" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/global_matrix.hpp" line="62" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_global_matrix_1af500f5c9e18f923a5f1a98c2bfa66067" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
         <type>int</type>
@@ -218,7 +218,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/global_matrix.hpp" line="63" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/global_matrix.hpp" line="63" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_global_matrix_1aea3b976ce5d334edd709756db2ad968d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
         <type>int</type>
@@ -235,7 +235,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/global_matrix.hpp" line="64" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/global_matrix.hpp" line="64" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_global_matrix_1aca83e998b4631b863849ba6f3186bcee" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
         <type>int</type>
@@ -252,7 +252,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/global_matrix.hpp" line="65" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/global_matrix.hpp" line="65" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_global_matrix_1a8e9d2f67a90178055b7020b1059f7f47" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
         <type>int</type>
@@ -269,7 +269,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/global_matrix.hpp" line="66" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/global_matrix.hpp" line="66" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_global_matrix_1a29ebbf7d43bb58b0b160c493200240c4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
         <type>int</type>
@@ -286,7 +286,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/global_matrix.hpp" line="67" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/global_matrix.hpp" line="67" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_global_matrix_1aaea5820fdc34b332ec60da1fa53fd5c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -303,7 +303,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/global_matrix.hpp" line="74" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/global_matrix.hpp" line="74" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_global_matrix_1a95d5a480866e92862069e81ab3c68c24" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -320,7 +320,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/global_matrix.hpp" line="75" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/global_matrix.hpp" line="75" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_global_matrix_1a4e38a9f74b2bfbabfcfc3bba8a74008d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -340,7 +340,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/global_matrix.hpp" line="77" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/global_matrix.hpp" line="77" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_global_matrix_1a870b6dec8536dc61b4c0476222ed28ca" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
         <type>bool</type>
@@ -356,7 +356,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/global_matrix.hpp" line="82" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/global_matrix.hpp" line="82" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_global_matrix_1a57abf518a59637c1dd680fcb08e91f20" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -381,7 +381,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/global_matrix.hpp" line="85" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/global_matrix.hpp" line="85" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_global_matrix_1a1776519a7bd69f17a9a758109deed5b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -406,7 +406,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/global_matrix.hpp" line="87" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/global_matrix.hpp" line="87" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_global_matrix_1a8cee4fcfe4f83a3af8d2b8bb5a7c1dc1" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -423,7 +423,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/global_matrix.hpp" line="89" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/global_matrix.hpp" line="89" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_global_matrix_1a235ba2d1e7d61973cb6afb7b31e63b41" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -440,7 +440,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/global_matrix.hpp" line="92" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/global_matrix.hpp" line="92" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_global_matrix_1adb74647122b335e93dc07efba6dd1ffa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -489,7 +489,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/global_matrix.hpp" line="95" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/global_matrix.hpp" line="95" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_global_matrix_1abe4660e4b221c7b5ea0dbefafaf42737" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -538,7 +538,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/global_matrix.hpp" line="105" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/global_matrix.hpp" line="105" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_global_matrix_1aa77e5385d0cfaf8b93ee907388eefbfb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -571,7 +571,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/global_matrix.hpp" line="116" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/global_matrix.hpp" line="116" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_global_matrix_1a9b42628b4474eacbc2ed873664a4d0c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -604,7 +604,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/global_matrix.hpp" line="118" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/global_matrix.hpp" line="118" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_global_matrix_1a1519578af67b67dcd088696d2b29cbff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -637,7 +637,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/global_matrix.hpp" line="121" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/global_matrix.hpp" line="121" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_global_matrix_1a4e77b2d884891c1a753cd40a246850a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -670,7 +670,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/global_matrix.hpp" line="123" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/global_matrix.hpp" line="123" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_global_matrix_1a2eb0842687f4b546441a611ce7a0eb11" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -707,7 +707,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/global_matrix.hpp" line="126" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/global_matrix.hpp" line="126" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_global_matrix_1a0c80178f6e9496e7c8a17958354ef370" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -744,7 +744,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/global_matrix.hpp" line="133" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/global_matrix.hpp" line="133" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_global_matrix_1acf7aa8fda160287b78e8cb0e81327737" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -769,7 +769,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/global_matrix.hpp" line="140" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/global_matrix.hpp" line="140" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_global_matrix_1a8ca7debf70f86214860b9fc614f1dff4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -794,7 +794,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/global_matrix.hpp" line="142" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/global_matrix.hpp" line="142" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_global_matrix_1a9ec19c7b90fd098db95b4c453f35043a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -819,7 +819,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/global_matrix.hpp" line="144" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/global_matrix.hpp" line="144" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_global_matrix_1a1c309c717ca2a28a9ec2f0495499ea29" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -844,7 +844,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/global_matrix.hpp" line="146" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/global_matrix.hpp" line="146" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_global_matrix_1ae7cbc73a5ecf2acc932687afeffa3f05" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -861,7 +861,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/global_matrix.hpp" line="151" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/global_matrix.hpp" line="151" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_global_matrix_1a634e35f823363d5495a88df1a80f95ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -878,7 +878,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/global_matrix.hpp" line="153" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/global_matrix.hpp" line="153" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_global_matrix_1ac0a2733a5a4642fb29a20ca2f2f9eb55" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -894,7 +894,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/global_matrix.hpp" line="156" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/global_matrix.hpp" line="156" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_global_matrix_1afae4cfc7856dd52c6f87f31ca0fb318e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -910,7 +910,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/global_matrix.hpp" line="158" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/global_matrix.hpp" line="158" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_global_matrix_1ae722d756c1f26bb801a336ecf7813598" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -926,7 +926,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/global_matrix.hpp" line="160" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/global_matrix.hpp" line="160" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_global_matrix_1a608a96dbfe9533945447aebfd26275e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -942,7 +942,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/global_matrix.hpp" line="162" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/global_matrix.hpp" line="162" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_global_matrix_1a86604a4ce8a1d53b03b96eaeb66fcfae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -958,7 +958,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/global_matrix.hpp" line="164" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/global_matrix.hpp" line="164" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_global_matrix_1ad4bc3367ffc225d98cd6070fadf9009d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -974,7 +974,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/global_matrix.hpp" line="166" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/global_matrix.hpp" line="166" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_global_matrix_1a465ecd4ec49b3652632a43d4d85bb6af" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -990,7 +990,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/global_matrix.hpp" line="168" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/global_matrix.hpp" line="168" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_global_matrix_1a7b6da67732d07cd28ba630f51ee9e2a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1006,7 +1006,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/global_matrix.hpp" line="170" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/global_matrix.hpp" line="170" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_global_matrix_1ae615b1716a2a1021ee314a131a9fdf7d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1023,7 +1023,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/global_matrix.hpp" line="172" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/global_matrix.hpp" line="172" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_global_matrix_1abdfd9065b7efe135448032b8c2577c69" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -1045,7 +1045,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/global_matrix.hpp" line="174" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/global_matrix.hpp" line="174" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_global_matrix_1a5be99571408e159d1ed3ece42aff4f03" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -1071,7 +1071,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/global_matrix.hpp" line="175" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/global_matrix.hpp" line="175" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_global_matrix_1a0481a22957dc085d8ca1d244fa9ecea3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1088,7 +1088,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/global_matrix.hpp" line="180" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/global_matrix.hpp" line="180" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_global_matrix_1a42ffc73504340c27f2ca6b03cf0eba39" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1105,7 +1105,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/global_matrix.hpp" line="182" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/global_matrix.hpp" line="182" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_global_matrix_1aff6ad8d5361550f1fb8fa4697acc5c04" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1122,7 +1122,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/global_matrix.hpp" line="184" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/global_matrix.hpp" line="184" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_global_matrix_1ae3c9250612a612248f4e57810b6e3025" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1139,7 +1139,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/global_matrix.hpp" line="186" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/global_matrix.hpp" line="186" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_global_matrix_1ae0e7123ccd0600ff538e2db868885a45" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1155,7 +1155,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/global_matrix.hpp" line="189" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/global_matrix.hpp" line="189" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_global_matrix_1a044d23c3e411d5034262acb28a4c1176" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1172,7 +1172,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/global_matrix.hpp" line="194" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/global_matrix.hpp" line="194" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_global_matrix_1a7c30c6acb7080aea1d2272e7467da276" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1189,7 +1189,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/global_matrix.hpp" line="197" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/global_matrix.hpp" line="197" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_global_matrix_1a21b06650c4c022d8414e49cf2b90b98b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1230,7 +1230,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/global_matrix.hpp" line="200" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/global_matrix.hpp" line="200" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_global_matrix_1a5aaae97a058dd30859f6a4ab5d9babaf" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1271,7 +1271,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/global_matrix.hpp" line="208" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/global_matrix.hpp" line="208" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_global_matrix_1a891fe800ad6dead789354765471e9965" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1316,7 +1316,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/global_matrix.hpp" line="216" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/global_matrix.hpp" line="216" column="1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -1331,7 +1331,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/global_matrix.hpp" line="70" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/global_matrix.hpp" line="70" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_global_matrix_1a288b50d8be6f7e8673a6847cf8505b8f" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>const <ref refid="classrocalution_1_1_local_matrix" kindref="compound">LocalMatrix</ref>&lt; ValueType &gt; &amp;</type>
@@ -1344,7 +1344,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/global_matrix.hpp" line="72" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/global_matrix.hpp" line="72" column="1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="protected-func">
@@ -1363,7 +1363,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/global_matrix.hpp" line="226" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/global_matrix.hpp" line="226" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_global_matrix_1aba4776a93e5b76ddad6d8f57ec2895a1" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="virtual">
         <type>bool</type>
@@ -1380,7 +1380,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/global_matrix.hpp" line="227" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/global_matrix.hpp" line="227" column="1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -1396,52 +1396,52 @@
 </parameterlist>
 </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="25">
+      <node id="246">
         <label>rocalution::BaseRocalution&lt; ValueType &gt;</label>
         <link refid="classrocalution_1_1_base_rocalution"/>
-        <childnode refid="26" relation="public-inheritance">
+        <childnode refid="247" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="24">
+      <node id="245">
         <label>rocalution::Operator&lt; ValueType &gt;</label>
         <link refid="classrocalution_1_1_operator"/>
-        <childnode refid="25" relation="public-inheritance">
+        <childnode refid="246" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="26">
+      <node id="247">
         <label>rocalution::RocalutionObj</label>
       </node>
-      <node id="23">
+      <node id="244">
         <label>rocalution::GlobalMatrix&lt; ValueType &gt;</label>
         <link refid="classrocalution_1_1_global_matrix"/>
-        <childnode refid="24" relation="public-inheritance">
+        <childnode refid="245" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="29">
+      <node id="250">
         <label>rocalution::BaseRocalution&lt; ValueType &gt;</label>
         <link refid="classrocalution_1_1_base_rocalution"/>
-        <childnode refid="30" relation="public-inheritance">
+        <childnode refid="251" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="28">
+      <node id="249">
         <label>rocalution::Operator&lt; ValueType &gt;</label>
         <link refid="classrocalution_1_1_operator"/>
-        <childnode refid="29" relation="public-inheritance">
+        <childnode refid="250" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="30">
+      <node id="251">
         <label>rocalution::RocalutionObj</label>
       </node>
-      <node id="27">
+      <node id="248">
         <label>rocalution::GlobalMatrix&lt; ValueType &gt;</label>
         <link refid="classrocalution_1_1_global_matrix"/>
-        <childnode refid="28" relation="public-inheritance">
+        <childnode refid="249" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="ROCm_Libraries/rocALUTION/src/base/parallel_manager.hpp" line="36" column="1" bodyfile="ROCm_Libraries/rocALUTION/src/base/parallel_manager.hpp" bodystart="36" bodyend="-1"/>
+    <location file="/home/tcs/rocALUTION/src/base/parallel_manager.hpp" line="36" column="1" bodyfile="/home/tcs/rocALUTION/src/base/parallel_manager.hpp" bodystart="36" bodyend="-1"/>
     <listofallmembers>
       <member refid="classrocalution_1_1_global_matrix_1a1776519a7bd69f17a9a758109deed5b7" prot="public" virt="non-virtual"><scope>rocalution::GlobalMatrix</scope><name>AllocateCOO</name></member>
       <member refid="classrocalution_1_1_global_matrix_1a57abf518a59637c1dd680fcb08e91f20" prot="public" virt="non-virtual"><scope>rocalution::GlobalMatrix</scope><name>AllocateCSR</name></member>

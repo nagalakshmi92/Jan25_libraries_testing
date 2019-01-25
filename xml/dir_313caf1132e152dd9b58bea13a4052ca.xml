@@ -1,13 +1,13 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
-  <compounddef id="dir_fa917f053f0a760dab9ae831f77e347c" kind="dir">
-    <compoundname>ROCm_Libraries/rocALUTION/src/utils</compoundname>
+  <compounddef id="dir_313caf1132e152dd9b58bea13a4052ca" kind="dir">
+    <compoundname>/home/tcs/rocALUTION/src/utils</compoundname>
     <innerfile refid="allocate__free_8hpp">allocate_free.hpp</innerfile>
     <innerfile refid="time__functions_8hpp">time_functions.hpp</innerfile>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="ROCm_Libraries/rocALUTION/src/utils/"/>
+    <location file="/home/tcs/rocALUTION/src/utils/"/>
   </compounddef>
 </doxygen>

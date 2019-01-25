@@ -1,0 +1,562 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="solver_8hpp" kind="file" language="C++">
+    <compoundname>solver.hpp</compoundname>
+    <includes refid="iter__ctrl_8hpp" local="yes">iter_ctrl.hpp</includes>
+    <includes refid="base__rocalution_8hpp" local="yes">../base/base_rocalution.hpp</includes>
+    <includes refid="local__vector_8hpp" local="yes">../base/local_vector.hpp</includes>
+    <includedby refid="chebyshev_8hpp" local="yes">/home/tcs/rocALUTION/src/solvers/chebyshev.hpp</includedby>
+    <includedby refid="inversion_8hpp" local="yes">/home/tcs/rocALUTION/src/solvers/direct/inversion.hpp</includedby>
+    <includedby refid="lu_8hpp" local="yes">/home/tcs/rocALUTION/src/solvers/direct/lu.hpp</includedby>
+    <includedby refid="qr_8hpp" local="yes">/home/tcs/rocALUTION/src/solvers/direct/qr.hpp</includedby>
+    <includedby refid="bicgstab_8hpp" local="yes">/home/tcs/rocALUTION/src/solvers/krylov/bicgstab.hpp</includedby>
+    <includedby refid="bicgstabl_8hpp" local="yes">/home/tcs/rocALUTION/src/solvers/krylov/bicgstabl.hpp</includedby>
+    <includedby refid="cg_8hpp" local="yes">/home/tcs/rocALUTION/src/solvers/krylov/cg.hpp</includedby>
+    <includedby refid="cr_8hpp" local="yes">/home/tcs/rocALUTION/src/solvers/krylov/cr.hpp</includedby>
+    <includedby refid="fcg_8hpp" local="yes">/home/tcs/rocALUTION/src/solvers/krylov/fcg.hpp</includedby>
+    <includedby refid="fgmres_8hpp" local="yes">/home/tcs/rocALUTION/src/solvers/krylov/fgmres.hpp</includedby>
+    <includedby refid="gmres_8hpp" local="yes">/home/tcs/rocALUTION/src/solvers/krylov/gmres.hpp</includedby>
+    <includedby refid="idr_8hpp" local="yes">/home/tcs/rocALUTION/src/solvers/krylov/idr.hpp</includedby>
+    <includedby refid="qmrcgstab_8hpp" local="yes">/home/tcs/rocALUTION/src/solvers/krylov/qmrcgstab.hpp</includedby>
+    <includedby refid="mixed__precision_8hpp" local="yes">/home/tcs/rocALUTION/src/solvers/mixed_precision.hpp</includedby>
+    <includedby refid="base__amg_8hpp" local="yes">/home/tcs/rocALUTION/src/solvers/multigrid/base_amg.hpp</includedby>
+    <includedby refid="base__multigrid_8hpp" local="yes">/home/tcs/rocALUTION/src/solvers/multigrid/base_multigrid.hpp</includedby>
+    <includedby refid="preconditioner_8hpp" local="yes">/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner.hpp</includedby>
+    <includedby refid="global__pairwise__amg_8hpp" local="yes">/home/tcs/rocALUTION/src/solvers/multigrid/global_pairwise_amg.hpp</includedby>
+    <includedby refid="pairwise__amg_8hpp" local="yes">/home/tcs/rocALUTION/src/solvers/multigrid/pairwise_amg.hpp</includedby>
+    <includedby refid="ruge__stueben__amg_8hpp" local="yes">/home/tcs/rocALUTION/src/solvers/multigrid/ruge_stueben_amg.hpp</includedby>
+    <includedby refid="preconditioner__multicolored__gs_8hpp" local="yes">/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multicolored_gs.hpp</includedby>
+    <includedby refid="preconditioner__multicolored_8hpp" local="yes">/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multicolored.hpp</includedby>
+    <includedby refid="smoothed__amg_8hpp" local="yes">/home/tcs/rocALUTION/src/solvers/multigrid/smoothed_amg.hpp</includedby>
+    <includedby refid="unsmoothed__amg_8hpp" local="yes">/home/tcs/rocALUTION/src/solvers/multigrid/unsmoothed_amg.hpp</includedby>
+    <includedby refid="preconditioner_8cpp" local="yes">/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner.cpp</includedby>
+    <includedby refid="preconditioner__ai_8hpp" local="yes">/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_ai.hpp</includedby>
+    <includedby refid="preconditioner__ai_8cpp" local="yes">/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_ai.cpp</includedby>
+    <includedby refid="preconditioner__as_8cpp" local="yes">/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_as.cpp</includedby>
+    <includedby refid="preconditioner__blockjacobi_8cpp" local="yes">/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_blockjacobi.cpp</includedby>
+    <includedby refid="preconditioner__blockprecond_8hpp" local="yes">/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_blockprecond.hpp</includedby>
+    <includedby refid="preconditioner__blockprecond_8cpp" local="yes">/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_blockprecond.cpp</includedby>
+    <includedby refid="preconditioner__multicolored_8cpp" local="yes">/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multicolored.cpp</includedby>
+    <includedby refid="preconditioner__multicolored__gs_8cpp" local="yes">/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multicolored_gs.cpp</includedby>
+    <includedby refid="preconditioner__multicolored__ilu_8hpp" local="yes">/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multicolored_ilu.hpp</includedby>
+    <includedby refid="preconditioner__multicolored__ilu_8cpp" local="yes">/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multicolored_ilu.cpp</includedby>
+    <includedby refid="preconditioner__multielimination_8hpp" local="yes">/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multielimination.hpp</includedby>
+    <includedby refid="preconditioner__multielimination_8cpp" local="yes">/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multielimination.cpp</includedby>
+    <includedby refid="preconditioner__saddlepoint_8hpp" local="yes">/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_saddlepoint.hpp</includedby>
+    <includedby refid="preconditioner__saddlepoint_8cpp" local="yes">/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_saddlepoint.cpp</includedby>
+    <includedby refid="solver_8cpp" local="yes">/home/tcs/rocALUTION/src/solvers/solver.cpp</includedby>
+    <incdepgraph>
+      <node id="1870">
+        <label>../base/local_vector.hpp</label>
+        <link refid="local__vector_8hpp_source"/>
+        <childnode refid="1871" relation="include">
+        </childnode>
+        <childnode refid="1872" relation="include">
+        </childnode>
+      </node>
+      <node id="1872">
+        <label>vector.hpp</label>
+        <link refid="vector_8hpp_source"/>
+        <childnode refid="1871" relation="include">
+        </childnode>
+        <childnode refid="1864" relation="include">
+        </childnode>
+        <childnode refid="1866" relation="include">
+        </childnode>
+        <childnode refid="1863" relation="include">
+        </childnode>
+        <childnode refid="1873" relation="include">
+        </childnode>
+      </node>
+      <node id="1863">
+        <label>string</label>
+      </node>
+      <node id="1868">
+        <label>map</label>
+      </node>
+      <node id="1860">
+        <label>/home/tcs/rocALUTION/src/solvers/solver.hpp</label>
+        <link refid="solver_8hpp"/>
+        <childnode refid="1861" relation="include">
+        </childnode>
+        <childnode refid="1864" relation="include">
+        </childnode>
+        <childnode refid="1870" relation="include">
+        </childnode>
+      </node>
+      <node id="1867">
+        <label>fstream</label>
+      </node>
+      <node id="1871">
+        <label>../utils/types.hpp</label>
+      </node>
+      <node id="1864">
+        <label>../base/base_rocalution.hpp</label>
+        <link refid="base__rocalution_8hpp_source"/>
+        <childnode refid="1865" relation="include">
+        </childnode>
+        <childnode refid="1869" relation="include">
+        </childnode>
+        <childnode refid="1862" relation="include">
+        </childnode>
+      </node>
+      <node id="1862">
+        <label>vector</label>
+      </node>
+      <node id="1873">
+        <label>cstdlib</label>
+      </node>
+      <node id="1866">
+        <label>iostream</label>
+      </node>
+      <node id="1865">
+        <label>backend_manager.hpp</label>
+        <link refid="backend__manager_8hpp_source"/>
+        <childnode refid="1866" relation="include">
+        </childnode>
+        <childnode refid="1867" relation="include">
+        </childnode>
+        <childnode refid="1868" relation="include">
+        </childnode>
+        <childnode refid="1862" relation="include">
+        </childnode>
+        <childnode refid="1863" relation="include">
+        </childnode>
+      </node>
+      <node id="1861">
+        <label>iter_ctrl.hpp</label>
+        <link refid="iter__ctrl_8hpp_source"/>
+        <childnode refid="1862" relation="include">
+        </childnode>
+        <childnode refid="1863" relation="include">
+        </childnode>
+      </node>
+      <node id="1869">
+        <label>complex</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1877">
+        <label>/home/tcs/rocALUTION/src/solvers/direct/lu.hpp</label>
+        <link refid="lu_8hpp_source"/>
+      </node>
+      <node id="1905">
+        <label>/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multielimination.hpp</label>
+        <link refid="preconditioner__multielimination_8hpp_source"/>
+      </node>
+      <node id="1892">
+        <label>/home/tcs/rocALUTION/src/solvers/multigrid/ruge_stueben_amg.hpp</label>
+        <link refid="ruge__stueben__amg_8hpp_source"/>
+      </node>
+      <node id="1881">
+        <label>/home/tcs/rocALUTION/src/solvers/krylov/cg.hpp</label>
+        <link refid="cg_8hpp_source"/>
+      </node>
+      <node id="1897">
+        <label>/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner.hpp</label>
+        <link refid="preconditioner_8hpp_source"/>
+        <childnode refid="1898" relation="include">
+        </childnode>
+        <childnode refid="1899" relation="include">
+        </childnode>
+        <childnode refid="1901" relation="include">
+        </childnode>
+        <childnode refid="1902" relation="include">
+        </childnode>
+        <childnode refid="1903" relation="include">
+        </childnode>
+        <childnode refid="1904" relation="include">
+        </childnode>
+        <childnode refid="1900" relation="include">
+        </childnode>
+        <childnode refid="1905" relation="include">
+        </childnode>
+        <childnode refid="1906" relation="include">
+        </childnode>
+      </node>
+      <node id="1896">
+        <label>/home/tcs/rocALUTION/src/solvers/multigrid/multigrid.hpp</label>
+        <link refid="multigrid_8hpp_source"/>
+      </node>
+      <node id="1885">
+        <label>/home/tcs/rocALUTION/src/solvers/krylov/gmres.hpp</label>
+        <link refid="gmres_8hpp_source"/>
+      </node>
+      <node id="1875">
+        <label>/home/tcs/rocALUTION/src/solvers/chebyshev.hpp</label>
+        <link refid="chebyshev_8hpp_source"/>
+      </node>
+      <node id="1884">
+        <label>/home/tcs/rocALUTION/src/solvers/krylov/fgmres.hpp</label>
+        <link refid="fgmres_8hpp_source"/>
+      </node>
+      <node id="1879">
+        <label>/home/tcs/rocALUTION/src/solvers/krylov/bicgstab.hpp</label>
+        <link refid="bicgstab_8hpp_source"/>
+      </node>
+      <node id="1894">
+        <label>/home/tcs/rocALUTION/src/solvers/multigrid/unsmoothed_amg.hpp</label>
+        <link refid="unsmoothed__amg_8hpp_source"/>
+      </node>
+      <node id="1886">
+        <label>/home/tcs/rocALUTION/src/solvers/krylov/idr.hpp</label>
+        <link refid="idr_8hpp_source"/>
+      </node>
+      <node id="1890">
+        <label>/home/tcs/rocALUTION/src/solvers/multigrid/global_pairwise_amg.hpp</label>
+        <link refid="global__pairwise__amg_8hpp_source"/>
+      </node>
+      <node id="1903">
+        <label>/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_blockjacobi.hpp</label>
+        <link refid="preconditioner__blockjacobi_8hpp_source"/>
+      </node>
+      <node id="1891">
+        <label>/home/tcs/rocALUTION/src/solvers/multigrid/pairwise_amg.hpp</label>
+        <link refid="pairwise__amg_8hpp_source"/>
+        <childnode refid="1890" relation="include">
+        </childnode>
+      </node>
+      <node id="1906">
+        <label>/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_saddlepoint.hpp</label>
+        <link refid="preconditioner__saddlepoint_8hpp_source"/>
+      </node>
+      <node id="1878">
+        <label>/home/tcs/rocALUTION/src/solvers/direct/qr.hpp</label>
+        <link refid="qr_8hpp_source"/>
+      </node>
+      <node id="1874">
+        <label>/home/tcs/rocALUTION/src/solvers/solver.hpp</label>
+        <link refid="solver_8hpp"/>
+        <childnode refid="1875" relation="include">
+        </childnode>
+        <childnode refid="1876" relation="include">
+        </childnode>
+        <childnode refid="1877" relation="include">
+        </childnode>
+        <childnode refid="1878" relation="include">
+        </childnode>
+        <childnode refid="1879" relation="include">
+        </childnode>
+        <childnode refid="1880" relation="include">
+        </childnode>
+        <childnode refid="1881" relation="include">
+        </childnode>
+        <childnode refid="1882" relation="include">
+        </childnode>
+        <childnode refid="1883" relation="include">
+        </childnode>
+        <childnode refid="1884" relation="include">
+        </childnode>
+        <childnode refid="1885" relation="include">
+        </childnode>
+        <childnode refid="1886" relation="include">
+        </childnode>
+        <childnode refid="1887" relation="include">
+        </childnode>
+        <childnode refid="1888" relation="include">
+        </childnode>
+        <childnode refid="1889" relation="include">
+        </childnode>
+        <childnode refid="1895" relation="include">
+        </childnode>
+        <childnode refid="1897" relation="include">
+        </childnode>
+        <childnode refid="1890" relation="include">
+        </childnode>
+        <childnode refid="1891" relation="include">
+        </childnode>
+        <childnode refid="1892" relation="include">
+        </childnode>
+        <childnode refid="1898" relation="include">
+        </childnode>
+        <childnode refid="1899" relation="include">
+        </childnode>
+        <childnode refid="1893" relation="include">
+        </childnode>
+        <childnode refid="1894" relation="include">
+        </childnode>
+        <childnode refid="1901" relation="include">
+        </childnode>
+        <childnode refid="1904" relation="include">
+        </childnode>
+        <childnode refid="1900" relation="include">
+        </childnode>
+        <childnode refid="1905" relation="include">
+        </childnode>
+        <childnode refid="1906" relation="include">
+        </childnode>
+      </node>
+      <node id="1898">
+        <label>/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multicolored_gs.hpp</label>
+        <link refid="preconditioner__multicolored__gs_8hpp_source"/>
+      </node>
+      <node id="1900">
+        <label>/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multicolored_ilu.hpp</label>
+        <link refid="preconditioner__multicolored__ilu_8hpp_source"/>
+      </node>
+      <node id="1895">
+        <label>/home/tcs/rocALUTION/src/solvers/multigrid/base_multigrid.hpp</label>
+        <link refid="base__multigrid_8hpp_source"/>
+        <childnode refid="1889" relation="include">
+        </childnode>
+        <childnode refid="1896" relation="include">
+        </childnode>
+      </node>
+      <node id="1876">
+        <label>/home/tcs/rocALUTION/src/solvers/direct/inversion.hpp</label>
+        <link refid="inversion_8hpp_source"/>
+      </node>
+      <node id="1904">
+        <label>/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_blockprecond.hpp</label>
+        <link refid="preconditioner__blockprecond_8hpp_source"/>
+      </node>
+      <node id="1887">
+        <label>/home/tcs/rocALUTION/src/solvers/krylov/qmrcgstab.hpp</label>
+        <link refid="qmrcgstab_8hpp_source"/>
+      </node>
+      <node id="1901">
+        <label>/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_ai.hpp</label>
+        <link refid="preconditioner__ai_8hpp_source"/>
+      </node>
+      <node id="1899">
+        <label>/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multicolored.hpp</label>
+        <link refid="preconditioner__multicolored_8hpp_source"/>
+        <childnode refid="1898" relation="include">
+        </childnode>
+        <childnode refid="1900" relation="include">
+        </childnode>
+      </node>
+      <node id="1888">
+        <label>/home/tcs/rocALUTION/src/solvers/mixed_precision.hpp</label>
+        <link refid="mixed__precision_8hpp_source"/>
+      </node>
+      <node id="1880">
+        <label>/home/tcs/rocALUTION/src/solvers/krylov/bicgstabl.hpp</label>
+        <link refid="bicgstabl_8hpp_source"/>
+      </node>
+      <node id="1889">
+        <label>/home/tcs/rocALUTION/src/solvers/multigrid/base_amg.hpp</label>
+        <link refid="base__amg_8hpp_source"/>
+        <childnode refid="1890" relation="include">
+        </childnode>
+        <childnode refid="1891" relation="include">
+        </childnode>
+        <childnode refid="1892" relation="include">
+        </childnode>
+        <childnode refid="1893" relation="include">
+        </childnode>
+        <childnode refid="1894" relation="include">
+        </childnode>
+      </node>
+      <node id="1883">
+        <label>/home/tcs/rocALUTION/src/solvers/krylov/fcg.hpp</label>
+        <link refid="fcg_8hpp_source"/>
+      </node>
+      <node id="1893">
+        <label>/home/tcs/rocALUTION/src/solvers/multigrid/smoothed_amg.hpp</label>
+        <link refid="smoothed__amg_8hpp_source"/>
+      </node>
+      <node id="1902">
+        <label>/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_as.hpp</label>
+        <link refid="preconditioner__as_8hpp_source"/>
+      </node>
+      <node id="1882">
+        <label>/home/tcs/rocALUTION/src/solvers/krylov/cr.hpp</label>
+        <link refid="cr_8hpp_source"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classrocalution_1_1_solver" prot="public">rocalution::Solver</innerclass>
+    <innerclass refid="classrocalution_1_1_iterative_linear_solver" prot="public">rocalution::IterativeLinearSolver</innerclass>
+    <innerclass refid="classrocalution_1_1_fixed_point" prot="public">rocalution::FixedPoint</innerclass>
+    <innerclass refid="classrocalution_1_1_direct_linear_solver" prot="public">rocalution::DirectLinearSolver</innerclass>
+    <innernamespace refid="namespacerocalution">rocalution</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2018<sp/>Advanced<sp/>Micro<sp/>Devices,<sp/>Inc.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Permission<sp/>is<sp/>hereby<sp/>granted,<sp/>free<sp/>of<sp/>charge,<sp/>to<sp/>any<sp/>person<sp/>obtaining<sp/>a<sp/>copy</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>of<sp/>this<sp/>software<sp/>and<sp/>associated<sp/>documentation<sp/>files<sp/>(the<sp/>&quot;Software&quot;),<sp/>to<sp/>deal</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>in<sp/>the<sp/>Software<sp/>without<sp/>restriction,<sp/>including<sp/>without<sp/>limitation<sp/>the<sp/>rights</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>to<sp/>use,<sp/>copy,<sp/>modify,<sp/>merge,<sp/>publish,<sp/>distribute,<sp/>sublicense,<sp/>and/or<sp/>sell</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>copies<sp/>of<sp/>the<sp/>Software,<sp/>and<sp/>to<sp/>permit<sp/>persons<sp/>to<sp/>whom<sp/>the<sp/>Software<sp/>is</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>furnished<sp/>to<sp/>do<sp/>so,<sp/>subject<sp/>to<sp/>the<sp/>following<sp/>conditions:</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>The<sp/>above<sp/>copyright<sp/>notice<sp/>and<sp/>this<sp/>permission<sp/>notice<sp/>shall<sp/>be<sp/>included<sp/>in</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>all<sp/>copies<sp/>or<sp/>substantial<sp/>portions<sp/>of<sp/>the<sp/>Software.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>THE<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>&quot;AS<sp/>IS&quot;,<sp/>WITHOUT<sp/>WARRANTY<sp/>OF<sp/>ANY<sp/>KIND,<sp/>EXPRESS<sp/>OR</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>IMPLIED,<sp/>INCLUDING<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO<sp/>THE<sp/>WARRANTIES<sp/>OF<sp/>MERCHANTABILITY,</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>AND<sp/>NONINFRINGEMENT.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>AUTHORS<sp/>OR<sp/>COPYRIGHT<sp/>HOLDERS<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>CLAIM,<sp/>DAMAGES<sp/>OR<sp/>OTHER</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>AN<sp/>ACTION<sp/>OF<sp/>CONTRACT,<sp/>TORT<sp/>OR<sp/>OTHERWISE,<sp/>ARISING<sp/>FROM,</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>OUT<sp/>OF<sp/>OR<sp/>IN<sp/>CONNECTION<sp/>WITH<sp/>THE<sp/>SOFTWARE<sp/>OR<sp/>THE<sp/>USE<sp/>OR<sp/>OTHER<sp/>DEALINGS<sp/>IN</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>THE<sp/>SOFTWARE.</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/>************************************************************************<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>ROCALUTION_SOLVER_HPP_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ROCALUTION_SOLVER_HPP_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;iter_ctrl.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../base/base_rocalution.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../base/local_vector.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacerocalution" kindref="compound">rocalution</ref><sp/>{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
+<codeline lineno="62" refid="classrocalution_1_1_solver" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classrocalution_1_1_solver" kindref="compound">Solver</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>RocalutionObj</highlight></codeline>
+<codeline lineno="63"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classrocalution_1_1_solver" kindref="compound">Solver</ref>();</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="classrocalution_1_1_solver" kindref="compound">Solver</ref>();</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_solver_1a12765b63efe75bc88406a8d6ebb5aacc" kindref="member">SetOperator</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>OperatorType&amp;<sp/>op);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_solver_1a91354c5c116742c58d9eb2094cc6a68e" kindref="member">ResetOperator</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>OperatorType&amp;<sp/>op);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_solver_1a57992cfc687f3bf260964ad2fc19c467" kindref="member">Print</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_solver_1a69025eb1d2bc7f1266899c2739c82725" kindref="member">Solve</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>VectorType&amp;<sp/>rhs,<sp/>VectorType*<sp/>x)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_solver_1a034b434a4340a52430deed9b210e5003" kindref="member">SolveZeroSol</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>VectorType&amp;<sp/>rhs,<sp/>VectorType*<sp/>x);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_solver_1aa8839d3ba527d75fedd29fdbe9bd651f" kindref="member">Clear</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_solver_1a84754d7422ad3fb35c17c61f0a609c7a" kindref="member">Build</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_solver_1a0d11ee9943f785db285f0ef5c08c64eb" kindref="member">BuildMoveToAcceleratorAsync</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_solver_1a17c2830a0ede8d82d1336aa25da6f907" kindref="member">Sync</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_solver_1acd20a051f0560a77645e35361df8f87c" kindref="member">ReBuildNumeric</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_solver_1a3c263e65898816f5838184c0af78a044" kindref="member">MoveToHost</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_solver_1ab1b6410cd134c9ad00c1851d400cf0f8" kindref="member">MoveToAccelerator</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_solver_1aa2ab9c17de96add5e3ad30e7cabf0ea7" kindref="member">Verbose</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>verb<sp/>=<sp/>1);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="115" refid="classrocalution_1_1_solver_1ad338b5f99cf339fb33218dd8b958cac4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>OperatorType*<sp/><ref refid="classrocalution_1_1_solver_1ad338b5f99cf339fb33218dd8b958cac4" kindref="member">op_</ref>;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118" refid="classrocalution_1_1_solver_1a2acdb829fa657a7b3e680d1ee6005c9b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classrocalution_1_1_solver" kindref="compound">Solver&lt;OperatorType, VectorType, ValueType&gt;</ref>*<sp/><ref refid="classrocalution_1_1_solver_1a2acdb829fa657a7b3e680d1ee6005c9b" kindref="member">precond_</ref>;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121" refid="classrocalution_1_1_solver_1a64924a0c87d60d2e4bf9fa295d0152cb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_solver_1a64924a0c87d60d2e4bf9fa295d0152cb" kindref="member">build_</ref>;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126" refid="classrocalution_1_1_solver_1ac46ab4d19fba48ece463666d37a7dc86" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classrocalution_1_1_local_vector" kindref="compound">LocalVector&lt;int&gt;</ref><sp/><ref refid="classrocalution_1_1_solver_1ac46ab4d19fba48ece463666d37a7dc86" kindref="member">permutation_</ref>;</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129" refid="classrocalution_1_1_solver_1a2ee162346e0d52543f9d3d25fe70ea8a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_solver_1a2ee162346e0d52543f9d3d25fe70ea8a" kindref="member">verb_</ref>;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_solver_1a9e6a5ceb6a8c35cd8d54ebff0664d27e" kindref="member">PrintStart_</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_solver_1add2b6aec27eeaffbbd1130cc846c1019" kindref="member">PrintEnd_</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_solver_1aa1e8be1bd2107543c7390a81f8cee8cb" kindref="member">MoveToHostLocalData_</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_solver_1a8ce29de0bdda9f35a6a687fd06ac9b11" kindref="member">MoveToAcceleratorLocalData_</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
+<codeline lineno="191" refid="classrocalution_1_1_iterative_linear_solver" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classrocalution_1_1_iterative_linear_solver" kindref="compound">IterativeLinearSolver</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_solver" kindref="compound">Solver</ref>&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;</highlight></codeline>
+<codeline lineno="192"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classrocalution_1_1_iterative_linear_solver" kindref="compound">IterativeLinearSolver</ref>();</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="classrocalution_1_1_iterative_linear_solver" kindref="compound">IterativeLinearSolver</ref>();</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Init(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>abs_tol,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>rel_tol,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>div_tol,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>max_iter);</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Init(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>abs_tol,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>rel_tol,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>div_tol,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>min_iter,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>max_iter);</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>InitMinIter(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>min_iter);</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"></highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>InitMaxIter(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>max_iter);</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"></highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>InitTol(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>abs,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>rel,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>div);</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"></highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SetResidualNorm(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>resnorm);</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"></highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>RecordResidualHistory(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"></highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>RecordHistory(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>filename)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"></highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_solver_1aa2ab9c17de96add5e3ad30e7cabf0ea7" kindref="member">Verbose</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>verb<sp/>=<sp/>1);</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"></highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_solver_1a69025eb1d2bc7f1266899c2739c82725" kindref="member">Solve</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>VectorType&amp;<sp/>rhs,<sp/>VectorType*<sp/>x);</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"></highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SetPreconditioner(<ref refid="classrocalution_1_1_solver" kindref="compound">Solver&lt;OperatorType, VectorType, ValueType&gt;</ref>&amp;<sp/>precond);</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"></highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>GetIterationCount(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"></highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>GetCurrentResidual(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"></highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>GetSolverStatus(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"></highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>GetAmaxResidualIndex(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"></highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Iteration<sp/>control<sp/>(monitor)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/>IterationControl<sp/>iter_ctrl_;<sp/></highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SolveNonPrecond_(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>VectorType&amp;<sp/>rhs,<sp/>VectorType*<sp/>x)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"></highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SolvePrecond_(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>VectorType&amp;<sp/>rhs,<sp/>VectorType*<sp/>x)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"></highlight></codeline>
+<codeline lineno="264" refid="classrocalution_1_1_iterative_linear_solver_1ae811fa65d83729b92bb9573667162a4c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_iterative_linear_solver_1ae811fa65d83729b92bb9573667162a4c" kindref="member">res_norm_</ref>;</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"></highlight></codeline>
+<codeline lineno="267" refid="classrocalution_1_1_iterative_linear_solver_1a30d12c17029094a3f46a0fa1ce491887" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_iterative_linear_solver_1a30d12c17029094a3f46a0fa1ce491887" kindref="member">index_</ref>;</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"></highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/>ValueType<sp/>Norm_(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>VectorType&amp;<sp/>vec);</highlight></codeline>
+<codeline lineno="271"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"></highlight></codeline>
+<codeline lineno="293"><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
+<codeline lineno="294" refid="classrocalution_1_1_fixed_point" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classrocalution_1_1_fixed_point" kindref="compound">FixedPoint</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_iterative_linear_solver" kindref="compound">IterativeLinearSolver</ref>&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;</highlight></codeline>
+<codeline lineno="295"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classrocalution_1_1_fixed_point" kindref="compound">FixedPoint</ref>();</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="classrocalution_1_1_fixed_point" kindref="compound">FixedPoint</ref>();</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"></highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_solver_1a57992cfc687f3bf260964ad2fc19c467" kindref="member">Print</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"></highlight></codeline>
+<codeline lineno="302"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_solver_1acd20a051f0560a77645e35361df8f87c" kindref="member">ReBuildNumeric</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="303"><highlight class="normal"></highlight></codeline>
+<codeline lineno="305"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SetRelaxation(ValueType<sp/>omega);</highlight></codeline>
+<codeline lineno="306"><highlight class="normal"></highlight></codeline>
+<codeline lineno="307"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_solver_1a84754d7422ad3fb35c17c61f0a609c7a" kindref="member">Build</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_solver_1aa8839d3ba527d75fedd29fdbe9bd651f" kindref="member">Clear</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="309"><highlight class="normal"></highlight></codeline>
+<codeline lineno="310"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="312" refid="classrocalution_1_1_fixed_point_1a57bcfb57fc8389ce53530d9991187bb4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>ValueType<sp/><ref refid="classrocalution_1_1_fixed_point_1a57bcfb57fc8389ce53530d9991187bb4" kindref="member">omega_</ref>;</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"><sp/><sp/><sp/><sp/>VectorType<sp/>x_old_;<sp/></highlight></codeline>
+<codeline lineno="314"><highlight class="normal"><sp/><sp/><sp/><sp/>VectorType<sp/>x_res_;<sp/></highlight></codeline>
+<codeline lineno="316"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SolveNonPrecond_(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>VectorType&amp;<sp/>rhs,<sp/>VectorType*<sp/>x);</highlight></codeline>
+<codeline lineno="317"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SolvePrecond_(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>VectorType&amp;<sp/>rhs,<sp/>VectorType*<sp/>x);</highlight></codeline>
+<codeline lineno="318"><highlight class="normal"></highlight></codeline>
+<codeline lineno="319"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_solver_1a9e6a5ceb6a8c35cd8d54ebff0664d27e" kindref="member">PrintStart_</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="320"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_solver_1add2b6aec27eeaffbbd1130cc846c1019" kindref="member">PrintEnd_</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="321"><highlight class="normal"></highlight></codeline>
+<codeline lineno="322"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_solver_1aa1e8be1bd2107543c7390a81f8cee8cb" kindref="member">MoveToHostLocalData_</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="323"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_solver_1a8ce29de0bdda9f35a6a687fd06ac9b11" kindref="member">MoveToAcceleratorLocalData_</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="324"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="325"><highlight class="normal"></highlight></codeline>
+<codeline lineno="340"><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
+<codeline lineno="341" refid="classrocalution_1_1_direct_linear_solver" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classrocalution_1_1_direct_linear_solver" kindref="compound">DirectLinearSolver</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_solver" kindref="compound">Solver</ref>&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;</highlight></codeline>
+<codeline lineno="342"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="343"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="344"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classrocalution_1_1_direct_linear_solver" kindref="compound">DirectLinearSolver</ref>();</highlight></codeline>
+<codeline lineno="345"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="classrocalution_1_1_direct_linear_solver" kindref="compound">DirectLinearSolver</ref>();</highlight></codeline>
+<codeline lineno="346"><highlight class="normal"></highlight></codeline>
+<codeline lineno="347"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_solver_1aa2ab9c17de96add5e3ad30e7cabf0ea7" kindref="member">Verbose</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>verb<sp/>=<sp/>1);</highlight></codeline>
+<codeline lineno="348"><highlight class="normal"></highlight></codeline>
+<codeline lineno="349"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_solver_1a69025eb1d2bc7f1266899c2739c82725" kindref="member">Solve</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>VectorType&amp;<sp/>rhs,<sp/>VectorType*<sp/>x);</highlight></codeline>
+<codeline lineno="350"><highlight class="normal"></highlight></codeline>
+<codeline lineno="351"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="353"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Solve_(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>VectorType&amp;<sp/>rhs,<sp/>VectorType*<sp/>x)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="354"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="355"><highlight class="normal"></highlight></codeline>
+<codeline lineno="356"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>rocalution</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="357"><highlight class="normal"></highlight></codeline>
+<codeline lineno="358"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>ROCALUTION_SOLVER_HPP_</highlight></codeline>
+    </programlisting>
+    <location file="/home/tcs/rocALUTION/src/solvers/solver.hpp"/>
+  </compounddef>
+</doxygen>

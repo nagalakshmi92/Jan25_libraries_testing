@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
-  <compounddef id="dir_d7db5a02f594321e7c6336d6ae38f091" kind="dir">
-    <compoundname>ROCm_Libraries/rocALUTION/src/base</compoundname>
+  <compounddef id="dir_0af1587c8378955de40f48b4bd1869f0" kind="dir">
+    <compoundname>/home/tcs/rocALUTION/src/base</compoundname>
     <innerfile refid="backend__manager_8hpp">backend_manager.hpp</innerfile>
     <innerfile refid="base__rocalution_8hpp">base_rocalution.hpp</innerfile>
     <innerfile refid="global__matrix_8hpp">global_matrix.hpp</innerfile>
@@ -16,6 +16,6 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="ROCm_Libraries/rocALUTION/src/base/"/>
+    <location file="/home/tcs/rocALUTION/src/base/"/>
   </compounddef>
 </doxygen>

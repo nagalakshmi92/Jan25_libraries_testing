@@ -4,6 +4,10 @@
     <compoundname>rocalution::RocalutionObj</compoundname>
     <derivedcompoundref refid="classrocalution_1_1_base_rocalution" prot="public" virt="non-virtual">rocalution::BaseRocalution&lt; ValueType &gt;</derivedcompoundref>
     <derivedcompoundref refid="classrocalution_1_1_parallel_manager" prot="public" virt="non-virtual">rocalution::ParallelManager</derivedcompoundref>
+    <derivedcompoundref refid="classrocalution_1_1_solver" prot="public" virt="non-virtual">rocalution::Solver&lt; OperatorType, VectorType, ValueType &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classrocalution_1_1_solver" prot="public" virt="non-virtual">rocalution::Solver&lt; OperatorTypeH, VectorTypeH, ValueTypeH &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classrocalution_1_1_solver" prot="public" virt="non-virtual">rocalution::Solver&lt; OperatorTypeL, VectorTypeL, ValueTypeL &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classrocalution_1_1_solver" prot="public" virt="non-virtual">rocalution::Solver&lt; rocalution::LocalMatrix&lt; ValueType &gt;, rocalution::LocalVector&lt; ValueType &gt;, ValueType &gt;</derivedcompoundref>
       <sectiondef kind="protected-attrib">
       <memberdef kind="variable" id="classrocalution_1_1_rocalution_obj_1a4bba5aeaf4fd705efc00402f1f6ed40b" prot="protected" static="no" mutable="no">
         <type>size_t</type>
@@ -16,7 +20,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/base_rocalution.hpp" line="50" column="1" bodyfile="ROCm_Libraries/rocALUTION/src/base/base_rocalution.hpp" bodystart="50" bodyend="-1"/>
+        <location file="/home/tcs/rocALUTION/src/base/base_rocalution.hpp" line="50" column="1" bodyfile="/home/tcs/rocALUTION/src/base/base_rocalution.hpp" bodystart="50" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -31,7 +35,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/base_rocalution.hpp" line="44" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/base_rocalution.hpp" line="44" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_rocalution_obj_1a55a2f93f798cebdda6343b20db959e2d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type></type>
@@ -44,7 +48,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/base_rocalution.hpp" line="45" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/base_rocalution.hpp" line="45" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_rocalution_obj_1ae775c603a6abb9bc78417d06741364ce" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type>void</type>
@@ -57,7 +61,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/base_rocalution.hpp" line="47" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/base_rocalution.hpp" line="47" column="1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -65,65 +69,383 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="90">
+      <node id="660">
+        <label>rocalution::IterativeLinearSolver&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_iterative_linear_solver"/>
+        <childnode refid="655" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="648">
         <label>rocalution::LocalMatrix&lt; ValueType &gt;</label>
         <link refid="classrocalution_1_1_local_matrix"/>
-        <childnode refid="88" relation="public-inheritance">
+        <childnode refid="646" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="87">
+      <node id="657">
+        <label>rocalution::Inversion&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_inversion"/>
+        <childnode refid="656" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="659">
+        <label>rocalution::QR&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_q_r"/>
+        <childnode refid="656" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="688">
+        <label>rocalution::GS&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_g_s"/>
+        <childnode refid="680" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="685">
+        <label>rocalution::BlockPreconditioner&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_block_preconditioner"/>
+        <childnode refid="680" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="700">
+        <label>rocalution::TNS&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_t_n_s"/>
+        <childnode refid="680" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="674">
+        <label>rocalution::FCG&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_f_c_g"/>
+        <childnode refid="660" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="668">
+        <label>rocalution::MultiGrid&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_multi_grid"/>
+        <childnode refid="661" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="705">
+        <label>rocalution::Solver&lt; OperatorTypeL, VectorTypeL, ValueTypeL &gt;</label>
+        <link refid="classrocalution_1_1_solver"/>
+        <childnode refid="644" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="671">
+        <label>rocalution::CG&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_c_g"/>
+        <childnode refid="660" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="645">
         <label>rocalution::BaseRocalution&lt; ValueType &gt;</label>
         <link refid="classrocalution_1_1_base_rocalution"/>
-        <childnode refid="86" relation="public-inheritance">
+        <childnode refid="644" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="92">
+      <node id="689">
+        <label>rocalution::IC&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_i_c"/>
+        <childnode refid="680" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="697">
+        <label>rocalution::MultiElimination&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_multi_elimination"/>
+        <childnode refid="680" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="684">
+        <label>rocalution::BlockJacobi&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_block_jacobi"/>
+        <childnode refid="680" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="706">
+        <label>rocalution::Solver&lt; rocalution::LocalMatrix&lt; ValueType &gt;, rocalution::LocalVector&lt; ValueType &gt;, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_solver"/>
+        <childnode refid="644" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="656">
+        <label>rocalution::DirectLinearSolver&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_direct_linear_solver"/>
+        <childnode refid="655" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="651">
+        <label>LocalVector&lt; int &gt;</label>
+        <link refid="classrocalution_1_1_local_vector"/>
+        <childnode refid="650" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="663">
+        <label>rocalution::GlobalPairwiseAMG&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_global_pairwise_a_m_g"/>
+        <childnode refid="662" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="680">
+        <label>rocalution::Preconditioner&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_preconditioner"/>
+        <childnode refid="655" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="655">
+        <label>rocalution::Solver&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_solver"/>
+        <childnode refid="644" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="675">
+        <label>rocalution::FGMRES&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_f_g_m_r_e_s"/>
+        <childnode refid="660" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="698">
+        <label>rocalution::SGS&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_s_g_s"/>
+        <childnode refid="680" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="658">
+        <label>rocalution::LU&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_l_u"/>
+        <childnode refid="656" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="696">
+        <label>rocalution::MultiColoredGS&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_multi_colored_g_s"/>
+        <childnode refid="695" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="702">
+        <label>rocalution::Solver&lt; OperatorTypeH, VectorTypeH, ValueTypeH &gt;</label>
+        <link refid="classrocalution_1_1_solver"/>
+        <childnode refid="644" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="650">
         <label>rocalution::Vector&lt; ValueType &gt;</label>
         <link refid="classrocalution_1_1_vector"/>
-        <childnode refid="87" relation="public-inheritance">
+        <childnode refid="645" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="88">
+      <node id="672">
+        <label>rocalution::Chebyshev&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_chebyshev"/>
+        <childnode refid="660" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="691">
+        <label>rocalution::ILUT&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_i_l_u_t"/>
+        <childnode refid="680" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="681">
+        <label>rocalution::AIChebyshev&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_a_i_chebyshev"/>
+        <childnode refid="680" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="646">
         <label>rocalution::Operator&lt; ValueType &gt;</label>
         <link refid="classrocalution_1_1_operator"/>
-        <childnode refid="87" relation="public-inheritance">
+        <childnode refid="645" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="94">
+      <node id="692">
+        <label>rocalution::Jacobi&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_jacobi"/>
+        <childnode refid="680" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="690">
+        <label>rocalution::ILU&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_i_l_u"/>
+        <childnode refid="680" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="694">
+        <label>rocalution::MultiColoredILU&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_multi_colored_i_l_u"/>
+        <childnode refid="693" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="653">
         <label>rocalution::LocalVector&lt; ValueType &gt;</label>
         <link refid="classrocalution_1_1_local_vector"/>
-        <childnode refid="92" relation="public-inheritance">
+        <childnode refid="650" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="86">
+      <node id="683">
+        <label>rocalution::RAS&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_r_a_s"/>
+        <childnode refid="682" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="644">
         <label>rocalution::RocalutionObj</label>
       </node>
-      <node id="93">
+      <node id="652">
         <label>rocalution::GlobalVector&lt; ValueType &gt;</label>
         <link refid="classrocalution_1_1_global_vector"/>
-        <childnode refid="92" relation="public-inheritance">
+        <childnode refid="650" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="95">
+      <node id="699">
+        <label>rocalution::SPAI&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_s_p_a_i"/>
+        <childnode refid="680" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="654">
         <label>rocalution::ParallelManager</label>
         <link refid="classrocalution_1_1_parallel_manager"/>
-        <childnode refid="86" relation="public-inheritance">
+        <childnode refid="644" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="91">
+      <node id="687">
+        <label>rocalution::FSAI&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_f_s_a_i"/>
+        <childnode refid="680" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="649">
         <label>rocalution::LocalStencil&lt; ValueType &gt;</label>
         <link refid="classrocalution_1_1_local_stencil"/>
-        <childnode refid="88" relation="public-inheritance">
+        <childnode refid="646" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="89">
+      <node id="695">
+        <label>rocalution::MultiColoredSGS&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_multi_colored_s_g_s"/>
+        <childnode refid="693" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="704">
+        <label>rocalution::MixedPrecisionDC&lt; OperatorTypeH, VectorTypeH, ValueTypeH, OperatorTypeL, VectorTypeL, ValueTypeL &gt;</label>
+        <link refid="classrocalution_1_1_mixed_precision_d_c"/>
+        <childnode refid="703" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="669">
+        <label>rocalution::BiCGStab&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_bi_c_g_stab"/>
+        <childnode refid="660" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="677">
+        <label>rocalution::GMRES&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_g_m_r_e_s"/>
+        <childnode refid="660" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="679">
+        <label>rocalution::QMRCGStab&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_q_m_r_c_g_stab"/>
+        <childnode refid="660" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="678">
+        <label>rocalution::IDR&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_i_d_r"/>
+        <childnode refid="660" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="686">
+        <label>rocalution::DiagJacobiSaddlePointPrecond&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_diag_jacobi_saddle_point_precond"/>
+        <childnode refid="680" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="682">
+        <label>rocalution::AS&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_a_s"/>
+        <childnode refid="680" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="667">
+        <label>rocalution::UAAMG&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_u_a_a_m_g"/>
+        <childnode refid="662" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="670">
+        <label>rocalution::BiCGStabl&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_bi_c_g_stabl"/>
+        <childnode refid="660" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="693">
+        <label>rocalution::MultiColored&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_multi_colored"/>
+        <childnode refid="680" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="647">
         <label>rocalution::GlobalMatrix&lt; ValueType &gt;</label>
         <link refid="classrocalution_1_1_global_matrix"/>
-        <childnode refid="88" relation="public-inheritance">
+        <childnode refid="646" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="662">
+        <label>rocalution::BaseAMG&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_base_a_m_g"/>
+        <childnode refid="661" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="676">
+        <label>rocalution::FixedPoint&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_fixed_point"/>
+        <childnode refid="660" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="664">
+        <label>rocalution::PairwiseAMG&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_pairwise_a_m_g"/>
+        <childnode refid="662" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="701">
+        <label>rocalution::VariablePreconditioner&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_variable_preconditioner"/>
+        <childnode refid="680" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="673">
+        <label>rocalution::CR&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_c_r"/>
+        <childnode refid="660" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="666">
+        <label>rocalution::SAAMG&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_s_a_a_m_g"/>
+        <childnode refid="662" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="703">
+        <label>rocalution::IterativeLinearSolver&lt; OperatorTypeH, VectorTypeH, ValueTypeH &gt;</label>
+        <link refid="classrocalution_1_1_iterative_linear_solver"/>
+        <childnode refid="702" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="661">
+        <label>rocalution::BaseMultiGrid&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_base_multi_grid"/>
+        <childnode refid="660" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="665">
+        <label>rocalution::RugeStuebenAMG&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_ruge_stueben_a_m_g"/>
+        <childnode refid="662" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
-    <location file="ROCm_Libraries/rocALUTION/src/base/base_rocalution.hpp" line="42" column="1" bodyfile="ROCm_Libraries/rocALUTION/src/base/base_rocalution.hpp" bodystart="41" bodyend="51"/>
+    <location file="/home/tcs/rocALUTION/src/base/base_rocalution.hpp" line="42" column="1" bodyfile="/home/tcs/rocALUTION/src/base/base_rocalution.hpp" bodystart="41" bodyend="51"/>
     <listofallmembers>
       <member refid="classrocalution_1_1_rocalution_obj_1ae775c603a6abb9bc78417d06741364ce" prot="public" virt="pure-virtual"><scope>rocalution::RocalutionObj</scope><name>Clear</name></member>
       <member refid="classrocalution_1_1_rocalution_obj_1a4bba5aeaf4fd705efc00402f1f6ed40b" prot="protected" virt="non-virtual"><scope>rocalution::RocalutionObj</scope><name>global_obj_id_</name></member>

@@ -1,0 +1,744 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classrocalution_1_1_multi_colored" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>rocalution::MultiColored</compoundname>
+    <basecompoundref refid="classrocalution_1_1_preconditioner" prot="public" virt="non-virtual">rocalution::Preconditioner&lt; OperatorType, VectorType, ValueType &gt;</basecompoundref>
+    <derivedcompoundref refid="classrocalution_1_1_multi_colored_i_l_u" prot="public" virt="non-virtual">rocalution::MultiColoredILU&lt; OperatorType, VectorType, ValueType &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classrocalution_1_1_multi_colored_s_g_s" prot="public" virt="non-virtual">rocalution::MultiColoredSGS&lt; OperatorType, VectorType, ValueType &gt;</derivedcompoundref>
+    <includes refid="preconditioner__multicolored_8hpp" local="no">preconditioner_multicolored.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>class OperatorType</type>
+      </param>
+      <param>
+        <type>class VectorType</type>
+      </param>
+      <param>
+        <type>typename ValueType</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classrocalution_1_1_multi_colored_1a08c1dd80b79a578a53b66183b82062ac" prot="protected" static="no" mutable="no">
+        <type>OperatorType *</type>
+        <definition>OperatorType* rocalution::MultiColored&lt; OperatorType, VectorType, ValueType &gt;::analyzer_op_</definition>
+        <argsstring></argsstring>
+        <name>analyzer_op_</name>
+        <briefdescription>
+<para><ref refid="classrocalution_1_1_operator" kindref="compound">Operator</ref> for analyzing. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multicolored.hpp" line="64" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multicolored.hpp" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrocalution_1_1_multi_colored_1a923d0705c49f5fd26103ebfaef8c8d96" prot="protected" static="no" mutable="no">
+        <type>OperatorType *</type>
+        <definition>OperatorType* rocalution::MultiColored&lt; OperatorType, VectorType, ValueType &gt;::preconditioner_</definition>
+        <argsstring></argsstring>
+        <name>preconditioner_</name>
+        <briefdescription>
+<para><ref refid="classrocalution_1_1_preconditioner" kindref="compound">Preconditioner</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multicolored.hpp" line="66" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multicolored.hpp" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrocalution_1_1_multi_colored_1a12d77f464d01684c93b1c7b5d4856659" prot="protected" static="no" mutable="no">
+        <type>OperatorType ***</type>
+        <definition>OperatorType*** rocalution::MultiColored&lt; OperatorType, VectorType, ValueType &gt;::preconditioner_block_</definition>
+        <argsstring></argsstring>
+        <name>preconditioner_block_</name>
+        <briefdescription>
+<para><ref refid="classrocalution_1_1_preconditioner" kindref="compound">Preconditioner</ref> for each block. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multicolored.hpp" line="69" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multicolored.hpp" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrocalution_1_1_multi_colored_1ab6bde62eb411d8691272f8912bbf3d3e" prot="protected" static="no" mutable="no">
+        <type>VectorType **</type>
+        <definition>VectorType** rocalution::MultiColored&lt; OperatorType, VectorType, ValueType &gt;::x_block_</definition>
+        <argsstring></argsstring>
+        <name>x_block_</name>
+        <briefdescription>
+<para>Solution vector for each block. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multicolored.hpp" line="72" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multicolored.hpp" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrocalution_1_1_multi_colored_1af89cee670aa2e5b2efeca7cb6824e1c6" prot="protected" static="no" mutable="no">
+        <type>VectorType **</type>
+        <definition>VectorType** rocalution::MultiColored&lt; OperatorType, VectorType, ValueType &gt;::diag_block_</definition>
+        <argsstring></argsstring>
+        <name>diag_block_</name>
+        <briefdescription>
+<para>Diagonal for each block. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multicolored.hpp" line="74" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multicolored.hpp" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrocalution_1_1_multi_colored_1a2fdcd833df040665595a7180ec579f1e" prot="protected" static="no" mutable="no">
+        <type>VectorType</type>
+        <definition>VectorType rocalution::MultiColored&lt; OperatorType, VectorType, ValueType &gt;::x_</definition>
+        <argsstring></argsstring>
+        <name>x_</name>
+        <briefdescription>
+<para>Solution vector. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multicolored.hpp" line="76" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multicolored.hpp" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrocalution_1_1_multi_colored_1a73dc2009eff4372a60db0e937d2e74ce" prot="protected" static="no" mutable="no">
+        <type>VectorType</type>
+        <definition>VectorType rocalution::MultiColored&lt; OperatorType, VectorType, ValueType &gt;::diag_</definition>
+        <argsstring></argsstring>
+        <name>diag_</name>
+        <briefdescription>
+<para>Diagonal. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multicolored.hpp" line="78" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multicolored.hpp" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrocalution_1_1_multi_colored_1acda8d3075137cbdeaf4ed9a81f7ddda9" prot="protected" static="no" mutable="no">
+        <type><ref refid="classrocalution_1_1_solver" kindref="compound">Solver</ref>&lt; OperatorType, VectorType, ValueType &gt; **</type>
+        <definition>Solver&lt;OperatorType, VectorType, ValueType&gt;** rocalution::MultiColored&lt; OperatorType, VectorType, ValueType &gt;::diag_solver_</definition>
+        <argsstring></argsstring>
+        <name>diag_solver_</name>
+        <briefdescription>
+<para>Diagonal solver. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multicolored.hpp" line="81" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multicolored.hpp" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrocalution_1_1_multi_colored_1ad8a9d9d79a2d489cafc2577aa624032d" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int rocalution::MultiColored&lt; OperatorType, VectorType, ValueType &gt;::num_blocks_</definition>
+        <argsstring></argsstring>
+        <name>num_blocks_</name>
+        <briefdescription>
+<para>Number of blocks. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multicolored.hpp" line="84" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multicolored.hpp" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrocalution_1_1_multi_colored_1a08d3b5ab1187bec10b4091c4efd529bb" prot="protected" static="no" mutable="no">
+        <type>int *</type>
+        <definition>int* rocalution::MultiColored&lt; OperatorType, VectorType, ValueType &gt;::block_sizes_</definition>
+        <argsstring></argsstring>
+        <name>block_sizes_</name>
+        <briefdescription>
+<para>Block sizes. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multicolored.hpp" line="86" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multicolored.hpp" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrocalution_1_1_multi_colored_1a763a1b39feb1f26c36d2ef03db816879" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool rocalution::MultiColored&lt; OperatorType, VectorType, ValueType &gt;::op_mat_format_</definition>
+        <argsstring></argsstring>
+        <name>op_mat_format_</name>
+        <briefdescription>
+<para>Keep the precond matrix in CSR or not. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multicolored.hpp" line="89" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multicolored.hpp" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrocalution_1_1_multi_colored_1a5d223988f3d34d524775b140b45d7863" prot="protected" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int rocalution::MultiColored&lt; OperatorType, VectorType, ValueType &gt;::precond_mat_format_</definition>
+        <argsstring></argsstring>
+        <name>precond_mat_format_</name>
+        <briefdescription>
+<para>Precond matrix format. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multicolored.hpp" line="91" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multicolored.hpp" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrocalution_1_1_multi_colored_1ad3bfb130276792d98a4823636acd2134" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool rocalution::MultiColored&lt; OperatorType, VectorType, ValueType &gt;::decomp_</definition>
+        <argsstring></argsstring>
+        <name>decomp_</name>
+        <briefdescription>
+<para>Decompose the preconditioner into blocks or not. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multicolored.hpp" line="94" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multicolored.hpp" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classrocalution_1_1_multi_colored_1aef02b9dc4925516780b6f202c3a96e73" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>rocalution::MultiColored&lt; OperatorType, VectorType, ValueType &gt;::MultiColored</definition>
+        <argsstring>()</argsstring>
+        <name>MultiColored</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multicolored.hpp" line="47" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multicolored.cpp" bodystart="41" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_multi_colored_1a25f11a60db8777e30eddb59898a0d4e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>rocalution::MultiColored&lt; OperatorType, VectorType, ValueType &gt;::~MultiColored</definition>
+        <argsstring>()</argsstring>
+        <name>~MultiColored</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multicolored.hpp" line="48" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multicolored.cpp" bodystart="58" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_multi_colored_1aa49ba96569f4fda030192946ff5eb6ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void rocalution::MultiColored&lt; OperatorType, VectorType, ValueType &gt;::Clear</definition>
+        <argsstring>(void)</argsstring>
+        <name>Clear</name>
+        <reimplements refid="classrocalution_1_1_solver_1aa8839d3ba527d75fedd29fdbe9bd651f">Clear</reimplements>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Clear (free all local data) the solver. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multicolored.hpp" line="50" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multicolored.cpp" bodystart="66" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_multi_colored_1a9efbb40dd24b15572d087856308b4031" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void rocalution::MultiColored&lt; OperatorType, VectorType, ValueType &gt;::Build</definition>
+        <argsstring>(void)</argsstring>
+        <name>Build</name>
+        <reimplements refid="classrocalution_1_1_solver_1a84754d7422ad3fb35c17c61f0a609c7a">Build</reimplements>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Build the solver (data allocation, structure and numerical computation) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multicolored.hpp" line="52" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multicolored.cpp" bodystart="294" bodyend="331"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_multi_colored_1a62aa6b45c0c1cd0945f1283889403bcc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rocalution::MultiColored&lt; OperatorType, VectorType, ValueType &gt;::SetPrecondMatrixFormat</definition>
+        <argsstring>(unsigned int mat_format)</argsstring>
+        <name>SetPrecondMatrixFormat</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>mat_format</declname>
+        </param>
+        <briefdescription>
+<para>Set a specific matrix type of the decomposed block matrices. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multicolored.hpp" line="55" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multicolored.cpp" bodystart="126" bodyend="133"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_multi_colored_1afc5e5067e7d904f2dbcf1e3f786cb1c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rocalution::MultiColored&lt; OperatorType, VectorType, ValueType &gt;::SetDecomposition</definition>
+        <argsstring>(bool decomp)</argsstring>
+        <name>SetDecomposition</name>
+        <param>
+          <type>bool</type>
+          <declname>decomp</declname>
+        </param>
+        <briefdescription>
+<para>Set if the preconditioner should be decomposed or not. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multicolored.hpp" line="58" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multicolored.cpp" bodystart="136" bodyend="141"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_multi_colored_1a23536c79b952e5213a41465cfc7333a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void rocalution::MultiColored&lt; OperatorType, VectorType, ValueType &gt;::Solve</definition>
+        <argsstring>(const VectorType &amp;rhs, VectorType *x)</argsstring>
+        <name>Solve</name>
+        <reimplements refid="classrocalution_1_1_solver_1a69025eb1d2bc7f1266899c2739c82725">Solve</reimplements>
+        <param>
+          <type>const VectorType &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <param>
+          <type>VectorType *</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+<para>Solve <ref refid="classrocalution_1_1_operator" kindref="compound">Operator</ref> x = rhs. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multicolored.hpp" line="60" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multicolored.cpp" bodystart="339" bodyend="367"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classrocalution_1_1_multi_colored_1a042a1677905cbf7998cf1d930e37f7c5" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rocalution::MultiColored&lt; OperatorType, VectorType, ValueType &gt;::ExtractRHSinX_</definition>
+        <argsstring>(const VectorType &amp;rhs, VectorType *x)</argsstring>
+        <name>ExtractRHSinX_</name>
+        <param>
+          <type>const VectorType &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <param>
+          <type>VectorType *</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+<para>Extract b into x under the permutation (see <ref refid="classrocalution_1_1_multi_colored_1aa42f88752d940720af405e6830df4731" kindref="member">Analyse_()</ref>) and decompose x into blocks (x_block_[]) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multicolored.hpp" line="99" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multicolored.cpp" bodystart="370" bodyend="386"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_multi_colored_1ab26eb816bae93f786480e4fd59551a4f" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void rocalution::MultiColored&lt; OperatorType, VectorType, ValueType &gt;::SolveL_</definition>
+        <argsstring>(void)=0</argsstring>
+        <name>SolveL_</name>
+        <reimplementedby refid="classrocalution_1_1_multi_colored_s_g_s_1a35bd748445811e71e879b0a4717095fb">SolveL_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_multi_colored_i_l_u_1a00e9f13f74f12f1a961fc043f7a271c0">SolveL_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_multi_colored_g_s_1a6c74296edf89b02b3cba02c4a033cfbd">SolveL_</reimplementedby>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Solve the lower-triangular (left) matrix. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multicolored.hpp" line="102" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_multi_colored_1a7584a812a285376053b026c32a9703a2" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void rocalution::MultiColored&lt; OperatorType, VectorType, ValueType &gt;::SolveD_</definition>
+        <argsstring>(void)=0</argsstring>
+        <name>SolveD_</name>
+        <reimplementedby refid="classrocalution_1_1_multi_colored_s_g_s_1a311ee759ca6e5ec0e61e245a81a1d03e">SolveD_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_multi_colored_i_l_u_1af4bd478ab978d3f3b558020b5a2f27cb">SolveD_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_multi_colored_g_s_1a0a0845efa3cd329655cb7c968740531a">SolveD_</reimplementedby>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Solve the diagonal part (only for <ref refid="classrocalution_1_1_s_g_s" kindref="compound">SGS</ref>) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multicolored.hpp" line="104" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_multi_colored_1a77ed0a51d8b96510341633a59b0ce9a8" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void rocalution::MultiColored&lt; OperatorType, VectorType, ValueType &gt;::SolveR_</definition>
+        <argsstring>(void)=0</argsstring>
+        <name>SolveR_</name>
+        <reimplementedby refid="classrocalution_1_1_multi_colored_s_g_s_1a4d35e91e86016d1f2fc39f2d7d650538">SolveR_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_multi_colored_i_l_u_1a15c0a023fa8a373a6ba081dde4e30983">SolveR_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_multi_colored_g_s_1a3e6f4f591513368773177ac8dfebcebb">SolveR_</reimplementedby>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Solve the upper-trianguler (right) matrix. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multicolored.hpp" line="106" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_multi_colored_1a8c4e91725997d7bb3750aaf30c0c9864" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void rocalution::MultiColored&lt; OperatorType, VectorType, ValueType &gt;::Solve_</definition>
+        <argsstring>(const VectorType &amp;rhs, VectorType *x)=0</argsstring>
+        <name>Solve_</name>
+        <reimplementedby refid="classrocalution_1_1_multi_colored_s_g_s_1ac8f7393fb48c1ac99788718a98358a06">Solve_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_multi_colored_i_l_u_1ab0668be316af59261dfe397a94418944">Solve_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_multi_colored_g_s_1a72877491da0d2d50fc2ac3bbdec90641">Solve_</reimplementedby>
+        <param>
+          <type>const VectorType &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <param>
+          <type>VectorType *</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+<para>Solve directly without block decomposition. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multicolored.hpp" line="109" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_multi_colored_1a6b0e14af8c49772178f5e6faa454f62f" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rocalution::MultiColored&lt; OperatorType, VectorType, ValueType &gt;::InsertSolution_</definition>
+        <argsstring>(VectorType *x)</argsstring>
+        <name>InsertSolution_</name>
+        <param>
+          <type>VectorType *</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+<para>Insert the solution with backward permutation (from x_block_[]) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multicolored.hpp" line="112" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multicolored.cpp" bodystart="389" bodyend="404"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_multi_colored_1a7718e70c640bbad245f4f1665e1b6f96" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void rocalution::MultiColored&lt; OperatorType, VectorType, ValueType &gt;::Build_Analyser_</definition>
+        <argsstring>(void)</argsstring>
+        <name>Build_Analyser_</name>
+        <reimplementedby refid="classrocalution_1_1_multi_colored_i_l_u_1a9eda7963f193ac3c42970ec9c1a6aca8">Build_Analyser_</reimplementedby>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Build the analyzing matrix. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multicolored.hpp" line="115" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multicolored.cpp" bodystart="144" bodyend="155"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_multi_colored_1aa42f88752d940720af405e6830df4731" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rocalution::MultiColored&lt; OperatorType, VectorType, ValueType &gt;::Analyse_</definition>
+        <argsstring>(void)</argsstring>
+        <name>Analyse_</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Analyse the matrix (i.e. </para>        </briefdescription>
+        <detaileddescription>
+<para>multi-coloring decomposition) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multicolored.hpp" line="117" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multicolored.cpp" bodystart="158" bodyend="173"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_multi_colored_1a548c0de36972965450b46fb326ca7930" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rocalution::MultiColored&lt; OperatorType, VectorType, ValueType &gt;::Permute_</definition>
+        <argsstring>(void)</argsstring>
+        <name>Permute_</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Permute the preconditioning matrix. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multicolored.hpp" line="119" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multicolored.cpp" bodystart="176" bodyend="183"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_multi_colored_1a920038e454ddb83010d19fc11183171a" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void rocalution::MultiColored&lt; OperatorType, VectorType, ValueType &gt;::Factorize_</definition>
+        <argsstring>(void)</argsstring>
+        <name>Factorize_</name>
+        <reimplementedby refid="classrocalution_1_1_multi_colored_i_l_u_1ae8cc83c2d0041a763561d6de58198c45">Factorize_</reimplementedby>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Factorize (i.e. </para>        </briefdescription>
+        <detaileddescription>
+<para>build the preconditioner) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multicolored.hpp" line="121" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multicolored.cpp" bodystart="186" bodyend="188"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_multi_colored_1a9ad601cd1e7b507d195604a21bfe2441" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rocalution::MultiColored&lt; OperatorType, VectorType, ValueType &gt;::Decompose_</definition>
+        <argsstring>(void)</argsstring>
+        <name>Decompose_</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Decompose the structure into blocks (preconditioner_block_[] for the the preconditioning matrix; and x_block_[] for the x vector) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multicolored.hpp" line="125" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multicolored.cpp" bodystart="191" bodyend="291"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_multi_colored_1ad138d643ab947f18a1cdbfb5adc53233" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void rocalution::MultiColored&lt; OperatorType, VectorType, ValueType &gt;::PostAnalyse_</definition>
+        <argsstring>(void)</argsstring>
+        <name>PostAnalyse_</name>
+        <reimplementedby refid="classrocalution_1_1_multi_colored_s_g_s_1ad1bd02ffaf6a57bf853eef7ed86e2ce7">PostAnalyse_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_multi_colored_i_l_u_1a2344f37e0682132d8ade34abcfa5152e">PostAnalyse_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_multi_colored_g_s_1acee5c874ce79cd08e641554c09f2df7a">PostAnalyse_</reimplementedby>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Post-analyzing if the preconditioner is not decomposed. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multicolored.hpp" line="127" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multicolored.cpp" bodystart="334" bodyend="336"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_multi_colored_1a6babbe62884ef9a5f997122f23aa7230" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void rocalution::MultiColored&lt; OperatorType, VectorType, ValueType &gt;::MoveToHostLocalData_</definition>
+        <argsstring>(void)</argsstring>
+        <name>MoveToHostLocalData_</name>
+        <reimplements refid="classrocalution_1_1_solver_1aa1e8be1bd2107543c7390a81f8cee8cb">MoveToHostLocalData_</reimplements>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Move all local data to the host. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multicolored.hpp" line="129" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multicolored.cpp" bodystart="407" bodyend="438"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_multi_colored_1a17ddc5533a57bb0a40d87e331c4d891d" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void rocalution::MultiColored&lt; OperatorType, VectorType, ValueType &gt;::MoveToAcceleratorLocalData_</definition>
+        <argsstring>(void)</argsstring>
+        <name>MoveToAcceleratorLocalData_</name>
+        <reimplements refid="classrocalution_1_1_solver_1a8ce29de0bdda9f35a6a687fd06ac9b11">MoveToAcceleratorLocalData_</reimplements>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Move all local data to the accelerator. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multicolored.hpp" line="130" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multicolored.cpp" bodystart="441" bodyend="472"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Base class for all multi-colored preconditioners. </para>    </briefdescription>
+    <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>OperatorType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- can be <ref refid="classrocalution_1_1_local_matrix" kindref="compound">LocalMatrix</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>VectorType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- can be <ref refid="classrocalution_1_1_local_vector" kindref="compound">LocalVector</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ValueType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- can be float, double, std::complex&lt;float&gt; or std::complex&lt;double&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="457">
+        <label>rocalution::Preconditioner&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_preconditioner"/>
+        <childnode refid="458" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="458">
+        <label>rocalution::Solver&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_solver"/>
+        <childnode refid="459" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="462">
+        <label>rocalution::MultiColoredGS&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_multi_colored_g_s"/>
+        <childnode refid="461" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="460">
+        <label>rocalution::MultiColoredILU&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_multi_colored_i_l_u"/>
+        <childnode refid="456" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="459">
+        <label>rocalution::RocalutionObj</label>
+      </node>
+      <node id="461">
+        <label>rocalution::MultiColoredSGS&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_multi_colored_s_g_s"/>
+        <childnode refid="456" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="456">
+        <label>rocalution::MultiColored&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_multi_colored"/>
+        <childnode refid="457" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="468">
+        <label>rocalution::Vector&lt; int &gt;</label>
+        <link refid="classrocalution_1_1_vector"/>
+        <childnode refid="469" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="469">
+        <label>rocalution::BaseRocalution&lt; ValueType &gt;</label>
+        <link refid="classrocalution_1_1_base_rocalution"/>
+        <childnode refid="466" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="464">
+        <label>rocalution::Preconditioner&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_preconditioner"/>
+        <childnode refid="465" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="465">
+        <label>rocalution::Solver&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_solver"/>
+        <childnode refid="466" relation="public-inheritance">
+        </childnode>
+        <childnode refid="467" relation="usage">
+          <edgelabel>permutation_</edgelabel>
+        </childnode>
+        <childnode refid="470" relation="usage">
+          <edgelabel>op_</edgelabel>
+        </childnode>
+      </node>
+      <node id="467">
+        <label>rocalution::LocalVector&lt; int &gt;</label>
+        <link refid="classrocalution_1_1_local_vector"/>
+        <childnode refid="468" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="466">
+        <label>rocalution::RocalutionObj</label>
+      </node>
+      <node id="470">
+        <label>OperatorType</label>
+      </node>
+      <node id="463">
+        <label>rocalution::MultiColored&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_multi_colored"/>
+        <childnode refid="464" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multicolored.hpp" line="45" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multicolored.hpp" bodystart="44" bodyend="131"/>
+    <listofallmembers>
+      <member refid="classrocalution_1_1_multi_colored_1aa42f88752d940720af405e6830df4731" prot="protected" virt="non-virtual"><scope>rocalution::MultiColored</scope><name>Analyse_</name></member>
+      <member refid="classrocalution_1_1_multi_colored_1a08c1dd80b79a578a53b66183b82062ac" prot="protected" virt="non-virtual"><scope>rocalution::MultiColored</scope><name>analyzer_op_</name></member>
+      <member refid="classrocalution_1_1_multi_colored_1a08d3b5ab1187bec10b4091c4efd529bb" prot="protected" virt="non-virtual"><scope>rocalution::MultiColored</scope><name>block_sizes_</name></member>
+      <member refid="classrocalution_1_1_multi_colored_1a9efbb40dd24b15572d087856308b4031" prot="public" virt="virtual"><scope>rocalution::MultiColored</scope><name>Build</name></member>
+      <member refid="classrocalution_1_1_solver_1a64924a0c87d60d2e4bf9fa295d0152cb" prot="protected" virt="non-virtual"><scope>rocalution::MultiColored</scope><name>build_</name></member>
+      <member refid="classrocalution_1_1_multi_colored_1a7718e70c640bbad245f4f1665e1b6f96" prot="protected" virt="virtual"><scope>rocalution::MultiColored</scope><name>Build_Analyser_</name></member>
+      <member refid="classrocalution_1_1_solver_1a0d11ee9943f785db285f0ef5c08c64eb" prot="public" virt="virtual"><scope>rocalution::MultiColored</scope><name>BuildMoveToAcceleratorAsync</name></member>
+      <member refid="classrocalution_1_1_multi_colored_1aa49ba96569f4fda030192946ff5eb6ba" prot="public" virt="virtual"><scope>rocalution::MultiColored</scope><name>Clear</name></member>
+      <member refid="classrocalution_1_1_multi_colored_1ad3bfb130276792d98a4823636acd2134" prot="protected" virt="non-virtual"><scope>rocalution::MultiColored</scope><name>decomp_</name></member>
+      <member refid="classrocalution_1_1_multi_colored_1a9ad601cd1e7b507d195604a21bfe2441" prot="protected" virt="non-virtual"><scope>rocalution::MultiColored</scope><name>Decompose_</name></member>
+      <member refid="classrocalution_1_1_multi_colored_1a73dc2009eff4372a60db0e937d2e74ce" prot="protected" virt="non-virtual"><scope>rocalution::MultiColored</scope><name>diag_</name></member>
+      <member refid="classrocalution_1_1_multi_colored_1af89cee670aa2e5b2efeca7cb6824e1c6" prot="protected" virt="non-virtual"><scope>rocalution::MultiColored</scope><name>diag_block_</name></member>
+      <member refid="classrocalution_1_1_multi_colored_1acda8d3075137cbdeaf4ed9a81f7ddda9" prot="protected" virt="non-virtual"><scope>rocalution::MultiColored</scope><name>diag_solver_</name></member>
+      <member refid="classrocalution_1_1_multi_colored_1a042a1677905cbf7998cf1d930e37f7c5" prot="protected" virt="non-virtual"><scope>rocalution::MultiColored</scope><name>ExtractRHSinX_</name></member>
+      <member refid="classrocalution_1_1_multi_colored_1a920038e454ddb83010d19fc11183171a" prot="protected" virt="virtual"><scope>rocalution::MultiColored</scope><name>Factorize_</name></member>
+      <member refid="classrocalution_1_1_rocalution_obj_1a4bba5aeaf4fd705efc00402f1f6ed40b" prot="protected" virt="non-virtual"><scope>rocalution::MultiColored</scope><name>global_obj_id_</name></member>
+      <member refid="classrocalution_1_1_multi_colored_1a6b0e14af8c49772178f5e6faa454f62f" prot="protected" virt="non-virtual"><scope>rocalution::MultiColored</scope><name>InsertSolution_</name></member>
+      <member refid="classrocalution_1_1_solver_1ab1b6410cd134c9ad00c1851d400cf0f8" prot="public" virt="virtual"><scope>rocalution::MultiColored</scope><name>MoveToAccelerator</name></member>
+      <member refid="classrocalution_1_1_multi_colored_1a17ddc5533a57bb0a40d87e331c4d891d" prot="protected" virt="virtual"><scope>rocalution::MultiColored</scope><name>MoveToAcceleratorLocalData_</name></member>
+      <member refid="classrocalution_1_1_solver_1a3c263e65898816f5838184c0af78a044" prot="public" virt="virtual"><scope>rocalution::MultiColored</scope><name>MoveToHost</name></member>
+      <member refid="classrocalution_1_1_multi_colored_1a6babbe62884ef9a5f997122f23aa7230" prot="protected" virt="virtual"><scope>rocalution::MultiColored</scope><name>MoveToHostLocalData_</name></member>
+      <member refid="classrocalution_1_1_multi_colored_1aef02b9dc4925516780b6f202c3a96e73" prot="public" virt="non-virtual"><scope>rocalution::MultiColored</scope><name>MultiColored</name></member>
+      <member refid="classrocalution_1_1_multi_colored_1ad8a9d9d79a2d489cafc2577aa624032d" prot="protected" virt="non-virtual"><scope>rocalution::MultiColored</scope><name>num_blocks_</name></member>
+      <member refid="classrocalution_1_1_solver_1ad338b5f99cf339fb33218dd8b958cac4" prot="protected" virt="non-virtual"><scope>rocalution::MultiColored</scope><name>op_</name></member>
+      <member refid="classrocalution_1_1_multi_colored_1a763a1b39feb1f26c36d2ef03db816879" prot="protected" virt="non-virtual"><scope>rocalution::MultiColored</scope><name>op_mat_format_</name></member>
+      <member refid="classrocalution_1_1_solver_1ac46ab4d19fba48ece463666d37a7dc86" prot="protected" virt="non-virtual"><scope>rocalution::MultiColored</scope><name>permutation_</name></member>
+      <member refid="classrocalution_1_1_multi_colored_1a548c0de36972965450b46fb326ca7930" prot="protected" virt="non-virtual"><scope>rocalution::MultiColored</scope><name>Permute_</name></member>
+      <member refid="classrocalution_1_1_multi_colored_1ad138d643ab947f18a1cdbfb5adc53233" prot="protected" virt="virtual"><scope>rocalution::MultiColored</scope><name>PostAnalyse_</name></member>
+      <member refid="classrocalution_1_1_solver_1a2acdb829fa657a7b3e680d1ee6005c9b" prot="protected" virt="non-virtual"><scope>rocalution::MultiColored</scope><name>precond_</name></member>
+      <member refid="classrocalution_1_1_multi_colored_1a5d223988f3d34d524775b140b45d7863" prot="protected" virt="non-virtual"><scope>rocalution::MultiColored</scope><name>precond_mat_format_</name></member>
+      <member refid="classrocalution_1_1_preconditioner_1a964b8c3f97a675f8a098b7539d8a6600" prot="public" virt="non-virtual"><scope>rocalution::MultiColored</scope><name>Preconditioner</name></member>
+      <member refid="classrocalution_1_1_multi_colored_1a923d0705c49f5fd26103ebfaef8c8d96" prot="protected" virt="non-virtual"><scope>rocalution::MultiColored</scope><name>preconditioner_</name></member>
+      <member refid="classrocalution_1_1_multi_colored_1a12d77f464d01684c93b1c7b5d4856659" prot="protected" virt="non-virtual"><scope>rocalution::MultiColored</scope><name>preconditioner_block_</name></member>
+      <member refid="classrocalution_1_1_solver_1a57992cfc687f3bf260964ad2fc19c467" prot="public" virt="pure-virtual"><scope>rocalution::MultiColored</scope><name>Print</name></member>
+      <member refid="classrocalution_1_1_preconditioner_1aa16516bd94c4e5a931ec3adad6b2081b" prot="protected" virt="virtual"><scope>rocalution::MultiColored</scope><name>PrintEnd_</name></member>
+      <member refid="classrocalution_1_1_preconditioner_1abf90b743371c8d0159a6cad44e8595f3" prot="protected" virt="virtual"><scope>rocalution::MultiColored</scope><name>PrintStart_</name></member>
+      <member refid="classrocalution_1_1_solver_1acd20a051f0560a77645e35361df8f87c" prot="public" virt="virtual"><scope>rocalution::MultiColored</scope><name>ReBuildNumeric</name></member>
+      <member refid="classrocalution_1_1_solver_1a91354c5c116742c58d9eb2094cc6a68e" prot="public" virt="virtual"><scope>rocalution::MultiColored</scope><name>ResetOperator</name></member>
+      <member refid="classrocalution_1_1_rocalution_obj_1ad60a8b2047aad74e488c552264fa7737" prot="public" virt="non-virtual"><scope>rocalution::MultiColored</scope><name>RocalutionObj</name></member>
+      <member refid="classrocalution_1_1_multi_colored_1afc5e5067e7d904f2dbcf1e3f786cb1c1" prot="public" virt="non-virtual"><scope>rocalution::MultiColored</scope><name>SetDecomposition</name></member>
+      <member refid="classrocalution_1_1_solver_1a12765b63efe75bc88406a8d6ebb5aacc" prot="public" virt="non-virtual"><scope>rocalution::MultiColored</scope><name>SetOperator</name></member>
+      <member refid="classrocalution_1_1_multi_colored_1a62aa6b45c0c1cd0945f1283889403bcc" prot="public" virt="non-virtual"><scope>rocalution::MultiColored</scope><name>SetPrecondMatrixFormat</name></member>
+      <member refid="classrocalution_1_1_multi_colored_1a23536c79b952e5213a41465cfc7333a8" prot="public" virt="virtual"><scope>rocalution::MultiColored</scope><name>Solve</name></member>
+      <member refid="classrocalution_1_1_multi_colored_1a8c4e91725997d7bb3750aaf30c0c9864" prot="protected" virt="pure-virtual"><scope>rocalution::MultiColored</scope><name>Solve_</name></member>
+      <member refid="classrocalution_1_1_multi_colored_1a7584a812a285376053b026c32a9703a2" prot="protected" virt="pure-virtual"><scope>rocalution::MultiColored</scope><name>SolveD_</name></member>
+      <member refid="classrocalution_1_1_multi_colored_1ab26eb816bae93f786480e4fd59551a4f" prot="protected" virt="pure-virtual"><scope>rocalution::MultiColored</scope><name>SolveL_</name></member>
+      <member refid="classrocalution_1_1_solver_1a009956b05d4d5d1d38e4c24341b14a66" prot="public" virt="non-virtual"><scope>rocalution::MultiColored</scope><name>Solver</name></member>
+      <member refid="classrocalution_1_1_multi_colored_1a77ed0a51d8b96510341633a59b0ce9a8" prot="protected" virt="pure-virtual"><scope>rocalution::MultiColored</scope><name>SolveR_</name></member>
+      <member refid="classrocalution_1_1_preconditioner_1a2d2f41ddc040d777783d2591c8324508" prot="public" virt="virtual"><scope>rocalution::MultiColored</scope><name>SolveZeroSol</name></member>
+      <member refid="classrocalution_1_1_solver_1a17c2830a0ede8d82d1336aa25da6f907" prot="public" virt="virtual"><scope>rocalution::MultiColored</scope><name>Sync</name></member>
+      <member refid="classrocalution_1_1_solver_1a2ee162346e0d52543f9d3d25fe70ea8a" prot="protected" virt="non-virtual"><scope>rocalution::MultiColored</scope><name>verb_</name></member>
+      <member refid="classrocalution_1_1_solver_1aa2ab9c17de96add5e3ad30e7cabf0ea7" prot="public" virt="virtual"><scope>rocalution::MultiColored</scope><name>Verbose</name></member>
+      <member refid="classrocalution_1_1_multi_colored_1a2fdcd833df040665595a7180ec579f1e" prot="protected" virt="non-virtual"><scope>rocalution::MultiColored</scope><name>x_</name></member>
+      <member refid="classrocalution_1_1_multi_colored_1ab6bde62eb411d8691272f8912bbf3d3e" prot="protected" virt="non-virtual"><scope>rocalution::MultiColored</scope><name>x_block_</name></member>
+      <member refid="classrocalution_1_1_multi_colored_1a25f11a60db8777e30eddb59898a0d4e4" prot="public" virt="virtual"><scope>rocalution::MultiColored</scope><name>~MultiColored</name></member>
+      <member refid="classrocalution_1_1_preconditioner_1aac6cfbb3d6c5cd248d7b7dabac096a76" prot="public" virt="virtual"><scope>rocalution::MultiColored</scope><name>~Preconditioner</name></member>
+      <member refid="classrocalution_1_1_rocalution_obj_1a55a2f93f798cebdda6343b20db959e2d" prot="public" virt="virtual"><scope>rocalution::MultiColored</scope><name>~RocalutionObj</name></member>
+      <member refid="classrocalution_1_1_solver_1af861566a540fc6cc399c844bbc789ec6" prot="public" virt="virtual"><scope>rocalution::MultiColored</scope><name>~Solver</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

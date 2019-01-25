@@ -3,10 +3,8 @@
   <compounddef id="bicgstabl_8cpp" kind="file" language="C++">
     <compoundname>bicgstabl.cpp</compoundname>
     <includes local="yes">../../utils/def.hpp</includes>
-    <includes local="yes">bicgstabl.hpp</includes>
-    <includes local="yes">/home/tcs/Jan24/Jan24_libraries_testing/ROCm_Libraries/rocALUTION/src/solvers/solver.hpp</includes>
-    <includes local="no">vector</includes>
-    <includes local="yes">../iter_ctrl.hpp</includes>
+    <includes refid="bicgstabl_8hpp" local="yes">bicgstabl.hpp</includes>
+    <includes refid="iter__ctrl_8hpp" local="yes">../iter_ctrl.hpp</includes>
     <includes refid="local__matrix_8hpp" local="yes">../../base/local_matrix.hpp</includes>
     <includes refid="local__stencil_8hpp" local="yes">../../base/local_stencil.hpp</includes>
     <includes refid="local__vector_8hpp" local="yes">../../base/local_vector.hpp</includes>
@@ -17,223 +15,236 @@
     <includes local="no">math.h</includes>
     <includes local="no">complex</includes>
     <incdepgraph>
-      <node id="327">
+      <node id="577">
+        <label>../base/local_vector.hpp</label>
+        <link refid="local__vector_8hpp_source"/>
+        <childnode refid="578" relation="include">
+        </childnode>
+        <childnode refid="579" relation="include">
+        </childnode>
+      </node>
+      <node id="590">
         <label>limits</label>
       </node>
-      <node id="324">
-        <label>parallel_manager.hpp</label>
-        <link refid="parallel__manager_8hpp_source"/>
-        <childnode refid="310" relation="include">
-        </childnode>
-        <childnode refid="308" relation="include">
-        </childnode>
-        <childnode refid="325" relation="include">
-        </childnode>
-        <childnode refid="326" relation="include">
-        </childnode>
-        <childnode refid="327" relation="include">
-        </childnode>
-        <childnode refid="315" relation="include">
-        </childnode>
-        <childnode refid="316" relation="include">
-        </childnode>
-      </node>
-      <node id="326">
+      <node id="589">
         <label>assert.h</label>
       </node>
-      <node id="301">
-        <label>ROCm_Libraries/rocALUTION/src/solvers/krylov/bicgstabl.cpp</label>
-        <link refid="bicgstabl_8cpp"/>
-        <childnode refid="302" relation="include">
-        </childnode>
-        <childnode refid="303" relation="include">
-        </childnode>
-        <childnode refid="304" relation="include">
-        </childnode>
-        <childnode refid="305" relation="include">
-        </childnode>
-        <childnode refid="306" relation="include">
-        </childnode>
-        <childnode refid="307" relation="include">
-        </childnode>
-        <childnode refid="319" relation="include">
-        </childnode>
-        <childnode refid="320" relation="include">
-        </childnode>
-        <childnode refid="323" relation="include">
-        </childnode>
-        <childnode refid="328" relation="include">
-        </childnode>
-        <childnode refid="329" relation="include">
-        </childnode>
-        <childnode refid="330" relation="include">
-        </childnode>
-        <childnode refid="331" relation="include">
-        </childnode>
-        <childnode refid="316" relation="include">
-        </childnode>
-      </node>
-      <node id="311">
-        <label>backend_manager.hpp</label>
-        <link refid="backend__manager_8hpp_source"/>
-        <childnode refid="312" relation="include">
-        </childnode>
-        <childnode refid="313" relation="include">
-        </childnode>
-        <childnode refid="314" relation="include">
-        </childnode>
-        <childnode refid="305" relation="include">
-        </childnode>
-        <childnode refid="315" relation="include">
-        </childnode>
-      </node>
-      <node id="309">
-        <label>operator.hpp</label>
-        <link refid="operator_8hpp_source"/>
-        <childnode refid="308" relation="include">
-        </childnode>
-        <childnode refid="310" relation="include">
-        </childnode>
-        <childnode refid="312" relation="include">
-        </childnode>
-        <childnode refid="315" relation="include">
-        </childnode>
-        <childnode refid="317" relation="include">
-        </childnode>
-      </node>
-      <node id="315">
-        <label>string</label>
-      </node>
-      <node id="314">
-        <label>map</label>
-      </node>
-      <node id="325">
-        <label>/home/tcs/Jan24/Jan24_libraries_testing/ROCm_Libraries/rocALUTION/src/utils/def.hpp</label>
-      </node>
-      <node id="313">
-        <label>fstream</label>
-      </node>
-      <node id="323">
-        <label>../../base/global_matrix.hpp</label>
-        <link refid="global__matrix_8hpp_source"/>
-        <childnode refid="308" relation="include">
-        </childnode>
-        <childnode refid="309" relation="include">
-        </childnode>
-        <childnode refid="324" relation="include">
-        </childnode>
-      </node>
-      <node id="322">
-        <label>stencil_types.hpp</label>
-      </node>
-      <node id="318">
-        <label>matrix_formats.hpp</label>
-      </node>
-      <node id="320">
-        <label>local_vector.hpp</label>
-        <link refid="local__vector_8hpp_source"/>
-        <childnode refid="308" relation="include">
-        </childnode>
-        <childnode refid="321" relation="include">
-        </childnode>
-      </node>
-      <node id="310">
-        <label>base_rocalution.hpp</label>
-        <link refid="base__rocalution_8hpp_source"/>
-        <childnode refid="311" relation="include">
-        </childnode>
-        <childnode refid="316" relation="include">
-        </childnode>
-        <childnode refid="305" relation="include">
-        </childnode>
-      </node>
-      <node id="307">
-        <label>../../base/local_matrix.hpp</label>
-        <link refid="local__matrix_8hpp_source"/>
-        <childnode refid="308" relation="include">
-        </childnode>
-        <childnode refid="309" relation="include">
-        </childnode>
-        <childnode refid="311" relation="include">
-        </childnode>
-        <childnode refid="318" relation="include">
-        </childnode>
-        <childnode refid="315" relation="include">
-        </childnode>
-      </node>
-      <node id="308">
-        <label>../utils/types.hpp</label>
-      </node>
-      <node id="328">
-        <label>../../base/global_vector.hpp</label>
-        <link refid="global__vector_8hpp_source"/>
-        <childnode refid="308" relation="include">
-        </childnode>
-        <childnode refid="321" relation="include">
-        </childnode>
-        <childnode refid="324" relation="include">
-        </childnode>
-      </node>
-      <node id="305">
-        <label>vector</label>
-      </node>
-      <node id="302">
-        <label>../../utils/def.hpp</label>
-      </node>
-      <node id="329">
-        <label>../../utils/log.hpp</label>
-      </node>
-      <node id="331">
-        <label>math.h</label>
-      </node>
-      <node id="319">
-        <label>../../base/local_stencil.hpp</label>
-        <link refid="local__stencil_8hpp_source"/>
-        <childnode refid="308" relation="include">
-        </childnode>
-        <childnode refid="309" relation="include">
-        </childnode>
-        <childnode refid="320" relation="include">
-        </childnode>
-        <childnode refid="322" relation="include">
-        </childnode>
-        <childnode refid="315" relation="include">
-        </childnode>
-      </node>
-      <node id="303">
-        <label>bicgstabl.hpp</label>
-      </node>
-      <node id="317">
-        <label>cstdlib</label>
-      </node>
-      <node id="306">
-        <label>../iter_ctrl.hpp</label>
-      </node>
-      <node id="312">
-        <label>iostream</label>
-      </node>
-      <node id="304">
-        <label>/home/tcs/Jan24/Jan24_libraries_testing/ROCm_Libraries/rocALUTION/src/solvers/solver.hpp</label>
-      </node>
-      <node id="321">
+      <node id="579">
         <label>vector.hpp</label>
         <link refid="vector_8hpp_source"/>
-        <childnode refid="308" relation="include">
+        <childnode refid="578" relation="include">
         </childnode>
-        <childnode refid="310" relation="include">
+        <childnode refid="571" relation="include">
         </childnode>
-        <childnode refid="312" relation="include">
+        <childnode refid="573" relation="include">
         </childnode>
-        <childnode refid="315" relation="include">
+        <childnode refid="570" relation="include">
         </childnode>
-        <childnode refid="317" relation="include">
+        <childnode refid="580" relation="include">
         </childnode>
       </node>
-      <node id="316">
+      <node id="587">
+        <label>parallel_manager.hpp</label>
+        <link refid="parallel__manager_8hpp_source"/>
+        <childnode refid="571" relation="include">
+        </childnode>
+        <childnode refid="578" relation="include">
+        </childnode>
+        <childnode refid="588" relation="include">
+        </childnode>
+        <childnode refid="589" relation="include">
+        </childnode>
+        <childnode refid="590" relation="include">
+        </childnode>
+        <childnode refid="570" relation="include">
+        </childnode>
+        <childnode refid="576" relation="include">
+        </childnode>
+      </node>
+      <node id="582">
+        <label>operator.hpp</label>
+        <link refid="operator_8hpp_source"/>
+        <childnode refid="578" relation="include">
+        </childnode>
+        <childnode refid="571" relation="include">
+        </childnode>
+        <childnode refid="573" relation="include">
+        </childnode>
+        <childnode refid="570" relation="include">
+        </childnode>
+        <childnode refid="580" relation="include">
+        </childnode>
+      </node>
+      <node id="588">
+        <label>/home/tcs/rocALUTION/src/utils/def.hpp</label>
+      </node>
+      <node id="570">
+        <label>string</label>
+      </node>
+      <node id="575">
+        <label>map</label>
+      </node>
+      <node id="567">
+        <label>../solver.hpp</label>
+        <link refid="solver_8hpp_source"/>
+        <childnode refid="568" relation="include">
+        </childnode>
+        <childnode refid="571" relation="include">
+        </childnode>
+        <childnode refid="577" relation="include">
+        </childnode>
+      </node>
+      <node id="586">
+        <label>../../base/global_matrix.hpp</label>
+        <link refid="global__matrix_8hpp_source"/>
+        <childnode refid="578" relation="include">
+        </childnode>
+        <childnode refid="582" relation="include">
+        </childnode>
+        <childnode refid="587" relation="include">
+        </childnode>
+      </node>
+      <node id="574">
+        <label>fstream</label>
+      </node>
+      <node id="585">
+        <label>stencil_types.hpp</label>
+      </node>
+      <node id="583">
+        <label>matrix_formats.hpp</label>
+      </node>
+      <node id="591">
+        <label>../../base/global_vector.hpp</label>
+        <link refid="global__vector_8hpp_source"/>
+        <childnode refid="578" relation="include">
+        </childnode>
+        <childnode refid="579" relation="include">
+        </childnode>
+        <childnode refid="587" relation="include">
+        </childnode>
+      </node>
+      <node id="578">
+        <label>../utils/types.hpp</label>
+      </node>
+      <node id="564">
+        <label>/home/tcs/rocALUTION/src/solvers/krylov/bicgstabl.cpp</label>
+        <link refid="bicgstabl_8cpp"/>
+        <childnode refid="565" relation="include">
+        </childnode>
+        <childnode refid="566" relation="include">
+        </childnode>
+        <childnode refid="568" relation="include">
+        </childnode>
+        <childnode refid="581" relation="include">
+        </childnode>
+        <childnode refid="584" relation="include">
+        </childnode>
+        <childnode refid="577" relation="include">
+        </childnode>
+        <childnode refid="586" relation="include">
+        </childnode>
+        <childnode refid="591" relation="include">
+        </childnode>
+        <childnode refid="592" relation="include">
+        </childnode>
+        <childnode refid="593" relation="include">
+        </childnode>
+        <childnode refid="594" relation="include">
+        </childnode>
+        <childnode refid="576" relation="include">
+        </childnode>
+      </node>
+      <node id="571">
+        <label>../base/base_rocalution.hpp</label>
+        <link refid="base__rocalution_8hpp_source"/>
+        <childnode refid="572" relation="include">
+        </childnode>
+        <childnode refid="576" relation="include">
+        </childnode>
+        <childnode refid="569" relation="include">
+        </childnode>
+      </node>
+      <node id="569">
+        <label>vector</label>
+      </node>
+      <node id="565">
+        <label>../../utils/def.hpp</label>
+      </node>
+      <node id="592">
+        <label>../../utils/log.hpp</label>
+      </node>
+      <node id="594">
+        <label>math.h</label>
+      </node>
+      <node id="580">
+        <label>cstdlib</label>
+      </node>
+      <node id="573">
+        <label>iostream</label>
+      </node>
+      <node id="584">
+        <label>../../base/local_stencil.hpp</label>
+        <link refid="local__stencil_8hpp_source"/>
+        <childnode refid="578" relation="include">
+        </childnode>
+        <childnode refid="582" relation="include">
+        </childnode>
+        <childnode refid="577" relation="include">
+        </childnode>
+        <childnode refid="585" relation="include">
+        </childnode>
+        <childnode refid="570" relation="include">
+        </childnode>
+      </node>
+      <node id="572">
+        <label>backend_manager.hpp</label>
+        <link refid="backend__manager_8hpp_source"/>
+        <childnode refid="573" relation="include">
+        </childnode>
+        <childnode refid="574" relation="include">
+        </childnode>
+        <childnode refid="575" relation="include">
+        </childnode>
+        <childnode refid="569" relation="include">
+        </childnode>
+        <childnode refid="570" relation="include">
+        </childnode>
+      </node>
+      <node id="566">
+        <label>bicgstabl.hpp</label>
+        <link refid="bicgstabl_8hpp_source"/>
+        <childnode refid="567" relation="include">
+        </childnode>
+        <childnode refid="569" relation="include">
+        </childnode>
+      </node>
+      <node id="568">
+        <label>iter_ctrl.hpp</label>
+        <link refid="iter__ctrl_8hpp_source"/>
+        <childnode refid="569" relation="include">
+        </childnode>
+        <childnode refid="570" relation="include">
+        </childnode>
+      </node>
+      <node id="576">
         <label>complex</label>
       </node>
-      <node id="330">
+      <node id="593">
         <label>../../utils/math_functions.hpp</label>
+      </node>
+      <node id="581">
+        <label>../../base/local_matrix.hpp</label>
+        <link refid="local__matrix_8hpp_source"/>
+        <childnode refid="578" relation="include">
+        </childnode>
+        <childnode refid="582" relation="include">
+        </childnode>
+        <childnode refid="572" relation="include">
+        </childnode>
+        <childnode refid="583" relation="include">
+        </childnode>
+        <childnode refid="570" relation="include">
+        </childnode>
       </node>
     </incdepgraph>
     <innernamespace refid="namespacerocalution">rocalution</innernamespace>
@@ -301,7 +312,7 @@
 <codeline lineno="57"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="58"><highlight class="normal"></highlight></codeline>
 <codeline lineno="59"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="60"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>BiCGStabl&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::Print(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_bi_c_g_stabl_1a96916631711d48787e94d04d5b15d57d" kindref="member">BiCGStabl&lt;OperatorType, VectorType, ValueType&gt;::Print</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
 <codeline lineno="61"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
 <codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(this-&gt;precond_<sp/>==<sp/>NULL)</highlight></codeline>
 <codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
@@ -315,7 +326,7 @@
 <codeline lineno="71"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="72"><highlight class="normal"></highlight></codeline>
 <codeline lineno="73"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="74"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>BiCGStabl&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::PrintStart_(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_bi_c_g_stabl_1a57ffb8c0029ae4d48f7fddd2ca09face" kindref="member">BiCGStabl&lt;OperatorType, VectorType, ValueType&gt;::PrintStart_</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
 <codeline lineno="75"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
 <codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(this-&gt;precond_<sp/>==<sp/>NULL)</highlight></codeline>
 <codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
@@ -329,7 +340,7 @@
 <codeline lineno="85"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="86"><highlight class="normal"></highlight></codeline>
 <codeline lineno="87"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="88"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>BiCGStabl&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::PrintEnd_(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_bi_c_g_stabl_1a91f97ec3b92024aa39973078fd05dc6b" kindref="member">BiCGStabl&lt;OperatorType, VectorType, ValueType&gt;::PrintEnd_</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
 <codeline lineno="89"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
 <codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(this-&gt;precond_<sp/>==<sp/>NULL)</highlight></codeline>
 <codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
@@ -342,7 +353,7 @@
 <codeline lineno="98"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="99"><highlight class="normal"></highlight></codeline>
 <codeline lineno="100"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="101"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>BiCGStabl&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::Build(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_bi_c_g_stabl_1a2840e0a99394da5154b02583272e43f7" kindref="member">BiCGStabl&lt;OperatorType, VectorType, ValueType&gt;::Build</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
 <codeline lineno="102"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/>log_debug(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;BiCGStabl::Build()&quot;</highlight><highlight class="normal">,<sp/>this-&gt;build_,<sp/></highlight><highlight class="stringliteral">&quot;<sp/>#*#<sp/>begin&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="104"><highlight class="normal"></highlight></codeline>
@@ -400,7 +411,7 @@
 <codeline lineno="156"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="157"><highlight class="normal"></highlight></codeline>
 <codeline lineno="158"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="159"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>BiCGStabl&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::Clear(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_bi_c_g_stabl_1a67f19ffe19aaa01ef7bbbf42a8e28b0f" kindref="member">BiCGStabl&lt;OperatorType, VectorType, ValueType&gt;::Clear</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
 <codeline lineno="160"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/>log_debug(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;BiCGStabl::Clear()&quot;</highlight><highlight class="normal">,<sp/>this-&gt;build_);</highlight></codeline>
 <codeline lineno="162"><highlight class="normal"></highlight></codeline>
@@ -447,7 +458,7 @@
 <codeline lineno="203"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="204"><highlight class="normal"></highlight></codeline>
 <codeline lineno="205"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="206"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>BiCGStabl&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::ReBuildNumeric(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_bi_c_g_stabl_1a4991e1ca3d20ccf255c226d60f993553" kindref="member">BiCGStabl&lt;OperatorType, VectorType, ValueType&gt;::ReBuildNumeric</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
 <codeline lineno="207"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/>log_debug(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;BiCGStabl::ReBuildNumeric()&quot;</highlight><highlight class="normal">,<sp/>this-&gt;build_);</highlight></codeline>
 <codeline lineno="209"><highlight class="normal"></highlight></codeline>
@@ -476,7 +487,7 @@
 <codeline lineno="232"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="233"><highlight class="normal"></highlight></codeline>
 <codeline lineno="234"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="235"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>BiCGStabl&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::SetOrder(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>l)</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_bi_c_g_stabl_1af0084f3f7f847151973e9f25de96a50b" kindref="member">BiCGStabl&lt;OperatorType, VectorType, ValueType&gt;::SetOrder</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>l)</highlight></codeline>
 <codeline lineno="236"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/>assert(this-&gt;build_<sp/>==<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/>assert(l<sp/>&gt;<sp/>0);</highlight></codeline>
@@ -485,7 +496,7 @@
 <codeline lineno="241"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="242"><highlight class="normal"></highlight></codeline>
 <codeline lineno="243"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="244"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>BiCGStabl&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::MoveToHostLocalData_(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_bi_c_g_stabl_1a1e8b53c73393a18ed50e6aa8d991f458" kindref="member">BiCGStabl&lt;OperatorType, VectorType, ValueType&gt;::MoveToHostLocalData_</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
 <codeline lineno="245"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/>log_debug(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;BiCGStabl::MoveToHostLocalData_()&quot;</highlight><highlight class="normal">,<sp/>this-&gt;build_);</highlight></codeline>
 <codeline lineno="247"><highlight class="normal"></highlight></codeline>
@@ -507,7 +518,7 @@
 <codeline lineno="263"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="264"><highlight class="normal"></highlight></codeline>
 <codeline lineno="265"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="266"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>BiCGStabl&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::MoveToAcceleratorLocalData_(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_bi_c_g_stabl_1ab547a46aac096a36b45190d5e4dab6fb" kindref="member">BiCGStabl&lt;OperatorType, VectorType, ValueType&gt;::MoveToAcceleratorLocalData_</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
 <codeline lineno="267"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/>log_debug(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;BiCGStabl::MoveToAcceleratorLocalData_()&quot;</highlight><highlight class="normal">,<sp/>this-&gt;build_);</highlight></codeline>
 <codeline lineno="269"><highlight class="normal"></highlight></codeline>
@@ -529,7 +540,7 @@
 <codeline lineno="285"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="286"><highlight class="normal"></highlight></codeline>
 <codeline lineno="287"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="288"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>BiCGStabl&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::SolveNonPrecond_(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>VectorType&amp;<sp/>rhs,</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_bi_c_g_stabl_1ab8da03c868c275be3948576a17cfb4e6" kindref="member">BiCGStabl&lt;OperatorType, VectorType, ValueType&gt;::SolveNonPrecond_</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>VectorType&amp;<sp/>rhs,</highlight></codeline>
 <codeline lineno="289"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>VectorType*<sp/>x)</highlight></codeline>
 <codeline lineno="290"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="291"><highlight class="normal"><sp/><sp/><sp/><sp/>log_debug(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;BiCGStabl::SolveNonPrecond_()&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;<sp/>#*#<sp/>begin&quot;</highlight><highlight class="normal">,<sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*&amp;)rhs,<sp/>x);</highlight></codeline>
@@ -727,7 +738,7 @@
 <codeline lineno="483"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="484"><highlight class="normal"></highlight></codeline>
 <codeline lineno="485"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="486"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>BiCGStabl&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::SolvePrecond_(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>VectorType&amp;<sp/>rhs,</highlight></codeline>
+<codeline lineno="486"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_bi_c_g_stabl_1a7c93b26d023ca83c69bbb25198f8f485" kindref="member">BiCGStabl&lt;OperatorType, VectorType, ValueType&gt;::SolvePrecond_</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>VectorType&amp;<sp/>rhs,</highlight></codeline>
 <codeline lineno="487"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>VectorType*<sp/>x)</highlight></codeline>
 <codeline lineno="488"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="489"><highlight class="normal"><sp/><sp/><sp/><sp/>log_debug(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;BiCGStabl::SolvePrecond_()&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;<sp/>#*#<sp/>begin&quot;</highlight><highlight class="normal">,<sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*&amp;)rhs,<sp/>x);</highlight></codeline>
@@ -960,6 +971,6 @@
 <codeline lineno="716"><highlight class="normal"></highlight></codeline>
 <codeline lineno="717"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>rocalution</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
-    <location file="ROCm_Libraries/rocALUTION/src/solvers/krylov/bicgstabl.cpp"/>
+    <location file="/home/tcs/rocALUTION/src/solvers/krylov/bicgstabl.cpp"/>
   </compounddef>
 </doxygen>

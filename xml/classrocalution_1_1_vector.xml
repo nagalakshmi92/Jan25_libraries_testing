@@ -3,6 +3,7 @@
   <compounddef id="classrocalution_1_1_vector" kind="class" language="C++" prot="public" abstract="yes">
     <compoundname>rocalution::Vector</compoundname>
     <basecompoundref refid="classrocalution_1_1_base_rocalution" prot="public" virt="non-virtual">rocalution::BaseRocalution&lt; ValueType &gt;</basecompoundref>
+    <derivedcompoundref refid="classrocalution_1_1_local_vector" prot="public" virt="non-virtual">rocalution::LocalVector&lt; int &gt;</derivedcompoundref>
     <derivedcompoundref refid="classrocalution_1_1_global_vector" prot="public" virt="non-virtual">rocalution::GlobalVector&lt; ValueType &gt;</derivedcompoundref>
     <derivedcompoundref refid="classrocalution_1_1_local_vector" prot="public" virt="non-virtual">rocalution::LocalVector&lt; ValueType &gt;</derivedcompoundref>
     <includes refid="vector_8hpp" local="no">vector.hpp</includes>
@@ -52,7 +53,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/vector.hpp" line="211" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/vector.hpp" line="211" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_vector_1a32a36abf74009fabb2af1f5250649680" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -70,7 +71,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/vector.hpp" line="212" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/vector.hpp" line="212" column="1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -109,7 +110,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/vector.hpp" line="267" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/vector.hpp" line="267" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_vector_1ab620189a4e55cd97bf86478ff0df6c3f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -127,7 +128,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/vector.hpp" line="268" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/vector.hpp" line="268" column="1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -142,7 +143,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/vector.hpp" line="54" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/vector.hpp" line="54" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_vector_1a1a5d1bd49e7ce33f80f1f71e9e681818" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type></type>
@@ -155,7 +156,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/vector.hpp" line="55" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/vector.hpp" line="55" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_vector_1a69a7295c57e35e030999c5764c05cfe7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
         <type>IndexType2</type>
@@ -163,6 +164,7 @@
         <argsstring>(void) const =0</argsstring>
         <name>GetSize</name>
         <reimplementedby refid="classrocalution_1_1_global_vector_1a5e804a659202e2bd824f2d3e583c9729">GetSize</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_local_vector_1a42d48bb3bb6a89218ede8fcff7bbc644">GetSize</reimplementedby>
         <reimplementedby refid="classrocalution_1_1_local_vector_1a42d48bb3bb6a89218ede8fcff7bbc644">GetSize</reimplementedby>
         <param>
           <type>void</type>
@@ -173,7 +175,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/vector.hpp" line="58" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/vector.hpp" line="58" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_vector_1af4e80d10bbfd9a243d0dfa3a5481358c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
         <type>int</type>
@@ -190,7 +192,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/vector.hpp" line="60" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/vector.hpp" line="60" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_vector_1abd0787513f949d91f445890ea4d2ce81" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
         <type>int</type>
@@ -207,7 +209,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/vector.hpp" line="62" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/vector.hpp" line="62" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_vector_1afb8f27ffca2ff3d59995d56b7093330c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
         <type>bool</type>
@@ -215,6 +217,7 @@
         <argsstring>(void) const =0</argsstring>
         <name>Check</name>
         <reimplementedby refid="classrocalution_1_1_global_vector_1aaaf75d2ec850ee5646866ed1b6c0901c">Check</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_local_vector_1a83a0ca326ebe939dac9cea93022dc663">Check</reimplementedby>
         <reimplementedby refid="classrocalution_1_1_local_vector_1a83a0ca326ebe939dac9cea93022dc663">Check</reimplementedby>
         <param>
           <type>void</type>
@@ -240,7 +243,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/vector.hpp" line="72" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/vector.hpp" line="72" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_vector_1af0cc06112714483ae4af25fba1e9bd04" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type>void</type>
@@ -249,6 +252,7 @@
         <name>Clear</name>
         <reimplements refid="classrocalution_1_1_base_rocalution_1a97c33fd007833bd22cd3ce142cebe06b">Clear</reimplements>
         <reimplementedby refid="classrocalution_1_1_global_vector_1abd727ab7d5d7f676f973e0a5664237a5">Clear</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_local_vector_1ae58d9c9b346f80079f4028108b8dfdb2">Clear</reimplementedby>
         <reimplementedby refid="classrocalution_1_1_local_vector_1ae58d9c9b346f80079f4028108b8dfdb2">Clear</reimplementedby>
         <param>
           <type>void</type>
@@ -259,7 +263,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/vector.hpp" line="74" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/vector.hpp" line="74" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_vector_1ac61cd2a27428d8cb0b7325697ab54883" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type>void</type>
@@ -267,6 +271,7 @@
         <argsstring>(void)=0</argsstring>
         <name>Zeros</name>
         <reimplementedby refid="classrocalution_1_1_global_vector_1a9666aa5c811a3774a0d59f6810d7ca1a">Zeros</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_local_vector_1a945331227cdbc7889ede1070ef502b81">Zeros</reimplementedby>
         <reimplementedby refid="classrocalution_1_1_local_vector_1a945331227cdbc7889ede1070ef502b81">Zeros</reimplementedby>
         <param>
           <type>void</type>
@@ -277,7 +282,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/vector.hpp" line="77" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/vector.hpp" line="77" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_vector_1aa979fabb41b06ca0413ca44fa8ffe714" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type>void</type>
@@ -285,6 +290,7 @@
         <argsstring>(void)=0</argsstring>
         <name>Ones</name>
         <reimplementedby refid="classrocalution_1_1_global_vector_1ae8d0ce7fa54fd86dce4612b3baa1ca31">Ones</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_local_vector_1aee43d40aa4bd9347aa7f4757244a6d8e">Ones</reimplementedby>
         <reimplementedby refid="classrocalution_1_1_local_vector_1aee43d40aa4bd9347aa7f4757244a6d8e">Ones</reimplementedby>
         <param>
           <type>void</type>
@@ -295,7 +301,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/vector.hpp" line="80" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/vector.hpp" line="80" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_vector_1a3df2b00c6da1ac2f35a577a31cbe98b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type>void</type>
@@ -314,7 +320,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/vector.hpp" line="83" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/vector.hpp" line="83" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_vector_1aed60d50ff54c05fd3e2227109b8d3588" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type>void</type>
@@ -343,7 +349,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/vector.hpp" line="86" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/vector.hpp" line="86" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_vector_1ac0bb252680207ce70ab871f371007e5a" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type>void</type>
@@ -372,7 +378,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/vector.hpp" line="91" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/vector.hpp" line="91" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_vector_1a35cefceac2c827b6f4a422113b06f3b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type>void</type>
@@ -380,6 +386,7 @@
         <argsstring>(const std::string filename)=0</argsstring>
         <name>ReadFileASCII</name>
         <reimplementedby refid="classrocalution_1_1_global_vector_1a26597a91fbeac7b324f34e9c0af58582">ReadFileASCII</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_local_vector_1a4f93a990c2b1a89bed6b8f69f965a729">ReadFileASCII</reimplementedby>
         <reimplementedby refid="classrocalution_1_1_local_vector_1a4f93a990c2b1a89bed6b8f69f965a729">ReadFileASCII</reimplementedby>
         <param>
           <type>const std::string</type>
@@ -402,7 +409,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/vector.hpp" line="108" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/vector.hpp" line="108" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_vector_1adf8762b6ad93bcc19b87675c63a67752" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
         <type>void</type>
@@ -410,6 +417,7 @@
         <argsstring>(const std::string filename) const =0</argsstring>
         <name>WriteFileASCII</name>
         <reimplementedby refid="classrocalution_1_1_global_vector_1acffd8199e0ee1ed21abfe66612a2e39e">WriteFileASCII</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_local_vector_1ae25cac3e31ae90cfb0ed6cd26a0b820c">WriteFileASCII</reimplementedby>
         <reimplementedby refid="classrocalution_1_1_local_vector_1ae25cac3e31ae90cfb0ed6cd26a0b820c">WriteFileASCII</reimplementedby>
         <param>
           <type>const std::string</type>
@@ -436,7 +444,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/vector.hpp" line="127" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/vector.hpp" line="127" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_vector_1ae669ca94b6b19929b2b8483063fc70d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type>void</type>
@@ -444,6 +452,7 @@
         <argsstring>(const std::string filename)=0</argsstring>
         <name>ReadFileBinary</name>
         <reimplementedby refid="classrocalution_1_1_global_vector_1a7f54dacddf4f3f5a615f7e2ac3b6a949">ReadFileBinary</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_local_vector_1a3ab863a463e4bfd2b1fc172ed9103c29">ReadFileBinary</reimplementedby>
         <reimplementedby refid="classrocalution_1_1_local_vector_1a3ab863a463e4bfd2b1fc172ed9103c29">ReadFileBinary</reimplementedby>
         <param>
           <type>const std::string</type>
@@ -466,7 +475,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/vector.hpp" line="142" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/vector.hpp" line="142" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_vector_1ae03e3d74cf727f69bb1a8ca5d87d1fa7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
         <type>void</type>
@@ -474,6 +483,7 @@
         <argsstring>(const std::string filename) const =0</argsstring>
         <name>WriteFileBinary</name>
         <reimplementedby refid="classrocalution_1_1_global_vector_1a8562871e61d54369093bccfcf7045666">WriteFileBinary</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_local_vector_1a9c753058a01044c092079eade04d9fb1">WriteFileBinary</reimplementedby>
         <reimplementedby refid="classrocalution_1_1_local_vector_1a9c753058a01044c092079eade04d9fb1">WriteFileBinary</reimplementedby>
         <param>
           <type>const std::string</type>
@@ -510,7 +520,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/vector.hpp" line="179" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/vector.hpp" line="179" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_vector_1a19b74819ca4d2d4aba804b4b3882d33e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -528,13 +538,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/vector.hpp" line="216" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/vector.hpp" line="216" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_vector_1af85033a1ee476fde1a8e595bf820aee7" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
         <definition>virtual void rocalution::Vector&lt; ValueType &gt;::CopyFromFloat</definition>
         <argsstring>(const LocalVector&lt; float &gt; &amp;src)</argsstring>
         <name>CopyFromFloat</name>
+        <reimplementedby refid="classrocalution_1_1_local_vector_1a4d0ef0ba1b9ba78136a71199a7a6b734">CopyFromFloat</reimplementedby>
         <reimplementedby refid="classrocalution_1_1_local_vector_1a4d0ef0ba1b9ba78136a71199a7a6b734">CopyFromFloat</reimplementedby>
         <param>
           <type>const <ref refid="classrocalution_1_1_local_vector" kindref="compound">LocalVector</ref>&lt; float &gt; &amp;</type>
@@ -546,13 +557,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/vector.hpp" line="219" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/vector.hpp" line="219" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_vector_1a602f35cbb92908373b7eee02a097f006" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
         <definition>virtual void rocalution::Vector&lt; ValueType &gt;::CopyFromDouble</definition>
         <argsstring>(const LocalVector&lt; double &gt; &amp;src)</argsstring>
         <name>CopyFromDouble</name>
+        <reimplementedby refid="classrocalution_1_1_local_vector_1a0910f630662262bb111c30de3e07815b">CopyFromDouble</reimplementedby>
         <reimplementedby refid="classrocalution_1_1_local_vector_1a0910f630662262bb111c30de3e07815b">CopyFromDouble</reimplementedby>
         <param>
           <type>const <ref refid="classrocalution_1_1_local_vector" kindref="compound">LocalVector</ref>&lt; double &gt; &amp;</type>
@@ -564,7 +576,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/vector.hpp" line="222" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/vector.hpp" line="222" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_vector_1a6a1781254d8a3d8a39c4624741babfb4" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -624,7 +636,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/vector.hpp" line="243" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/vector.hpp" line="243" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_vector_1ae1f6dd2e39e233b808101a0072a1db62" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -646,7 +658,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/vector.hpp" line="272" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/vector.hpp" line="272" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_vector_1aedf4d64ae2c3b8ee1f37519f306d0041" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -668,7 +680,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/vector.hpp" line="274" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/vector.hpp" line="274" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_vector_1aec3e1f31e60d088aa021160d12e3ecd7" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -690,7 +702,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/vector.hpp" line="277" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/vector.hpp" line="277" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_vector_1a9edf57a13c5aa7a01e6f86d84f382e66" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -712,7 +724,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/vector.hpp" line="279" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/vector.hpp" line="279" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_vector_1a4927a1c7ed1b32a7c1bfaa5e8ba260e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -738,7 +750,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/vector.hpp" line="282" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/vector.hpp" line="282" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_vector_1a390c2cc8415eaa3959622254194a48f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -764,7 +776,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/vector.hpp" line="284" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/vector.hpp" line="284" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_vector_1a7a14ed1246d3c835794c6c6f3a4b80c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -802,7 +814,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/vector.hpp" line="287" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/vector.hpp" line="287" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_vector_1a4f710bdf88c54847a0c524715c129e83" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -839,7 +851,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/vector.hpp" line="294" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/vector.hpp" line="294" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_vector_1ace75caff6cab8ebcc6dbbbe10ac38fad" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -873,7 +885,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/vector.hpp" line="302" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/vector.hpp" line="302" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_vector_1ae85d99b6f2ba4f0f072d3f2ce3c59ea4" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -907,7 +919,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/vector.hpp" line="308" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/vector.hpp" line="308" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_vector_1ad00973260f6b2ca585220060fa8f074c" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type>void</type>
@@ -926,7 +938,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/vector.hpp" line="315" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/vector.hpp" line="315" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_vector_1a4b8794f97529984f9eb0be2532e7a452" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
         <type>ValueType</type>
@@ -944,7 +956,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/vector.hpp" line="318" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/vector.hpp" line="318" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_vector_1ab43c0f9c89802ced75ac7e3b248cc798" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
         <type>ValueType</type>
@@ -962,7 +974,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/vector.hpp" line="320" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/vector.hpp" line="320" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_vector_1afc0de1e6246fb0a5e9a6b0bbaf481727" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
         <type>ValueType</type>
@@ -980,7 +992,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/vector.hpp" line="323" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/vector.hpp" line="323" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_vector_1a6ff165b83b46e200e76cef9be9fc3505" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
         <type>ValueType</type>
@@ -998,7 +1010,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/vector.hpp" line="325" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/vector.hpp" line="325" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_vector_1ae497a40ab0a3c1b7927e53b856775d96" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
         <type>ValueType</type>
@@ -1006,6 +1018,7 @@
         <argsstring>(void) const =0</argsstring>
         <name>Norm</name>
         <reimplementedby refid="classrocalution_1_1_global_vector_1ac50685032c64d2b20f37502e2a085c7f">Norm</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_local_vector_1a1941030d968ef965f8cf2abb864cbd0d">Norm</reimplementedby>
         <reimplementedby refid="classrocalution_1_1_local_vector_1a1941030d968ef965f8cf2abb864cbd0d">Norm</reimplementedby>
         <param>
           <type>void</type>
@@ -1016,7 +1029,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/vector.hpp" line="328" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/vector.hpp" line="328" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_vector_1a2fdb72cd02801525457e9ada7dd60ef2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
         <type>ValueType</type>
@@ -1024,6 +1037,7 @@
         <argsstring>(void) const =0</argsstring>
         <name>Reduce</name>
         <reimplementedby refid="classrocalution_1_1_global_vector_1a7c777dba889c54bf7d42257a8f3fd9db">Reduce</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_local_vector_1a49e4cfe29ae2e155ff4b79d7e907b71c">Reduce</reimplementedby>
         <reimplementedby refid="classrocalution_1_1_local_vector_1a49e4cfe29ae2e155ff4b79d7e907b71c">Reduce</reimplementedby>
         <param>
           <type>void</type>
@@ -1034,7 +1048,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/vector.hpp" line="331" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/vector.hpp" line="331" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_vector_1adcd00282279cb53befa5b684cfe1b810" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
         <type>ValueType</type>
@@ -1042,6 +1056,7 @@
         <argsstring>(void) const =0</argsstring>
         <name>Asum</name>
         <reimplementedby refid="classrocalution_1_1_global_vector_1a02a2f9e333cbdc26c917321ee0e833b9">Asum</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_local_vector_1a781d7827180d02a253b59698f6228863">Asum</reimplementedby>
         <reimplementedby refid="classrocalution_1_1_local_vector_1a781d7827180d02a253b59698f6228863">Asum</reimplementedby>
         <param>
           <type>void</type>
@@ -1052,7 +1067,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/vector.hpp" line="334" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/vector.hpp" line="334" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_vector_1ad12fff786a24c4d5fccb452dea303767" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
         <type>int</type>
@@ -1071,7 +1086,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/vector.hpp" line="337" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/vector.hpp" line="337" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_vector_1a228c4dbf9570eb0e3ac63abf02ec2192" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -1089,7 +1104,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/vector.hpp" line="340" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/vector.hpp" line="340" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_vector_1a3d32315bcad3563dd1d7b793890fbad6" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -1107,7 +1122,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/vector.hpp" line="342" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/vector.hpp" line="342" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_vector_1a994a38ea43f642b09d11803ba126ca21" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -1129,7 +1144,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/vector.hpp" line="345" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/vector.hpp" line="345" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_vector_1a5c540c12372d286b3de900937e0af809" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -1151,7 +1166,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/vector.hpp" line="347" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/vector.hpp" line="347" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_vector_1ae7401d8c41da9c2d9977eaa26f56a9cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type>void</type>
@@ -1159,6 +1174,7 @@
         <argsstring>(double power)=0</argsstring>
         <name>Power</name>
         <reimplementedby refid="classrocalution_1_1_global_vector_1a6d5f5a56660fb6d970bae54be37d9162">Power</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_local_vector_1a203456f8c05ce0af1993f9465f1908ac">Power</reimplementedby>
         <reimplementedby refid="classrocalution_1_1_local_vector_1a203456f8c05ce0af1993f9465f1908ac">Power</reimplementedby>
         <param>
           <type>double</type>
@@ -1170,7 +1186,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/vector.hpp" line="350" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/vector.hpp" line="350" column="1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -1186,52 +1202,58 @@
 </parameterlist>
 </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="98">
+      <node id="859">
         <label>rocalution::BaseRocalution&lt; ValueType &gt;</label>
         <link refid="classrocalution_1_1_base_rocalution"/>
-        <childnode refid="99" relation="public-inheritance">
+        <childnode refid="860" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="97">
+      <node id="861">
+        <label>LocalVector&lt; int &gt;</label>
+        <link refid="classrocalution_1_1_local_vector"/>
+        <childnode refid="858" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="858">
         <label>rocalution::Vector&lt; ValueType &gt;</label>
         <link refid="classrocalution_1_1_vector"/>
-        <childnode refid="98" relation="public-inheritance">
+        <childnode refid="859" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="101">
+      <node id="863">
         <label>rocalution::LocalVector&lt; ValueType &gt;</label>
         <link refid="classrocalution_1_1_local_vector"/>
-        <childnode refid="97" relation="public-inheritance">
+        <childnode refid="858" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="99">
+      <node id="860">
         <label>rocalution::RocalutionObj</label>
       </node>
-      <node id="100">
+      <node id="862">
         <label>rocalution::GlobalVector&lt; ValueType &gt;</label>
         <link refid="classrocalution_1_1_global_vector"/>
-        <childnode refid="97" relation="public-inheritance">
+        <childnode refid="858" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="103">
+      <node id="865">
         <label>rocalution::BaseRocalution&lt; ValueType &gt;</label>
         <link refid="classrocalution_1_1_base_rocalution"/>
-        <childnode refid="104" relation="public-inheritance">
+        <childnode refid="866" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="102">
+      <node id="864">
         <label>rocalution::Vector&lt; ValueType &gt;</label>
         <link refid="classrocalution_1_1_vector"/>
-        <childnode refid="103" relation="public-inheritance">
+        <childnode refid="865" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="104">
+      <node id="866">
         <label>rocalution::RocalutionObj</label>
       </node>
     </collaborationgraph>
-    <location file="ROCm_Libraries/rocALUTION/src/base/vector.hpp" line="52" column="1" bodyfile="ROCm_Libraries/rocALUTION/src/base/vector.hpp" bodystart="51" bodyend="351"/>
+    <location file="/home/tcs/rocALUTION/src/base/vector.hpp" line="52" column="1" bodyfile="/home/tcs/rocALUTION/src/base/vector.hpp" bodystart="51" bodyend="351"/>
     <listofallmembers>
       <member refid="classrocalution_1_1_vector_1ae1f6dd2e39e233b808101a0072a1db62" prot="public" virt="virtual"><scope>rocalution::Vector</scope><name>AddScale</name></member>
       <member refid="classrocalution_1_1_vector_1aedf4d64ae2c3b8ee1f37519f306d0041" prot="public" virt="virtual"><scope>rocalution::Vector</scope><name>AddScale</name></member>

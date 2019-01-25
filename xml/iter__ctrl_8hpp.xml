@@ -1,0 +1,440 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="iter__ctrl_8hpp" kind="file" language="C++">
+    <compoundname>iter_ctrl.hpp</compoundname>
+    <includes local="no">vector</includes>
+    <includes local="no">string</includes>
+    <includedby refid="solver_8hpp" local="yes">/home/tcs/rocALUTION/src/solvers/solver.hpp</includedby>
+    <includedby refid="chebyshev_8cpp" local="yes">/home/tcs/rocALUTION/src/solvers/chebyshev.cpp</includedby>
+    <includedby refid="iter__ctrl_8cpp" local="yes">/home/tcs/rocALUTION/src/solvers/iter_ctrl.cpp</includedby>
+    <includedby refid="bicgstab_8cpp" local="yes">/home/tcs/rocALUTION/src/solvers/krylov/bicgstab.cpp</includedby>
+    <includedby refid="bicgstabl_8cpp" local="yes">/home/tcs/rocALUTION/src/solvers/krylov/bicgstabl.cpp</includedby>
+    <includedby refid="cg_8cpp" local="yes">/home/tcs/rocALUTION/src/solvers/krylov/cg.cpp</includedby>
+    <includedby refid="cr_8cpp" local="yes">/home/tcs/rocALUTION/src/solvers/krylov/cr.cpp</includedby>
+    <includedby refid="fcg_8cpp" local="yes">/home/tcs/rocALUTION/src/solvers/krylov/fcg.cpp</includedby>
+    <includedby refid="fgmres_8cpp" local="yes">/home/tcs/rocALUTION/src/solvers/krylov/fgmres.cpp</includedby>
+    <includedby refid="gmres_8cpp" local="yes">/home/tcs/rocALUTION/src/solvers/krylov/gmres.cpp</includedby>
+    <includedby refid="idr_8cpp" local="yes">/home/tcs/rocALUTION/src/solvers/krylov/idr.cpp</includedby>
+    <includedby refid="qmrcgstab_8cpp" local="yes">/home/tcs/rocALUTION/src/solvers/krylov/qmrcgstab.cpp</includedby>
+    <includedby refid="mixed__precision_8cpp" local="yes">/home/tcs/rocALUTION/src/solvers/mixed_precision.cpp</includedby>
+    <includedby refid="base__amg_8cpp" local="yes">/home/tcs/rocALUTION/src/solvers/multigrid/base_amg.cpp</includedby>
+    <includedby refid="base__multigrid_8cpp" local="yes">/home/tcs/rocALUTION/src/solvers/multigrid/base_multigrid.cpp</includedby>
+    <incdepgraph>
+      <node id="481">
+        <label>string</label>
+      </node>
+      <node id="480">
+        <label>vector</label>
+      </node>
+      <node id="479">
+        <label>/home/tcs/rocALUTION/src/solvers/iter_ctrl.hpp</label>
+        <link refid="iter__ctrl_8hpp"/>
+        <childnode refid="480" relation="include">
+        </childnode>
+        <childnode refid="481" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="486">
+        <label>/home/tcs/rocALUTION/src/solvers/direct/lu.hpp</label>
+        <link refid="lu_8hpp_source"/>
+      </node>
+      <node id="514">
+        <label>/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multielimination.hpp</label>
+        <link refid="preconditioner__multielimination_8hpp_source"/>
+      </node>
+      <node id="501">
+        <label>/home/tcs/rocALUTION/src/solvers/multigrid/ruge_stueben_amg.hpp</label>
+        <link refid="ruge__stueben__amg_8hpp_source"/>
+      </node>
+      <node id="490">
+        <label>/home/tcs/rocALUTION/src/solvers/krylov/cg.hpp</label>
+        <link refid="cg_8hpp_source"/>
+      </node>
+      <node id="506">
+        <label>/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner.hpp</label>
+        <link refid="preconditioner_8hpp_source"/>
+        <childnode refid="507" relation="include">
+        </childnode>
+        <childnode refid="508" relation="include">
+        </childnode>
+        <childnode refid="510" relation="include">
+        </childnode>
+        <childnode refid="511" relation="include">
+        </childnode>
+        <childnode refid="512" relation="include">
+        </childnode>
+        <childnode refid="513" relation="include">
+        </childnode>
+        <childnode refid="509" relation="include">
+        </childnode>
+        <childnode refid="514" relation="include">
+        </childnode>
+        <childnode refid="515" relation="include">
+        </childnode>
+      </node>
+      <node id="505">
+        <label>/home/tcs/rocALUTION/src/solvers/multigrid/multigrid.hpp</label>
+        <link refid="multigrid_8hpp_source"/>
+      </node>
+      <node id="494">
+        <label>/home/tcs/rocALUTION/src/solvers/krylov/gmres.hpp</label>
+        <link refid="gmres_8hpp_source"/>
+      </node>
+      <node id="484">
+        <label>/home/tcs/rocALUTION/src/solvers/chebyshev.hpp</label>
+        <link refid="chebyshev_8hpp_source"/>
+      </node>
+      <node id="493">
+        <label>/home/tcs/rocALUTION/src/solvers/krylov/fgmres.hpp</label>
+        <link refid="fgmres_8hpp_source"/>
+      </node>
+      <node id="488">
+        <label>/home/tcs/rocALUTION/src/solvers/krylov/bicgstab.hpp</label>
+        <link refid="bicgstab_8hpp_source"/>
+      </node>
+      <node id="503">
+        <label>/home/tcs/rocALUTION/src/solvers/multigrid/unsmoothed_amg.hpp</label>
+        <link refid="unsmoothed__amg_8hpp_source"/>
+      </node>
+      <node id="495">
+        <label>/home/tcs/rocALUTION/src/solvers/krylov/idr.hpp</label>
+        <link refid="idr_8hpp_source"/>
+      </node>
+      <node id="499">
+        <label>/home/tcs/rocALUTION/src/solvers/multigrid/global_pairwise_amg.hpp</label>
+        <link refid="global__pairwise__amg_8hpp_source"/>
+      </node>
+      <node id="512">
+        <label>/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_blockjacobi.hpp</label>
+        <link refid="preconditioner__blockjacobi_8hpp_source"/>
+      </node>
+      <node id="500">
+        <label>/home/tcs/rocALUTION/src/solvers/multigrid/pairwise_amg.hpp</label>
+        <link refid="pairwise__amg_8hpp_source"/>
+        <childnode refid="499" relation="include">
+        </childnode>
+      </node>
+      <node id="515">
+        <label>/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_saddlepoint.hpp</label>
+        <link refid="preconditioner__saddlepoint_8hpp_source"/>
+      </node>
+      <node id="487">
+        <label>/home/tcs/rocALUTION/src/solvers/direct/qr.hpp</label>
+        <link refid="qr_8hpp_source"/>
+      </node>
+      <node id="483">
+        <label>/home/tcs/rocALUTION/src/solvers/solver.hpp</label>
+        <link refid="solver_8hpp_source"/>
+        <childnode refid="484" relation="include">
+        </childnode>
+        <childnode refid="485" relation="include">
+        </childnode>
+        <childnode refid="486" relation="include">
+        </childnode>
+        <childnode refid="487" relation="include">
+        </childnode>
+        <childnode refid="488" relation="include">
+        </childnode>
+        <childnode refid="489" relation="include">
+        </childnode>
+        <childnode refid="490" relation="include">
+        </childnode>
+        <childnode refid="491" relation="include">
+        </childnode>
+        <childnode refid="492" relation="include">
+        </childnode>
+        <childnode refid="493" relation="include">
+        </childnode>
+        <childnode refid="494" relation="include">
+        </childnode>
+        <childnode refid="495" relation="include">
+        </childnode>
+        <childnode refid="496" relation="include">
+        </childnode>
+        <childnode refid="497" relation="include">
+        </childnode>
+        <childnode refid="498" relation="include">
+        </childnode>
+        <childnode refid="504" relation="include">
+        </childnode>
+        <childnode refid="506" relation="include">
+        </childnode>
+        <childnode refid="499" relation="include">
+        </childnode>
+        <childnode refid="500" relation="include">
+        </childnode>
+        <childnode refid="501" relation="include">
+        </childnode>
+        <childnode refid="507" relation="include">
+        </childnode>
+        <childnode refid="508" relation="include">
+        </childnode>
+        <childnode refid="502" relation="include">
+        </childnode>
+        <childnode refid="503" relation="include">
+        </childnode>
+        <childnode refid="510" relation="include">
+        </childnode>
+        <childnode refid="513" relation="include">
+        </childnode>
+        <childnode refid="509" relation="include">
+        </childnode>
+        <childnode refid="514" relation="include">
+        </childnode>
+        <childnode refid="515" relation="include">
+        </childnode>
+      </node>
+      <node id="507">
+        <label>/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multicolored_gs.hpp</label>
+        <link refid="preconditioner__multicolored__gs_8hpp_source"/>
+      </node>
+      <node id="509">
+        <label>/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multicolored_ilu.hpp</label>
+        <link refid="preconditioner__multicolored__ilu_8hpp_source"/>
+      </node>
+      <node id="504">
+        <label>/home/tcs/rocALUTION/src/solvers/multigrid/base_multigrid.hpp</label>
+        <link refid="base__multigrid_8hpp_source"/>
+        <childnode refid="498" relation="include">
+        </childnode>
+        <childnode refid="505" relation="include">
+        </childnode>
+      </node>
+      <node id="485">
+        <label>/home/tcs/rocALUTION/src/solvers/direct/inversion.hpp</label>
+        <link refid="inversion_8hpp_source"/>
+      </node>
+      <node id="513">
+        <label>/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_blockprecond.hpp</label>
+        <link refid="preconditioner__blockprecond_8hpp_source"/>
+      </node>
+      <node id="496">
+        <label>/home/tcs/rocALUTION/src/solvers/krylov/qmrcgstab.hpp</label>
+        <link refid="qmrcgstab_8hpp_source"/>
+      </node>
+      <node id="510">
+        <label>/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_ai.hpp</label>
+        <link refid="preconditioner__ai_8hpp_source"/>
+      </node>
+      <node id="508">
+        <label>/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multicolored.hpp</label>
+        <link refid="preconditioner__multicolored_8hpp_source"/>
+        <childnode refid="507" relation="include">
+        </childnode>
+        <childnode refid="509" relation="include">
+        </childnode>
+      </node>
+      <node id="497">
+        <label>/home/tcs/rocALUTION/src/solvers/mixed_precision.hpp</label>
+        <link refid="mixed__precision_8hpp_source"/>
+      </node>
+      <node id="489">
+        <label>/home/tcs/rocALUTION/src/solvers/krylov/bicgstabl.hpp</label>
+        <link refid="bicgstabl_8hpp_source"/>
+      </node>
+      <node id="498">
+        <label>/home/tcs/rocALUTION/src/solvers/multigrid/base_amg.hpp</label>
+        <link refid="base__amg_8hpp_source"/>
+        <childnode refid="499" relation="include">
+        </childnode>
+        <childnode refid="500" relation="include">
+        </childnode>
+        <childnode refid="501" relation="include">
+        </childnode>
+        <childnode refid="502" relation="include">
+        </childnode>
+        <childnode refid="503" relation="include">
+        </childnode>
+      </node>
+      <node id="482">
+        <label>/home/tcs/rocALUTION/src/solvers/iter_ctrl.hpp</label>
+        <link refid="iter__ctrl_8hpp"/>
+        <childnode refid="483" relation="include">
+        </childnode>
+      </node>
+      <node id="492">
+        <label>/home/tcs/rocALUTION/src/solvers/krylov/fcg.hpp</label>
+        <link refid="fcg_8hpp_source"/>
+      </node>
+      <node id="502">
+        <label>/home/tcs/rocALUTION/src/solvers/multigrid/smoothed_amg.hpp</label>
+        <link refid="smoothed__amg_8hpp_source"/>
+      </node>
+      <node id="511">
+        <label>/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_as.hpp</label>
+        <link refid="preconditioner__as_8hpp_source"/>
+      </node>
+      <node id="491">
+        <label>/home/tcs/rocALUTION/src/solvers/krylov/cr.hpp</label>
+        <link refid="cr_8hpp_source"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classrocalution_1_1_iteration_control" prot="private">rocalution::IterationControl</innerclass>
+    <innernamespace refid="namespacerocalution">rocalution</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2018<sp/>Advanced<sp/>Micro<sp/>Devices,<sp/>Inc.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Permission<sp/>is<sp/>hereby<sp/>granted,<sp/>free<sp/>of<sp/>charge,<sp/>to<sp/>any<sp/>person<sp/>obtaining<sp/>a<sp/>copy</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>of<sp/>this<sp/>software<sp/>and<sp/>associated<sp/>documentation<sp/>files<sp/>(the<sp/>&quot;Software&quot;),<sp/>to<sp/>deal</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>in<sp/>the<sp/>Software<sp/>without<sp/>restriction,<sp/>including<sp/>without<sp/>limitation<sp/>the<sp/>rights</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>to<sp/>use,<sp/>copy,<sp/>modify,<sp/>merge,<sp/>publish,<sp/>distribute,<sp/>sublicense,<sp/>and/or<sp/>sell</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>copies<sp/>of<sp/>the<sp/>Software,<sp/>and<sp/>to<sp/>permit<sp/>persons<sp/>to<sp/>whom<sp/>the<sp/>Software<sp/>is</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>furnished<sp/>to<sp/>do<sp/>so,<sp/>subject<sp/>to<sp/>the<sp/>following<sp/>conditions:</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>The<sp/>above<sp/>copyright<sp/>notice<sp/>and<sp/>this<sp/>permission<sp/>notice<sp/>shall<sp/>be<sp/>included<sp/>in</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>all<sp/>copies<sp/>or<sp/>substantial<sp/>portions<sp/>of<sp/>the<sp/>Software.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>THE<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>&quot;AS<sp/>IS&quot;,<sp/>WITHOUT<sp/>WARRANTY<sp/>OF<sp/>ANY<sp/>KIND,<sp/>EXPRESS<sp/>OR</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>IMPLIED,<sp/>INCLUDING<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO<sp/>THE<sp/>WARRANTIES<sp/>OF<sp/>MERCHANTABILITY,</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>AND<sp/>NONINFRINGEMENT.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>AUTHORS<sp/>OR<sp/>COPYRIGHT<sp/>HOLDERS<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>CLAIM,<sp/>DAMAGES<sp/>OR<sp/>OTHER</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>AN<sp/>ACTION<sp/>OF<sp/>CONTRACT,<sp/>TORT<sp/>OR<sp/>OTHERWISE,<sp/>ARISING<sp/>FROM,</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>OUT<sp/>OF<sp/>OR<sp/>IN<sp/>CONNECTION<sp/>WITH<sp/>THE<sp/>SOFTWARE<sp/>OR<sp/>THE<sp/>USE<sp/>OR<sp/>OTHER<sp/>DEALINGS<sp/>IN</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>THE<sp/>SOFTWARE.</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/>************************************************************************<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>ROCALUTION_ITER_CTRL_HPP_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ROCALUTION_ITER_CTRL_HPP_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacerocalution" kindref="compound">rocalution</ref><sp/>{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Iteration<sp/>control<sp/>for<sp/>iterative<sp/>solvers,<sp/>monitor<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="comment">//<sp/>residual<sp/>(L2<sp/>norm)<sp/>behavior</highlight></codeline>
+<codeline lineno="35"><highlight class="comment"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">IterationControl</highlight></codeline>
+<codeline lineno="36"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>IterationControl();</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>~IterationControl();</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Initialize<sp/>with<sp/>absolute/relative/divergence</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>tolerance<sp/>and<sp/>maximum<sp/>number<sp/>of<sp/>iterations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Init(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>abs,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>rel,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>div,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>max);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Initialize<sp/>with<sp/>absolute/relative/divergence</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>tolerance<sp/>and<sp/>minimum/maximum<sp/>number<sp/>of<sp/>iterations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Init(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>abs,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>rel,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>div,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>min,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>max);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Initialize<sp/>with<sp/>absolute/relative/divergence<sp/>tolerance</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>InitTolerance(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>abs,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>rel,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>div);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Set<sp/>the<sp/>minimum<sp/>number<sp/>of<sp/>iterations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>InitMinimumIterations(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>min);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Set<sp/>the<sp/>maximal<sp/>number<sp/>of<sp/>iterations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>InitMaximumIterations(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>max);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Get<sp/>the<sp/>minimum<sp/>number<sp/>of<sp/>iterations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>GetMinimumIterations(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Get<sp/>the<sp/>maximal<sp/>number<sp/>of<sp/>iterations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>GetMaximumIterations(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Initialize<sp/>the<sp/>initial<sp/>residual</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>InitResidual(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>res);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Clear<sp/>(reset)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Clear(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Check<sp/>the<sp/>residual<sp/>(this<sp/>count<sp/>also<sp/>the<sp/>number<sp/>of<sp/>iterations)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>CheckResidual(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>res);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Check<sp/>the<sp/>residual<sp/>and<sp/>index<sp/>value<sp/>for<sp/>the<sp/>inf<sp/>norm</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>(this<sp/>count<sp/>also<sp/>the<sp/>number<sp/>of<sp/>iterations)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>CheckResidual(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>res,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>index);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Check<sp/>the<sp/>residual<sp/>(without<sp/>counting<sp/>the<sp/>number<sp/>of<sp/>iterations)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>CheckResidualNoCount(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>res)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Record<sp/>the<sp/>history<sp/>of<sp/>the<sp/>residual</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>RecordHistory(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Write<sp/>the<sp/>history<sp/>of<sp/>the<sp/>residual<sp/>to<sp/>an<sp/>ASCII<sp/>file</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>WriteHistoryToFile(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>filename)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Provide<sp/>verbose<sp/>output<sp/>of<sp/>the<sp/>solver<sp/>(iter,<sp/>residual)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Verbose(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>verb<sp/>=<sp/>1);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Print<sp/>the<sp/>initialized<sp/>information<sp/>of<sp/>the<sp/>iteration<sp/>control</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>PrintInit(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Print<sp/>the<sp/>current<sp/>status<sp/>(is<sp/>the<sp/>any<sp/>criteria<sp/>reached<sp/>or<sp/>not)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>PrintStatus(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Return<sp/>the<sp/>iteration<sp/>count</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>GetIterationCount(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Return<sp/>the<sp/>current<sp/>residual</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>GetCurrentResidual(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Return<sp/>the<sp/>current<sp/>status</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>GetSolverStatus(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Return<sp/>absolute<sp/>maximum<sp/>index<sp/>of<sp/>residual<sp/>vector<sp/>when<sp/>using<sp/>Linf<sp/>norm</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>GetAmaxResidualIndex(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Verbose<sp/>flag</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>verb<sp/>==<sp/>0<sp/>no<sp/>output</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>verb<sp/>==<sp/>1<sp/>print<sp/>info<sp/>about<sp/>the<sp/>solver<sp/>(start,end);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>verb<sp/>==<sp/>2<sp/>print<sp/>(iter,<sp/>residual)<sp/>via<sp/>iteration<sp/>control;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>verb_;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Iteration<sp/>count</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iteration_;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Flag<sp/>==<sp/>true<sp/>after<sp/>calling<sp/>InitResidual()</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>init_res_;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Initial<sp/>residual</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>initial_residual_;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Absolute<sp/>tolerance</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>absolute_tol_;</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Relative<sp/>tolerance</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>relative_tol_;</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Divergence<sp/>tolerance</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>divergence_tol_;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Minimum<sp/>number<sp/>of<sp/>iteration</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>minimum_iter_;</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Maximum<sp/>number<sp/>of<sp/>iteration</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>maximum_iter_;</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Indicator<sp/>for<sp/>the<sp/>reached<sp/>criteria:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>0<sp/>-<sp/>not<sp/>yet;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>1<sp/>-<sp/>abs<sp/>tol<sp/>is<sp/>reached;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>2<sp/>-<sp/>rel<sp/>tol<sp/>is<sp/>reached;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>3<sp/>-<sp/>div<sp/>tol<sp/>is<sp/>reached;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>4<sp/>-<sp/>max<sp/>iter<sp/>is<sp/>reached</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>reached_;</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>STL<sp/>vector<sp/>keeping<sp/>the<sp/>residual<sp/>history</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;double&gt;<sp/>residual_history_;</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Current<sp/>residual<sp/>(obtained<sp/>via<sp/>CheckResidual())</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>current_res_;</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Current<sp/>residual,<sp/>index<sp/>for<sp/>the<sp/>inf<sp/>norm<sp/>(obtained<sp/>via<sp/>CheckResidual())</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>current_index_;</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Flag<sp/>==<sp/>true<sp/>then<sp/>the<sp/>residual<sp/>is<sp/>recorded<sp/>in<sp/>the<sp/>residual_history_<sp/>vector</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>rec_;</highlight></codeline>
+<codeline lineno="153"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>rocalution</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>ROCALUTION_ITER_CTRL_HPP_</highlight></codeline>
+    </programlisting>
+    <location file="/home/tcs/rocALUTION/src/solvers/iter_ctrl.hpp"/>
+  </compounddef>
+</doxygen>

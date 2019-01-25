@@ -1,0 +1,314 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="base__multigrid_8hpp" kind="file" language="C++">
+    <compoundname>base_multigrid.hpp</compoundname>
+    <includes refid="solver_8hpp" local="yes">../solver.hpp</includes>
+    <includes refid="operator_8hpp" local="yes">../../base/operator.hpp</includes>
+    <includedby refid="base__amg_8hpp" local="yes">/home/tcs/rocALUTION/src/solvers/multigrid/base_amg.hpp</includedby>
+    <includedby refid="base__multigrid_8cpp" local="yes">/home/tcs/rocALUTION/src/solvers/multigrid/base_multigrid.cpp</includedby>
+    <includedby refid="multigrid_8hpp" local="yes">/home/tcs/rocALUTION/src/solvers/multigrid/multigrid.hpp</includedby>
+    <incdepgraph>
+      <node id="1093">
+        <label>../base/local_vector.hpp</label>
+        <link refid="local__vector_8hpp_source"/>
+        <childnode refid="1094" relation="include">
+        </childnode>
+        <childnode refid="1095" relation="include">
+        </childnode>
+      </node>
+      <node id="1095">
+        <label>vector.hpp</label>
+        <link refid="vector_8hpp_source"/>
+        <childnode refid="1094" relation="include">
+        </childnode>
+        <childnode refid="1087" relation="include">
+        </childnode>
+        <childnode refid="1089" relation="include">
+        </childnode>
+        <childnode refid="1086" relation="include">
+        </childnode>
+        <childnode refid="1096" relation="include">
+        </childnode>
+      </node>
+      <node id="1097">
+        <label>../../base/operator.hpp</label>
+        <link refid="operator_8hpp_source"/>
+        <childnode refid="1094" relation="include">
+        </childnode>
+        <childnode refid="1087" relation="include">
+        </childnode>
+        <childnode refid="1089" relation="include">
+        </childnode>
+        <childnode refid="1086" relation="include">
+        </childnode>
+        <childnode refid="1096" relation="include">
+        </childnode>
+      </node>
+      <node id="1086">
+        <label>string</label>
+      </node>
+      <node id="1091">
+        <label>map</label>
+      </node>
+      <node id="1083">
+        <label>../solver.hpp</label>
+        <link refid="solver_8hpp_source"/>
+        <childnode refid="1084" relation="include">
+        </childnode>
+        <childnode refid="1087" relation="include">
+        </childnode>
+        <childnode refid="1093" relation="include">
+        </childnode>
+      </node>
+      <node id="1090">
+        <label>fstream</label>
+      </node>
+      <node id="1082">
+        <label>/home/tcs/rocALUTION/src/solvers/multigrid/base_multigrid.hpp</label>
+        <link refid="base__multigrid_8hpp"/>
+        <childnode refid="1083" relation="include">
+        </childnode>
+        <childnode refid="1097" relation="include">
+        </childnode>
+      </node>
+      <node id="1094">
+        <label>../utils/types.hpp</label>
+      </node>
+      <node id="1087">
+        <label>../base/base_rocalution.hpp</label>
+        <link refid="base__rocalution_8hpp_source"/>
+        <childnode refid="1088" relation="include">
+        </childnode>
+        <childnode refid="1092" relation="include">
+        </childnode>
+        <childnode refid="1085" relation="include">
+        </childnode>
+      </node>
+      <node id="1085">
+        <label>vector</label>
+      </node>
+      <node id="1096">
+        <label>cstdlib</label>
+      </node>
+      <node id="1089">
+        <label>iostream</label>
+      </node>
+      <node id="1088">
+        <label>backend_manager.hpp</label>
+        <link refid="backend__manager_8hpp_source"/>
+        <childnode refid="1089" relation="include">
+        </childnode>
+        <childnode refid="1090" relation="include">
+        </childnode>
+        <childnode refid="1091" relation="include">
+        </childnode>
+        <childnode refid="1085" relation="include">
+        </childnode>
+        <childnode refid="1086" relation="include">
+        </childnode>
+      </node>
+      <node id="1084">
+        <label>iter_ctrl.hpp</label>
+        <link refid="iter__ctrl_8hpp_source"/>
+        <childnode refid="1085" relation="include">
+        </childnode>
+        <childnode refid="1086" relation="include">
+        </childnode>
+      </node>
+      <node id="1092">
+        <label>complex</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1102">
+        <label>/home/tcs/rocALUTION/src/solvers/multigrid/ruge_stueben_amg.hpp</label>
+        <link refid="ruge__stueben__amg_8hpp_source"/>
+      </node>
+      <node id="1105">
+        <label>/home/tcs/rocALUTION/src/solvers/multigrid/multigrid.hpp</label>
+        <link refid="multigrid_8hpp_source"/>
+      </node>
+      <node id="1104">
+        <label>/home/tcs/rocALUTION/src/solvers/multigrid/unsmoothed_amg.hpp</label>
+        <link refid="unsmoothed__amg_8hpp_source"/>
+      </node>
+      <node id="1100">
+        <label>/home/tcs/rocALUTION/src/solvers/multigrid/global_pairwise_amg.hpp</label>
+        <link refid="global__pairwise__amg_8hpp_source"/>
+      </node>
+      <node id="1101">
+        <label>/home/tcs/rocALUTION/src/solvers/multigrid/pairwise_amg.hpp</label>
+        <link refid="pairwise__amg_8hpp_source"/>
+        <childnode refid="1100" relation="include">
+        </childnode>
+      </node>
+      <node id="1098">
+        <label>/home/tcs/rocALUTION/src/solvers/multigrid/base_multigrid.hpp</label>
+        <link refid="base__multigrid_8hpp"/>
+        <childnode refid="1099" relation="include">
+        </childnode>
+        <childnode refid="1105" relation="include">
+        </childnode>
+      </node>
+      <node id="1099">
+        <label>/home/tcs/rocALUTION/src/solvers/multigrid/base_amg.hpp</label>
+        <link refid="base__amg_8hpp_source"/>
+        <childnode refid="1100" relation="include">
+        </childnode>
+        <childnode refid="1101" relation="include">
+        </childnode>
+        <childnode refid="1102" relation="include">
+        </childnode>
+        <childnode refid="1103" relation="include">
+        </childnode>
+        <childnode refid="1104" relation="include">
+        </childnode>
+      </node>
+      <node id="1103">
+        <label>/home/tcs/rocALUTION/src/solvers/multigrid/smoothed_amg.hpp</label>
+        <link refid="smoothed__amg_8hpp_source"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classrocalution_1_1_base_multi_grid" prot="public">rocalution::BaseMultiGrid</innerclass>
+    <innernamespace refid="namespacerocalution">rocalution</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2018<sp/>Advanced<sp/>Micro<sp/>Devices,<sp/>Inc.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Permission<sp/>is<sp/>hereby<sp/>granted,<sp/>free<sp/>of<sp/>charge,<sp/>to<sp/>any<sp/>person<sp/>obtaining<sp/>a<sp/>copy</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>of<sp/>this<sp/>software<sp/>and<sp/>associated<sp/>documentation<sp/>files<sp/>(the<sp/>&quot;Software&quot;),<sp/>to<sp/>deal</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>in<sp/>the<sp/>Software<sp/>without<sp/>restriction,<sp/>including<sp/>without<sp/>limitation<sp/>the<sp/>rights</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>to<sp/>use,<sp/>copy,<sp/>modify,<sp/>merge,<sp/>publish,<sp/>distribute,<sp/>sublicense,<sp/>and/or<sp/>sell</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>copies<sp/>of<sp/>the<sp/>Software,<sp/>and<sp/>to<sp/>permit<sp/>persons<sp/>to<sp/>whom<sp/>the<sp/>Software<sp/>is</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>furnished<sp/>to<sp/>do<sp/>so,<sp/>subject<sp/>to<sp/>the<sp/>following<sp/>conditions:</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>The<sp/>above<sp/>copyright<sp/>notice<sp/>and<sp/>this<sp/>permission<sp/>notice<sp/>shall<sp/>be<sp/>included<sp/>in</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>all<sp/>copies<sp/>or<sp/>substantial<sp/>portions<sp/>of<sp/>the<sp/>Software.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>THE<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>&quot;AS<sp/>IS&quot;,<sp/>WITHOUT<sp/>WARRANTY<sp/>OF<sp/>ANY<sp/>KIND,<sp/>EXPRESS<sp/>OR</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>IMPLIED,<sp/>INCLUDING<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO<sp/>THE<sp/>WARRANTIES<sp/>OF<sp/>MERCHANTABILITY,</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>AND<sp/>NONINFRINGEMENT.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>AUTHORS<sp/>OR<sp/>COPYRIGHT<sp/>HOLDERS<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>CLAIM,<sp/>DAMAGES<sp/>OR<sp/>OTHER</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>AN<sp/>ACTION<sp/>OF<sp/>CONTRACT,<sp/>TORT<sp/>OR<sp/>OTHERWISE,<sp/>ARISING<sp/>FROM,</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>OUT<sp/>OF<sp/>OR<sp/>IN<sp/>CONNECTION<sp/>WITH<sp/>THE<sp/>SOFTWARE<sp/>OR<sp/>THE<sp/>USE<sp/>OR<sp/>OTHER<sp/>DEALINGS<sp/>IN</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>THE<sp/>SOFTWARE.</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/>************************************************************************<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>ROCALUTION_BASE_MULTIGRID_HPP_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ROCALUTION_BASE_MULTIGRID_HPP_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../solver.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../../base/operator.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacerocalution" kindref="compound">rocalution</ref><sp/>{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>_cycle</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>Vcycle<sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>Wcycle<sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>Kcycle<sp/>=<sp/>2,</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>Fcycle<sp/>=<sp/>3</highlight></codeline>
+<codeline lineno="38"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
+<codeline lineno="50" refid="classrocalution_1_1_base_multi_grid" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classrocalution_1_1_base_multi_grid" kindref="compound">BaseMultiGrid</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_iterative_linear_solver" kindref="compound">IterativeLinearSolver</ref>&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classrocalution_1_1_base_multi_grid" kindref="compound">BaseMultiGrid</ref>();</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="classrocalution_1_1_base_multi_grid" kindref="compound">BaseMultiGrid</ref>();</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_base_multi_grid_1aea69e285bccd07d36d20f74742b00fbc" kindref="member">Print</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SetPreconditioner(<ref refid="classrocalution_1_1_solver" kindref="compound">Solver&lt;OperatorType, VectorType, ValueType&gt;</ref>&amp;<sp/>precond);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_base_multi_grid_1a615908da426fd0eba8bac32fdd1889f2" kindref="member">SetSolver</ref>(<ref refid="classrocalution_1_1_solver" kindref="compound">Solver&lt;OperatorType, VectorType, ValueType&gt;</ref>&amp;<sp/>solver);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_base_multi_grid_1a63b544d6472034cd6fbed2bc46620fcd" kindref="member">SetSmoother</ref>(<ref refid="classrocalution_1_1_iterative_linear_solver" kindref="compound">IterativeLinearSolver&lt;OperatorType, VectorType, ValueType&gt;</ref>**<sp/>smoother);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_base_multi_grid_1a9d3b928ff5f0084ed908206fdb9a2f6a" kindref="member">SetSmootherPreIter</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iter);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_base_multi_grid_1a7f4ea4a24e58cb85e97d2cf9089cf864" kindref="member">SetSmootherPostIter</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iter);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_base_multi_grid_1abd9e0991d0f8763bbd7123cb72fc65d6" kindref="member">SetRestrictOperator</ref>(OperatorType**<sp/>op)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_base_multi_grid_1abf35908266996bfc32d2761ead15f282" kindref="member">SetProlongOperator</ref>(OperatorType**<sp/>op)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_base_multi_grid_1aa8b8b1799df1b79f3a55b371d5cb4798" kindref="member">SetOperatorHierarchy</ref>(OperatorType**<sp/>op)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_base_multi_grid_1a5c506dbb924ed9c80d236d17eb86c59a" kindref="member">SetScaling</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>scaling);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_base_multi_grid_1abe050a8ca55c360ee796c9528f16a8a4" kindref="member">SetHostLevels</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>levels);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_base_multi_grid_1aace391f37b16ebd17df2f68dd0959418" kindref="member">SetCycle</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>cycle);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_base_multi_grid_1af3c6a55fe6368ad87537c56a8b58e454" kindref="member">SetKcycleFull</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>kcycle_full);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_base_multi_grid_1a53997c872f3761e09b820a30145d462c" kindref="member">InitLevels</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>levels);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_base_multi_grid_1afbe44b1d105248260a6076d4a1b86138" kindref="member">Solve</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>VectorType&amp;<sp/>rhs,<sp/>VectorType*<sp/>x);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_base_multi_grid_1a4033705acbf717fa5f23d219a8f7b765" kindref="member">Build</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_base_multi_grid_1ab8c35436568aacce432f6f253d296c20" kindref="member">Clear</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_base_multi_grid_1aff8d20e7b82a3304182d1174553fe57f" kindref="member">Restrict_</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>VectorType&amp;<sp/>fine,<sp/>VectorType*<sp/>coarse,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>level);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_base_multi_grid_1a11e6b521ec3b31bd9c968f21300b7025" kindref="member">Prolong_</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>VectorType&amp;<sp/>coarse,<sp/>VectorType*<sp/>fine,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>level);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_base_multi_grid_1afe0fc8a80c73931c74caa11fe1359681" kindref="member">Vcycle_</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>VectorType&amp;<sp/>rhs,<sp/>VectorType*<sp/>x);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_base_multi_grid_1a3fdd941d9589636afd0629a57b5eecdc" kindref="member">Wcycle_</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>VectorType&amp;<sp/>rhs,<sp/>VectorType*<sp/>x);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_base_multi_grid_1a0ddf4d043f8d8447a16f309b060aa1a2" kindref="member">Fcycle_</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>VectorType&amp;<sp/>rhs,<sp/>VectorType*<sp/>x);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_base_multi_grid_1a8bfaab7c7be3920e179c4281da1af609" kindref="member">Kcycle_</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>VectorType&amp;<sp/>rhs,<sp/>VectorType*<sp/>x);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SolveNonPrecond_(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>VectorType&amp;<sp/>rhs,<sp/>VectorType*<sp/>x);</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SolvePrecond_(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>VectorType&amp;<sp/>rhs,<sp/>VectorType*<sp/>x);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_base_multi_grid_1a949c187616ebc08671f528a575b22705" kindref="member">PrintStart_</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_base_multi_grid_1af7e6d055515f253a8381f8da34658501" kindref="member">PrintEnd_</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_base_multi_grid_1aa966335651f12b246995d91e798d53dc" kindref="member">MoveToHostLocalData_</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_base_multi_grid_1a932c769ff0896be30bda0e81a6854367" kindref="member">MoveToAcceleratorLocalData_</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_base_multi_grid_1a1a470cc6f123f820aeeea16378275684" kindref="member">MoveHostLevels_</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134" refid="classrocalution_1_1_base_multi_grid_1ae7e6d70d62e4d1b508c5dee5b564ac8c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_base_multi_grid_1ae7e6d70d62e4d1b508c5dee5b564ac8c" kindref="member">levels_</ref>;</highlight></codeline>
+<codeline lineno="136" refid="classrocalution_1_1_base_multi_grid_1a4bd0cefc5fbc2c72b49d706df486b75a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_base_multi_grid_1a4bd0cefc5fbc2c72b49d706df486b75a" kindref="member">host_level_</ref>;</highlight></codeline>
+<codeline lineno="138" refid="classrocalution_1_1_base_multi_grid_1a9130ac18ccfc5fab6cffeccae87f042a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_base_multi_grid_1a9130ac18ccfc5fab6cffeccae87f042a" kindref="member">current_level_</ref>;</highlight></codeline>
+<codeline lineno="140" refid="classrocalution_1_1_base_multi_grid_1a3d675487dab4993050c7aca5d89d5125" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_base_multi_grid_1a3d675487dab4993050c7aca5d89d5125" kindref="member">scaling_</ref>;</highlight></codeline>
+<codeline lineno="142" refid="classrocalution_1_1_base_multi_grid_1a01b4f210ce27bd79de7d2d2b0898dc70" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_base_multi_grid_1a01b4f210ce27bd79de7d2d2b0898dc70" kindref="member">iter_pre_smooth_</ref>;</highlight></codeline>
+<codeline lineno="144" refid="classrocalution_1_1_base_multi_grid_1abccaffa0d661c69e0566a52fc1fc6dc9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_base_multi_grid_1abccaffa0d661c69e0566a52fc1fc6dc9" kindref="member">iter_post_smooth_</ref>;</highlight></codeline>
+<codeline lineno="146" refid="classrocalution_1_1_base_multi_grid_1a2e81fd615a4a51ab8f19ba4c9c7972cc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_base_multi_grid_1a2e81fd615a4a51ab8f19ba4c9c7972cc" kindref="member">cycle_</ref>;</highlight></codeline>
+<codeline lineno="148" refid="classrocalution_1_1_base_multi_grid_1a94c05b3ae3cc54df2fb67f3c3c8b7fa1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_base_multi_grid_1a94c05b3ae3cc54df2fb67f3c3c8b7fa1" kindref="member">kcycle_full_</ref>;</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151" refid="classrocalution_1_1_base_multi_grid_1a88738e5a1c0cc29a10e0743dc4b50d82" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_base_multi_grid_1a88738e5a1c0cc29a10e0743dc4b50d82" kindref="member">res_norm_</ref>;</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154" refid="classrocalution_1_1_base_multi_grid_1a178ba768db8dfeb591e169dc40e3c375" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>OperatorType**<sp/><ref refid="classrocalution_1_1_base_multi_grid_1a178ba768db8dfeb591e169dc40e3c375" kindref="member">op_level_</ref>;</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157" refid="classrocalution_1_1_base_multi_grid_1a64632f10e50c6125efb8a888931a3a9c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classrocalution_1_1_operator" kindref="compound">Operator&lt;ValueType&gt;</ref>**<sp/><ref refid="classrocalution_1_1_base_multi_grid_1a64632f10e50c6125efb8a888931a3a9c" kindref="member">restrict_op_level_</ref>;</highlight></codeline>
+<codeline lineno="159" refid="classrocalution_1_1_base_multi_grid_1abf39fa332db98f9e4ca414f15d8bff1d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classrocalution_1_1_operator" kindref="compound">Operator&lt;ValueType&gt;</ref>**<sp/><ref refid="classrocalution_1_1_base_multi_grid_1abf39fa332db98f9e4ca414f15d8bff1d" kindref="member">prolong_op_level_</ref>;</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/>VectorType**<sp/>d_level_;<sp/></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/>VectorType**<sp/>r_level_;<sp/></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/>VectorType**<sp/>t_level_;<sp/></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/>VectorType**<sp/>s_level_;<sp/></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/>VectorType**<sp/>p_level_;<sp/></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/>VectorType**<sp/>q_level_;<sp/></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/>VectorType**<sp/>k_level_;<sp/></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/>VectorType**<sp/>l_level_;<sp/></highlight></codeline>
+<codeline lineno="171" refid="classrocalution_1_1_base_multi_grid_1a97135288abf5453813cedd8900a77fb8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classrocalution_1_1_solver" kindref="compound">Solver&lt;OperatorType, VectorType, ValueType&gt;</ref>*<sp/><ref refid="classrocalution_1_1_base_multi_grid_1a97135288abf5453813cedd8900a77fb8" kindref="member">solver_coarse_</ref>;</highlight></codeline>
+<codeline lineno="173" refid="classrocalution_1_1_base_multi_grid_1aebe3210adb254b24838ac52fa39421fc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classrocalution_1_1_iterative_linear_solver" kindref="compound">IterativeLinearSolver&lt;OperatorType, VectorType, ValueType&gt;</ref>**<sp/><ref refid="classrocalution_1_1_base_multi_grid_1aebe3210adb254b24838ac52fa39421fc" kindref="member">smoother_level_</ref>;</highlight></codeline>
+<codeline lineno="174"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>rocalution</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>ROCALUTION_BASE_MULTIGRID_HPP_</highlight></codeline>
+    </programlisting>
+    <location file="/home/tcs/rocALUTION/src/solvers/multigrid/base_multigrid.hpp"/>
+  </compounddef>
+</doxygen>

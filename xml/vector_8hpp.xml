@@ -7,94 +7,336 @@
     <includes local="no">iostream</includes>
     <includes local="no">string</includes>
     <includes local="no">cstdlib</includes>
-    <includedby refid="local__vector_8hpp" local="yes">ROCm_Libraries/rocALUTION/src/base/local_vector.hpp</includedby>
-    <includedby refid="global__vector_8hpp" local="yes">ROCm_Libraries/rocALUTION/src/base/global_vector.hpp</includedby>
+    <includedby refid="local__vector_8hpp" local="yes">/home/tcs/rocALUTION/src/base/local_vector.hpp</includedby>
+    <includedby refid="global__vector_8hpp" local="yes">/home/tcs/rocALUTION/src/base/global_vector.hpp</includedby>
     <incdepgraph>
-      <node id="145">
-        <label>backend_manager.hpp</label>
-        <link refid="backend__manager_8hpp_source"/>
-        <childnode refid="146" relation="include">
+      <node id="251">
+        <label>/home/tcs/rocALUTION/src/base/vector.hpp</label>
+        <link refid="vector_8hpp"/>
+        <childnode refid="252" relation="include">
         </childnode>
-        <childnode refid="147" relation="include">
+        <childnode refid="253" relation="include">
         </childnode>
-        <childnode refid="148" relation="include">
+        <childnode refid="255" relation="include">
         </childnode>
-        <childnode refid="149" relation="include">
+        <childnode refid="259" relation="include">
         </childnode>
-        <childnode refid="150" relation="include">
+        <childnode refid="261" relation="include">
         </childnode>
       </node>
-      <node id="150">
+      <node id="259">
         <label>string</label>
       </node>
-      <node id="148">
+      <node id="257">
         <label>map</label>
       </node>
-      <node id="147">
+      <node id="256">
         <label>fstream</label>
       </node>
-      <node id="144">
-        <label>base_rocalution.hpp</label>
-        <link refid="base__rocalution_8hpp_source"/>
-        <childnode refid="145" relation="include">
-        </childnode>
-        <childnode refid="151" relation="include">
-        </childnode>
-        <childnode refid="149" relation="include">
-        </childnode>
-      </node>
-      <node id="143">
+      <node id="252">
         <label>../utils/types.hpp</label>
       </node>
-      <node id="149">
+      <node id="253">
+        <label>base_rocalution.hpp</label>
+        <link refid="base__rocalution_8hpp_source"/>
+        <childnode refid="254" relation="include">
+        </childnode>
+        <childnode refid="260" relation="include">
+        </childnode>
+        <childnode refid="258" relation="include">
+        </childnode>
+      </node>
+      <node id="258">
         <label>vector</label>
       </node>
-      <node id="152">
+      <node id="261">
         <label>cstdlib</label>
       </node>
-      <node id="146">
+      <node id="255">
         <label>iostream</label>
       </node>
-      <node id="142">
-        <label>ROCm_Libraries/rocALUTION/src/base/vector.hpp</label>
-        <link refid="vector_8hpp"/>
-        <childnode refid="143" relation="include">
+      <node id="254">
+        <label>backend_manager.hpp</label>
+        <link refid="backend__manager_8hpp_source"/>
+        <childnode refid="255" relation="include">
         </childnode>
-        <childnode refid="144" relation="include">
+        <childnode refid="256" relation="include">
         </childnode>
-        <childnode refid="146" relation="include">
+        <childnode refid="257" relation="include">
         </childnode>
-        <childnode refid="150" relation="include">
+        <childnode refid="258" relation="include">
         </childnode>
-        <childnode refid="152" relation="include">
+        <childnode refid="259" relation="include">
         </childnode>
       </node>
-      <node id="151">
+      <node id="260">
         <label>complex</label>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="154">
-        <label>ROCm_Libraries/rocALUTION/src/base/local_vector.hpp</label>
+      <node id="268">
+        <label>/home/tcs/rocALUTION/src/solvers/direct/lu.hpp</label>
+        <link refid="lu_8hpp_source"/>
+      </node>
+      <node id="296">
+        <label>/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multielimination.hpp</label>
+        <link refid="preconditioner__multielimination_8hpp_source"/>
+      </node>
+      <node id="263">
+        <label>/home/tcs/rocALUTION/src/base/local_vector.hpp</label>
         <link refid="local__vector_8hpp_source"/>
-        <childnode refid="155" relation="include">
+        <childnode refid="264" relation="include">
+        </childnode>
+        <childnode refid="265" relation="include">
+        </childnode>
+        <childnode refid="290" relation="include">
+        </childnode>
+        <childnode refid="289" relation="include">
+        </childnode>
+        <childnode refid="295" relation="include">
+        </childnode>
+        <childnode refid="291" relation="include">
+        </childnode>
+        <childnode refid="296" relation="include">
+        </childnode>
+        <childnode refid="297" relation="include">
         </childnode>
       </node>
-      <node id="156">
-        <label>ROCm_Libraries/rocALUTION/src/base/global_vector.hpp</label>
+      <node id="283">
+        <label>/home/tcs/rocALUTION/src/solvers/multigrid/ruge_stueben_amg.hpp</label>
+        <link refid="ruge__stueben__amg_8hpp_source"/>
+      </node>
+      <node id="272">
+        <label>/home/tcs/rocALUTION/src/solvers/krylov/cg.hpp</label>
+        <link refid="cg_8hpp_source"/>
+      </node>
+      <node id="288">
+        <label>/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner.hpp</label>
+        <link refid="preconditioner_8hpp_source"/>
+        <childnode refid="289" relation="include">
+        </childnode>
+        <childnode refid="290" relation="include">
+        </childnode>
+        <childnode refid="292" relation="include">
+        </childnode>
+        <childnode refid="293" relation="include">
+        </childnode>
+        <childnode refid="294" relation="include">
+        </childnode>
+        <childnode refid="295" relation="include">
+        </childnode>
+        <childnode refid="291" relation="include">
+        </childnode>
+        <childnode refid="296" relation="include">
+        </childnode>
+        <childnode refid="297" relation="include">
+        </childnode>
+      </node>
+      <node id="287">
+        <label>/home/tcs/rocALUTION/src/solvers/multigrid/multigrid.hpp</label>
+        <link refid="multigrid_8hpp_source"/>
+      </node>
+      <node id="276">
+        <label>/home/tcs/rocALUTION/src/solvers/krylov/gmres.hpp</label>
+        <link refid="gmres_8hpp_source"/>
+      </node>
+      <node id="266">
+        <label>/home/tcs/rocALUTION/src/solvers/chebyshev.hpp</label>
+        <link refid="chebyshev_8hpp_source"/>
+      </node>
+      <node id="275">
+        <label>/home/tcs/rocALUTION/src/solvers/krylov/fgmres.hpp</label>
+        <link refid="fgmres_8hpp_source"/>
+      </node>
+      <node id="270">
+        <label>/home/tcs/rocALUTION/src/solvers/krylov/bicgstab.hpp</label>
+        <link refid="bicgstab_8hpp_source"/>
+      </node>
+      <node id="285">
+        <label>/home/tcs/rocALUTION/src/solvers/multigrid/unsmoothed_amg.hpp</label>
+        <link refid="unsmoothed__amg_8hpp_source"/>
+      </node>
+      <node id="277">
+        <label>/home/tcs/rocALUTION/src/solvers/krylov/idr.hpp</label>
+        <link refid="idr_8hpp_source"/>
+      </node>
+      <node id="281">
+        <label>/home/tcs/rocALUTION/src/solvers/multigrid/global_pairwise_amg.hpp</label>
+        <link refid="global__pairwise__amg_8hpp_source"/>
+      </node>
+      <node id="262">
+        <label>/home/tcs/rocALUTION/src/base/vector.hpp</label>
+        <link refid="vector_8hpp"/>
+        <childnode refid="263" relation="include">
+        </childnode>
+        <childnode refid="298" relation="include">
+        </childnode>
+      </node>
+      <node id="294">
+        <label>/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_blockjacobi.hpp</label>
+        <link refid="preconditioner__blockjacobi_8hpp_source"/>
+      </node>
+      <node id="282">
+        <label>/home/tcs/rocALUTION/src/solvers/multigrid/pairwise_amg.hpp</label>
+        <link refid="pairwise__amg_8hpp_source"/>
+        <childnode refid="281" relation="include">
+        </childnode>
+      </node>
+      <node id="297">
+        <label>/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_saddlepoint.hpp</label>
+        <link refid="preconditioner__saddlepoint_8hpp_source"/>
+      </node>
+      <node id="269">
+        <label>/home/tcs/rocALUTION/src/solvers/direct/qr.hpp</label>
+        <link refid="qr_8hpp_source"/>
+      </node>
+      <node id="265">
+        <label>/home/tcs/rocALUTION/src/solvers/solver.hpp</label>
+        <link refid="solver_8hpp_source"/>
+        <childnode refid="266" relation="include">
+        </childnode>
+        <childnode refid="267" relation="include">
+        </childnode>
+        <childnode refid="268" relation="include">
+        </childnode>
+        <childnode refid="269" relation="include">
+        </childnode>
+        <childnode refid="270" relation="include">
+        </childnode>
+        <childnode refid="271" relation="include">
+        </childnode>
+        <childnode refid="272" relation="include">
+        </childnode>
+        <childnode refid="273" relation="include">
+        </childnode>
+        <childnode refid="274" relation="include">
+        </childnode>
+        <childnode refid="275" relation="include">
+        </childnode>
+        <childnode refid="276" relation="include">
+        </childnode>
+        <childnode refid="277" relation="include">
+        </childnode>
+        <childnode refid="278" relation="include">
+        </childnode>
+        <childnode refid="279" relation="include">
+        </childnode>
+        <childnode refid="280" relation="include">
+        </childnode>
+        <childnode refid="286" relation="include">
+        </childnode>
+        <childnode refid="288" relation="include">
+        </childnode>
+        <childnode refid="281" relation="include">
+        </childnode>
+        <childnode refid="282" relation="include">
+        </childnode>
+        <childnode refid="283" relation="include">
+        </childnode>
+        <childnode refid="289" relation="include">
+        </childnode>
+        <childnode refid="290" relation="include">
+        </childnode>
+        <childnode refid="284" relation="include">
+        </childnode>
+        <childnode refid="285" relation="include">
+        </childnode>
+        <childnode refid="292" relation="include">
+        </childnode>
+        <childnode refid="295" relation="include">
+        </childnode>
+        <childnode refid="291" relation="include">
+        </childnode>
+        <childnode refid="296" relation="include">
+        </childnode>
+        <childnode refid="297" relation="include">
+        </childnode>
+      </node>
+      <node id="289">
+        <label>/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multicolored_gs.hpp</label>
+        <link refid="preconditioner__multicolored__gs_8hpp_source"/>
+      </node>
+      <node id="291">
+        <label>/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multicolored_ilu.hpp</label>
+        <link refid="preconditioner__multicolored__ilu_8hpp_source"/>
+      </node>
+      <node id="286">
+        <label>/home/tcs/rocALUTION/src/solvers/multigrid/base_multigrid.hpp</label>
+        <link refid="base__multigrid_8hpp_source"/>
+        <childnode refid="280" relation="include">
+        </childnode>
+        <childnode refid="287" relation="include">
+        </childnode>
+      </node>
+      <node id="267">
+        <label>/home/tcs/rocALUTION/src/solvers/direct/inversion.hpp</label>
+        <link refid="inversion_8hpp_source"/>
+      </node>
+      <node id="295">
+        <label>/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_blockprecond.hpp</label>
+        <link refid="preconditioner__blockprecond_8hpp_source"/>
+      </node>
+      <node id="298">
+        <label>/home/tcs/rocALUTION/src/base/global_vector.hpp</label>
         <link refid="global__vector_8hpp_source"/>
       </node>
-      <node id="155">
-        <label>ROCm_Libraries/rocALUTION/src/base/local_stencil.hpp</label>
+      <node id="278">
+        <label>/home/tcs/rocALUTION/src/solvers/krylov/qmrcgstab.hpp</label>
+        <link refid="qmrcgstab_8hpp_source"/>
+      </node>
+      <node id="292">
+        <label>/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_ai.hpp</label>
+        <link refid="preconditioner__ai_8hpp_source"/>
+      </node>
+      <node id="290">
+        <label>/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multicolored.hpp</label>
+        <link refid="preconditioner__multicolored_8hpp_source"/>
+        <childnode refid="289" relation="include">
+        </childnode>
+        <childnode refid="291" relation="include">
+        </childnode>
+      </node>
+      <node id="264">
+        <label>/home/tcs/rocALUTION/src/base/local_stencil.hpp</label>
         <link refid="local__stencil_8hpp_source"/>
       </node>
-      <node id="153">
-        <label>ROCm_Libraries/rocALUTION/src/base/vector.hpp</label>
-        <link refid="vector_8hpp"/>
-        <childnode refid="154" relation="include">
+      <node id="279">
+        <label>/home/tcs/rocALUTION/src/solvers/mixed_precision.hpp</label>
+        <link refid="mixed__precision_8hpp_source"/>
+      </node>
+      <node id="271">
+        <label>/home/tcs/rocALUTION/src/solvers/krylov/bicgstabl.hpp</label>
+        <link refid="bicgstabl_8hpp_source"/>
+      </node>
+      <node id="280">
+        <label>/home/tcs/rocALUTION/src/solvers/multigrid/base_amg.hpp</label>
+        <link refid="base__amg_8hpp_source"/>
+        <childnode refid="281" relation="include">
         </childnode>
-        <childnode refid="156" relation="include">
+        <childnode refid="282" relation="include">
         </childnode>
+        <childnode refid="283" relation="include">
+        </childnode>
+        <childnode refid="284" relation="include">
+        </childnode>
+        <childnode refid="285" relation="include">
+        </childnode>
+      </node>
+      <node id="274">
+        <label>/home/tcs/rocALUTION/src/solvers/krylov/fcg.hpp</label>
+        <link refid="fcg_8hpp_source"/>
+      </node>
+      <node id="284">
+        <label>/home/tcs/rocALUTION/src/solvers/multigrid/smoothed_amg.hpp</label>
+        <link refid="smoothed__amg_8hpp_source"/>
+      </node>
+      <node id="293">
+        <label>/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_as.hpp</label>
+        <link refid="preconditioner__as_8hpp_source"/>
+      </node>
+      <node id="273">
+        <label>/home/tcs/rocALUTION/src/solvers/krylov/cr.hpp</label>
+        <link refid="cr_8hpp_source"/>
       </node>
     </invincdepgraph>
     <innerclass refid="classrocalution_1_1_global_vector" prot="public">rocalution::GlobalVector</innerclass>
@@ -258,6 +500,6 @@
 <codeline lineno="354"><highlight class="normal"></highlight></codeline>
 <codeline lineno="355"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>ROCALUTION_VECTOR_HPP_</highlight></codeline>
     </programlisting>
-    <location file="ROCm_Libraries/rocALUTION/src/base/vector.hpp"/>
+    <location file="/home/tcs/rocALUTION/src/base/vector.hpp"/>
   </compounddef>
 </doxygen>

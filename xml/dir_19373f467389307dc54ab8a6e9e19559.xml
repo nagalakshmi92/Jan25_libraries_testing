@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_19373f467389307dc54ab8a6e9e19559" kind="dir">
+    <compoundname>/home/tcs/rocALUTION/src/solvers</compoundname>
+    <innerdir refid="dir_570d91e34c75c44b0442a597b8f1329a">/home/tcs/rocALUTION/src/solvers/direct</innerdir>
+    <innerdir refid="dir_620171d157a8bd520fe3f69b27b55ba1">/home/tcs/rocALUTION/src/solvers/krylov</innerdir>
+    <innerdir refid="dir_472d298e91c75470043af5fe84ed047e">/home/tcs/rocALUTION/src/solvers/multigrid</innerdir>
+    <innerdir refid="dir_15fb247b97d8730ba3313bf88d10a343">/home/tcs/rocALUTION/src/solvers/preconditioners</innerdir>
+    <innerfile refid="chebyshev_8cpp">chebyshev.cpp</innerfile>
+    <innerfile refid="chebyshev_8hpp">chebyshev.hpp</innerfile>
+    <innerfile refid="iter__ctrl_8cpp">iter_ctrl.cpp</innerfile>
+    <innerfile refid="iter__ctrl_8hpp">iter_ctrl.hpp</innerfile>
+    <innerfile refid="mixed__precision_8cpp">mixed_precision.cpp</innerfile>
+    <innerfile refid="mixed__precision_8hpp">mixed_precision.hpp</innerfile>
+    <innerfile refid="solver_8cpp">solver.cpp</innerfile>
+    <innerfile refid="solver_8hpp">solver.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/tcs/rocALUTION/src/solvers/"/>
+  </compounddef>
+</doxygen>

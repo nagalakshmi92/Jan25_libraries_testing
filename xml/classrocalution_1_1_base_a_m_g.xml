@@ -1,0 +1,669 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classrocalution_1_1_base_a_m_g" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>rocalution::BaseAMG</compoundname>
+    <basecompoundref refid="classrocalution_1_1_base_multi_grid" prot="public" virt="non-virtual">rocalution::BaseMultiGrid&lt; OperatorType, VectorType, ValueType &gt;</basecompoundref>
+    <derivedcompoundref refid="classrocalution_1_1_global_pairwise_a_m_g" prot="public" virt="non-virtual">rocalution::GlobalPairwiseAMG&lt; OperatorType, VectorType, ValueType &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classrocalution_1_1_pairwise_a_m_g" prot="public" virt="non-virtual">rocalution::PairwiseAMG&lt; OperatorType, VectorType, ValueType &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classrocalution_1_1_ruge_stueben_a_m_g" prot="public" virt="non-virtual">rocalution::RugeStuebenAMG&lt; OperatorType, VectorType, ValueType &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classrocalution_1_1_s_a_a_m_g" prot="public" virt="non-virtual">rocalution::SAAMG&lt; OperatorType, VectorType, ValueType &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classrocalution_1_1_u_a_a_m_g" prot="public" virt="non-virtual">rocalution::UAAMG&lt; OperatorType, VectorType, ValueType &gt;</derivedcompoundref>
+    <includes refid="base__amg_8hpp" local="no">base_amg.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>class OperatorType</type>
+      </param>
+      <param>
+        <type>class VectorType</type>
+      </param>
+      <param>
+        <type>typename ValueType</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classrocalution_1_1_base_a_m_g_1a261410980028e43e018570a939ff105a" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int rocalution::BaseAMG&lt; OperatorType, VectorType, ValueType &gt;::coarse_size_</definition>
+        <argsstring></argsstring>
+        <name>coarse_size_</name>
+        <briefdescription>
+<para>Maximal coarse grid size. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/multigrid/base_amg.hpp" line="99" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/multigrid/base_amg.hpp" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrocalution_1_1_base_a_m_g_1a3b77edbbb72d656885c33d1dcc079d78" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool rocalution::BaseAMG&lt; OperatorType, VectorType, ValueType &gt;::set_sm_</definition>
+        <argsstring></argsstring>
+        <name>set_sm_</name>
+        <briefdescription>
+<para>Smoother is set manually or not. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/multigrid/base_amg.hpp" line="102" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/multigrid/base_amg.hpp" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrocalution_1_1_base_a_m_g_1af79ea2a688e8b3299a6cbad3ee45e12e" prot="protected" static="no" mutable="no">
+        <type><ref refid="classrocalution_1_1_solver" kindref="compound">Solver</ref>&lt; OperatorType, VectorType, ValueType &gt; **</type>
+        <definition>Solver&lt;OperatorType, VectorType, ValueType&gt;** rocalution::BaseAMG&lt; OperatorType, VectorType, ValueType &gt;::sm_default_</definition>
+        <argsstring></argsstring>
+        <name>sm_default_</name>
+        <briefdescription>
+<para>Smoother hierarchy. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/multigrid/base_amg.hpp" line="104" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/multigrid/base_amg.hpp" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrocalution_1_1_base_a_m_g_1ab274f3d941409be0aa48922bde76f8b2" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool rocalution::BaseAMG&lt; OperatorType, VectorType, ValueType &gt;::set_s_</definition>
+        <argsstring></argsstring>
+        <name>set_s_</name>
+        <briefdescription>
+<para>Coarse grid solver is set manually or not. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/multigrid/base_amg.hpp" line="107" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/multigrid/base_amg.hpp" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrocalution_1_1_base_a_m_g_1a34bb3af2f3daba77e83effa0f3a692a2" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool rocalution::BaseAMG&lt; OperatorType, VectorType, ValueType &gt;::hierarchy_</definition>
+        <argsstring></argsstring>
+        <name>hierarchy_</name>
+        <briefdescription>
+<para>Build flag for hierarchy. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/multigrid/base_amg.hpp" line="110" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/multigrid/base_amg.hpp" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrocalution_1_1_base_a_m_g_1ab87cef5490a041aedd913794d3a24250" prot="protected" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int rocalution::BaseAMG&lt; OperatorType, VectorType, ValueType &gt;::sm_format_</definition>
+        <argsstring></argsstring>
+        <name>sm_format_</name>
+        <briefdescription>
+<para>Smoother operator format. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/multigrid/base_amg.hpp" line="113" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/multigrid/base_amg.hpp" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrocalution_1_1_base_a_m_g_1a77d8f3909d848028af69a6db4e31158a" prot="protected" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int rocalution::BaseAMG&lt; OperatorType, VectorType, ValueType &gt;::op_format_</definition>
+        <argsstring></argsstring>
+        <name>op_format_</name>
+        <briefdescription>
+<para><ref refid="classrocalution_1_1_operator" kindref="compound">Operator</ref> format. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/multigrid/base_amg.hpp" line="115" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/multigrid/base_amg.hpp" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classrocalution_1_1_base_a_m_g_1a3cd266501e4d3854cb2fe9094bb8dcd5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>rocalution::BaseAMG&lt; OperatorType, VectorType, ValueType &gt;::BaseAMG</definition>
+        <argsstring>()</argsstring>
+        <name>BaseAMG</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/multigrid/base_amg.hpp" line="53" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/multigrid/base_amg.cpp" bodystart="44" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_base_a_m_g_1acfc1799091ff559328d993f5c1c68bb7" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>rocalution::BaseAMG&lt; OperatorType, VectorType, ValueType &gt;::~BaseAMG</definition>
+        <argsstring>()</argsstring>
+        <name>~BaseAMG</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/multigrid/base_amg.hpp" line="54" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/multigrid/base_amg.cpp" bodystart="67" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_base_a_m_g_1a8e5f2b01e79664c95b67af35781d16d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void rocalution::BaseAMG&lt; OperatorType, VectorType, ValueType &gt;::Build</definition>
+        <argsstring>(void)</argsstring>
+        <name>Build</name>
+        <reimplements refid="classrocalution_1_1_base_multi_grid_1a4033705acbf717fa5f23d219a8f7b765">Build</reimplements>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Build the solver (data allocation, structure and numerical computation) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/multigrid/base_amg.hpp" line="56" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/multigrid/base_amg.cpp" bodystart="132" bodyend="279"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_base_a_m_g_1a2c81fabb935f751c5771df8836ce922b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void rocalution::BaseAMG&lt; OperatorType, VectorType, ValueType &gt;::Clear</definition>
+        <argsstring>(void)</argsstring>
+        <name>Clear</name>
+        <reimplements refid="classrocalution_1_1_base_multi_grid_1ab8c35436568aacce432f6f253d296c20">Clear</reimplements>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Clear (free all local data) the solver. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/multigrid/base_amg.hpp" line="57" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/multigrid/base_amg.cpp" bodystart="400" bodyend="485"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_base_a_m_g_1a557868487252ec0b6c94eda581372a0a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void rocalution::BaseAMG&lt; OperatorType, VectorType, ValueType &gt;::ClearLocal</definition>
+        <argsstring>(void)</argsstring>
+        <name>ClearLocal</name>
+        <reimplementedby refid="classrocalution_1_1_global_pairwise_a_m_g_1a188b9a8972ff95fb92879dfdb8fd4e84">ClearLocal</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_pairwise_a_m_g_1ab415d49a3f2a7837ad229a4a7a0dafde">ClearLocal</reimplementedby>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Clear all local data. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/multigrid/base_amg.hpp" line="60" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/multigrid/base_amg.cpp" bodystart="489" bodyend="491"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_base_a_m_g_1af6d4defc5f8a6fc67a4fec46c8f1bd66" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void rocalution::BaseAMG&lt; OperatorType, VectorType, ValueType &gt;::BuildHierarchy</definition>
+        <argsstring>(void)</argsstring>
+        <name>BuildHierarchy</name>
+        <reimplementedby refid="classrocalution_1_1_global_pairwise_a_m_g_1a5fbd48f3fecff4ec5410459070037a38">BuildHierarchy</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_pairwise_a_m_g_1a22f45c940431dc7318105d5bc7c0c7cc">BuildHierarchy</reimplementedby>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Create AMG hierarchy. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/multigrid/base_amg.hpp" line="63" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/multigrid/base_amg.cpp" bodystart="282" bodyend="370"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_base_a_m_g_1a3f76e7e8ceb1772e77772f2c3995f2d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void rocalution::BaseAMG&lt; OperatorType, VectorType, ValueType &gt;::BuildSmoothers</definition>
+        <argsstring>(void)</argsstring>
+        <name>BuildSmoothers</name>
+        <reimplementedby refid="classrocalution_1_1_u_a_a_m_g_1aa7d5a037d6552044b7fac6ff7e6a8b49">BuildSmoothers</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_s_a_a_m_g_1a13a28023ab80de22b2975336c911b8a6">BuildSmoothers</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_ruge_stueben_a_m_g_1ab3eb89cfda28a8aa74fe56d147652833">BuildSmoothers</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_pairwise_a_m_g_1aedc419a3d733f0d710a52f2f9e3d5811">BuildSmoothers</reimplementedby>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Create AMG smoothers. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/multigrid/base_amg.hpp" line="66" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/multigrid/base_amg.cpp" bodystart="373" bodyend="397"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_base_a_m_g_1a96281a009e8cb941f8ff269035302d4c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rocalution::BaseAMG&lt; OperatorType, VectorType, ValueType &gt;::SetCoarsestLevel</definition>
+        <argsstring>(int coarse_size)</argsstring>
+        <name>SetCoarsestLevel</name>
+        <param>
+          <type>int</type>
+          <declname>coarse_size</declname>
+        </param>
+        <briefdescription>
+<para>Set coarsest level for hierarchy creation. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/multigrid/base_amg.hpp" line="69" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/multigrid/base_amg.cpp" bodystart="75" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_base_a_m_g_1adf20402c86435116ad68911a26e15a4e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rocalution::BaseAMG&lt; OperatorType, VectorType, ValueType &gt;::SetManualSmoothers</definition>
+        <argsstring>(bool sm_manual)</argsstring>
+        <name>SetManualSmoothers</name>
+        <param>
+          <type>bool</type>
+          <declname>sm_manual</declname>
+        </param>
+        <briefdescription>
+<para>Set flag to pass smoothers manually for each level. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/multigrid/base_amg.hpp" line="72" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/multigrid/base_amg.cpp" bodystart="86" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_base_a_m_g_1a590e1b7401d3b73c63d5bd9d20b92eb4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rocalution::BaseAMG&lt; OperatorType, VectorType, ValueType &gt;::SetManualSolver</definition>
+        <argsstring>(bool s_manual)</argsstring>
+        <name>SetManualSolver</name>
+        <param>
+          <type>bool</type>
+          <declname>s_manual</declname>
+        </param>
+        <briefdescription>
+<para>Set flag to pass coarse grid solver manually. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/multigrid/base_amg.hpp" line="74" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/multigrid/base_amg.cpp" bodystart="96" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_base_a_m_g_1aa359bb6dff698912e524d3d1a45f84fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rocalution::BaseAMG&lt; OperatorType, VectorType, ValueType &gt;::SetDefaultSmootherFormat</definition>
+        <argsstring>(unsigned int op_format)</argsstring>
+        <name>SetDefaultSmootherFormat</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>op_format</declname>
+        </param>
+        <briefdescription>
+<para>Set the smoother operator format. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/multigrid/base_amg.hpp" line="77" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/multigrid/base_amg.cpp" bodystart="106" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_base_a_m_g_1a0b96ffa5244f9a4ef008aebcb0491e46" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rocalution::BaseAMG&lt; OperatorType, VectorType, ValueType &gt;::SetOperatorFormat</definition>
+        <argsstring>(unsigned int op_format)</argsstring>
+        <name>SetOperatorFormat</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>op_format</declname>
+        </param>
+        <briefdescription>
+<para>Set the operator format. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/multigrid/base_amg.hpp" line="79" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/multigrid/base_amg.cpp" bodystart="116" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_base_a_m_g_1a615e88d5a7abc5a0d3d556e7974ab9e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int rocalution::BaseAMG&lt; OperatorType, VectorType, ValueType &gt;::GetNumLevels</definition>
+        <argsstring>(void)</argsstring>
+        <name>GetNumLevels</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Returns the number of levels in hierarchy. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/multigrid/base_amg.hpp" line="82" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/multigrid/base_amg.cpp" bodystart="124" bodyend="129"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classrocalution_1_1_base_a_m_g_1ac5477b055e029fb8f23565a8c3314714" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void rocalution::BaseAMG&lt; OperatorType, VectorType, ValueType &gt;::SetRestrictOperator</definition>
+        <argsstring>(OperatorType **op)</argsstring>
+        <name>SetRestrictOperator</name>
+        <reimplements refid="classrocalution_1_1_base_multi_grid_1abd9e0991d0f8763bbd7123cb72fc65d6">SetRestrictOperator</reimplements>
+        <param>
+          <type>OperatorType **</type>
+          <declname>op</declname>
+        </param>
+        <briefdescription>
+<para>Set the restriction operator for each level. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/multigrid/base_amg.hpp" line="85" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/multigrid/base_amg.cpp" bodystart="494" bodyend="499"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_base_a_m_g_1a930a43d15e964486edd68dbf8601ea70" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void rocalution::BaseAMG&lt; OperatorType, VectorType, ValueType &gt;::SetProlongOperator</definition>
+        <argsstring>(OperatorType **op)</argsstring>
+        <name>SetProlongOperator</name>
+        <reimplements refid="classrocalution_1_1_base_multi_grid_1abf35908266996bfc32d2761ead15f282">SetProlongOperator</reimplements>
+        <param>
+          <type>OperatorType **</type>
+          <declname>op</declname>
+        </param>
+        <briefdescription>
+<para>Set the prolongation operator for each level. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/multigrid/base_amg.hpp" line="87" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/multigrid/base_amg.cpp" bodystart="502" bodyend="507"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_base_a_m_g_1a0bd37a42d1fa874d845b98f3339d2cfb" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void rocalution::BaseAMG&lt; OperatorType, VectorType, ValueType &gt;::SetOperatorHierarchy</definition>
+        <argsstring>(OperatorType **op)</argsstring>
+        <name>SetOperatorHierarchy</name>
+        <reimplements refid="classrocalution_1_1_base_multi_grid_1aa8b8b1799df1b79f3a55b371d5cb4798">SetOperatorHierarchy</reimplements>
+        <param>
+          <type>OperatorType **</type>
+          <declname>op</declname>
+        </param>
+        <briefdescription>
+<para>Set the operator for each level. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/multigrid/base_amg.hpp" line="89" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/multigrid/base_amg.cpp" bodystart="510" bodyend="515"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classrocalution_1_1_base_a_m_g_1a927139d6e2fc999ea798400b548d2cfe" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void rocalution::BaseAMG&lt; OperatorType, VectorType, ValueType &gt;::Aggregate_</definition>
+        <argsstring>(const OperatorType &amp;op, Operator&lt; ValueType &gt; *pro, Operator&lt; ValueType &gt; *res, OperatorType *coarse)=0</argsstring>
+        <name>Aggregate_</name>
+        <reimplementedby refid="classrocalution_1_1_u_a_a_m_g_1a76d9ee2250b9626808cdcfe881c6b9a8">Aggregate_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_s_a_a_m_g_1a6239bde7c8f7e8b85cf9d7c367138b05">Aggregate_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_ruge_stueben_a_m_g_1a8737c45af98cd6e721dbca5ad13c7b57">Aggregate_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_global_pairwise_a_m_g_1ad3e383251e19412b4fed812a532d18c2">Aggregate_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_pairwise_a_m_g_1a71a9cfe00a77bf51e5bd50a2c195fb95">Aggregate_</reimplementedby>
+        <param>
+          <type>const OperatorType &amp;</type>
+          <declname>op</declname>
+        </param>
+        <param>
+          <type><ref refid="classrocalution_1_1_operator" kindref="compound">Operator</ref>&lt; ValueType &gt; *</type>
+          <declname>pro</declname>
+        </param>
+        <param>
+          <type><ref refid="classrocalution_1_1_operator" kindref="compound">Operator</ref>&lt; ValueType &gt; *</type>
+          <declname>res</declname>
+        </param>
+        <param>
+          <type>OperatorType *</type>
+          <declname>coarse</declname>
+        </param>
+        <briefdescription>
+<para>Constructs the prolongation, restriction and coarse operator. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/multigrid/base_amg.hpp" line="93" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Base class for all algebraic multigrid solvers. </para>    </briefdescription>
+    <detaileddescription>
+<para>The Algebraic <ref refid="classrocalution_1_1_multi_grid" kindref="compound">MultiGrid</ref> solver is based on the <ref refid="classrocalution_1_1_base_multi_grid" kindref="compound">BaseMultiGrid</ref> class. The coarsening is obtained by different aggregation techniques. The smoothers can be constructed inside or outside of the class.</para><para>All parameters in the Algebraic <ref refid="classrocalution_1_1_multi_grid" kindref="compound">MultiGrid</ref> class can be set externally, including smoothers and coarse grid solver.</para><para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>OperatorType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- can be <ref refid="classrocalution_1_1_local_matrix" kindref="compound">LocalMatrix</ref> or <ref refid="classrocalution_1_1_global_matrix" kindref="compound">GlobalMatrix</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>VectorType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- can be <ref refid="classrocalution_1_1_local_vector" kindref="compound">LocalVector</ref> or <ref refid="classrocalution_1_1_global_vector" kindref="compound">GlobalVector</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ValueType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- can be float, double, std::complex&lt;float&gt; or std::complex&lt;double&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="33">
+        <label>rocalution::IterativeLinearSolver&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_iterative_linear_solver"/>
+        <childnode refid="34" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>rocalution::GlobalPairwiseAMG&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_global_pairwise_a_m_g"/>
+        <childnode refid="31" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>rocalution::Solver&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_solver"/>
+        <childnode refid="35" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>rocalution::RocalutionObj</label>
+      </node>
+      <node id="40">
+        <label>rocalution::UAAMG&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_u_a_a_m_g"/>
+        <childnode refid="31" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>rocalution::BaseAMG&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_base_a_m_g"/>
+        <childnode refid="32" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>rocalution::PairwiseAMG&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_pairwise_a_m_g"/>
+        <childnode refid="31" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>rocalution::SAAMG&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_s_a_a_m_g"/>
+        <childnode refid="31" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>rocalution::BaseMultiGrid&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_base_multi_grid"/>
+        <childnode refid="33" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>rocalution::RugeStuebenAMG&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_ruge_stueben_a_m_g"/>
+        <childnode refid="31" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="43">
+        <label>rocalution::IterativeLinearSolver&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_iterative_linear_solver"/>
+        <childnode refid="44" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="47">
+        <label>rocalution::Vector&lt; int &gt;</label>
+        <link refid="classrocalution_1_1_vector"/>
+        <childnode refid="48" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="48">
+        <label>rocalution::BaseRocalution&lt; ValueType &gt;</label>
+        <link refid="classrocalution_1_1_base_rocalution"/>
+        <childnode refid="45" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="44">
+        <label>rocalution::Solver&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_solver"/>
+        <childnode refid="45" relation="public-inheritance">
+        </childnode>
+        <childnode refid="46" relation="usage">
+          <edgelabel>permutation_</edgelabel>
+        </childnode>
+        <childnode refid="49" relation="usage">
+          <edgelabel>op_</edgelabel>
+        </childnode>
+      </node>
+      <node id="46">
+        <label>rocalution::LocalVector&lt; int &gt;</label>
+        <link refid="classrocalution_1_1_local_vector"/>
+        <childnode refid="47" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="45">
+        <label>rocalution::RocalutionObj</label>
+      </node>
+      <node id="49">
+        <label>OperatorType</label>
+      </node>
+      <node id="41">
+        <label>rocalution::BaseAMG&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_base_a_m_g"/>
+        <childnode refid="42" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="42">
+        <label>rocalution::BaseMultiGrid&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_base_multi_grid"/>
+        <childnode refid="43" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/tcs/rocALUTION/src/solvers/multigrid/base_amg.hpp" line="51" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/multigrid/base_amg.hpp" bodystart="50" bodyend="116"/>
+    <listofallmembers>
+      <member refid="classrocalution_1_1_base_a_m_g_1a927139d6e2fc999ea798400b548d2cfe" prot="protected" virt="pure-virtual"><scope>rocalution::BaseAMG</scope><name>Aggregate_</name></member>
+      <member refid="classrocalution_1_1_base_a_m_g_1a3cd266501e4d3854cb2fe9094bb8dcd5" prot="public" virt="non-virtual"><scope>rocalution::BaseAMG</scope><name>BaseAMG</name></member>
+      <member refid="classrocalution_1_1_base_multi_grid_1a1c94a61b80074241d291ddd8d8b1ec6a" prot="public" virt="non-virtual"><scope>rocalution::BaseAMG</scope><name>BaseMultiGrid</name></member>
+      <member refid="classrocalution_1_1_base_a_m_g_1a8e5f2b01e79664c95b67af35781d16d9" prot="public" virt="virtual"><scope>rocalution::BaseAMG</scope><name>Build</name></member>
+      <member refid="classrocalution_1_1_solver_1a64924a0c87d60d2e4bf9fa295d0152cb" prot="protected" virt="non-virtual"><scope>rocalution::BaseAMG</scope><name>build_</name></member>
+      <member refid="classrocalution_1_1_base_a_m_g_1af6d4defc5f8a6fc67a4fec46c8f1bd66" prot="public" virt="virtual"><scope>rocalution::BaseAMG</scope><name>BuildHierarchy</name></member>
+      <member refid="classrocalution_1_1_solver_1a0d11ee9943f785db285f0ef5c08c64eb" prot="public" virt="virtual"><scope>rocalution::BaseAMG</scope><name>BuildMoveToAcceleratorAsync</name></member>
+      <member refid="classrocalution_1_1_base_a_m_g_1a3f76e7e8ceb1772e77772f2c3995f2d7" prot="public" virt="virtual"><scope>rocalution::BaseAMG</scope><name>BuildSmoothers</name></member>
+      <member refid="classrocalution_1_1_base_a_m_g_1a2c81fabb935f751c5771df8836ce922b" prot="public" virt="virtual"><scope>rocalution::BaseAMG</scope><name>Clear</name></member>
+      <member refid="classrocalution_1_1_base_a_m_g_1a557868487252ec0b6c94eda581372a0a" prot="public" virt="virtual"><scope>rocalution::BaseAMG</scope><name>ClearLocal</name></member>
+      <member refid="classrocalution_1_1_base_a_m_g_1a261410980028e43e018570a939ff105a" prot="protected" virt="non-virtual"><scope>rocalution::BaseAMG</scope><name>coarse_size_</name></member>
+      <member refid="classrocalution_1_1_base_multi_grid_1a9130ac18ccfc5fab6cffeccae87f042a" prot="protected" virt="non-virtual"><scope>rocalution::BaseAMG</scope><name>current_level_</name></member>
+      <member refid="classrocalution_1_1_base_multi_grid_1a2e81fd615a4a51ab8f19ba4c9c7972cc" prot="protected" virt="non-virtual"><scope>rocalution::BaseAMG</scope><name>cycle_</name></member>
+      <member refid="classrocalution_1_1_base_multi_grid_1a0ddf4d043f8d8447a16f309b060aa1a2" prot="protected" virt="non-virtual"><scope>rocalution::BaseAMG</scope><name>Fcycle_</name></member>
+      <member refid="classrocalution_1_1_iterative_linear_solver_1a20f2516ef96cebecbe83ba153bfacc8e" prot="public" virt="virtual"><scope>rocalution::BaseAMG</scope><name>GetAmaxResidualIndex</name></member>
+      <member refid="classrocalution_1_1_iterative_linear_solver_1a364ed49d060f8c24ba7af2398d1f54f5" prot="public" virt="virtual"><scope>rocalution::BaseAMG</scope><name>GetCurrentResidual</name></member>
+      <member refid="classrocalution_1_1_iterative_linear_solver_1a7f70fb4d7ce86daa75b2796a0dc12044" prot="public" virt="virtual"><scope>rocalution::BaseAMG</scope><name>GetIterationCount</name></member>
+      <member refid="classrocalution_1_1_base_a_m_g_1a615e88d5a7abc5a0d3d556e7974ab9e9" prot="public" virt="non-virtual"><scope>rocalution::BaseAMG</scope><name>GetNumLevels</name></member>
+      <member refid="classrocalution_1_1_iterative_linear_solver_1a814064201608ca980284fbea51792137" prot="public" virt="virtual"><scope>rocalution::BaseAMG</scope><name>GetSolverStatus</name></member>
+      <member refid="classrocalution_1_1_rocalution_obj_1a4bba5aeaf4fd705efc00402f1f6ed40b" prot="protected" virt="non-virtual"><scope>rocalution::BaseAMG</scope><name>global_obj_id_</name></member>
+      <member refid="classrocalution_1_1_base_a_m_g_1a34bb3af2f3daba77e83effa0f3a692a2" prot="protected" virt="non-virtual"><scope>rocalution::BaseAMG</scope><name>hierarchy_</name></member>
+      <member refid="classrocalution_1_1_base_multi_grid_1a4bd0cefc5fbc2c72b49d706df486b75a" prot="protected" virt="non-virtual"><scope>rocalution::BaseAMG</scope><name>host_level_</name></member>
+      <member refid="classrocalution_1_1_iterative_linear_solver_1a30d12c17029094a3f46a0fa1ce491887" prot="protected" virt="non-virtual"><scope>rocalution::BaseAMG</scope><name>index_</name></member>
+      <member refid="classrocalution_1_1_iterative_linear_solver_1a2a8eebb0b187469ed92c675bd75e34b8" prot="public" virt="non-virtual"><scope>rocalution::BaseAMG</scope><name>Init</name></member>
+      <member refid="classrocalution_1_1_iterative_linear_solver_1a0c6fb1aeaf491a1e4891dc13d4b893b2" prot="public" virt="non-virtual"><scope>rocalution::BaseAMG</scope><name>Init</name></member>
+      <member refid="classrocalution_1_1_base_multi_grid_1a53997c872f3761e09b820a30145d462c" prot="public" virt="non-virtual"><scope>rocalution::BaseAMG</scope><name>InitLevels</name></member>
+      <member refid="classrocalution_1_1_iterative_linear_solver_1a3b248faab2ff42e9106b6e38e5e0bbe2" prot="public" virt="non-virtual"><scope>rocalution::BaseAMG</scope><name>InitMaxIter</name></member>
+      <member refid="classrocalution_1_1_iterative_linear_solver_1a025c99dd56f7b09ebfd9df3905093c8e" prot="public" virt="non-virtual"><scope>rocalution::BaseAMG</scope><name>InitMinIter</name></member>
+      <member refid="classrocalution_1_1_iterative_linear_solver_1a05b570833a869738be46986d255b3c39" prot="public" virt="non-virtual"><scope>rocalution::BaseAMG</scope><name>InitTol</name></member>
+      <member refid="classrocalution_1_1_base_multi_grid_1abccaffa0d661c69e0566a52fc1fc6dc9" prot="protected" virt="non-virtual"><scope>rocalution::BaseAMG</scope><name>iter_post_smooth_</name></member>
+      <member refid="classrocalution_1_1_base_multi_grid_1a01b4f210ce27bd79de7d2d2b0898dc70" prot="protected" virt="non-virtual"><scope>rocalution::BaseAMG</scope><name>iter_pre_smooth_</name></member>
+      <member refid="classrocalution_1_1_iterative_linear_solver_1a6fcfd0b77d13d84d36156abbaa100fa0" prot="public" virt="non-virtual"><scope>rocalution::BaseAMG</scope><name>IterativeLinearSolver</name></member>
+      <member refid="classrocalution_1_1_base_multi_grid_1a8bfaab7c7be3920e179c4281da1af609" prot="protected" virt="non-virtual"><scope>rocalution::BaseAMG</scope><name>Kcycle_</name></member>
+      <member refid="classrocalution_1_1_base_multi_grid_1a94c05b3ae3cc54df2fb67f3c3c8b7fa1" prot="protected" virt="non-virtual"><scope>rocalution::BaseAMG</scope><name>kcycle_full_</name></member>
+      <member refid="classrocalution_1_1_base_multi_grid_1ae7e6d70d62e4d1b508c5dee5b564ac8c" prot="protected" virt="non-virtual"><scope>rocalution::BaseAMG</scope><name>levels_</name></member>
+      <member refid="classrocalution_1_1_base_multi_grid_1a1a470cc6f123f820aeeea16378275684" prot="protected" virt="non-virtual"><scope>rocalution::BaseAMG</scope><name>MoveHostLevels_</name></member>
+      <member refid="classrocalution_1_1_solver_1ab1b6410cd134c9ad00c1851d400cf0f8" prot="public" virt="virtual"><scope>rocalution::BaseAMG</scope><name>MoveToAccelerator</name></member>
+      <member refid="classrocalution_1_1_base_multi_grid_1a932c769ff0896be30bda0e81a6854367" prot="protected" virt="virtual"><scope>rocalution::BaseAMG</scope><name>MoveToAcceleratorLocalData_</name></member>
+      <member refid="classrocalution_1_1_solver_1a3c263e65898816f5838184c0af78a044" prot="public" virt="virtual"><scope>rocalution::BaseAMG</scope><name>MoveToHost</name></member>
+      <member refid="classrocalution_1_1_base_multi_grid_1aa966335651f12b246995d91e798d53dc" prot="protected" virt="virtual"><scope>rocalution::BaseAMG</scope><name>MoveToHostLocalData_</name></member>
+      <member refid="classrocalution_1_1_iterative_linear_solver_1a45c0602171dda0391e5574e0310504fb" prot="protected" virt="non-virtual"><scope>rocalution::BaseAMG</scope><name>Norm_</name></member>
+      <member refid="classrocalution_1_1_solver_1ad338b5f99cf339fb33218dd8b958cac4" prot="protected" virt="non-virtual"><scope>rocalution::BaseAMG</scope><name>op_</name></member>
+      <member refid="classrocalution_1_1_base_a_m_g_1a77d8f3909d848028af69a6db4e31158a" prot="protected" virt="non-virtual"><scope>rocalution::BaseAMG</scope><name>op_format_</name></member>
+      <member refid="classrocalution_1_1_base_multi_grid_1a178ba768db8dfeb591e169dc40e3c375" prot="protected" virt="non-virtual"><scope>rocalution::BaseAMG</scope><name>op_level_</name></member>
+      <member refid="classrocalution_1_1_solver_1ac46ab4d19fba48ece463666d37a7dc86" prot="protected" virt="non-virtual"><scope>rocalution::BaseAMG</scope><name>permutation_</name></member>
+      <member refid="classrocalution_1_1_solver_1a2acdb829fa657a7b3e680d1ee6005c9b" prot="protected" virt="non-virtual"><scope>rocalution::BaseAMG</scope><name>precond_</name></member>
+      <member refid="classrocalution_1_1_base_multi_grid_1aea69e285bccd07d36d20f74742b00fbc" prot="public" virt="virtual"><scope>rocalution::BaseAMG</scope><name>Print</name></member>
+      <member refid="classrocalution_1_1_base_multi_grid_1af7e6d055515f253a8381f8da34658501" prot="protected" virt="virtual"><scope>rocalution::BaseAMG</scope><name>PrintEnd_</name></member>
+      <member refid="classrocalution_1_1_base_multi_grid_1a949c187616ebc08671f528a575b22705" prot="protected" virt="virtual"><scope>rocalution::BaseAMG</scope><name>PrintStart_</name></member>
+      <member refid="classrocalution_1_1_base_multi_grid_1a11e6b521ec3b31bd9c968f21300b7025" prot="protected" virt="non-virtual"><scope>rocalution::BaseAMG</scope><name>Prolong_</name></member>
+      <member refid="classrocalution_1_1_base_multi_grid_1abf39fa332db98f9e4ca414f15d8bff1d" prot="protected" virt="non-virtual"><scope>rocalution::BaseAMG</scope><name>prolong_op_level_</name></member>
+      <member refid="classrocalution_1_1_solver_1acd20a051f0560a77645e35361df8f87c" prot="public" virt="virtual"><scope>rocalution::BaseAMG</scope><name>ReBuildNumeric</name></member>
+      <member refid="classrocalution_1_1_iterative_linear_solver_1ae13555f823f7cd1a5c3a7ef3b4427f74" prot="public" virt="non-virtual"><scope>rocalution::BaseAMG</scope><name>RecordHistory</name></member>
+      <member refid="classrocalution_1_1_iterative_linear_solver_1a0a5fd39c7f75f4339eaa41b67868653d" prot="public" virt="non-virtual"><scope>rocalution::BaseAMG</scope><name>RecordResidualHistory</name></member>
+      <member refid="classrocalution_1_1_base_multi_grid_1a88738e5a1c0cc29a10e0743dc4b50d82" prot="protected" virt="non-virtual"><scope>rocalution::BaseAMG</scope><name>res_norm_</name></member>
+      <member refid="classrocalution_1_1_solver_1a91354c5c116742c58d9eb2094cc6a68e" prot="public" virt="virtual"><scope>rocalution::BaseAMG</scope><name>ResetOperator</name></member>
+      <member refid="classrocalution_1_1_base_multi_grid_1aff8d20e7b82a3304182d1174553fe57f" prot="protected" virt="non-virtual"><scope>rocalution::BaseAMG</scope><name>Restrict_</name></member>
+      <member refid="classrocalution_1_1_base_multi_grid_1a64632f10e50c6125efb8a888931a3a9c" prot="protected" virt="non-virtual"><scope>rocalution::BaseAMG</scope><name>restrict_op_level_</name></member>
+      <member refid="classrocalution_1_1_rocalution_obj_1ad60a8b2047aad74e488c552264fa7737" prot="public" virt="non-virtual"><scope>rocalution::BaseAMG</scope><name>RocalutionObj</name></member>
+      <member refid="classrocalution_1_1_base_multi_grid_1a3d675487dab4993050c7aca5d89d5125" prot="protected" virt="non-virtual"><scope>rocalution::BaseAMG</scope><name>scaling_</name></member>
+      <member refid="classrocalution_1_1_base_a_m_g_1ab274f3d941409be0aa48922bde76f8b2" prot="protected" virt="non-virtual"><scope>rocalution::BaseAMG</scope><name>set_s_</name></member>
+      <member refid="classrocalution_1_1_base_a_m_g_1a3b77edbbb72d656885c33d1dcc079d78" prot="protected" virt="non-virtual"><scope>rocalution::BaseAMG</scope><name>set_sm_</name></member>
+      <member refid="classrocalution_1_1_base_a_m_g_1a96281a009e8cb941f8ff269035302d4c" prot="public" virt="non-virtual"><scope>rocalution::BaseAMG</scope><name>SetCoarsestLevel</name></member>
+      <member refid="classrocalution_1_1_base_multi_grid_1aace391f37b16ebd17df2f68dd0959418" prot="public" virt="non-virtual"><scope>rocalution::BaseAMG</scope><name>SetCycle</name></member>
+      <member refid="classrocalution_1_1_base_a_m_g_1aa359bb6dff698912e524d3d1a45f84fb" prot="public" virt="non-virtual"><scope>rocalution::BaseAMG</scope><name>SetDefaultSmootherFormat</name></member>
+      <member refid="classrocalution_1_1_base_multi_grid_1abe050a8ca55c360ee796c9528f16a8a4" prot="public" virt="non-virtual"><scope>rocalution::BaseAMG</scope><name>SetHostLevels</name></member>
+      <member refid="classrocalution_1_1_base_multi_grid_1af3c6a55fe6368ad87537c56a8b58e454" prot="public" virt="non-virtual"><scope>rocalution::BaseAMG</scope><name>SetKcycleFull</name></member>
+      <member refid="classrocalution_1_1_base_a_m_g_1adf20402c86435116ad68911a26e15a4e" prot="public" virt="non-virtual"><scope>rocalution::BaseAMG</scope><name>SetManualSmoothers</name></member>
+      <member refid="classrocalution_1_1_base_a_m_g_1a590e1b7401d3b73c63d5bd9d20b92eb4" prot="public" virt="non-virtual"><scope>rocalution::BaseAMG</scope><name>SetManualSolver</name></member>
+      <member refid="classrocalution_1_1_solver_1a12765b63efe75bc88406a8d6ebb5aacc" prot="public" virt="non-virtual"><scope>rocalution::BaseAMG</scope><name>SetOperator</name></member>
+      <member refid="classrocalution_1_1_base_a_m_g_1a0b96ffa5244f9a4ef008aebcb0491e46" prot="public" virt="non-virtual"><scope>rocalution::BaseAMG</scope><name>SetOperatorFormat</name></member>
+      <member refid="classrocalution_1_1_base_a_m_g_1a0bd37a42d1fa874d845b98f3339d2cfb" prot="private" virt="virtual"><scope>rocalution::BaseAMG</scope><name>SetOperatorHierarchy</name></member>
+      <member refid="classrocalution_1_1_base_a_m_g_1a930a43d15e964486edd68dbf8601ea70" prot="private" virt="virtual"><scope>rocalution::BaseAMG</scope><name>SetProlongOperator</name></member>
+      <member refid="classrocalution_1_1_iterative_linear_solver_1a9a7610d7c31f7259f4365d79187cfa78" prot="public" virt="non-virtual"><scope>rocalution::BaseAMG</scope><name>SetResidualNorm</name></member>
+      <member refid="classrocalution_1_1_base_a_m_g_1ac5477b055e029fb8f23565a8c3314714" prot="private" virt="virtual"><scope>rocalution::BaseAMG</scope><name>SetRestrictOperator</name></member>
+      <member refid="classrocalution_1_1_base_multi_grid_1a5c506dbb924ed9c80d236d17eb86c59a" prot="public" virt="non-virtual"><scope>rocalution::BaseAMG</scope><name>SetScaling</name></member>
+      <member refid="classrocalution_1_1_base_multi_grid_1a63b544d6472034cd6fbed2bc46620fcd" prot="public" virt="non-virtual"><scope>rocalution::BaseAMG</scope><name>SetSmoother</name></member>
+      <member refid="classrocalution_1_1_base_multi_grid_1a7f4ea4a24e58cb85e97d2cf9089cf864" prot="public" virt="non-virtual"><scope>rocalution::BaseAMG</scope><name>SetSmootherPostIter</name></member>
+      <member refid="classrocalution_1_1_base_multi_grid_1a9d3b928ff5f0084ed908206fdb9a2f6a" prot="public" virt="non-virtual"><scope>rocalution::BaseAMG</scope><name>SetSmootherPreIter</name></member>
+      <member refid="classrocalution_1_1_base_multi_grid_1a615908da426fd0eba8bac32fdd1889f2" prot="public" virt="non-virtual"><scope>rocalution::BaseAMG</scope><name>SetSolver</name></member>
+      <member refid="classrocalution_1_1_base_a_m_g_1af79ea2a688e8b3299a6cbad3ee45e12e" prot="protected" virt="non-virtual"><scope>rocalution::BaseAMG</scope><name>sm_default_</name></member>
+      <member refid="classrocalution_1_1_base_a_m_g_1ab87cef5490a041aedd913794d3a24250" prot="protected" virt="non-virtual"><scope>rocalution::BaseAMG</scope><name>sm_format_</name></member>
+      <member refid="classrocalution_1_1_base_multi_grid_1aebe3210adb254b24838ac52fa39421fc" prot="protected" virt="non-virtual"><scope>rocalution::BaseAMG</scope><name>smoother_level_</name></member>
+      <member refid="classrocalution_1_1_base_multi_grid_1afbe44b1d105248260a6076d4a1b86138" prot="public" virt="virtual"><scope>rocalution::BaseAMG</scope><name>Solve</name></member>
+      <member refid="classrocalution_1_1_solver_1a009956b05d4d5d1d38e4c24341b14a66" prot="public" virt="non-virtual"><scope>rocalution::BaseAMG</scope><name>Solver</name></member>
+      <member refid="classrocalution_1_1_base_multi_grid_1a97135288abf5453813cedd8900a77fb8" prot="protected" virt="non-virtual"><scope>rocalution::BaseAMG</scope><name>solver_coarse_</name></member>
+      <member refid="classrocalution_1_1_solver_1a034b434a4340a52430deed9b210e5003" prot="public" virt="virtual"><scope>rocalution::BaseAMG</scope><name>SolveZeroSol</name></member>
+      <member refid="classrocalution_1_1_solver_1a17c2830a0ede8d82d1336aa25da6f907" prot="public" virt="virtual"><scope>rocalution::BaseAMG</scope><name>Sync</name></member>
+      <member refid="classrocalution_1_1_base_multi_grid_1afe0fc8a80c73931c74caa11fe1359681" prot="protected" virt="non-virtual"><scope>rocalution::BaseAMG</scope><name>Vcycle_</name></member>
+      <member refid="classrocalution_1_1_solver_1a2ee162346e0d52543f9d3d25fe70ea8a" prot="protected" virt="non-virtual"><scope>rocalution::BaseAMG</scope><name>verb_</name></member>
+      <member refid="classrocalution_1_1_iterative_linear_solver_1ac88dc520e41c9d1a2de5ad8c95e644c2" prot="public" virt="virtual"><scope>rocalution::BaseAMG</scope><name>Verbose</name></member>
+      <member refid="classrocalution_1_1_base_multi_grid_1a3fdd941d9589636afd0629a57b5eecdc" prot="protected" virt="non-virtual"><scope>rocalution::BaseAMG</scope><name>Wcycle_</name></member>
+      <member refid="classrocalution_1_1_base_a_m_g_1acfc1799091ff559328d993f5c1c68bb7" prot="public" virt="virtual"><scope>rocalution::BaseAMG</scope><name>~BaseAMG</name></member>
+      <member refid="classrocalution_1_1_base_multi_grid_1a1805421215c37b88de6cf5f4dbb6bf77" prot="public" virt="virtual"><scope>rocalution::BaseAMG</scope><name>~BaseMultiGrid</name></member>
+      <member refid="classrocalution_1_1_iterative_linear_solver_1a89c416ba136cf16ac4b38d41ae4e745b" prot="public" virt="virtual"><scope>rocalution::BaseAMG</scope><name>~IterativeLinearSolver</name></member>
+      <member refid="classrocalution_1_1_rocalution_obj_1a55a2f93f798cebdda6343b20db959e2d" prot="public" virt="virtual"><scope>rocalution::BaseAMG</scope><name>~RocalutionObj</name></member>
+      <member refid="classrocalution_1_1_solver_1af861566a540fc6cc399c844bbc789ec6" prot="public" virt="virtual"><scope>rocalution::BaseAMG</scope><name>~Solver</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

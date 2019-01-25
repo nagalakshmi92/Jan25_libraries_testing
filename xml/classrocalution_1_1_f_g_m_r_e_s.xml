@@ -1,0 +1,558 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classrocalution_1_1_f_g_m_r_e_s" kind="class" language="C++" prot="public">
+    <compoundname>rocalution::FGMRES</compoundname>
+    <basecompoundref refid="classrocalution_1_1_iterative_linear_solver" prot="public" virt="non-virtual">rocalution::IterativeLinearSolver&lt; OperatorType, VectorType, ValueType &gt;</basecompoundref>
+    <includes refid="fgmres_8hpp" local="no">fgmres.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>class OperatorType</type>
+      </param>
+      <param>
+        <type>class VectorType</type>
+      </param>
+      <param>
+        <type>typename ValueType</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classrocalution_1_1_f_g_m_r_e_s_1adc19575e2a8c0082bcef3942f3ebb5e7" prot="private" static="no" mutable="no">
+        <type>VectorType **</type>
+        <definition>VectorType** rocalution::FGMRES&lt; OperatorType, VectorType, ValueType &gt;::v_</definition>
+        <argsstring></argsstring>
+        <name>v_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/krylov/fgmres.hpp" line="84" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/krylov/fgmres.hpp" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrocalution_1_1_f_g_m_r_e_s_1a341569e17b65df09f78cbeff9eed11de" prot="private" static="no" mutable="no">
+        <type>VectorType **</type>
+        <definition>VectorType** rocalution::FGMRES&lt; OperatorType, VectorType, ValueType &gt;::z_</definition>
+        <argsstring></argsstring>
+        <name>z_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/krylov/fgmres.hpp" line="85" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/krylov/fgmres.hpp" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrocalution_1_1_f_g_m_r_e_s_1a5de42cd39328699f03bb4855c3237a53" prot="private" static="no" mutable="no">
+        <type>ValueType *</type>
+        <definition>ValueType* rocalution::FGMRES&lt; OperatorType, VectorType, ValueType &gt;::c_</definition>
+        <argsstring></argsstring>
+        <name>c_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/krylov/fgmres.hpp" line="87" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/krylov/fgmres.hpp" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrocalution_1_1_f_g_m_r_e_s_1aaec96c26ffeb67a31a2a90f57f6db1d1" prot="private" static="no" mutable="no">
+        <type>ValueType *</type>
+        <definition>ValueType* rocalution::FGMRES&lt; OperatorType, VectorType, ValueType &gt;::s_</definition>
+        <argsstring></argsstring>
+        <name>s_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/krylov/fgmres.hpp" line="88" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/krylov/fgmres.hpp" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrocalution_1_1_f_g_m_r_e_s_1abe49d995433284cd18ab6e7314ffc7cb" prot="private" static="no" mutable="no">
+        <type>ValueType *</type>
+        <definition>ValueType* rocalution::FGMRES&lt; OperatorType, VectorType, ValueType &gt;::r_</definition>
+        <argsstring></argsstring>
+        <name>r_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/krylov/fgmres.hpp" line="89" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/krylov/fgmres.hpp" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrocalution_1_1_f_g_m_r_e_s_1a84c846e5211d5d23746755792befdbb1" prot="private" static="no" mutable="no">
+        <type>ValueType *</type>
+        <definition>ValueType* rocalution::FGMRES&lt; OperatorType, VectorType, ValueType &gt;::H_</definition>
+        <argsstring></argsstring>
+        <name>H_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/krylov/fgmres.hpp" line="90" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/krylov/fgmres.hpp" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrocalution_1_1_f_g_m_r_e_s_1a32c930aa8ea48ec4e1e6f1aa5bb2b754" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int rocalution::FGMRES&lt; OperatorType, VectorType, ValueType &gt;::size_basis_</definition>
+        <argsstring></argsstring>
+        <name>size_basis_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/krylov/fgmres.hpp" line="92" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/krylov/fgmres.hpp" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classrocalution_1_1_f_g_m_r_e_s_1a0e66e860da2741c3826561b7e5f36660" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>rocalution::FGMRES&lt; OperatorType, VectorType, ValueType &gt;::FGMRES</definition>
+        <argsstring>()</argsstring>
+        <name>FGMRES</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/krylov/fgmres.hpp" line="56" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/krylov/fgmres.cpp" bodystart="46" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_f_g_m_r_e_s_1ae73e479df6e8eccfd4425c63d4afa67a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>rocalution::FGMRES&lt; OperatorType, VectorType, ValueType &gt;::~FGMRES</definition>
+        <argsstring>()</argsstring>
+        <name>~FGMRES</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/krylov/fgmres.hpp" line="57" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/krylov/fgmres.cpp" bodystart="61" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_f_g_m_r_e_s_1a19804cfcc80fad220ec0bdb934643858" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void rocalution::FGMRES&lt; OperatorType, VectorType, ValueType &gt;::Print</definition>
+        <argsstring>(void) const</argsstring>
+        <name>Print</name>
+        <reimplements refid="classrocalution_1_1_solver_1a57992cfc687f3bf260964ad2fc19c467">Print</reimplements>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Print information about the solver. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/krylov/fgmres.hpp" line="59" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/krylov/fgmres.cpp" bodystart="69" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_f_g_m_r_e_s_1a414bd37cdda192492b10d3bf1608272c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void rocalution::FGMRES&lt; OperatorType, VectorType, ValueType &gt;::Build</definition>
+        <argsstring>(void)</argsstring>
+        <name>Build</name>
+        <reimplements refid="classrocalution_1_1_solver_1a84754d7422ad3fb35c17c61f0a609c7a">Build</reimplements>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Build the solver (data allocation, structure and numerical computation) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/krylov/fgmres.hpp" line="61" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/krylov/fgmres.cpp" bodystart="110" bodyend="159"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_f_g_m_r_e_s_1a4329cbd6a8ccaf5e99959e989f139376" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void rocalution::FGMRES&lt; OperatorType, VectorType, ValueType &gt;::ReBuildNumeric</definition>
+        <argsstring>(void)</argsstring>
+        <name>ReBuildNumeric</name>
+        <reimplements refid="classrocalution_1_1_solver_1acd20a051f0560a77645e35361df8f87c">ReBuildNumeric</reimplements>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Rebuild the solver only with numerical computation (no allocation or data structure computation) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/krylov/fgmres.hpp" line="62" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/krylov/fgmres.cpp" bodystart="202" bodyend="228"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_f_g_m_r_e_s_1a8fc9d8bf97cd4f4d8f5b3ad133b7808b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void rocalution::FGMRES&lt; OperatorType, VectorType, ValueType &gt;::Clear</definition>
+        <argsstring>(void)</argsstring>
+        <name>Clear</name>
+        <reimplements refid="classrocalution_1_1_solver_1aa8839d3ba527d75fedd29fdbe9bd651f">Clear</reimplements>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Clear (free all local data) the solver. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/krylov/fgmres.hpp" line="63" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/krylov/fgmres.cpp" bodystart="162" bodyend="199"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_f_g_m_r_e_s_1aca2ae523796ca1ec710b6b7f864dd82c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void rocalution::FGMRES&lt; OperatorType, VectorType, ValueType &gt;::SetBasisSize</definition>
+        <argsstring>(int size_basis)</argsstring>
+        <name>SetBasisSize</name>
+        <param>
+          <type>int</type>
+          <declname>size_basis</declname>
+        </param>
+        <briefdescription>
+<para>Set the size of the Krylov subspace basis. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/krylov/fgmres.hpp" line="66" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/krylov/fgmres.cpp" bodystart="278" bodyend="286"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classrocalution_1_1_f_g_m_r_e_s_1aedd3018559df038f1e9bed1fb1d7e8ca" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void rocalution::FGMRES&lt; OperatorType, VectorType, ValueType &gt;::SolveNonPrecond_</definition>
+        <argsstring>(const VectorType &amp;rhs, VectorType *x)</argsstring>
+        <name>SolveNonPrecond_</name>
+        <reimplements refid="classrocalution_1_1_iterative_linear_solver_1a35666e9af2a4abbc6d7e7be278a310e6">SolveNonPrecond_</reimplements>
+        <param>
+          <type>const VectorType &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <param>
+          <type>VectorType *</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+<para>Non-preconditioner solution procedure. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/krylov/fgmres.hpp" line="69" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/krylov/fgmres.cpp" bodystart="289" bodyend="426"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_f_g_m_r_e_s_1af20bf069b1007389f728d4efda41d65f" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void rocalution::FGMRES&lt; OperatorType, VectorType, ValueType &gt;::SolvePrecond_</definition>
+        <argsstring>(const VectorType &amp;rhs, VectorType *x)</argsstring>
+        <name>SolvePrecond_</name>
+        <reimplements refid="classrocalution_1_1_iterative_linear_solver_1adfb05c58ea0bf7443c039115dd27bfba">SolvePrecond_</reimplements>
+        <param>
+          <type>const VectorType &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <param>
+          <type>VectorType *</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+<para>Preconditioned solution procedure. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/krylov/fgmres.hpp" line="70" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/krylov/fgmres.cpp" bodystart="429" bodyend="570"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_f_g_m_r_e_s_1a0f59f29afc78053852c77f105ce1dc8d" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void rocalution::FGMRES&lt; OperatorType, VectorType, ValueType &gt;::PrintStart_</definition>
+        <argsstring>(void) const</argsstring>
+        <name>PrintStart_</name>
+        <reimplements refid="classrocalution_1_1_solver_1a9e6a5ceb6a8c35cd8d54ebff0664d27e">PrintStart_</reimplements>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Print starting message of the solver. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/krylov/fgmres.hpp" line="72" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/krylov/fgmres.cpp" bodystart="83" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_f_g_m_r_e_s_1af71bd8f9505b49fe21b7933a91918ba9" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void rocalution::FGMRES&lt; OperatorType, VectorType, ValueType &gt;::PrintEnd_</definition>
+        <argsstring>(void) const</argsstring>
+        <name>PrintEnd_</name>
+        <reimplements refid="classrocalution_1_1_solver_1add2b6aec27eeaffbbd1130cc846c1019">PrintEnd_</reimplements>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Print ending message of the solver. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/krylov/fgmres.hpp" line="73" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/krylov/fgmres.cpp" bodystart="97" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_f_g_m_r_e_s_1af3851547b9558db84a79eb058cbca53e" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void rocalution::FGMRES&lt; OperatorType, VectorType, ValueType &gt;::MoveToHostLocalData_</definition>
+        <argsstring>(void)</argsstring>
+        <name>MoveToHostLocalData_</name>
+        <reimplements refid="classrocalution_1_1_solver_1aa1e8be1bd2107543c7390a81f8cee8cb">MoveToHostLocalData_</reimplements>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Move all local data to the host. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/krylov/fgmres.hpp" line="75" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/krylov/fgmres.cpp" bodystart="231" bodyend="252"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_f_g_m_r_e_s_1ad9fcaedd2b0746b6da5c87276a549cd9" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void rocalution::FGMRES&lt; OperatorType, VectorType, ValueType &gt;::MoveToAcceleratorLocalData_</definition>
+        <argsstring>(void)</argsstring>
+        <name>MoveToAcceleratorLocalData_</name>
+        <reimplements refid="classrocalution_1_1_solver_1a8ce29de0bdda9f35a6a687fd06ac9b11">MoveToAcceleratorLocalData_</reimplements>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Move all local data to the accelerator. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/krylov/fgmres.hpp" line="76" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/krylov/fgmres.cpp" bodystart="255" bodyend="275"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_f_g_m_r_e_s_1a071c5ea581c098e9bba96abb212e0213" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rocalution::FGMRES&lt; OperatorType, VectorType, ValueType &gt;::GenerateGivensRotation_</definition>
+        <argsstring>(ValueType dx, ValueType dy, ValueType &amp;c, ValueType &amp;s) const</argsstring>
+        <name>GenerateGivensRotation_</name>
+        <param>
+          <type>ValueType</type>
+          <declname>dx</declname>
+        </param>
+        <param>
+          <type>ValueType</type>
+          <declname>dy</declname>
+        </param>
+        <param>
+          <type>ValueType &amp;</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>ValueType &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+<para>Generate Givens rotation. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/krylov/fgmres.hpp" line="79" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/krylov/fgmres.cpp" bodystart="573" bodyend="603"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_f_g_m_r_e_s_1add46c663efb7be53f9936a9ea577e97e" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rocalution::FGMRES&lt; OperatorType, VectorType, ValueType &gt;::ApplyGivensRotation_</definition>
+        <argsstring>(ValueType c, ValueType s, ValueType &amp;dx, ValueType &amp;dy) const</argsstring>
+        <name>ApplyGivensRotation_</name>
+        <param>
+          <type>ValueType</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>ValueType</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>ValueType &amp;</type>
+          <declname>dx</declname>
+        </param>
+        <param>
+          <type>ValueType &amp;</type>
+          <declname>dy</declname>
+        </param>
+        <briefdescription>
+<para>Apply Givens rotation. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/krylov/fgmres.hpp" line="81" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/krylov/fgmres.cpp" bodystart="606" bodyend="614"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Flexible Generalized Minimum Residual Method. </para>    </briefdescription>
+    <detaileddescription>
+<para>The Flexible Generalized Minimum Residual method (<ref refid="classrocalution_1_1_f_g_m_r_e_s" kindref="compound">FGMRES</ref>) is a projection method for solving sparse (non) symmetric linear systems <formula id="7">$Ax=b$</formula>. It is similar to the <ref refid="classrocalution_1_1_g_m_r_e_s" kindref="compound">GMRES</ref> method with the only difference, the <ref refid="classrocalution_1_1_f_g_m_r_e_s" kindref="compound">FGMRES</ref> is based on a window shifting of the Krylov subspace and thus allows the preconditioner <formula id="11">$M^{-1}$</formula> to be not a constant operator. This can be especially helpful if the operation <formula id="12">$M^{-1}x$</formula> is the result of another iterative process and not a constant operator. SAAD</para><para>The Krylov subspace basis size can be set using <ref refid="classrocalution_1_1_f_g_m_r_e_s_1aca2ae523796ca1ec710b6b7f864dd82c" kindref="member">SetBasisSize()</ref>. The default size is 30.</para><para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>OperatorType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- can be <ref refid="classrocalution_1_1_local_matrix" kindref="compound">LocalMatrix</ref>, <ref refid="classrocalution_1_1_global_matrix" kindref="compound">GlobalMatrix</ref> or <ref refid="classrocalution_1_1_local_stencil" kindref="compound">LocalStencil</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>VectorType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- can be <ref refid="classrocalution_1_1_local_vector" kindref="compound">LocalVector</ref> or <ref refid="classrocalution_1_1_global_vector" kindref="compound">GlobalVector</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ValueType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- can be float, double, std::complex&lt;float&gt; or std::complex&lt;double&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="209">
+        <label>rocalution::IterativeLinearSolver&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_iterative_linear_solver"/>
+        <childnode refid="210" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="210">
+        <label>rocalution::Solver&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_solver"/>
+        <childnode refid="211" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="208">
+        <label>rocalution::FGMRES&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_f_g_m_r_e_s"/>
+        <childnode refid="209" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="211">
+        <label>rocalution::RocalutionObj</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="213">
+        <label>rocalution::IterativeLinearSolver&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_iterative_linear_solver"/>
+        <childnode refid="214" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="217">
+        <label>rocalution::Vector&lt; int &gt;</label>
+        <link refid="classrocalution_1_1_vector"/>
+        <childnode refid="218" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="218">
+        <label>rocalution::BaseRocalution&lt; ValueType &gt;</label>
+        <link refid="classrocalution_1_1_base_rocalution"/>
+        <childnode refid="215" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="214">
+        <label>rocalution::Solver&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_solver"/>
+        <childnode refid="215" relation="public-inheritance">
+        </childnode>
+        <childnode refid="216" relation="usage">
+          <edgelabel>permutation_</edgelabel>
+        </childnode>
+        <childnode refid="219" relation="usage">
+          <edgelabel>op_</edgelabel>
+        </childnode>
+      </node>
+      <node id="212">
+        <label>rocalution::FGMRES&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_f_g_m_r_e_s"/>
+        <childnode refid="213" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="216">
+        <label>rocalution::LocalVector&lt; int &gt;</label>
+        <link refid="classrocalution_1_1_local_vector"/>
+        <childnode refid="217" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="215">
+        <label>rocalution::RocalutionObj</label>
+      </node>
+      <node id="219">
+        <label>OperatorType</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/tcs/rocALUTION/src/solvers/krylov/fgmres.hpp" line="54" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/krylov/fgmres.hpp" bodystart="53" bodyend="93"/>
+    <listofallmembers>
+      <member refid="classrocalution_1_1_f_g_m_r_e_s_1add46c663efb7be53f9936a9ea577e97e" prot="protected" virt="non-virtual"><scope>rocalution::FGMRES</scope><name>ApplyGivensRotation_</name></member>
+      <member refid="classrocalution_1_1_f_g_m_r_e_s_1a414bd37cdda192492b10d3bf1608272c" prot="public" virt="virtual"><scope>rocalution::FGMRES</scope><name>Build</name></member>
+      <member refid="classrocalution_1_1_solver_1a64924a0c87d60d2e4bf9fa295d0152cb" prot="protected" virt="non-virtual"><scope>rocalution::FGMRES</scope><name>build_</name></member>
+      <member refid="classrocalution_1_1_solver_1a0d11ee9943f785db285f0ef5c08c64eb" prot="public" virt="virtual"><scope>rocalution::FGMRES</scope><name>BuildMoveToAcceleratorAsync</name></member>
+      <member refid="classrocalution_1_1_f_g_m_r_e_s_1a5de42cd39328699f03bb4855c3237a53" prot="private" virt="non-virtual"><scope>rocalution::FGMRES</scope><name>c_</name></member>
+      <member refid="classrocalution_1_1_f_g_m_r_e_s_1a8fc9d8bf97cd4f4d8f5b3ad133b7808b" prot="public" virt="virtual"><scope>rocalution::FGMRES</scope><name>Clear</name></member>
+      <member refid="classrocalution_1_1_f_g_m_r_e_s_1a0e66e860da2741c3826561b7e5f36660" prot="public" virt="non-virtual"><scope>rocalution::FGMRES</scope><name>FGMRES</name></member>
+      <member refid="classrocalution_1_1_f_g_m_r_e_s_1a071c5ea581c098e9bba96abb212e0213" prot="protected" virt="non-virtual"><scope>rocalution::FGMRES</scope><name>GenerateGivensRotation_</name></member>
+      <member refid="classrocalution_1_1_iterative_linear_solver_1a20f2516ef96cebecbe83ba153bfacc8e" prot="public" virt="virtual"><scope>rocalution::FGMRES</scope><name>GetAmaxResidualIndex</name></member>
+      <member refid="classrocalution_1_1_iterative_linear_solver_1a364ed49d060f8c24ba7af2398d1f54f5" prot="public" virt="virtual"><scope>rocalution::FGMRES</scope><name>GetCurrentResidual</name></member>
+      <member refid="classrocalution_1_1_iterative_linear_solver_1a7f70fb4d7ce86daa75b2796a0dc12044" prot="public" virt="virtual"><scope>rocalution::FGMRES</scope><name>GetIterationCount</name></member>
+      <member refid="classrocalution_1_1_iterative_linear_solver_1a814064201608ca980284fbea51792137" prot="public" virt="virtual"><scope>rocalution::FGMRES</scope><name>GetSolverStatus</name></member>
+      <member refid="classrocalution_1_1_rocalution_obj_1a4bba5aeaf4fd705efc00402f1f6ed40b" prot="protected" virt="non-virtual"><scope>rocalution::FGMRES</scope><name>global_obj_id_</name></member>
+      <member refid="classrocalution_1_1_f_g_m_r_e_s_1a84c846e5211d5d23746755792befdbb1" prot="private" virt="non-virtual"><scope>rocalution::FGMRES</scope><name>H_</name></member>
+      <member refid="classrocalution_1_1_iterative_linear_solver_1a30d12c17029094a3f46a0fa1ce491887" prot="protected" virt="non-virtual"><scope>rocalution::FGMRES</scope><name>index_</name></member>
+      <member refid="classrocalution_1_1_iterative_linear_solver_1a2a8eebb0b187469ed92c675bd75e34b8" prot="public" virt="non-virtual"><scope>rocalution::FGMRES</scope><name>Init</name></member>
+      <member refid="classrocalution_1_1_iterative_linear_solver_1a0c6fb1aeaf491a1e4891dc13d4b893b2" prot="public" virt="non-virtual"><scope>rocalution::FGMRES</scope><name>Init</name></member>
+      <member refid="classrocalution_1_1_iterative_linear_solver_1a3b248faab2ff42e9106b6e38e5e0bbe2" prot="public" virt="non-virtual"><scope>rocalution::FGMRES</scope><name>InitMaxIter</name></member>
+      <member refid="classrocalution_1_1_iterative_linear_solver_1a025c99dd56f7b09ebfd9df3905093c8e" prot="public" virt="non-virtual"><scope>rocalution::FGMRES</scope><name>InitMinIter</name></member>
+      <member refid="classrocalution_1_1_iterative_linear_solver_1a05b570833a869738be46986d255b3c39" prot="public" virt="non-virtual"><scope>rocalution::FGMRES</scope><name>InitTol</name></member>
+      <member refid="classrocalution_1_1_iterative_linear_solver_1a6fcfd0b77d13d84d36156abbaa100fa0" prot="public" virt="non-virtual"><scope>rocalution::FGMRES</scope><name>IterativeLinearSolver</name></member>
+      <member refid="classrocalution_1_1_solver_1ab1b6410cd134c9ad00c1851d400cf0f8" prot="public" virt="virtual"><scope>rocalution::FGMRES</scope><name>MoveToAccelerator</name></member>
+      <member refid="classrocalution_1_1_f_g_m_r_e_s_1ad9fcaedd2b0746b6da5c87276a549cd9" prot="protected" virt="virtual"><scope>rocalution::FGMRES</scope><name>MoveToAcceleratorLocalData_</name></member>
+      <member refid="classrocalution_1_1_solver_1a3c263e65898816f5838184c0af78a044" prot="public" virt="virtual"><scope>rocalution::FGMRES</scope><name>MoveToHost</name></member>
+      <member refid="classrocalution_1_1_f_g_m_r_e_s_1af3851547b9558db84a79eb058cbca53e" prot="protected" virt="virtual"><scope>rocalution::FGMRES</scope><name>MoveToHostLocalData_</name></member>
+      <member refid="classrocalution_1_1_iterative_linear_solver_1a45c0602171dda0391e5574e0310504fb" prot="protected" virt="non-virtual"><scope>rocalution::FGMRES</scope><name>Norm_</name></member>
+      <member refid="classrocalution_1_1_solver_1ad338b5f99cf339fb33218dd8b958cac4" prot="protected" virt="non-virtual"><scope>rocalution::FGMRES</scope><name>op_</name></member>
+      <member refid="classrocalution_1_1_solver_1ac46ab4d19fba48ece463666d37a7dc86" prot="protected" virt="non-virtual"><scope>rocalution::FGMRES</scope><name>permutation_</name></member>
+      <member refid="classrocalution_1_1_solver_1a2acdb829fa657a7b3e680d1ee6005c9b" prot="protected" virt="non-virtual"><scope>rocalution::FGMRES</scope><name>precond_</name></member>
+      <member refid="classrocalution_1_1_f_g_m_r_e_s_1a19804cfcc80fad220ec0bdb934643858" prot="public" virt="virtual"><scope>rocalution::FGMRES</scope><name>Print</name></member>
+      <member refid="classrocalution_1_1_f_g_m_r_e_s_1af71bd8f9505b49fe21b7933a91918ba9" prot="protected" virt="virtual"><scope>rocalution::FGMRES</scope><name>PrintEnd_</name></member>
+      <member refid="classrocalution_1_1_f_g_m_r_e_s_1a0f59f29afc78053852c77f105ce1dc8d" prot="protected" virt="virtual"><scope>rocalution::FGMRES</scope><name>PrintStart_</name></member>
+      <member refid="classrocalution_1_1_f_g_m_r_e_s_1abe49d995433284cd18ab6e7314ffc7cb" prot="private" virt="non-virtual"><scope>rocalution::FGMRES</scope><name>r_</name></member>
+      <member refid="classrocalution_1_1_f_g_m_r_e_s_1a4329cbd6a8ccaf5e99959e989f139376" prot="public" virt="virtual"><scope>rocalution::FGMRES</scope><name>ReBuildNumeric</name></member>
+      <member refid="classrocalution_1_1_iterative_linear_solver_1ae13555f823f7cd1a5c3a7ef3b4427f74" prot="public" virt="non-virtual"><scope>rocalution::FGMRES</scope><name>RecordHistory</name></member>
+      <member refid="classrocalution_1_1_iterative_linear_solver_1a0a5fd39c7f75f4339eaa41b67868653d" prot="public" virt="non-virtual"><scope>rocalution::FGMRES</scope><name>RecordResidualHistory</name></member>
+      <member refid="classrocalution_1_1_iterative_linear_solver_1ae811fa65d83729b92bb9573667162a4c" prot="protected" virt="non-virtual"><scope>rocalution::FGMRES</scope><name>res_norm_</name></member>
+      <member refid="classrocalution_1_1_solver_1a91354c5c116742c58d9eb2094cc6a68e" prot="public" virt="virtual"><scope>rocalution::FGMRES</scope><name>ResetOperator</name></member>
+      <member refid="classrocalution_1_1_rocalution_obj_1ad60a8b2047aad74e488c552264fa7737" prot="public" virt="non-virtual"><scope>rocalution::FGMRES</scope><name>RocalutionObj</name></member>
+      <member refid="classrocalution_1_1_f_g_m_r_e_s_1aaec96c26ffeb67a31a2a90f57f6db1d1" prot="private" virt="non-virtual"><scope>rocalution::FGMRES</scope><name>s_</name></member>
+      <member refid="classrocalution_1_1_f_g_m_r_e_s_1aca2ae523796ca1ec710b6b7f864dd82c" prot="public" virt="virtual"><scope>rocalution::FGMRES</scope><name>SetBasisSize</name></member>
+      <member refid="classrocalution_1_1_solver_1a12765b63efe75bc88406a8d6ebb5aacc" prot="public" virt="non-virtual"><scope>rocalution::FGMRES</scope><name>SetOperator</name></member>
+      <member refid="classrocalution_1_1_iterative_linear_solver_1ac40a58d97330f7bf41d2ae116bc45f80" prot="public" virt="virtual"><scope>rocalution::FGMRES</scope><name>SetPreconditioner</name></member>
+      <member refid="classrocalution_1_1_iterative_linear_solver_1a9a7610d7c31f7259f4365d79187cfa78" prot="public" virt="non-virtual"><scope>rocalution::FGMRES</scope><name>SetResidualNorm</name></member>
+      <member refid="classrocalution_1_1_f_g_m_r_e_s_1a32c930aa8ea48ec4e1e6f1aa5bb2b754" prot="private" virt="non-virtual"><scope>rocalution::FGMRES</scope><name>size_basis_</name></member>
+      <member refid="classrocalution_1_1_iterative_linear_solver_1a4c8e806ae8a7776fa5306598afe7e076" prot="public" virt="virtual"><scope>rocalution::FGMRES</scope><name>Solve</name></member>
+      <member refid="classrocalution_1_1_f_g_m_r_e_s_1aedd3018559df038f1e9bed1fb1d7e8ca" prot="protected" virt="virtual"><scope>rocalution::FGMRES</scope><name>SolveNonPrecond_</name></member>
+      <member refid="classrocalution_1_1_f_g_m_r_e_s_1af20bf069b1007389f728d4efda41d65f" prot="protected" virt="virtual"><scope>rocalution::FGMRES</scope><name>SolvePrecond_</name></member>
+      <member refid="classrocalution_1_1_solver_1a009956b05d4d5d1d38e4c24341b14a66" prot="public" virt="non-virtual"><scope>rocalution::FGMRES</scope><name>Solver</name></member>
+      <member refid="classrocalution_1_1_solver_1a034b434a4340a52430deed9b210e5003" prot="public" virt="virtual"><scope>rocalution::FGMRES</scope><name>SolveZeroSol</name></member>
+      <member refid="classrocalution_1_1_solver_1a17c2830a0ede8d82d1336aa25da6f907" prot="public" virt="virtual"><scope>rocalution::FGMRES</scope><name>Sync</name></member>
+      <member refid="classrocalution_1_1_f_g_m_r_e_s_1adc19575e2a8c0082bcef3942f3ebb5e7" prot="private" virt="non-virtual"><scope>rocalution::FGMRES</scope><name>v_</name></member>
+      <member refid="classrocalution_1_1_solver_1a2ee162346e0d52543f9d3d25fe70ea8a" prot="protected" virt="non-virtual"><scope>rocalution::FGMRES</scope><name>verb_</name></member>
+      <member refid="classrocalution_1_1_iterative_linear_solver_1ac88dc520e41c9d1a2de5ad8c95e644c2" prot="public" virt="virtual"><scope>rocalution::FGMRES</scope><name>Verbose</name></member>
+      <member refid="classrocalution_1_1_f_g_m_r_e_s_1a341569e17b65df09f78cbeff9eed11de" prot="private" virt="non-virtual"><scope>rocalution::FGMRES</scope><name>z_</name></member>
+      <member refid="classrocalution_1_1_f_g_m_r_e_s_1ae73e479df6e8eccfd4425c63d4afa67a" prot="public" virt="virtual"><scope>rocalution::FGMRES</scope><name>~FGMRES</name></member>
+      <member refid="classrocalution_1_1_iterative_linear_solver_1a89c416ba136cf16ac4b38d41ae4e745b" prot="public" virt="virtual"><scope>rocalution::FGMRES</scope><name>~IterativeLinearSolver</name></member>
+      <member refid="classrocalution_1_1_rocalution_obj_1a55a2f93f798cebdda6343b20db959e2d" prot="public" virt="virtual"><scope>rocalution::FGMRES</scope><name>~RocalutionObj</name></member>
+      <member refid="classrocalution_1_1_solver_1af861566a540fc6cc399c844bbc789ec6" prot="public" virt="virtual"><scope>rocalution::FGMRES</scope><name>~Solver</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

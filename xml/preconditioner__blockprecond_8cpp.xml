@@ -3,152 +3,183 @@
   <compounddef id="preconditioner__blockprecond_8cpp" kind="file" language="C++">
     <compoundname>preconditioner_blockprecond.cpp</compoundname>
     <includes local="yes">../../utils/def.hpp</includes>
-    <includes local="yes">preconditioner_blockprecond.hpp</includes>
-    <includes local="yes">/home/tcs/Jan24/Jan24_libraries_testing/ROCm_Libraries/rocALUTION/src/solvers/solver.hpp</includes>
-    <includes local="yes">/home/tcs/Jan24/Jan24_libraries_testing/ROCm_Libraries/rocALUTION/src/solvers/preconditioners/preconditioner.hpp</includes>
-    <includes local="yes">/home/tcs/Jan24/Jan24_libraries_testing/ROCm_Libraries/rocALUTION/src/base/local_vector.hpp</includes>
-    <includes local="no">vector</includes>
-    <includes local="yes">preconditioner.hpp</includes>
-    <includes local="yes">../solver.hpp</includes>
+    <includes refid="preconditioner__blockprecond_8hpp" local="yes">preconditioner_blockprecond.hpp</includes>
+    <includes refid="preconditioner_8hpp" local="yes">preconditioner.hpp</includes>
+    <includes refid="solver_8hpp" local="yes">../solver.hpp</includes>
     <includes refid="local__matrix_8hpp" local="yes">../../base/local_matrix.hpp</includes>
+    <includes refid="local__vector_8hpp" local="yes">../../base/local_vector.hpp</includes>
     <includes refid="allocate__free_8hpp" local="yes">../../utils/allocate_free.hpp</includes>
     <includes local="yes">../../utils/log.hpp</includes>
     <includes local="no">complex</includes>
     <incdepgraph>
-      <node id="929">
-        <label>backend_manager.hpp</label>
-        <link refid="backend__manager_8hpp_source"/>
-        <childnode refid="930" relation="include">
+      <node id="1594">
+        <label>../base/local_vector.hpp</label>
+        <link refid="local__vector_8hpp_source"/>
+        <childnode refid="1595" relation="include">
         </childnode>
-        <childnode refid="931" relation="include">
-        </childnode>
-        <childnode refid="932" relation="include">
-        </childnode>
-        <childnode refid="922" relation="include">
-        </childnode>
-        <childnode refid="933" relation="include">
+        <childnode refid="1596" relation="include">
         </childnode>
       </node>
-      <node id="927">
+      <node id="1598">
+        <label>preconditioner.hpp</label>
+        <link refid="preconditioner_8hpp_source"/>
+        <childnode refid="1584" relation="include">
+        </childnode>
+      </node>
+      <node id="1596">
+        <label>vector.hpp</label>
+        <link refid="vector_8hpp_source"/>
+        <childnode refid="1595" relation="include">
+        </childnode>
+        <childnode refid="1588" relation="include">
+        </childnode>
+        <childnode refid="1590" relation="include">
+        </childnode>
+        <childnode refid="1587" relation="include">
+        </childnode>
+        <childnode refid="1597" relation="include">
+        </childnode>
+      </node>
+      <node id="1600">
         <label>operator.hpp</label>
         <link refid="operator_8hpp_source"/>
-        <childnode refid="926" relation="include">
+        <childnode refid="1595" relation="include">
         </childnode>
-        <childnode refid="928" relation="include">
+        <childnode refid="1588" relation="include">
         </childnode>
-        <childnode refid="930" relation="include">
+        <childnode refid="1590" relation="include">
         </childnode>
-        <childnode refid="933" relation="include">
+        <childnode refid="1587" relation="include">
         </childnode>
-        <childnode refid="935" relation="include">
+        <childnode refid="1597" relation="include">
         </childnode>
       </node>
-      <node id="933">
+      <node id="1581">
+        <label>/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_blockprecond.cpp</label>
+        <link refid="preconditioner__blockprecond_8cpp"/>
+        <childnode refid="1582" relation="include">
+        </childnode>
+        <childnode refid="1583" relation="include">
+        </childnode>
+        <childnode refid="1598" relation="include">
+        </childnode>
+        <childnode refid="1584" relation="include">
+        </childnode>
+        <childnode refid="1599" relation="include">
+        </childnode>
+        <childnode refid="1594" relation="include">
+        </childnode>
+        <childnode refid="1602" relation="include">
+        </childnode>
+        <childnode refid="1603" relation="include">
+        </childnode>
+        <childnode refid="1593" relation="include">
+        </childnode>
+      </node>
+      <node id="1587">
         <label>string</label>
       </node>
-      <node id="932">
+      <node id="1592">
         <label>map</label>
       </node>
-      <node id="924">
+      <node id="1584">
         <label>../solver.hpp</label>
+        <link refid="solver_8hpp_source"/>
+        <childnode refid="1585" relation="include">
+        </childnode>
+        <childnode refid="1588" relation="include">
+        </childnode>
+        <childnode refid="1594" relation="include">
+        </childnode>
       </node>
-      <node id="920">
-        <label>/home/tcs/Jan24/Jan24_libraries_testing/ROCm_Libraries/rocALUTION/src/solvers/preconditioners/preconditioner.hpp</label>
-      </node>
-      <node id="931">
+      <node id="1591">
         <label>fstream</label>
       </node>
-      <node id="923">
-        <label>preconditioner.hpp</label>
-      </node>
-      <node id="936">
+      <node id="1601">
         <label>matrix_formats.hpp</label>
       </node>
-      <node id="921">
-        <label>/home/tcs/Jan24/Jan24_libraries_testing/ROCm_Libraries/rocALUTION/src/base/local_vector.hpp</label>
-      </node>
-      <node id="928">
-        <label>base_rocalution.hpp</label>
-        <link refid="base__rocalution_8hpp_source"/>
-        <childnode refid="929" relation="include">
+      <node id="1583">
+        <label>preconditioner_blockprecond.hpp</label>
+        <link refid="preconditioner__blockprecond_8hpp_source"/>
+        <childnode refid="1584" relation="include">
         </childnode>
-        <childnode refid="934" relation="include">
+        <childnode refid="1598" relation="include">
         </childnode>
-        <childnode refid="922" relation="include">
+        <childnode refid="1594" relation="include">
         </childnode>
-      </node>
-      <node id="925">
-        <label>../../base/local_matrix.hpp</label>
-        <link refid="local__matrix_8hpp_source"/>
-        <childnode refid="926" relation="include">
-        </childnode>
-        <childnode refid="927" relation="include">
-        </childnode>
-        <childnode refid="929" relation="include">
-        </childnode>
-        <childnode refid="936" relation="include">
-        </childnode>
-        <childnode refid="933" relation="include">
+        <childnode refid="1586" relation="include">
         </childnode>
       </node>
-      <node id="926">
+      <node id="1595">
         <label>../utils/types.hpp</label>
       </node>
-      <node id="922">
+      <node id="1588">
+        <label>../base/base_rocalution.hpp</label>
+        <link refid="base__rocalution_8hpp_source"/>
+        <childnode refid="1589" relation="include">
+        </childnode>
+        <childnode refid="1593" relation="include">
+        </childnode>
+        <childnode refid="1586" relation="include">
+        </childnode>
+      </node>
+      <node id="1586">
         <label>vector</label>
       </node>
-      <node id="937">
+      <node id="1582">
+        <label>../../utils/def.hpp</label>
+      </node>
+      <node id="1603">
+        <label>../../utils/log.hpp</label>
+      </node>
+      <node id="1597">
+        <label>cstdlib</label>
+      </node>
+      <node id="1590">
+        <label>iostream</label>
+      </node>
+      <node id="1589">
+        <label>backend_manager.hpp</label>
+        <link refid="backend__manager_8hpp_source"/>
+        <childnode refid="1590" relation="include">
+        </childnode>
+        <childnode refid="1591" relation="include">
+        </childnode>
+        <childnode refid="1592" relation="include">
+        </childnode>
+        <childnode refid="1586" relation="include">
+        </childnode>
+        <childnode refid="1587" relation="include">
+        </childnode>
+      </node>
+      <node id="1585">
+        <label>iter_ctrl.hpp</label>
+        <link refid="iter__ctrl_8hpp_source"/>
+        <childnode refid="1586" relation="include">
+        </childnode>
+        <childnode refid="1587" relation="include">
+        </childnode>
+      </node>
+      <node id="1593">
+        <label>complex</label>
+      </node>
+      <node id="1602">
         <label>../../utils/allocate_free.hpp</label>
         <link refid="allocate__free_8hpp_source"/>
       </node>
-      <node id="916">
-        <label>ROCm_Libraries/rocALUTION/src/solvers/preconditioners/preconditioner_blockprecond.cpp</label>
-        <link refid="preconditioner__blockprecond_8cpp"/>
-        <childnode refid="917" relation="include">
+      <node id="1599">
+        <label>../../base/local_matrix.hpp</label>
+        <link refid="local__matrix_8hpp_source"/>
+        <childnode refid="1595" relation="include">
         </childnode>
-        <childnode refid="918" relation="include">
+        <childnode refid="1600" relation="include">
         </childnode>
-        <childnode refid="919" relation="include">
+        <childnode refid="1589" relation="include">
         </childnode>
-        <childnode refid="920" relation="include">
+        <childnode refid="1601" relation="include">
         </childnode>
-        <childnode refid="921" relation="include">
+        <childnode refid="1587" relation="include">
         </childnode>
-        <childnode refid="922" relation="include">
-        </childnode>
-        <childnode refid="923" relation="include">
-        </childnode>
-        <childnode refid="924" relation="include">
-        </childnode>
-        <childnode refid="925" relation="include">
-        </childnode>
-        <childnode refid="937" relation="include">
-        </childnode>
-        <childnode refid="938" relation="include">
-        </childnode>
-        <childnode refid="934" relation="include">
-        </childnode>
-      </node>
-      <node id="917">
-        <label>../../utils/def.hpp</label>
-      </node>
-      <node id="918">
-        <label>preconditioner_blockprecond.hpp</label>
-      </node>
-      <node id="938">
-        <label>../../utils/log.hpp</label>
-      </node>
-      <node id="935">
-        <label>cstdlib</label>
-      </node>
-      <node id="930">
-        <label>iostream</label>
-      </node>
-      <node id="919">
-        <label>/home/tcs/Jan24/Jan24_libraries_testing/ROCm_Libraries/rocALUTION/src/solvers/solver.hpp</label>
-      </node>
-      <node id="934">
-        <label>complex</label>
       </node>
     </incdepgraph>
     <innernamespace refid="namespacerocalution">rocalution</innernamespace>
@@ -220,7 +251,7 @@
 <codeline lineno="61"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="62"><highlight class="normal"></highlight></codeline>
 <codeline lineno="63"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="64"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>BlockPreconditioner&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::Clear(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_block_preconditioner_1a895e518898a4ee40a307c915c0a521e9" kindref="member">BlockPreconditioner&lt;OperatorType, VectorType, ValueType&gt;::Clear</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
 <codeline lineno="65"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>log_debug(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;BlockPreconditioner::Clear()&quot;</highlight><highlight class="normal">,<sp/>this-&gt;build_);</highlight></codeline>
 <codeline lineno="67"><highlight class="normal"></highlight></codeline>
@@ -253,7 +284,7 @@
 <codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">[]<sp/>this-&gt;A_block_;</highlight></codeline>
 <codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">[]<sp/>this-&gt;D_solver_;</highlight></codeline>
 <codeline lineno="96"><highlight class="normal"></highlight></codeline>
-<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>free_host(&amp;this-&gt;block_sizes_);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__backend__module_1ga020251e6c31a4c642dd0181c5022c9ca" kindref="member">free_host</ref>(&amp;this-&gt;block_sizes_);</highlight></codeline>
 <codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;num_blocks_<sp/>=<sp/>0;</highlight></codeline>
 <codeline lineno="99"><highlight class="normal"></highlight></codeline>
 <codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;op_mat_format_<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
@@ -267,7 +298,7 @@
 <codeline lineno="108"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="109"><highlight class="normal"></highlight></codeline>
 <codeline lineno="110"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="111"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>BlockPreconditioner&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::Print(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_block_preconditioner_1a8bd967edd8f8c227c901bf191f3ed556" kindref="member">BlockPreconditioner&lt;OperatorType, VectorType, ValueType&gt;::Print</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
 <codeline lineno="112"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
 <codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(this-&gt;build_<sp/>==<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">)</highlight></codeline>
 <codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
@@ -285,7 +316,7 @@
 <codeline lineno="126"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="127"><highlight class="normal"></highlight></codeline>
 <codeline lineno="128"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="129"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>BlockPreconditioner&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::Set(</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_block_preconditioner_1a9657b8371b17b04aae9b0612df42b94e" kindref="member">BlockPreconditioner&lt;OperatorType, VectorType, ValueType&gt;::Set</ref>(</highlight></codeline>
 <codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">*<sp/>size,<sp/>Solver&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;**<sp/>D_Solver)</highlight></codeline>
 <codeline lineno="131"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/>log_debug(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;BlockPreconditioner::Set()&quot;</highlight><highlight class="normal">,<sp/>n,<sp/>size,<sp/>D_Solver);</highlight></codeline>
@@ -306,7 +337,7 @@
 <codeline lineno="147"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="148"><highlight class="normal"></highlight></codeline>
 <codeline lineno="149"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="150"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>BlockPreconditioner&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::SetDiagonalSolver(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_block_preconditioner_1a26dc097dd5ea4752d45194761a3d1416" kindref="member">BlockPreconditioner&lt;OperatorType, VectorType, ValueType&gt;::SetDiagonalSolver</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
 <codeline lineno="151"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/>log_debug(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;BlockPreconditioner::SetDiagonalSolver()&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="153"><highlight class="normal"></highlight></codeline>
@@ -314,7 +345,7 @@
 <codeline lineno="155"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="156"><highlight class="normal"></highlight></codeline>
 <codeline lineno="157"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="158"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>BlockPreconditioner&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::SetLSolver(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_block_preconditioner_1aada7f537faa69378b3bdd7b3d7e2cb35" kindref="member">BlockPreconditioner&lt;OperatorType, VectorType, ValueType&gt;::SetLSolver</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
 <codeline lineno="159"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/>log_debug(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;BlockPreconditioner::SetLSolver()&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="161"><highlight class="normal"></highlight></codeline>
@@ -322,7 +353,7 @@
 <codeline lineno="163"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="164"><highlight class="normal"></highlight></codeline>
 <codeline lineno="165"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="166"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>BlockPreconditioner&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::SetExternalLastMatrix(</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_block_preconditioner_1a994e8ff9b247c946d3d52621fa43d2bb" kindref="member">BlockPreconditioner&lt;OperatorType, VectorType, ValueType&gt;::SetExternalLastMatrix</ref>(</highlight></codeline>
 <codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>OperatorType&amp;<sp/>mat)</highlight></codeline>
 <codeline lineno="168"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/>log_debug(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;BlockPreconditioner::SetExternalLastMatrix()&quot;</highlight><highlight class="normal">,<sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*&amp;)mat);</highlight></codeline>
@@ -336,7 +367,7 @@
 <codeline lineno="177"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="178"><highlight class="normal"></highlight></codeline>
 <codeline lineno="179"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="180"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>BlockPreconditioner&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::SetPermutation(</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_block_preconditioner_1a5ec1e5c49befe88fd2de732affcf86fe" kindref="member">BlockPreconditioner&lt;OperatorType, VectorType, ValueType&gt;::SetPermutation</ref>(</highlight></codeline>
 <codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>LocalVector&lt;int&gt;&amp;<sp/>perm)</highlight></codeline>
 <codeline lineno="182"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/>log_debug(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;BlockPreconditioner::SetPermutation()&quot;</highlight><highlight class="normal">,<sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*&amp;)perm);</highlight></codeline>
@@ -347,7 +378,7 @@
 <codeline lineno="188"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="189"><highlight class="normal"></highlight></codeline>
 <codeline lineno="190"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="191"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>BlockPreconditioner&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::Build(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_block_preconditioner_1a3b0eb481110166de3f8a65056bb6f8e7" kindref="member">BlockPreconditioner&lt;OperatorType, VectorType, ValueType&gt;::Build</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
 <codeline lineno="192"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/>log_debug(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;BlockPreconditioner::Build()&quot;</highlight><highlight class="normal">,<sp/>this-&gt;build_,<sp/></highlight><highlight class="stringliteral">&quot;<sp/>#*#<sp/>begin&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="194"><highlight class="normal"></highlight></codeline>
@@ -373,7 +404,7 @@
 <codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="215"><highlight class="normal"></highlight></codeline>
 <codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">*<sp/>offsets<sp/>=<sp/>NULL;</highlight></codeline>
-<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/>allocate_host(this-&gt;num_blocks_<sp/>+<sp/>1,<sp/>&amp;offsets);</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__backend__module_1gafedca46943a41c98cad95870fa180526" kindref="member">allocate_host</ref>(this-&gt;num_blocks_<sp/>+<sp/>1,<sp/>&amp;offsets);</highlight></codeline>
 <codeline lineno="218"><highlight class="normal"></highlight></codeline>
 <codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/>offsets[0]<sp/>=<sp/>0;</highlight></codeline>
 <codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>k<sp/>=<sp/>0;<sp/>k<sp/>&lt;<sp/>this-&gt;num_blocks_;<sp/>++k)</highlight></codeline>
@@ -429,7 +460,7 @@
 <codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;num_blocks_,<sp/>this-&gt;num_blocks_,<sp/>offsets,<sp/>offsets,<sp/>this-&gt;A_block_);</highlight></codeline>
 <codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="272"><highlight class="normal"></highlight></codeline>
-<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/>free_host(&amp;offsets);</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__backend__module_1ga020251e6c31a4c642dd0181c5022c9ca" kindref="member">free_host</ref>(&amp;offsets);</highlight></codeline>
 <codeline lineno="274"><highlight class="normal"></highlight></codeline>
 <codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(this-&gt;A_last_<sp/>!=<sp/>NULL)</highlight></codeline>
 <codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
@@ -475,7 +506,7 @@
 <codeline lineno="316"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="317"><highlight class="normal"></highlight></codeline>
 <codeline lineno="318"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="319"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>BlockPreconditioner&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::Solve(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>VectorType&amp;<sp/>rhs,</highlight></codeline>
+<codeline lineno="319"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_block_preconditioner_1a8a07c7de9b3e16160443024881e5d66b" kindref="member">BlockPreconditioner&lt;OperatorType, VectorType, ValueType&gt;::Solve</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>VectorType&amp;<sp/>rhs,</highlight></codeline>
 <codeline lineno="320"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>VectorType*<sp/>x)</highlight></codeline>
 <codeline lineno="321"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="322"><highlight class="normal"><sp/><sp/><sp/><sp/>log_debug(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;:BlockPreconditioner:Solve()&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;<sp/>#*#<sp/>begin&quot;</highlight><highlight class="normal">,<sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*&amp;)rhs,<sp/>x);</highlight></codeline>
@@ -566,7 +597,7 @@
 <codeline lineno="407"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="408"><highlight class="normal"></highlight></codeline>
 <codeline lineno="409"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="410"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>BlockPreconditioner&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::MoveToHostLocalData_(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="410"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_block_preconditioner_1add7207316fcf38a241954b5b06d8fb63" kindref="member">BlockPreconditioner&lt;OperatorType, VectorType, ValueType&gt;::MoveToHostLocalData_</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
 <codeline lineno="411"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="412"><highlight class="normal"><sp/><sp/><sp/><sp/>log_debug(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;BlockPreconditioner::MoveToHostLocalData_()&quot;</highlight><highlight class="normal">,<sp/>this-&gt;build_);</highlight></codeline>
 <codeline lineno="413"><highlight class="normal"></highlight></codeline>
@@ -590,7 +621,7 @@
 <codeline lineno="431"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="432"><highlight class="normal"></highlight></codeline>
 <codeline lineno="433"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="434"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>BlockPreconditioner&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::MoveToAcceleratorLocalData_(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="434"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_block_preconditioner_1ad4508716d3a46dc0cf90a40c93fff051" kindref="member">BlockPreconditioner&lt;OperatorType, VectorType, ValueType&gt;::MoveToAcceleratorLocalData_</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
 <codeline lineno="435"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="436"><highlight class="normal"><sp/><sp/><sp/><sp/>log_debug(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;BlockPreconditioner::MoveToAcceleratorLocalData_()&quot;</highlight><highlight class="normal">,<sp/>this-&gt;build_);</highlight></codeline>
 <codeline lineno="437"><highlight class="normal"></highlight></codeline>
@@ -626,6 +657,6 @@
 <codeline lineno="467"><highlight class="normal"></highlight></codeline>
 <codeline lineno="468"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>rocalution</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
-    <location file="ROCm_Libraries/rocALUTION/src/solvers/preconditioners/preconditioner_blockprecond.cpp"/>
+    <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_blockprecond.cpp"/>
   </compounddef>
 </doxygen>

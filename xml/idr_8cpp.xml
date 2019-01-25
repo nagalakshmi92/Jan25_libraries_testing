@@ -4,10 +4,8 @@
     <compoundname>idr.cpp</compoundname>
     <includes local="yes">../../utils/def.hpp</includes>
     <includes local="yes">../../utils/types.hpp</includes>
-    <includes local="yes">idr.hpp</includes>
-    <includes local="yes">/home/tcs/Jan24/Jan24_libraries_testing/ROCm_Libraries/rocALUTION/src/solvers/solver.hpp</includes>
-    <includes local="no">vector</includes>
-    <includes local="yes">../iter_ctrl.hpp</includes>
+    <includes refid="idr_8hpp" local="yes">idr.hpp</includes>
+    <includes refid="iter__ctrl_8hpp" local="yes">../iter_ctrl.hpp</includes>
     <includes refid="local__matrix_8hpp" local="yes">../../base/local_matrix.hpp</includes>
     <includes refid="local__stencil_8hpp" local="yes">../../base/local_stencil.hpp</includes>
     <includes refid="local__vector_8hpp" local="yes">../../base/local_vector.hpp</includes>
@@ -20,242 +18,255 @@
     <includes local="no">math.h</includes>
     <includes local="no">time.h</includes>
     <incdepgraph>
-      <node id="524">
+      <node id="870">
+        <label>../base/local_vector.hpp</label>
+        <link refid="local__vector_8hpp_source"/>
+        <childnode refid="871" relation="include">
+        </childnode>
+        <childnode refid="872" relation="include">
+        </childnode>
+      </node>
+      <node id="883">
         <label>limits</label>
       </node>
-      <node id="521">
-        <label>parallel_manager.hpp</label>
-        <link refid="parallel__manager_8hpp_source"/>
-        <childnode refid="507" relation="include">
-        </childnode>
-        <childnode refid="505" relation="include">
-        </childnode>
-        <childnode refid="522" relation="include">
-        </childnode>
-        <childnode refid="523" relation="include">
-        </childnode>
-        <childnode refid="524" relation="include">
-        </childnode>
-        <childnode refid="512" relation="include">
-        </childnode>
-        <childnode refid="513" relation="include">
-        </childnode>
-      </node>
-      <node id="523">
+      <node id="882">
         <label>assert.h</label>
       </node>
-      <node id="508">
-        <label>backend_manager.hpp</label>
-        <link refid="backend__manager_8hpp_source"/>
-        <childnode refid="509" relation="include">
+      <node id="859">
+        <label>idr.hpp</label>
+        <link refid="idr_8hpp_source"/>
+        <childnode refid="860" relation="include">
         </childnode>
-        <childnode refid="510" relation="include">
-        </childnode>
-        <childnode refid="511" relation="include">
-        </childnode>
-        <childnode refid="502" relation="include">
-        </childnode>
-        <childnode refid="512" relation="include">
+        <childnode refid="862" relation="include">
         </childnode>
       </node>
-      <node id="506">
+      <node id="872">
+        <label>vector.hpp</label>
+        <link refid="vector_8hpp_source"/>
+        <childnode refid="871" relation="include">
+        </childnode>
+        <childnode refid="864" relation="include">
+        </childnode>
+        <childnode refid="866" relation="include">
+        </childnode>
+        <childnode refid="863" relation="include">
+        </childnode>
+        <childnode refid="873" relation="include">
+        </childnode>
+      </node>
+      <node id="880">
+        <label>parallel_manager.hpp</label>
+        <link refid="parallel__manager_8hpp_source"/>
+        <childnode refid="864" relation="include">
+        </childnode>
+        <childnode refid="871" relation="include">
+        </childnode>
+        <childnode refid="881" relation="include">
+        </childnode>
+        <childnode refid="882" relation="include">
+        </childnode>
+        <childnode refid="883" relation="include">
+        </childnode>
+        <childnode refid="863" relation="include">
+        </childnode>
+        <childnode refid="869" relation="include">
+        </childnode>
+      </node>
+      <node id="875">
         <label>operator.hpp</label>
         <link refid="operator_8hpp_source"/>
-        <childnode refid="505" relation="include">
+        <childnode refid="871" relation="include">
         </childnode>
-        <childnode refid="507" relation="include">
+        <childnode refid="864" relation="include">
         </childnode>
-        <childnode refid="509" relation="include">
+        <childnode refid="866" relation="include">
         </childnode>
-        <childnode refid="512" relation="include">
+        <childnode refid="863" relation="include">
         </childnode>
-        <childnode refid="514" relation="include">
+        <childnode refid="873" relation="include">
         </childnode>
       </node>
-      <node id="499">
+      <node id="858">
         <label>../../utils/types.hpp</label>
       </node>
-      <node id="512">
+      <node id="881">
+        <label>/home/tcs/rocALUTION/src/utils/def.hpp</label>
+      </node>
+      <node id="863">
         <label>string</label>
       </node>
-      <node id="511">
+      <node id="868">
         <label>map</label>
       </node>
-      <node id="522">
-        <label>/home/tcs/Jan24/Jan24_libraries_testing/ROCm_Libraries/rocALUTION/src/utils/def.hpp</label>
-      </node>
-      <node id="526">
+      <node id="885">
         <label>../../base/matrix_formats_ind.hpp</label>
       </node>
-      <node id="510">
-        <label>fstream</label>
+      <node id="860">
+        <label>../solver.hpp</label>
+        <link refid="solver_8hpp_source"/>
+        <childnode refid="861" relation="include">
+        </childnode>
+        <childnode refid="864" relation="include">
+        </childnode>
+        <childnode refid="870" relation="include">
+        </childnode>
       </node>
-      <node id="520">
+      <node id="879">
         <label>../../base/global_matrix.hpp</label>
         <link refid="global__matrix_8hpp_source"/>
-        <childnode refid="505" relation="include">
+        <childnode refid="871" relation="include">
         </childnode>
-        <childnode refid="506" relation="include">
+        <childnode refid="875" relation="include">
         </childnode>
-        <childnode refid="521" relation="include">
+        <childnode refid="880" relation="include">
         </childnode>
       </node>
-      <node id="519">
+      <node id="867">
+        <label>fstream</label>
+      </node>
+      <node id="878">
         <label>stencil_types.hpp</label>
       </node>
-      <node id="515">
+      <node id="876">
         <label>matrix_formats.hpp</label>
       </node>
-      <node id="517">
-        <label>local_vector.hpp</label>
-        <link refid="local__vector_8hpp_source"/>
-        <childnode refid="505" relation="include">
-        </childnode>
-        <childnode refid="518" relation="include">
-        </childnode>
-      </node>
-      <node id="507">
-        <label>base_rocalution.hpp</label>
-        <link refid="base__rocalution_8hpp_source"/>
-        <childnode refid="508" relation="include">
-        </childnode>
-        <childnode refid="513" relation="include">
-        </childnode>
-        <childnode refid="502" relation="include">
-        </childnode>
-      </node>
-      <node id="504">
-        <label>../../base/local_matrix.hpp</label>
-        <link refid="local__matrix_8hpp_source"/>
-        <childnode refid="505" relation="include">
-        </childnode>
-        <childnode refid="506" relation="include">
-        </childnode>
-        <childnode refid="508" relation="include">
-        </childnode>
-        <childnode refid="515" relation="include">
-        </childnode>
-        <childnode refid="512" relation="include">
-        </childnode>
-      </node>
-      <node id="505">
-        <label>../utils/types.hpp</label>
-      </node>
-      <node id="525">
+      <node id="884">
         <label>../../base/global_vector.hpp</label>
         <link refid="global__vector_8hpp_source"/>
-        <childnode refid="505" relation="include">
+        <childnode refid="871" relation="include">
         </childnode>
-        <childnode refid="518" relation="include">
+        <childnode refid="872" relation="include">
         </childnode>
-        <childnode refid="521" relation="include">
+        <childnode refid="880" relation="include">
         </childnode>
       </node>
-      <node id="502">
+      <node id="871">
+        <label>../utils/types.hpp</label>
+      </node>
+      <node id="864">
+        <label>../base/base_rocalution.hpp</label>
+        <link refid="base__rocalution_8hpp_source"/>
+        <childnode refid="865" relation="include">
+        </childnode>
+        <childnode refid="869" relation="include">
+        </childnode>
+        <childnode refid="862" relation="include">
+        </childnode>
+      </node>
+      <node id="862">
         <label>vector</label>
       </node>
-      <node id="528">
+      <node id="857">
+        <label>../../utils/def.hpp</label>
+      </node>
+      <node id="886">
+        <label>../../utils/log.hpp</label>
+      </node>
+      <node id="890">
+        <label>time.h</label>
+      </node>
+      <node id="889">
+        <label>math.h</label>
+      </node>
+      <node id="873">
+        <label>cstdlib</label>
+      </node>
+      <node id="866">
+        <label>iostream</label>
+      </node>
+      <node id="877">
+        <label>../../base/local_stencil.hpp</label>
+        <link refid="local__stencil_8hpp_source"/>
+        <childnode refid="871" relation="include">
+        </childnode>
+        <childnode refid="875" relation="include">
+        </childnode>
+        <childnode refid="870" relation="include">
+        </childnode>
+        <childnode refid="878" relation="include">
+        </childnode>
+        <childnode refid="863" relation="include">
+        </childnode>
+      </node>
+      <node id="865">
+        <label>backend_manager.hpp</label>
+        <link refid="backend__manager_8hpp_source"/>
+        <childnode refid="866" relation="include">
+        </childnode>
+        <childnode refid="867" relation="include">
+        </childnode>
+        <childnode refid="868" relation="include">
+        </childnode>
+        <childnode refid="862" relation="include">
+        </childnode>
+        <childnode refid="863" relation="include">
+        </childnode>
+      </node>
+      <node id="861">
+        <label>iter_ctrl.hpp</label>
+        <link refid="iter__ctrl_8hpp_source"/>
+        <childnode refid="862" relation="include">
+        </childnode>
+        <childnode refid="863" relation="include">
+        </childnode>
+      </node>
+      <node id="856">
+        <label>/home/tcs/rocALUTION/src/solvers/krylov/idr.cpp</label>
+        <link refid="idr_8cpp"/>
+        <childnode refid="857" relation="include">
+        </childnode>
+        <childnode refid="858" relation="include">
+        </childnode>
+        <childnode refid="859" relation="include">
+        </childnode>
+        <childnode refid="861" relation="include">
+        </childnode>
+        <childnode refid="874" relation="include">
+        </childnode>
+        <childnode refid="877" relation="include">
+        </childnode>
+        <childnode refid="870" relation="include">
+        </childnode>
+        <childnode refid="879" relation="include">
+        </childnode>
+        <childnode refid="884" relation="include">
+        </childnode>
+        <childnode refid="885" relation="include">
+        </childnode>
+        <childnode refid="886" relation="include">
+        </childnode>
+        <childnode refid="887" relation="include">
+        </childnode>
+        <childnode refid="888" relation="include">
+        </childnode>
+        <childnode refid="889" relation="include">
+        </childnode>
+        <childnode refid="890" relation="include">
+        </childnode>
+      </node>
+      <node id="869">
+        <label>complex</label>
+      </node>
+      <node id="887">
         <label>../../utils/allocate_free.hpp</label>
         <link refid="allocate__free_8hpp_source"/>
       </node>
-      <node id="498">
-        <label>../../utils/def.hpp</label>
-      </node>
-      <node id="527">
-        <label>../../utils/log.hpp</label>
-      </node>
-      <node id="531">
-        <label>time.h</label>
-      </node>
-      <node id="530">
-        <label>math.h</label>
-      </node>
-      <node id="516">
-        <label>../../base/local_stencil.hpp</label>
-        <link refid="local__stencil_8hpp_source"/>
-        <childnode refid="505" relation="include">
-        </childnode>
-        <childnode refid="506" relation="include">
-        </childnode>
-        <childnode refid="517" relation="include">
-        </childnode>
-        <childnode refid="519" relation="include">
-        </childnode>
-        <childnode refid="512" relation="include">
-        </childnode>
-      </node>
-      <node id="514">
-        <label>cstdlib</label>
-      </node>
-      <node id="503">
-        <label>../iter_ctrl.hpp</label>
-      </node>
-      <node id="509">
-        <label>iostream</label>
-      </node>
-      <node id="501">
-        <label>/home/tcs/Jan24/Jan24_libraries_testing/ROCm_Libraries/rocALUTION/src/solvers/solver.hpp</label>
-      </node>
-      <node id="497">
-        <label>ROCm_Libraries/rocALUTION/src/solvers/krylov/idr.cpp</label>
-        <link refid="idr_8cpp"/>
-        <childnode refid="498" relation="include">
-        </childnode>
-        <childnode refid="499" relation="include">
-        </childnode>
-        <childnode refid="500" relation="include">
-        </childnode>
-        <childnode refid="501" relation="include">
-        </childnode>
-        <childnode refid="502" relation="include">
-        </childnode>
-        <childnode refid="503" relation="include">
-        </childnode>
-        <childnode refid="504" relation="include">
-        </childnode>
-        <childnode refid="516" relation="include">
-        </childnode>
-        <childnode refid="517" relation="include">
-        </childnode>
-        <childnode refid="520" relation="include">
-        </childnode>
-        <childnode refid="525" relation="include">
-        </childnode>
-        <childnode refid="526" relation="include">
-        </childnode>
-        <childnode refid="527" relation="include">
-        </childnode>
-        <childnode refid="528" relation="include">
-        </childnode>
-        <childnode refid="529" relation="include">
-        </childnode>
-        <childnode refid="530" relation="include">
-        </childnode>
-        <childnode refid="531" relation="include">
-        </childnode>
-      </node>
-      <node id="500">
-        <label>idr.hpp</label>
-      </node>
-      <node id="518">
-        <label>vector.hpp</label>
-        <link refid="vector_8hpp_source"/>
-        <childnode refid="505" relation="include">
-        </childnode>
-        <childnode refid="507" relation="include">
-        </childnode>
-        <childnode refid="509" relation="include">
-        </childnode>
-        <childnode refid="512" relation="include">
-        </childnode>
-        <childnode refid="514" relation="include">
-        </childnode>
-      </node>
-      <node id="513">
-        <label>complex</label>
-      </node>
-      <node id="529">
+      <node id="888">
         <label>../../utils/math_functions.hpp</label>
+      </node>
+      <node id="874">
+        <label>../../base/local_matrix.hpp</label>
+        <link refid="local__matrix_8hpp_source"/>
+        <childnode refid="871" relation="include">
+        </childnode>
+        <childnode refid="875" relation="include">
+        </childnode>
+        <childnode refid="865" relation="include">
+        </childnode>
+        <childnode refid="876" relation="include">
+        </childnode>
+        <childnode refid="863" relation="include">
+        </childnode>
       </node>
     </incdepgraph>
     <innernamespace refid="namespacerocalution">rocalution</innernamespace>
@@ -338,7 +349,7 @@
 <codeline lineno="72"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="73"><highlight class="normal"></highlight></codeline>
 <codeline lineno="74"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="75"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>IDR&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::Print(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_i_d_r_1acd9fe3e00e5f520b03903a895f8c5e2b" kindref="member">IDR&lt;OperatorType, VectorType, ValueType&gt;::Print</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
 <codeline lineno="76"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
 <codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(this-&gt;precond_<sp/>==<sp/>NULL)</highlight></codeline>
 <codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
@@ -352,7 +363,7 @@
 <codeline lineno="86"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="87"><highlight class="normal"></highlight></codeline>
 <codeline lineno="88"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="89"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>IDR&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::PrintStart_(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_i_d_r_1a95f7e8a99093bf46079344d01ef3a56a" kindref="member">IDR&lt;OperatorType, VectorType, ValueType&gt;::PrintStart_</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
 <codeline lineno="90"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
 <codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(this-&gt;precond_<sp/>==<sp/>NULL)</highlight></codeline>
 <codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
@@ -366,7 +377,7 @@
 <codeline lineno="100"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="101"><highlight class="normal"></highlight></codeline>
 <codeline lineno="102"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="103"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>IDR&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::PrintEnd_(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_i_d_r_1a5a912146f8a3762afd46272ec7cbce04" kindref="member">IDR&lt;OperatorType, VectorType, ValueType&gt;::PrintEnd_</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
 <codeline lineno="104"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
 <codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(this-&gt;precond_<sp/>==<sp/>NULL)</highlight></codeline>
 <codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
@@ -379,7 +390,7 @@
 <codeline lineno="113"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="114"><highlight class="normal"></highlight></codeline>
 <codeline lineno="115"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="116"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>IDR&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::Build(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_i_d_r_1ac04b951d408a3ebaabcaa7ac7c9dcb3e" kindref="member">IDR&lt;OperatorType, VectorType, ValueType&gt;::Build</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
 <codeline lineno="117"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/>log_debug(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;IDR::Build()&quot;</highlight><highlight class="normal">,<sp/>this-&gt;build_,<sp/></highlight><highlight class="stringliteral">&quot;<sp/>#*#<sp/>begin&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="119"><highlight class="normal"></highlight></codeline>
@@ -400,9 +411,9 @@
 <codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;r_.Allocate(</highlight><highlight class="stringliteral">&quot;r&quot;</highlight><highlight class="normal">,<sp/>this-&gt;op_-&gt;GetM());</highlight></codeline>
 <codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;v_.Allocate(</highlight><highlight class="stringliteral">&quot;v&quot;</highlight><highlight class="normal">,<sp/>this-&gt;op_-&gt;GetM());</highlight></codeline>
 <codeline lineno="136"><highlight class="normal"></highlight></codeline>
-<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/>allocate_host(this-&gt;s_,<sp/>&amp;this-&gt;c_);</highlight></codeline>
-<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/>allocate_host(this-&gt;s_,<sp/>&amp;this-&gt;f_);</highlight></codeline>
-<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/>allocate_host(this-&gt;s_<sp/>*<sp/>this-&gt;s_,<sp/>&amp;this-&gt;M_);</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__backend__module_1gafedca46943a41c98cad95870fa180526" kindref="member">allocate_host</ref>(this-&gt;s_,<sp/>&amp;this-&gt;c_);</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__backend__module_1gafedca46943a41c98cad95870fa180526" kindref="member">allocate_host</ref>(this-&gt;s_,<sp/>&amp;this-&gt;f_);</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__backend__module_1gafedca46943a41c98cad95870fa180526" kindref="member">allocate_host</ref>(this-&gt;s_<sp/>*<sp/>this-&gt;s_,<sp/>&amp;this-&gt;M_);</highlight></codeline>
 <codeline lineno="140"><highlight class="normal"></highlight></codeline>
 <codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;G_<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>VectorType*[this-&gt;s_];</highlight></codeline>
 <codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;U_<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>VectorType*[this-&gt;s_];</highlight></codeline>
@@ -451,7 +462,7 @@
 <codeline lineno="185"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="186"><highlight class="normal"></highlight></codeline>
 <codeline lineno="187"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="188"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>IDR&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::Clear(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_i_d_r_1a9ffdd18ba55fd4471a6499c3927e3364" kindref="member">IDR&lt;OperatorType, VectorType, ValueType&gt;::Clear</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
 <codeline lineno="189"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/>log_debug(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;IDR::Clear()&quot;</highlight><highlight class="normal">,<sp/>this-&gt;build_);</highlight></codeline>
 <codeline lineno="191"><highlight class="normal"></highlight></codeline>
@@ -475,9 +486,9 @@
 <codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;G_<sp/>=<sp/>NULL;</highlight></codeline>
 <codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;P_<sp/>=<sp/>NULL;</highlight></codeline>
 <codeline lineno="211"><highlight class="normal"></highlight></codeline>
-<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>free_host(&amp;this-&gt;c_);</highlight></codeline>
-<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>free_host(&amp;this-&gt;f_);</highlight></codeline>
-<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>free_host(&amp;this-&gt;M_);</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__backend__module_1ga020251e6c31a4c642dd0181c5022c9ca" kindref="member">free_host</ref>(&amp;this-&gt;c_);</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__backend__module_1ga020251e6c31a4c642dd0181c5022c9ca" kindref="member">free_host</ref>(&amp;this-&gt;f_);</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__backend__module_1ga020251e6c31a4c642dd0181c5022c9ca" kindref="member">free_host</ref>(&amp;this-&gt;M_);</highlight></codeline>
 <codeline lineno="215"><highlight class="normal"></highlight></codeline>
 <codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(this-&gt;precond_<sp/>!=<sp/>NULL)</highlight></codeline>
 <codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
@@ -494,7 +505,7 @@
 <codeline lineno="228"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="229"><highlight class="normal"></highlight></codeline>
 <codeline lineno="230"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="231"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>IDR&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::ReBuildNumeric(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_i_d_r_1a01bc5a8ee5353b99c5b27909b975e6dd" kindref="member">IDR&lt;OperatorType, VectorType, ValueType&gt;::ReBuildNumeric</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
 <codeline lineno="232"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/>log_debug(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;IDR::ReBuildNumeric()&quot;</highlight><highlight class="normal">,<sp/>this-&gt;build_);</highlight></codeline>
 <codeline lineno="234"><highlight class="normal"></highlight></codeline>
@@ -525,7 +536,7 @@
 <codeline lineno="259"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="260"><highlight class="normal"></highlight></codeline>
 <codeline lineno="261"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="262"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>IDR&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::SetShadowSpace(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>s)</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_i_d_r_1ae6ecd7dcdfc8fa84714d2dea452ef6e2" kindref="member">IDR&lt;OperatorType, VectorType, ValueType&gt;::SetShadowSpace</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>s)</highlight></codeline>
 <codeline lineno="263"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/>log_debug(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;IDR:SetShadowSpace()&quot;</highlight><highlight class="normal">,<sp/>s);</highlight></codeline>
 <codeline lineno="265"><highlight class="normal"></highlight></codeline>
@@ -538,7 +549,7 @@
 <codeline lineno="272"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="273"><highlight class="normal"></highlight></codeline>
 <codeline lineno="274"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="275"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>IDR&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::SetRandomSeed(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>seed)</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_i_d_r_1a01376ac1cbf7abea04ce173c55086e25" kindref="member">IDR&lt;OperatorType, VectorType, ValueType&gt;::SetRandomSeed</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>seed)</highlight></codeline>
 <codeline lineno="276"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/>log_debug(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;IDR::SetRandomSeed()&quot;</highlight><highlight class="normal">,<sp/>seed);</highlight></codeline>
 <codeline lineno="278"><highlight class="normal"></highlight></codeline>
@@ -549,7 +560,7 @@
 <codeline lineno="283"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="284"><highlight class="normal"></highlight></codeline>
 <codeline lineno="285"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="286"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>IDR&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::MoveToHostLocalData_(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_i_d_r_1a07136a096dce96a175ecdb54be40379d" kindref="member">IDR&lt;OperatorType, VectorType, ValueType&gt;::MoveToHostLocalData_</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
 <codeline lineno="287"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="288"><highlight class="normal"><sp/><sp/><sp/><sp/>log_debug(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;IDR::MoveToHostLocalData_()&quot;</highlight><highlight class="normal">,<sp/>this-&gt;build_);</highlight></codeline>
 <codeline lineno="289"><highlight class="normal"></highlight></codeline>
@@ -573,7 +584,7 @@
 <codeline lineno="307"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="308"><highlight class="normal"></highlight></codeline>
 <codeline lineno="309"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="310"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>IDR&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::MoveToAcceleratorLocalData_(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_i_d_r_1a7c55c5ad42e52093a35433b5c5e0bc61" kindref="member">IDR&lt;OperatorType, VectorType, ValueType&gt;::MoveToAcceleratorLocalData_</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
 <codeline lineno="311"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="312"><highlight class="normal"><sp/><sp/><sp/><sp/>log_debug(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;IDR::MoveToAcceleratorLocalData_()&quot;</highlight><highlight class="normal">,<sp/>this-&gt;build_);</highlight></codeline>
 <codeline lineno="313"><highlight class="normal"></highlight></codeline>
@@ -597,7 +608,7 @@
 <codeline lineno="331"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="332"><highlight class="normal"></highlight></codeline>
 <codeline lineno="333"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="334"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>IDR&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::SolveNonPrecond_(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>VectorType&amp;<sp/>rhs,</highlight></codeline>
+<codeline lineno="334"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_i_d_r_1afe5cb5239986204a3eb1432f52d48adb" kindref="member">IDR&lt;OperatorType, VectorType, ValueType&gt;::SolveNonPrecond_</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>VectorType&amp;<sp/>rhs,</highlight></codeline>
 <codeline lineno="335"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>VectorType*<sp/>x)</highlight></codeline>
 <codeline lineno="336"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="337"><highlight class="normal"><sp/><sp/><sp/><sp/>log_debug(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;IDR::SolveNonPrecond_()&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;<sp/>#*#<sp/>begin&quot;</highlight><highlight class="normal">,<sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*&amp;)rhs,<sp/>x);</highlight></codeline>
@@ -824,7 +835,7 @@
 <codeline lineno="558"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="559"><highlight class="normal"></highlight></codeline>
 <codeline lineno="560"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="561"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>IDR&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::SolvePrecond_(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>VectorType&amp;<sp/>rhs,<sp/>VectorType*<sp/>x)</highlight></codeline>
+<codeline lineno="561"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_i_d_r_1a353018c132eeedb7625b2037f58fdf85" kindref="member">IDR&lt;OperatorType, VectorType, ValueType&gt;::SolvePrecond_</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>VectorType&amp;<sp/>rhs,<sp/>VectorType*<sp/>x)</highlight></codeline>
 <codeline lineno="562"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="563"><highlight class="normal"><sp/><sp/><sp/><sp/>log_debug(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;IDR::SolvePrecond_()&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;<sp/>#*#<sp/>begin&quot;</highlight><highlight class="normal">,<sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*&amp;)rhs,<sp/>x);</highlight></codeline>
 <codeline lineno="564"><highlight class="normal"></highlight></codeline>
@@ -1091,6 +1102,6 @@
 <codeline lineno="825"><highlight class="normal"></highlight></codeline>
 <codeline lineno="826"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>rocalution</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
-    <location file="ROCm_Libraries/rocALUTION/src/solvers/krylov/idr.cpp"/>
+    <location file="/home/tcs/rocALUTION/src/solvers/krylov/idr.cpp"/>
   </compounddef>
 </doxygen>

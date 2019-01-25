@@ -3,8 +3,7 @@
   <compounddef id="multigrid_8cpp" kind="file" language="C++">
     <compoundname>multigrid.cpp</compoundname>
     <includes local="yes">../../utils/def.hpp</includes>
-    <includes local="yes">multigrid.hpp</includes>
-    <includes local="yes">/home/tcs/Jan24/Jan24_libraries_testing/ROCm_Libraries/rocALUTION/src/solvers/multigrid/base_multigrid.hpp</includes>
+    <includes refid="multigrid_8hpp" local="yes">multigrid.hpp</includes>
     <includes refid="local__matrix_8hpp" local="yes">../../base/local_matrix.hpp</includes>
     <includes refid="global__matrix_8hpp" local="yes">../../base/global_matrix.hpp</includes>
     <includes refid="local__vector_8hpp" local="yes">../../base/local_vector.hpp</includes>
@@ -12,187 +11,211 @@
     <includes local="yes">../../utils/log.hpp</includes>
     <includes local="no">complex</includes>
     <incdepgraph>
-      <node id="706">
+      <node id="1176">
+        <label>../base/local_vector.hpp</label>
+        <link refid="local__vector_8hpp_source"/>
+        <childnode refid="1177" relation="include">
+        </childnode>
+        <childnode refid="1178" relation="include">
+        </childnode>
+      </node>
+      <node id="1187">
         <label>limits</label>
       </node>
-      <node id="703">
-        <label>parallel_manager.hpp</label>
-        <link refid="parallel__manager_8hpp_source"/>
-        <childnode refid="692" relation="include">
-        </childnode>
-        <childnode refid="690" relation="include">
-        </childnode>
-        <childnode refid="704" relation="include">
-        </childnode>
-        <childnode refid="705" relation="include">
-        </childnode>
-        <childnode refid="706" relation="include">
-        </childnode>
-        <childnode refid="698" relation="include">
-        </childnode>
-        <childnode refid="699" relation="include">
+      <node id="1164">
+        <label>multigrid.hpp</label>
+        <link refid="multigrid_8hpp_source"/>
+        <childnode refid="1165" relation="include">
         </childnode>
       </node>
-      <node id="705">
+      <node id="1186">
         <label>assert.h</label>
       </node>
-      <node id="685">
-        <label>ROCm_Libraries/rocALUTION/src/solvers/multigrid/multigrid.cpp</label>
-        <link refid="multigrid_8cpp"/>
-        <childnode refid="686" relation="include">
-        </childnode>
-        <childnode refid="687" relation="include">
-        </childnode>
-        <childnode refid="688" relation="include">
-        </childnode>
-        <childnode refid="689" relation="include">
-        </childnode>
-        <childnode refid="702" relation="include">
-        </childnode>
-        <childnode refid="707" relation="include">
-        </childnode>
-        <childnode refid="709" relation="include">
-        </childnode>
-        <childnode refid="710" relation="include">
-        </childnode>
-        <childnode refid="699" relation="include">
-        </childnode>
-      </node>
-      <node id="693">
-        <label>backend_manager.hpp</label>
-        <link refid="backend__manager_8hpp_source"/>
-        <childnode refid="694" relation="include">
-        </childnode>
-        <childnode refid="695" relation="include">
-        </childnode>
-        <childnode refid="696" relation="include">
-        </childnode>
-        <childnode refid="697" relation="include">
-        </childnode>
-        <childnode refid="698" relation="include">
-        </childnode>
-      </node>
-      <node id="687">
-        <label>multigrid.hpp</label>
-      </node>
-      <node id="691">
-        <label>operator.hpp</label>
-        <link refid="operator_8hpp_source"/>
-        <childnode refid="690" relation="include">
-        </childnode>
-        <childnode refid="692" relation="include">
-        </childnode>
-        <childnode refid="694" relation="include">
-        </childnode>
-        <childnode refid="698" relation="include">
-        </childnode>
-        <childnode refid="700" relation="include">
-        </childnode>
-      </node>
-      <node id="698">
-        <label>string</label>
-      </node>
-      <node id="696">
-        <label>map</label>
-      </node>
-      <node id="704">
-        <label>/home/tcs/Jan24/Jan24_libraries_testing/ROCm_Libraries/rocALUTION/src/utils/def.hpp</label>
-      </node>
-      <node id="695">
-        <label>fstream</label>
-      </node>
-      <node id="702">
-        <label>../../base/global_matrix.hpp</label>
-        <link refid="global__matrix_8hpp_source"/>
-        <childnode refid="690" relation="include">
-        </childnode>
-        <childnode refid="691" relation="include">
-        </childnode>
-        <childnode refid="703" relation="include">
-        </childnode>
-      </node>
-      <node id="701">
-        <label>matrix_formats.hpp</label>
-      </node>
-      <node id="707">
-        <label>../../base/local_vector.hpp</label>
-        <link refid="local__vector_8hpp_source"/>
-        <childnode refid="690" relation="include">
-        </childnode>
-        <childnode refid="708" relation="include">
-        </childnode>
-      </node>
-      <node id="692">
-        <label>base_rocalution.hpp</label>
-        <link refid="base__rocalution_8hpp_source"/>
-        <childnode refid="693" relation="include">
-        </childnode>
-        <childnode refid="699" relation="include">
-        </childnode>
-        <childnode refid="697" relation="include">
-        </childnode>
-      </node>
-      <node id="689">
-        <label>../../base/local_matrix.hpp</label>
-        <link refid="local__matrix_8hpp_source"/>
-        <childnode refid="690" relation="include">
-        </childnode>
-        <childnode refid="691" relation="include">
-        </childnode>
-        <childnode refid="693" relation="include">
-        </childnode>
-        <childnode refid="701" relation="include">
-        </childnode>
-        <childnode refid="698" relation="include">
-        </childnode>
-      </node>
-      <node id="690">
-        <label>../utils/types.hpp</label>
-      </node>
-      <node id="688">
-        <label>/home/tcs/Jan24/Jan24_libraries_testing/ROCm_Libraries/rocALUTION/src/solvers/multigrid/base_multigrid.hpp</label>
-      </node>
-      <node id="709">
-        <label>../../base/global_vector.hpp</label>
-        <link refid="global__vector_8hpp_source"/>
-        <childnode refid="690" relation="include">
-        </childnode>
-        <childnode refid="708" relation="include">
-        </childnode>
-        <childnode refid="703" relation="include">
-        </childnode>
-      </node>
-      <node id="697">
-        <label>vector</label>
-      </node>
-      <node id="686">
-        <label>../../utils/def.hpp</label>
-      </node>
-      <node id="710">
-        <label>../../utils/log.hpp</label>
-      </node>
-      <node id="700">
-        <label>cstdlib</label>
-      </node>
-      <node id="694">
-        <label>iostream</label>
-      </node>
-      <node id="708">
+      <node id="1178">
         <label>vector.hpp</label>
         <link refid="vector_8hpp_source"/>
-        <childnode refid="690" relation="include">
+        <childnode refid="1177" relation="include">
         </childnode>
-        <childnode refid="692" relation="include">
+        <childnode refid="1170" relation="include">
         </childnode>
-        <childnode refid="694" relation="include">
+        <childnode refid="1172" relation="include">
         </childnode>
-        <childnode refid="698" relation="include">
+        <childnode refid="1169" relation="include">
         </childnode>
-        <childnode refid="700" relation="include">
+        <childnode refid="1179" relation="include">
         </childnode>
       </node>
-      <node id="699">
+      <node id="1184">
+        <label>parallel_manager.hpp</label>
+        <link refid="parallel__manager_8hpp_source"/>
+        <childnode refid="1170" relation="include">
+        </childnode>
+        <childnode refid="1177" relation="include">
+        </childnode>
+        <childnode refid="1185" relation="include">
+        </childnode>
+        <childnode refid="1186" relation="include">
+        </childnode>
+        <childnode refid="1187" relation="include">
+        </childnode>
+        <childnode refid="1169" relation="include">
+        </childnode>
+        <childnode refid="1175" relation="include">
+        </childnode>
+      </node>
+      <node id="1180">
+        <label>../../base/operator.hpp</label>
+        <link refid="operator_8hpp_source"/>
+        <childnode refid="1177" relation="include">
+        </childnode>
+        <childnode refid="1170" relation="include">
+        </childnode>
+        <childnode refid="1172" relation="include">
+        </childnode>
+        <childnode refid="1169" relation="include">
+        </childnode>
+        <childnode refid="1179" relation="include">
+        </childnode>
+      </node>
+      <node id="1185">
+        <label>/home/tcs/rocALUTION/src/utils/def.hpp</label>
+      </node>
+      <node id="1169">
+        <label>string</label>
+      </node>
+      <node id="1162">
+        <label>/home/tcs/rocALUTION/src/solvers/multigrid/multigrid.cpp</label>
+        <link refid="multigrid_8cpp"/>
+        <childnode refid="1163" relation="include">
+        </childnode>
+        <childnode refid="1164" relation="include">
+        </childnode>
+        <childnode refid="1181" relation="include">
+        </childnode>
+        <childnode refid="1183" relation="include">
+        </childnode>
+        <childnode refid="1176" relation="include">
+        </childnode>
+        <childnode refid="1188" relation="include">
+        </childnode>
+        <childnode refid="1189" relation="include">
+        </childnode>
+        <childnode refid="1175" relation="include">
+        </childnode>
+      </node>
+      <node id="1174">
+        <label>map</label>
+      </node>
+      <node id="1166">
+        <label>../solver.hpp</label>
+        <link refid="solver_8hpp_source"/>
+        <childnode refid="1167" relation="include">
+        </childnode>
+        <childnode refid="1170" relation="include">
+        </childnode>
+        <childnode refid="1176" relation="include">
+        </childnode>
+      </node>
+      <node id="1183">
+        <label>../../base/global_matrix.hpp</label>
+        <link refid="global__matrix_8hpp_source"/>
+        <childnode refid="1177" relation="include">
+        </childnode>
+        <childnode refid="1180" relation="include">
+        </childnode>
+        <childnode refid="1184" relation="include">
+        </childnode>
+      </node>
+      <node id="1173">
+        <label>fstream</label>
+      </node>
+      <node id="1182">
+        <label>matrix_formats.hpp</label>
+      </node>
+      <node id="1165">
+        <label>base_multigrid.hpp</label>
+        <link refid="base__multigrid_8hpp_source"/>
+        <childnode refid="1166" relation="include">
+        </childnode>
+        <childnode refid="1180" relation="include">
+        </childnode>
+      </node>
+      <node id="1188">
+        <label>../../base/global_vector.hpp</label>
+        <link refid="global__vector_8hpp_source"/>
+        <childnode refid="1177" relation="include">
+        </childnode>
+        <childnode refid="1178" relation="include">
+        </childnode>
+        <childnode refid="1184" relation="include">
+        </childnode>
+      </node>
+      <node id="1177">
+        <label>../utils/types.hpp</label>
+      </node>
+      <node id="1170">
+        <label>../base/base_rocalution.hpp</label>
+        <link refid="base__rocalution_8hpp_source"/>
+        <childnode refid="1171" relation="include">
+        </childnode>
+        <childnode refid="1175" relation="include">
+        </childnode>
+        <childnode refid="1168" relation="include">
+        </childnode>
+      </node>
+      <node id="1168">
+        <label>vector</label>
+      </node>
+      <node id="1163">
+        <label>../../utils/def.hpp</label>
+      </node>
+      <node id="1189">
+        <label>../../utils/log.hpp</label>
+      </node>
+      <node id="1179">
+        <label>cstdlib</label>
+      </node>
+      <node id="1172">
+        <label>iostream</label>
+      </node>
+      <node id="1171">
+        <label>backend_manager.hpp</label>
+        <link refid="backend__manager_8hpp_source"/>
+        <childnode refid="1172" relation="include">
+        </childnode>
+        <childnode refid="1173" relation="include">
+        </childnode>
+        <childnode refid="1174" relation="include">
+        </childnode>
+        <childnode refid="1168" relation="include">
+        </childnode>
+        <childnode refid="1169" relation="include">
+        </childnode>
+      </node>
+      <node id="1167">
+        <label>iter_ctrl.hpp</label>
+        <link refid="iter__ctrl_8hpp_source"/>
+        <childnode refid="1168" relation="include">
+        </childnode>
+        <childnode refid="1169" relation="include">
+        </childnode>
+      </node>
+      <node id="1175">
         <label>complex</label>
+      </node>
+      <node id="1181">
+        <label>../../base/local_matrix.hpp</label>
+        <link refid="local__matrix_8hpp_source"/>
+        <childnode refid="1177" relation="include">
+        </childnode>
+        <childnode refid="1180" relation="include">
+        </childnode>
+        <childnode refid="1171" relation="include">
+        </childnode>
+        <childnode refid="1182" relation="include">
+        </childnode>
+        <childnode refid="1169" relation="include">
+        </childnode>
       </node>
     </incdepgraph>
     <innernamespace refid="namespacerocalution">rocalution</innernamespace>
@@ -257,7 +280,7 @@
 <codeline lineno="54"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="55"><highlight class="normal"></highlight></codeline>
 <codeline lineno="56"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="57"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>MultiGrid&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::SetRestrictOperator(OperatorType**<sp/>op)</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_multi_grid_1a7f0a4b40740bf74d7650f917c9d4e7d4" kindref="member">MultiGrid&lt;OperatorType, VectorType, ValueType&gt;::SetRestrictOperator</ref>(OperatorType**<sp/>op)</highlight></codeline>
 <codeline lineno="58"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>log_debug(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;MultiGrid::SetRestrictOperator()&quot;</highlight><highlight class="normal">,<sp/>op);</highlight></codeline>
 <codeline lineno="60"><highlight class="normal"></highlight></codeline>
@@ -274,7 +297,7 @@
 <codeline lineno="71"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="72"><highlight class="normal"></highlight></codeline>
 <codeline lineno="73"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="74"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>MultiGrid&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::SetProlongOperator(OperatorType**<sp/>op)</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_multi_grid_1afa44bae7e2b142deeb0c4de6a36808a4" kindref="member">MultiGrid&lt;OperatorType, VectorType, ValueType&gt;::SetProlongOperator</ref>(OperatorType**<sp/>op)</highlight></codeline>
 <codeline lineno="75"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>log_debug(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;MultiGrid::SetProlongOperator()&quot;</highlight><highlight class="normal">,<sp/>op);</highlight></codeline>
 <codeline lineno="77"><highlight class="normal"></highlight></codeline>
@@ -291,7 +314,7 @@
 <codeline lineno="88"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="89"><highlight class="normal"></highlight></codeline>
 <codeline lineno="90"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="91"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>MultiGrid&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::SetOperatorHierarchy(OperatorType**<sp/>op)</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_multi_grid_1af1797ee9e32a269aa408e0671558cfb9" kindref="member">MultiGrid&lt;OperatorType, VectorType, ValueType&gt;::SetOperatorHierarchy</ref>(OperatorType**<sp/>op)</highlight></codeline>
 <codeline lineno="92"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/>log_debug(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;MultiGrid::SetOperatorHierarchy()&quot;</highlight><highlight class="normal">,<sp/>op);</highlight></codeline>
 <codeline lineno="94"><highlight class="normal"></highlight></codeline>
@@ -325,6 +348,6 @@
 <codeline lineno="122"><highlight class="normal"></highlight></codeline>
 <codeline lineno="123"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>rocalution</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
-    <location file="ROCm_Libraries/rocALUTION/src/solvers/multigrid/multigrid.cpp"/>
+    <location file="/home/tcs/rocALUTION/src/solvers/multigrid/multigrid.cpp"/>
   </compounddef>
 </doxygen>

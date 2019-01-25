@@ -3,155 +3,193 @@
   <compounddef id="preconditioner__multicolored__gs_8cpp" kind="file" language="C++">
     <compoundname>preconditioner_multicolored_gs.cpp</compoundname>
     <includes local="yes">../../utils/def.hpp</includes>
-    <includes local="yes">preconditioner_multicolored_gs.hpp</includes>
-    <includes local="yes">preconditioner_multicolored.hpp</includes>
-    <includes local="yes">preconditioner.hpp</includes>
-    <includes local="yes">../solver.hpp</includes>
+    <includes refid="preconditioner__multicolored__gs_8hpp" local="yes">preconditioner_multicolored_gs.hpp</includes>
+    <includes refid="preconditioner__multicolored_8hpp" local="yes">preconditioner_multicolored.hpp</includes>
+    <includes refid="preconditioner_8hpp" local="yes">preconditioner.hpp</includes>
+    <includes refid="solver_8hpp" local="yes">../solver.hpp</includes>
     <includes refid="local__matrix_8hpp" local="yes">../../base/local_matrix.hpp</includes>
     <includes refid="local__vector_8hpp" local="yes">../../base/local_vector.hpp</includes>
     <includes local="yes">../../utils/log.hpp</includes>
     <includes local="no">complex</includes>
     <incdepgraph>
-      <node id="966">
-        <label>preconditioner_multicolored.hpp</label>
-      </node>
-      <node id="973">
-        <label>backend_manager.hpp</label>
-        <link refid="backend__manager_8hpp_source"/>
-        <childnode refid="974" relation="include">
-        </childnode>
-        <childnode refid="975" relation="include">
-        </childnode>
-        <childnode refid="976" relation="include">
-        </childnode>
-        <childnode refid="977" relation="include">
-        </childnode>
-        <childnode refid="978" relation="include">
-        </childnode>
-      </node>
-      <node id="971">
-        <label>operator.hpp</label>
-        <link refid="operator_8hpp_source"/>
-        <childnode refid="970" relation="include">
-        </childnode>
-        <childnode refid="972" relation="include">
-        </childnode>
-        <childnode refid="974" relation="include">
-        </childnode>
-        <childnode refid="978" relation="include">
-        </childnode>
-        <childnode refid="980" relation="include">
-        </childnode>
-      </node>
-      <node id="978">
-        <label>string</label>
-      </node>
-      <node id="976">
-        <label>map</label>
-      </node>
-      <node id="963">
-        <label>ROCm_Libraries/rocALUTION/src/solvers/preconditioners/preconditioner_multicolored_gs.cpp</label>
-        <link refid="preconditioner__multicolored__gs_8cpp"/>
-        <childnode refid="964" relation="include">
-        </childnode>
-        <childnode refid="965" relation="include">
-        </childnode>
-        <childnode refid="966" relation="include">
-        </childnode>
-        <childnode refid="967" relation="include">
-        </childnode>
-        <childnode refid="968" relation="include">
-        </childnode>
-        <childnode refid="969" relation="include">
-        </childnode>
-        <childnode refid="982" relation="include">
-        </childnode>
-        <childnode refid="984" relation="include">
-        </childnode>
-        <childnode refid="979" relation="include">
-        </childnode>
-      </node>
-      <node id="968">
-        <label>../solver.hpp</label>
-      </node>
-      <node id="975">
-        <label>fstream</label>
-      </node>
-      <node id="967">
-        <label>preconditioner.hpp</label>
-      </node>
-      <node id="981">
-        <label>matrix_formats.hpp</label>
-      </node>
-      <node id="982">
-        <label>../../base/local_vector.hpp</label>
+      <node id="1678">
+        <label>../base/local_vector.hpp</label>
         <link refid="local__vector_8hpp_source"/>
-        <childnode refid="970" relation="include">
+        <childnode refid="1679" relation="include">
         </childnode>
-        <childnode refid="983" relation="include">
-        </childnode>
-      </node>
-      <node id="972">
-        <label>base_rocalution.hpp</label>
-        <link refid="base__rocalution_8hpp_source"/>
-        <childnode refid="973" relation="include">
-        </childnode>
-        <childnode refid="979" relation="include">
-        </childnode>
-        <childnode refid="977" relation="include">
+        <childnode refid="1680" relation="include">
         </childnode>
       </node>
-      <node id="969">
-        <label>../../base/local_matrix.hpp</label>
-        <link refid="local__matrix_8hpp_source"/>
-        <childnode refid="970" relation="include">
-        </childnode>
-        <childnode refid="971" relation="include">
-        </childnode>
-        <childnode refid="973" relation="include">
-        </childnode>
-        <childnode refid="981" relation="include">
-        </childnode>
-        <childnode refid="978" relation="include">
+      <node id="1682">
+        <label>preconditioner.hpp</label>
+        <link refid="preconditioner_8hpp_source"/>
+        <childnode refid="1668" relation="include">
         </childnode>
       </node>
-      <node id="970">
-        <label>../utils/types.hpp</label>
-      </node>
-      <node id="977">
-        <label>vector</label>
-      </node>
-      <node id="964">
-        <label>../../utils/def.hpp</label>
-      </node>
-      <node id="984">
-        <label>../../utils/log.hpp</label>
-      </node>
-      <node id="980">
-        <label>cstdlib</label>
-      </node>
-      <node id="974">
-        <label>iostream</label>
-      </node>
-      <node id="965">
-        <label>preconditioner_multicolored_gs.hpp</label>
-      </node>
-      <node id="983">
+      <node id="1680">
         <label>vector.hpp</label>
         <link refid="vector_8hpp_source"/>
-        <childnode refid="970" relation="include">
+        <childnode refid="1679" relation="include">
         </childnode>
-        <childnode refid="972" relation="include">
+        <childnode refid="1672" relation="include">
         </childnode>
-        <childnode refid="974" relation="include">
+        <childnode refid="1674" relation="include">
         </childnode>
-        <childnode refid="978" relation="include">
+        <childnode refid="1671" relation="include">
         </childnode>
-        <childnode refid="980" relation="include">
+        <childnode refid="1681" relation="include">
         </childnode>
       </node>
-      <node id="979">
+      <node id="1685">
+        <label>operator.hpp</label>
+        <link refid="operator_8hpp_source"/>
+        <childnode refid="1679" relation="include">
+        </childnode>
+        <childnode refid="1672" relation="include">
+        </childnode>
+        <childnode refid="1674" relation="include">
+        </childnode>
+        <childnode refid="1671" relation="include">
+        </childnode>
+        <childnode refid="1681" relation="include">
+        </childnode>
+      </node>
+      <node id="1671">
+        <label>string</label>
+      </node>
+      <node id="1676">
+        <label>map</label>
+      </node>
+      <node id="1668">
+        <label>../solver.hpp</label>
+        <link refid="solver_8hpp_source"/>
+        <childnode refid="1669" relation="include">
+        </childnode>
+        <childnode refid="1672" relation="include">
+        </childnode>
+        <childnode refid="1678" relation="include">
+        </childnode>
+      </node>
+      <node id="1667">
+        <label>preconditioner_multicolored_gs.hpp</label>
+        <link refid="preconditioner__multicolored__gs_8hpp_source"/>
+        <childnode refid="1668" relation="include">
+        </childnode>
+        <childnode refid="1682" relation="include">
+        </childnode>
+        <childnode refid="1683" relation="include">
+        </childnode>
+        <childnode refid="1678" relation="include">
+        </childnode>
+        <childnode refid="1670" relation="include">
+        </childnode>
+      </node>
+      <node id="1675">
+        <label>fstream</label>
+      </node>
+      <node id="1686">
+        <label>matrix_formats.hpp</label>
+      </node>
+      <node id="1679">
+        <label>../utils/types.hpp</label>
+      </node>
+      <node id="1672">
+        <label>../base/base_rocalution.hpp</label>
+        <link refid="base__rocalution_8hpp_source"/>
+        <childnode refid="1673" relation="include">
+        </childnode>
+        <childnode refid="1677" relation="include">
+        </childnode>
+        <childnode refid="1670" relation="include">
+        </childnode>
+      </node>
+      <node id="1670">
+        <label>vector</label>
+      </node>
+      <node id="1665">
+        <label>/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multicolored_gs.cpp</label>
+        <link refid="preconditioner__multicolored__gs_8cpp"/>
+        <childnode refid="1666" relation="include">
+        </childnode>
+        <childnode refid="1667" relation="include">
+        </childnode>
+        <childnode refid="1683" relation="include">
+        </childnode>
+        <childnode refid="1682" relation="include">
+        </childnode>
+        <childnode refid="1668" relation="include">
+        </childnode>
+        <childnode refid="1684" relation="include">
+        </childnode>
+        <childnode refid="1678" relation="include">
+        </childnode>
+        <childnode refid="1687" relation="include">
+        </childnode>
+        <childnode refid="1677" relation="include">
+        </childnode>
+      </node>
+      <node id="1666">
+        <label>../../utils/def.hpp</label>
+      </node>
+      <node id="1687">
+        <label>../../utils/log.hpp</label>
+      </node>
+      <node id="1681">
+        <label>cstdlib</label>
+      </node>
+      <node id="1683">
+        <label>preconditioner_multicolored.hpp</label>
+        <link refid="preconditioner__multicolored_8hpp_source"/>
+        <childnode refid="1668" relation="include">
+        </childnode>
+        <childnode refid="1682" relation="include">
+        </childnode>
+        <childnode refid="1678" relation="include">
+        </childnode>
+        <childnode refid="1670" relation="include">
+        </childnode>
+      </node>
+      <node id="1674">
+        <label>iostream</label>
+      </node>
+      <node id="1673">
+        <label>backend_manager.hpp</label>
+        <link refid="backend__manager_8hpp_source"/>
+        <childnode refid="1674" relation="include">
+        </childnode>
+        <childnode refid="1675" relation="include">
+        </childnode>
+        <childnode refid="1676" relation="include">
+        </childnode>
+        <childnode refid="1670" relation="include">
+        </childnode>
+        <childnode refid="1671" relation="include">
+        </childnode>
+      </node>
+      <node id="1669">
+        <label>iter_ctrl.hpp</label>
+        <link refid="iter__ctrl_8hpp_source"/>
+        <childnode refid="1670" relation="include">
+        </childnode>
+        <childnode refid="1671" relation="include">
+        </childnode>
+      </node>
+      <node id="1677">
         <label>complex</label>
+      </node>
+      <node id="1684">
+        <label>../../base/local_matrix.hpp</label>
+        <link refid="local__matrix_8hpp_source"/>
+        <childnode refid="1679" relation="include">
+        </childnode>
+        <childnode refid="1685" relation="include">
+        </childnode>
+        <childnode refid="1673" relation="include">
+        </childnode>
+        <childnode refid="1686" relation="include">
+        </childnode>
+        <childnode refid="1671" relation="include">
+        </childnode>
       </node>
     </incdepgraph>
     <innernamespace refid="namespacerocalution">rocalution</innernamespace>
@@ -218,7 +256,7 @@
 <codeline lineno="56"><highlight class="normal"></highlight><highlight class="comment">//<sp/>TODO</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="57"><highlight class="normal"></highlight><highlight class="comment">//<sp/>not<sp/>optimal<sp/>implementation<sp/>-<sp/>scale<sp/>the<sp/>diagonal<sp/>vectors<sp/>in<sp/>the<sp/>building<sp/>phase</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="58"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="59"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>MultiColoredSGS&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::SetRelaxation(ValueType<sp/>omega)</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_multi_colored_s_g_s_1ae876aae50f9b6e676e2ee77802303c15" kindref="member">MultiColoredSGS&lt;OperatorType, VectorType, ValueType&gt;::SetRelaxation</ref>(ValueType<sp/>omega)</highlight></codeline>
 <codeline lineno="60"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>log_debug(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;MultiColoredSGS::SetRelaxation()&quot;</highlight><highlight class="normal">,<sp/>omega);</highlight></codeline>
 <codeline lineno="62"><highlight class="normal"></highlight></codeline>
@@ -226,7 +264,7 @@
 <codeline lineno="64"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="65"><highlight class="normal"></highlight></codeline>
 <codeline lineno="66"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="67"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>MultiColoredSGS&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::Print(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_multi_colored_s_g_s_1acfc1f1cfbbf4f2b054276632f51f3796" kindref="member">MultiColoredSGS&lt;OperatorType, VectorType, ValueType&gt;::Print</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
 <codeline lineno="68"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
 <codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>LOG_INFO(</highlight><highlight class="stringliteral">&quot;Multicolored<sp/>Symmetric<sp/>Gauss-Seidel<sp/>(SGS)<sp/>preconditioner&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="70"><highlight class="normal"></highlight></codeline>
@@ -237,7 +275,7 @@
 <codeline lineno="75"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="76"><highlight class="normal"></highlight></codeline>
 <codeline lineno="77"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="78"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>MultiColoredSGS&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::ReBuildNumeric(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_multi_colored_s_g_s_1a3a10b63078d6230071e902ee11b42b66" kindref="member">MultiColoredSGS&lt;OperatorType, VectorType, ValueType&gt;::ReBuildNumeric</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
 <codeline lineno="79"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>log_debug(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;MultiColoredSGS::ReBuildNumeric()&quot;</highlight><highlight class="normal">,<sp/>this-&gt;build_);</highlight></codeline>
 <codeline lineno="81"><highlight class="normal"></highlight></codeline>
@@ -275,7 +313,7 @@
 <codeline lineno="113"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="114"><highlight class="normal"></highlight></codeline>
 <codeline lineno="115"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="116"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>MultiColoredSGS&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::PostAnalyse_(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_multi_colored_s_g_s_1ad1bd02ffaf6a57bf853eef7ed86e2ce7" kindref="member">MultiColoredSGS&lt;OperatorType, VectorType, ValueType&gt;::PostAnalyse_</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
 <codeline lineno="117"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/>log_debug(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;MultiColoredSGS::PostAnalyse_()&quot;</highlight><highlight class="normal">,<sp/>this-&gt;build_);</highlight></codeline>
 <codeline lineno="119"><highlight class="normal"></highlight></codeline>
@@ -285,7 +323,7 @@
 <codeline lineno="123"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="124"><highlight class="normal"></highlight></codeline>
 <codeline lineno="125"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="126"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>MultiColoredSGS&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::SolveL_(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_multi_colored_s_g_s_1a35bd748445811e71e879b0a4717095fb" kindref="member">MultiColoredSGS&lt;OperatorType, VectorType, ValueType&gt;::SolveL_</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
 <codeline lineno="127"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/>log_debug(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;MultiColoredSGS::SolveL_()&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="129"><highlight class="normal"></highlight></codeline>
@@ -313,7 +351,7 @@
 <codeline lineno="151"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="152"><highlight class="normal"></highlight></codeline>
 <codeline lineno="153"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="154"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>MultiColoredSGS&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::SolveD_(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_multi_colored_s_g_s_1a311ee759ca6e5ec0e61e245a81a1d03e" kindref="member">MultiColoredSGS&lt;OperatorType, VectorType, ValueType&gt;::SolveD_</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
 <codeline lineno="155"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/>log_debug(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;MultiColoredSGS::SolveD_()&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="157"><highlight class="normal"></highlight></codeline>
@@ -332,7 +370,7 @@
 <codeline lineno="170"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="171"><highlight class="normal"></highlight></codeline>
 <codeline lineno="172"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="173"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>MultiColoredSGS&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::SolveR_(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_multi_colored_s_g_s_1a4d35e91e86016d1f2fc39f2d7d650538" kindref="member">MultiColoredSGS&lt;OperatorType, VectorType, ValueType&gt;::SolveR_</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
 <codeline lineno="174"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/>log_debug(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;MultiColoredSGS::SolveR_()&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="176"><highlight class="normal"></highlight></codeline>
@@ -360,7 +398,7 @@
 <codeline lineno="198"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="199"><highlight class="normal"></highlight></codeline>
 <codeline lineno="200"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="201"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>MultiColoredSGS&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::Solve_(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>VectorType&amp;<sp/>rhs,</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_multi_colored_s_g_s_1ac8f7393fb48c1ac99788718a98358a06" kindref="member">MultiColoredSGS&lt;OperatorType, VectorType, ValueType&gt;::Solve_</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>VectorType&amp;<sp/>rhs,</highlight></codeline>
 <codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>VectorType*<sp/>x)</highlight></codeline>
 <codeline lineno="203"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/>log_debug(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;MultiColoredSGS::Solve_()&quot;</highlight><highlight class="normal">,<sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*&amp;)rhs,<sp/>x);</highlight></codeline>
@@ -388,7 +426,7 @@
 <codeline lineno="226"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="227"><highlight class="normal"></highlight></codeline>
 <codeline lineno="228"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="229"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>MultiColoredGS&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::Print(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_multi_colored_g_s_1afefb587669df95791536836579cd91c6" kindref="member">MultiColoredGS&lt;OperatorType, VectorType, ValueType&gt;::Print</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
 <codeline lineno="230"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
 <codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/>LOG_INFO(</highlight><highlight class="stringliteral">&quot;Multicolored<sp/>Gauss-Seidel<sp/>(GS)<sp/>preconditioner&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="232"><highlight class="normal"></highlight></codeline>
@@ -399,24 +437,24 @@
 <codeline lineno="237"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="238"><highlight class="normal"></highlight></codeline>
 <codeline lineno="239"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="240"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>MultiColoredGS&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::PostAnalyse_(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_multi_colored_g_s_1acee5c874ce79cd08e641554c09f2df7a" kindref="member">MultiColoredGS&lt;OperatorType, VectorType, ValueType&gt;::PostAnalyse_</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
 <codeline lineno="241"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/>assert(this-&gt;build_<sp/>==<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;preconditioner_-&gt;UAnalyse(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="244"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="245"><highlight class="normal"></highlight></codeline>
 <codeline lineno="246"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="247"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>MultiColoredGS&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::SolveL_(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_multi_colored_g_s_1a6c74296edf89b02b3cba02c4a033cfbd" kindref="member">MultiColoredGS&lt;OperatorType, VectorType, ValueType&gt;::SolveL_</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
 <codeline lineno="248"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="249"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="250"><highlight class="normal"></highlight></codeline>
 <codeline lineno="251"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="252"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>MultiColoredGS&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::SolveD_(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_multi_colored_g_s_1a0a0845efa3cd329655cb7c968740531a" kindref="member">MultiColoredGS&lt;OperatorType, VectorType, ValueType&gt;::SolveD_</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
 <codeline lineno="253"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="254"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="255"><highlight class="normal"></highlight></codeline>
 <codeline lineno="256"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="257"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>MultiColoredGS&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::SolveR_(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_multi_colored_g_s_1a3e6f4f591513368773177ac8dfebcebb" kindref="member">MultiColoredGS&lt;OperatorType, VectorType, ValueType&gt;::SolveR_</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
 <codeline lineno="258"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/>assert(this-&gt;build_<sp/>==<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="260"><highlight class="normal"></highlight></codeline>
@@ -442,7 +480,7 @@
 <codeline lineno="280"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="281"><highlight class="normal"></highlight></codeline>
 <codeline lineno="282"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="283"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>MultiColoredGS&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::Solve_(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>VectorType&amp;<sp/>rhs,</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_multi_colored_g_s_1a72877491da0d2d50fc2ac3bbdec90641" kindref="member">MultiColoredGS&lt;OperatorType, VectorType, ValueType&gt;::Solve_</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>VectorType&amp;<sp/>rhs,</highlight></codeline>
 <codeline lineno="284"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>VectorType*<sp/>x)</highlight></codeline>
 <codeline lineno="285"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="286"><highlight class="normal"><sp/><sp/><sp/><sp/>LOG_INFO(</highlight><highlight class="stringliteral">&quot;No<sp/>implemented<sp/>yet&quot;</highlight><highlight class="normal">);</highlight></codeline>
@@ -473,6 +511,6 @@
 <codeline lineno="311"><highlight class="normal"></highlight></codeline>
 <codeline lineno="312"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>rocalution</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
-    <location file="ROCm_Libraries/rocALUTION/src/solvers/preconditioners/preconditioner_multicolored_gs.cpp"/>
+    <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multicolored_gs.cpp"/>
   </compounddef>
 </doxygen>

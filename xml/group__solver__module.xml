@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group__solver__module" kind="group">
+    <compoundname>solver_module</compoundname>
+    <title>Solver Module</title>
+    <innerclass refid="classrocalution_1_1_chebyshev" prot="public">rocalution::Chebyshev</innerclass>
+    <innerclass refid="classrocalution_1_1_inversion" prot="public">rocalution::Inversion</innerclass>
+    <innerclass refid="classrocalution_1_1_l_u" prot="public">rocalution::LU</innerclass>
+    <innerclass refid="classrocalution_1_1_q_r" prot="public">rocalution::QR</innerclass>
+    <innerclass refid="classrocalution_1_1_bi_c_g_stab" prot="public">rocalution::BiCGStab</innerclass>
+    <innerclass refid="classrocalution_1_1_bi_c_g_stabl" prot="public">rocalution::BiCGStabl</innerclass>
+    <innerclass refid="classrocalution_1_1_c_g" prot="public">rocalution::CG</innerclass>
+    <innerclass refid="classrocalution_1_1_c_r" prot="public">rocalution::CR</innerclass>
+    <innerclass refid="classrocalution_1_1_f_c_g" prot="public">rocalution::FCG</innerclass>
+    <innerclass refid="classrocalution_1_1_f_g_m_r_e_s" prot="public">rocalution::FGMRES</innerclass>
+    <innerclass refid="classrocalution_1_1_g_m_r_e_s" prot="public">rocalution::GMRES</innerclass>
+    <innerclass refid="classrocalution_1_1_i_d_r" prot="public">rocalution::IDR</innerclass>
+    <innerclass refid="classrocalution_1_1_q_m_r_c_g_stab" prot="public">rocalution::QMRCGStab</innerclass>
+    <innerclass refid="classrocalution_1_1_mixed_precision_d_c" prot="public">rocalution::MixedPrecisionDC</innerclass>
+    <innerclass refid="classrocalution_1_1_base_a_m_g" prot="public">rocalution::BaseAMG</innerclass>
+    <innerclass refid="classrocalution_1_1_base_multi_grid" prot="public">rocalution::BaseMultiGrid</innerclass>
+    <innerclass refid="classrocalution_1_1_global_pairwise_a_m_g" prot="public">rocalution::GlobalPairwiseAMG</innerclass>
+    <innerclass refid="classrocalution_1_1_multi_grid" prot="public">rocalution::MultiGrid</innerclass>
+    <innerclass refid="classrocalution_1_1_pairwise_a_m_g" prot="public">rocalution::PairwiseAMG</innerclass>
+    <innerclass refid="classrocalution_1_1_ruge_stueben_a_m_g" prot="public">rocalution::RugeStuebenAMG</innerclass>
+    <innerclass refid="classrocalution_1_1_s_a_a_m_g" prot="public">rocalution::SAAMG</innerclass>
+    <innerclass refid="classrocalution_1_1_u_a_a_m_g" prot="public">rocalution::UAAMG</innerclass>
+    <innerclass refid="classrocalution_1_1_solver" prot="public">rocalution::Solver</innerclass>
+    <innerclass refid="classrocalution_1_1_iterative_linear_solver" prot="public">rocalution::IterativeLinearSolver</innerclass>
+    <innerclass refid="classrocalution_1_1_fixed_point" prot="public">rocalution::FixedPoint</innerclass>
+    <innerclass refid="classrocalution_1_1_direct_linear_solver" prot="public">rocalution::DirectLinearSolver</innerclass>
+    <briefdescription>
+<para>This module contains all solvers. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

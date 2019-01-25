@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/parallel_manager.hpp" line="106" column="1" bodyfile="ROCm_Libraries/rocALUTION/src/base/parallel_manager.hpp" bodystart="106" bodyend="-1"/>
+        <location file="/home/tcs/rocALUTION/src/base/parallel_manager.hpp" line="106" column="1" bodyfile="/home/tcs/rocALUTION/src/base/parallel_manager.hpp" bodystart="106" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classrocalution_1_1_parallel_manager_1aef0712a425b744340c95137c92e23d82" prot="private" static="no" mutable="no">
         <type>int</type>
@@ -29,7 +29,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/parallel_manager.hpp" line="107" column="1" bodyfile="ROCm_Libraries/rocALUTION/src/base/parallel_manager.hpp" bodystart="107" bodyend="-1"/>
+        <location file="/home/tcs/rocALUTION/src/base/parallel_manager.hpp" line="107" column="1" bodyfile="/home/tcs/rocALUTION/src/base/parallel_manager.hpp" bodystart="107" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classrocalution_1_1_parallel_manager_1ab90dda6913408a06dac3a9733aa42d24" prot="private" static="no" mutable="no">
         <type>int</type>
@@ -42,7 +42,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/parallel_manager.hpp" line="108" column="1" bodyfile="ROCm_Libraries/rocALUTION/src/base/parallel_manager.hpp" bodystart="108" bodyend="-1"/>
+        <location file="/home/tcs/rocALUTION/src/base/parallel_manager.hpp" line="108" column="1" bodyfile="/home/tcs/rocALUTION/src/base/parallel_manager.hpp" bodystart="108" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classrocalution_1_1_parallel_manager_1a6f4d9ece34c486dd7d6747b86865379b" prot="private" static="no" mutable="no">
         <type>IndexType2</type>
@@ -55,7 +55,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/parallel_manager.hpp" line="110" column="1" bodyfile="ROCm_Libraries/rocALUTION/src/base/parallel_manager.hpp" bodystart="110" bodyend="-1"/>
+        <location file="/home/tcs/rocALUTION/src/base/parallel_manager.hpp" line="110" column="1" bodyfile="/home/tcs/rocALUTION/src/base/parallel_manager.hpp" bodystart="110" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classrocalution_1_1_parallel_manager_1aa9e69685ac3011b72b91d8b616161f17" prot="private" static="no" mutable="no">
         <type>int</type>
@@ -68,7 +68,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/parallel_manager.hpp" line="111" column="1" bodyfile="ROCm_Libraries/rocALUTION/src/base/parallel_manager.hpp" bodystart="111" bodyend="-1"/>
+        <location file="/home/tcs/rocALUTION/src/base/parallel_manager.hpp" line="111" column="1" bodyfile="/home/tcs/rocALUTION/src/base/parallel_manager.hpp" bodystart="111" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classrocalution_1_1_parallel_manager_1aac939b7fb15237270b51f315feb1fec5" prot="private" static="no" mutable="no">
         <type>int</type>
@@ -81,7 +81,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/parallel_manager.hpp" line="114" column="1" bodyfile="ROCm_Libraries/rocALUTION/src/base/parallel_manager.hpp" bodystart="114" bodyend="-1"/>
+        <location file="/home/tcs/rocALUTION/src/base/parallel_manager.hpp" line="114" column="1" bodyfile="/home/tcs/rocALUTION/src/base/parallel_manager.hpp" bodystart="114" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classrocalution_1_1_parallel_manager_1a5d2a8a59b85e7f2be5e455e168b14a7b" prot="private" static="no" mutable="no">
         <type>int</type>
@@ -94,7 +94,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/parallel_manager.hpp" line="116" column="1" bodyfile="ROCm_Libraries/rocALUTION/src/base/parallel_manager.hpp" bodystart="116" bodyend="-1"/>
+        <location file="/home/tcs/rocALUTION/src/base/parallel_manager.hpp" line="116" column="1" bodyfile="/home/tcs/rocALUTION/src/base/parallel_manager.hpp" bodystart="116" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classrocalution_1_1_parallel_manager_1adfb96c59bfd482f709d979c13ff873a4" prot="private" static="no" mutable="no">
         <type>int</type>
@@ -107,7 +107,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/parallel_manager.hpp" line="119" column="1" bodyfile="ROCm_Libraries/rocALUTION/src/base/parallel_manager.hpp" bodystart="119" bodyend="-1"/>
+        <location file="/home/tcs/rocALUTION/src/base/parallel_manager.hpp" line="119" column="1" bodyfile="/home/tcs/rocALUTION/src/base/parallel_manager.hpp" bodystart="119" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classrocalution_1_1_parallel_manager_1a797a91773808e0df92854100a6462b78" prot="private" static="no" mutable="no">
         <type>int</type>
@@ -120,7 +120,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/parallel_manager.hpp" line="121" column="1" bodyfile="ROCm_Libraries/rocALUTION/src/base/parallel_manager.hpp" bodystart="121" bodyend="-1"/>
+        <location file="/home/tcs/rocALUTION/src/base/parallel_manager.hpp" line="121" column="1" bodyfile="/home/tcs/rocALUTION/src/base/parallel_manager.hpp" bodystart="121" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classrocalution_1_1_parallel_manager_1a7edbf3d6529afd5aabfbd3987f0726db" prot="private" static="no" mutable="no">
         <type>int *</type>
@@ -133,7 +133,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/parallel_manager.hpp" line="124" column="1" bodyfile="ROCm_Libraries/rocALUTION/src/base/parallel_manager.hpp" bodystart="124" bodyend="-1"/>
+        <location file="/home/tcs/rocALUTION/src/base/parallel_manager.hpp" line="124" column="1" bodyfile="/home/tcs/rocALUTION/src/base/parallel_manager.hpp" bodystart="124" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classrocalution_1_1_parallel_manager_1a6cdc0d654b31a016b3e7270229a4e25d" prot="private" static="no" mutable="no">
         <type>int *</type>
@@ -146,7 +146,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/parallel_manager.hpp" line="126" column="1" bodyfile="ROCm_Libraries/rocALUTION/src/base/parallel_manager.hpp" bodystart="126" bodyend="-1"/>
+        <location file="/home/tcs/rocALUTION/src/base/parallel_manager.hpp" line="126" column="1" bodyfile="/home/tcs/rocALUTION/src/base/parallel_manager.hpp" bodystart="126" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classrocalution_1_1_parallel_manager_1a7758ec85441845c804d6e45e7bc0c27f" prot="private" static="no" mutable="no">
         <type>int *</type>
@@ -159,7 +159,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/parallel_manager.hpp" line="129" column="1" bodyfile="ROCm_Libraries/rocALUTION/src/base/parallel_manager.hpp" bodystart="129" bodyend="-1"/>
+        <location file="/home/tcs/rocALUTION/src/base/parallel_manager.hpp" line="129" column="1" bodyfile="/home/tcs/rocALUTION/src/base/parallel_manager.hpp" bodystart="129" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classrocalution_1_1_parallel_manager_1ac5b436a23d342a27dc116b4d67771cc8" prot="private" static="no" mutable="no">
         <type>int *</type>
@@ -172,7 +172,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/parallel_manager.hpp" line="131" column="1" bodyfile="ROCm_Libraries/rocALUTION/src/base/parallel_manager.hpp" bodystart="131" bodyend="-1"/>
+        <location file="/home/tcs/rocALUTION/src/base/parallel_manager.hpp" line="131" column="1" bodyfile="/home/tcs/rocALUTION/src/base/parallel_manager.hpp" bodystart="131" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classrocalution_1_1_parallel_manager_1ab7a1acb6ea0dac9a363297261996a567" prot="private" static="no" mutable="no">
         <type>int *</type>
@@ -185,7 +185,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/parallel_manager.hpp" line="134" column="1" bodyfile="ROCm_Libraries/rocALUTION/src/base/parallel_manager.hpp" bodystart="134" bodyend="-1"/>
+        <location file="/home/tcs/rocALUTION/src/base/parallel_manager.hpp" line="134" column="1" bodyfile="/home/tcs/rocALUTION/src/base/parallel_manager.hpp" bodystart="134" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="friend">
@@ -200,7 +200,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/parallel_manager.hpp" line="134" column="1" bodyfile="ROCm_Libraries/rocALUTION/src/base/parallel_manager.hpp" bodystart="136" bodyend="-1"/>
+        <location file="/home/tcs/rocALUTION/src/base/parallel_manager.hpp" line="134" column="1" bodyfile="/home/tcs/rocALUTION/src/base/parallel_manager.hpp" bodystart="136" bodyend="-1"/>
       </memberdef>
       <memberdef kind="friend" id="classrocalution_1_1_parallel_manager_1aa14497cf8d931cd5c3213671011bc22a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>friend class</type>
@@ -213,7 +213,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/parallel_manager.hpp" line="134" column="1" bodyfile="ROCm_Libraries/rocALUTION/src/base/parallel_manager.hpp" bodystart="137" bodyend="-1"/>
+        <location file="/home/tcs/rocALUTION/src/base/parallel_manager.hpp" line="134" column="1" bodyfile="/home/tcs/rocALUTION/src/base/parallel_manager.hpp" bodystart="137" bodyend="-1"/>
       </memberdef>
       <memberdef kind="friend" id="classrocalution_1_1_parallel_manager_1ac8d5c3bfa410d92f815d256969be6903" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>friend class</type>
@@ -226,7 +226,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/parallel_manager.hpp" line="134" column="1" bodyfile="ROCm_Libraries/rocALUTION/src/base/parallel_manager.hpp" bodystart="138" bodyend="-1"/>
+        <location file="/home/tcs/rocALUTION/src/base/parallel_manager.hpp" line="134" column="1" bodyfile="/home/tcs/rocALUTION/src/base/parallel_manager.hpp" bodystart="138" bodyend="-1"/>
       </memberdef>
       <memberdef kind="friend" id="classrocalution_1_1_parallel_manager_1aba26f6e75cee9ac4a3d2d4084b99a478" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>friend class</type>
@@ -239,7 +239,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/parallel_manager.hpp" line="134" column="1" bodyfile="ROCm_Libraries/rocALUTION/src/base/parallel_manager.hpp" bodystart="139" bodyend="-1"/>
+        <location file="/home/tcs/rocALUTION/src/base/parallel_manager.hpp" line="134" column="1" bodyfile="/home/tcs/rocALUTION/src/base/parallel_manager.hpp" bodystart="139" bodyend="-1"/>
       </memberdef>
       <memberdef kind="friend" id="classrocalution_1_1_parallel_manager_1a8db423d2cb6277ff6e26d8312e61233b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>friend class</type>
@@ -252,7 +252,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/parallel_manager.hpp" line="134" column="1" bodyfile="ROCm_Libraries/rocALUTION/src/base/parallel_manager.hpp" bodystart="140" bodyend="-1"/>
+        <location file="/home/tcs/rocALUTION/src/base/parallel_manager.hpp" line="134" column="1" bodyfile="/home/tcs/rocALUTION/src/base/parallel_manager.hpp" bodystart="140" bodyend="-1"/>
       </memberdef>
       <memberdef kind="friend" id="classrocalution_1_1_parallel_manager_1ad2e8267f9dccb1a2d96686124948ad72" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>friend class</type>
@@ -265,7 +265,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/parallel_manager.hpp" line="134" column="1" bodyfile="ROCm_Libraries/rocALUTION/src/base/parallel_manager.hpp" bodystart="141" bodyend="-1"/>
+        <location file="/home/tcs/rocALUTION/src/base/parallel_manager.hpp" line="134" column="1" bodyfile="/home/tcs/rocALUTION/src/base/parallel_manager.hpp" bodystart="141" bodyend="-1"/>
       </memberdef>
       <memberdef kind="friend" id="classrocalution_1_1_parallel_manager_1a08b41ccc0cebc4101b3d918f3daaa63a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>friend class</type>
@@ -278,7 +278,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/parallel_manager.hpp" line="134" column="1" bodyfile="ROCm_Libraries/rocALUTION/src/base/parallel_manager.hpp" bodystart="142" bodyend="-1"/>
+        <location file="/home/tcs/rocALUTION/src/base/parallel_manager.hpp" line="134" column="1" bodyfile="/home/tcs/rocALUTION/src/base/parallel_manager.hpp" bodystart="142" bodyend="-1"/>
       </memberdef>
       <memberdef kind="friend" id="classrocalution_1_1_parallel_manager_1a72f3bcf960ff3bbf7ee1b6d74188f6b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>friend class</type>
@@ -291,7 +291,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/parallel_manager.hpp" line="134" column="1" bodyfile="ROCm_Libraries/rocALUTION/src/base/parallel_manager.hpp" bodystart="143" bodyend="-1"/>
+        <location file="/home/tcs/rocALUTION/src/base/parallel_manager.hpp" line="134" column="1" bodyfile="/home/tcs/rocALUTION/src/base/parallel_manager.hpp" bodystart="143" bodyend="-1"/>
       </memberdef>
       <memberdef kind="friend" id="classrocalution_1_1_parallel_manager_1a7db0f2130f9b62f4fa005ed150e5db2c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>friend class</type>
@@ -304,7 +304,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/parallel_manager.hpp" line="134" column="1" bodyfile="ROCm_Libraries/rocALUTION/src/base/parallel_manager.hpp" bodystart="144" bodyend="-1"/>
+        <location file="/home/tcs/rocALUTION/src/base/parallel_manager.hpp" line="134" column="1" bodyfile="/home/tcs/rocALUTION/src/base/parallel_manager.hpp" bodystart="144" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -319,7 +319,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/parallel_manager.hpp" line="52" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/parallel_manager.hpp" line="52" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_parallel_manager_1a52203daa37007acaf57fe708147511a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -332,7 +332,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/parallel_manager.hpp" line="53" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/parallel_manager.hpp" line="53" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_parallel_manager_1aefdb9831f66c0ca18532e47b2c5246a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -349,7 +349,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/parallel_manager.hpp" line="56" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/parallel_manager.hpp" line="56" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_parallel_manager_1a8a0136bfba7b4cee5d17b1f1e1aab580" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -365,7 +365,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/parallel_manager.hpp" line="58" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/parallel_manager.hpp" line="58" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_parallel_manager_1a686ba88f36cbfb8537e40270a57a9f60" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>IndexType2</type>
@@ -381,7 +381,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/parallel_manager.hpp" line="61" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/parallel_manager.hpp" line="61" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_parallel_manager_1a5ab207c389a3342e8a9d4bccd6df0a27" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -397,7 +397,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/parallel_manager.hpp" line="63" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/parallel_manager.hpp" line="63" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_parallel_manager_1a601ceb971f16e0f44351f0953bd403c5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -413,7 +413,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/parallel_manager.hpp" line="66" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/parallel_manager.hpp" line="66" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_parallel_manager_1a79f4ba4c2f552fbb5355bca1e11858ca" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -429,7 +429,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/parallel_manager.hpp" line="68" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/parallel_manager.hpp" line="68" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_parallel_manager_1a504931964a2b65a5cac1f7acc08bd5b1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -445,7 +445,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/parallel_manager.hpp" line="70" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/parallel_manager.hpp" line="70" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_parallel_manager_1ab0e344d56f2b46daef9e26c81468803e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -462,7 +462,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/parallel_manager.hpp" line="73" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/parallel_manager.hpp" line="73" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_parallel_manager_1acb4593542cf35bb0ae204431cc0512de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -479,7 +479,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/parallel_manager.hpp" line="75" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/parallel_manager.hpp" line="75" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_parallel_manager_1a9482ad4c25b1594393cb8d85a9bb71e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -500,7 +500,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/parallel_manager.hpp" line="78" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/parallel_manager.hpp" line="78" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_parallel_manager_1a0fc6bd3785eb225288323b8ab688b945" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -525,7 +525,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/parallel_manager.hpp" line="84" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/parallel_manager.hpp" line="84" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_parallel_manager_1abcf826d069bc9006fea0a2da87cc4165" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -550,7 +550,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/parallel_manager.hpp" line="90" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/parallel_manager.hpp" line="90" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_parallel_manager_1a0e903a81bec91b1b93535cf31f6ebe27" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -575,7 +575,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/parallel_manager.hpp" line="93" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/parallel_manager.hpp" line="93" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_parallel_manager_1a97530fd3bf6d9a82162636bab39d2894" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -600,7 +600,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/parallel_manager.hpp" line="95" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/parallel_manager.hpp" line="95" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_parallel_manager_1a33a713fa35d63e581ec464fe175d3776" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -616,7 +616,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/parallel_manager.hpp" line="98" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/parallel_manager.hpp" line="98" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_parallel_manager_1a159317f7d0b72501de8c452ad07286e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -633,7 +633,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/parallel_manager.hpp" line="101" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/parallel_manager.hpp" line="101" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_parallel_manager_1af0b697c6a34544b3091c909def74eb9c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -650,7 +650,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/parallel_manager.hpp" line="103" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/parallel_manager.hpp" line="103" column="1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -658,28 +658,28 @@
     <detaileddescription>
 <para>The parallel manager class handles the communication and the mapping of the global operators. Each global operator and vector need to be initialized with a valid parallel manager in order to perform any operation. For many distributed simulations, the underlying operator is already distributed. This information need to be passed to the parallel manager. </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="79">
+      <node id="568">
         <label>rocalution::RocalutionObj</label>
       </node>
-      <node id="78">
+      <node id="567">
         <label>rocalution::ParallelManager</label>
         <link refid="classrocalution_1_1_parallel_manager"/>
-        <childnode refid="79" relation="public-inheritance">
+        <childnode refid="568" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="81">
+      <node id="570">
         <label>rocalution::RocalutionObj</label>
       </node>
-      <node id="80">
+      <node id="569">
         <label>rocalution::ParallelManager</label>
         <link refid="classrocalution_1_1_parallel_manager"/>
-        <childnode refid="81" relation="public-inheritance">
+        <childnode refid="570" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="ROCm_Libraries/rocALUTION/src/base/parallel_manager.hpp" line="50" column="1" bodyfile="ROCm_Libraries/rocALUTION/src/base/parallel_manager.hpp" bodystart="49" bodyend="145"/>
+    <location file="/home/tcs/rocALUTION/src/base/parallel_manager.hpp" line="50" column="1" bodyfile="/home/tcs/rocALUTION/src/base/parallel_manager.hpp" bodystart="49" bodyend="145"/>
     <listofallmembers>
       <member refid="classrocalution_1_1_parallel_manager_1ab7a1acb6ea0dac9a363297261996a567" prot="private" virt="non-virtual"><scope>rocalution::ParallelManager</scope><name>boundary_index_</name></member>
       <member refid="classrocalution_1_1_parallel_manager_1a8a0136bfba7b4cee5d17b1f1e1aab580" prot="public" virt="non-virtual"><scope>rocalution::ParallelManager</scope><name>Clear</name></member>

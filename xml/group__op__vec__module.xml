@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group__op__vec__module" kind="group">
+    <compoundname>op_vec_module</compoundname>
+    <title>Operators and Vectors Module</title>
+    <innerclass refid="classrocalution_1_1_operator" prot="public">rocalution::Operator</innerclass>
+    <innerclass refid="classrocalution_1_1_vector" prot="public">rocalution::Vector</innerclass>
+    <innerclass refid="classrocalution_1_1_local_vector" prot="public">rocalution::LocalVector</innerclass>
+    <innerclass refid="classrocalution_1_1_global_vector" prot="public">rocalution::GlobalVector</innerclass>
+    <innerclass refid="classrocalution_1_1_local_matrix" prot="public">rocalution::LocalMatrix</innerclass>
+    <innerclass refid="classrocalution_1_1_global_matrix" prot="public">rocalution::GlobalMatrix</innerclass>
+    <innerclass refid="classrocalution_1_1_local_stencil" prot="public">rocalution::LocalStencil</innerclass>
+    <briefdescription>
+<para>This module contains all operators and vectors. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

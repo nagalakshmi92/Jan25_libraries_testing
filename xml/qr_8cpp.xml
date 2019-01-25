@@ -3,149 +3,164 @@
   <compounddef id="qr_8cpp" kind="file" language="C++">
     <compoundname>qr.cpp</compoundname>
     <includes local="yes">../../utils/def.hpp</includes>
-    <includes local="yes">qr.hpp</includes>
-    <includes local="yes">/home/tcs/Jan24/Jan24_libraries_testing/ROCm_Libraries/rocALUTION/src/solvers/solver.hpp</includes>
+    <includes refid="qr_8hpp" local="yes">qr.hpp</includes>
     <includes refid="local__matrix_8hpp" local="yes">../../base/local_matrix.hpp</includes>
     <includes refid="local__vector_8hpp" local="yes">../../base/local_vector.hpp</includes>
     <includes local="yes">../../utils/log.hpp</includes>
     <includes local="no">math.h</includes>
     <includes local="no">complex</includes>
     <incdepgraph>
-      <node id="244">
-        <label>backend_manager.hpp</label>
-        <link refid="backend__manager_8hpp_source"/>
-        <childnode refid="245" relation="include">
+      <node id="427">
+        <label>/home/tcs/rocALUTION/src/solvers/direct/qr.cpp</label>
+        <link refid="qr_8cpp"/>
+        <childnode refid="428" relation="include">
         </childnode>
-        <childnode refid="246" relation="include">
+        <childnode refid="429" relation="include">
         </childnode>
-        <childnode refid="247" relation="include">
+        <childnode refid="444" relation="include">
         </childnode>
-        <childnode refid="248" relation="include">
+        <childnode refid="440" relation="include">
         </childnode>
-        <childnode refid="249" relation="include">
+        <childnode refid="447" relation="include">
         </childnode>
-      </node>
-      <node id="242">
-        <label>operator.hpp</label>
-        <link refid="operator_8hpp_source"/>
-        <childnode refid="241" relation="include">
+        <childnode refid="448" relation="include">
         </childnode>
-        <childnode refid="243" relation="include">
-        </childnode>
-        <childnode refid="245" relation="include">
-        </childnode>
-        <childnode refid="249" relation="include">
-        </childnode>
-        <childnode refid="251" relation="include">
+        <childnode refid="439" relation="include">
         </childnode>
       </node>
-      <node id="249">
-        <label>string</label>
-      </node>
-      <node id="247">
-        <label>map</label>
-      </node>
-      <node id="246">
-        <label>fstream</label>
-      </node>
-      <node id="252">
-        <label>matrix_formats.hpp</label>
-      </node>
-      <node id="253">
-        <label>../../base/local_vector.hpp</label>
+      <node id="440">
+        <label>../base/local_vector.hpp</label>
         <link refid="local__vector_8hpp_source"/>
-        <childnode refid="241" relation="include">
+        <childnode refid="441" relation="include">
         </childnode>
-        <childnode refid="254" relation="include">
-        </childnode>
-      </node>
-      <node id="243">
-        <label>base_rocalution.hpp</label>
-        <link refid="base__rocalution_8hpp_source"/>
-        <childnode refid="244" relation="include">
-        </childnode>
-        <childnode refid="250" relation="include">
-        </childnode>
-        <childnode refid="248" relation="include">
+        <childnode refid="442" relation="include">
         </childnode>
       </node>
-      <node id="240">
-        <label>../../base/local_matrix.hpp</label>
-        <link refid="local__matrix_8hpp_source"/>
-        <childnode refid="241" relation="include">
-        </childnode>
-        <childnode refid="242" relation="include">
-        </childnode>
-        <childnode refid="244" relation="include">
-        </childnode>
-        <childnode refid="252" relation="include">
-        </childnode>
-        <childnode refid="249" relation="include">
-        </childnode>
-      </node>
-      <node id="241">
-        <label>../utils/types.hpp</label>
-      </node>
-      <node id="248">
-        <label>vector</label>
-      </node>
-      <node id="237">
-        <label>../../utils/def.hpp</label>
-      </node>
-      <node id="238">
-        <label>qr.hpp</label>
-      </node>
-      <node id="255">
-        <label>../../utils/log.hpp</label>
-      </node>
-      <node id="256">
-        <label>math.h</label>
-      </node>
-      <node id="251">
-        <label>cstdlib</label>
-      </node>
-      <node id="245">
-        <label>iostream</label>
-      </node>
-      <node id="239">
-        <label>/home/tcs/Jan24/Jan24_libraries_testing/ROCm_Libraries/rocALUTION/src/solvers/solver.hpp</label>
-      </node>
-      <node id="254">
+      <node id="442">
         <label>vector.hpp</label>
         <link refid="vector_8hpp_source"/>
-        <childnode refid="241" relation="include">
+        <childnode refid="441" relation="include">
         </childnode>
-        <childnode refid="243" relation="include">
+        <childnode refid="434" relation="include">
         </childnode>
-        <childnode refid="245" relation="include">
+        <childnode refid="436" relation="include">
         </childnode>
-        <childnode refid="249" relation="include">
+        <childnode refid="433" relation="include">
         </childnode>
-        <childnode refid="251" relation="include">
-        </childnode>
-      </node>
-      <node id="236">
-        <label>ROCm_Libraries/rocALUTION/src/solvers/direct/qr.cpp</label>
-        <link refid="qr_8cpp"/>
-        <childnode refid="237" relation="include">
-        </childnode>
-        <childnode refid="238" relation="include">
-        </childnode>
-        <childnode refid="239" relation="include">
-        </childnode>
-        <childnode refid="240" relation="include">
-        </childnode>
-        <childnode refid="253" relation="include">
-        </childnode>
-        <childnode refid="255" relation="include">
-        </childnode>
-        <childnode refid="256" relation="include">
-        </childnode>
-        <childnode refid="250" relation="include">
+        <childnode refid="443" relation="include">
         </childnode>
       </node>
-      <node id="250">
+      <node id="445">
+        <label>operator.hpp</label>
+        <link refid="operator_8hpp_source"/>
+        <childnode refid="441" relation="include">
+        </childnode>
+        <childnode refid="434" relation="include">
+        </childnode>
+        <childnode refid="436" relation="include">
+        </childnode>
+        <childnode refid="433" relation="include">
+        </childnode>
+        <childnode refid="443" relation="include">
+        </childnode>
+      </node>
+      <node id="433">
+        <label>string</label>
+      </node>
+      <node id="429">
+        <label>qr.hpp</label>
+        <link refid="qr_8hpp_source"/>
+        <childnode refid="430" relation="include">
+        </childnode>
+      </node>
+      <node id="438">
+        <label>map</label>
+      </node>
+      <node id="430">
+        <label>../solver.hpp</label>
+        <link refid="solver_8hpp_source"/>
+        <childnode refid="431" relation="include">
+        </childnode>
+        <childnode refid="434" relation="include">
+        </childnode>
+        <childnode refid="440" relation="include">
+        </childnode>
+      </node>
+      <node id="437">
+        <label>fstream</label>
+      </node>
+      <node id="446">
+        <label>matrix_formats.hpp</label>
+      </node>
+      <node id="441">
+        <label>../utils/types.hpp</label>
+      </node>
+      <node id="434">
+        <label>../base/base_rocalution.hpp</label>
+        <link refid="base__rocalution_8hpp_source"/>
+        <childnode refid="435" relation="include">
+        </childnode>
+        <childnode refid="439" relation="include">
+        </childnode>
+        <childnode refid="432" relation="include">
+        </childnode>
+      </node>
+      <node id="432">
+        <label>vector</label>
+      </node>
+      <node id="428">
+        <label>../../utils/def.hpp</label>
+      </node>
+      <node id="447">
+        <label>../../utils/log.hpp</label>
+      </node>
+      <node id="448">
+        <label>math.h</label>
+      </node>
+      <node id="443">
+        <label>cstdlib</label>
+      </node>
+      <node id="436">
+        <label>iostream</label>
+      </node>
+      <node id="435">
+        <label>backend_manager.hpp</label>
+        <link refid="backend__manager_8hpp_source"/>
+        <childnode refid="436" relation="include">
+        </childnode>
+        <childnode refid="437" relation="include">
+        </childnode>
+        <childnode refid="438" relation="include">
+        </childnode>
+        <childnode refid="432" relation="include">
+        </childnode>
+        <childnode refid="433" relation="include">
+        </childnode>
+      </node>
+      <node id="431">
+        <label>iter_ctrl.hpp</label>
+        <link refid="iter__ctrl_8hpp_source"/>
+        <childnode refid="432" relation="include">
+        </childnode>
+        <childnode refid="433" relation="include">
+        </childnode>
+      </node>
+      <node id="439">
         <label>complex</label>
+      </node>
+      <node id="444">
+        <label>../../base/local_matrix.hpp</label>
+        <link refid="local__matrix_8hpp_source"/>
+        <childnode refid="441" relation="include">
+        </childnode>
+        <childnode refid="445" relation="include">
+        </childnode>
+        <childnode refid="435" relation="include">
+        </childnode>
+        <childnode refid="446" relation="include">
+        </childnode>
+        <childnode refid="433" relation="include">
+        </childnode>
       </node>
     </incdepgraph>
     <innernamespace refid="namespacerocalution">rocalution</innernamespace>
@@ -205,25 +220,25 @@
 <codeline lineno="49"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="50"><highlight class="normal"></highlight></codeline>
 <codeline lineno="51"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="52"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>QR&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::Print(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_q_r_1a31410f39a5167304e07975d68d5541fe" kindref="member">QR&lt;OperatorType, VectorType, ValueType&gt;::Print</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
 <codeline lineno="53"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
 <codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>LOG_INFO(</highlight><highlight class="stringliteral">&quot;QR<sp/>solver&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="55"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="56"><highlight class="normal"></highlight></codeline>
 <codeline lineno="57"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="58"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>QR&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::PrintStart_(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_q_r_1a94767d9051e83f31196f7201d644167c" kindref="member">QR&lt;OperatorType, VectorType, ValueType&gt;::PrintStart_</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
 <codeline lineno="59"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
 <codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>LOG_INFO(</highlight><highlight class="stringliteral">&quot;QR<sp/>direct<sp/>solver<sp/>starts&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="61"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="62"><highlight class="normal"></highlight></codeline>
 <codeline lineno="63"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="64"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>QR&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::PrintEnd_(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_q_r_1a26f486140f8621baf8a260deb8388bae" kindref="member">QR&lt;OperatorType, VectorType, ValueType&gt;::PrintEnd_</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
 <codeline lineno="65"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
 <codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>LOG_INFO(</highlight><highlight class="stringliteral">&quot;QR<sp/>ends&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="67"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="68"><highlight class="normal"></highlight></codeline>
 <codeline lineno="69"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="70"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>QR&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::Build(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_q_r_1aaf3b95c896cae46db1e2d4919f007a03" kindref="member">QR&lt;OperatorType, VectorType, ValueType&gt;::Build</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
 <codeline lineno="71"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>log_debug(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;QR::Build()&quot;</highlight><highlight class="normal">,<sp/>this-&gt;build_,<sp/></highlight><highlight class="stringliteral">&quot;<sp/>#*#<sp/>begin&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="73"><highlight class="normal"></highlight></codeline>
@@ -246,7 +261,7 @@
 <codeline lineno="90"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="91"><highlight class="normal"></highlight></codeline>
 <codeline lineno="92"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="93"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>QR&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::Clear(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_q_r_1a45fa4bb4ca9d6838bdf905ff67993dff" kindref="member">QR&lt;OperatorType, VectorType, ValueType&gt;::Clear</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
 <codeline lineno="94"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>log_debug(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;QR::Clear()&quot;</highlight><highlight class="normal">,<sp/>this-&gt;build_);</highlight></codeline>
 <codeline lineno="96"><highlight class="normal"></highlight></codeline>
@@ -258,7 +273,7 @@
 <codeline lineno="102"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="103"><highlight class="normal"></highlight></codeline>
 <codeline lineno="104"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="105"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>QR&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::MoveToHostLocalData_(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_q_r_1a94b13ef63445174bd57fd608209cba56" kindref="member">QR&lt;OperatorType, VectorType, ValueType&gt;::MoveToHostLocalData_</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
 <codeline lineno="106"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/>log_debug(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;QR::MoveToHostLocalData_()&quot;</highlight><highlight class="normal">,<sp/>this-&gt;build_);</highlight></codeline>
 <codeline lineno="108"><highlight class="normal"></highlight></codeline>
@@ -269,7 +284,7 @@
 <codeline lineno="113"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="114"><highlight class="normal"></highlight></codeline>
 <codeline lineno="115"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="116"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>QR&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::MoveToAcceleratorLocalData_(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_q_r_1a6cdd675d717963af8387bcb1fc17f8fa" kindref="member">QR&lt;OperatorType, VectorType, ValueType&gt;::MoveToAcceleratorLocalData_</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
 <codeline lineno="117"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/>log_debug(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;QR::MoveToAcceleratorLocalData_()&quot;</highlight><highlight class="normal">,<sp/>this-&gt;build_);</highlight></codeline>
 <codeline lineno="119"><highlight class="normal"></highlight></codeline>
@@ -280,7 +295,7 @@
 <codeline lineno="124"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="125"><highlight class="normal"></highlight></codeline>
 <codeline lineno="126"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="127"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>QR&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::Solve_(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>VectorType&amp;<sp/>rhs,<sp/>VectorType*<sp/>x)</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_q_r_1ab7b665e9dff538407f30bd3dc4b2e8b2" kindref="member">QR&lt;OperatorType, VectorType, ValueType&gt;::Solve_</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>VectorType&amp;<sp/>rhs,<sp/>VectorType*<sp/>x)</highlight></codeline>
 <codeline lineno="128"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/>log_debug(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;QR::Solve_()&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;<sp/>#*#<sp/>begin&quot;</highlight><highlight class="normal">,<sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*&amp;)rhs,<sp/>x);</highlight></codeline>
 <codeline lineno="130"><highlight class="normal"></highlight></codeline>
@@ -306,6 +321,6 @@
 <codeline lineno="150"><highlight class="normal"></highlight></codeline>
 <codeline lineno="151"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>rocalution</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
-    <location file="ROCm_Libraries/rocALUTION/src/solvers/direct/qr.cpp"/>
+    <location file="/home/tcs/rocALUTION/src/solvers/direct/qr.cpp"/>
   </compounddef>
 </doxygen>

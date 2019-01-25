@@ -5,121 +5,121 @@
     <includes local="yes">../utils/types.hpp</includes>
     <includes refid="operator_8hpp" local="yes">operator.hpp</includes>
     <includes refid="parallel__manager_8hpp" local="yes">parallel_manager.hpp</includes>
-    <includedby refid="chebyshev_8cpp" local="yes">ROCm_Libraries/rocALUTION/src/solvers/chebyshev.cpp</includedby>
-    <includedby refid="bicgstab_8cpp" local="yes">ROCm_Libraries/rocALUTION/src/solvers/krylov/bicgstab.cpp</includedby>
-    <includedby refid="bicgstabl_8cpp" local="yes">ROCm_Libraries/rocALUTION/src/solvers/krylov/bicgstabl.cpp</includedby>
-    <includedby refid="cg_8cpp" local="yes">ROCm_Libraries/rocALUTION/src/solvers/krylov/cg.cpp</includedby>
-    <includedby refid="cr_8cpp" local="yes">ROCm_Libraries/rocALUTION/src/solvers/krylov/cr.cpp</includedby>
-    <includedby refid="fcg_8cpp" local="yes">ROCm_Libraries/rocALUTION/src/solvers/krylov/fcg.cpp</includedby>
-    <includedby refid="fgmres_8cpp" local="yes">ROCm_Libraries/rocALUTION/src/solvers/krylov/fgmres.cpp</includedby>
-    <includedby refid="gmres_8cpp" local="yes">ROCm_Libraries/rocALUTION/src/solvers/krylov/gmres.cpp</includedby>
-    <includedby refid="idr_8cpp" local="yes">ROCm_Libraries/rocALUTION/src/solvers/krylov/idr.cpp</includedby>
-    <includedby refid="qmrcgstab_8cpp" local="yes">ROCm_Libraries/rocALUTION/src/solvers/krylov/qmrcgstab.cpp</includedby>
-    <includedby refid="base__amg_8cpp" local="yes">ROCm_Libraries/rocALUTION/src/solvers/multigrid/base_amg.cpp</includedby>
-    <includedby refid="base__multigrid_8cpp" local="yes">ROCm_Libraries/rocALUTION/src/solvers/multigrid/base_multigrid.cpp</includedby>
-    <includedby refid="global__pairwise__amg_8cpp" local="yes">ROCm_Libraries/rocALUTION/src/solvers/multigrid/global_pairwise_amg.cpp</includedby>
-    <includedby refid="multigrid_8cpp" local="yes">ROCm_Libraries/rocALUTION/src/solvers/multigrid/multigrid.cpp</includedby>
-    <includedby refid="preconditioner_8cpp" local="yes">ROCm_Libraries/rocALUTION/src/solvers/preconditioners/preconditioner.cpp</includedby>
-    <includedby refid="preconditioner__blockjacobi_8cpp" local="yes">ROCm_Libraries/rocALUTION/src/solvers/preconditioners/preconditioner_blockjacobi.cpp</includedby>
-    <includedby refid="solver_8cpp" local="yes">ROCm_Libraries/rocALUTION/src/solvers/solver.cpp</includedby>
+    <includedby refid="chebyshev_8cpp" local="yes">/home/tcs/rocALUTION/src/solvers/chebyshev.cpp</includedby>
+    <includedby refid="bicgstab_8cpp" local="yes">/home/tcs/rocALUTION/src/solvers/krylov/bicgstab.cpp</includedby>
+    <includedby refid="bicgstabl_8cpp" local="yes">/home/tcs/rocALUTION/src/solvers/krylov/bicgstabl.cpp</includedby>
+    <includedby refid="cg_8cpp" local="yes">/home/tcs/rocALUTION/src/solvers/krylov/cg.cpp</includedby>
+    <includedby refid="cr_8cpp" local="yes">/home/tcs/rocALUTION/src/solvers/krylov/cr.cpp</includedby>
+    <includedby refid="fcg_8cpp" local="yes">/home/tcs/rocALUTION/src/solvers/krylov/fcg.cpp</includedby>
+    <includedby refid="fgmres_8cpp" local="yes">/home/tcs/rocALUTION/src/solvers/krylov/fgmres.cpp</includedby>
+    <includedby refid="gmres_8cpp" local="yes">/home/tcs/rocALUTION/src/solvers/krylov/gmres.cpp</includedby>
+    <includedby refid="idr_8cpp" local="yes">/home/tcs/rocALUTION/src/solvers/krylov/idr.cpp</includedby>
+    <includedby refid="qmrcgstab_8cpp" local="yes">/home/tcs/rocALUTION/src/solvers/krylov/qmrcgstab.cpp</includedby>
+    <includedby refid="base__amg_8cpp" local="yes">/home/tcs/rocALUTION/src/solvers/multigrid/base_amg.cpp</includedby>
+    <includedby refid="base__multigrid_8cpp" local="yes">/home/tcs/rocALUTION/src/solvers/multigrid/base_multigrid.cpp</includedby>
+    <includedby refid="global__pairwise__amg_8cpp" local="yes">/home/tcs/rocALUTION/src/solvers/multigrid/global_pairwise_amg.cpp</includedby>
+    <includedby refid="multigrid_8cpp" local="yes">/home/tcs/rocALUTION/src/solvers/multigrid/multigrid.cpp</includedby>
+    <includedby refid="preconditioner_8cpp" local="yes">/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner.cpp</includedby>
+    <includedby refid="preconditioner__blockjacobi_8cpp" local="yes">/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_blockjacobi.cpp</includedby>
+    <includedby refid="solver_8cpp" local="yes">/home/tcs/rocALUTION/src/solvers/solver.cpp</includedby>
     <incdepgraph>
-      <node id="48">
+      <node id="116">
         <label>limits</label>
       </node>
-      <node id="45">
-        <label>parallel_manager.hpp</label>
-        <link refid="parallel__manager_8hpp_source"/>
-        <childnode refid="36" relation="include">
-        </childnode>
-        <childnode refid="34" relation="include">
-        </childnode>
-        <childnode refid="46" relation="include">
-        </childnode>
-        <childnode refid="47" relation="include">
-        </childnode>
-        <childnode refid="48" relation="include">
-        </childnode>
-        <childnode refid="42" relation="include">
-        </childnode>
-        <childnode refid="43" relation="include">
-        </childnode>
-      </node>
-      <node id="47">
+      <node id="115">
         <label>assert.h</label>
       </node>
-      <node id="37">
-        <label>backend_manager.hpp</label>
-        <link refid="backend__manager_8hpp_source"/>
-        <childnode refid="38" relation="include">
+      <node id="113">
+        <label>parallel_manager.hpp</label>
+        <link refid="parallel__manager_8hpp_source"/>
+        <childnode refid="104" relation="include">
         </childnode>
-        <childnode refid="39" relation="include">
+        <childnode refid="102" relation="include">
         </childnode>
-        <childnode refid="40" relation="include">
+        <childnode refid="114" relation="include">
         </childnode>
-        <childnode refid="41" relation="include">
+        <childnode refid="115" relation="include">
         </childnode>
-        <childnode refid="42" relation="include">
+        <childnode refid="116" relation="include">
+        </childnode>
+        <childnode refid="110" relation="include">
+        </childnode>
+        <childnode refid="111" relation="include">
         </childnode>
       </node>
-      <node id="35">
+      <node id="103">
         <label>operator.hpp</label>
         <link refid="operator_8hpp_source"/>
-        <childnode refid="34" relation="include">
+        <childnode refid="102" relation="include">
         </childnode>
-        <childnode refid="36" relation="include">
+        <childnode refid="104" relation="include">
         </childnode>
-        <childnode refid="38" relation="include">
+        <childnode refid="106" relation="include">
         </childnode>
-        <childnode refid="42" relation="include">
+        <childnode refid="110" relation="include">
         </childnode>
-        <childnode refid="44" relation="include">
+        <childnode refid="112" relation="include">
         </childnode>
       </node>
-      <node id="42">
+      <node id="114">
+        <label>/home/tcs/rocALUTION/src/utils/def.hpp</label>
+      </node>
+      <node id="110">
         <label>string</label>
       </node>
-      <node id="40">
+      <node id="108">
         <label>map</label>
       </node>
-      <node id="46">
-        <label>/home/tcs/Jan24/Jan24_libraries_testing/ROCm_Libraries/rocALUTION/src/utils/def.hpp</label>
+      <node id="101">
+        <label>/home/tcs/rocALUTION/src/base/global_matrix.hpp</label>
+        <link refid="global__matrix_8hpp"/>
+        <childnode refid="102" relation="include">
+        </childnode>
+        <childnode refid="103" relation="include">
+        </childnode>
+        <childnode refid="113" relation="include">
+        </childnode>
       </node>
-      <node id="39">
+      <node id="107">
         <label>fstream</label>
       </node>
-      <node id="33">
-        <label>ROCm_Libraries/rocALUTION/src/base/global_matrix.hpp</label>
-        <link refid="global__matrix_8hpp"/>
-        <childnode refid="34" relation="include">
-        </childnode>
-        <childnode refid="35" relation="include">
-        </childnode>
-        <childnode refid="45" relation="include">
-        </childnode>
-      </node>
-      <node id="36">
-        <label>base_rocalution.hpp</label>
-        <link refid="base__rocalution_8hpp_source"/>
-        <childnode refid="37" relation="include">
-        </childnode>
-        <childnode refid="43" relation="include">
-        </childnode>
-        <childnode refid="41" relation="include">
-        </childnode>
-      </node>
-      <node id="34">
+      <node id="102">
         <label>../utils/types.hpp</label>
       </node>
-      <node id="41">
+      <node id="104">
+        <label>base_rocalution.hpp</label>
+        <link refid="base__rocalution_8hpp_source"/>
+        <childnode refid="105" relation="include">
+        </childnode>
+        <childnode refid="111" relation="include">
+        </childnode>
+        <childnode refid="109" relation="include">
+        </childnode>
+      </node>
+      <node id="109">
         <label>vector</label>
       </node>
-      <node id="44">
+      <node id="112">
         <label>cstdlib</label>
       </node>
-      <node id="38">
+      <node id="106">
         <label>iostream</label>
       </node>
-      <node id="43">
+      <node id="105">
+        <label>backend_manager.hpp</label>
+        <link refid="backend__manager_8hpp_source"/>
+        <childnode refid="106" relation="include">
+        </childnode>
+        <childnode refid="107" relation="include">
+        </childnode>
+        <childnode refid="108" relation="include">
+        </childnode>
+        <childnode refid="109" relation="include">
+        </childnode>
+        <childnode refid="110" relation="include">
+        </childnode>
+      </node>
+      <node id="111">
         <label>complex</label>
       </node>
     </incdepgraph>
@@ -320,6 +320,6 @@
 <codeline lineno="241"><highlight class="normal"></highlight></codeline>
 <codeline lineno="242"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>ROCALUTION_GLOBAL_MATRIX_HPP_</highlight></codeline>
     </programlisting>
-    <location file="ROCm_Libraries/rocALUTION/src/base/global_matrix.hpp"/>
+    <location file="/home/tcs/rocALUTION/src/base/global_matrix.hpp"/>
   </compounddef>
 </doxygen>

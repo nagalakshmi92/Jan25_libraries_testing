@@ -1,0 +1,354 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classrocalution_1_1_variable_preconditioner" kind="class" language="C++" prot="public">
+    <compoundname>rocalution::VariablePreconditioner</compoundname>
+    <basecompoundref refid="classrocalution_1_1_preconditioner" prot="public" virt="non-virtual">rocalution::Preconditioner&lt; OperatorType, VectorType, ValueType &gt;</basecompoundref>
+    <includes refid="preconditioner_8hpp" local="no">preconditioner.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>class OperatorType</type>
+      </param>
+      <param>
+        <type>class VectorType</type>
+      </param>
+      <param>
+        <type>typename ValueType</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classrocalution_1_1_variable_preconditioner_1a8dbde3175aa80f1f23546898c3cf0243" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int rocalution::VariablePreconditioner&lt; OperatorType, VectorType, ValueType &gt;::num_precond_</definition>
+        <argsstring></argsstring>
+        <name>num_precond_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner.hpp" line="322" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner.hpp" bodystart="322" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrocalution_1_1_variable_preconditioner_1aa7a3e9365b4fb75b64ac5f11cd3ed594" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int rocalution::VariablePreconditioner&lt; OperatorType, VectorType, ValueType &gt;::counter_</definition>
+        <argsstring></argsstring>
+        <name>counter_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner.hpp" line="323" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner.hpp" bodystart="323" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrocalution_1_1_variable_preconditioner_1abcc40b9c8e41b779b0aefbc6e75bec50" prot="private" static="no" mutable="no">
+        <type><ref refid="classrocalution_1_1_solver" kindref="compound">Solver</ref>&lt; OperatorType, VectorType, ValueType &gt; **</type>
+        <definition>Solver&lt;OperatorType, VectorType, ValueType&gt;** rocalution::VariablePreconditioner&lt; OperatorType, VectorType, ValueType &gt;::precond_</definition>
+        <argsstring></argsstring>
+        <name>precond_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner.hpp" line="324" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner.hpp" bodystart="324" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classrocalution_1_1_variable_preconditioner_1aa4ae357bff10bf2114ccba4e1b19c707" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>rocalution::VariablePreconditioner&lt; OperatorType, VectorType, ValueType &gt;::VariablePreconditioner</definition>
+        <argsstring>()</argsstring>
+        <name>VariablePreconditioner</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner.hpp" line="306" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner.cpp" bodystart="705" bodyend="712"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_variable_preconditioner_1a3e50883c655f70374db639756f602588" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>rocalution::VariablePreconditioner&lt; OperatorType, VectorType, ValueType &gt;::~VariablePreconditioner</definition>
+        <argsstring>()</argsstring>
+        <name>~VariablePreconditioner</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner.hpp" line="307" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner.cpp" bodystart="715" bodyend="720"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_variable_preconditioner_1a5785b7067df5d14da1baadb238a93877" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void rocalution::VariablePreconditioner&lt; OperatorType, VectorType, ValueType &gt;::Print</definition>
+        <argsstring>(void) const</argsstring>
+        <name>Print</name>
+        <reimplements refid="classrocalution_1_1_solver_1a57992cfc687f3bf260964ad2fc19c467">Print</reimplements>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Print information about the solver. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner.hpp" line="309" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner.cpp" bodystart="723" bodyend="737"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_variable_preconditioner_1af5edf6dd914d4c4e62834f086582d555" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void rocalution::VariablePreconditioner&lt; OperatorType, VectorType, ValueType &gt;::Solve</definition>
+        <argsstring>(const VectorType &amp;rhs, VectorType *x)</argsstring>
+        <name>Solve</name>
+        <reimplements refid="classrocalution_1_1_solver_1a69025eb1d2bc7f1266899c2739c82725">Solve</reimplements>
+        <param>
+          <type>const VectorType &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <param>
+          <type>VectorType *</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+<para>Solve <ref refid="classrocalution_1_1_operator" kindref="compound">Operator</ref> x = rhs. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner.hpp" line="310" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner.cpp" bodystart="807" bodyend="825"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_variable_preconditioner_1a5afbdaa5b1460137900df2c84fe3591c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void rocalution::VariablePreconditioner&lt; OperatorType, VectorType, ValueType &gt;::Build</definition>
+        <argsstring>(void)</argsstring>
+        <name>Build</name>
+        <reimplements refid="classrocalution_1_1_solver_1a84754d7422ad3fb35c17c61f0a609c7a">Build</reimplements>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Build the solver (data allocation, structure and numerical computation) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner.hpp" line="311" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner.cpp" bodystart="757" bodyend="782"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_variable_preconditioner_1a50a3887b4ab076eaa780e1f75ee4d857" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void rocalution::VariablePreconditioner&lt; OperatorType, VectorType, ValueType &gt;::Clear</definition>
+        <argsstring>(void)</argsstring>
+        <name>Clear</name>
+        <reimplements refid="classrocalution_1_1_solver_1aa8839d3ba527d75fedd29fdbe9bd651f">Clear</reimplements>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Clear (free all local data) the solver. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner.hpp" line="312" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner.cpp" bodystart="785" bodyend="804"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_variable_preconditioner_1aca967cd3b1365901ff36b56df9be1319" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void rocalution::VariablePreconditioner&lt; OperatorType, VectorType, ValueType &gt;::SetPreconditioner</definition>
+        <argsstring>(int n, Solver&lt; OperatorType, VectorType, ValueType &gt; **precond)</argsstring>
+        <name>SetPreconditioner</name>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type><ref refid="classrocalution_1_1_solver" kindref="compound">Solver</ref>&lt; OperatorType, VectorType, ValueType &gt; **</type>
+          <declname>precond</declname>
+        </param>
+        <briefdescription>
+<para>Set the preconditioner sequence. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner.hpp" line="315" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner.cpp" bodystart="740" bodyend="754"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classrocalution_1_1_variable_preconditioner_1a7945630187fb9422324072c0b174dd66" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void rocalution::VariablePreconditioner&lt; OperatorType, VectorType, ValueType &gt;::MoveToHostLocalData_</definition>
+        <argsstring>(void)</argsstring>
+        <name>MoveToHostLocalData_</name>
+        <reimplements refid="classrocalution_1_1_solver_1aa1e8be1bd2107543c7390a81f8cee8cb">MoveToHostLocalData_</reimplements>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Move all local data to the host. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner.hpp" line="318" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner.cpp" bodystart="828" bodyend="842"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_variable_preconditioner_1a0ed152885be7001a1d86454ff8ece808" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void rocalution::VariablePreconditioner&lt; OperatorType, VectorType, ValueType &gt;::MoveToAcceleratorLocalData_</definition>
+        <argsstring>(void)</argsstring>
+        <name>MoveToAcceleratorLocalData_</name>
+        <reimplements refid="classrocalution_1_1_solver_1a8ce29de0bdda9f35a6a687fd06ac9b11">MoveToAcceleratorLocalData_</reimplements>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Move all local data to the accelerator. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner.hpp" line="319" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner.cpp" bodystart="845" bodyend="859"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Variable <ref refid="classrocalution_1_1_preconditioner" kindref="compound">Preconditioner</ref>. </para>    </briefdescription>
+    <detaileddescription>
+<para>The Variable <ref refid="classrocalution_1_1_preconditioner" kindref="compound">Preconditioner</ref> can hold a selection of preconditioners. Thus, any type of preconditioners can be combined. As example, the variable preconditioner can combine <ref refid="classrocalution_1_1_jacobi" kindref="compound">Jacobi</ref>, <ref refid="classrocalution_1_1_g_s" kindref="compound">GS</ref> and <ref refid="classrocalution_1_1_i_l_u" kindref="compound">ILU</ref> – then, the first iteration of the iterative solver will apply <ref refid="classrocalution_1_1_jacobi" kindref="compound">Jacobi</ref>, the second iteration will apply <ref refid="classrocalution_1_1_g_s" kindref="compound">GS</ref> and the third iteration will apply <ref refid="classrocalution_1_1_i_l_u" kindref="compound">ILU</ref>. After that, the solver will start again with <ref refid="classrocalution_1_1_jacobi" kindref="compound">Jacobi</ref>, <ref refid="classrocalution_1_1_g_s" kindref="compound">GS</ref>, <ref refid="classrocalution_1_1_i_l_u" kindref="compound">ILU</ref>.</para><para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>OperatorType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- can be <ref refid="classrocalution_1_1_local_matrix" kindref="compound">LocalMatrix</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>VectorType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- can be <ref refid="classrocalution_1_1_local_vector" kindref="compound">LocalVector</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ValueType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- can be float, double, std::complex&lt;float&gt; or std::complex&lt;double&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="847">
+        <label>rocalution::Preconditioner&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_preconditioner"/>
+        <childnode refid="848" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="848">
+        <label>rocalution::Solver&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_solver"/>
+        <childnode refid="849" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="849">
+        <label>rocalution::RocalutionObj</label>
+      </node>
+      <node id="846">
+        <label>rocalution::VariablePreconditioner&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_variable_preconditioner"/>
+        <childnode refid="847" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="855">
+        <label>rocalution::Vector&lt; int &gt;</label>
+        <link refid="classrocalution_1_1_vector"/>
+        <childnode refid="856" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="856">
+        <label>rocalution::BaseRocalution&lt; ValueType &gt;</label>
+        <link refid="classrocalution_1_1_base_rocalution"/>
+        <childnode refid="853" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="851">
+        <label>rocalution::Preconditioner&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_preconditioner"/>
+        <childnode refid="852" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="852">
+        <label>rocalution::Solver&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_solver"/>
+        <childnode refid="853" relation="public-inheritance">
+        </childnode>
+        <childnode refid="854" relation="usage">
+          <edgelabel>permutation_</edgelabel>
+        </childnode>
+        <childnode refid="857" relation="usage">
+          <edgelabel>op_</edgelabel>
+        </childnode>
+      </node>
+      <node id="854">
+        <label>rocalution::LocalVector&lt; int &gt;</label>
+        <link refid="classrocalution_1_1_local_vector"/>
+        <childnode refid="855" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="853">
+        <label>rocalution::RocalutionObj</label>
+      </node>
+      <node id="857">
+        <label>OperatorType</label>
+      </node>
+      <node id="850">
+        <label>rocalution::VariablePreconditioner&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_variable_preconditioner"/>
+        <childnode refid="851" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner.hpp" line="304" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner.hpp" bodystart="303" bodyend="325"/>
+    <listofallmembers>
+      <member refid="classrocalution_1_1_variable_preconditioner_1a5afbdaa5b1460137900df2c84fe3591c" prot="public" virt="virtual"><scope>rocalution::VariablePreconditioner</scope><name>Build</name></member>
+      <member refid="classrocalution_1_1_solver_1a64924a0c87d60d2e4bf9fa295d0152cb" prot="protected" virt="non-virtual"><scope>rocalution::VariablePreconditioner</scope><name>build_</name></member>
+      <member refid="classrocalution_1_1_solver_1a0d11ee9943f785db285f0ef5c08c64eb" prot="public" virt="virtual"><scope>rocalution::VariablePreconditioner</scope><name>BuildMoveToAcceleratorAsync</name></member>
+      <member refid="classrocalution_1_1_variable_preconditioner_1a50a3887b4ab076eaa780e1f75ee4d857" prot="public" virt="virtual"><scope>rocalution::VariablePreconditioner</scope><name>Clear</name></member>
+      <member refid="classrocalution_1_1_variable_preconditioner_1aa7a3e9365b4fb75b64ac5f11cd3ed594" prot="private" virt="non-virtual"><scope>rocalution::VariablePreconditioner</scope><name>counter_</name></member>
+      <member refid="classrocalution_1_1_rocalution_obj_1a4bba5aeaf4fd705efc00402f1f6ed40b" prot="protected" virt="non-virtual"><scope>rocalution::VariablePreconditioner</scope><name>global_obj_id_</name></member>
+      <member refid="classrocalution_1_1_solver_1ab1b6410cd134c9ad00c1851d400cf0f8" prot="public" virt="virtual"><scope>rocalution::VariablePreconditioner</scope><name>MoveToAccelerator</name></member>
+      <member refid="classrocalution_1_1_variable_preconditioner_1a0ed152885be7001a1d86454ff8ece808" prot="protected" virt="virtual"><scope>rocalution::VariablePreconditioner</scope><name>MoveToAcceleratorLocalData_</name></member>
+      <member refid="classrocalution_1_1_solver_1a3c263e65898816f5838184c0af78a044" prot="public" virt="virtual"><scope>rocalution::VariablePreconditioner</scope><name>MoveToHost</name></member>
+      <member refid="classrocalution_1_1_variable_preconditioner_1a7945630187fb9422324072c0b174dd66" prot="protected" virt="virtual"><scope>rocalution::VariablePreconditioner</scope><name>MoveToHostLocalData_</name></member>
+      <member refid="classrocalution_1_1_variable_preconditioner_1a8dbde3175aa80f1f23546898c3cf0243" prot="private" virt="non-virtual"><scope>rocalution::VariablePreconditioner</scope><name>num_precond_</name></member>
+      <member refid="classrocalution_1_1_solver_1ad338b5f99cf339fb33218dd8b958cac4" prot="protected" virt="non-virtual"><scope>rocalution::VariablePreconditioner</scope><name>op_</name></member>
+      <member refid="classrocalution_1_1_solver_1ac46ab4d19fba48ece463666d37a7dc86" prot="protected" virt="non-virtual"><scope>rocalution::VariablePreconditioner</scope><name>permutation_</name></member>
+      <member refid="classrocalution_1_1_variable_preconditioner_1abcc40b9c8e41b779b0aefbc6e75bec50" prot="private" virt="non-virtual"><scope>rocalution::VariablePreconditioner</scope><name>precond_</name></member>
+      <member refid="classrocalution_1_1_preconditioner_1a964b8c3f97a675f8a098b7539d8a6600" prot="public" virt="non-virtual"><scope>rocalution::VariablePreconditioner</scope><name>Preconditioner</name></member>
+      <member refid="classrocalution_1_1_variable_preconditioner_1a5785b7067df5d14da1baadb238a93877" prot="public" virt="virtual"><scope>rocalution::VariablePreconditioner</scope><name>Print</name></member>
+      <member refid="classrocalution_1_1_preconditioner_1aa16516bd94c4e5a931ec3adad6b2081b" prot="protected" virt="virtual"><scope>rocalution::VariablePreconditioner</scope><name>PrintEnd_</name></member>
+      <member refid="classrocalution_1_1_preconditioner_1abf90b743371c8d0159a6cad44e8595f3" prot="protected" virt="virtual"><scope>rocalution::VariablePreconditioner</scope><name>PrintStart_</name></member>
+      <member refid="classrocalution_1_1_solver_1acd20a051f0560a77645e35361df8f87c" prot="public" virt="virtual"><scope>rocalution::VariablePreconditioner</scope><name>ReBuildNumeric</name></member>
+      <member refid="classrocalution_1_1_solver_1a91354c5c116742c58d9eb2094cc6a68e" prot="public" virt="virtual"><scope>rocalution::VariablePreconditioner</scope><name>ResetOperator</name></member>
+      <member refid="classrocalution_1_1_rocalution_obj_1ad60a8b2047aad74e488c552264fa7737" prot="public" virt="non-virtual"><scope>rocalution::VariablePreconditioner</scope><name>RocalutionObj</name></member>
+      <member refid="classrocalution_1_1_solver_1a12765b63efe75bc88406a8d6ebb5aacc" prot="public" virt="non-virtual"><scope>rocalution::VariablePreconditioner</scope><name>SetOperator</name></member>
+      <member refid="classrocalution_1_1_variable_preconditioner_1aca967cd3b1365901ff36b56df9be1319" prot="public" virt="virtual"><scope>rocalution::VariablePreconditioner</scope><name>SetPreconditioner</name></member>
+      <member refid="classrocalution_1_1_variable_preconditioner_1af5edf6dd914d4c4e62834f086582d555" prot="public" virt="virtual"><scope>rocalution::VariablePreconditioner</scope><name>Solve</name></member>
+      <member refid="classrocalution_1_1_solver_1a009956b05d4d5d1d38e4c24341b14a66" prot="public" virt="non-virtual"><scope>rocalution::VariablePreconditioner</scope><name>Solver</name></member>
+      <member refid="classrocalution_1_1_preconditioner_1a2d2f41ddc040d777783d2591c8324508" prot="public" virt="virtual"><scope>rocalution::VariablePreconditioner</scope><name>SolveZeroSol</name></member>
+      <member refid="classrocalution_1_1_solver_1a17c2830a0ede8d82d1336aa25da6f907" prot="public" virt="virtual"><scope>rocalution::VariablePreconditioner</scope><name>Sync</name></member>
+      <member refid="classrocalution_1_1_variable_preconditioner_1aa4ae357bff10bf2114ccba4e1b19c707" prot="public" virt="non-virtual"><scope>rocalution::VariablePreconditioner</scope><name>VariablePreconditioner</name></member>
+      <member refid="classrocalution_1_1_solver_1a2ee162346e0d52543f9d3d25fe70ea8a" prot="protected" virt="non-virtual"><scope>rocalution::VariablePreconditioner</scope><name>verb_</name></member>
+      <member refid="classrocalution_1_1_solver_1aa2ab9c17de96add5e3ad30e7cabf0ea7" prot="public" virt="virtual"><scope>rocalution::VariablePreconditioner</scope><name>Verbose</name></member>
+      <member refid="classrocalution_1_1_preconditioner_1aac6cfbb3d6c5cd248d7b7dabac096a76" prot="public" virt="virtual"><scope>rocalution::VariablePreconditioner</scope><name>~Preconditioner</name></member>
+      <member refid="classrocalution_1_1_rocalution_obj_1a55a2f93f798cebdda6343b20db959e2d" prot="public" virt="virtual"><scope>rocalution::VariablePreconditioner</scope><name>~RocalutionObj</name></member>
+      <member refid="classrocalution_1_1_solver_1af861566a540fc6cc399c844bbc789ec6" prot="public" virt="virtual"><scope>rocalution::VariablePreconditioner</scope><name>~Solver</name></member>
+      <member refid="classrocalution_1_1_variable_preconditioner_1a3e50883c655f70374db639756f602588" prot="public" virt="virtual"><scope>rocalution::VariablePreconditioner</scope><name>~VariablePreconditioner</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

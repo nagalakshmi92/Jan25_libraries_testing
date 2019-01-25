@@ -4,238 +4,274 @@
     <compoundname>global_pairwise_amg.cpp</compoundname>
     <includes local="yes">../../utils/def.hpp</includes>
     <includes local="yes">../../utils/types.hpp</includes>
-    <includes local="yes">global_pairwise_amg.hpp</includes>
-    <includes local="yes">/home/tcs/Jan24/Jan24_libraries_testing/ROCm_Libraries/rocALUTION/src/solvers/solver.hpp</includes>
-    <includes local="yes">/home/tcs/Jan24/Jan24_libraries_testing/ROCm_Libraries/rocALUTION/src/solvers/multigrid/base_amg.hpp</includes>
-    <includes local="yes">/home/tcs/Jan24/Jan24_libraries_testing/ROCm_Libraries/rocALUTION/src/solvers/multigrid/pairwise_amg.hpp</includes>
+    <includes refid="global__pairwise__amg_8hpp" local="yes">global_pairwise_amg.hpp</includes>
     <includes refid="local__matrix_8hpp" local="yes">../../base/local_matrix.hpp</includes>
     <includes refid="local__vector_8hpp" local="yes">../../base/local_vector.hpp</includes>
     <includes refid="global__matrix_8hpp" local="yes">../../base/global_matrix.hpp</includes>
     <includes refid="global__vector_8hpp" local="yes">../../base/global_vector.hpp</includes>
-    <includes local="yes">../../solvers/preconditioners/preconditioner.hpp</includes>
+    <includes refid="preconditioner_8hpp" local="yes">../../solvers/preconditioners/preconditioner.hpp</includes>
     <includes local="yes">../../utils/log.hpp</includes>
     <includes local="yes">../../utils/math_functions.hpp</includes>
     <includes refid="allocate__free_8hpp" local="yes">../../utils/allocate_free.hpp</includes>
     <includes local="no">list</includes>
     <includes local="no">complex</includes>
     <incdepgraph>
-      <node id="683">
+      <node id="1140">
         <label>list</label>
       </node>
-      <node id="677">
+      <node id="1120">
+        <label>../base/local_vector.hpp</label>
+        <link refid="local__vector_8hpp_source"/>
+        <childnode refid="1121" relation="include">
+        </childnode>
+        <childnode refid="1122" relation="include">
+        </childnode>
+      </node>
+      <node id="1136">
+        <label>../../solvers/preconditioners/preconditioner.hpp</label>
+        <link refid="preconditioner_8hpp_source"/>
+        <childnode refid="1110" relation="include">
+        </childnode>
+      </node>
+      <node id="1134">
         <label>limits</label>
       </node>
-      <node id="674">
-        <label>parallel_manager.hpp</label>
-        <link refid="parallel__manager_8hpp_source"/>
-        <childnode refid="661" relation="include">
-        </childnode>
-        <childnode refid="659" relation="include">
-        </childnode>
-        <childnode refid="675" relation="include">
-        </childnode>
-        <childnode refid="676" relation="include">
-        </childnode>
-        <childnode refid="677" relation="include">
-        </childnode>
-        <childnode refid="667" relation="include">
-        </childnode>
-        <childnode refid="668" relation="include">
-        </childnode>
-      </node>
-      <node id="676">
+      <node id="1133">
         <label>assert.h</label>
       </node>
-      <node id="657">
-        <label>/home/tcs/Jan24/Jan24_libraries_testing/ROCm_Libraries/rocALUTION/src/solvers/multigrid/pairwise_amg.hpp</label>
-      </node>
-      <node id="662">
-        <label>backend_manager.hpp</label>
-        <link refid="backend__manager_8hpp_source"/>
-        <childnode refid="663" relation="include">
+      <node id="1109">
+        <label>global_pairwise_amg.hpp</label>
+        <link refid="global__pairwise__amg_8hpp_source"/>
+        <childnode refid="1110" relation="include">
         </childnode>
-        <childnode refid="664" relation="include">
+        <childnode refid="1124" relation="include">
         </childnode>
-        <childnode refid="665" relation="include">
-        </childnode>
-        <childnode refid="666" relation="include">
-        </childnode>
-        <childnode refid="667" relation="include">
+        <childnode refid="1127" relation="include">
         </childnode>
       </node>
-      <node id="660">
-        <label>operator.hpp</label>
+      <node id="1122">
+        <label>vector.hpp</label>
+        <link refid="vector_8hpp_source"/>
+        <childnode refid="1121" relation="include">
+        </childnode>
+        <childnode refid="1114" relation="include">
+        </childnode>
+        <childnode refid="1116" relation="include">
+        </childnode>
+        <childnode refid="1113" relation="include">
+        </childnode>
+        <childnode refid="1123" relation="include">
+        </childnode>
+      </node>
+      <node id="1131">
+        <label>parallel_manager.hpp</label>
+        <link refid="parallel__manager_8hpp_source"/>
+        <childnode refid="1114" relation="include">
+        </childnode>
+        <childnode refid="1121" relation="include">
+        </childnode>
+        <childnode refid="1132" relation="include">
+        </childnode>
+        <childnode refid="1133" relation="include">
+        </childnode>
+        <childnode refid="1134" relation="include">
+        </childnode>
+        <childnode refid="1113" relation="include">
+        </childnode>
+        <childnode refid="1119" relation="include">
+        </childnode>
+      </node>
+      <node id="1126">
+        <label>../../base/operator.hpp</label>
         <link refid="operator_8hpp_source"/>
-        <childnode refid="659" relation="include">
+        <childnode refid="1121" relation="include">
         </childnode>
-        <childnode refid="661" relation="include">
+        <childnode refid="1114" relation="include">
         </childnode>
-        <childnode refid="663" relation="include">
+        <childnode refid="1116" relation="include">
         </childnode>
-        <childnode refid="667" relation="include">
+        <childnode refid="1113" relation="include">
         </childnode>
-        <childnode refid="669" relation="include">
+        <childnode refid="1123" relation="include">
         </childnode>
       </node>
-      <node id="653">
+      <node id="1127">
+        <label>pairwise_amg.hpp</label>
+        <link refid="pairwise__amg_8hpp_source"/>
+        <childnode refid="1110" relation="include">
+        </childnode>
+        <childnode refid="1124" relation="include">
+        </childnode>
+      </node>
+      <node id="1108">
         <label>../../utils/types.hpp</label>
       </node>
-      <node id="667">
+      <node id="1132">
+        <label>/home/tcs/rocALUTION/src/utils/def.hpp</label>
+      </node>
+      <node id="1113">
         <label>string</label>
       </node>
-      <node id="665">
+      <node id="1118">
         <label>map</label>
       </node>
-      <node id="675">
-        <label>/home/tcs/Jan24/Jan24_libraries_testing/ROCm_Libraries/rocALUTION/src/utils/def.hpp</label>
+      <node id="1110">
+        <label>../solver.hpp</label>
+        <link refid="solver_8hpp_source"/>
+        <childnode refid="1111" relation="include">
+        </childnode>
+        <childnode refid="1114" relation="include">
+        </childnode>
+        <childnode refid="1120" relation="include">
+        </childnode>
       </node>
-      <node id="664">
-        <label>fstream</label>
-      </node>
-      <node id="673">
+      <node id="1130">
         <label>../../base/global_matrix.hpp</label>
         <link refid="global__matrix_8hpp_source"/>
-        <childnode refid="659" relation="include">
+        <childnode refid="1121" relation="include">
         </childnode>
-        <childnode refid="660" relation="include">
+        <childnode refid="1126" relation="include">
         </childnode>
-        <childnode refid="674" relation="include">
+        <childnode refid="1131" relation="include">
         </childnode>
       </node>
-      <node id="670">
+      <node id="1117">
+        <label>fstream</label>
+      </node>
+      <node id="1129">
         <label>matrix_formats.hpp</label>
       </node>
-      <node id="671">
-        <label>../../base/local_vector.hpp</label>
-        <link refid="local__vector_8hpp_source"/>
-        <childnode refid="659" relation="include">
+      <node id="1125">
+        <label>base_multigrid.hpp</label>
+        <link refid="base__multigrid_8hpp_source"/>
+        <childnode refid="1110" relation="include">
         </childnode>
-        <childnode refid="672" relation="include">
-        </childnode>
-      </node>
-      <node id="661">
-        <label>base_rocalution.hpp</label>
-        <link refid="base__rocalution_8hpp_source"/>
-        <childnode refid="662" relation="include">
-        </childnode>
-        <childnode refid="668" relation="include">
-        </childnode>
-        <childnode refid="666" relation="include">
+        <childnode refid="1126" relation="include">
         </childnode>
       </node>
-      <node id="651">
-        <label>ROCm_Libraries/rocALUTION/src/solvers/multigrid/global_pairwise_amg.cpp</label>
-        <link refid="global__pairwise__amg_8cpp"/>
-        <childnode refid="652" relation="include">
-        </childnode>
-        <childnode refid="653" relation="include">
-        </childnode>
-        <childnode refid="654" relation="include">
-        </childnode>
-        <childnode refid="655" relation="include">
-        </childnode>
-        <childnode refid="656" relation="include">
-        </childnode>
-        <childnode refid="657" relation="include">
-        </childnode>
-        <childnode refid="658" relation="include">
-        </childnode>
-        <childnode refid="671" relation="include">
-        </childnode>
-        <childnode refid="673" relation="include">
-        </childnode>
-        <childnode refid="678" relation="include">
-        </childnode>
-        <childnode refid="679" relation="include">
-        </childnode>
-        <childnode refid="680" relation="include">
-        </childnode>
-        <childnode refid="681" relation="include">
-        </childnode>
-        <childnode refid="682" relation="include">
-        </childnode>
-        <childnode refid="683" relation="include">
-        </childnode>
-        <childnode refid="668" relation="include">
-        </childnode>
-      </node>
-      <node id="658">
-        <label>../../base/local_matrix.hpp</label>
-        <link refid="local__matrix_8hpp_source"/>
-        <childnode refid="659" relation="include">
-        </childnode>
-        <childnode refid="660" relation="include">
-        </childnode>
-        <childnode refid="662" relation="include">
-        </childnode>
-        <childnode refid="670" relation="include">
-        </childnode>
-        <childnode refid="667" relation="include">
-        </childnode>
-      </node>
-      <node id="659">
-        <label>../utils/types.hpp</label>
-      </node>
-      <node id="678">
+      <node id="1135">
         <label>../../base/global_vector.hpp</label>
         <link refid="global__vector_8hpp_source"/>
-        <childnode refid="659" relation="include">
+        <childnode refid="1121" relation="include">
         </childnode>
-        <childnode refid="672" relation="include">
+        <childnode refid="1122" relation="include">
         </childnode>
-        <childnode refid="674" relation="include">
+        <childnode refid="1131" relation="include">
         </childnode>
       </node>
-      <node id="666">
+      <node id="1121">
+        <label>../utils/types.hpp</label>
+      </node>
+      <node id="1114">
+        <label>../base/base_rocalution.hpp</label>
+        <link refid="base__rocalution_8hpp_source"/>
+        <childnode refid="1115" relation="include">
+        </childnode>
+        <childnode refid="1119" relation="include">
+        </childnode>
+        <childnode refid="1112" relation="include">
+        </childnode>
+      </node>
+      <node id="1112">
         <label>vector</label>
       </node>
-      <node id="682">
+      <node id="1107">
+        <label>../../utils/def.hpp</label>
+      </node>
+      <node id="1137">
+        <label>../../utils/log.hpp</label>
+      </node>
+      <node id="1123">
+        <label>cstdlib</label>
+      </node>
+      <node id="1116">
+        <label>iostream</label>
+      </node>
+      <node id="1115">
+        <label>backend_manager.hpp</label>
+        <link refid="backend__manager_8hpp_source"/>
+        <childnode refid="1116" relation="include">
+        </childnode>
+        <childnode refid="1117" relation="include">
+        </childnode>
+        <childnode refid="1118" relation="include">
+        </childnode>
+        <childnode refid="1112" relation="include">
+        </childnode>
+        <childnode refid="1113" relation="include">
+        </childnode>
+      </node>
+      <node id="1124">
+        <label>base_amg.hpp</label>
+        <link refid="base__amg_8hpp_source"/>
+        <childnode refid="1110" relation="include">
+        </childnode>
+        <childnode refid="1125" relation="include">
+        </childnode>
+        <childnode refid="1112" relation="include">
+        </childnode>
+      </node>
+      <node id="1111">
+        <label>iter_ctrl.hpp</label>
+        <link refid="iter__ctrl_8hpp_source"/>
+        <childnode refid="1112" relation="include">
+        </childnode>
+        <childnode refid="1113" relation="include">
+        </childnode>
+      </node>
+      <node id="1106">
+        <label>/home/tcs/rocALUTION/src/solvers/multigrid/global_pairwise_amg.cpp</label>
+        <link refid="global__pairwise__amg_8cpp"/>
+        <childnode refid="1107" relation="include">
+        </childnode>
+        <childnode refid="1108" relation="include">
+        </childnode>
+        <childnode refid="1109" relation="include">
+        </childnode>
+        <childnode refid="1128" relation="include">
+        </childnode>
+        <childnode refid="1120" relation="include">
+        </childnode>
+        <childnode refid="1130" relation="include">
+        </childnode>
+        <childnode refid="1135" relation="include">
+        </childnode>
+        <childnode refid="1136" relation="include">
+        </childnode>
+        <childnode refid="1137" relation="include">
+        </childnode>
+        <childnode refid="1138" relation="include">
+        </childnode>
+        <childnode refid="1139" relation="include">
+        </childnode>
+        <childnode refid="1140" relation="include">
+        </childnode>
+        <childnode refid="1119" relation="include">
+        </childnode>
+      </node>
+      <node id="1119">
+        <label>complex</label>
+      </node>
+      <node id="1139">
         <label>../../utils/allocate_free.hpp</label>
         <link refid="allocate__free_8hpp_source"/>
       </node>
-      <node id="652">
-        <label>../../utils/def.hpp</label>
-      </node>
-      <node id="680">
-        <label>../../utils/log.hpp</label>
-      </node>
-      <node id="679">
-        <label>../../solvers/preconditioners/preconditioner.hpp</label>
-      </node>
-      <node id="669">
-        <label>cstdlib</label>
-      </node>
-      <node id="656">
-        <label>/home/tcs/Jan24/Jan24_libraries_testing/ROCm_Libraries/rocALUTION/src/solvers/multigrid/base_amg.hpp</label>
-      </node>
-      <node id="663">
-        <label>iostream</label>
-      </node>
-      <node id="655">
-        <label>/home/tcs/Jan24/Jan24_libraries_testing/ROCm_Libraries/rocALUTION/src/solvers/solver.hpp</label>
-      </node>
-      <node id="672">
-        <label>vector.hpp</label>
-        <link refid="vector_8hpp_source"/>
-        <childnode refid="659" relation="include">
-        </childnode>
-        <childnode refid="661" relation="include">
-        </childnode>
-        <childnode refid="663" relation="include">
-        </childnode>
-        <childnode refid="667" relation="include">
-        </childnode>
-        <childnode refid="669" relation="include">
-        </childnode>
-      </node>
-      <node id="654">
-        <label>global_pairwise_amg.hpp</label>
-      </node>
-      <node id="668">
-        <label>complex</label>
-      </node>
-      <node id="681">
+      <node id="1138">
         <label>../../utils/math_functions.hpp</label>
+      </node>
+      <node id="1128">
+        <label>../../base/local_matrix.hpp</label>
+        <link refid="local__matrix_8hpp_source"/>
+        <childnode refid="1121" relation="include">
+        </childnode>
+        <childnode refid="1126" relation="include">
+        </childnode>
+        <childnode refid="1115" relation="include">
+        </childnode>
+        <childnode refid="1129" relation="include">
+        </childnode>
+        <childnode refid="1113" relation="include">
+        </childnode>
       </node>
     </incdepgraph>
     <innernamespace refid="namespacerocalution">rocalution</innernamespace>
@@ -323,7 +359,7 @@
 <codeline lineno="77"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="78"><highlight class="normal"></highlight></codeline>
 <codeline lineno="79"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="80"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>GlobalPairwiseAMG&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::Print(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_global_pairwise_a_m_g_1a9fa1e90d8b81b9db2a9ece03f30fad5f" kindref="member">GlobalPairwiseAMG&lt;OperatorType, VectorType, ValueType&gt;::Print</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
 <codeline lineno="81"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
 <codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>LOG_INFO(</highlight><highlight class="stringliteral">&quot;AMG<sp/>solver&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>LOG_INFO(</highlight><highlight class="stringliteral">&quot;AMG<sp/>number<sp/>of<sp/>levels<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>this-&gt;levels_);</highlight></codeline>
@@ -336,7 +372,7 @@
 <codeline lineno="90"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="91"><highlight class="normal"></highlight></codeline>
 <codeline lineno="92"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="93"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>GlobalPairwiseAMG&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::PrintStart_(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_global_pairwise_a_m_g_1ad4827cde819b3c0ac7cae37bbce59a00" kindref="member">GlobalPairwiseAMG&lt;OperatorType, VectorType, ValueType&gt;::PrintStart_</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
 <codeline lineno="94"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
 <codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>assert(this-&gt;levels_<sp/>&gt;<sp/>0);</highlight></codeline>
 <codeline lineno="96"><highlight class="normal"></highlight></codeline>
@@ -351,13 +387,13 @@
 <codeline lineno="105"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="106"><highlight class="normal"></highlight></codeline>
 <codeline lineno="107"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="108"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>GlobalPairwiseAMG&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::PrintEnd_(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_global_pairwise_a_m_g_1a58cc5c3ef997f71e853703d3724a0942" kindref="member">GlobalPairwiseAMG&lt;OperatorType, VectorType, ValueType&gt;::PrintEnd_</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
 <codeline lineno="109"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
 <codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/>LOG_INFO(</highlight><highlight class="stringliteral">&quot;AMG<sp/>ends&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="111"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="112"><highlight class="normal"></highlight></codeline>
 <codeline lineno="113"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="114"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>GlobalPairwiseAMG&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::SetBeta(ValueType<sp/>beta)</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_global_pairwise_a_m_g_1aa42c48d9800f72d10b38ff790f72dddd" kindref="member">GlobalPairwiseAMG&lt;OperatorType, VectorType, ValueType&gt;::SetBeta</ref>(ValueType<sp/>beta)</highlight></codeline>
 <codeline lineno="115"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/>log_debug(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;GlobalPairwiseAMG::SetBeta()&quot;</highlight><highlight class="normal">,<sp/>beta);</highlight></codeline>
 <codeline lineno="117"><highlight class="normal"></highlight></codeline>
@@ -365,7 +401,7 @@
 <codeline lineno="119"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="120"><highlight class="normal"></highlight></codeline>
 <codeline lineno="121"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="122"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>GlobalPairwiseAMG&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::SetCoarseningFactor(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>factor)</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_global_pairwise_a_m_g_1a4c9654bf648e8ee1811513602764d5f3" kindref="member">GlobalPairwiseAMG&lt;OperatorType, VectorType, ValueType&gt;::SetCoarseningFactor</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>factor)</highlight></codeline>
 <codeline lineno="123"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/>log_debug(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;GlobalPairwiseAMG::SetCoarseningFactor()&quot;</highlight><highlight class="normal">,<sp/>factor);</highlight></codeline>
 <codeline lineno="125"><highlight class="normal"></highlight></codeline>
@@ -373,7 +409,7 @@
 <codeline lineno="127"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="128"><highlight class="normal"></highlight></codeline>
 <codeline lineno="129"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="130"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>GlobalPairwiseAMG&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::SetOrdering(</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_global_pairwise_a_m_g_1a9607399db49f8b761f6154ea01786721" kindref="member">GlobalPairwiseAMG&lt;OperatorType, VectorType, ValueType&gt;::SetOrdering</ref>(</highlight></codeline>
 <codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>_aggregation_ordering<sp/>ordering)</highlight></codeline>
 <codeline lineno="132"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/>log_debug(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;GlobalPairwiseAMG::SetOrdering()&quot;</highlight><highlight class="normal">,<sp/>ordering);</highlight></codeline>
@@ -384,7 +420,7 @@
 <codeline lineno="138"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="139"><highlight class="normal"></highlight></codeline>
 <codeline lineno="140"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="141"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>GlobalPairwiseAMG&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::ReBuildNumeric(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_global_pairwise_a_m_g_1ad166212a6ea2c76b36f6e176254c3acc" kindref="member">GlobalPairwiseAMG&lt;OperatorType, VectorType, ValueType&gt;::ReBuildNumeric</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
 <codeline lineno="142"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/>assert(this-&gt;levels_<sp/>&gt;<sp/>1);</highlight></codeline>
 <codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/>assert(this-&gt;build_<sp/>==<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
@@ -443,7 +479,7 @@
 <codeline lineno="197"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="198"><highlight class="normal"></highlight></codeline>
 <codeline lineno="199"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="200"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>GlobalPairwiseAMG&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::BuildHierarchy(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_global_pairwise_a_m_g_1a5fbd48f3fecff4ec5410459070037a38" kindref="member">GlobalPairwiseAMG&lt;OperatorType, VectorType, ValueType&gt;::BuildHierarchy</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
 <codeline lineno="201"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/>log_debug(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;GlobalPairwiseAMG::BuildHierarchy()&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;<sp/>#*#<sp/>begin&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="203"><highlight class="normal"></highlight></codeline>
@@ -555,7 +591,7 @@
 <codeline lineno="309"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="310"><highlight class="normal"></highlight></codeline>
 <codeline lineno="311"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="312"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>GlobalPairwiseAMG&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::ClearLocal(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="312"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_global_pairwise_a_m_g_1a188b9a8972ff95fb92879dfdb8fd4e84" kindref="member">GlobalPairwiseAMG&lt;OperatorType, VectorType, ValueType&gt;::ClearLocal</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
 <codeline lineno="313"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="314"><highlight class="normal"><sp/><sp/><sp/><sp/>log_debug(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;GlobalPairwiseAMG::ClearLocal()&quot;</highlight><highlight class="normal">,<sp/>this-&gt;build_);</highlight></codeline>
 <codeline lineno="315"><highlight class="normal"></highlight></codeline>
@@ -566,7 +602,7 @@
 <codeline lineno="320"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>this-&gt;pm_level_[i];</highlight></codeline>
 <codeline lineno="321"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>this-&gt;trans_level_[i];</highlight></codeline>
 <codeline lineno="322"><highlight class="normal"></highlight></codeline>
-<codeline lineno="323"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>free_host(&amp;this-&gt;rG_level_[i]);</highlight></codeline>
+<codeline lineno="323"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__backend__module_1ga020251e6c31a4c642dd0181c5022c9ca" kindref="member">free_host</ref>(&amp;this-&gt;rG_level_[i]);</highlight></codeline>
 <codeline lineno="324"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="325"><highlight class="normal"></highlight></codeline>
 <codeline lineno="326"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">[]<sp/>this-&gt;pm_level_;</highlight></codeline>
@@ -580,7 +616,7 @@
 <codeline lineno="334"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="335"><highlight class="normal"></highlight></codeline>
 <codeline lineno="336"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="337"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>GlobalPairwiseAMG&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::Aggregate_(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>OperatorType&amp;<sp/>op,</highlight></codeline>
+<codeline lineno="337"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_global_pairwise_a_m_g_1a4581d8a2759d3a4019133890c456feb3" kindref="member">GlobalPairwiseAMG&lt;OperatorType, VectorType, ValueType&gt;::Aggregate_</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>OperatorType&amp;<sp/>op,</highlight></codeline>
 <codeline lineno="338"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Operator&lt;ValueType&gt;*<sp/>pro,</highlight></codeline>
 <codeline lineno="339"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Operator&lt;ValueType&gt;*<sp/>res,</highlight></codeline>
 <codeline lineno="340"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>OperatorType*<sp/>coarse,</highlight></codeline>
@@ -632,7 +668,7 @@
 <codeline lineno="386"><highlight class="normal"></highlight></codeline>
 <codeline lineno="387"><highlight class="normal"></highlight><highlight class="comment">//<sp/>disabled<sp/>function</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="388"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="389"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>GlobalPairwiseAMG&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::Aggregate_(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>OperatorType&amp;<sp/>op,</highlight></codeline>
+<codeline lineno="389"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_global_pairwise_a_m_g_1a4581d8a2759d3a4019133890c456feb3" kindref="member">GlobalPairwiseAMG&lt;OperatorType, VectorType, ValueType&gt;::Aggregate_</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>OperatorType&amp;<sp/>op,</highlight></codeline>
 <codeline lineno="390"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Operator&lt;ValueType&gt;*<sp/>pro,</highlight></codeline>
 <codeline lineno="391"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Operator&lt;ValueType&gt;*<sp/>res,</highlight></codeline>
 <codeline lineno="392"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>OperatorType*<sp/>coarse)</highlight></codeline>
@@ -653,6 +689,6 @@
 <codeline lineno="407"><highlight class="normal"></highlight></codeline>
 <codeline lineno="408"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>rocalution</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
-    <location file="ROCm_Libraries/rocALUTION/src/solvers/multigrid/global_pairwise_amg.cpp"/>
+    <location file="/home/tcs/rocALUTION/src/solvers/multigrid/global_pairwise_amg.cpp"/>
   </compounddef>
 </doxygen>

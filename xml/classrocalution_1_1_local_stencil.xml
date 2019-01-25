@@ -21,7 +21,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/local_stencil.hpp" line="91" column="1" bodyfile="ROCm_Libraries/rocALUTION/src/base/local_stencil.hpp" bodystart="88" bodyend="-1"/>
+        <location file="/home/tcs/rocALUTION/src/base/local_stencil.hpp" line="91" column="1" bodyfile="/home/tcs/rocALUTION/src/base/local_stencil.hpp" bodystart="88" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classrocalution_1_1_local_stencil_1a32c5fbd14698544d46760e46c56ca32b" prot="private" static="no" mutable="no">
         <type><ref refid="classrocalution_1_1_base_stencil" kindref="compound">BaseStencil</ref>&lt; ValueType &gt; *</type>
@@ -34,7 +34,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/local_stencil.hpp" line="93" column="1" bodyfile="ROCm_Libraries/rocALUTION/src/base/local_stencil.hpp" bodystart="93" bodyend="-1"/>
+        <location file="/home/tcs/rocALUTION/src/base/local_stencil.hpp" line="93" column="1" bodyfile="/home/tcs/rocALUTION/src/base/local_stencil.hpp" bodystart="93" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classrocalution_1_1_local_stencil_1a495b25980018d733ba56594fa0123c4a" prot="private" static="no" mutable="no">
         <type><ref refid="classrocalution_1_1_host_stencil" kindref="compound">HostStencil</ref>&lt; ValueType &gt; *</type>
@@ -47,7 +47,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/local_stencil.hpp" line="95" column="1" bodyfile="ROCm_Libraries/rocALUTION/src/base/local_stencil.hpp" bodystart="95" bodyend="-1"/>
+        <location file="/home/tcs/rocALUTION/src/base/local_stencil.hpp" line="95" column="1" bodyfile="/home/tcs/rocALUTION/src/base/local_stencil.hpp" bodystart="95" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classrocalution_1_1_local_stencil_1ae2f1ae111bd6a860a1b587883e3218b7" prot="private" static="no" mutable="no">
         <type><ref refid="classrocalution_1_1_accelerator_stencil" kindref="compound">AcceleratorStencil</ref>&lt; ValueType &gt; *</type>
@@ -60,7 +60,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/local_stencil.hpp" line="96" column="1" bodyfile="ROCm_Libraries/rocALUTION/src/base/local_stencil.hpp" bodystart="96" bodyend="-1"/>
+        <location file="/home/tcs/rocALUTION/src/base/local_stencil.hpp" line="96" column="1" bodyfile="/home/tcs/rocALUTION/src/base/local_stencil.hpp" bodystart="96" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="friend">
@@ -75,7 +75,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/local_stencil.hpp" line="96" column="1" bodyfile="ROCm_Libraries/rocALUTION/src/base/local_stencil.hpp" bodystart="98" bodyend="-1"/>
+        <location file="/home/tcs/rocALUTION/src/base/local_stencil.hpp" line="96" column="1" bodyfile="/home/tcs/rocALUTION/src/base/local_stencil.hpp" bodystart="98" bodyend="-1"/>
       </memberdef>
       <memberdef kind="friend" id="classrocalution_1_1_local_stencil_1ad50ce751e5dafbeb3ca73c65cd542fce" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>friend class</type>
@@ -88,7 +88,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/local_stencil.hpp" line="96" column="1" bodyfile="ROCm_Libraries/rocALUTION/src/base/local_stencil.hpp" bodystart="99" bodyend="-1"/>
+        <location file="/home/tcs/rocALUTION/src/base/local_stencil.hpp" line="96" column="1" bodyfile="/home/tcs/rocALUTION/src/base/local_stencil.hpp" bodystart="99" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -103,7 +103,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/local_stencil.hpp" line="61" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/local_stencil.hpp" line="61" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_local_stencil_1a5dbfda8bea951c06870c26e3a4637401" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -120,7 +120,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/local_stencil.hpp" line="63" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/local_stencil.hpp" line="63" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_local_stencil_1a35abb20d68827b3e515d51445ddb6b9b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type></type>
@@ -133,7 +133,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/local_stencil.hpp" line="64" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/local_stencil.hpp" line="64" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_local_stencil_1aa3c7b580398079ca5fac493fff9a25ce" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -150,7 +150,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/local_stencil.hpp" line="66" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/local_stencil.hpp" line="66" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_local_stencil_1a61fa7d018580635e05578162a5d275f4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -166,7 +166,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/local_stencil.hpp" line="69" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/local_stencil.hpp" line="69" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_local_stencil_1a3bf19a55df03c450401f1bee48540a97" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
         <type>IndexType2</type>
@@ -183,7 +183,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/local_stencil.hpp" line="70" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/local_stencil.hpp" line="70" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_local_stencil_1ad8d6ba20012a45dfbee8ac7211f7d05c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
         <type>IndexType2</type>
@@ -200,7 +200,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/local_stencil.hpp" line="71" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/local_stencil.hpp" line="71" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_local_stencil_1ae18aa3865d0bd503b41665542adbc89d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
         <type>IndexType2</type>
@@ -217,7 +217,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/local_stencil.hpp" line="72" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/local_stencil.hpp" line="72" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_local_stencil_1ab2eccbd73572aa5dafdde0482e78638a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -234,7 +234,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/local_stencil.hpp" line="75" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/local_stencil.hpp" line="75" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_local_stencil_1a4b3311913e88a61f613a83f08dca1c80" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -248,7 +248,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/local_stencil.hpp" line="77" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/local_stencil.hpp" line="77" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_local_stencil_1a6edab2ff02e64cff943666cb19543d64" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -270,7 +270,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/local_stencil.hpp" line="79" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/local_stencil.hpp" line="79" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_local_stencil_1a2cf176e84fc5582ddb9cfc7218990c85" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -296,7 +296,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/local_stencil.hpp" line="81" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/local_stencil.hpp" line="81" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_local_stencil_1a202674432e0cc298d80ebc64bb2d0971" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -313,7 +313,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/local_stencil.hpp" line="83" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/local_stencil.hpp" line="83" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_local_stencil_1a27d90bd5bc5c26ea28494309dc859791" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -330,7 +330,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/local_stencil.hpp" line="84" column="1"/>
+        <location file="/home/tcs/rocALUTION/src/base/local_stencil.hpp" line="84" column="1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="protected-func">
@@ -349,7 +349,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/local_stencil.hpp" line="87" column="1" bodyfile="ROCm_Libraries/rocALUTION/src/base/local_stencil.hpp" bodystart="87" bodyend="87"/>
+        <location file="/home/tcs/rocALUTION/src/base/local_stencil.hpp" line="87" column="1" bodyfile="/home/tcs/rocALUTION/src/base/local_stencil.hpp" bodystart="87" bodyend="87"/>
       </memberdef>
       <memberdef kind="function" id="classrocalution_1_1_local_stencil_1a2dee7dbdeca9713b9a580b490cabbd89" prot="protected" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
         <type>bool</type>
@@ -366,7 +366,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/local_stencil.hpp" line="88" column="1" bodyfile="ROCm_Libraries/rocALUTION/src/base/local_stencil.hpp" bodystart="88" bodyend="88"/>
+        <location file="/home/tcs/rocALUTION/src/base/local_stencil.hpp" line="88" column="1" bodyfile="/home/tcs/rocALUTION/src/base/local_stencil.hpp" bodystart="88" bodyend="88"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -382,52 +382,52 @@
 </parameterlist>
 </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="55">
+      <node id="419">
         <label>rocalution::BaseRocalution&lt; ValueType &gt;</label>
         <link refid="classrocalution_1_1_base_rocalution"/>
-        <childnode refid="56" relation="public-inheritance">
+        <childnode refid="420" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="54">
+      <node id="418">
         <label>rocalution::Operator&lt; ValueType &gt;</label>
         <link refid="classrocalution_1_1_operator"/>
-        <childnode refid="55" relation="public-inheritance">
+        <childnode refid="419" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="56">
+      <node id="420">
         <label>rocalution::RocalutionObj</label>
       </node>
-      <node id="53">
+      <node id="417">
         <label>rocalution::LocalStencil&lt; ValueType &gt;</label>
         <link refid="classrocalution_1_1_local_stencil"/>
-        <childnode refid="54" relation="public-inheritance">
+        <childnode refid="418" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="59">
+      <node id="423">
         <label>rocalution::BaseRocalution&lt; ValueType &gt;</label>
         <link refid="classrocalution_1_1_base_rocalution"/>
-        <childnode refid="60" relation="public-inheritance">
+        <childnode refid="424" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="58">
+      <node id="422">
         <label>rocalution::Operator&lt; ValueType &gt;</label>
         <link refid="classrocalution_1_1_operator"/>
-        <childnode refid="59" relation="public-inheritance">
+        <childnode refid="423" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="60">
+      <node id="424">
         <label>rocalution::RocalutionObj</label>
       </node>
-      <node id="57">
+      <node id="421">
         <label>rocalution::LocalStencil&lt; ValueType &gt;</label>
         <link refid="classrocalution_1_1_local_stencil"/>
-        <childnode refid="58" relation="public-inheritance">
+        <childnode refid="422" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="ROCm_Libraries/rocALUTION/src/base/local_vector.hpp" line="43" column="1" bodyfile="ROCm_Libraries/rocALUTION/src/base/local_vector.hpp" bodystart="43" bodyend="-1"/>
+    <location file="/home/tcs/rocALUTION/src/base/local_vector.hpp" line="43" column="1" bodyfile="/home/tcs/rocALUTION/src/base/local_vector.hpp" bodystart="43" bodyend="-1"/>
     <listofallmembers>
       <member refid="classrocalution_1_1_local_stencil_1a6edab2ff02e64cff943666cb19543d64" prot="public" virt="virtual"><scope>rocalution::LocalStencil</scope><name>Apply</name></member>
       <member refid="classrocalution_1_1_operator_1a4ad4397df83f1fc6af9aecf0cb9af17c" prot="public" virt="virtual" ambiguityscope="rocalution::Operator::"><scope>rocalution::LocalStencil</scope><name>Apply</name></member>

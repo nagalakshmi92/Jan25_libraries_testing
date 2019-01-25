@@ -1,0 +1,323 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classrocalution_1_1_jacobi" kind="class" language="C++" prot="public">
+    <compoundname>rocalution::Jacobi</compoundname>
+    <basecompoundref refid="classrocalution_1_1_preconditioner" prot="public" virt="non-virtual">rocalution::Preconditioner&lt; OperatorType, VectorType, ValueType &gt;</basecompoundref>
+    <includes refid="preconditioner_8hpp" local="no">preconditioner.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>class OperatorType</type>
+      </param>
+      <param>
+        <type>class VectorType</type>
+      </param>
+      <param>
+        <type>typename ValueType</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classrocalution_1_1_jacobi_1a31c3c3f066aab377c48153306d3a6bdb" prot="private" static="no" mutable="no">
+        <type>VectorType</type>
+        <definition>VectorType rocalution::Jacobi&lt; OperatorType, VectorType, ValueType &gt;::inv_diag_entries_</definition>
+        <argsstring></argsstring>
+        <name>inv_diag_entries_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner.hpp" line="91" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner.hpp" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classrocalution_1_1_jacobi_1a3370acef4b3e924dc5a199d0e637cc5c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>rocalution::Jacobi&lt; OperatorType, VectorType, ValueType &gt;::Jacobi</definition>
+        <argsstring>()</argsstring>
+        <name>Jacobi</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner.hpp" line="76" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner.cpp" bodystart="74" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_jacobi_1af792c835982ae0e62adc56b2b88b3608" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>rocalution::Jacobi&lt; OperatorType, VectorType, ValueType &gt;::~Jacobi</definition>
+        <argsstring>()</argsstring>
+        <name>~Jacobi</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner.hpp" line="77" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner.cpp" bodystart="80" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_jacobi_1ac32b28d3da946310b69b6bdf89ca54d0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void rocalution::Jacobi&lt; OperatorType, VectorType, ValueType &gt;::Print</definition>
+        <argsstring>(void) const</argsstring>
+        <name>Print</name>
+        <reimplements refid="classrocalution_1_1_solver_1a57992cfc687f3bf260964ad2fc19c467">Print</reimplements>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Print information about the solver. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner.hpp" line="79" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner.cpp" bodystart="88" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_jacobi_1af8c96c5220d787c7d0a1895f186aa199" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void rocalution::Jacobi&lt; OperatorType, VectorType, ValueType &gt;::Solve</definition>
+        <argsstring>(const VectorType &amp;rhs, VectorType *x)</argsstring>
+        <name>Solve</name>
+        <reimplements refid="classrocalution_1_1_solver_1a69025eb1d2bc7f1266899c2739c82725">Solve</reimplements>
+        <param>
+          <type>const VectorType &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <param>
+          <type>VectorType *</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+<para>Solve <ref refid="classrocalution_1_1_operator" kindref="compound">Operator</ref> x = rhs. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner.hpp" line="80" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner.cpp" bodystart="136" bodyend="153"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_jacobi_1a0d326f942385a91da4f3bbe36c2c14fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void rocalution::Jacobi&lt; OperatorType, VectorType, ValueType &gt;::Build</definition>
+        <argsstring>(void)</argsstring>
+        <name>Build</name>
+        <reimplements refid="classrocalution_1_1_solver_1a84754d7422ad3fb35c17c61f0a609c7a">Build</reimplements>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Build the solver (data allocation, structure and numerical computation) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner.hpp" line="81" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner.cpp" bodystart="94" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_jacobi_1ab63abc5475d21eb7915338b820f4c76c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void rocalution::Jacobi&lt; OperatorType, VectorType, ValueType &gt;::Clear</definition>
+        <argsstring>(void)</argsstring>
+        <name>Clear</name>
+        <reimplements refid="classrocalution_1_1_solver_1aa8839d3ba527d75fedd29fdbe9bd651f">Clear</reimplements>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Clear (free all local data) the solver. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner.hpp" line="82" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner.cpp" bodystart="127" bodyend="133"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_jacobi_1ac87a48f14f4a7f82381299a1f588fe91" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void rocalution::Jacobi&lt; OperatorType, VectorType, ValueType &gt;::ResetOperator</definition>
+        <argsstring>(const OperatorType &amp;op)</argsstring>
+        <name>ResetOperator</name>
+        <reimplements refid="classrocalution_1_1_solver_1a91354c5c116742c58d9eb2094cc6a68e">ResetOperator</reimplements>
+        <param>
+          <type>const OperatorType &amp;</type>
+          <declname>op</declname>
+        </param>
+        <briefdescription>
+<para>Reset the operator; see <ref refid="classrocalution_1_1_solver_1acd20a051f0560a77645e35361df8f87c" kindref="member">ReBuildNumeric()</ref> </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner.hpp" line="84" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner.cpp" bodystart="115" bodyend="124"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classrocalution_1_1_jacobi_1a40d5b6e969bc2958839ab894bfe71836" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void rocalution::Jacobi&lt; OperatorType, VectorType, ValueType &gt;::MoveToHostLocalData_</definition>
+        <argsstring>(void)</argsstring>
+        <name>MoveToHostLocalData_</name>
+        <reimplements refid="classrocalution_1_1_solver_1aa1e8be1bd2107543c7390a81f8cee8cb">MoveToHostLocalData_</reimplements>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Move all local data to the host. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner.hpp" line="87" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner.cpp" bodystart="156" bodyend="161"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_jacobi_1a227eb0e6e07e981decf7130cfaa547c3" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void rocalution::Jacobi&lt; OperatorType, VectorType, ValueType &gt;::MoveToAcceleratorLocalData_</definition>
+        <argsstring>(void)</argsstring>
+        <name>MoveToAcceleratorLocalData_</name>
+        <reimplements refid="classrocalution_1_1_solver_1a8ce29de0bdda9f35a6a687fd06ac9b11">MoveToAcceleratorLocalData_</reimplements>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Move all local data to the accelerator. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner.hpp" line="88" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner.cpp" bodystart="164" bodyend="169"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="classrocalution_1_1_jacobi" kindref="compound">Jacobi</ref> Method. </para>    </briefdescription>
+    <detaileddescription>
+<para>The <ref refid="classrocalution_1_1_jacobi" kindref="compound">Jacobi</ref> method is for solving a diagonally dominant system of linear equations <formula id="7">$Ax=b$</formula>. It solves for each diagonal element iteratively until convergence, such that <formula id="22">\[ x_{i}^{(k+1)} = (1 - \omega)x_{i}^{(k)} + \frac{\omega}{a_{ii}} \left( b_{i} - \sum\limits_{j=1}^{i-1}{a_{ij}x_{j}^{(k)}} - \sum\limits_{j=i}^{n}{a_{ij}x_{j}^{(k)}} \right) \]</formula></para><para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>OperatorType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- can be <ref refid="classrocalution_1_1_local_matrix" kindref="compound">LocalMatrix</ref> or <ref refid="classrocalution_1_1_global_matrix" kindref="compound">GlobalMatrix</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>VectorType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- can be <ref refid="classrocalution_1_1_local_vector" kindref="compound">LocalVector</ref> or <ref refid="classrocalution_1_1_global_vector" kindref="compound">GlobalVector</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ValueType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- can be float, double, std::complex&lt;float&gt; or std::complex&lt;double&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="398">
+        <label>rocalution::Preconditioner&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_preconditioner"/>
+        <childnode refid="399" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="399">
+        <label>rocalution::Solver&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_solver"/>
+        <childnode refid="400" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="397">
+        <label>rocalution::Jacobi&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_jacobi"/>
+        <childnode refid="398" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="400">
+        <label>rocalution::RocalutionObj</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="406">
+        <label>rocalution::Vector&lt; int &gt;</label>
+        <link refid="classrocalution_1_1_vector"/>
+        <childnode refid="407" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="407">
+        <label>rocalution::BaseRocalution&lt; ValueType &gt;</label>
+        <link refid="classrocalution_1_1_base_rocalution"/>
+        <childnode refid="404" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="402">
+        <label>rocalution::Preconditioner&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_preconditioner"/>
+        <childnode refid="403" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="403">
+        <label>rocalution::Solver&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_solver"/>
+        <childnode refid="404" relation="public-inheritance">
+        </childnode>
+        <childnode refid="405" relation="usage">
+          <edgelabel>permutation_</edgelabel>
+        </childnode>
+        <childnode refid="408" relation="usage">
+          <edgelabel>op_</edgelabel>
+        </childnode>
+      </node>
+      <node id="401">
+        <label>rocalution::Jacobi&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_jacobi"/>
+        <childnode refid="402" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="405">
+        <label>rocalution::LocalVector&lt; int &gt;</label>
+        <link refid="classrocalution_1_1_local_vector"/>
+        <childnode refid="406" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="404">
+        <label>rocalution::RocalutionObj</label>
+      </node>
+      <node id="408">
+        <label>OperatorType</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner.hpp" line="74" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner.hpp" bodystart="73" bodyend="92"/>
+    <listofallmembers>
+      <member refid="classrocalution_1_1_jacobi_1a0d326f942385a91da4f3bbe36c2c14fe" prot="public" virt="virtual"><scope>rocalution::Jacobi</scope><name>Build</name></member>
+      <member refid="classrocalution_1_1_solver_1a64924a0c87d60d2e4bf9fa295d0152cb" prot="protected" virt="non-virtual"><scope>rocalution::Jacobi</scope><name>build_</name></member>
+      <member refid="classrocalution_1_1_solver_1a0d11ee9943f785db285f0ef5c08c64eb" prot="public" virt="virtual"><scope>rocalution::Jacobi</scope><name>BuildMoveToAcceleratorAsync</name></member>
+      <member refid="classrocalution_1_1_jacobi_1ab63abc5475d21eb7915338b820f4c76c" prot="public" virt="virtual"><scope>rocalution::Jacobi</scope><name>Clear</name></member>
+      <member refid="classrocalution_1_1_rocalution_obj_1a4bba5aeaf4fd705efc00402f1f6ed40b" prot="protected" virt="non-virtual"><scope>rocalution::Jacobi</scope><name>global_obj_id_</name></member>
+      <member refid="classrocalution_1_1_jacobi_1a31c3c3f066aab377c48153306d3a6bdb" prot="private" virt="non-virtual"><scope>rocalution::Jacobi</scope><name>inv_diag_entries_</name></member>
+      <member refid="classrocalution_1_1_jacobi_1a3370acef4b3e924dc5a199d0e637cc5c" prot="public" virt="non-virtual"><scope>rocalution::Jacobi</scope><name>Jacobi</name></member>
+      <member refid="classrocalution_1_1_solver_1ab1b6410cd134c9ad00c1851d400cf0f8" prot="public" virt="virtual"><scope>rocalution::Jacobi</scope><name>MoveToAccelerator</name></member>
+      <member refid="classrocalution_1_1_jacobi_1a227eb0e6e07e981decf7130cfaa547c3" prot="protected" virt="virtual"><scope>rocalution::Jacobi</scope><name>MoveToAcceleratorLocalData_</name></member>
+      <member refid="classrocalution_1_1_solver_1a3c263e65898816f5838184c0af78a044" prot="public" virt="virtual"><scope>rocalution::Jacobi</scope><name>MoveToHost</name></member>
+      <member refid="classrocalution_1_1_jacobi_1a40d5b6e969bc2958839ab894bfe71836" prot="protected" virt="virtual"><scope>rocalution::Jacobi</scope><name>MoveToHostLocalData_</name></member>
+      <member refid="classrocalution_1_1_solver_1ad338b5f99cf339fb33218dd8b958cac4" prot="protected" virt="non-virtual"><scope>rocalution::Jacobi</scope><name>op_</name></member>
+      <member refid="classrocalution_1_1_solver_1ac46ab4d19fba48ece463666d37a7dc86" prot="protected" virt="non-virtual"><scope>rocalution::Jacobi</scope><name>permutation_</name></member>
+      <member refid="classrocalution_1_1_solver_1a2acdb829fa657a7b3e680d1ee6005c9b" prot="protected" virt="non-virtual"><scope>rocalution::Jacobi</scope><name>precond_</name></member>
+      <member refid="classrocalution_1_1_preconditioner_1a964b8c3f97a675f8a098b7539d8a6600" prot="public" virt="non-virtual"><scope>rocalution::Jacobi</scope><name>Preconditioner</name></member>
+      <member refid="classrocalution_1_1_jacobi_1ac32b28d3da946310b69b6bdf89ca54d0" prot="public" virt="virtual"><scope>rocalution::Jacobi</scope><name>Print</name></member>
+      <member refid="classrocalution_1_1_preconditioner_1aa16516bd94c4e5a931ec3adad6b2081b" prot="protected" virt="virtual"><scope>rocalution::Jacobi</scope><name>PrintEnd_</name></member>
+      <member refid="classrocalution_1_1_preconditioner_1abf90b743371c8d0159a6cad44e8595f3" prot="protected" virt="virtual"><scope>rocalution::Jacobi</scope><name>PrintStart_</name></member>
+      <member refid="classrocalution_1_1_solver_1acd20a051f0560a77645e35361df8f87c" prot="public" virt="virtual"><scope>rocalution::Jacobi</scope><name>ReBuildNumeric</name></member>
+      <member refid="classrocalution_1_1_jacobi_1ac87a48f14f4a7f82381299a1f588fe91" prot="public" virt="virtual"><scope>rocalution::Jacobi</scope><name>ResetOperator</name></member>
+      <member refid="classrocalution_1_1_rocalution_obj_1ad60a8b2047aad74e488c552264fa7737" prot="public" virt="non-virtual"><scope>rocalution::Jacobi</scope><name>RocalutionObj</name></member>
+      <member refid="classrocalution_1_1_solver_1a12765b63efe75bc88406a8d6ebb5aacc" prot="public" virt="non-virtual"><scope>rocalution::Jacobi</scope><name>SetOperator</name></member>
+      <member refid="classrocalution_1_1_jacobi_1af8c96c5220d787c7d0a1895f186aa199" prot="public" virt="virtual"><scope>rocalution::Jacobi</scope><name>Solve</name></member>
+      <member refid="classrocalution_1_1_solver_1a009956b05d4d5d1d38e4c24341b14a66" prot="public" virt="non-virtual"><scope>rocalution::Jacobi</scope><name>Solver</name></member>
+      <member refid="classrocalution_1_1_preconditioner_1a2d2f41ddc040d777783d2591c8324508" prot="public" virt="virtual"><scope>rocalution::Jacobi</scope><name>SolveZeroSol</name></member>
+      <member refid="classrocalution_1_1_solver_1a17c2830a0ede8d82d1336aa25da6f907" prot="public" virt="virtual"><scope>rocalution::Jacobi</scope><name>Sync</name></member>
+      <member refid="classrocalution_1_1_solver_1a2ee162346e0d52543f9d3d25fe70ea8a" prot="protected" virt="non-virtual"><scope>rocalution::Jacobi</scope><name>verb_</name></member>
+      <member refid="classrocalution_1_1_solver_1aa2ab9c17de96add5e3ad30e7cabf0ea7" prot="public" virt="virtual"><scope>rocalution::Jacobi</scope><name>Verbose</name></member>
+      <member refid="classrocalution_1_1_jacobi_1af792c835982ae0e62adc56b2b88b3608" prot="public" virt="virtual"><scope>rocalution::Jacobi</scope><name>~Jacobi</name></member>
+      <member refid="classrocalution_1_1_preconditioner_1aac6cfbb3d6c5cd248d7b7dabac096a76" prot="public" virt="virtual"><scope>rocalution::Jacobi</scope><name>~Preconditioner</name></member>
+      <member refid="classrocalution_1_1_rocalution_obj_1a55a2f93f798cebdda6343b20db959e2d" prot="public" virt="virtual"><scope>rocalution::Jacobi</scope><name>~RocalutionObj</name></member>
+      <member refid="classrocalution_1_1_solver_1af861566a540fc6cc399c844bbc789ec6" prot="public" virt="virtual"><scope>rocalution::Jacobi</scope><name>~Solver</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

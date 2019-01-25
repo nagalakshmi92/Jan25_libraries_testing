@@ -1,0 +1,1067 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classrocalution_1_1_solver" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>rocalution::Solver</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">rocalution::RocalutionObj</basecompoundref>
+    <derivedcompoundref refid="classrocalution_1_1_direct_linear_solver" prot="public" virt="non-virtual">rocalution::DirectLinearSolver&lt; OperatorType, VectorType, ValueType &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classrocalution_1_1_iterative_linear_solver" prot="public" virt="non-virtual">rocalution::IterativeLinearSolver&lt; OperatorType, VectorType, ValueType &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classrocalution_1_1_preconditioner" prot="public" virt="non-virtual">rocalution::Preconditioner&lt; OperatorType, VectorType, ValueType &gt;</derivedcompoundref>
+    <includes refid="solver_8hpp" local="no">solver.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>class</type>
+        <declname>OperatorType</declname>
+        <defname>OperatorType</defname>
+      </param>
+      <param>
+        <type>class</type>
+        <declname>VectorType</declname>
+        <defname>VectorType</defname>
+      </param>
+      <param>
+        <type>typename</type>
+        <declname>ValueType</declname>
+        <defname>ValueType</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classrocalution_1_1_solver_1ad338b5f99cf339fb33218dd8b958cac4" prot="protected" static="no" mutable="no">
+        <type>const OperatorType *</type>
+        <definition>const OperatorType* rocalution::Solver&lt; OperatorType, VectorType, ValueType &gt;::op_</definition>
+        <argsstring></argsstring>
+        <name>op_</name>
+        <briefdescription>
+<para>Pointer to the operator. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/solver.hpp" line="115" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/solver.hpp" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrocalution_1_1_solver_1a2acdb829fa657a7b3e680d1ee6005c9b" prot="protected" static="no" mutable="no">
+        <type><ref refid="classrocalution_1_1_solver" kindref="compound">Solver</ref>&lt; OperatorType, VectorType, ValueType &gt; *</type>
+        <definition>Solver&lt;OperatorType, VectorType, ValueType&gt;* rocalution::Solver&lt; OperatorType, VectorType, ValueType &gt;::precond_</definition>
+        <argsstring></argsstring>
+        <name>precond_</name>
+        <briefdescription>
+<para>Pointer to the defined preconditioner. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/solver.hpp" line="118" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/solver.hpp" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrocalution_1_1_solver_1a64924a0c87d60d2e4bf9fa295d0152cb" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool rocalution::Solver&lt; OperatorType, VectorType, ValueType &gt;::build_</definition>
+        <argsstring></argsstring>
+        <name>build_</name>
+        <briefdescription>
+<para>Flag == true after building the solver (e.g. </para>        </briefdescription>
+        <detaileddescription>
+<para><ref refid="classrocalution_1_1_solver_1a84754d7422ad3fb35c17c61f0a609c7a" kindref="member">Build()</ref>) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/solver.hpp" line="121" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/solver.hpp" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrocalution_1_1_solver_1ac46ab4d19fba48ece463666d37a7dc86" prot="protected" static="no" mutable="no">
+        <type><ref refid="classrocalution_1_1_local_vector" kindref="compound">LocalVector</ref>&lt; int &gt;</type>
+        <definition>LocalVector&lt;int&gt; rocalution::Solver&lt; OperatorType, VectorType, ValueType &gt;::permutation_</definition>
+        <argsstring></argsstring>
+        <name>permutation_</name>
+        <briefdescription>
+<para>Permutation vector (used if the solver performs permutation/re-ordering techniques) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/solver.hpp" line="126" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/solver.hpp" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrocalution_1_1_solver_1a2ee162346e0d52543f9d3d25fe70ea8a" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int rocalution::Solver&lt; OperatorType, VectorType, ValueType &gt;::verb_</definition>
+        <argsstring></argsstring>
+        <name>verb_</name>
+        <briefdescription>
+<para>Verbose flag. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/solver.hpp" line="129" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/solver.hpp" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classrocalution_1_1_solver_1a009956b05d4d5d1d38e4c24341b14a66" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>rocalution::Solver&lt; OperatorType, VectorType, ValueType &gt;::Solver</definition>
+        <argsstring>()</argsstring>
+        <name>Solver</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/solver.hpp" line="65" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/solver.cpp" bodystart="42" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_solver_1af861566a540fc6cc399c844bbc789ec6" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>rocalution::Solver&lt; OperatorType, VectorType, ValueType &gt;::~Solver</definition>
+        <argsstring>()</argsstring>
+        <name>~Solver</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/solver.hpp" line="66" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/solver.cpp" bodystart="53" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_solver_1a12765b63efe75bc88406a8d6ebb5aacc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rocalution::Solver&lt; OperatorType, VectorType, ValueType &gt;::SetOperator</definition>
+        <argsstring>(const OperatorType &amp;op)</argsstring>
+        <name>SetOperator</name>
+        <param>
+          <type>const OperatorType &amp;</type>
+          <declname>op</declname>
+        </param>
+        <briefdescription>
+<para>Set the <ref refid="classrocalution_1_1_operator" kindref="compound">Operator</ref> of the solver. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/solver.hpp" line="69" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/solver.cpp" bodystart="65" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_solver_1a91354c5c116742c58d9eb2094cc6a68e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void rocalution::Solver&lt; OperatorType, VectorType, ValueType &gt;::ResetOperator</definition>
+        <argsstring>(const OperatorType &amp;op)</argsstring>
+        <name>ResetOperator</name>
+        <reimplementedby refid="classrocalution_1_1_jacobi_1ac87a48f14f4a7f82381299a1f588fe91">ResetOperator</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_g_s_1a8c7cc04be7eb669e824eebecce8a929a">ResetOperator</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_s_g_s_1a06d600923c92c65f9a200507fa7e20a2">ResetOperator</reimplementedby>
+        <param>
+          <type>const OperatorType &amp;</type>
+          <declname>op</declname>
+        </param>
+        <briefdescription>
+<para>Reset the operator; see <ref refid="classrocalution_1_1_solver_1acd20a051f0560a77645e35361df8f87c" kindref="member">ReBuildNumeric()</ref> </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/solver.hpp" line="72" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/solver.cpp" bodystart="75" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_solver_1a57992cfc687f3bf260964ad2fc19c467" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void rocalution::Solver&lt; OperatorType, VectorType, ValueType &gt;::Print</definition>
+        <argsstring>(void) const =0</argsstring>
+        <name>Print</name>
+        <reimplementedby refid="classrocalution_1_1_inversion_1ae35c9dccd66853fc5469e5f3cee45f41">Print</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_block_jacobi_1a1d9db043116f4fe7c67458cdf3b55799">Print</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_q_r_1a31410f39a5167304e07975d68d5541fe">Print</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_l_u_1aa222d4587198b51ca18faa148d3b31b5">Print</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_bi_c_g_stab_1aba0ff689a2d6386c03a65ce1d925dbe3">Print</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_a_i_chebyshev_1ae8301a13fa24e6238efd377744c8edd6">Print</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_chebyshev_1a409914d12c3bf628d1e72e5a16b9365f">Print</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_a_s_1a052bab51a8257b9c9b3d4e2d3074fe89">Print</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_u_a_a_m_g_1a413eeb6538f062541db405652d3667c5">Print</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_s_a_a_m_g_1a4e99070759e54b07e4fc99916a858b40">Print</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_q_m_r_c_g_stab_1a49c4ed8174c1de615903b36c77c098b7">Print</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_bi_c_g_stabl_1a96916631711d48787e94d04d5b15d57d">Print</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_ruge_stueben_a_m_g_1a24bed949ec7685f2f81913a71b7e2eee">Print</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_global_pairwise_a_m_g_1a9fa1e90d8b81b9db2a9ece03f30fad5f">Print</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_c_r_1a0778eefac8f75109b22d1b547e972e30">Print</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_c_g_1ab6262e58cd3d6ba2ab039ec2d7e44ef9">Print</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_multi_colored_i_l_u_1ae64d2fe56dc32d03fcf135b771fea7b9">Print</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_base_multi_grid_1aea69e285bccd07d36d20f74742b00fbc">Print</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_f_c_g_1ab97e0859741d926edee0390f676e71c0">Print</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_multi_colored_s_g_s_1acfc1f1cfbbf4f2b054276632f51f3796">Print</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_i_d_r_1acd9fe3e00e5f520b03903a895f8c5e2b">Print</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_g_m_r_e_s_1a13336a82d64e481ef0b8aa8d7633f23e">Print</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_f_g_m_r_e_s_1a19804cfcc80fad220ec0bdb934643858">Print</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_diag_jacobi_saddle_point_precond_1a25a5ae4f6c652c3c35e7783597ffa76d">Print</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_pairwise_a_m_g_1ae7517d16fa91981f9ab8d9d852b8b129">Print</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_mixed_precision_d_c_1aab5b1e59486abf2e806447a8b3478887">Print</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_block_preconditioner_1a8bd967edd8f8c227c901bf191f3ed556">Print</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_multi_elimination_1ad12a355d05f6379a980af64334703732">Print</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_jacobi_1ac32b28d3da946310b69b6bdf89ca54d0">Print</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_multi_colored_g_s_1afefb587669df95791536836579cd91c6">Print</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_f_s_a_i_1acc64b80be4f6240eccc9b985f2352b28">Print</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_r_a_s_1a87799131080d64d658e5221954a08f16">Print</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_g_s_1ab12697d17918694a697cb2293d1074fd">Print</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_s_p_a_i_1a2ce222910c28e53e30a0ee3798a9b9d0">Print</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_s_g_s_1a2dee34e0055567638d420b71c5fe0e47">Print</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_i_l_u_1a2939f393aa131c09d1af657135edb21e">Print</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_t_n_s_1af4b7b265540f0bb5ecca897e076a8ead">Print</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_i_l_u_t_1a297136e53d030491de05b3f3321165c4">Print</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_i_c_1a3262b929dcb62079620310b51811ec2f">Print</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_fixed_point_1aa930cc6a54e2485bf3e11c32f263c132">Print</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_variable_preconditioner_1a5785b7067df5d14da1baadb238a93877">Print</reimplementedby>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Print information about the solver. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/solver.hpp" line="75" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_solver_1a69025eb1d2bc7f1266899c2739c82725" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void rocalution::Solver&lt; OperatorType, VectorType, ValueType &gt;::Solve</definition>
+        <argsstring>(const VectorType &amp;rhs, VectorType *x)=0</argsstring>
+        <name>Solve</name>
+        <reimplementedby refid="classrocalution_1_1_a_i_chebyshev_1ae919eada6f7cb6bed9a40c011a6a7da8">Solve</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_block_jacobi_1ada46c7d22ae45c7199e4be0c3e976b1e">Solve</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_a_s_1a50b11d14e46915b8b69c0f5cb07ffb3f">Solve</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_multi_colored_1a23536c79b952e5213a41465cfc7333a8">Solve</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_diag_jacobi_saddle_point_precond_1a3ef5a66eaaac329c912a75b21450fa36">Solve</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_jacobi_1af8c96c5220d787c7d0a1895f186aa199">Solve</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_multi_elimination_1a42a0951eda58472c2971761140f5b787">Solve</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_block_preconditioner_1a8a07c7de9b3e16160443024881e5d66b">Solve</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_f_s_a_i_1ac0640f3b11782b81b239ad6b8ed0f073">Solve</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_base_multi_grid_1afbe44b1d105248260a6076d4a1b86138">Solve</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_r_a_s_1a8ef8295a98c35fca0669965b024c270d">Solve</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_g_s_1a8eb1e40f064605f9905eba331f4977fb">Solve</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_s_p_a_i_1a2961bfe410fc6f7ae326f152e171e673">Solve</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_s_g_s_1a99a6fbe6e707d900fda4186b2c4b211e">Solve</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_i_l_u_1a3a1743824ec8df048f2165d4ecc1bbc1">Solve</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_t_n_s_1acc6c93ab6ee9364f2d74b69793404321">Solve</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_iterative_linear_solver_1a4c8e806ae8a7776fa5306598afe7e076">Solve</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_iterative_linear_solver_1a4c8e806ae8a7776fa5306598afe7e076">Solve</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_i_l_u_t_1a0bd890cab03a80e483d6f32efd15ad0e">Solve</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_i_c_1aeefae9c5faf7e7ad26e6c154e9a5b09e">Solve</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_variable_preconditioner_1af5edf6dd914d4c4e62834f086582d555">Solve</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_direct_linear_solver_1ae8295100cd76f64ff83efd8024a48728">Solve</reimplementedby>
+        <param>
+          <type>const VectorType &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <param>
+          <type>VectorType *</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+<para>Solve <ref refid="classrocalution_1_1_operator" kindref="compound">Operator</ref> x = rhs. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/solver.hpp" line="78" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_solver_1a034b434a4340a52430deed9b210e5003" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void rocalution::Solver&lt; OperatorType, VectorType, ValueType &gt;::SolveZeroSol</definition>
+        <argsstring>(const VectorType &amp;rhs, VectorType *x)</argsstring>
+        <name>SolveZeroSol</name>
+        <reimplementedby refid="classrocalution_1_1_preconditioner_1a2d2f41ddc040d777783d2591c8324508">SolveZeroSol</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_block_jacobi_1a0a570c03d241d1400753bd64efe4cbe5">SolveZeroSol</reimplementedby>
+        <param>
+          <type>const VectorType &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <param>
+          <type>VectorType *</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+<para>Solve <ref refid="classrocalution_1_1_operator" kindref="compound">Operator</ref> x = rhs, setting initial x = 0. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/solver.hpp" line="81" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/solver.cpp" bodystart="86" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_solver_1aa8839d3ba527d75fedd29fdbe9bd651f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void rocalution::Solver&lt; OperatorType, VectorType, ValueType &gt;::Clear</definition>
+        <argsstring>(void)</argsstring>
+        <name>Clear</name>
+        <reimplementedby refid="classrocalution_1_1_multi_colored_1aa49ba96569f4fda030192946ff5eb6ba">Clear</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_inversion_1a13737fb5e791533d3c25f2f5797eb70b">Clear</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_q_r_1a45fa4bb4ca9d6838bdf905ff67993dff">Clear</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_l_u_1ac9f35ac3119735b864b5cfa9afdd3c41">Clear</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_bi_c_g_stab_1ac328f8cd707e7011ad8ad8eca8738e09">Clear</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_base_a_m_g_1a2c81fabb935f751c5771df8836ce922b">Clear</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_q_m_r_c_g_stab_1a3af0179f855aa069b0e9c2bf0dce3f41">Clear</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_bi_c_g_stabl_1a67f19ffe19aaa01ef7bbbf42a8e28b0f">Clear</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_a_i_chebyshev_1a0808f60a064abb134d83fabeb543659b">Clear</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_c_r_1ad7324248c0ef280bb39617b8201b41e5">Clear</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_chebyshev_1ae80d6e0addd110e1022634da1b0b459c">Clear</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_block_jacobi_1a671699b5f06ba3fa57e094c7161a81fd">Clear</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_f_c_g_1a1c7985bfe10e42c8b9aab224fb925138">Clear</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_a_s_1ac5f628a0bce1c23fa468e3d429b0e29f">Clear</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_i_d_r_1a9ffdd18ba55fd4471a6499c3927e3364">Clear</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_g_m_r_e_s_1a909155a04511c64fbc580cae36d7680d">Clear</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_f_g_m_r_e_s_1a8fc9d8bf97cd4f4d8f5b3ad133b7808b">Clear</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_c_g_1ab53457ca8abd9813cf14d8f00dfe2ea6">Clear</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_diag_jacobi_saddle_point_precond_1a9f0f248482e5ec4aa3c2936d707e527e">Clear</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_block_preconditioner_1a895e518898a4ee40a307c915c0a521e9">Clear</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_multi_elimination_1a68bc12e2a463e6adc4eca8c48c008fc4">Clear</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_mixed_precision_d_c_1a67a42841717ae12dcee57d94b168f873">Clear</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_jacobi_1ab63abc5475d21eb7915338b820f4c76c">Clear</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_base_multi_grid_1ab8c35436568aacce432f6f253d296c20">Clear</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_f_s_a_i_1a2f6d402249b59f86d9257cb94d889f00">Clear</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_g_s_1ac694faf59a4e0064d5ded99d2d879d72">Clear</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_s_p_a_i_1a362c64e956b989c50a1afe8158b32862">Clear</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_s_g_s_1ac44bbdfd556a93311495222180b53f3e">Clear</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_i_l_u_1ab73f8e80f6d20b7d7e7316f08b377593">Clear</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_t_n_s_1a8c8a447c215cb80f05762a18292ebf95">Clear</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_i_l_u_t_1a421db5c318d9ae63587ffbc4b75ff05c">Clear</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_i_c_1a3078ebbe71122a589b46ff2da7c1cafe">Clear</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_fixed_point_1ae1395eec08363e71d6ad4872c54ffd2b">Clear</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_variable_preconditioner_1a50a3887b4ab076eaa780e1f75ee4d857">Clear</reimplementedby>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Clear (free all local data) the solver. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/solver.hpp" line="84" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/solver.cpp" bodystart="137" bodyend="150"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_solver_1a84754d7422ad3fb35c17c61f0a609c7a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void rocalution::Solver&lt; OperatorType, VectorType, ValueType &gt;::Build</definition>
+        <argsstring>(void)</argsstring>
+        <name>Build</name>
+        <reimplementedby refid="classrocalution_1_1_inversion_1a6deaef562832478df1ec6318f6541e1c">Build</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_q_r_1aaf3b95c896cae46db1e2d4919f007a03">Build</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_l_u_1aad55ff7e7088aef969adff4ff30d6fb7">Build</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_multi_colored_1a9efbb40dd24b15572d087856308b4031">Build</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_bi_c_g_stab_1acc189160437704c993c4df9d2f151670">Build</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_q_m_r_c_g_stab_1a2e6541d0c2ae4f4be763c833fa6b5a4b">Build</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_bi_c_g_stabl_1a2840e0a99394da5154b02583272e43f7">Build</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_base_a_m_g_1a8e5f2b01e79664c95b67af35781d16d9">Build</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_a_i_chebyshev_1acc48fa12fccc718d174cd6245ef2d8a2">Build</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_c_r_1a81a7222bf650e346deffde245bd613d8">Build</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_c_g_1a4860cf3e1fea631fc1fb1d2c9f9a1b96">Build</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_chebyshev_1a818dbc6712795dfd0072205b80ab2a74">Build</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_block_jacobi_1a899a0698954ab33853ff4c3860e6da5b">Build</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_f_c_g_1a3acf1bf92fedc1349d7ab1662beed05c">Build</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_i_d_r_1ac04b951d408a3ebaabcaa7ac7c9dcb3e">Build</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_a_s_1a4d7a50be9c60f769a219cdd8541084b5">Build</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_g_m_r_e_s_1a63939f5a09aeca89f883ae806fd93443">Build</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_f_g_m_r_e_s_1a414bd37cdda192492b10d3bf1608272c">Build</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_diag_jacobi_saddle_point_precond_1a579420d51b2460889552d551a50a5567">Build</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_mixed_precision_d_c_1a5391da24f6421aab942ca4bba084ca39">Build</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_jacobi_1a0d326f942385a91da4f3bbe36c2c14fe">Build</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_multi_elimination_1ab4a54648616d62a3d4a390c6f7b13eaf">Build</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_block_preconditioner_1a3b0eb481110166de3f8a65056bb6f8e7">Build</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_base_multi_grid_1a4033705acbf717fa5f23d219a8f7b765">Build</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_f_s_a_i_1a1911b168f63bf7e089aea9f8fd8b4de9">Build</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_g_s_1aa4a4f93810a3fccb77e8e529b98a4160">Build</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_s_p_a_i_1af73c93da31d188528699c37892793827">Build</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_s_g_s_1a206e93228cec6b1cb07f364f556b158d">Build</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_i_l_u_1a11f7e53ed961efd89e04d66b3e9e96a8">Build</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_t_n_s_1a046089ec15c54667418c80c5fd408692">Build</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_i_l_u_t_1ab9b03fd8daede6f30006fabe1cb6c307">Build</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_i_c_1a7e255460eca34f35c7f7871436e89695">Build</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_fixed_point_1ac23ae9d59403c088e60326a7b7ad04e0">Build</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_variable_preconditioner_1a5afbdaa5b1460137900df2c84fe3591c">Build</reimplementedby>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Build the solver (data allocation, structure and numerical computation) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/solver.hpp" line="87" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/solver.cpp" bodystart="95" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_solver_1a0d11ee9943f785db285f0ef5c08c64eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void rocalution::Solver&lt; OperatorType, VectorType, ValueType &gt;::BuildMoveToAcceleratorAsync</definition>
+        <argsstring>(void)</argsstring>
+        <name>BuildMoveToAcceleratorAsync</name>
+        <reimplementedby refid="classrocalution_1_1_c_g_1ab3ea5f05bfd1dda2665b32fbd7aaf161">BuildMoveToAcceleratorAsync</reimplementedby>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Build the solver and move it to the accelerator asynchronously. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/solver.hpp" line="90" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/solver.cpp" bodystart="110" bodyend="116"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_solver_1a17c2830a0ede8d82d1336aa25da6f907" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void rocalution::Solver&lt; OperatorType, VectorType, ValueType &gt;::Sync</definition>
+        <argsstring>(void)</argsstring>
+        <name>Sync</name>
+        <reimplementedby refid="classrocalution_1_1_c_g_1aca5693b548a5d5d7c0df92cf91ddcdea">Sync</reimplementedby>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Synchronize the solver. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/solver.hpp" line="93" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/solver.cpp" bodystart="119" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_solver_1acd20a051f0560a77645e35361df8f87c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void rocalution::Solver&lt; OperatorType, VectorType, ValueType &gt;::ReBuildNumeric</definition>
+        <argsstring>(void)</argsstring>
+        <name>ReBuildNumeric</name>
+        <reimplementedby refid="classrocalution_1_1_bi_c_g_stab_1a55f4d407bfa563cb27a5f0f4e04fa0e0">ReBuildNumeric</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_q_m_r_c_g_stab_1a227131b698307b0ca9647f215b751dfd">ReBuildNumeric</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_bi_c_g_stabl_1a4991e1ca3d20ccf255c226d60f993553">ReBuildNumeric</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_multi_colored_i_l_u_1af3eb0f49e962ecf9fd898bc6ab8730e8">ReBuildNumeric</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_c_r_1a99df35923a0f5a5d01fa5cc494d93da6">ReBuildNumeric</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_chebyshev_1aeedc05f5aee09d82bf83eae2a69cb429">ReBuildNumeric</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_multi_colored_s_g_s_1a3a10b63078d6230071e902ee11b42b66">ReBuildNumeric</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_block_jacobi_1ad7f5e520bcfd7724f49c4a8fdd8853d8">ReBuildNumeric</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_f_c_g_1acbe9d30d2bc4ff0d64d3f6b371a31f3a">ReBuildNumeric</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_i_d_r_1a01bc5a8ee5353b99c5b27909b975e6dd">ReBuildNumeric</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_u_a_a_m_g_1a84ac9a588c8081474912e8adde2b8a0f">ReBuildNumeric</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_s_a_a_m_g_1a6c5cc4f49828dc2cadaa3d4176ab0191">ReBuildNumeric</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_ruge_stueben_a_m_g_1a8a5a7518350a5e6d7108e6c7fbf922e3">ReBuildNumeric</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_g_m_r_e_s_1a5a8a8893adc3f3834a802a159e9d2ddb">ReBuildNumeric</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_f_g_m_r_e_s_1a4329cbd6a8ccaf5e99959e989f139376">ReBuildNumeric</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_c_g_1aa8c7c3c405baded18f66a5facf7f5843">ReBuildNumeric</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_global_pairwise_a_m_g_1ad166212a6ea2c76b36f6e176254c3acc">ReBuildNumeric</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_mixed_precision_d_c_1a23094047366fbc00a96e2ccdd6e2b445">ReBuildNumeric</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_pairwise_a_m_g_1a6f0fde48bd04a0adb27dc8e0506260c2">ReBuildNumeric</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_fixed_point_1ac277e5e97c6ddb7d8b93ce48088bace4">ReBuildNumeric</reimplementedby>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Rebuild the solver only with numerical computation (no allocation or data structure computation) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/solver.hpp" line="98" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/solver.cpp" bodystart="125" bodyend="134"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_solver_1a3c263e65898816f5838184c0af78a044" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void rocalution::Solver&lt; OperatorType, VectorType, ValueType &gt;::MoveToHost</definition>
+        <argsstring>(void)</argsstring>
+        <name>MoveToHost</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Move all data (i.e. </para>        </briefdescription>
+        <detaileddescription>
+<para>move the solver) to the host </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/solver.hpp" line="101" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/solver.cpp" bodystart="153" bodyend="169"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_solver_1ab1b6410cd134c9ad00c1851d400cf0f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void rocalution::Solver&lt; OperatorType, VectorType, ValueType &gt;::MoveToAccelerator</definition>
+        <argsstring>(void)</argsstring>
+        <name>MoveToAccelerator</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Move all data (i.e. </para>        </briefdescription>
+        <detaileddescription>
+<para>move the solver) to the accelerator </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/solver.hpp" line="103" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/solver.cpp" bodystart="172" bodyend="188"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_solver_1aa2ab9c17de96add5e3ad30e7cabf0ea7" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void rocalution::Solver&lt; OperatorType, VectorType, ValueType &gt;::Verbose</definition>
+        <argsstring>(int verb=1)</argsstring>
+        <name>Verbose</name>
+        <reimplementedby refid="classrocalution_1_1_iterative_linear_solver_1ac88dc520e41c9d1a2de5ad8c95e644c2">Verbose</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_iterative_linear_solver_1ac88dc520e41c9d1a2de5ad8c95e644c2">Verbose</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_direct_linear_solver_1a4feccca7c61e39e8f5628767f2a86c28">Verbose</reimplementedby>
+        <param>
+          <type>int</type>
+          <declname>verb</declname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+<para>Provide verbose output of the solver. </para>        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para>verb = 0 -&gt; no output</para></listitem><listitem><para>verb = 1 -&gt; print info about the solver (start, end);</para></listitem><listitem><para>verb = 2 -&gt; print (iter, residual) via iteration control; </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/solver.hpp" line="111" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/solver.cpp" bodystart="191" bodyend="196"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classrocalution_1_1_solver_1a9e6a5ceb6a8c35cd8d54ebff0664d27e" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void rocalution::Solver&lt; OperatorType, VectorType, ValueType &gt;::PrintStart_</definition>
+        <argsstring>(void) const =0</argsstring>
+        <name>PrintStart_</name>
+        <reimplementedby refid="classrocalution_1_1_preconditioner_1abf90b743371c8d0159a6cad44e8595f3">PrintStart_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_inversion_1ae8a8ec399cd9fac4ffa160525c93e97a">PrintStart_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_q_r_1a94767d9051e83f31196f7201d644167c">PrintStart_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_l_u_1afb2647c4e156cf298c8be355a2c7bdb6">PrintStart_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_bi_c_g_stab_1ad63e8592814df7bf111709ae848e229b">PrintStart_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_q_m_r_c_g_stab_1a5ba1221ffe8cc78240d5567c0a63871c">PrintStart_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_c_r_1ab973ca128001eb6c6e5cce2e0c4f9f46">PrintStart_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_chebyshev_1a819e5d91436bd18c6223bb2a64986597">PrintStart_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_f_c_g_1a8d228a466dfe7a4e3f48d9ed2562f432">PrintStart_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_bi_c_g_stabl_1a57ffb8c0029ae4d48f7fddd2ca09face">PrintStart_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_u_a_a_m_g_1aa594849af2e708e94b8b65e286fcb119">PrintStart_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_s_a_a_m_g_1a551a63126edb0ad526d891f6fc164eae">PrintStart_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_ruge_stueben_a_m_g_1ad8909fc2b44f1528845f33875b2ae4a4">PrintStart_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_c_g_1ae7f9b4dbd4adabea40b21b779169c947">PrintStart_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_g_m_r_e_s_1a9017eaad7c9b34ead189dcc431d0104e">PrintStart_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_i_d_r_1a95f7e8a99093bf46079344d01ef3a56a">PrintStart_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_f_g_m_r_e_s_1a0f59f29afc78053852c77f105ce1dc8d">PrintStart_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_mixed_precision_d_c_1a9be28f95aa0a5db88316393fae14b9c6">PrintStart_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_global_pairwise_a_m_g_1ad4827cde819b3c0ac7cae37bbce59a00">PrintStart_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_pairwise_a_m_g_1a8b1142526735b1440b12286c820d14f3">PrintStart_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_base_multi_grid_1a949c187616ebc08671f528a575b22705">PrintStart_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_fixed_point_1ab65130c9a035d906e4830739db9a778a">PrintStart_</reimplementedby>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Print starting message of the solver. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/solver.hpp" line="132" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_solver_1add2b6aec27eeaffbbd1130cc846c1019" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void rocalution::Solver&lt; OperatorType, VectorType, ValueType &gt;::PrintEnd_</definition>
+        <argsstring>(void) const =0</argsstring>
+        <name>PrintEnd_</name>
+        <reimplementedby refid="classrocalution_1_1_preconditioner_1aa16516bd94c4e5a931ec3adad6b2081b">PrintEnd_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_inversion_1a25e7444710404658d13633ad53b80a38">PrintEnd_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_q_r_1a26f486140f8621baf8a260deb8388bae">PrintEnd_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_l_u_1a80a191beb1bcaad6a7a19ca73d1e4219">PrintEnd_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_bi_c_g_stab_1a115ad28f50641d7dfe272f4ac37892e5">PrintEnd_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_q_m_r_c_g_stab_1a4acbd3db151135afe32856aa3d6ef37e">PrintEnd_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_c_r_1a99b484a616bd4ac1db08e7b9746a8a35">PrintEnd_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_chebyshev_1a7450905e0ee92e26f6340e6ae8c13637">PrintEnd_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_f_c_g_1ac03d39259f40b251a69ab3a9b338f4ac">PrintEnd_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_bi_c_g_stabl_1a91f97ec3b92024aa39973078fd05dc6b">PrintEnd_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_u_a_a_m_g_1a5068d9ebe8169d7eb83b16f8eca122d6">PrintEnd_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_s_a_a_m_g_1ae265816563fc1574b54fc1f5410e64f8">PrintEnd_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_ruge_stueben_a_m_g_1a8462f17320c42c5d13cc5f7d86bd7a4c">PrintEnd_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_c_g_1a720d12dd1a019def3042c2122e398ac7">PrintEnd_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_g_m_r_e_s_1a3ce16a0786cd2f4787166dbf72d46382">PrintEnd_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_i_d_r_1a5a912146f8a3762afd46272ec7cbce04">PrintEnd_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_f_g_m_r_e_s_1af71bd8f9505b49fe21b7933a91918ba9">PrintEnd_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_mixed_precision_d_c_1a92b19b1ffc5a0a6e392ca1f7b708774f">PrintEnd_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_global_pairwise_a_m_g_1a58cc5c3ef997f71e853703d3724a0942">PrintEnd_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_pairwise_a_m_g_1ac2ce08dc444b1d9dafc93be9e517050c">PrintEnd_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_base_multi_grid_1af7e6d055515f253a8381f8da34658501">PrintEnd_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_fixed_point_1a9e03618ba35e34c74038aa9fc6077a3f">PrintEnd_</reimplementedby>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Print ending message of the solver. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/solver.hpp" line="134" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_solver_1aa1e8be1bd2107543c7390a81f8cee8cb" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void rocalution::Solver&lt; OperatorType, VectorType, ValueType &gt;::MoveToHostLocalData_</definition>
+        <argsstring>(void)=0</argsstring>
+        <name>MoveToHostLocalData_</name>
+        <reimplementedby refid="classrocalution_1_1_inversion_1aad034332f9e3df24feebf44df3d9795f">MoveToHostLocalData_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_q_r_1a94b13ef63445174bd57fd608209cba56">MoveToHostLocalData_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_l_u_1afdbde4c7c76d81b3063c9d734499277b">MoveToHostLocalData_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_a_i_chebyshev_1acb0d3f172cbecdc0ec658b1d0ab552fc">MoveToHostLocalData_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_block_jacobi_1ad62061b2592072f278db6c7806c4b7cd">MoveToHostLocalData_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_bi_c_g_stab_1a6c60c0862e7b624bc197e7ccf630f439">MoveToHostLocalData_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_a_s_1a1c314f5a46550262cde06bd65109de99">MoveToHostLocalData_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_q_m_r_c_g_stab_1ad24d3d35033c8182eb9a7e1b0cbe057e">MoveToHostLocalData_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_c_r_1af4675a942a9c79c3bd91a8cf9b1bbd7e">MoveToHostLocalData_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_chebyshev_1a656093906c28ef870d81b3bd0604fa1d">MoveToHostLocalData_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_f_c_g_1a2f65271069f43621edf02d1807dda5ff">MoveToHostLocalData_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_bi_c_g_stabl_1a1e8b53c73393a18ed50e6aa8d991f458">MoveToHostLocalData_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_c_g_1afab1ff5a64489d736c555e7bdb3552bd">MoveToHostLocalData_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_g_m_r_e_s_1a0f2a954bae675a9d2b385a405f367f31">MoveToHostLocalData_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_i_d_r_1a07136a096dce96a175ecdb54be40379d">MoveToHostLocalData_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_f_g_m_r_e_s_1af3851547b9558db84a79eb058cbca53e">MoveToHostLocalData_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_mixed_precision_d_c_1a9fadd98f12314b051ed20048641ccb52">MoveToHostLocalData_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_jacobi_1a40d5b6e969bc2958839ab894bfe71836">MoveToHostLocalData_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_f_s_a_i_1aaa61e05eb32c7e2e4bb31c68024b7de1">MoveToHostLocalData_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_diag_jacobi_saddle_point_precond_1adca53d1e7a84dc1a2eaa1aac405e1661">MoveToHostLocalData_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_block_preconditioner_1add7207316fcf38a241954b5b06d8fb63">MoveToHostLocalData_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_base_multi_grid_1aa966335651f12b246995d91e798d53dc">MoveToHostLocalData_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_g_s_1aa3e4faced26514b08ef62bf827529d1e">MoveToHostLocalData_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_multi_colored_1a6babbe62884ef9a5f997122f23aa7230">MoveToHostLocalData_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_multi_elimination_1a5bd792143c25d5d5c8e13d56e2685625">MoveToHostLocalData_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_s_p_a_i_1ad28b6648a1a7f331d1e7cf3d81321967">MoveToHostLocalData_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_s_g_s_1a879a1521ed4a296f94a18f2c2783eaf6">MoveToHostLocalData_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_i_l_u_1a17a40f9ff7782ceaaa7bc5af12cefb1a">MoveToHostLocalData_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_t_n_s_1aa6344a86945819eccfb35abe6b7c3da8">MoveToHostLocalData_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_i_l_u_t_1ae54661639b3d67fd004912a5323a80dd">MoveToHostLocalData_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_i_c_1a4d63dd66ae2a45b9f4e1491b27dd21d4">MoveToHostLocalData_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_variable_preconditioner_1a7945630187fb9422324072c0b174dd66">MoveToHostLocalData_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_fixed_point_1a49d0b5f5733143b15f5418b54b479100">MoveToHostLocalData_</reimplementedby>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Move all local data to the host. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/solver.hpp" line="137" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_solver_1a8ce29de0bdda9f35a6a687fd06ac9b11" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void rocalution::Solver&lt; OperatorType, VectorType, ValueType &gt;::MoveToAcceleratorLocalData_</definition>
+        <argsstring>(void)=0</argsstring>
+        <name>MoveToAcceleratorLocalData_</name>
+        <reimplementedby refid="classrocalution_1_1_inversion_1ae20fe54c86c996a7b4006c2626c7d65d">MoveToAcceleratorLocalData_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_q_r_1a6cdd675d717963af8387bcb1fc17f8fa">MoveToAcceleratorLocalData_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_l_u_1a0cbff78e1e5d991b53ae1e47f4985374">MoveToAcceleratorLocalData_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_a_i_chebyshev_1acddb953f21b6bdc973edbc28d647a9f2">MoveToAcceleratorLocalData_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_block_jacobi_1a62cb96e202a7f3aa5ac7853451b31780">MoveToAcceleratorLocalData_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_bi_c_g_stab_1a38f29682c2dd9d6e1fd24902af401f62">MoveToAcceleratorLocalData_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_a_s_1a7ee4380cbf87e2d0e0402ea8d451308c">MoveToAcceleratorLocalData_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_q_m_r_c_g_stab_1ac4eb19fca30d2e66c27184cd6d87d793">MoveToAcceleratorLocalData_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_c_r_1a1c2f3c954f2c221e66afa2382b3c0543">MoveToAcceleratorLocalData_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_chebyshev_1a8535f610aaf815d435eaa2ee6a5331ac">MoveToAcceleratorLocalData_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_f_c_g_1a42a8233aa607dd24deb630a892ad3678">MoveToAcceleratorLocalData_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_bi_c_g_stabl_1ab547a46aac096a36b45190d5e4dab6fb">MoveToAcceleratorLocalData_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_c_g_1aaece656cb6650f377ac3d55c0d772b43">MoveToAcceleratorLocalData_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_g_m_r_e_s_1a022be296736ded421af758f3a10fd292">MoveToAcceleratorLocalData_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_i_d_r_1a7c55c5ad42e52093a35433b5c5e0bc61">MoveToAcceleratorLocalData_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_f_g_m_r_e_s_1ad9fcaedd2b0746b6da5c87276a549cd9">MoveToAcceleratorLocalData_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_mixed_precision_d_c_1a2ec922896d422bf9198669b147308b9c">MoveToAcceleratorLocalData_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_jacobi_1a227eb0e6e07e981decf7130cfaa547c3">MoveToAcceleratorLocalData_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_f_s_a_i_1a4d93c5f71adb9004d30f560a4cff8110">MoveToAcceleratorLocalData_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_diag_jacobi_saddle_point_precond_1a0dc2ce0ee37ee2cd7aea15e9a885a161">MoveToAcceleratorLocalData_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_block_preconditioner_1ad4508716d3a46dc0cf90a40c93fff051">MoveToAcceleratorLocalData_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_base_multi_grid_1a932c769ff0896be30bda0e81a6854367">MoveToAcceleratorLocalData_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_g_s_1aa1100324fd017154cd1238de11724943">MoveToAcceleratorLocalData_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_multi_colored_1a17ddc5533a57bb0a40d87e331c4d891d">MoveToAcceleratorLocalData_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_multi_elimination_1adef57227b295ee3d20084d83267dd7bc">MoveToAcceleratorLocalData_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_s_p_a_i_1acc84e3b8a64f06d27174cf1c7e2833db">MoveToAcceleratorLocalData_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_s_g_s_1a642c4cf6e75422aee85925879ac77fe2">MoveToAcceleratorLocalData_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_i_l_u_1aa34bec388216ac0f892b5732d748498d">MoveToAcceleratorLocalData_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_t_n_s_1a66060b5d8d81a63b69ba946bb9020c6d">MoveToAcceleratorLocalData_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_i_l_u_t_1a3ba005e3220db06c723260e43d2a98d6">MoveToAcceleratorLocalData_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_i_c_1ae0845a1667964bb36cf08f176fcc2844">MoveToAcceleratorLocalData_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_variable_preconditioner_1a0ed152885be7001a1d86454ff8ece808">MoveToAcceleratorLocalData_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_fixed_point_1ac426f998b3cd0c38d367cf57104f39a1">MoveToAcceleratorLocalData_</reimplementedby>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Move all local data to the accelerator. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/solver.hpp" line="139" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Base class for all solvers and preconditioners. </para>    </briefdescription>
+    <detaileddescription>
+<para>Most of the solvers can be performed on linear operators <ref refid="classrocalution_1_1_local_matrix" kindref="compound">LocalMatrix</ref>, <ref refid="classrocalution_1_1_local_stencil" kindref="compound">LocalStencil</ref> and <ref refid="classrocalution_1_1_global_matrix" kindref="compound">GlobalMatrix</ref> - i.e. the solvers can be performed locally (on a shared memory system) or in a distributed manner (on a cluster) via MPI. The only exception is the AMG (Algebraic Multigrid) solver which has two versions (one for <ref refid="classrocalution_1_1_local_matrix" kindref="compound">LocalMatrix</ref> and one for <ref refid="classrocalution_1_1_global_matrix" kindref="compound">GlobalMatrix</ref> class). The only pure local solvers (which do not support global/MPI operations) are the mixed-precision defect-correction solver and all direct solvers.</para><para>All solvers need three template parameters - Operators, Vectors and Scalar type.</para><para>The <ref refid="classrocalution_1_1_solver" kindref="compound">Solver</ref> class is purely virtual and provides an interface for<itemizedlist>
+<listitem><para><ref refid="classrocalution_1_1_solver_1a12765b63efe75bc88406a8d6ebb5aacc" kindref="member">SetOperator()</ref> to set the operator <formula id="29">$A$</formula>, i.e. the user can pass the matrix here.</para></listitem><listitem><para><ref refid="classrocalution_1_1_solver_1a84754d7422ad3fb35c17c61f0a609c7a" kindref="member">Build()</ref> to build the solver (including preconditioners, sub-solvers, etc.). The user need to specify the operator first before calling <ref refid="classrocalution_1_1_solver_1a84754d7422ad3fb35c17c61f0a609c7a" kindref="member">Build()</ref>.</para></listitem><listitem><para><ref refid="classrocalution_1_1_solver_1a69025eb1d2bc7f1266899c2739c82725" kindref="member">Solve()</ref> to solve the system <formula id="56">$Ax = b$</formula>. The user need to pass a right-hand-side <formula id="57">$b$</formula> and a vector <formula id="58">$x$</formula>, where the solution will be obtained.</para></listitem><listitem><para><ref refid="classrocalution_1_1_solver_1a57992cfc687f3bf260964ad2fc19c467" kindref="member">Print()</ref> to show solver information.</para></listitem><listitem><para><ref refid="classrocalution_1_1_solver_1acd20a051f0560a77645e35361df8f87c" kindref="member">ReBuildNumeric()</ref> to only re-build the solver numerically (if possible).</para></listitem><listitem><para><ref refid="classrocalution_1_1_solver_1a3c263e65898816f5838184c0af78a044" kindref="member">MoveToHost()</ref> and <ref refid="classrocalution_1_1_solver_1ab1b6410cd134c9ad00c1851d400cf0f8" kindref="member">MoveToAccelerator()</ref> to offload the solver (including preconditioners and sub-solvers) to the host/accelerator.</para></listitem></itemizedlist>
+</para><para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>OperatorType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- can be <ref refid="classrocalution_1_1_local_matrix" kindref="compound">LocalMatrix</ref>, <ref refid="classrocalution_1_1_global_matrix" kindref="compound">GlobalMatrix</ref> or <ref refid="classrocalution_1_1_local_stencil" kindref="compound">LocalStencil</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>VectorType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- can be <ref refid="classrocalution_1_1_local_vector" kindref="compound">LocalVector</ref> or <ref refid="classrocalution_1_1_global_vector" kindref="compound">GlobalVector</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ValueType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- can be float, double, std::complex&lt;float&gt; or std::complex&lt;double&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="758">
+        <label>rocalution::IterativeLinearSolver&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_iterative_linear_solver"/>
+        <childnode refid="752" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="755">
+        <label>rocalution::Inversion&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_inversion"/>
+        <childnode refid="754" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="757">
+        <label>rocalution::QR&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_q_r"/>
+        <childnode refid="754" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="786">
+        <label>rocalution::GS&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_g_s"/>
+        <childnode refid="778" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="783">
+        <label>rocalution::BlockPreconditioner&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_block_preconditioner"/>
+        <childnode refid="778" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="798">
+        <label>rocalution::TNS&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_t_n_s"/>
+        <childnode refid="778" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="772">
+        <label>rocalution::FCG&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_f_c_g"/>
+        <childnode refid="758" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="766">
+        <label>rocalution::MultiGrid&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_multi_grid"/>
+        <childnode refid="759" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="769">
+        <label>rocalution::CG&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_c_g"/>
+        <childnode refid="758" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="787">
+        <label>rocalution::IC&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_i_c"/>
+        <childnode refid="778" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="795">
+        <label>rocalution::MultiElimination&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_multi_elimination"/>
+        <childnode refid="778" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="782">
+        <label>rocalution::BlockJacobi&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_block_jacobi"/>
+        <childnode refid="778" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="754">
+        <label>rocalution::DirectLinearSolver&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_direct_linear_solver"/>
+        <childnode refid="752" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="761">
+        <label>rocalution::GlobalPairwiseAMG&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_global_pairwise_a_m_g"/>
+        <childnode refid="760" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="778">
+        <label>rocalution::Preconditioner&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_preconditioner"/>
+        <childnode refid="752" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="752">
+        <label>rocalution::Solver&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_solver"/>
+        <childnode refid="753" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="773">
+        <label>rocalution::FGMRES&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_f_g_m_r_e_s"/>
+        <childnode refid="758" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="796">
+        <label>rocalution::SGS&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_s_g_s"/>
+        <childnode refid="778" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="756">
+        <label>rocalution::LU&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_l_u"/>
+        <childnode refid="754" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="794">
+        <label>rocalution::MultiColoredGS&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_multi_colored_g_s"/>
+        <childnode refid="793" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="770">
+        <label>rocalution::Chebyshev&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_chebyshev"/>
+        <childnode refid="758" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="789">
+        <label>rocalution::ILUT&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_i_l_u_t"/>
+        <childnode refid="778" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="779">
+        <label>rocalution::AIChebyshev&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_a_i_chebyshev"/>
+        <childnode refid="778" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="790">
+        <label>rocalution::Jacobi&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_jacobi"/>
+        <childnode refid="778" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="788">
+        <label>rocalution::ILU&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_i_l_u"/>
+        <childnode refid="778" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="792">
+        <label>rocalution::MultiColoredILU&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_multi_colored_i_l_u"/>
+        <childnode refid="791" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="781">
+        <label>rocalution::RAS&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_r_a_s"/>
+        <childnode refid="780" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="753">
+        <label>rocalution::RocalutionObj</label>
+      </node>
+      <node id="797">
+        <label>rocalution::SPAI&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_s_p_a_i"/>
+        <childnode refid="778" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="785">
+        <label>rocalution::FSAI&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_f_s_a_i"/>
+        <childnode refid="778" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="793">
+        <label>rocalution::MultiColoredSGS&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_multi_colored_s_g_s"/>
+        <childnode refid="791" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="767">
+        <label>rocalution::BiCGStab&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_bi_c_g_stab"/>
+        <childnode refid="758" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="775">
+        <label>rocalution::GMRES&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_g_m_r_e_s"/>
+        <childnode refid="758" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="777">
+        <label>rocalution::QMRCGStab&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_q_m_r_c_g_stab"/>
+        <childnode refid="758" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="776">
+        <label>rocalution::IDR&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_i_d_r"/>
+        <childnode refid="758" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="784">
+        <label>rocalution::DiagJacobiSaddlePointPrecond&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_diag_jacobi_saddle_point_precond"/>
+        <childnode refid="778" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="780">
+        <label>rocalution::AS&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_a_s"/>
+        <childnode refid="778" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="765">
+        <label>rocalution::UAAMG&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_u_a_a_m_g"/>
+        <childnode refid="760" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="768">
+        <label>rocalution::BiCGStabl&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_bi_c_g_stabl"/>
+        <childnode refid="758" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="791">
+        <label>rocalution::MultiColored&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_multi_colored"/>
+        <childnode refid="778" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="760">
+        <label>rocalution::BaseAMG&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_base_a_m_g"/>
+        <childnode refid="759" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="774">
+        <label>rocalution::FixedPoint&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_fixed_point"/>
+        <childnode refid="758" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="762">
+        <label>rocalution::PairwiseAMG&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_pairwise_a_m_g"/>
+        <childnode refid="760" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="799">
+        <label>rocalution::VariablePreconditioner&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_variable_preconditioner"/>
+        <childnode refid="778" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="771">
+        <label>rocalution::CR&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_c_r"/>
+        <childnode refid="758" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="764">
+        <label>rocalution::SAAMG&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_s_a_a_m_g"/>
+        <childnode refid="760" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="759">
+        <label>rocalution::BaseMultiGrid&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_base_multi_grid"/>
+        <childnode refid="758" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="763">
+        <label>rocalution::RugeStuebenAMG&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_ruge_stueben_a_m_g"/>
+        <childnode refid="760" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="803">
+        <label>rocalution::Vector&lt; int &gt;</label>
+        <link refid="classrocalution_1_1_vector"/>
+        <childnode refid="804" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="804">
+        <label>rocalution::BaseRocalution&lt; ValueType &gt;</label>
+        <link refid="classrocalution_1_1_base_rocalution"/>
+        <childnode refid="801" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="800">
+        <label>rocalution::Solver&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_solver"/>
+        <childnode refid="801" relation="public-inheritance">
+        </childnode>
+        <childnode refid="802" relation="usage">
+          <edgelabel>permutation_</edgelabel>
+        </childnode>
+        <childnode refid="805" relation="usage">
+          <edgelabel>op_</edgelabel>
+        </childnode>
+      </node>
+      <node id="802">
+        <label>rocalution::LocalVector&lt; int &gt;</label>
+        <link refid="classrocalution_1_1_local_vector"/>
+        <childnode refid="803" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="801">
+        <label>rocalution::RocalutionObj</label>
+      </node>
+      <node id="805">
+        <label>OperatorType</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/tcs/rocALUTION/src/solvers/solver.hpp" line="63" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/solver.hpp" bodystart="62" bodyend="140"/>
+    <listofallmembers>
+      <member refid="classrocalution_1_1_solver_1a84754d7422ad3fb35c17c61f0a609c7a" prot="public" virt="virtual"><scope>rocalution::Solver</scope><name>Build</name></member>
+      <member refid="classrocalution_1_1_solver_1a64924a0c87d60d2e4bf9fa295d0152cb" prot="protected" virt="non-virtual"><scope>rocalution::Solver</scope><name>build_</name></member>
+      <member refid="classrocalution_1_1_solver_1a0d11ee9943f785db285f0ef5c08c64eb" prot="public" virt="virtual"><scope>rocalution::Solver</scope><name>BuildMoveToAcceleratorAsync</name></member>
+      <member refid="classrocalution_1_1_solver_1aa8839d3ba527d75fedd29fdbe9bd651f" prot="public" virt="virtual"><scope>rocalution::Solver</scope><name>Clear</name></member>
+      <member refid="classrocalution_1_1_rocalution_obj_1a4bba5aeaf4fd705efc00402f1f6ed40b" prot="protected" virt="non-virtual"><scope>rocalution::Solver</scope><name>global_obj_id_</name></member>
+      <member refid="classrocalution_1_1_solver_1ab1b6410cd134c9ad00c1851d400cf0f8" prot="public" virt="virtual"><scope>rocalution::Solver</scope><name>MoveToAccelerator</name></member>
+      <member refid="classrocalution_1_1_solver_1a8ce29de0bdda9f35a6a687fd06ac9b11" prot="protected" virt="pure-virtual"><scope>rocalution::Solver</scope><name>MoveToAcceleratorLocalData_</name></member>
+      <member refid="classrocalution_1_1_solver_1a3c263e65898816f5838184c0af78a044" prot="public" virt="virtual"><scope>rocalution::Solver</scope><name>MoveToHost</name></member>
+      <member refid="classrocalution_1_1_solver_1aa1e8be1bd2107543c7390a81f8cee8cb" prot="protected" virt="pure-virtual"><scope>rocalution::Solver</scope><name>MoveToHostLocalData_</name></member>
+      <member refid="classrocalution_1_1_solver_1ad338b5f99cf339fb33218dd8b958cac4" prot="protected" virt="non-virtual"><scope>rocalution::Solver</scope><name>op_</name></member>
+      <member refid="classrocalution_1_1_solver_1ac46ab4d19fba48ece463666d37a7dc86" prot="protected" virt="non-virtual"><scope>rocalution::Solver</scope><name>permutation_</name></member>
+      <member refid="classrocalution_1_1_solver_1a2acdb829fa657a7b3e680d1ee6005c9b" prot="protected" virt="non-virtual"><scope>rocalution::Solver</scope><name>precond_</name></member>
+      <member refid="classrocalution_1_1_solver_1a57992cfc687f3bf260964ad2fc19c467" prot="public" virt="pure-virtual"><scope>rocalution::Solver</scope><name>Print</name></member>
+      <member refid="classrocalution_1_1_solver_1add2b6aec27eeaffbbd1130cc846c1019" prot="protected" virt="pure-virtual"><scope>rocalution::Solver</scope><name>PrintEnd_</name></member>
+      <member refid="classrocalution_1_1_solver_1a9e6a5ceb6a8c35cd8d54ebff0664d27e" prot="protected" virt="pure-virtual"><scope>rocalution::Solver</scope><name>PrintStart_</name></member>
+      <member refid="classrocalution_1_1_solver_1acd20a051f0560a77645e35361df8f87c" prot="public" virt="virtual"><scope>rocalution::Solver</scope><name>ReBuildNumeric</name></member>
+      <member refid="classrocalution_1_1_solver_1a91354c5c116742c58d9eb2094cc6a68e" prot="public" virt="virtual"><scope>rocalution::Solver</scope><name>ResetOperator</name></member>
+      <member refid="classrocalution_1_1_rocalution_obj_1ad60a8b2047aad74e488c552264fa7737" prot="public" virt="non-virtual"><scope>rocalution::Solver</scope><name>RocalutionObj</name></member>
+      <member refid="classrocalution_1_1_solver_1a12765b63efe75bc88406a8d6ebb5aacc" prot="public" virt="non-virtual"><scope>rocalution::Solver</scope><name>SetOperator</name></member>
+      <member refid="classrocalution_1_1_solver_1a69025eb1d2bc7f1266899c2739c82725" prot="public" virt="pure-virtual"><scope>rocalution::Solver</scope><name>Solve</name></member>
+      <member refid="classrocalution_1_1_solver_1a009956b05d4d5d1d38e4c24341b14a66" prot="public" virt="non-virtual"><scope>rocalution::Solver</scope><name>Solver</name></member>
+      <member refid="classrocalution_1_1_solver_1a034b434a4340a52430deed9b210e5003" prot="public" virt="virtual"><scope>rocalution::Solver</scope><name>SolveZeroSol</name></member>
+      <member refid="classrocalution_1_1_solver_1a17c2830a0ede8d82d1336aa25da6f907" prot="public" virt="virtual"><scope>rocalution::Solver</scope><name>Sync</name></member>
+      <member refid="classrocalution_1_1_solver_1a2ee162346e0d52543f9d3d25fe70ea8a" prot="protected" virt="non-virtual"><scope>rocalution::Solver</scope><name>verb_</name></member>
+      <member refid="classrocalution_1_1_solver_1aa2ab9c17de96add5e3ad30e7cabf0ea7" prot="public" virt="virtual"><scope>rocalution::Solver</scope><name>Verbose</name></member>
+      <member refid="classrocalution_1_1_rocalution_obj_1a55a2f93f798cebdda6343b20db959e2d" prot="public" virt="virtual"><scope>rocalution::Solver</scope><name>~RocalutionObj</name></member>
+      <member refid="classrocalution_1_1_solver_1af861566a540fc6cc399c844bbc789ec6" prot="public" virt="virtual"><scope>rocalution::Solver</scope><name>~Solver</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

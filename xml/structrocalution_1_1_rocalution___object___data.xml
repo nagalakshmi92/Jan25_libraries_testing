@@ -14,14 +14,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ROCm_Libraries/rocALUTION/src/base/base_rocalution.hpp" line="57" column="1" bodyfile="ROCm_Libraries/rocALUTION/src/base/base_rocalution.hpp" bodystart="57" bodyend="-1"/>
+        <location file="/home/tcs/rocALUTION/src/base/base_rocalution.hpp" line="57" column="1" bodyfile="/home/tcs/rocALUTION/src/base/base_rocalution.hpp" bodystart="57" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="ROCm_Libraries/rocALUTION/src/base/base_rocalution.hpp" line="56" column="1" bodyfile="ROCm_Libraries/rocALUTION/src/base/base_rocalution.hpp" bodystart="55" bodyend="58"/>
+    <location file="/home/tcs/rocALUTION/src/base/base_rocalution.hpp" line="56" column="1" bodyfile="/home/tcs/rocALUTION/src/base/base_rocalution.hpp" bodystart="55" bodyend="58"/>
     <listofallmembers>
       <member refid="structrocalution_1_1_rocalution___object___data_1add0958ffc8b000730a46902e22f0ff9c" prot="public" virt="non-virtual"><scope>rocalution::Rocalution_Object_Data</scope><name>all_obj</name></member>
     </listofallmembers>

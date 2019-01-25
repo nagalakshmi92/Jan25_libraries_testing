@@ -1,0 +1,340 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classrocalution_1_1_inversion" kind="class" language="C++" prot="public">
+    <compoundname>rocalution::Inversion</compoundname>
+    <basecompoundref refid="classrocalution_1_1_direct_linear_solver" prot="public" virt="non-virtual">rocalution::DirectLinearSolver&lt; OperatorType, VectorType, ValueType &gt;</basecompoundref>
+    <includes refid="inversion_8hpp" local="no">inversion.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>class OperatorType</type>
+      </param>
+      <param>
+        <type>class VectorType</type>
+      </param>
+      <param>
+        <type>typename ValueType</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classrocalution_1_1_inversion_1ad5aafcc7a67f1441bb43e4426fdc54cd" prot="private" static="no" mutable="no">
+        <type>OperatorType</type>
+        <definition>OperatorType rocalution::Inversion&lt; OperatorType, VectorType, ValueType &gt;::inverse_</definition>
+        <argsstring></argsstring>
+        <name>inverse_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/direct/inversion.hpp" line="63" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/direct/inversion.hpp" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classrocalution_1_1_inversion_1a95c73b22a62e063bc46d942b6bbb0d0a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>rocalution::Inversion&lt; OperatorType, VectorType, ValueType &gt;::Inversion</definition>
+        <argsstring>()</argsstring>
+        <name>Inversion</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/direct/inversion.hpp" line="45" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/direct/inversion.cpp" bodystart="38" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_inversion_1ae966899d417d9f63e4b99781547c2ad9" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>rocalution::Inversion&lt; OperatorType, VectorType, ValueType &gt;::~Inversion</definition>
+        <argsstring>()</argsstring>
+        <name>~Inversion</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/direct/inversion.hpp" line="46" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/direct/inversion.cpp" bodystart="44" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_inversion_1ae35c9dccd66853fc5469e5f3cee45f41" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void rocalution::Inversion&lt; OperatorType, VectorType, ValueType &gt;::Print</definition>
+        <argsstring>(void) const</argsstring>
+        <name>Print</name>
+        <reimplements refid="classrocalution_1_1_solver_1a57992cfc687f3bf260964ad2fc19c467">Print</reimplements>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Print information about the solver. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/direct/inversion.hpp" line="48" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/direct/inversion.cpp" bodystart="52" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_inversion_1a6deaef562832478df1ec6318f6541e1c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void rocalution::Inversion&lt; OperatorType, VectorType, ValueType &gt;::Build</definition>
+        <argsstring>(void)</argsstring>
+        <name>Build</name>
+        <reimplements refid="classrocalution_1_1_solver_1a84754d7422ad3fb35c17c61f0a609c7a">Build</reimplements>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Build the solver (data allocation, structure and numerical computation) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/direct/inversion.hpp" line="50" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/direct/inversion.cpp" bodystart="70" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_inversion_1a13737fb5e791533d3c25f2f5797eb70b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void rocalution::Inversion&lt; OperatorType, VectorType, ValueType &gt;::Clear</definition>
+        <argsstring>(void)</argsstring>
+        <name>Clear</name>
+        <reimplements refid="classrocalution_1_1_solver_1aa8839d3ba527d75fedd29fdbe9bd651f">Clear</reimplements>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Clear (free all local data) the solver. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/direct/inversion.hpp" line="51" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/direct/inversion.cpp" bodystart="93" bodyend="102"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classrocalution_1_1_inversion_1a25de1f348f05556e5b57a007051f2759" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void rocalution::Inversion&lt; OperatorType, VectorType, ValueType &gt;::Solve_</definition>
+        <argsstring>(const VectorType &amp;rhs, VectorType *x)</argsstring>
+        <name>Solve_</name>
+        <reimplements refid="classrocalution_1_1_direct_linear_solver_1abad2f9333921b2e2faea18b144e13a87">Solve_</reimplements>
+        <param>
+          <type>const VectorType &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <param>
+          <type>VectorType *</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+<para>Solve <ref refid="classrocalution_1_1_operator" kindref="compound">Operator</ref> x = rhs. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/direct/inversion.hpp" line="54" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/direct/inversion.cpp" bodystart="127" bodyend="138"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_inversion_1ae8a8ec399cd9fac4ffa160525c93e97a" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void rocalution::Inversion&lt; OperatorType, VectorType, ValueType &gt;::PrintStart_</definition>
+        <argsstring>(void) const</argsstring>
+        <name>PrintStart_</name>
+        <reimplements refid="classrocalution_1_1_solver_1a9e6a5ceb6a8c35cd8d54ebff0664d27e">PrintStart_</reimplements>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Print starting message of the solver. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/direct/inversion.hpp" line="56" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/direct/inversion.cpp" bodystart="58" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_inversion_1a25e7444710404658d13633ad53b80a38" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void rocalution::Inversion&lt; OperatorType, VectorType, ValueType &gt;::PrintEnd_</definition>
+        <argsstring>(void) const</argsstring>
+        <name>PrintEnd_</name>
+        <reimplements refid="classrocalution_1_1_solver_1add2b6aec27eeaffbbd1130cc846c1019">PrintEnd_</reimplements>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Print ending message of the solver. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/direct/inversion.hpp" line="57" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/direct/inversion.cpp" bodystart="64" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_inversion_1aad034332f9e3df24feebf44df3d9795f" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void rocalution::Inversion&lt; OperatorType, VectorType, ValueType &gt;::MoveToHostLocalData_</definition>
+        <argsstring>(void)</argsstring>
+        <name>MoveToHostLocalData_</name>
+        <reimplements refid="classrocalution_1_1_solver_1aa1e8be1bd2107543c7390a81f8cee8cb">MoveToHostLocalData_</reimplements>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Move all local data to the host. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/direct/inversion.hpp" line="59" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/direct/inversion.cpp" bodystart="105" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_inversion_1ae20fe54c86c996a7b4006c2626c7d65d" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void rocalution::Inversion&lt; OperatorType, VectorType, ValueType &gt;::MoveToAcceleratorLocalData_</definition>
+        <argsstring>(void)</argsstring>
+        <name>MoveToAcceleratorLocalData_</name>
+        <reimplements refid="classrocalution_1_1_solver_1a8ce29de0bdda9f35a6a687fd06ac9b11">MoveToAcceleratorLocalData_</reimplements>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Move all local data to the accelerator. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/direct/inversion.hpp" line="60" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/direct/inversion.cpp" bodystart="116" bodyend="124"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Matrix <ref refid="classrocalution_1_1_inversion" kindref="compound">Inversion</ref>. </para>    </briefdescription>
+    <detaileddescription>
+<para>Full matrix inversion based on <ref refid="classrocalution_1_1_q_r" kindref="compound">QR</ref> decomposition.</para><para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>OperatorType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- can be <ref refid="classrocalution_1_1_local_matrix" kindref="compound">LocalMatrix</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>VectorType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- can be <ref refid="classrocalution_1_1_local_vector" kindref="compound">LocalVector</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ValueType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- can be float, double, std::complex&lt;float&gt; or std::complex&lt;double&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="354">
+        <label>rocalution::Inversion&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_inversion"/>
+        <childnode refid="355" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="355">
+        <label>rocalution::DirectLinearSolver&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_direct_linear_solver"/>
+        <childnode refid="356" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="356">
+        <label>rocalution::Solver&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_solver"/>
+        <childnode refid="357" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="357">
+        <label>rocalution::RocalutionObj</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="358">
+        <label>rocalution::Inversion&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_inversion"/>
+        <childnode refid="359" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="363">
+        <label>rocalution::Vector&lt; int &gt;</label>
+        <link refid="classrocalution_1_1_vector"/>
+        <childnode refid="364" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="364">
+        <label>rocalution::BaseRocalution&lt; ValueType &gt;</label>
+        <link refid="classrocalution_1_1_base_rocalution"/>
+        <childnode refid="361" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="359">
+        <label>rocalution::DirectLinearSolver&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_direct_linear_solver"/>
+        <childnode refid="360" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="360">
+        <label>rocalution::Solver&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_solver"/>
+        <childnode refid="361" relation="public-inheritance">
+        </childnode>
+        <childnode refid="362" relation="usage">
+          <edgelabel>permutation_</edgelabel>
+        </childnode>
+        <childnode refid="365" relation="usage">
+          <edgelabel>op_</edgelabel>
+        </childnode>
+      </node>
+      <node id="362">
+        <label>rocalution::LocalVector&lt; int &gt;</label>
+        <link refid="classrocalution_1_1_local_vector"/>
+        <childnode refid="363" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="361">
+        <label>rocalution::RocalutionObj</label>
+      </node>
+      <node id="365">
+        <label>OperatorType</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/tcs/rocALUTION/src/solvers/direct/inversion.hpp" line="43" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/direct/inversion.hpp" bodystart="42" bodyend="64"/>
+    <listofallmembers>
+      <member refid="classrocalution_1_1_inversion_1a6deaef562832478df1ec6318f6541e1c" prot="public" virt="virtual"><scope>rocalution::Inversion</scope><name>Build</name></member>
+      <member refid="classrocalution_1_1_solver_1a64924a0c87d60d2e4bf9fa295d0152cb" prot="protected" virt="non-virtual"><scope>rocalution::Inversion</scope><name>build_</name></member>
+      <member refid="classrocalution_1_1_solver_1a0d11ee9943f785db285f0ef5c08c64eb" prot="public" virt="virtual"><scope>rocalution::Inversion</scope><name>BuildMoveToAcceleratorAsync</name></member>
+      <member refid="classrocalution_1_1_inversion_1a13737fb5e791533d3c25f2f5797eb70b" prot="public" virt="virtual"><scope>rocalution::Inversion</scope><name>Clear</name></member>
+      <member refid="classrocalution_1_1_direct_linear_solver_1adef97b269c9e61a15eef4d648bc85f18" prot="public" virt="non-virtual"><scope>rocalution::Inversion</scope><name>DirectLinearSolver</name></member>
+      <member refid="classrocalution_1_1_rocalution_obj_1a4bba5aeaf4fd705efc00402f1f6ed40b" prot="protected" virt="non-virtual"><scope>rocalution::Inversion</scope><name>global_obj_id_</name></member>
+      <member refid="classrocalution_1_1_inversion_1ad5aafcc7a67f1441bb43e4426fdc54cd" prot="private" virt="non-virtual"><scope>rocalution::Inversion</scope><name>inverse_</name></member>
+      <member refid="classrocalution_1_1_inversion_1a95c73b22a62e063bc46d942b6bbb0d0a" prot="public" virt="non-virtual"><scope>rocalution::Inversion</scope><name>Inversion</name></member>
+      <member refid="classrocalution_1_1_solver_1ab1b6410cd134c9ad00c1851d400cf0f8" prot="public" virt="virtual"><scope>rocalution::Inversion</scope><name>MoveToAccelerator</name></member>
+      <member refid="classrocalution_1_1_inversion_1ae20fe54c86c996a7b4006c2626c7d65d" prot="protected" virt="virtual"><scope>rocalution::Inversion</scope><name>MoveToAcceleratorLocalData_</name></member>
+      <member refid="classrocalution_1_1_solver_1a3c263e65898816f5838184c0af78a044" prot="public" virt="virtual"><scope>rocalution::Inversion</scope><name>MoveToHost</name></member>
+      <member refid="classrocalution_1_1_inversion_1aad034332f9e3df24feebf44df3d9795f" prot="protected" virt="virtual"><scope>rocalution::Inversion</scope><name>MoveToHostLocalData_</name></member>
+      <member refid="classrocalution_1_1_solver_1ad338b5f99cf339fb33218dd8b958cac4" prot="protected" virt="non-virtual"><scope>rocalution::Inversion</scope><name>op_</name></member>
+      <member refid="classrocalution_1_1_solver_1ac46ab4d19fba48ece463666d37a7dc86" prot="protected" virt="non-virtual"><scope>rocalution::Inversion</scope><name>permutation_</name></member>
+      <member refid="classrocalution_1_1_solver_1a2acdb829fa657a7b3e680d1ee6005c9b" prot="protected" virt="non-virtual"><scope>rocalution::Inversion</scope><name>precond_</name></member>
+      <member refid="classrocalution_1_1_inversion_1ae35c9dccd66853fc5469e5f3cee45f41" prot="public" virt="virtual"><scope>rocalution::Inversion</scope><name>Print</name></member>
+      <member refid="classrocalution_1_1_inversion_1a25e7444710404658d13633ad53b80a38" prot="protected" virt="virtual"><scope>rocalution::Inversion</scope><name>PrintEnd_</name></member>
+      <member refid="classrocalution_1_1_inversion_1ae8a8ec399cd9fac4ffa160525c93e97a" prot="protected" virt="virtual"><scope>rocalution::Inversion</scope><name>PrintStart_</name></member>
+      <member refid="classrocalution_1_1_solver_1acd20a051f0560a77645e35361df8f87c" prot="public" virt="virtual"><scope>rocalution::Inversion</scope><name>ReBuildNumeric</name></member>
+      <member refid="classrocalution_1_1_solver_1a91354c5c116742c58d9eb2094cc6a68e" prot="public" virt="virtual"><scope>rocalution::Inversion</scope><name>ResetOperator</name></member>
+      <member refid="classrocalution_1_1_rocalution_obj_1ad60a8b2047aad74e488c552264fa7737" prot="public" virt="non-virtual"><scope>rocalution::Inversion</scope><name>RocalutionObj</name></member>
+      <member refid="classrocalution_1_1_solver_1a12765b63efe75bc88406a8d6ebb5aacc" prot="public" virt="non-virtual"><scope>rocalution::Inversion</scope><name>SetOperator</name></member>
+      <member refid="classrocalution_1_1_direct_linear_solver_1ae8295100cd76f64ff83efd8024a48728" prot="public" virt="virtual"><scope>rocalution::Inversion</scope><name>Solve</name></member>
+      <member refid="classrocalution_1_1_inversion_1a25de1f348f05556e5b57a007051f2759" prot="protected" virt="virtual"><scope>rocalution::Inversion</scope><name>Solve_</name></member>
+      <member refid="classrocalution_1_1_solver_1a009956b05d4d5d1d38e4c24341b14a66" prot="public" virt="non-virtual"><scope>rocalution::Inversion</scope><name>Solver</name></member>
+      <member refid="classrocalution_1_1_solver_1a034b434a4340a52430deed9b210e5003" prot="public" virt="virtual"><scope>rocalution::Inversion</scope><name>SolveZeroSol</name></member>
+      <member refid="classrocalution_1_1_solver_1a17c2830a0ede8d82d1336aa25da6f907" prot="public" virt="virtual"><scope>rocalution::Inversion</scope><name>Sync</name></member>
+      <member refid="classrocalution_1_1_solver_1a2ee162346e0d52543f9d3d25fe70ea8a" prot="protected" virt="non-virtual"><scope>rocalution::Inversion</scope><name>verb_</name></member>
+      <member refid="classrocalution_1_1_direct_linear_solver_1a4feccca7c61e39e8f5628767f2a86c28" prot="public" virt="virtual"><scope>rocalution::Inversion</scope><name>Verbose</name></member>
+      <member refid="classrocalution_1_1_direct_linear_solver_1a36be7fcc66dbafa71da5fd50aa25ecc8" prot="public" virt="virtual"><scope>rocalution::Inversion</scope><name>~DirectLinearSolver</name></member>
+      <member refid="classrocalution_1_1_inversion_1ae966899d417d9f63e4b99781547c2ad9" prot="public" virt="virtual"><scope>rocalution::Inversion</scope><name>~Inversion</name></member>
+      <member refid="classrocalution_1_1_rocalution_obj_1a55a2f93f798cebdda6343b20db959e2d" prot="public" virt="virtual"><scope>rocalution::Inversion</scope><name>~RocalutionObj</name></member>
+      <member refid="classrocalution_1_1_solver_1af861566a540fc6cc399c844bbc789ec6" prot="public" virt="virtual"><scope>rocalution::Inversion</scope><name>~Solver</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

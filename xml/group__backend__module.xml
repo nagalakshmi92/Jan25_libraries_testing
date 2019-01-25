@@ -1,0 +1,424 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group__backend__module" kind="group">
+    <compoundname>backend_module</compoundname>
+    <title>Backend Module</title>
+    <innerclass refid="classrocalution_1_1_parallel_manager" prot="public">rocalution::ParallelManager</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__backend__module_1ga044437ad21ae0e48c88f09bdb508cdae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int rocalution::init_rocalution</definition>
+        <argsstring>(int rank=-1, int dev_per_node=1)</argsstring>
+        <name>init_rocalution</name>
+        <param>
+          <type>int</type>
+          <declname>rank</declname>
+          <defval>-1</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>dev_per_node</declname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+<para>Initialize rocALUTION platform. </para>        </briefdescription>
+        <detaileddescription>
+<para><computeroutput>init_rocalution</computeroutput> defines a backend descriptor with information about the hardware and its specifications. All objects created after that contain a copy of this descriptor. If the specifications of the global descriptor are changed (e.g. set different number of threads) and new objects are created, only the new objects will use the new configurations.</para><para>For control, the library provides the following functions<itemizedlist>
+<listitem><para><ref refid="group__backend__module_1ga90fb4a381beab8525d17988f2600a336" kindref="member">set_device_rocalution()</ref> is a unified function to select a specific device. If you have compiled the library with a backend and for this backend there are several available devices, you can use this function to select a particular one. This function has to be called before <ref refid="group__backend__module_1ga044437ad21ae0e48c88f09bdb508cdae" kindref="member">init_rocalution()</ref>.</para></listitem><listitem><para><ref refid="group__backend__module_1ga83e2a7e27ef32854ba4a34ff83b3285f" kindref="member">set_omp_threads_rocalution()</ref> sets the number of OpenMP threads. This function has to be called after <ref refid="group__backend__module_1ga044437ad21ae0e48c88f09bdb508cdae" kindref="member">init_rocalution()</ref>.</para></listitem></itemizedlist>
+</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">rank</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies MPI rank when multi-node environment </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">dev_per_node</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of accelerator devices per node, when in multi-GPU environment</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="par"><title>Example</title><para><programlisting><codeline><highlight class="preprocessor">#include<sp/>&lt;rocalution.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespacerocalution" kindref="compound">rocalution</ref>;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>argv[])</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__backend__module_1ga044437ad21ae0e48c88f09bdb508cdae" kindref="member">init_rocalution</ref>();</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>...</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__backend__module_1gaf6098d8efba475358435f3b00da8c51b" kindref="member">stop_rocalution</ref>();</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/base/backend_manager.hpp" line="143" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__backend__module_1gaf6098d8efba475358435f3b00da8c51b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int rocalution::stop_rocalution</definition>
+        <argsstring>(void)</argsstring>
+        <name>stop_rocalution</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Shutdown rocALUTION platform. </para>        </briefdescription>
+        <detaileddescription>
+<para><computeroutput>stop_rocalution</computeroutput> shuts down the rocALUTION platform. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/base/backend_manager.hpp" line="150" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__backend__module_1ga90fb4a381beab8525d17988f2600a336" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rocalution::set_device_rocalution</definition>
+        <argsstring>(int dev)</argsstring>
+        <name>set_device_rocalution</name>
+        <param>
+          <type>int</type>
+          <declname>dev</declname>
+        </param>
+        <briefdescription>
+<para>Set the accelerator device. </para>        </briefdescription>
+        <detaileddescription>
+<para><computeroutput>set_device_rocalution</computeroutput> lets the user select the accelerator device that is supposed to be used for the computation.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">dev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>accelerator device ID for computation </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/base/backend_manager.hpp" line="161" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__backend__module_1ga83e2a7e27ef32854ba4a34ff83b3285f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rocalution::set_omp_threads_rocalution</definition>
+        <argsstring>(int nthreads)</argsstring>
+        <name>set_omp_threads_rocalution</name>
+        <param>
+          <type>int</type>
+          <declname>nthreads</declname>
+        </param>
+        <briefdescription>
+<para>Set number of OpenMP threads. </para>        </briefdescription>
+        <detaileddescription>
+<para>The number of threads which rocALUTION will use can be set with <computeroutput>set_omp_threads_rocalution</computeroutput> or by the global OpenMP environment variable (for Unix-like OS this is <computeroutput>OMP_NUM_THREADS</computeroutput>). During the initialization phase, the library provides affinity thread-core mapping:<itemizedlist>
+<listitem><para>If the number of cores (including SMT cores) is greater or equal than two times the number of threads, then all the threads can occupy every second core ID (e.g. 0, 2, 4, <formula id="0">$\ldots$</formula>). This is to avoid having two threads working on the same physical core, when SMT is enabled.</para></listitem><listitem><para>If the number of threads is less or equal to the number of cores (including SMT), and the previous clause is false, then the threads can occupy every core ID (e.g. 0, 1, 2, 3, <formula id="0">$\ldots$</formula>).</para></listitem><listitem><para>If non of the above criteria is matched, then the default thread-core mapping is used (typically set by the OS).</para></listitem></itemizedlist>
+</para><para><simplesect kind="note"><para>The thread-core mapping is available only for Unix-like OS.</para></simplesect>
+<simplesect kind="note"><para>The user can disable the thread affinity by calling <ref refid="group__backend__module_1ga207aa4a91a2507c0e9f7b1ac8e8c8b28" kindref="member">set_omp_affinity_rocalution()</ref>, before initializing the library (i.e. before <ref refid="group__backend__module_1ga044437ad21ae0e48c88f09bdb508cdae" kindref="member">init_rocalution()</ref>).</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">nthreads</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of OpenMP threads </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/base/backend_manager.hpp" line="190" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__backend__module_1ga207aa4a91a2507c0e9f7b1ac8e8c8b28" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rocalution::set_omp_affinity_rocalution</definition>
+        <argsstring>(bool affinity)</argsstring>
+        <name>set_omp_affinity_rocalution</name>
+        <param>
+          <type>bool</type>
+          <declname>affinity</declname>
+        </param>
+        <briefdescription>
+<para>Enable/disable OpenMP host affinity. </para>        </briefdescription>
+        <detaileddescription>
+<para><computeroutput>set_omp_affinity_rocalution</computeroutput> enables / disables OpenMP host affinity.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">affinity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>boolean to turn on/off OpenMP host affinity </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/base/backend_manager.hpp" line="200" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__backend__module_1ga63587ed85501959c6f34a9838b8f2ba8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rocalution::set_omp_threshold_rocalution</definition>
+        <argsstring>(int threshold)</argsstring>
+        <name>set_omp_threshold_rocalution</name>
+        <param>
+          <type>int</type>
+          <declname>threshold</declname>
+        </param>
+        <briefdescription>
+<para>Set OpenMP threshold size. </para>        </briefdescription>
+        <detaileddescription>
+<para>Whenever you want to work on a small problem, you might observe that the OpenMP host backend is (slightly) slower than using no OpenMP. This is mainly attributed to the small amount of work, which every thread should perform and the large overhead of forking/joining threads. This can be avoid by the OpenMP threshold size parameter in rocALUTION. The default threshold is set to 10000, which means that all matrices under (and equal) this size will use only one thread (disregarding the number of OpenMP threads set in the system). The threshold can be modified with <computeroutput>set_omp_threshold_rocalution</computeroutput>.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">threshold</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>OpenMP threshold size </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/base/backend_manager.hpp" line="217" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__backend__module_1gace30a89d8b0688fdfb425be39fa10633" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rocalution::info_rocalution</definition>
+        <argsstring>(void)</argsstring>
+        <name>info_rocalution</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Print info about rocALUTION. </para>        </briefdescription>
+        <detaileddescription>
+<para><computeroutput>info_rocalution</computeroutput> prints information about the rocALUTION platform </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/base/backend_manager.hpp" line="224" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__backend__module_1gad4d74134029d46a072420b2ca787f859" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rocalution::info_rocalution</definition>
+        <argsstring>(const struct Rocalution_Backend_Descriptor backend_descriptor)</argsstring>
+        <name>info_rocalution</name>
+        <param>
+          <type>const struct Rocalution_Backend_Descriptor</type>
+          <declname>backend_descriptor</declname>
+        </param>
+        <briefdescription>
+<para>Print info about specific rocALUTION backend descriptor. </para>        </briefdescription>
+        <detaileddescription>
+<para><computeroutput>info_rocalution</computeroutput> prints information about the rocALUTION platform of the specific backend descriptor.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">backend_descriptor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>rocALUTION backend descriptor </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/base/backend_manager.hpp" line="235" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__backend__module_1gac17c61b30b39327cca408417ef68bb2a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rocalution::disable_accelerator_rocalution</definition>
+        <argsstring>(bool onoff=true)</argsstring>
+        <name>disable_accelerator_rocalution</name>
+        <param>
+          <type>bool</type>
+          <declname>onoff</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Disable/Enable the accelerator. </para>        </briefdescription>
+        <detaileddescription>
+<para>If you want to disable the accelerator (without re-compiling the code), you need to call <computeroutput>disable_accelerator_rocalution</computeroutput> before <ref refid="group__backend__module_1ga044437ad21ae0e48c88f09bdb508cdae" kindref="member">init_rocalution()</ref>.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">onoff</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>boolean to turn on/off the accelerator </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/base/backend_manager.hpp" line="246" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__backend__module_1ga9858044e06189a81160646b5a7dbb154" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rocalution::_rocalution_sync</definition>
+        <argsstring>(void)</argsstring>
+        <name>_rocalution_sync</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Sync rocALUTION. </para>        </briefdescription>
+        <detaileddescription>
+<para><computeroutput>_rocalution_sync</computeroutput> blocks the host until all active asynchronous transfers are completed. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/base/backend_manager.hpp" line="283" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__backend__module_1gafedca46943a41c98cad95870fa180526" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename DataType</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void rocalution::allocate_host</definition>
+        <argsstring>(int size, DataType **ptr)</argsstring>
+        <name>allocate_host</name>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>DataType **</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+<para>Allocate buffer on the host. </para>        </briefdescription>
+        <detaileddescription>
+<para><computeroutput>allocate_host</computeroutput> allocates a buffer on the host.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of elements the buffer need to be allocated for </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the position in memory where the buffer should be allocated, it is expected that <computeroutput>*ptr</computeroutput> == <computeroutput>NULL</computeroutput> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>DataType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>can be char, int, unsigned int, float, double, std::complex&lt;float&gt; or std::complex&lt;double&gt;. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/utils/allocate_free.hpp" line="44" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__backend__module_1ga020251e6c31a4c642dd0181c5022c9ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename DataType</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void rocalution::free_host</definition>
+        <argsstring>(DataType **ptr)</argsstring>
+        <name>free_host</name>
+        <param>
+          <type>DataType **</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+<para>Free buffer on the host. </para>        </briefdescription>
+        <detaileddescription>
+<para><computeroutput>free_host</computeroutput> deallocates a buffer on the host. <computeroutput>*ptr</computeroutput> will be set to NULL after successful deallocation.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the position in memory where the buffer should be deallocated, it is expected that <computeroutput>*ptr</computeroutput> != <computeroutput>NULL</computeroutput> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>DataType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>can be char, int, unsigned int, float, double, std::complex&lt;float&gt; or std::complex&lt;double&gt;. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/utils/allocate_free.hpp" line="60" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__backend__module_1gaeedb5b330f76db3b821bdfa7eaa60351" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename DataType</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void rocalution::set_to_zero_host</definition>
+        <argsstring>(int size, DataType *ptr)</argsstring>
+        <name>set_to_zero_host</name>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>DataType *</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+<para>Set a host buffer to zero. </para>        </briefdescription>
+        <detaileddescription>
+<para><computeroutput>set_to_zero_host</computeroutput> sets a host buffer to zero.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of elements </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the host buffer</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>DataType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>can be char, int, unsigned int, float, double, std::complex&lt;float&gt; or std::complex&lt;double&gt;. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/utils/allocate_free.hpp" line="76" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__backend__module_1gaf3ea06cd4a7a8e0cc12b2255b2779ee3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double rocalution::rocalution_time</definition>
+        <argsstring>(void)</argsstring>
+        <name>rocalution_time</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Return current time in microseconds. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/utils/time_functions.hpp" line="32" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This module contains al backend related functions. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

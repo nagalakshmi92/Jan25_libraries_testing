@@ -1,0 +1,650 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classrocalution_1_1_iteration_control" kind="class" language="C++" prot="private">
+    <compoundname>rocalution::IterationControl</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classrocalution_1_1_iteration_control_1ad7643ef9c6658dc810d0889ff4a4f8d1" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int rocalution::IterationControl::verb_</definition>
+        <argsstring></argsstring>
+        <name>verb_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/iter_ctrl.hpp" line="112" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/iter_ctrl.hpp" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrocalution_1_1_iteration_control_1a08fa43ae1ee4c6df9f797ff4f175d6fb" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int rocalution::IterationControl::iteration_</definition>
+        <argsstring></argsstring>
+        <name>iteration_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/iter_ctrl.hpp" line="115" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/iter_ctrl.hpp" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrocalution_1_1_iteration_control_1a7dda67cbab1c325a61fde7e78a23331f" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool rocalution::IterationControl::init_res_</definition>
+        <argsstring></argsstring>
+        <name>init_res_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/iter_ctrl.hpp" line="118" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/iter_ctrl.hpp" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrocalution_1_1_iteration_control_1a1e77c434065b1bba30fe58257f5b6dce" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double rocalution::IterationControl::initial_residual_</definition>
+        <argsstring></argsstring>
+        <name>initial_residual_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/iter_ctrl.hpp" line="121" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/iter_ctrl.hpp" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrocalution_1_1_iteration_control_1a1fb0a8c90250dec3bede3ef0eb8e8ab7" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double rocalution::IterationControl::absolute_tol_</definition>
+        <argsstring></argsstring>
+        <name>absolute_tol_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/iter_ctrl.hpp" line="124" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/iter_ctrl.hpp" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrocalution_1_1_iteration_control_1a102da4e07c4807230396e1a4cb7b968a" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double rocalution::IterationControl::relative_tol_</definition>
+        <argsstring></argsstring>
+        <name>relative_tol_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/iter_ctrl.hpp" line="126" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/iter_ctrl.hpp" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrocalution_1_1_iteration_control_1a1431087451207d5c5ae4aaa964f1cd54" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double rocalution::IterationControl::divergence_tol_</definition>
+        <argsstring></argsstring>
+        <name>divergence_tol_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/iter_ctrl.hpp" line="128" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/iter_ctrl.hpp" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrocalution_1_1_iteration_control_1ae4b7c75f1778a6fe7178311af0b442a7" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int rocalution::IterationControl::minimum_iter_</definition>
+        <argsstring></argsstring>
+        <name>minimum_iter_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/iter_ctrl.hpp" line="130" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/iter_ctrl.hpp" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrocalution_1_1_iteration_control_1adda29f2eb601c03710b475625857c598" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int rocalution::IterationControl::maximum_iter_</definition>
+        <argsstring></argsstring>
+        <name>maximum_iter_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/iter_ctrl.hpp" line="132" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/iter_ctrl.hpp" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrocalution_1_1_iteration_control_1aa3b104b27bc1e9e719ada6cefe13fd31" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int rocalution::IterationControl::reached_</definition>
+        <argsstring></argsstring>
+        <name>reached_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/iter_ctrl.hpp" line="140" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/iter_ctrl.hpp" bodystart="140" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrocalution_1_1_iteration_control_1aee747cfef3173b5a8e9ad7a87da64fe7" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; rocalution::IterationControl::residual_history_</definition>
+        <argsstring></argsstring>
+        <name>residual_history_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/iter_ctrl.hpp" line="143" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/iter_ctrl.hpp" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrocalution_1_1_iteration_control_1ab03d2405a951c2cb28abee1c25197833" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double rocalution::IterationControl::current_res_</definition>
+        <argsstring></argsstring>
+        <name>current_res_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/iter_ctrl.hpp" line="146" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/iter_ctrl.hpp" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrocalution_1_1_iteration_control_1aa5d0d4a13b18999ce572197afa606930" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int rocalution::IterationControl::current_index_</definition>
+        <argsstring></argsstring>
+        <name>current_index_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/iter_ctrl.hpp" line="149" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/iter_ctrl.hpp" bodystart="149" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrocalution_1_1_iteration_control_1acf7092ac3871c6d483e3414fce423f7c" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool rocalution::IterationControl::rec_</definition>
+        <argsstring></argsstring>
+        <name>rec_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/iter_ctrl.hpp" line="152" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/iter_ctrl.hpp" bodystart="152" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classrocalution_1_1_iteration_control_1a7c1953cc4e61a6338dbf2c688f992ca7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>rocalution::IterationControl::IterationControl</definition>
+        <argsstring>()</argsstring>
+        <name>IterationControl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/iter_ctrl.hpp" line="38" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/iter_ctrl.cpp" bodystart="37" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_iteration_control_1aaf045c23ed543b7e31aa529ab1963126" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>rocalution::IterationControl::~IterationControl</definition>
+        <argsstring>()</argsstring>
+        <name>~IterationControl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/iter_ctrl.hpp" line="39" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/iter_ctrl.cpp" bodystart="58" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_iteration_control_1a7f58e5a43eccee754ea8e6198ad41e50" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rocalution::IterationControl::Init</definition>
+        <argsstring>(double abs, double rel, double div, int max)</argsstring>
+        <name>Init</name>
+        <param>
+          <type>double</type>
+          <declname>abs</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>rel</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>div</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/iter_ctrl.hpp" line="43" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/iter_ctrl.cpp" bodystart="72" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_iteration_control_1ae9c1fcfabe298b7869bbf8e9ed3212fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rocalution::IterationControl::Init</definition>
+        <argsstring>(double abs, double rel, double div, int min, int max)</argsstring>
+        <name>Init</name>
+        <param>
+          <type>double</type>
+          <declname>abs</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>rel</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>div</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>min</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/iter_ctrl.hpp" line="47" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/iter_ctrl.cpp" bodystart="78" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_iteration_control_1a5ac72e4b352cefc6c1a04631831a5c83" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rocalution::IterationControl::InitTolerance</definition>
+        <argsstring>(double abs, double rel, double div)</argsstring>
+        <name>InitTolerance</name>
+        <param>
+          <type>double</type>
+          <declname>abs</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>rel</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>div</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/iter_ctrl.hpp" line="50" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/iter_ctrl.cpp" bodystart="120" bodyend="143"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_iteration_control_1abbe6b3e3cba8cd52d80e233c2a867e60" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rocalution::IterationControl::InitMinimumIterations</definition>
+        <argsstring>(int min)</argsstring>
+        <name>InitMinimumIterations</name>
+        <param>
+          <type>int</type>
+          <declname>min</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/iter_ctrl.hpp" line="53" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/iter_ctrl.cpp" bodystart="145" bodyend="151"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_iteration_control_1a7c3370177b98c428eb94dd5d08a9d66e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rocalution::IterationControl::InitMaximumIterations</definition>
+        <argsstring>(int max)</argsstring>
+        <name>InitMaximumIterations</name>
+        <param>
+          <type>int</type>
+          <declname>max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/iter_ctrl.hpp" line="56" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/iter_ctrl.cpp" bodystart="153" bodyend="159"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_iteration_control_1a32a19460627b4b0d6049e0a151407a2c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int rocalution::IterationControl::GetMinimumIterations</definition>
+        <argsstring>(void) const</argsstring>
+        <name>GetMinimumIterations</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/iter_ctrl.hpp" line="59" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/iter_ctrl.cpp" bodystart="161" bodyend="161"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_iteration_control_1a44765667b61418f573501b6c40780466" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int rocalution::IterationControl::GetMaximumIterations</definition>
+        <argsstring>(void) const</argsstring>
+        <name>GetMaximumIterations</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/iter_ctrl.hpp" line="62" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/iter_ctrl.cpp" bodystart="163" bodyend="163"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_iteration_control_1ac78edc38b3480378616900ca0cae559e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool rocalution::IterationControl::InitResidual</definition>
+        <argsstring>(double res)</argsstring>
+        <name>InitResidual</name>
+        <param>
+          <type>double</type>
+          <declname>res</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/iter_ctrl.hpp" line="65" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/iter_ctrl.cpp" bodystart="85" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_iteration_control_1a0a4df30cf297756836ac869724fa8c89" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rocalution::IterationControl::Clear</definition>
+        <argsstring>(void)</argsstring>
+        <name>Clear</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/iter_ctrl.hpp" line="68" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/iter_ctrl.cpp" bodystart="60" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_iteration_control_1ab47c7a0458c0431fd8a66c548826a17b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool rocalution::IterationControl::CheckResidual</definition>
+        <argsstring>(double res)</argsstring>
+        <name>CheckResidual</name>
+        <param>
+          <type>double</type>
+          <declname>res</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/iter_ctrl.hpp" line="71" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/iter_ctrl.cpp" bodystart="173" bodyend="226"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_iteration_control_1ac6b5381f4fe80928c64fd6c2049ee90e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool rocalution::IterationControl::CheckResidual</definition>
+        <argsstring>(double res, int index)</argsstring>
+        <name>CheckResidual</name>
+        <param>
+          <type>double</type>
+          <declname>res</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/iter_ctrl.hpp" line="75" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/iter_ctrl.cpp" bodystart="228" bodyend="232"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_iteration_control_1a463f0de6f78d0eb8581e7c35e11cba10" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool rocalution::IterationControl::CheckResidualNoCount</definition>
+        <argsstring>(double res) const</argsstring>
+        <name>CheckResidualNoCount</name>
+        <param>
+          <type>double</type>
+          <declname>res</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/iter_ctrl.hpp" line="78" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/iter_ctrl.cpp" bodystart="234" bodyend="267"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_iteration_control_1a22a8b36552aabe4b0e5e72f9cc334e93" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rocalution::IterationControl::RecordHistory</definition>
+        <argsstring>(void)</argsstring>
+        <name>RecordHistory</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/iter_ctrl.hpp" line="81" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/iter_ctrl.cpp" bodystart="269" bodyend="269"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_iteration_control_1a9c534149cd32d1c820ae263cd040f0e0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rocalution::IterationControl::WriteHistoryToFile</definition>
+        <argsstring>(const std::string filename) const</argsstring>
+        <name>WriteHistoryToFile</name>
+        <param>
+          <type>const std::string</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/iter_ctrl.hpp" line="84" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/iter_ctrl.cpp" bodystart="273" bodyend="301"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_iteration_control_1a9933308843d4d6b84e5b1e8cbf9b7264" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rocalution::IterationControl::Verbose</definition>
+        <argsstring>(int verb=1)</argsstring>
+        <name>Verbose</name>
+        <param>
+          <type>int</type>
+          <declname>verb</declname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/iter_ctrl.hpp" line="87" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/iter_ctrl.cpp" bodystart="271" bodyend="271"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_iteration_control_1adfe4b74c9ef5af83a0e0b67a44064c5f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rocalution::IterationControl::PrintInit</definition>
+        <argsstring>(void)</argsstring>
+        <name>PrintInit</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/iter_ctrl.hpp" line="90" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/iter_ctrl.cpp" bodystart="303" bodyend="338"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_iteration_control_1ab616c19bfb98e8cdb2b97fd9735b6cbb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rocalution::IterationControl::PrintStatus</definition>
+        <argsstring>(void)</argsstring>
+        <name>PrintStatus</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/iter_ctrl.hpp" line="93" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/iter_ctrl.cpp" bodystart="340" bodyend="403"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_iteration_control_1aafa481b50459f4363eacef0aac662ea0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int rocalution::IterationControl::GetIterationCount</definition>
+        <argsstring>(void)</argsstring>
+        <name>GetIterationCount</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/iter_ctrl.hpp" line="96" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/iter_ctrl.cpp" bodystart="165" bodyend="165"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_iteration_control_1a9bb2c5bea06abfbabc3916b2c0a6cbf5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double rocalution::IterationControl::GetCurrentResidual</definition>
+        <argsstring>(void)</argsstring>
+        <name>GetCurrentResidual</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/iter_ctrl.hpp" line="99" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/iter_ctrl.cpp" bodystart="167" bodyend="167"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_iteration_control_1ac0b0386196d97d87e4d3251aa0c7e2d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int rocalution::IterationControl::GetSolverStatus</definition>
+        <argsstring>(void)</argsstring>
+        <name>GetSolverStatus</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/iter_ctrl.hpp" line="102" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/iter_ctrl.cpp" bodystart="171" bodyend="171"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_iteration_control_1ad4f12306c173cb428dc3e996c9724ca2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int rocalution::IterationControl::GetAmaxResidualIndex</definition>
+        <argsstring>(void)</argsstring>
+        <name>GetAmaxResidualIndex</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/iter_ctrl.hpp" line="105" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/iter_ctrl.cpp" bodystart="169" bodyend="169"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/tcs/rocALUTION/src/solvers/iter_ctrl.hpp" line="36" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/iter_ctrl.hpp" bodystart="35" bodyend="153"/>
+    <listofallmembers>
+      <member refid="classrocalution_1_1_iteration_control_1a1fb0a8c90250dec3bede3ef0eb8e8ab7" prot="private" virt="non-virtual"><scope>rocalution::IterationControl</scope><name>absolute_tol_</name></member>
+      <member refid="classrocalution_1_1_iteration_control_1ab47c7a0458c0431fd8a66c548826a17b" prot="public" virt="non-virtual"><scope>rocalution::IterationControl</scope><name>CheckResidual</name></member>
+      <member refid="classrocalution_1_1_iteration_control_1ac6b5381f4fe80928c64fd6c2049ee90e" prot="public" virt="non-virtual"><scope>rocalution::IterationControl</scope><name>CheckResidual</name></member>
+      <member refid="classrocalution_1_1_iteration_control_1a463f0de6f78d0eb8581e7c35e11cba10" prot="public" virt="non-virtual"><scope>rocalution::IterationControl</scope><name>CheckResidualNoCount</name></member>
+      <member refid="classrocalution_1_1_iteration_control_1a0a4df30cf297756836ac869724fa8c89" prot="public" virt="non-virtual"><scope>rocalution::IterationControl</scope><name>Clear</name></member>
+      <member refid="classrocalution_1_1_iteration_control_1aa5d0d4a13b18999ce572197afa606930" prot="private" virt="non-virtual"><scope>rocalution::IterationControl</scope><name>current_index_</name></member>
+      <member refid="classrocalution_1_1_iteration_control_1ab03d2405a951c2cb28abee1c25197833" prot="private" virt="non-virtual"><scope>rocalution::IterationControl</scope><name>current_res_</name></member>
+      <member refid="classrocalution_1_1_iteration_control_1a1431087451207d5c5ae4aaa964f1cd54" prot="private" virt="non-virtual"><scope>rocalution::IterationControl</scope><name>divergence_tol_</name></member>
+      <member refid="classrocalution_1_1_iteration_control_1ad4f12306c173cb428dc3e996c9724ca2" prot="public" virt="non-virtual"><scope>rocalution::IterationControl</scope><name>GetAmaxResidualIndex</name></member>
+      <member refid="classrocalution_1_1_iteration_control_1a9bb2c5bea06abfbabc3916b2c0a6cbf5" prot="public" virt="non-virtual"><scope>rocalution::IterationControl</scope><name>GetCurrentResidual</name></member>
+      <member refid="classrocalution_1_1_iteration_control_1aafa481b50459f4363eacef0aac662ea0" prot="public" virt="non-virtual"><scope>rocalution::IterationControl</scope><name>GetIterationCount</name></member>
+      <member refid="classrocalution_1_1_iteration_control_1a44765667b61418f573501b6c40780466" prot="public" virt="non-virtual"><scope>rocalution::IterationControl</scope><name>GetMaximumIterations</name></member>
+      <member refid="classrocalution_1_1_iteration_control_1a32a19460627b4b0d6049e0a151407a2c" prot="public" virt="non-virtual"><scope>rocalution::IterationControl</scope><name>GetMinimumIterations</name></member>
+      <member refid="classrocalution_1_1_iteration_control_1ac0b0386196d97d87e4d3251aa0c7e2d5" prot="public" virt="non-virtual"><scope>rocalution::IterationControl</scope><name>GetSolverStatus</name></member>
+      <member refid="classrocalution_1_1_iteration_control_1a7f58e5a43eccee754ea8e6198ad41e50" prot="public" virt="non-virtual"><scope>rocalution::IterationControl</scope><name>Init</name></member>
+      <member refid="classrocalution_1_1_iteration_control_1ae9c1fcfabe298b7869bbf8e9ed3212fe" prot="public" virt="non-virtual"><scope>rocalution::IterationControl</scope><name>Init</name></member>
+      <member refid="classrocalution_1_1_iteration_control_1a7dda67cbab1c325a61fde7e78a23331f" prot="private" virt="non-virtual"><scope>rocalution::IterationControl</scope><name>init_res_</name></member>
+      <member refid="classrocalution_1_1_iteration_control_1a1e77c434065b1bba30fe58257f5b6dce" prot="private" virt="non-virtual"><scope>rocalution::IterationControl</scope><name>initial_residual_</name></member>
+      <member refid="classrocalution_1_1_iteration_control_1a7c3370177b98c428eb94dd5d08a9d66e" prot="public" virt="non-virtual"><scope>rocalution::IterationControl</scope><name>InitMaximumIterations</name></member>
+      <member refid="classrocalution_1_1_iteration_control_1abbe6b3e3cba8cd52d80e233c2a867e60" prot="public" virt="non-virtual"><scope>rocalution::IterationControl</scope><name>InitMinimumIterations</name></member>
+      <member refid="classrocalution_1_1_iteration_control_1ac78edc38b3480378616900ca0cae559e" prot="public" virt="non-virtual"><scope>rocalution::IterationControl</scope><name>InitResidual</name></member>
+      <member refid="classrocalution_1_1_iteration_control_1a5ac72e4b352cefc6c1a04631831a5c83" prot="public" virt="non-virtual"><scope>rocalution::IterationControl</scope><name>InitTolerance</name></member>
+      <member refid="classrocalution_1_1_iteration_control_1a08fa43ae1ee4c6df9f797ff4f175d6fb" prot="private" virt="non-virtual"><scope>rocalution::IterationControl</scope><name>iteration_</name></member>
+      <member refid="classrocalution_1_1_iteration_control_1a7c1953cc4e61a6338dbf2c688f992ca7" prot="public" virt="non-virtual"><scope>rocalution::IterationControl</scope><name>IterationControl</name></member>
+      <member refid="classrocalution_1_1_iteration_control_1adda29f2eb601c03710b475625857c598" prot="private" virt="non-virtual"><scope>rocalution::IterationControl</scope><name>maximum_iter_</name></member>
+      <member refid="classrocalution_1_1_iteration_control_1ae4b7c75f1778a6fe7178311af0b442a7" prot="private" virt="non-virtual"><scope>rocalution::IterationControl</scope><name>minimum_iter_</name></member>
+      <member refid="classrocalution_1_1_iteration_control_1adfe4b74c9ef5af83a0e0b67a44064c5f" prot="public" virt="non-virtual"><scope>rocalution::IterationControl</scope><name>PrintInit</name></member>
+      <member refid="classrocalution_1_1_iteration_control_1ab616c19bfb98e8cdb2b97fd9735b6cbb" prot="public" virt="non-virtual"><scope>rocalution::IterationControl</scope><name>PrintStatus</name></member>
+      <member refid="classrocalution_1_1_iteration_control_1aa3b104b27bc1e9e719ada6cefe13fd31" prot="private" virt="non-virtual"><scope>rocalution::IterationControl</scope><name>reached_</name></member>
+      <member refid="classrocalution_1_1_iteration_control_1acf7092ac3871c6d483e3414fce423f7c" prot="private" virt="non-virtual"><scope>rocalution::IterationControl</scope><name>rec_</name></member>
+      <member refid="classrocalution_1_1_iteration_control_1a22a8b36552aabe4b0e5e72f9cc334e93" prot="public" virt="non-virtual"><scope>rocalution::IterationControl</scope><name>RecordHistory</name></member>
+      <member refid="classrocalution_1_1_iteration_control_1a102da4e07c4807230396e1a4cb7b968a" prot="private" virt="non-virtual"><scope>rocalution::IterationControl</scope><name>relative_tol_</name></member>
+      <member refid="classrocalution_1_1_iteration_control_1aee747cfef3173b5a8e9ad7a87da64fe7" prot="private" virt="non-virtual"><scope>rocalution::IterationControl</scope><name>residual_history_</name></member>
+      <member refid="classrocalution_1_1_iteration_control_1ad7643ef9c6658dc810d0889ff4a4f8d1" prot="private" virt="non-virtual"><scope>rocalution::IterationControl</scope><name>verb_</name></member>
+      <member refid="classrocalution_1_1_iteration_control_1a9933308843d4d6b84e5b1e8cbf9b7264" prot="public" virt="non-virtual"><scope>rocalution::IterationControl</scope><name>Verbose</name></member>
+      <member refid="classrocalution_1_1_iteration_control_1a9c534149cd32d1c820ae263cd040f0e0" prot="public" virt="non-virtual"><scope>rocalution::IterationControl</scope><name>WriteHistoryToFile</name></member>
+      <member refid="classrocalution_1_1_iteration_control_1aaf045c23ed543b7e31aa529ab1963126" prot="public" virt="non-virtual"><scope>rocalution::IterationControl</scope><name>~IterationControl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

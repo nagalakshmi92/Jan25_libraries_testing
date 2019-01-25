@@ -3,145 +3,176 @@
   <compounddef id="preconditioner__saddlepoint_8cpp" kind="file" language="C++">
     <compoundname>preconditioner_saddlepoint.cpp</compoundname>
     <includes local="yes">../../utils/def.hpp</includes>
-    <includes local="yes">preconditioner_saddlepoint.hpp</includes>
-    <includes local="yes">/home/tcs/Jan24/Jan24_libraries_testing/ROCm_Libraries/rocALUTION/src/solvers/solver.hpp</includes>
-    <includes local="yes">/home/tcs/Jan24/Jan24_libraries_testing/ROCm_Libraries/rocALUTION/src/solvers/preconditioners/preconditioner.hpp</includes>
-    <includes local="yes">/home/tcs/Jan24/Jan24_libraries_testing/ROCm_Libraries/rocALUTION/src/base/local_vector.hpp</includes>
-    <includes local="no">vector</includes>
-    <includes local="yes">preconditioner.hpp</includes>
-    <includes local="yes">../solver.hpp</includes>
+    <includes refid="preconditioner__saddlepoint_8hpp" local="yes">preconditioner_saddlepoint.hpp</includes>
+    <includes refid="preconditioner_8hpp" local="yes">preconditioner.hpp</includes>
+    <includes refid="solver_8hpp" local="yes">../solver.hpp</includes>
     <includes refid="local__matrix_8hpp" local="yes">../../base/local_matrix.hpp</includes>
+    <includes refid="local__vector_8hpp" local="yes">../../base/local_vector.hpp</includes>
     <includes local="yes">../../utils/log.hpp</includes>
     <includes local="no">complex</includes>
     <incdepgraph>
-      <node id="1048">
-        <label>backend_manager.hpp</label>
-        <link refid="backend__manager_8hpp_source"/>
-        <childnode refid="1049" relation="include">
+      <node id="1790">
+        <label>/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_saddlepoint.cpp</label>
+        <link refid="preconditioner__saddlepoint_8cpp"/>
+        <childnode refid="1791" relation="include">
         </childnode>
-        <childnode refid="1050" relation="include">
+        <childnode refid="1792" relation="include">
         </childnode>
-        <childnode refid="1051" relation="include">
+        <childnode refid="1807" relation="include">
         </childnode>
-        <childnode refid="1041" relation="include">
+        <childnode refid="1793" relation="include">
         </childnode>
-        <childnode refid="1052" relation="include">
+        <childnode refid="1808" relation="include">
+        </childnode>
+        <childnode refid="1803" relation="include">
+        </childnode>
+        <childnode refid="1811" relation="include">
+        </childnode>
+        <childnode refid="1802" relation="include">
         </childnode>
       </node>
-      <node id="1046">
+      <node id="1803">
+        <label>../base/local_vector.hpp</label>
+        <link refid="local__vector_8hpp_source"/>
+        <childnode refid="1804" relation="include">
+        </childnode>
+        <childnode refid="1805" relation="include">
+        </childnode>
+      </node>
+      <node id="1807">
+        <label>preconditioner.hpp</label>
+        <link refid="preconditioner_8hpp_source"/>
+        <childnode refid="1793" relation="include">
+        </childnode>
+      </node>
+      <node id="1805">
+        <label>vector.hpp</label>
+        <link refid="vector_8hpp_source"/>
+        <childnode refid="1804" relation="include">
+        </childnode>
+        <childnode refid="1797" relation="include">
+        </childnode>
+        <childnode refid="1799" relation="include">
+        </childnode>
+        <childnode refid="1796" relation="include">
+        </childnode>
+        <childnode refid="1806" relation="include">
+        </childnode>
+      </node>
+      <node id="1809">
         <label>operator.hpp</label>
         <link refid="operator_8hpp_source"/>
-        <childnode refid="1045" relation="include">
+        <childnode refid="1804" relation="include">
         </childnode>
-        <childnode refid="1047" relation="include">
+        <childnode refid="1797" relation="include">
         </childnode>
-        <childnode refid="1049" relation="include">
+        <childnode refid="1799" relation="include">
         </childnode>
-        <childnode refid="1052" relation="include">
+        <childnode refid="1796" relation="include">
         </childnode>
-        <childnode refid="1054" relation="include">
+        <childnode refid="1806" relation="include">
         </childnode>
       </node>
-      <node id="1052">
+      <node id="1792">
+        <label>preconditioner_saddlepoint.hpp</label>
+        <link refid="preconditioner__saddlepoint_8hpp_source"/>
+        <childnode refid="1793" relation="include">
+        </childnode>
+        <childnode refid="1807" relation="include">
+        </childnode>
+        <childnode refid="1803" relation="include">
+        </childnode>
+        <childnode refid="1795" relation="include">
+        </childnode>
+      </node>
+      <node id="1796">
         <label>string</label>
       </node>
-      <node id="1051">
+      <node id="1801">
         <label>map</label>
       </node>
-      <node id="1035">
-        <label>ROCm_Libraries/rocALUTION/src/solvers/preconditioners/preconditioner_saddlepoint.cpp</label>
-        <link refid="preconditioner__saddlepoint_8cpp"/>
-        <childnode refid="1036" relation="include">
-        </childnode>
-        <childnode refid="1037" relation="include">
-        </childnode>
-        <childnode refid="1038" relation="include">
-        </childnode>
-        <childnode refid="1039" relation="include">
-        </childnode>
-        <childnode refid="1040" relation="include">
-        </childnode>
-        <childnode refid="1041" relation="include">
-        </childnode>
-        <childnode refid="1042" relation="include">
-        </childnode>
-        <childnode refid="1043" relation="include">
-        </childnode>
-        <childnode refid="1044" relation="include">
-        </childnode>
-        <childnode refid="1056" relation="include">
-        </childnode>
-        <childnode refid="1053" relation="include">
-        </childnode>
-      </node>
-      <node id="1043">
+      <node id="1793">
         <label>../solver.hpp</label>
+        <link refid="solver_8hpp_source"/>
+        <childnode refid="1794" relation="include">
+        </childnode>
+        <childnode refid="1797" relation="include">
+        </childnode>
+        <childnode refid="1803" relation="include">
+        </childnode>
       </node>
-      <node id="1039">
-        <label>/home/tcs/Jan24/Jan24_libraries_testing/ROCm_Libraries/rocALUTION/src/solvers/preconditioners/preconditioner.hpp</label>
-      </node>
-      <node id="1050">
+      <node id="1800">
         <label>fstream</label>
       </node>
-      <node id="1042">
-        <label>preconditioner.hpp</label>
-      </node>
-      <node id="1055">
+      <node id="1810">
         <label>matrix_formats.hpp</label>
       </node>
-      <node id="1040">
-        <label>/home/tcs/Jan24/Jan24_libraries_testing/ROCm_Libraries/rocALUTION/src/base/local_vector.hpp</label>
-      </node>
-      <node id="1047">
-        <label>base_rocalution.hpp</label>
-        <link refid="base__rocalution_8hpp_source"/>
-        <childnode refid="1048" relation="include">
-        </childnode>
-        <childnode refid="1053" relation="include">
-        </childnode>
-        <childnode refid="1041" relation="include">
-        </childnode>
-      </node>
-      <node id="1044">
-        <label>../../base/local_matrix.hpp</label>
-        <link refid="local__matrix_8hpp_source"/>
-        <childnode refid="1045" relation="include">
-        </childnode>
-        <childnode refid="1046" relation="include">
-        </childnode>
-        <childnode refid="1048" relation="include">
-        </childnode>
-        <childnode refid="1055" relation="include">
-        </childnode>
-        <childnode refid="1052" relation="include">
-        </childnode>
-      </node>
-      <node id="1045">
+      <node id="1804">
         <label>../utils/types.hpp</label>
       </node>
-      <node id="1041">
+      <node id="1797">
+        <label>../base/base_rocalution.hpp</label>
+        <link refid="base__rocalution_8hpp_source"/>
+        <childnode refid="1798" relation="include">
+        </childnode>
+        <childnode refid="1802" relation="include">
+        </childnode>
+        <childnode refid="1795" relation="include">
+        </childnode>
+      </node>
+      <node id="1795">
         <label>vector</label>
       </node>
-      <node id="1036">
+      <node id="1791">
         <label>../../utils/def.hpp</label>
       </node>
-      <node id="1056">
+      <node id="1811">
         <label>../../utils/log.hpp</label>
       </node>
-      <node id="1054">
+      <node id="1806">
         <label>cstdlib</label>
       </node>
-      <node id="1049">
+      <node id="1799">
         <label>iostream</label>
       </node>
-      <node id="1038">
-        <label>/home/tcs/Jan24/Jan24_libraries_testing/ROCm_Libraries/rocALUTION/src/solvers/solver.hpp</label>
+      <node id="1798">
+        <label>backend_manager.hpp</label>
+        <link refid="backend__manager_8hpp_source"/>
+        <childnode refid="1799" relation="include">
+        </childnode>
+        <childnode refid="1800" relation="include">
+        </childnode>
+        <childnode refid="1801" relation="include">
+        </childnode>
+        <childnode refid="1795" relation="include">
+        </childnode>
+        <childnode refid="1796" relation="include">
+        </childnode>
       </node>
-      <node id="1053">
+      <node id="1794">
+        <label>iter_ctrl.hpp</label>
+        <link refid="iter__ctrl_8hpp_source"/>
+        <childnode refid="1795" relation="include">
+        </childnode>
+        <childnode refid="1796" relation="include">
+        </childnode>
+      </node>
+      <node id="1802">
         <label>complex</label>
       </node>
-      <node id="1037">
-        <label>preconditioner_saddlepoint.hpp</label>
+      <node id="1808">
+        <label>../../base/local_matrix.hpp</label>
+        <link refid="local__matrix_8hpp_source"/>
+        <childnode refid="1804" relation="include">
+        </childnode>
+        <childnode refid="1809" relation="include">
+        </childnode>
+        <childnode refid="1798" relation="include">
+        </childnode>
+        <childnode refid="1810" relation="include">
+        </childnode>
+        <childnode refid="1796" relation="include">
+        </childnode>
       </node>
     </incdepgraph>
     <innernamespace refid="namespacerocalution">rocalution</innernamespace>
@@ -213,7 +244,7 @@
 <codeline lineno="61"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="62"><highlight class="normal"></highlight></codeline>
 <codeline lineno="63"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="64"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>DiagJacobiSaddlePointPrecond&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::Clear(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_diag_jacobi_saddle_point_precond_1a9f0f248482e5ec4aa3c2936d707e527e" kindref="member">DiagJacobiSaddlePointPrecond&lt;OperatorType, VectorType, ValueType&gt;::Clear</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
 <codeline lineno="65"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>log_debug(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;DiagJacobiSaddlePointPrecond::Clear()&quot;</highlight><highlight class="normal">,<sp/>this-&gt;build_);</highlight></codeline>
 <codeline lineno="67"><highlight class="normal"></highlight></codeline>
@@ -260,7 +291,7 @@
 <codeline lineno="108"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="109"><highlight class="normal"></highlight></codeline>
 <codeline lineno="110"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="111"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>DiagJacobiSaddlePointPrecond&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::Print(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_diag_jacobi_saddle_point_precond_1a25a5ae4f6c652c3c35e7783597ffa76d" kindref="member">DiagJacobiSaddlePointPrecond&lt;OperatorType, VectorType, ValueType&gt;::Print</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
 <codeline lineno="112"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
 <codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(this-&gt;build_<sp/>==<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">)</highlight></codeline>
 <codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
@@ -279,7 +310,7 @@
 <codeline lineno="127"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="128"><highlight class="normal"></highlight></codeline>
 <codeline lineno="129"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="130"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>DiagJacobiSaddlePointPrecond&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::Set(</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_diag_jacobi_saddle_point_precond_1a565eeff2293d71a97b9fd1d00423945e" kindref="member">DiagJacobiSaddlePointPrecond&lt;OperatorType, VectorType, ValueType&gt;::Set</ref>(</highlight></codeline>
 <codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/>Solver&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;&amp;<sp/>K_Solver,</highlight></codeline>
 <codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/>Solver&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;&amp;<sp/>S_Solver)</highlight></codeline>
 <codeline lineno="133"><highlight class="normal">{</highlight></codeline>
@@ -293,7 +324,7 @@
 <codeline lineno="141"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="142"><highlight class="normal"></highlight></codeline>
 <codeline lineno="143"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="144"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>DiagJacobiSaddlePointPrecond&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::Build(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_diag_jacobi_saddle_point_precond_1a579420d51b2460889552d551a50a5567" kindref="member">DiagJacobiSaddlePointPrecond&lt;OperatorType, VectorType, ValueType&gt;::Build</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
 <codeline lineno="145"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/>log_debug(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;DiagJacobiSaddlePointPrecond::Build()&quot;</highlight><highlight class="normal">,<sp/>this-&gt;build_,<sp/></highlight><highlight class="stringliteral">&quot;<sp/>#*#<sp/>begin&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="147"><highlight class="normal"></highlight></codeline>
@@ -380,7 +411,7 @@
 <codeline lineno="228"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="229"><highlight class="normal"></highlight></codeline>
 <codeline lineno="230"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="231"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>DiagJacobiSaddlePointPrecond&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::Solve(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>VectorType&amp;<sp/>rhs,</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_diag_jacobi_saddle_point_precond_1a3ef5a66eaaac329c912a75b21450fa36" kindref="member">DiagJacobiSaddlePointPrecond&lt;OperatorType, VectorType, ValueType&gt;::Solve</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>VectorType&amp;<sp/>rhs,</highlight></codeline>
 <codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>VectorType*<sp/>x)</highlight></codeline>
 <codeline lineno="233"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/>log_debug(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;DiagJacobiSaddlePointPrecond::Solve()&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;<sp/>#*#<sp/>begin&quot;</highlight><highlight class="normal">,<sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*&amp;)rhs,<sp/>x);</highlight></codeline>
@@ -410,7 +441,7 @@
 <codeline lineno="258"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="259"><highlight class="normal"></highlight></codeline>
 <codeline lineno="260"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="261"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>DiagJacobiSaddlePointPrecond&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::MoveToHostLocalData_(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_diag_jacobi_saddle_point_precond_1adca53d1e7a84dc1a2eaa1aac405e1661" kindref="member">DiagJacobiSaddlePointPrecond&lt;OperatorType, VectorType, ValueType&gt;::MoveToHostLocalData_</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
 <codeline lineno="262"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/>log_debug(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;DiagJacobiSaddlePointPrecond::MoveToHostLocalData_()&quot;</highlight><highlight class="normal">,<sp/>this-&gt;build_);</highlight></codeline>
 <codeline lineno="264"><highlight class="normal"></highlight></codeline>
@@ -440,7 +471,7 @@
 <codeline lineno="288"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="289"><highlight class="normal"></highlight></codeline>
 <codeline lineno="290"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="291"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>DiagJacobiSaddlePointPrecond&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::MoveToAcceleratorLocalData_(</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_diag_jacobi_saddle_point_precond_1a0dc2ce0ee37ee2cd7aea15e9a885a161" kindref="member">DiagJacobiSaddlePointPrecond&lt;OperatorType, VectorType, ValueType&gt;::MoveToAcceleratorLocalData_</ref>(</highlight></codeline>
 <codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
 <codeline lineno="293"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="294"><highlight class="normal"><sp/><sp/><sp/><sp/>log_debug(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;DiagJacobiSaddlePointPrecond::MoveToAcceleratorLocalData_()&quot;</highlight><highlight class="normal">,<sp/>this-&gt;build_);</highlight></codeline>
@@ -483,6 +514,6 @@
 <codeline lineno="331"><highlight class="normal"></highlight></codeline>
 <codeline lineno="332"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>rocalution</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
-    <location file="ROCm_Libraries/rocALUTION/src/solvers/preconditioners/preconditioner_saddlepoint.cpp"/>
+    <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_saddlepoint.cpp"/>
   </compounddef>
 </doxygen>

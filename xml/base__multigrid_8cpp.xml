@@ -3,8 +3,8 @@
   <compounddef id="base__multigrid_8cpp" kind="file" language="C++">
     <compoundname>base_multigrid.cpp</compoundname>
     <includes local="yes">../../utils/def.hpp</includes>
-    <includes local="yes">base_multigrid.hpp</includes>
-    <includes local="yes">../iter_ctrl.hpp</includes>
+    <includes refid="base__multigrid_8hpp" local="yes">base_multigrid.hpp</includes>
+    <includes refid="iter__ctrl_8hpp" local="yes">../iter_ctrl.hpp</includes>
     <includes refid="local__matrix_8hpp" local="yes">../../base/local_matrix.hpp</includes>
     <includes refid="local__vector_8hpp" local="yes">../../base/local_vector.hpp</includes>
     <includes refid="global__matrix_8hpp" local="yes">../../base/global_matrix.hpp</includes>
@@ -14,197 +14,217 @@
     <includes local="no">math.h</includes>
     <includes local="no">complex</includes>
     <incdepgraph>
-      <node id="645">
+      <node id="1065">
+        <label>../base/local_vector.hpp</label>
+        <link refid="local__vector_8hpp_source"/>
+        <childnode refid="1066" relation="include">
+        </childnode>
+        <childnode refid="1067" relation="include">
+        </childnode>
+      </node>
+      <node id="1076">
         <label>limits</label>
       </node>
-      <node id="642">
-        <label>parallel_manager.hpp</label>
-        <link refid="parallel__manager_8hpp_source"/>
-        <childnode refid="629" relation="include">
-        </childnode>
-        <childnode refid="627" relation="include">
-        </childnode>
-        <childnode refid="643" relation="include">
-        </childnode>
-        <childnode refid="644" relation="include">
-        </childnode>
-        <childnode refid="645" relation="include">
-        </childnode>
-        <childnode refid="635" relation="include">
-        </childnode>
-        <childnode refid="636" relation="include">
-        </childnode>
-      </node>
-      <node id="644">
+      <node id="1075">
         <label>assert.h</label>
       </node>
-      <node id="630">
-        <label>backend_manager.hpp</label>
-        <link refid="backend__manager_8hpp_source"/>
-        <childnode refid="631" relation="include">
-        </childnode>
-        <childnode refid="632" relation="include">
-        </childnode>
-        <childnode refid="633" relation="include">
-        </childnode>
-        <childnode refid="634" relation="include">
-        </childnode>
-        <childnode refid="635" relation="include">
-        </childnode>
-      </node>
-      <node id="628">
-        <label>operator.hpp</label>
-        <link refid="operator_8hpp_source"/>
-        <childnode refid="627" relation="include">
-        </childnode>
-        <childnode refid="629" relation="include">
-        </childnode>
-        <childnode refid="631" relation="include">
-        </childnode>
-        <childnode refid="635" relation="include">
-        </childnode>
-        <childnode refid="637" relation="include">
-        </childnode>
-      </node>
-      <node id="635">
-        <label>string</label>
-      </node>
-      <node id="622">
-        <label>ROCm_Libraries/rocALUTION/src/solvers/multigrid/base_multigrid.cpp</label>
-        <link refid="base__multigrid_8cpp"/>
-        <childnode refid="623" relation="include">
-        </childnode>
-        <childnode refid="624" relation="include">
-        </childnode>
-        <childnode refid="625" relation="include">
-        </childnode>
-        <childnode refid="626" relation="include">
-        </childnode>
-        <childnode refid="639" relation="include">
-        </childnode>
-        <childnode refid="641" relation="include">
-        </childnode>
-        <childnode refid="646" relation="include">
-        </childnode>
-        <childnode refid="647" relation="include">
-        </childnode>
-        <childnode refid="648" relation="include">
-        </childnode>
-        <childnode refid="649" relation="include">
-        </childnode>
-        <childnode refid="636" relation="include">
-        </childnode>
-      </node>
-      <node id="633">
-        <label>map</label>
-      </node>
-      <node id="643">
-        <label>/home/tcs/Jan24/Jan24_libraries_testing/ROCm_Libraries/rocALUTION/src/utils/def.hpp</label>
-      </node>
-      <node id="632">
-        <label>fstream</label>
-      </node>
-      <node id="641">
-        <label>../../base/global_matrix.hpp</label>
-        <link refid="global__matrix_8hpp_source"/>
-        <childnode refid="627" relation="include">
-        </childnode>
-        <childnode refid="628" relation="include">
-        </childnode>
-        <childnode refid="642" relation="include">
-        </childnode>
-      </node>
-      <node id="638">
-        <label>matrix_formats.hpp</label>
-      </node>
-      <node id="639">
-        <label>../../base/local_vector.hpp</label>
-        <link refid="local__vector_8hpp_source"/>
-        <childnode refid="627" relation="include">
-        </childnode>
-        <childnode refid="640" relation="include">
-        </childnode>
-      </node>
-      <node id="629">
-        <label>base_rocalution.hpp</label>
-        <link refid="base__rocalution_8hpp_source"/>
-        <childnode refid="630" relation="include">
-        </childnode>
-        <childnode refid="636" relation="include">
-        </childnode>
-        <childnode refid="634" relation="include">
-        </childnode>
-      </node>
-      <node id="626">
-        <label>../../base/local_matrix.hpp</label>
-        <link refid="local__matrix_8hpp_source"/>
-        <childnode refid="627" relation="include">
-        </childnode>
-        <childnode refid="628" relation="include">
-        </childnode>
-        <childnode refid="630" relation="include">
-        </childnode>
-        <childnode refid="638" relation="include">
-        </childnode>
-        <childnode refid="635" relation="include">
-        </childnode>
-      </node>
-      <node id="627">
-        <label>../utils/types.hpp</label>
-      </node>
-      <node id="646">
-        <label>../../base/global_vector.hpp</label>
-        <link refid="global__vector_8hpp_source"/>
-        <childnode refid="627" relation="include">
-        </childnode>
-        <childnode refid="640" relation="include">
-        </childnode>
-        <childnode refid="642" relation="include">
-        </childnode>
-      </node>
-      <node id="634">
-        <label>vector</label>
-      </node>
-      <node id="623">
-        <label>../../utils/def.hpp</label>
-      </node>
-      <node id="647">
-        <label>../../utils/log.hpp</label>
-      </node>
-      <node id="649">
-        <label>math.h</label>
-      </node>
-      <node id="637">
-        <label>cstdlib</label>
-      </node>
-      <node id="625">
-        <label>../iter_ctrl.hpp</label>
-      </node>
-      <node id="631">
-        <label>iostream</label>
-      </node>
-      <node id="640">
+      <node id="1067">
         <label>vector.hpp</label>
         <link refid="vector_8hpp_source"/>
-        <childnode refid="627" relation="include">
+        <childnode refid="1066" relation="include">
         </childnode>
-        <childnode refid="629" relation="include">
+        <childnode refid="1059" relation="include">
         </childnode>
-        <childnode refid="631" relation="include">
+        <childnode refid="1061" relation="include">
         </childnode>
-        <childnode refid="635" relation="include">
+        <childnode refid="1058" relation="include">
         </childnode>
-        <childnode refid="637" relation="include">
+        <childnode refid="1068" relation="include">
         </childnode>
       </node>
-      <node id="624">
+      <node id="1073">
+        <label>parallel_manager.hpp</label>
+        <link refid="parallel__manager_8hpp_source"/>
+        <childnode refid="1059" relation="include">
+        </childnode>
+        <childnode refid="1066" relation="include">
+        </childnode>
+        <childnode refid="1074" relation="include">
+        </childnode>
+        <childnode refid="1075" relation="include">
+        </childnode>
+        <childnode refid="1076" relation="include">
+        </childnode>
+        <childnode refid="1058" relation="include">
+        </childnode>
+        <childnode refid="1064" relation="include">
+        </childnode>
+      </node>
+      <node id="1069">
+        <label>../../base/operator.hpp</label>
+        <link refid="operator_8hpp_source"/>
+        <childnode refid="1066" relation="include">
+        </childnode>
+        <childnode refid="1059" relation="include">
+        </childnode>
+        <childnode refid="1061" relation="include">
+        </childnode>
+        <childnode refid="1058" relation="include">
+        </childnode>
+        <childnode refid="1068" relation="include">
+        </childnode>
+      </node>
+      <node id="1052">
+        <label>/home/tcs/rocALUTION/src/solvers/multigrid/base_multigrid.cpp</label>
+        <link refid="base__multigrid_8cpp"/>
+        <childnode refid="1053" relation="include">
+        </childnode>
+        <childnode refid="1054" relation="include">
+        </childnode>
+        <childnode refid="1056" relation="include">
+        </childnode>
+        <childnode refid="1070" relation="include">
+        </childnode>
+        <childnode refid="1065" relation="include">
+        </childnode>
+        <childnode refid="1072" relation="include">
+        </childnode>
+        <childnode refid="1077" relation="include">
+        </childnode>
+        <childnode refid="1078" relation="include">
+        </childnode>
+        <childnode refid="1079" relation="include">
+        </childnode>
+        <childnode refid="1080" relation="include">
+        </childnode>
+        <childnode refid="1064" relation="include">
+        </childnode>
+      </node>
+      <node id="1074">
+        <label>/home/tcs/rocALUTION/src/utils/def.hpp</label>
+      </node>
+      <node id="1058">
+        <label>string</label>
+      </node>
+      <node id="1063">
+        <label>map</label>
+      </node>
+      <node id="1055">
+        <label>../solver.hpp</label>
+        <link refid="solver_8hpp_source"/>
+        <childnode refid="1056" relation="include">
+        </childnode>
+        <childnode refid="1059" relation="include">
+        </childnode>
+        <childnode refid="1065" relation="include">
+        </childnode>
+      </node>
+      <node id="1072">
+        <label>../../base/global_matrix.hpp</label>
+        <link refid="global__matrix_8hpp_source"/>
+        <childnode refid="1066" relation="include">
+        </childnode>
+        <childnode refid="1069" relation="include">
+        </childnode>
+        <childnode refid="1073" relation="include">
+        </childnode>
+      </node>
+      <node id="1062">
+        <label>fstream</label>
+      </node>
+      <node id="1071">
+        <label>matrix_formats.hpp</label>
+      </node>
+      <node id="1054">
         <label>base_multigrid.hpp</label>
+        <link refid="base__multigrid_8hpp_source"/>
+        <childnode refid="1055" relation="include">
+        </childnode>
+        <childnode refid="1069" relation="include">
+        </childnode>
       </node>
-      <node id="636">
+      <node id="1077">
+        <label>../../base/global_vector.hpp</label>
+        <link refid="global__vector_8hpp_source"/>
+        <childnode refid="1066" relation="include">
+        </childnode>
+        <childnode refid="1067" relation="include">
+        </childnode>
+        <childnode refid="1073" relation="include">
+        </childnode>
+      </node>
+      <node id="1066">
+        <label>../utils/types.hpp</label>
+      </node>
+      <node id="1059">
+        <label>../base/base_rocalution.hpp</label>
+        <link refid="base__rocalution_8hpp_source"/>
+        <childnode refid="1060" relation="include">
+        </childnode>
+        <childnode refid="1064" relation="include">
+        </childnode>
+        <childnode refid="1057" relation="include">
+        </childnode>
+      </node>
+      <node id="1057">
+        <label>vector</label>
+      </node>
+      <node id="1053">
+        <label>../../utils/def.hpp</label>
+      </node>
+      <node id="1078">
+        <label>../../utils/log.hpp</label>
+      </node>
+      <node id="1080">
+        <label>math.h</label>
+      </node>
+      <node id="1068">
+        <label>cstdlib</label>
+      </node>
+      <node id="1061">
+        <label>iostream</label>
+      </node>
+      <node id="1060">
+        <label>backend_manager.hpp</label>
+        <link refid="backend__manager_8hpp_source"/>
+        <childnode refid="1061" relation="include">
+        </childnode>
+        <childnode refid="1062" relation="include">
+        </childnode>
+        <childnode refid="1063" relation="include">
+        </childnode>
+        <childnode refid="1057" relation="include">
+        </childnode>
+        <childnode refid="1058" relation="include">
+        </childnode>
+      </node>
+      <node id="1056">
+        <label>iter_ctrl.hpp</label>
+        <link refid="iter__ctrl_8hpp_source"/>
+        <childnode refid="1057" relation="include">
+        </childnode>
+        <childnode refid="1058" relation="include">
+        </childnode>
+      </node>
+      <node id="1064">
         <label>complex</label>
       </node>
-      <node id="648">
+      <node id="1079">
         <label>../../utils/math_functions.hpp</label>
+      </node>
+      <node id="1070">
+        <label>../../base/local_matrix.hpp</label>
+        <link refid="local__matrix_8hpp_source"/>
+        <childnode refid="1066" relation="include">
+        </childnode>
+        <childnode refid="1069" relation="include">
+        </childnode>
+        <childnode refid="1060" relation="include">
+        </childnode>
+        <childnode refid="1071" relation="include">
+        </childnode>
+        <childnode refid="1058" relation="include">
+        </childnode>
       </node>
     </incdepgraph>
     <innernamespace refid="namespacerocalution">rocalution</innernamespace>
@@ -299,7 +319,7 @@
 <codeline lineno="84"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="85"><highlight class="normal"></highlight></codeline>
 <codeline lineno="86"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="87"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>BaseMultiGrid&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::InitLevels(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>levels)</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_base_multi_grid_1a53997c872f3761e09b820a30145d462c" kindref="member">BaseMultiGrid&lt;OperatorType, VectorType, ValueType&gt;::InitLevels</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>levels)</highlight></codeline>
 <codeline lineno="88"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>log_debug(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;BaseMultiGrid::InitLevels()&quot;</highlight><highlight class="normal">,<sp/>levels);</highlight></codeline>
 <codeline lineno="90"><highlight class="normal"></highlight></codeline>
@@ -319,7 +339,7 @@
 <codeline lineno="104"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="105"><highlight class="normal"></highlight></codeline>
 <codeline lineno="106"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="107"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>BaseMultiGrid&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::SetSmoother(</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_base_multi_grid_1a63b544d6472034cd6fbed2bc46620fcd" kindref="member">BaseMultiGrid&lt;OperatorType, VectorType, ValueType&gt;::SetSmoother</ref>(</highlight></codeline>
 <codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/>IterativeLinearSolver&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;**<sp/>smoother)</highlight></codeline>
 <codeline lineno="109"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/>log_debug(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;BaseMultiGrid::SetSmoother()&quot;</highlight><highlight class="normal">,<sp/>smoother);</highlight></codeline>
@@ -331,7 +351,7 @@
 <codeline lineno="116"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="117"><highlight class="normal"></highlight></codeline>
 <codeline lineno="118"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="119"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>BaseMultiGrid&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::SetSmootherPreIter(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iter)</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_base_multi_grid_1a9d3b928ff5f0084ed908206fdb9a2f6a" kindref="member">BaseMultiGrid&lt;OperatorType, VectorType, ValueType&gt;::SetSmootherPreIter</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iter)</highlight></codeline>
 <codeline lineno="120"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/>log_debug(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;BaseMultiGrid::SetSmootherPreIter()&quot;</highlight><highlight class="normal">,<sp/>iter);</highlight></codeline>
 <codeline lineno="122"><highlight class="normal"></highlight></codeline>
@@ -339,7 +359,7 @@
 <codeline lineno="124"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="125"><highlight class="normal"></highlight></codeline>
 <codeline lineno="126"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="127"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>BaseMultiGrid&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::SetSmootherPostIter(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iter)</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_base_multi_grid_1a7f4ea4a24e58cb85e97d2cf9089cf864" kindref="member">BaseMultiGrid&lt;OperatorType, VectorType, ValueType&gt;::SetSmootherPostIter</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iter)</highlight></codeline>
 <codeline lineno="128"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/>log_debug(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;BaseMultiGrid::SetSmootherPostIter()&quot;</highlight><highlight class="normal">,<sp/>iter);</highlight></codeline>
 <codeline lineno="130"><highlight class="normal"></highlight></codeline>
@@ -347,7 +367,7 @@
 <codeline lineno="132"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="133"><highlight class="normal"></highlight></codeline>
 <codeline lineno="134"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="135"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>BaseMultiGrid&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::SetSolver(</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_base_multi_grid_1a615908da426fd0eba8bac32fdd1889f2" kindref="member">BaseMultiGrid&lt;OperatorType, VectorType, ValueType&gt;::SetSolver</ref>(</highlight></codeline>
 <codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/>Solver&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;&amp;<sp/>solver)</highlight></codeline>
 <codeline lineno="137"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/>log_debug(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;BaseMultiGrid::SetSolver()&quot;</highlight><highlight class="normal">,<sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*&amp;)solver);</highlight></codeline>
@@ -358,7 +378,7 @@
 <codeline lineno="143"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="144"><highlight class="normal"></highlight></codeline>
 <codeline lineno="145"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="146"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>BaseMultiGrid&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::SetScaling(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>scaling)</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_base_multi_grid_1a5c506dbb924ed9c80d236d17eb86c59a" kindref="member">BaseMultiGrid&lt;OperatorType, VectorType, ValueType&gt;::SetScaling</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>scaling)</highlight></codeline>
 <codeline lineno="147"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/>log_debug(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;BaseMultiGrid::SetScaling()&quot;</highlight><highlight class="normal">,<sp/>scaling);</highlight></codeline>
 <codeline lineno="149"><highlight class="normal"></highlight></codeline>
@@ -366,7 +386,7 @@
 <codeline lineno="151"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="152"><highlight class="normal"></highlight></codeline>
 <codeline lineno="153"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="154"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>BaseMultiGrid&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::SetHostLevels(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>levels)</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_base_multi_grid_1abe050a8ca55c360ee796c9528f16a8a4" kindref="member">BaseMultiGrid&lt;OperatorType, VectorType, ValueType&gt;::SetHostLevels</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>levels)</highlight></codeline>
 <codeline lineno="155"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/>log_debug(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;BaseMultiGrid::SetHostLevels()&quot;</highlight><highlight class="normal">,<sp/>levels);</highlight></codeline>
 <codeline lineno="157"><highlight class="normal"></highlight></codeline>
@@ -379,7 +399,7 @@
 <codeline lineno="164"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="165"><highlight class="normal"></highlight></codeline>
 <codeline lineno="166"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="167"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>BaseMultiGrid&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::SetCycle(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>cycle)</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_base_multi_grid_1aace391f37b16ebd17df2f68dd0959418" kindref="member">BaseMultiGrid&lt;OperatorType, VectorType, ValueType&gt;::SetCycle</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>cycle)</highlight></codeline>
 <codeline lineno="168"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/>log_debug(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;BaseMultiGrid::SetCycle()&quot;</highlight><highlight class="normal">,<sp/>cycle);</highlight></codeline>
 <codeline lineno="170"><highlight class="normal"></highlight></codeline>
@@ -387,7 +407,7 @@
 <codeline lineno="172"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="173"><highlight class="normal"></highlight></codeline>
 <codeline lineno="174"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="175"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>BaseMultiGrid&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::SetKcycleFull(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>kcycle_full)</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_base_multi_grid_1af3c6a55fe6368ad87537c56a8b58e454" kindref="member">BaseMultiGrid&lt;OperatorType, VectorType, ValueType&gt;::SetKcycleFull</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>kcycle_full)</highlight></codeline>
 <codeline lineno="176"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/>log_debug(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;BaseMultiGrid::SetKcycleFull()&quot;</highlight><highlight class="normal">,<sp/>kcycle_full);</highlight></codeline>
 <codeline lineno="178"><highlight class="normal"></highlight></codeline>
@@ -395,13 +415,13 @@
 <codeline lineno="180"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="181"><highlight class="normal"></highlight></codeline>
 <codeline lineno="182"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="183"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>BaseMultiGrid&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::Print(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_base_multi_grid_1aea69e285bccd07d36d20f74742b00fbc" kindref="member">BaseMultiGrid&lt;OperatorType, VectorType, ValueType&gt;::Print</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
 <codeline lineno="184"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
 <codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/>LOG_INFO(</highlight><highlight class="stringliteral">&quot;MultiGrid<sp/>solver&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="186"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="187"><highlight class="normal"></highlight></codeline>
 <codeline lineno="188"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="189"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>BaseMultiGrid&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::PrintStart_(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_base_multi_grid_1a949c187616ebc08671f528a575b22705" kindref="member">BaseMultiGrid&lt;OperatorType, VectorType, ValueType&gt;::PrintStart_</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
 <codeline lineno="190"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
 <codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/>assert(this-&gt;levels_<sp/>&gt;<sp/>0);</highlight></codeline>
 <codeline lineno="192"><highlight class="normal"></highlight></codeline>
@@ -412,13 +432,13 @@
 <codeline lineno="197"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="198"><highlight class="normal"></highlight></codeline>
 <codeline lineno="199"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="200"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>BaseMultiGrid&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::PrintEnd_(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_base_multi_grid_1af7e6d055515f253a8381f8da34658501" kindref="member">BaseMultiGrid&lt;OperatorType, VectorType, ValueType&gt;::PrintEnd_</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
 <codeline lineno="201"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
 <codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/>LOG_INFO(</highlight><highlight class="stringliteral">&quot;MultiGrid<sp/>ends&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="203"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="204"><highlight class="normal"></highlight></codeline>
 <codeline lineno="205"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="206"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>BaseMultiGrid&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::Build(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_base_multi_grid_1a4033705acbf717fa5f23d219a8f7b765" kindref="member">BaseMultiGrid&lt;OperatorType, VectorType, ValueType&gt;::Build</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
 <codeline lineno="207"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/>log_debug(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;BaseMultiGrid::Build()&quot;</highlight><highlight class="normal">,<sp/>this-&gt;build_,<sp/></highlight><highlight class="stringliteral">&quot;<sp/>#*#<sp/>begin&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="209"><highlight class="normal"></highlight></codeline>
@@ -533,7 +553,7 @@
 <codeline lineno="318"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="319"><highlight class="normal"></highlight></codeline>
 <codeline lineno="320"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="321"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>BaseMultiGrid&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::Clear(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="321"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_base_multi_grid_1ab8c35436568aacce432f6f253d296c20" kindref="member">BaseMultiGrid&lt;OperatorType, VectorType, ValueType&gt;::Clear</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
 <codeline lineno="322"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="323"><highlight class="normal"><sp/><sp/><sp/><sp/>log_debug(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;BaseMultiGrid::Clear()&quot;</highlight><highlight class="normal">,<sp/>this-&gt;build_);</highlight></codeline>
 <codeline lineno="324"><highlight class="normal"></highlight></codeline>
@@ -591,7 +611,7 @@
 <codeline lineno="376"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="377"><highlight class="normal"></highlight></codeline>
 <codeline lineno="378"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="379"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>BaseMultiGrid&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::MoveToHostLocalData_(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="379"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_base_multi_grid_1aa966335651f12b246995d91e798d53dc" kindref="member">BaseMultiGrid&lt;OperatorType, VectorType, ValueType&gt;::MoveToHostLocalData_</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
 <codeline lineno="380"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="381"><highlight class="normal"><sp/><sp/><sp/><sp/>log_debug(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;BaseMultiGrid::MoveToHostLocalData_()&quot;</highlight><highlight class="normal">,<sp/>this-&gt;build_);</highlight></codeline>
 <codeline lineno="382"><highlight class="normal"></highlight></codeline>
@@ -639,7 +659,7 @@
 <codeline lineno="424"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="425"><highlight class="normal"></highlight></codeline>
 <codeline lineno="426"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="427"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>BaseMultiGrid&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::MoveToAcceleratorLocalData_(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="427"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_base_multi_grid_1a932c769ff0896be30bda0e81a6854367" kindref="member">BaseMultiGrid&lt;OperatorType, VectorType, ValueType&gt;::MoveToAcceleratorLocalData_</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
 <codeline lineno="428"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="429"><highlight class="normal"><sp/><sp/><sp/><sp/>log_debug(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;BaseMultiGrid::MoveToAcceleratorLocalData_()&quot;</highlight><highlight class="normal">,<sp/>this-&gt;build_);</highlight></codeline>
 <codeline lineno="430"><highlight class="normal"></highlight></codeline>
@@ -709,7 +729,7 @@
 <codeline lineno="494"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="495"><highlight class="normal"></highlight></codeline>
 <codeline lineno="496"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="497"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>BaseMultiGrid&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::MoveHostLevels_(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="497"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_base_multi_grid_1a1a470cc6f123f820aeeea16378275684" kindref="member">BaseMultiGrid&lt;OperatorType, VectorType, ValueType&gt;::MoveHostLevels_</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
 <codeline lineno="498"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="499"><highlight class="normal"><sp/><sp/><sp/><sp/>log_debug(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;BaseMultiGrid::MoveHostLevels_()&quot;</highlight><highlight class="normal">,<sp/>this-&gt;build_);</highlight></codeline>
 <codeline lineno="500"><highlight class="normal"></highlight></codeline>
@@ -771,7 +791,7 @@
 <codeline lineno="556"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="557"><highlight class="normal"></highlight></codeline>
 <codeline lineno="558"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="559"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>BaseMultiGrid&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::Solve(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>VectorType&amp;<sp/>rhs,<sp/>VectorType*<sp/>x)</highlight></codeline>
+<codeline lineno="559"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_base_multi_grid_1afbe44b1d105248260a6076d4a1b86138" kindref="member">BaseMultiGrid&lt;OperatorType, VectorType, ValueType&gt;::Solve</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>VectorType&amp;<sp/>rhs,<sp/>VectorType*<sp/>x)</highlight></codeline>
 <codeline lineno="560"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="561"><highlight class="normal"><sp/><sp/><sp/><sp/>log_debug(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;BaseMultiGrid::Solve()&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;<sp/>#*#<sp/>begin&quot;</highlight><highlight class="normal">,<sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*&amp;)rhs,<sp/>x);</highlight></codeline>
 <codeline lineno="562"><highlight class="normal"></highlight></codeline>
@@ -853,7 +873,7 @@
 <codeline lineno="638"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="639"><highlight class="normal"></highlight></codeline>
 <codeline lineno="640"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="641"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>BaseMultiGrid&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::Restrict_(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>VectorType&amp;<sp/>fine,</highlight></codeline>
+<codeline lineno="641"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_base_multi_grid_1aff8d20e7b82a3304182d1174553fe57f" kindref="member">BaseMultiGrid&lt;OperatorType, VectorType, ValueType&gt;::Restrict_</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>VectorType&amp;<sp/>fine,</highlight></codeline>
 <codeline lineno="642"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>VectorType*<sp/>coarse,</highlight></codeline>
 <codeline lineno="643"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>level)</highlight></codeline>
 <codeline lineno="644"><highlight class="normal">{</highlight></codeline>
@@ -863,7 +883,7 @@
 <codeline lineno="648"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="649"><highlight class="normal"></highlight></codeline>
 <codeline lineno="650"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="651"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>BaseMultiGrid&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::Prolong_(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>VectorType&amp;<sp/>coarse,</highlight></codeline>
+<codeline lineno="651"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_base_multi_grid_1a11e6b521ec3b31bd9c968f21300b7025" kindref="member">BaseMultiGrid&lt;OperatorType, VectorType, ValueType&gt;::Prolong_</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>VectorType&amp;<sp/>coarse,</highlight></codeline>
 <codeline lineno="652"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>VectorType*<sp/>fine,</highlight></codeline>
 <codeline lineno="653"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>level)</highlight></codeline>
 <codeline lineno="654"><highlight class="normal">{</highlight></codeline>
@@ -873,7 +893,7 @@
 <codeline lineno="658"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="659"><highlight class="normal"></highlight></codeline>
 <codeline lineno="660"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="661"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>BaseMultiGrid&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::Vcycle_(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>VectorType&amp;<sp/>rhs,</highlight></codeline>
+<codeline lineno="661"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_base_multi_grid_1afe0fc8a80c73931c74caa11fe1359681" kindref="member">BaseMultiGrid&lt;OperatorType, VectorType, ValueType&gt;::Vcycle_</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>VectorType&amp;<sp/>rhs,</highlight></codeline>
 <codeline lineno="662"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>VectorType*<sp/>x)</highlight></codeline>
 <codeline lineno="663"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="664"><highlight class="normal"><sp/><sp/><sp/><sp/>log_debug(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;BaseMultiGrid::Vcycle_()&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;<sp/>#*#<sp/>begin&quot;</highlight><highlight class="normal">,<sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*&amp;)rhs,<sp/>x);</highlight></codeline>
@@ -1079,7 +1099,7 @@
 <codeline lineno="864"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="865"><highlight class="normal"></highlight></codeline>
 <codeline lineno="866"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="867"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>BaseMultiGrid&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::Wcycle_(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>VectorType&amp;<sp/>rhs,</highlight></codeline>
+<codeline lineno="867"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_base_multi_grid_1a3fdd941d9589636afd0629a57b5eecdc" kindref="member">BaseMultiGrid&lt;OperatorType, VectorType, ValueType&gt;::Wcycle_</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>VectorType&amp;<sp/>rhs,</highlight></codeline>
 <codeline lineno="868"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>VectorType*<sp/>x)</highlight></codeline>
 <codeline lineno="869"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="870"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>gamma<sp/>=<sp/>2<sp/>hardcoded</highlight><highlight class="normal"></highlight></codeline>
@@ -1090,7 +1110,7 @@
 <codeline lineno="875"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="876"><highlight class="normal"></highlight></codeline>
 <codeline lineno="877"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="878"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>BaseMultiGrid&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::Fcycle_(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>VectorType&amp;<sp/>rhs,</highlight></codeline>
+<codeline lineno="878"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_base_multi_grid_1a0ddf4d043f8d8447a16f309b060aa1a2" kindref="member">BaseMultiGrid&lt;OperatorType, VectorType, ValueType&gt;::Fcycle_</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>VectorType&amp;<sp/>rhs,</highlight></codeline>
 <codeline lineno="879"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>VectorType*<sp/>x)</highlight></codeline>
 <codeline lineno="880"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="881"><highlight class="normal"><sp/><sp/><sp/><sp/>LOG_INFO(</highlight><highlight class="stringliteral">&quot;BaseMultiGrid:Fcycle_()<sp/>not<sp/>implemented<sp/>yet&quot;</highlight><highlight class="normal">);</highlight></codeline>
@@ -1098,7 +1118,7 @@
 <codeline lineno="883"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="884"><highlight class="normal"></highlight></codeline>
 <codeline lineno="885"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="886"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>BaseMultiGrid&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::Kcycle_(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>VectorType&amp;<sp/>rhs,</highlight></codeline>
+<codeline lineno="886"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_base_multi_grid_1a8bfaab7c7be3920e179c4281da1af609" kindref="member">BaseMultiGrid&lt;OperatorType, VectorType, ValueType&gt;::Kcycle_</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>VectorType&amp;<sp/>rhs,</highlight></codeline>
 <codeline lineno="887"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>VectorType*<sp/>x)</highlight></codeline>
 <codeline lineno="888"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="889"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(this-&gt;current_level_<sp/>!=<sp/>1<sp/>&amp;&amp;<sp/>this-&gt;kcycle_full_<sp/>==<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">)</highlight></codeline>
@@ -1218,6 +1238,6 @@
 <codeline lineno="1003"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1004"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>rocalution</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
-    <location file="ROCm_Libraries/rocALUTION/src/solvers/multigrid/base_multigrid.cpp"/>
+    <location file="/home/tcs/rocALUTION/src/solvers/multigrid/base_multigrid.cpp"/>
   </compounddef>
 </doxygen>

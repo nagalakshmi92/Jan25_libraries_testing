@@ -11,7 +11,7 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="ROCm_Libraries/rocALUTION/src/base/local_vector.hpp" line="35" column="1" bodyfile="ROCm_Libraries/rocALUTION/src/base/local_vector.hpp" bodystart="35" bodyend="-1"/>
+    <location file="/home/tcs/rocALUTION/src/base/local_vector.hpp" line="35" column="1" bodyfile="/home/tcs/rocALUTION/src/base/local_vector.hpp" bodystart="35" bodyend="-1"/>
     <listofallmembers>
     </listofallmembers>
   </compounddef>

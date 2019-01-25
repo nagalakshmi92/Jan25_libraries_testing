@@ -1,0 +1,624 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classrocalution_1_1_pairwise_a_m_g" kind="class" language="C++" prot="public">
+    <compoundname>rocalution::PairwiseAMG</compoundname>
+    <basecompoundref refid="classrocalution_1_1_base_a_m_g" prot="public" virt="non-virtual">rocalution::BaseAMG&lt; OperatorType, VectorType, ValueType &gt;</basecompoundref>
+    <includes refid="pairwise__amg_8hpp" local="no">pairwise_amg.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>class OperatorType</type>
+      </param>
+      <param>
+        <type>class VectorType</type>
+      </param>
+      <param>
+        <type>typename ValueType</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classrocalution_1_1_pairwise_a_m_g_1a9ec33983110e44bcd3e3b2839dd767b6" prot="private" static="no" mutable="no">
+        <type>ValueType</type>
+        <definition>ValueType rocalution::PairwiseAMG&lt; OperatorType, VectorType, ValueType &gt;::beta_</definition>
+        <argsstring></argsstring>
+        <name>beta_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/multigrid/pairwise_amg.hpp" line="96" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/multigrid/pairwise_amg.hpp" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrocalution_1_1_pairwise_a_m_g_1aa0158483a87c249f81d9915b276be113" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double rocalution::PairwiseAMG&lt; OperatorType, VectorType, ValueType &gt;::coarsening_factor_</definition>
+        <argsstring></argsstring>
+        <name>coarsening_factor_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/multigrid/pairwise_amg.hpp" line="99" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/multigrid/pairwise_amg.hpp" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrocalution_1_1_pairwise_a_m_g_1ad9a9e0d9756e6c784d67e8158c6b2ae0" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int rocalution::PairwiseAMG&lt; OperatorType, VectorType, ValueType &gt;::aggregation_ordering_</definition>
+        <argsstring></argsstring>
+        <name>aggregation_ordering_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/multigrid/pairwise_amg.hpp" line="101" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/multigrid/pairwise_amg.hpp" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrocalution_1_1_pairwise_a_m_g_1a7fe92cfa9ec5007401c334eadf2c0b4d" prot="private" static="no" mutable="no">
+        <type><ref refid="classrocalution_1_1_local_vector" kindref="compound">LocalVector</ref>&lt; int &gt; **</type>
+        <definition>LocalVector&lt;int&gt;** rocalution::PairwiseAMG&lt; OperatorType, VectorType, ValueType &gt;::trans_level_</definition>
+        <argsstring></argsstring>
+        <name>trans_level_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/multigrid/pairwise_amg.hpp" line="104" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/multigrid/pairwise_amg.hpp" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrocalution_1_1_pairwise_a_m_g_1a6881cd16e89368cb05aacf6b75a30cd2" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>std::vector&lt;int&gt; rocalution::PairwiseAMG&lt; OperatorType, VectorType, ValueType &gt;::dim_level_</definition>
+        <argsstring></argsstring>
+        <name>dim_level_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/multigrid/pairwise_amg.hpp" line="107" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/multigrid/pairwise_amg.hpp" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrocalution_1_1_pairwise_a_m_g_1acc65c8339a5b2b71f5ed91e2231862ed" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>std::vector&lt;int&gt; rocalution::PairwiseAMG&lt; OperatorType, VectorType, ValueType &gt;::Gsize_level_</definition>
+        <argsstring></argsstring>
+        <name>Gsize_level_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/multigrid/pairwise_amg.hpp" line="108" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/multigrid/pairwise_amg.hpp" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrocalution_1_1_pairwise_a_m_g_1af12ad7ae21fed27907fe6160a0a7c119" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>std::vector&lt;int&gt; rocalution::PairwiseAMG&lt; OperatorType, VectorType, ValueType &gt;::rGsize_level_</definition>
+        <argsstring></argsstring>
+        <name>rGsize_level_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/multigrid/pairwise_amg.hpp" line="109" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/multigrid/pairwise_amg.hpp" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrocalution_1_1_pairwise_a_m_g_1ad6d6074b24067f51b8d47de7325c6c10" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; int * &gt;</type>
+        <definition>std::vector&lt;int*&gt; rocalution::PairwiseAMG&lt; OperatorType, VectorType, ValueType &gt;::rG_level_</definition>
+        <argsstring></argsstring>
+        <name>rG_level_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/multigrid/pairwise_amg.hpp" line="110" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/multigrid/pairwise_amg.hpp" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classrocalution_1_1_pairwise_a_m_g_1a19737e4df2be30e8aafeba3d5995ae59" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>rocalution::PairwiseAMG&lt; OperatorType, VectorType, ValueType &gt;::PairwiseAMG</definition>
+        <argsstring>()</argsstring>
+        <name>PairwiseAMG</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/multigrid/pairwise_amg.hpp" line="60" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/multigrid/pairwise_amg.cpp" bodystart="43" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_pairwise_a_m_g_1a590c5514eebea7f047c4a13a084a324d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>rocalution::PairwiseAMG&lt; OperatorType, VectorType, ValueType &gt;::~PairwiseAMG</definition>
+        <argsstring>()</argsstring>
+        <name>~PairwiseAMG</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/multigrid/pairwise_amg.hpp" line="61" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/multigrid/pairwise_amg.cpp" bodystart="68" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_pairwise_a_m_g_1ae7517d16fa91981f9ab8d9d852b8b129" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void rocalution::PairwiseAMG&lt; OperatorType, VectorType, ValueType &gt;::Print</definition>
+        <argsstring>(void) const</argsstring>
+        <name>Print</name>
+        <reimplements refid="classrocalution_1_1_base_multi_grid_1aea69e285bccd07d36d20f74742b00fbc">Print</reimplements>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Print information about the solver. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/multigrid/pairwise_amg.hpp" line="63" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/multigrid/pairwise_amg.cpp" bodystart="76" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_pairwise_a_m_g_1a22f45c940431dc7318105d5bc7c0c7cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void rocalution::PairwiseAMG&lt; OperatorType, VectorType, ValueType &gt;::BuildHierarchy</definition>
+        <argsstring>(void)</argsstring>
+        <name>BuildHierarchy</name>
+        <reimplements refid="classrocalution_1_1_base_a_m_g_1af6d4defc5f8a6fc67a4fec46c8f1bd66">BuildHierarchy</reimplements>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Create AMG hierarchy. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/multigrid/pairwise_amg.hpp" line="64" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/multigrid/pairwise_amg.cpp" bodystart="140" bodyend="239"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_pairwise_a_m_g_1ab415d49a3f2a7837ad229a4a7a0dafde" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void rocalution::PairwiseAMG&lt; OperatorType, VectorType, ValueType &gt;::ClearLocal</definition>
+        <argsstring>(void)</argsstring>
+        <name>ClearLocal</name>
+        <reimplements refid="classrocalution_1_1_base_a_m_g_1a557868487252ec0b6c94eda581372a0a">ClearLocal</reimplements>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Clear all local data. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/multigrid/pairwise_amg.hpp" line="65" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/multigrid/pairwise_amg.cpp" bodystart="345" bodyend="365"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_pairwise_a_m_g_1aedc419a3d733f0d710a52f2f9e3d5811" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void rocalution::PairwiseAMG&lt; OperatorType, VectorType, ValueType &gt;::BuildSmoothers</definition>
+        <argsstring>(void)</argsstring>
+        <name>BuildSmoothers</name>
+        <reimplements refid="classrocalution_1_1_base_a_m_g_1a3f76e7e8ceb1772e77772f2c3995f2d7">BuildSmoothers</reimplements>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Create AMG smoothers. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/multigrid/pairwise_amg.hpp" line="66" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/multigrid/pairwise_amg.cpp" bodystart="242" bodyend="266"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_pairwise_a_m_g_1a6dc95d19d2c5fbee5350603310fad12f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rocalution::PairwiseAMG&lt; OperatorType, VectorType, ValueType &gt;::SetBeta</definition>
+        <argsstring>(ValueType beta)</argsstring>
+        <name>SetBeta</name>
+        <param>
+          <type>ValueType</type>
+          <declname>beta</declname>
+        </param>
+        <briefdescription>
+<para>Set beta for pairwise aggregation. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/multigrid/pairwise_amg.hpp" line="69" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/multigrid/pairwise_amg.cpp" bodystart="108" bodyend="116"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_pairwise_a_m_g_1a3a0227c2b228a0afb0a431dfea874b00" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rocalution::PairwiseAMG&lt; OperatorType, VectorType, ValueType &gt;::SetOrdering</definition>
+        <argsstring>(unsigned int ordering)</argsstring>
+        <name>SetOrdering</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>ordering</declname>
+        </param>
+        <briefdescription>
+<para>Set re-ordering for aggregation. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/multigrid/pairwise_amg.hpp" line="71" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/multigrid/pairwise_amg.cpp" bodystart="130" bodyend="137"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_pairwise_a_m_g_1ac4b383708d9957bca2a2c454f7707f17" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rocalution::PairwiseAMG&lt; OperatorType, VectorType, ValueType &gt;::SetCoarseningFactor</definition>
+        <argsstring>(double factor)</argsstring>
+        <name>SetCoarseningFactor</name>
+        <param>
+          <type>double</type>
+          <declname>factor</declname>
+        </param>
+        <briefdescription>
+<para>Set target coarsening factor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/multigrid/pairwise_amg.hpp" line="73" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/multigrid/pairwise_amg.cpp" bodystart="119" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_pairwise_a_m_g_1a6f0fde48bd04a0adb27dc8e0506260c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void rocalution::PairwiseAMG&lt; OperatorType, VectorType, ValueType &gt;::ReBuildNumeric</definition>
+        <argsstring>(void)</argsstring>
+        <name>ReBuildNumeric</name>
+        <reimplements refid="classrocalution_1_1_solver_1acd20a051f0560a77645e35361df8f87c">ReBuildNumeric</reimplements>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Rebuild the solver only with numerical computation (no allocation or data structure computation) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/multigrid/pairwise_amg.hpp" line="75" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/multigrid/pairwise_amg.cpp" bodystart="269" bodyend="342"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classrocalution_1_1_pairwise_a_m_g_1ae9495cd4c96c964341f6daa11c604998" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rocalution::PairwiseAMG&lt; OperatorType, VectorType, ValueType &gt;::Aggregate_</definition>
+        <argsstring>(const OperatorType &amp;op, Operator&lt; ValueType &gt; *pro, Operator&lt; ValueType &gt; *res, OperatorType *coarse, LocalVector&lt; int &gt; *trans)</argsstring>
+        <name>Aggregate_</name>
+        <param>
+          <type>const OperatorType &amp;</type>
+          <declname>op</declname>
+        </param>
+        <param>
+          <type><ref refid="classrocalution_1_1_operator" kindref="compound">Operator</ref>&lt; ValueType &gt; *</type>
+          <declname>pro</declname>
+        </param>
+        <param>
+          <type><ref refid="classrocalution_1_1_operator" kindref="compound">Operator</ref>&lt; ValueType &gt; *</type>
+          <declname>res</declname>
+        </param>
+        <param>
+          <type>OperatorType *</type>
+          <declname>coarse</declname>
+        </param>
+        <param>
+          <type><ref refid="classrocalution_1_1_local_vector" kindref="compound">LocalVector</ref>&lt; int &gt; *</type>
+          <declname>trans</declname>
+        </param>
+        <briefdescription>
+<para>Constructs the prolongation, restriction and coarse operator. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/multigrid/pairwise_amg.hpp" line="79" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/multigrid/pairwise_amg.cpp" bodystart="368" bodyend="424"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_pairwise_a_m_g_1a8b1142526735b1440b12286c820d14f3" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void rocalution::PairwiseAMG&lt; OperatorType, VectorType, ValueType &gt;::PrintStart_</definition>
+        <argsstring>(void) const</argsstring>
+        <name>PrintStart_</name>
+        <reimplements refid="classrocalution_1_1_base_multi_grid_1a949c187616ebc08671f528a575b22705">PrintStart_</reimplements>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Print starting message of the solver. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/multigrid/pairwise_amg.hpp" line="91" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/multigrid/pairwise_amg.cpp" bodystart="88" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_pairwise_a_m_g_1ac2ce08dc444b1d9dafc93be9e517050c" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void rocalution::PairwiseAMG&lt; OperatorType, VectorType, ValueType &gt;::PrintEnd_</definition>
+        <argsstring>(void) const</argsstring>
+        <name>PrintEnd_</name>
+        <reimplements refid="classrocalution_1_1_base_multi_grid_1af7e6d055515f253a8381f8da34658501">PrintEnd_</reimplements>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Print ending message of the solver. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/multigrid/pairwise_amg.hpp" line="92" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/multigrid/pairwise_amg.cpp" bodystart="102" bodyend="105"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classrocalution_1_1_pairwise_a_m_g_1a71a9cfe00a77bf51e5bd50a2c195fb95" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void rocalution::PairwiseAMG&lt; OperatorType, VectorType, ValueType &gt;::Aggregate_</definition>
+        <argsstring>(const OperatorType &amp;op, Operator&lt; ValueType &gt; *pro, Operator&lt; ValueType &gt; *res, OperatorType *coarse)</argsstring>
+        <name>Aggregate_</name>
+        <reimplements refid="classrocalution_1_1_base_a_m_g_1a927139d6e2fc999ea798400b548d2cfe">Aggregate_</reimplements>
+        <param>
+          <type>const OperatorType &amp;</type>
+          <declname>op</declname>
+        </param>
+        <param>
+          <type><ref refid="classrocalution_1_1_operator" kindref="compound">Operator</ref>&lt; ValueType &gt; *</type>
+          <declname>pro</declname>
+        </param>
+        <param>
+          <type><ref refid="classrocalution_1_1_operator" kindref="compound">Operator</ref>&lt; ValueType &gt; *</type>
+          <declname>res</declname>
+        </param>
+        <param>
+          <type>OperatorType *</type>
+          <declname>coarse</declname>
+        </param>
+        <briefdescription>
+<para>Constructs the prolongation, restriction and coarse operator. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/multigrid/pairwise_amg.hpp" line="86" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/multigrid/pairwise_amg.cpp" bodystart="428" bodyend="434"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Pairwise Aggregation Algebraic <ref refid="classrocalution_1_1_multi_grid" kindref="compound">MultiGrid</ref> Method. </para>    </briefdescription>
+    <detaileddescription>
+<para>The Pairwise Aggregation Algebraic <ref refid="classrocalution_1_1_multi_grid" kindref="compound">MultiGrid</ref> method is based on a pairwise aggregation matching scheme. It delivers very efficient building phase which is suitable for Poisson-like equation. Most of the time it requires K-cycle for the solving phase to provide low number of iterations. pairwiseamg</para><para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>OperatorType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- can be <ref refid="classrocalution_1_1_local_matrix" kindref="compound">LocalMatrix</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>VectorType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- can be <ref refid="classrocalution_1_1_local_vector" kindref="compound">LocalVector</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ValueType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- can be float, double, std::complex&lt;float&gt; or std::complex&lt;double&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="554">
+        <label>rocalution::IterativeLinearSolver&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_iterative_linear_solver"/>
+        <childnode refid="555" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="555">
+        <label>rocalution::Solver&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_solver"/>
+        <childnode refid="556" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="556">
+        <label>rocalution::RocalutionObj</label>
+      </node>
+      <node id="552">
+        <label>rocalution::BaseAMG&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_base_a_m_g"/>
+        <childnode refid="553" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="551">
+        <label>rocalution::PairwiseAMG&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_pairwise_a_m_g"/>
+        <childnode refid="552" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="553">
+        <label>rocalution::BaseMultiGrid&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_base_multi_grid"/>
+        <childnode refid="554" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="560">
+        <label>rocalution::IterativeLinearSolver&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_iterative_linear_solver"/>
+        <childnode refid="561" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="564">
+        <label>rocalution::Vector&lt; int &gt;</label>
+        <link refid="classrocalution_1_1_vector"/>
+        <childnode refid="565" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="565">
+        <label>rocalution::BaseRocalution&lt; ValueType &gt;</label>
+        <link refid="classrocalution_1_1_base_rocalution"/>
+        <childnode refid="562" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="561">
+        <label>rocalution::Solver&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_solver"/>
+        <childnode refid="562" relation="public-inheritance">
+        </childnode>
+        <childnode refid="563" relation="usage">
+          <edgelabel>permutation_</edgelabel>
+        </childnode>
+        <childnode refid="566" relation="usage">
+          <edgelabel>op_</edgelabel>
+        </childnode>
+      </node>
+      <node id="563">
+        <label>rocalution::LocalVector&lt; int &gt;</label>
+        <link refid="classrocalution_1_1_local_vector"/>
+        <childnode refid="564" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="562">
+        <label>rocalution::RocalutionObj</label>
+      </node>
+      <node id="566">
+        <label>OperatorType</label>
+      </node>
+      <node id="558">
+        <label>rocalution::BaseAMG&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_base_a_m_g"/>
+        <childnode refid="559" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="557">
+        <label>rocalution::PairwiseAMG&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_pairwise_a_m_g"/>
+        <childnode refid="558" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="559">
+        <label>rocalution::BaseMultiGrid&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_base_multi_grid"/>
+        <childnode refid="560" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/tcs/rocALUTION/src/solvers/multigrid/pairwise_amg.hpp" line="58" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/multigrid/pairwise_amg.hpp" bodystart="57" bodyend="111"/>
+    <listofallmembers>
+      <member refid="classrocalution_1_1_pairwise_a_m_g_1ae9495cd4c96c964341f6daa11c604998" prot="protected" virt="non-virtual"><scope>rocalution::PairwiseAMG</scope><name>Aggregate_</name></member>
+      <member refid="classrocalution_1_1_pairwise_a_m_g_1a71a9cfe00a77bf51e5bd50a2c195fb95" prot="private" virt="virtual"><scope>rocalution::PairwiseAMG</scope><name>Aggregate_</name></member>
+      <member refid="classrocalution_1_1_pairwise_a_m_g_1ad9a9e0d9756e6c784d67e8158c6b2ae0" prot="private" virt="non-virtual"><scope>rocalution::PairwiseAMG</scope><name>aggregation_ordering_</name></member>
+      <member refid="classrocalution_1_1_base_a_m_g_1a3cd266501e4d3854cb2fe9094bb8dcd5" prot="public" virt="non-virtual"><scope>rocalution::PairwiseAMG</scope><name>BaseAMG</name></member>
+      <member refid="classrocalution_1_1_base_multi_grid_1a1c94a61b80074241d291ddd8d8b1ec6a" prot="public" virt="non-virtual"><scope>rocalution::PairwiseAMG</scope><name>BaseMultiGrid</name></member>
+      <member refid="classrocalution_1_1_pairwise_a_m_g_1a9ec33983110e44bcd3e3b2839dd767b6" prot="private" virt="non-virtual"><scope>rocalution::PairwiseAMG</scope><name>beta_</name></member>
+      <member refid="classrocalution_1_1_base_a_m_g_1a8e5f2b01e79664c95b67af35781d16d9" prot="public" virt="virtual"><scope>rocalution::PairwiseAMG</scope><name>Build</name></member>
+      <member refid="classrocalution_1_1_solver_1a64924a0c87d60d2e4bf9fa295d0152cb" prot="protected" virt="non-virtual"><scope>rocalution::PairwiseAMG</scope><name>build_</name></member>
+      <member refid="classrocalution_1_1_pairwise_a_m_g_1a22f45c940431dc7318105d5bc7c0c7cc" prot="public" virt="virtual"><scope>rocalution::PairwiseAMG</scope><name>BuildHierarchy</name></member>
+      <member refid="classrocalution_1_1_solver_1a0d11ee9943f785db285f0ef5c08c64eb" prot="public" virt="virtual"><scope>rocalution::PairwiseAMG</scope><name>BuildMoveToAcceleratorAsync</name></member>
+      <member refid="classrocalution_1_1_pairwise_a_m_g_1aedc419a3d733f0d710a52f2f9e3d5811" prot="public" virt="virtual"><scope>rocalution::PairwiseAMG</scope><name>BuildSmoothers</name></member>
+      <member refid="classrocalution_1_1_base_a_m_g_1a2c81fabb935f751c5771df8836ce922b" prot="public" virt="virtual"><scope>rocalution::PairwiseAMG</scope><name>Clear</name></member>
+      <member refid="classrocalution_1_1_pairwise_a_m_g_1ab415d49a3f2a7837ad229a4a7a0dafde" prot="public" virt="virtual"><scope>rocalution::PairwiseAMG</scope><name>ClearLocal</name></member>
+      <member refid="classrocalution_1_1_base_a_m_g_1a261410980028e43e018570a939ff105a" prot="protected" virt="non-virtual"><scope>rocalution::PairwiseAMG</scope><name>coarse_size_</name></member>
+      <member refid="classrocalution_1_1_pairwise_a_m_g_1aa0158483a87c249f81d9915b276be113" prot="private" virt="non-virtual"><scope>rocalution::PairwiseAMG</scope><name>coarsening_factor_</name></member>
+      <member refid="classrocalution_1_1_base_multi_grid_1a9130ac18ccfc5fab6cffeccae87f042a" prot="protected" virt="non-virtual"><scope>rocalution::PairwiseAMG</scope><name>current_level_</name></member>
+      <member refid="classrocalution_1_1_base_multi_grid_1a2e81fd615a4a51ab8f19ba4c9c7972cc" prot="protected" virt="non-virtual"><scope>rocalution::PairwiseAMG</scope><name>cycle_</name></member>
+      <member refid="classrocalution_1_1_pairwise_a_m_g_1a6881cd16e89368cb05aacf6b75a30cd2" prot="private" virt="non-virtual"><scope>rocalution::PairwiseAMG</scope><name>dim_level_</name></member>
+      <member refid="classrocalution_1_1_base_multi_grid_1a0ddf4d043f8d8447a16f309b060aa1a2" prot="protected" virt="non-virtual"><scope>rocalution::PairwiseAMG</scope><name>Fcycle_</name></member>
+      <member refid="classrocalution_1_1_iterative_linear_solver_1a20f2516ef96cebecbe83ba153bfacc8e" prot="public" virt="virtual"><scope>rocalution::PairwiseAMG</scope><name>GetAmaxResidualIndex</name></member>
+      <member refid="classrocalution_1_1_iterative_linear_solver_1a364ed49d060f8c24ba7af2398d1f54f5" prot="public" virt="virtual"><scope>rocalution::PairwiseAMG</scope><name>GetCurrentResidual</name></member>
+      <member refid="classrocalution_1_1_iterative_linear_solver_1a7f70fb4d7ce86daa75b2796a0dc12044" prot="public" virt="virtual"><scope>rocalution::PairwiseAMG</scope><name>GetIterationCount</name></member>
+      <member refid="classrocalution_1_1_base_a_m_g_1a615e88d5a7abc5a0d3d556e7974ab9e9" prot="public" virt="non-virtual"><scope>rocalution::PairwiseAMG</scope><name>GetNumLevels</name></member>
+      <member refid="classrocalution_1_1_iterative_linear_solver_1a814064201608ca980284fbea51792137" prot="public" virt="virtual"><scope>rocalution::PairwiseAMG</scope><name>GetSolverStatus</name></member>
+      <member refid="classrocalution_1_1_rocalution_obj_1a4bba5aeaf4fd705efc00402f1f6ed40b" prot="protected" virt="non-virtual"><scope>rocalution::PairwiseAMG</scope><name>global_obj_id_</name></member>
+      <member refid="classrocalution_1_1_pairwise_a_m_g_1acc65c8339a5b2b71f5ed91e2231862ed" prot="private" virt="non-virtual"><scope>rocalution::PairwiseAMG</scope><name>Gsize_level_</name></member>
+      <member refid="classrocalution_1_1_base_a_m_g_1a34bb3af2f3daba77e83effa0f3a692a2" prot="protected" virt="non-virtual"><scope>rocalution::PairwiseAMG</scope><name>hierarchy_</name></member>
+      <member refid="classrocalution_1_1_base_multi_grid_1a4bd0cefc5fbc2c72b49d706df486b75a" prot="protected" virt="non-virtual"><scope>rocalution::PairwiseAMG</scope><name>host_level_</name></member>
+      <member refid="classrocalution_1_1_iterative_linear_solver_1a30d12c17029094a3f46a0fa1ce491887" prot="protected" virt="non-virtual"><scope>rocalution::PairwiseAMG</scope><name>index_</name></member>
+      <member refid="classrocalution_1_1_iterative_linear_solver_1a2a8eebb0b187469ed92c675bd75e34b8" prot="public" virt="non-virtual"><scope>rocalution::PairwiseAMG</scope><name>Init</name></member>
+      <member refid="classrocalution_1_1_iterative_linear_solver_1a0c6fb1aeaf491a1e4891dc13d4b893b2" prot="public" virt="non-virtual"><scope>rocalution::PairwiseAMG</scope><name>Init</name></member>
+      <member refid="classrocalution_1_1_base_multi_grid_1a53997c872f3761e09b820a30145d462c" prot="public" virt="non-virtual"><scope>rocalution::PairwiseAMG</scope><name>InitLevels</name></member>
+      <member refid="classrocalution_1_1_iterative_linear_solver_1a3b248faab2ff42e9106b6e38e5e0bbe2" prot="public" virt="non-virtual"><scope>rocalution::PairwiseAMG</scope><name>InitMaxIter</name></member>
+      <member refid="classrocalution_1_1_iterative_linear_solver_1a025c99dd56f7b09ebfd9df3905093c8e" prot="public" virt="non-virtual"><scope>rocalution::PairwiseAMG</scope><name>InitMinIter</name></member>
+      <member refid="classrocalution_1_1_iterative_linear_solver_1a05b570833a869738be46986d255b3c39" prot="public" virt="non-virtual"><scope>rocalution::PairwiseAMG</scope><name>InitTol</name></member>
+      <member refid="classrocalution_1_1_base_multi_grid_1abccaffa0d661c69e0566a52fc1fc6dc9" prot="protected" virt="non-virtual"><scope>rocalution::PairwiseAMG</scope><name>iter_post_smooth_</name></member>
+      <member refid="classrocalution_1_1_base_multi_grid_1a01b4f210ce27bd79de7d2d2b0898dc70" prot="protected" virt="non-virtual"><scope>rocalution::PairwiseAMG</scope><name>iter_pre_smooth_</name></member>
+      <member refid="classrocalution_1_1_iterative_linear_solver_1a6fcfd0b77d13d84d36156abbaa100fa0" prot="public" virt="non-virtual"><scope>rocalution::PairwiseAMG</scope><name>IterativeLinearSolver</name></member>
+      <member refid="classrocalution_1_1_base_multi_grid_1a8bfaab7c7be3920e179c4281da1af609" prot="protected" virt="non-virtual"><scope>rocalution::PairwiseAMG</scope><name>Kcycle_</name></member>
+      <member refid="classrocalution_1_1_base_multi_grid_1a94c05b3ae3cc54df2fb67f3c3c8b7fa1" prot="protected" virt="non-virtual"><scope>rocalution::PairwiseAMG</scope><name>kcycle_full_</name></member>
+      <member refid="classrocalution_1_1_base_multi_grid_1ae7e6d70d62e4d1b508c5dee5b564ac8c" prot="protected" virt="non-virtual"><scope>rocalution::PairwiseAMG</scope><name>levels_</name></member>
+      <member refid="classrocalution_1_1_base_multi_grid_1a1a470cc6f123f820aeeea16378275684" prot="protected" virt="non-virtual"><scope>rocalution::PairwiseAMG</scope><name>MoveHostLevels_</name></member>
+      <member refid="classrocalution_1_1_solver_1ab1b6410cd134c9ad00c1851d400cf0f8" prot="public" virt="virtual"><scope>rocalution::PairwiseAMG</scope><name>MoveToAccelerator</name></member>
+      <member refid="classrocalution_1_1_base_multi_grid_1a932c769ff0896be30bda0e81a6854367" prot="protected" virt="virtual"><scope>rocalution::PairwiseAMG</scope><name>MoveToAcceleratorLocalData_</name></member>
+      <member refid="classrocalution_1_1_solver_1a3c263e65898816f5838184c0af78a044" prot="public" virt="virtual"><scope>rocalution::PairwiseAMG</scope><name>MoveToHost</name></member>
+      <member refid="classrocalution_1_1_base_multi_grid_1aa966335651f12b246995d91e798d53dc" prot="protected" virt="virtual"><scope>rocalution::PairwiseAMG</scope><name>MoveToHostLocalData_</name></member>
+      <member refid="classrocalution_1_1_iterative_linear_solver_1a45c0602171dda0391e5574e0310504fb" prot="protected" virt="non-virtual"><scope>rocalution::PairwiseAMG</scope><name>Norm_</name></member>
+      <member refid="classrocalution_1_1_solver_1ad338b5f99cf339fb33218dd8b958cac4" prot="protected" virt="non-virtual"><scope>rocalution::PairwiseAMG</scope><name>op_</name></member>
+      <member refid="classrocalution_1_1_base_a_m_g_1a77d8f3909d848028af69a6db4e31158a" prot="protected" virt="non-virtual"><scope>rocalution::PairwiseAMG</scope><name>op_format_</name></member>
+      <member refid="classrocalution_1_1_base_multi_grid_1a178ba768db8dfeb591e169dc40e3c375" prot="protected" virt="non-virtual"><scope>rocalution::PairwiseAMG</scope><name>op_level_</name></member>
+      <member refid="classrocalution_1_1_pairwise_a_m_g_1a19737e4df2be30e8aafeba3d5995ae59" prot="public" virt="non-virtual"><scope>rocalution::PairwiseAMG</scope><name>PairwiseAMG</name></member>
+      <member refid="classrocalution_1_1_solver_1ac46ab4d19fba48ece463666d37a7dc86" prot="protected" virt="non-virtual"><scope>rocalution::PairwiseAMG</scope><name>permutation_</name></member>
+      <member refid="classrocalution_1_1_solver_1a2acdb829fa657a7b3e680d1ee6005c9b" prot="protected" virt="non-virtual"><scope>rocalution::PairwiseAMG</scope><name>precond_</name></member>
+      <member refid="classrocalution_1_1_pairwise_a_m_g_1ae7517d16fa91981f9ab8d9d852b8b129" prot="public" virt="virtual"><scope>rocalution::PairwiseAMG</scope><name>Print</name></member>
+      <member refid="classrocalution_1_1_pairwise_a_m_g_1ac2ce08dc444b1d9dafc93be9e517050c" prot="protected" virt="virtual"><scope>rocalution::PairwiseAMG</scope><name>PrintEnd_</name></member>
+      <member refid="classrocalution_1_1_pairwise_a_m_g_1a8b1142526735b1440b12286c820d14f3" prot="protected" virt="virtual"><scope>rocalution::PairwiseAMG</scope><name>PrintStart_</name></member>
+      <member refid="classrocalution_1_1_base_multi_grid_1a11e6b521ec3b31bd9c968f21300b7025" prot="protected" virt="non-virtual"><scope>rocalution::PairwiseAMG</scope><name>Prolong_</name></member>
+      <member refid="classrocalution_1_1_base_multi_grid_1abf39fa332db98f9e4ca414f15d8bff1d" prot="protected" virt="non-virtual"><scope>rocalution::PairwiseAMG</scope><name>prolong_op_level_</name></member>
+      <member refid="classrocalution_1_1_pairwise_a_m_g_1a6f0fde48bd04a0adb27dc8e0506260c2" prot="public" virt="virtual"><scope>rocalution::PairwiseAMG</scope><name>ReBuildNumeric</name></member>
+      <member refid="classrocalution_1_1_iterative_linear_solver_1ae13555f823f7cd1a5c3a7ef3b4427f74" prot="public" virt="non-virtual"><scope>rocalution::PairwiseAMG</scope><name>RecordHistory</name></member>
+      <member refid="classrocalution_1_1_iterative_linear_solver_1a0a5fd39c7f75f4339eaa41b67868653d" prot="public" virt="non-virtual"><scope>rocalution::PairwiseAMG</scope><name>RecordResidualHistory</name></member>
+      <member refid="classrocalution_1_1_base_multi_grid_1a88738e5a1c0cc29a10e0743dc4b50d82" prot="protected" virt="non-virtual"><scope>rocalution::PairwiseAMG</scope><name>res_norm_</name></member>
+      <member refid="classrocalution_1_1_solver_1a91354c5c116742c58d9eb2094cc6a68e" prot="public" virt="virtual"><scope>rocalution::PairwiseAMG</scope><name>ResetOperator</name></member>
+      <member refid="classrocalution_1_1_base_multi_grid_1aff8d20e7b82a3304182d1174553fe57f" prot="protected" virt="non-virtual"><scope>rocalution::PairwiseAMG</scope><name>Restrict_</name></member>
+      <member refid="classrocalution_1_1_base_multi_grid_1a64632f10e50c6125efb8a888931a3a9c" prot="protected" virt="non-virtual"><scope>rocalution::PairwiseAMG</scope><name>restrict_op_level_</name></member>
+      <member refid="classrocalution_1_1_pairwise_a_m_g_1ad6d6074b24067f51b8d47de7325c6c10" prot="private" virt="non-virtual"><scope>rocalution::PairwiseAMG</scope><name>rG_level_</name></member>
+      <member refid="classrocalution_1_1_pairwise_a_m_g_1af12ad7ae21fed27907fe6160a0a7c119" prot="private" virt="non-virtual"><scope>rocalution::PairwiseAMG</scope><name>rGsize_level_</name></member>
+      <member refid="classrocalution_1_1_rocalution_obj_1ad60a8b2047aad74e488c552264fa7737" prot="public" virt="non-virtual"><scope>rocalution::PairwiseAMG</scope><name>RocalutionObj</name></member>
+      <member refid="classrocalution_1_1_base_multi_grid_1a3d675487dab4993050c7aca5d89d5125" prot="protected" virt="non-virtual"><scope>rocalution::PairwiseAMG</scope><name>scaling_</name></member>
+      <member refid="classrocalution_1_1_base_a_m_g_1ab274f3d941409be0aa48922bde76f8b2" prot="protected" virt="non-virtual"><scope>rocalution::PairwiseAMG</scope><name>set_s_</name></member>
+      <member refid="classrocalution_1_1_base_a_m_g_1a3b77edbbb72d656885c33d1dcc079d78" prot="protected" virt="non-virtual"><scope>rocalution::PairwiseAMG</scope><name>set_sm_</name></member>
+      <member refid="classrocalution_1_1_pairwise_a_m_g_1a6dc95d19d2c5fbee5350603310fad12f" prot="public" virt="non-virtual"><scope>rocalution::PairwiseAMG</scope><name>SetBeta</name></member>
+      <member refid="classrocalution_1_1_pairwise_a_m_g_1ac4b383708d9957bca2a2c454f7707f17" prot="public" virt="non-virtual"><scope>rocalution::PairwiseAMG</scope><name>SetCoarseningFactor</name></member>
+      <member refid="classrocalution_1_1_base_a_m_g_1a96281a009e8cb941f8ff269035302d4c" prot="public" virt="non-virtual"><scope>rocalution::PairwiseAMG</scope><name>SetCoarsestLevel</name></member>
+      <member refid="classrocalution_1_1_base_multi_grid_1aace391f37b16ebd17df2f68dd0959418" prot="public" virt="non-virtual"><scope>rocalution::PairwiseAMG</scope><name>SetCycle</name></member>
+      <member refid="classrocalution_1_1_base_a_m_g_1aa359bb6dff698912e524d3d1a45f84fb" prot="public" virt="non-virtual"><scope>rocalution::PairwiseAMG</scope><name>SetDefaultSmootherFormat</name></member>
+      <member refid="classrocalution_1_1_base_multi_grid_1abe050a8ca55c360ee796c9528f16a8a4" prot="public" virt="non-virtual"><scope>rocalution::PairwiseAMG</scope><name>SetHostLevels</name></member>
+      <member refid="classrocalution_1_1_base_multi_grid_1af3c6a55fe6368ad87537c56a8b58e454" prot="public" virt="non-virtual"><scope>rocalution::PairwiseAMG</scope><name>SetKcycleFull</name></member>
+      <member refid="classrocalution_1_1_base_a_m_g_1adf20402c86435116ad68911a26e15a4e" prot="public" virt="non-virtual"><scope>rocalution::PairwiseAMG</scope><name>SetManualSmoothers</name></member>
+      <member refid="classrocalution_1_1_base_a_m_g_1a590e1b7401d3b73c63d5bd9d20b92eb4" prot="public" virt="non-virtual"><scope>rocalution::PairwiseAMG</scope><name>SetManualSolver</name></member>
+      <member refid="classrocalution_1_1_solver_1a12765b63efe75bc88406a8d6ebb5aacc" prot="public" virt="non-virtual"><scope>rocalution::PairwiseAMG</scope><name>SetOperator</name></member>
+      <member refid="classrocalution_1_1_base_a_m_g_1a0b96ffa5244f9a4ef008aebcb0491e46" prot="public" virt="non-virtual"><scope>rocalution::PairwiseAMG</scope><name>SetOperatorFormat</name></member>
+      <member refid="classrocalution_1_1_pairwise_a_m_g_1a3a0227c2b228a0afb0a431dfea874b00" prot="public" virt="non-virtual"><scope>rocalution::PairwiseAMG</scope><name>SetOrdering</name></member>
+      <member refid="classrocalution_1_1_iterative_linear_solver_1a9a7610d7c31f7259f4365d79187cfa78" prot="public" virt="non-virtual"><scope>rocalution::PairwiseAMG</scope><name>SetResidualNorm</name></member>
+      <member refid="classrocalution_1_1_base_multi_grid_1a5c506dbb924ed9c80d236d17eb86c59a" prot="public" virt="non-virtual"><scope>rocalution::PairwiseAMG</scope><name>SetScaling</name></member>
+      <member refid="classrocalution_1_1_base_multi_grid_1a63b544d6472034cd6fbed2bc46620fcd" prot="public" virt="non-virtual"><scope>rocalution::PairwiseAMG</scope><name>SetSmoother</name></member>
+      <member refid="classrocalution_1_1_base_multi_grid_1a7f4ea4a24e58cb85e97d2cf9089cf864" prot="public" virt="non-virtual"><scope>rocalution::PairwiseAMG</scope><name>SetSmootherPostIter</name></member>
+      <member refid="classrocalution_1_1_base_multi_grid_1a9d3b928ff5f0084ed908206fdb9a2f6a" prot="public" virt="non-virtual"><scope>rocalution::PairwiseAMG</scope><name>SetSmootherPreIter</name></member>
+      <member refid="classrocalution_1_1_base_multi_grid_1a615908da426fd0eba8bac32fdd1889f2" prot="public" virt="non-virtual"><scope>rocalution::PairwiseAMG</scope><name>SetSolver</name></member>
+      <member refid="classrocalution_1_1_base_a_m_g_1af79ea2a688e8b3299a6cbad3ee45e12e" prot="protected" virt="non-virtual"><scope>rocalution::PairwiseAMG</scope><name>sm_default_</name></member>
+      <member refid="classrocalution_1_1_base_a_m_g_1ab87cef5490a041aedd913794d3a24250" prot="protected" virt="non-virtual"><scope>rocalution::PairwiseAMG</scope><name>sm_format_</name></member>
+      <member refid="classrocalution_1_1_base_multi_grid_1aebe3210adb254b24838ac52fa39421fc" prot="protected" virt="non-virtual"><scope>rocalution::PairwiseAMG</scope><name>smoother_level_</name></member>
+      <member refid="classrocalution_1_1_base_multi_grid_1afbe44b1d105248260a6076d4a1b86138" prot="public" virt="virtual"><scope>rocalution::PairwiseAMG</scope><name>Solve</name></member>
+      <member refid="classrocalution_1_1_solver_1a009956b05d4d5d1d38e4c24341b14a66" prot="public" virt="non-virtual"><scope>rocalution::PairwiseAMG</scope><name>Solver</name></member>
+      <member refid="classrocalution_1_1_base_multi_grid_1a97135288abf5453813cedd8900a77fb8" prot="protected" virt="non-virtual"><scope>rocalution::PairwiseAMG</scope><name>solver_coarse_</name></member>
+      <member refid="classrocalution_1_1_solver_1a034b434a4340a52430deed9b210e5003" prot="public" virt="virtual"><scope>rocalution::PairwiseAMG</scope><name>SolveZeroSol</name></member>
+      <member refid="classrocalution_1_1_solver_1a17c2830a0ede8d82d1336aa25da6f907" prot="public" virt="virtual"><scope>rocalution::PairwiseAMG</scope><name>Sync</name></member>
+      <member refid="classrocalution_1_1_pairwise_a_m_g_1a7fe92cfa9ec5007401c334eadf2c0b4d" prot="private" virt="non-virtual"><scope>rocalution::PairwiseAMG</scope><name>trans_level_</name></member>
+      <member refid="classrocalution_1_1_base_multi_grid_1afe0fc8a80c73931c74caa11fe1359681" prot="protected" virt="non-virtual"><scope>rocalution::PairwiseAMG</scope><name>Vcycle_</name></member>
+      <member refid="classrocalution_1_1_solver_1a2ee162346e0d52543f9d3d25fe70ea8a" prot="protected" virt="non-virtual"><scope>rocalution::PairwiseAMG</scope><name>verb_</name></member>
+      <member refid="classrocalution_1_1_iterative_linear_solver_1ac88dc520e41c9d1a2de5ad8c95e644c2" prot="public" virt="virtual"><scope>rocalution::PairwiseAMG</scope><name>Verbose</name></member>
+      <member refid="classrocalution_1_1_base_multi_grid_1a3fdd941d9589636afd0629a57b5eecdc" prot="protected" virt="non-virtual"><scope>rocalution::PairwiseAMG</scope><name>Wcycle_</name></member>
+      <member refid="classrocalution_1_1_base_a_m_g_1acfc1799091ff559328d993f5c1c68bb7" prot="public" virt="virtual"><scope>rocalution::PairwiseAMG</scope><name>~BaseAMG</name></member>
+      <member refid="classrocalution_1_1_base_multi_grid_1a1805421215c37b88de6cf5f4dbb6bf77" prot="public" virt="virtual"><scope>rocalution::PairwiseAMG</scope><name>~BaseMultiGrid</name></member>
+      <member refid="classrocalution_1_1_iterative_linear_solver_1a89c416ba136cf16ac4b38d41ae4e745b" prot="public" virt="virtual"><scope>rocalution::PairwiseAMG</scope><name>~IterativeLinearSolver</name></member>
+      <member refid="classrocalution_1_1_pairwise_a_m_g_1a590c5514eebea7f047c4a13a084a324d" prot="public" virt="virtual"><scope>rocalution::PairwiseAMG</scope><name>~PairwiseAMG</name></member>
+      <member refid="classrocalution_1_1_rocalution_obj_1a55a2f93f798cebdda6343b20db959e2d" prot="public" virt="virtual"><scope>rocalution::PairwiseAMG</scope><name>~RocalutionObj</name></member>
+      <member refid="classrocalution_1_1_solver_1af861566a540fc6cc399c844bbc789ec6" prot="public" virt="virtual"><scope>rocalution::PairwiseAMG</scope><name>~Solver</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

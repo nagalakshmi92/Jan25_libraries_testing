@@ -1,0 +1,226 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="preconditioner__multielimination_8hpp" kind="file" language="C++">
+    <compoundname>preconditioner_multielimination.hpp</compoundname>
+    <includes refid="solver_8hpp" local="yes">../solver.hpp</includes>
+    <includes refid="preconditioner_8hpp" local="yes">preconditioner.hpp</includes>
+    <includes refid="local__vector_8hpp" local="yes">../../base/local_vector.hpp</includes>
+    <includes local="no">vector</includes>
+    <includedby refid="preconditioner__multielimination_8cpp" local="yes">/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multielimination.cpp</includedby>
+    <incdepgraph>
+      <node id="1773">
+        <label>/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multielimination.hpp</label>
+        <link refid="preconditioner__multielimination_8hpp"/>
+        <childnode refid="1774" relation="include">
+        </childnode>
+        <childnode refid="1788" relation="include">
+        </childnode>
+        <childnode refid="1784" relation="include">
+        </childnode>
+        <childnode refid="1776" relation="include">
+        </childnode>
+      </node>
+      <node id="1784">
+        <label>../base/local_vector.hpp</label>
+        <link refid="local__vector_8hpp_source"/>
+        <childnode refid="1785" relation="include">
+        </childnode>
+        <childnode refid="1786" relation="include">
+        </childnode>
+      </node>
+      <node id="1788">
+        <label>preconditioner.hpp</label>
+        <link refid="preconditioner_8hpp_source"/>
+        <childnode refid="1774" relation="include">
+        </childnode>
+      </node>
+      <node id="1786">
+        <label>vector.hpp</label>
+        <link refid="vector_8hpp_source"/>
+        <childnode refid="1785" relation="include">
+        </childnode>
+        <childnode refid="1778" relation="include">
+        </childnode>
+        <childnode refid="1780" relation="include">
+        </childnode>
+        <childnode refid="1777" relation="include">
+        </childnode>
+        <childnode refid="1787" relation="include">
+        </childnode>
+      </node>
+      <node id="1777">
+        <label>string</label>
+      </node>
+      <node id="1782">
+        <label>map</label>
+      </node>
+      <node id="1774">
+        <label>../solver.hpp</label>
+        <link refid="solver_8hpp_source"/>
+        <childnode refid="1775" relation="include">
+        </childnode>
+        <childnode refid="1778" relation="include">
+        </childnode>
+        <childnode refid="1784" relation="include">
+        </childnode>
+      </node>
+      <node id="1781">
+        <label>fstream</label>
+      </node>
+      <node id="1785">
+        <label>../utils/types.hpp</label>
+      </node>
+      <node id="1778">
+        <label>../base/base_rocalution.hpp</label>
+        <link refid="base__rocalution_8hpp_source"/>
+        <childnode refid="1779" relation="include">
+        </childnode>
+        <childnode refid="1783" relation="include">
+        </childnode>
+        <childnode refid="1776" relation="include">
+        </childnode>
+      </node>
+      <node id="1776">
+        <label>vector</label>
+      </node>
+      <node id="1787">
+        <label>cstdlib</label>
+      </node>
+      <node id="1780">
+        <label>iostream</label>
+      </node>
+      <node id="1779">
+        <label>backend_manager.hpp</label>
+        <link refid="backend__manager_8hpp_source"/>
+        <childnode refid="1780" relation="include">
+        </childnode>
+        <childnode refid="1781" relation="include">
+        </childnode>
+        <childnode refid="1782" relation="include">
+        </childnode>
+        <childnode refid="1776" relation="include">
+        </childnode>
+        <childnode refid="1777" relation="include">
+        </childnode>
+      </node>
+      <node id="1775">
+        <label>iter_ctrl.hpp</label>
+        <link refid="iter__ctrl_8hpp_source"/>
+        <childnode refid="1776" relation="include">
+        </childnode>
+        <childnode refid="1777" relation="include">
+        </childnode>
+      </node>
+      <node id="1783">
+        <label>complex</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classrocalution_1_1_multi_elimination" prot="public">rocalution::MultiElimination</innerclass>
+    <innernamespace refid="namespacerocalution">rocalution</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2018<sp/>Advanced<sp/>Micro<sp/>Devices,<sp/>Inc.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Permission<sp/>is<sp/>hereby<sp/>granted,<sp/>free<sp/>of<sp/>charge,<sp/>to<sp/>any<sp/>person<sp/>obtaining<sp/>a<sp/>copy</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>of<sp/>this<sp/>software<sp/>and<sp/>associated<sp/>documentation<sp/>files<sp/>(the<sp/>&quot;Software&quot;),<sp/>to<sp/>deal</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>in<sp/>the<sp/>Software<sp/>without<sp/>restriction,<sp/>including<sp/>without<sp/>limitation<sp/>the<sp/>rights</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>to<sp/>use,<sp/>copy,<sp/>modify,<sp/>merge,<sp/>publish,<sp/>distribute,<sp/>sublicense,<sp/>and/or<sp/>sell</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>copies<sp/>of<sp/>the<sp/>Software,<sp/>and<sp/>to<sp/>permit<sp/>persons<sp/>to<sp/>whom<sp/>the<sp/>Software<sp/>is</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>furnished<sp/>to<sp/>do<sp/>so,<sp/>subject<sp/>to<sp/>the<sp/>following<sp/>conditions:</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>The<sp/>above<sp/>copyright<sp/>notice<sp/>and<sp/>this<sp/>permission<sp/>notice<sp/>shall<sp/>be<sp/>included<sp/>in</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>all<sp/>copies<sp/>or<sp/>substantial<sp/>portions<sp/>of<sp/>the<sp/>Software.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>THE<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>&quot;AS<sp/>IS&quot;,<sp/>WITHOUT<sp/>WARRANTY<sp/>OF<sp/>ANY<sp/>KIND,<sp/>EXPRESS<sp/>OR</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>IMPLIED,<sp/>INCLUDING<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO<sp/>THE<sp/>WARRANTIES<sp/>OF<sp/>MERCHANTABILITY,</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>AND<sp/>NONINFRINGEMENT.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>AUTHORS<sp/>OR<sp/>COPYRIGHT<sp/>HOLDERS<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>CLAIM,<sp/>DAMAGES<sp/>OR<sp/>OTHER</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>AN<sp/>ACTION<sp/>OF<sp/>CONTRACT,<sp/>TORT<sp/>OR<sp/>OTHERWISE,<sp/>ARISING<sp/>FROM,</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>OUT<sp/>OF<sp/>OR<sp/>IN<sp/>CONNECTION<sp/>WITH<sp/>THE<sp/>SOFTWARE<sp/>OR<sp/>THE<sp/>USE<sp/>OR<sp/>OTHER<sp/>DEALINGS<sp/>IN</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>THE<sp/>SOFTWARE.</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/>************************************************************************<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>ROCALUTION_PRECONDITIONER_MULTIELIMINATION_HPP_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ROCALUTION_PRECONDITIONER_MULTIELIMINATION_HPP_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../solver.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;preconditioner.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../../base/local_vector.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacerocalution" kindref="compound">rocalution</ref><sp/>{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
+<codeline lineno="60" refid="classrocalution_1_1_multi_elimination" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classrocalution_1_1_multi_elimination" kindref="compound">MultiElimination</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_preconditioner" kindref="compound">Preconditioner</ref>&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classrocalution_1_1_multi_elimination" kindref="compound">MultiElimination</ref>();</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="classrocalution_1_1_multi_elimination" kindref="compound">MultiElimination</ref>();</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67" refid="classrocalution_1_1_multi_elimination_1a1e477e9f38017bea89d7d022d0a5ce0f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_multi_elimination_1a1e477e9f38017bea89d7d022d0a5ce0f" kindref="member">GetSizeDiagBlock</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;<ref refid="classrocalution_1_1_multi_elimination_1a10b6af07b0913829d5d626676e0ba945" kindref="member">size_</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70" refid="classrocalution_1_1_multi_elimination_1ad9da13d305752da8c082d75d3ee477db" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_multi_elimination_1ad9da13d305752da8c082d75d3ee477db" kindref="member">GetLevel</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;<ref refid="classrocalution_1_1_multi_elimination_1ac44c864b522f3a5ae0db4d8fb2290ece" kindref="member">level_</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_multi_elimination_1ad12a355d05f6379a980af64334703732" kindref="member">Print</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_multi_elimination_1a68bc12e2a463e6adc4eca8c48c008fc4" kindref="member">Clear</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classrocalution_1_1_multi_elimination_1a332a7c50fb62ccb9631f58b881acb621" kindref="member">Set</ref>(<ref refid="classrocalution_1_1_solver" kindref="compound">Solver&lt;OperatorType, VectorType, ValueType&gt;</ref>&amp;<sp/>AA_Solver,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>level,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>drop_off<sp/>=<sp/>0.0);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_multi_elimination_1a6ec26a31af3b2b142bc67af672ca0c9d" kindref="member">SetPrecondMatrixFormat</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>mat_format);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_multi_elimination_1ab4a54648616d62a3d4a390c6f7b13eaf" kindref="member">Build</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_multi_elimination_1a42a0951eda58472c2971761140f5b787" kindref="member">Solve</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>VectorType&amp;<sp/>rhs,<sp/>VectorType*<sp/>x);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="93" refid="classrocalution_1_1_multi_elimination_1a38a1563eaff8d49042471467846f7e97" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>OperatorType<sp/><ref refid="classrocalution_1_1_multi_elimination_1a38a1563eaff8d49042471467846f7e97" kindref="member">A_</ref>;</highlight></codeline>
+<codeline lineno="95" refid="classrocalution_1_1_multi_elimination_1a336a676d6685d7f4a5340f20ff60ff02" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>OperatorType<sp/><ref refid="classrocalution_1_1_multi_elimination_1a336a676d6685d7f4a5340f20ff60ff02" kindref="member">D_</ref>;</highlight></codeline>
+<codeline lineno="97" refid="classrocalution_1_1_multi_elimination_1abf421eac09c0bb4d0549f1eb88e8467c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>OperatorType<sp/><ref refid="classrocalution_1_1_multi_elimination_1abf421eac09c0bb4d0549f1eb88e8467c" kindref="member">E_</ref>;</highlight></codeline>
+<codeline lineno="99" refid="classrocalution_1_1_multi_elimination_1ab8ad4e7abc74bf472d8f8e070614878a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>OperatorType<sp/><ref refid="classrocalution_1_1_multi_elimination_1ab8ad4e7abc74bf472d8f8e070614878a" kindref="member">F_</ref>;</highlight></codeline>
+<codeline lineno="101" refid="classrocalution_1_1_multi_elimination_1a4a6e4d04cf5c628b5776c9b0ea0c1e15" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>OperatorType<sp/><ref refid="classrocalution_1_1_multi_elimination_1a4a6e4d04cf5c628b5776c9b0ea0c1e15" kindref="member">C_</ref>;</highlight></codeline>
+<codeline lineno="103" refid="classrocalution_1_1_multi_elimination_1a38f1b0f6a18aba289df31032dc0e56df" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>OperatorType<sp/><ref refid="classrocalution_1_1_multi_elimination_1a38f1b0f6a18aba289df31032dc0e56df" kindref="member">AA_</ref>;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106" refid="classrocalution_1_1_multi_elimination_1ad390fdf8e26357f5c83b03ba9c166ca2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_multi_elimination_1ad390fdf8e26357f5c83b03ba9c166ca2" kindref="member">AA_nrow_</ref>;</highlight></codeline>
+<codeline lineno="108" refid="classrocalution_1_1_multi_elimination_1a002483103e06a2b216f3d5079e29bf84" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_multi_elimination_1a002483103e06a2b216f3d5079e29bf84" kindref="member">AA_nnz_</ref>;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111" refid="classrocalution_1_1_multi_elimination_1a396d6908f2b70e8f91fdb7d48357d2f5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_multi_elimination_1a396d6908f2b70e8f91fdb7d48357d2f5" kindref="member">op_mat_format_</ref>;</highlight></codeline>
+<codeline lineno="113" refid="classrocalution_1_1_multi_elimination_1abc53265e38c6d3d906397f640c1d62cb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_multi_elimination_1abc53265e38c6d3d906397f640c1d62cb" kindref="member">precond_mat_format_</ref>;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116" refid="classrocalution_1_1_multi_elimination_1a9f60bd037338af60f67001572351e055" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>VectorType<sp/><ref refid="classrocalution_1_1_multi_elimination_1a9f60bd037338af60f67001572351e055" kindref="member">x_</ref>;</highlight></codeline>
+<codeline lineno="118" refid="classrocalution_1_1_multi_elimination_1a55a89a86f6c13590fc63154d766944d3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>VectorType<sp/><ref refid="classrocalution_1_1_multi_elimination_1a55a89a86f6c13590fc63154d766944d3" kindref="member">x_1_</ref>;</highlight></codeline>
+<codeline lineno="120" refid="classrocalution_1_1_multi_elimination_1afbe8b61a8af0d33e9002d0e106fa82b4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>VectorType<sp/><ref refid="classrocalution_1_1_multi_elimination_1afbe8b61a8af0d33e9002d0e106fa82b4" kindref="member">x_2_</ref>;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123" refid="classrocalution_1_1_multi_elimination_1a947542a57a659412cf223f58fc5c9c60" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>VectorType<sp/><ref refid="classrocalution_1_1_multi_elimination_1a947542a57a659412cf223f58fc5c9c60" kindref="member">rhs_</ref>;</highlight></codeline>
+<codeline lineno="125" refid="classrocalution_1_1_multi_elimination_1a46d730d8bb4ffdae92bb8c186ebc9154" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>VectorType<sp/><ref refid="classrocalution_1_1_multi_elimination_1a46d730d8bb4ffdae92bb8c186ebc9154" kindref="member">rhs_1_</ref>;</highlight></codeline>
+<codeline lineno="127" refid="classrocalution_1_1_multi_elimination_1ad4defb98ff998a2244d0855ad4c3f809" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>VectorType<sp/><ref refid="classrocalution_1_1_multi_elimination_1ad4defb98ff998a2244d0855ad4c3f809" kindref="member">rhs_2_</ref>;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130" refid="classrocalution_1_1_multi_elimination_1a605768b1761f21fce8b5a2c713f7d8bd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classrocalution_1_1_multi_elimination" kindref="compound">MultiElimination&lt;OperatorType, VectorType, ValueType&gt;</ref>*<sp/><ref refid="classrocalution_1_1_multi_elimination_1a605768b1761f21fce8b5a2c713f7d8bd" kindref="member">AA_me_</ref>;</highlight></codeline>
+<codeline lineno="132" refid="classrocalution_1_1_multi_elimination_1a2fe71dd02982547e77751eb888de18b0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classrocalution_1_1_solver" kindref="compound">Solver&lt;OperatorType, VectorType, ValueType&gt;</ref>*<sp/><ref refid="classrocalution_1_1_multi_elimination_1a2fe71dd02982547e77751eb888de18b0" kindref="member">AA_solver_</ref>;</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135" refid="classrocalution_1_1_multi_elimination_1a9e52ab71b79583bc277cddfdb0f47ac1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_multi_elimination_1a9e52ab71b79583bc277cddfdb0f47ac1" kindref="member">diag_solver_init_</ref>;</highlight></codeline>
+<codeline lineno="137" refid="classrocalution_1_1_multi_elimination_1ac44c864b522f3a5ae0db4d8fb2290ece" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_multi_elimination_1ac44c864b522f3a5ae0db4d8fb2290ece" kindref="member">level_</ref>;</highlight></codeline>
+<codeline lineno="139" refid="classrocalution_1_1_multi_elimination_1a22c60739a663fdb31e1cb83d01df9b70" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_multi_elimination_1a22c60739a663fdb31e1cb83d01df9b70" kindref="member">drop_off_</ref>;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142" refid="classrocalution_1_1_multi_elimination_1ae9194e3d8f56c8b0b72dd82b616d5c2b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>VectorType<sp/><ref refid="classrocalution_1_1_multi_elimination_1ae9194e3d8f56c8b0b72dd82b616d5c2b" kindref="member">inv_vec_D_</ref>;</highlight></codeline>
+<codeline lineno="144" refid="classrocalution_1_1_multi_elimination_1a26ed77ccc1d0b4e50a9546465997d527" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>VectorType<sp/><ref refid="classrocalution_1_1_multi_elimination_1a26ed77ccc1d0b4e50a9546465997d527" kindref="member">vec_D_</ref>;</highlight></codeline>
+<codeline lineno="146" refid="classrocalution_1_1_multi_elimination_1a013b971558a0674ce4b900e342ed6d1a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classrocalution_1_1_local_vector" kindref="compound">LocalVector&lt;int&gt;</ref><sp/><ref refid="classrocalution_1_1_multi_elimination_1a013b971558a0674ce4b900e342ed6d1a" kindref="member">permutation_</ref>;</highlight></codeline>
+<codeline lineno="148" refid="classrocalution_1_1_multi_elimination_1a10b6af07b0913829d5d626676e0ba945" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_multi_elimination_1a10b6af07b0913829d5d626676e0ba945" kindref="member">size_</ref>;</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_multi_elimination_1a5bd792143c25d5d5c8e13d56e2685625" kindref="member">MoveToHostLocalData_</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_multi_elimination_1adef57227b295ee3d20084d83267dd7bc" kindref="member">MoveToAcceleratorLocalData_</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="152"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>rocalution</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>ROCALUTION_PRECONDITIONER_MULTIELIMINATION_HPP_</highlight></codeline>
+    </programlisting>
+    <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multielimination.hpp"/>
+  </compounddef>
+</doxygen>

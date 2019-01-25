@@ -1,0 +1,539 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classrocalution_1_1_mixed_precision_d_c" kind="class" language="C++" prot="public">
+    <compoundname>rocalution::MixedPrecisionDC</compoundname>
+    <basecompoundref refid="classrocalution_1_1_iterative_linear_solver" prot="public" virt="non-virtual">rocalution::IterativeLinearSolver&lt; OperatorTypeH, VectorTypeH, ValueTypeH &gt;</basecompoundref>
+    <includes refid="mixed__precision_8hpp" local="no">mixed_precision.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>class OperatorTypeH</type>
+      </param>
+      <param>
+        <type>class VectorTypeH</type>
+      </param>
+      <param>
+        <type>typename ValueTypeH</type>
+      </param>
+      <param>
+        <type>class OperatorTypeL</type>
+      </param>
+      <param>
+        <type>class VectorTypeL</type>
+      </param>
+      <param>
+        <type>typename ValueTypeL</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classrocalution_1_1_mixed_precision_d_c_1ab4c7417510538374862c52d5b7e42a4f" prot="private" static="no" mutable="no">
+        <type><ref refid="classrocalution_1_1_solver" kindref="compound">Solver</ref>&lt; OperatorTypeL, VectorTypeL, ValueTypeL &gt; *</type>
+        <definition>Solver&lt;OperatorTypeL, VectorTypeL, ValueTypeL&gt;* rocalution::MixedPrecisionDC&lt; OperatorTypeH, VectorTypeH, ValueTypeH, OperatorTypeL, VectorTypeL, ValueTypeL &gt;::Solver_L_</definition>
+        <argsstring></argsstring>
+        <name>Solver_L_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/mixed_precision.hpp" line="86" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/mixed_precision.hpp" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrocalution_1_1_mixed_precision_d_c_1aa23c984297649da581d1cdd848cf957d" prot="private" static="no" mutable="no">
+        <type>VectorTypeH</type>
+        <definition>VectorTypeH rocalution::MixedPrecisionDC&lt; OperatorTypeH, VectorTypeH, ValueTypeH, OperatorTypeL, VectorTypeL, ValueTypeL &gt;::r_h_</definition>
+        <argsstring></argsstring>
+        <name>r_h_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/mixed_precision.hpp" line="88" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/mixed_precision.hpp" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrocalution_1_1_mixed_precision_d_c_1ae3530441020bb821f421645b4f5b4bb0" prot="private" static="no" mutable="no">
+        <type>VectorTypeL</type>
+        <definition>VectorTypeL rocalution::MixedPrecisionDC&lt; OperatorTypeH, VectorTypeH, ValueTypeH, OperatorTypeL, VectorTypeL, ValueTypeL &gt;::r_l_</definition>
+        <argsstring></argsstring>
+        <name>r_l_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/mixed_precision.hpp" line="89" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/mixed_precision.hpp" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrocalution_1_1_mixed_precision_d_c_1ac2f8e0857e4eaa8fa5d13037a8c28eaa" prot="private" static="no" mutable="no">
+        <type>VectorTypeH *</type>
+        <definition>VectorTypeH* rocalution::MixedPrecisionDC&lt; OperatorTypeH, VectorTypeH, ValueTypeH, OperatorTypeL, VectorTypeL, ValueTypeL &gt;::x_h_</definition>
+        <argsstring></argsstring>
+        <name>x_h_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/mixed_precision.hpp" line="91" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/mixed_precision.hpp" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrocalution_1_1_mixed_precision_d_c_1a4eed6489dc4fa5cc2733700dba93531c" prot="private" static="no" mutable="no">
+        <type>VectorTypeL</type>
+        <definition>VectorTypeL rocalution::MixedPrecisionDC&lt; OperatorTypeH, VectorTypeH, ValueTypeH, OperatorTypeL, VectorTypeL, ValueTypeL &gt;::d_l_</definition>
+        <argsstring></argsstring>
+        <name>d_l_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/mixed_precision.hpp" line="92" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/mixed_precision.hpp" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrocalution_1_1_mixed_precision_d_c_1a00f4abcb8b46f3aa0351e29f6a21eaea" prot="private" static="no" mutable="no">
+        <type>VectorTypeH</type>
+        <definition>VectorTypeH rocalution::MixedPrecisionDC&lt; OperatorTypeH, VectorTypeH, ValueTypeH, OperatorTypeL, VectorTypeL, ValueTypeL &gt;::d_h_</definition>
+        <argsstring></argsstring>
+        <name>d_h_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/mixed_precision.hpp" line="93" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/mixed_precision.hpp" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrocalution_1_1_mixed_precision_d_c_1ac56bdb1113bdc81a6d729b622d88e67d" prot="private" static="no" mutable="no">
+        <type>const OperatorTypeH *</type>
+        <definition>const OperatorTypeH* rocalution::MixedPrecisionDC&lt; OperatorTypeH, VectorTypeH, ValueTypeH, OperatorTypeL, VectorTypeL, ValueTypeL &gt;::op_h_</definition>
+        <argsstring></argsstring>
+        <name>op_h_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/mixed_precision.hpp" line="95" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/mixed_precision.hpp" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrocalution_1_1_mixed_precision_d_c_1ab93e10299d1a1af8c5745d407f2f02d9" prot="private" static="no" mutable="no">
+        <type>OperatorTypeL *</type>
+        <definition>OperatorTypeL* rocalution::MixedPrecisionDC&lt; OperatorTypeH, VectorTypeH, ValueTypeH, OperatorTypeL, VectorTypeL, ValueTypeL &gt;::op_l_</definition>
+        <argsstring></argsstring>
+        <name>op_l_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/mixed_precision.hpp" line="96" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/mixed_precision.hpp" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classrocalution_1_1_mixed_precision_d_c_1a05c56467c7bd367692c2fae183aa04b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>rocalution::MixedPrecisionDC&lt; OperatorTypeH, VectorTypeH, ValueTypeH, OperatorTypeL, VectorTypeL, ValueTypeL &gt;::MixedPrecisionDC</definition>
+        <argsstring>()</argsstring>
+        <name>MixedPrecisionDC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/mixed_precision.hpp" line="63" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/mixed_precision.cpp" bodystart="47" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_mixed_precision_d_c_1a52d45893f0bf8dfbf7a7f68227259547" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>rocalution::MixedPrecisionDC&lt; OperatorTypeH, VectorTypeH, ValueTypeH, OperatorTypeL, VectorTypeL, ValueTypeL &gt;::~MixedPrecisionDC</definition>
+        <argsstring>()</argsstring>
+        <name>~MixedPrecisionDC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/mixed_precision.hpp" line="64" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/mixed_precision.cpp" bodystart="62" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_mixed_precision_d_c_1aab5b1e59486abf2e806447a8b3478887" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void rocalution::MixedPrecisionDC&lt; OperatorTypeH, VectorTypeH, ValueTypeH, OperatorTypeL, VectorTypeL, ValueTypeL &gt;::Print</definition>
+        <argsstring>(void) const</argsstring>
+        <name>Print</name>
+        <reimplements refid="classrocalution_1_1_solver_1a57992cfc687f3bf260964ad2fc19c467">Print</reimplements>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Print information about the solver. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/mixed_precision.hpp" line="66" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/mixed_precision.cpp" bodystart="98" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_mixed_precision_d_c_1a9f76aa89e2750d225ba74925cb9064e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rocalution::MixedPrecisionDC&lt; OperatorTypeH, VectorTypeH, ValueTypeH, OperatorTypeL, VectorTypeL, ValueTypeL &gt;::Set</definition>
+        <argsstring>(Solver&lt; OperatorTypeL, VectorTypeL, ValueTypeL &gt; &amp;Solver_L)</argsstring>
+        <name>Set</name>
+        <param>
+          <type><ref refid="classrocalution_1_1_solver" kindref="compound">Solver</ref>&lt; OperatorTypeL, VectorTypeL, ValueTypeL &gt; &amp;</type>
+          <declname>Solver_L</declname>
+        </param>
+        <briefdescription>
+<para>Set the inner solver for <formula id="21">$Ad_{k} = r_{k}$</formula>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/mixed_precision.hpp" line="69" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/mixed_precision.cpp" bodystart="80" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_mixed_precision_d_c_1a5391da24f6421aab942ca4bba084ca39" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void rocalution::MixedPrecisionDC&lt; OperatorTypeH, VectorTypeH, ValueTypeH, OperatorTypeL, VectorTypeL, ValueTypeL &gt;::Build</definition>
+        <argsstring>(void)</argsstring>
+        <name>Build</name>
+        <reimplements refid="classrocalution_1_1_solver_1a84754d7422ad3fb35c17c61f0a609c7a">Build</reimplements>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Build the solver (data allocation, structure and numerical computation) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/mixed_precision.hpp" line="71" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/mixed_precision.cpp" bodystart="158" bodyend="228"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_mixed_precision_d_c_1a23094047366fbc00a96e2ccdd6e2b445" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void rocalution::MixedPrecisionDC&lt; OperatorTypeH, VectorTypeH, ValueTypeH, OperatorTypeL, VectorTypeL, ValueTypeL &gt;::ReBuildNumeric</definition>
+        <argsstring>(void)</argsstring>
+        <name>ReBuildNumeric</name>
+        <reimplements refid="classrocalution_1_1_solver_1acd20a051f0560a77645e35361df8f87c">ReBuildNumeric</reimplements>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Rebuild the solver only with numerical computation (no allocation or data structure computation) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/mixed_precision.hpp" line="72" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/mixed_precision.cpp" bodystart="241" bodyend="264"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_mixed_precision_d_c_1a67a42841717ae12dcee57d94b168f873" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void rocalution::MixedPrecisionDC&lt; OperatorTypeH, VectorTypeH, ValueTypeH, OperatorTypeL, VectorTypeL, ValueTypeL &gt;::Clear</definition>
+        <argsstring>(void)</argsstring>
+        <name>Clear</name>
+        <reimplements refid="classrocalution_1_1_solver_1aa8839d3ba527d75fedd29fdbe9bd651f">Clear</reimplements>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Clear (free all local data) the solver. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/mixed_precision.hpp" line="73" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/mixed_precision.cpp" bodystart="277" bodyend="305"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classrocalution_1_1_mixed_precision_d_c_1a765bf505d14a758c30c72af3d3331fe2" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void rocalution::MixedPrecisionDC&lt; OperatorTypeH, VectorTypeH, ValueTypeH, OperatorTypeL, VectorTypeL, ValueTypeL &gt;::SolveNonPrecond_</definition>
+        <argsstring>(const VectorTypeH &amp;rhs, VectorTypeH *x)</argsstring>
+        <name>SolveNonPrecond_</name>
+        <reimplements refid="classrocalution_1_1_iterative_linear_solver_1a35666e9af2a4abbc6d7e7be278a310e6">SolveNonPrecond_</reimplements>
+        <param>
+          <type>const VectorTypeH &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <param>
+          <type>VectorTypeH *</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+<para>Non-preconditioner solution procedure. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/mixed_precision.hpp" line="76" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/mixed_precision.cpp" bodystart="360" bodyend="429"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_mixed_precision_d_c_1a7ac0487a86c27eb8e0e2470d913483ef" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void rocalution::MixedPrecisionDC&lt; OperatorTypeH, VectorTypeH, ValueTypeH, OperatorTypeL, VectorTypeL, ValueTypeL &gt;::SolvePrecond_</definition>
+        <argsstring>(const VectorTypeH &amp;rhs, VectorTypeH *x)</argsstring>
+        <name>SolvePrecond_</name>
+        <reimplements refid="classrocalution_1_1_iterative_linear_solver_1adfb05c58ea0bf7443c039115dd27bfba">SolvePrecond_</reimplements>
+        <param>
+          <type>const VectorTypeH &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <param>
+          <type>VectorTypeH *</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+<para>Preconditioned solution procedure. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/mixed_precision.hpp" line="77" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/mixed_precision.cpp" bodystart="442" bodyend="452"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_mixed_precision_d_c_1a9be28f95aa0a5db88316393fae14b9c6" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void rocalution::MixedPrecisionDC&lt; OperatorTypeH, VectorTypeH, ValueTypeH, OperatorTypeL, VectorTypeL, ValueTypeL &gt;::PrintStart_</definition>
+        <argsstring>(void) const</argsstring>
+        <name>PrintStart_</name>
+        <reimplements refid="classrocalution_1_1_solver_1a9e6a5ceb6a8c35cd8d54ebff0664d27e">PrintStart_</reimplements>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Print starting message of the solver. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/mixed_precision.hpp" line="79" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/mixed_precision.cpp" bodystart="122" bodyend="129"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_mixed_precision_d_c_1a92b19b1ffc5a0a6e392ca1f7b708774f" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void rocalution::MixedPrecisionDC&lt; OperatorTypeH, VectorTypeH, ValueTypeH, OperatorTypeL, VectorTypeL, ValueTypeL &gt;::PrintEnd_</definition>
+        <argsstring>(void) const</argsstring>
+        <name>PrintEnd_</name>
+        <reimplements refid="classrocalution_1_1_solver_1add2b6aec27eeaffbbd1130cc846c1019">PrintEnd_</reimplements>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Print ending message of the solver. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/mixed_precision.hpp" line="80" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/mixed_precision.cpp" bodystart="142" bodyend="145"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_mixed_precision_d_c_1a9fadd98f12314b051ed20048641ccb52" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void rocalution::MixedPrecisionDC&lt; OperatorTypeH, VectorTypeH, ValueTypeH, OperatorTypeL, VectorTypeL, ValueTypeL &gt;::MoveToHostLocalData_</definition>
+        <argsstring>(void)</argsstring>
+        <name>MoveToHostLocalData_</name>
+        <reimplements refid="classrocalution_1_1_solver_1aa1e8be1bd2107543c7390a81f8cee8cb">MoveToHostLocalData_</reimplements>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Move all local data to the host. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/mixed_precision.hpp" line="82" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/mixed_precision.cpp" bodystart="318" bodyend="326"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_mixed_precision_d_c_1a2ec922896d422bf9198669b147308b9c" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void rocalution::MixedPrecisionDC&lt; OperatorTypeH, VectorTypeH, ValueTypeH, OperatorTypeL, VectorTypeL, ValueTypeL &gt;::MoveToAcceleratorLocalData_</definition>
+        <argsstring>(void)</argsstring>
+        <name>MoveToAcceleratorLocalData_</name>
+        <reimplements refid="classrocalution_1_1_solver_1a8ce29de0bdda9f35a6a687fd06ac9b11">MoveToAcceleratorLocalData_</reimplements>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Move all local data to the accelerator. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/mixed_precision.hpp" line="83" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/mixed_precision.cpp" bodystart="339" bodyend="347"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Mixed-Precision Defect Correction Scheme. </para>    </briefdescription>
+    <detaileddescription>
+<para>The Mixed-Precision solver is based on a defect-correction scheme. The current implementation of the library is using host based correction in double precision and accelerator computation in single precision. The solver is implemeting the scheme <formula id="18">\[ x_{k+1} = x_{k} + A^{-1} r_{k}, \]</formula> where the computation of the residual <formula id="19">$r_{k} = b - Ax_{k}$</formula> and the update <formula id="20">$x_{k+1} = x_{k} + d_{k}$</formula> are performed on the host in double precision. The computation of the residual system <formula id="21">$Ad_{k} = r_{k}$</formula> is performed on the accelerator in single precision. In addition to the setup functions of the iterative solver, the user need to specify the inner ( <formula id="21">$Ad_{k} = r_{k}$</formula>) solver.</para><para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>OperatorTypeH</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- can be <ref refid="classrocalution_1_1_local_matrix" kindref="compound">LocalMatrix</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>VectorTypeH</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- can be <ref refid="classrocalution_1_1_local_vector" kindref="compound">LocalVector</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ValueTypeH</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- can be double </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>OperatorTypeL</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- can be <ref refid="classrocalution_1_1_local_matrix" kindref="compound">LocalMatrix</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>VectorTypeL</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- can be <ref refid="classrocalution_1_1_local_vector" kindref="compound">LocalVector</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ValueTypeL</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- can be float </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="447">
+        <label>rocalution::Solver&lt; OperatorTypeH, VectorTypeH, ValueTypeH &gt;</label>
+        <link refid="classrocalution_1_1_solver"/>
+        <childnode refid="448" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="448">
+        <label>rocalution::RocalutionObj</label>
+      </node>
+      <node id="445">
+        <label>rocalution::MixedPrecisionDC&lt; OperatorTypeH, VectorTypeH, ValueTypeH, OperatorTypeL, VectorTypeL, ValueTypeL &gt;</label>
+        <link refid="classrocalution_1_1_mixed_precision_d_c"/>
+        <childnode refid="446" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="446">
+        <label>rocalution::IterativeLinearSolver&lt; OperatorTypeH, VectorTypeH, ValueTypeH &gt;</label>
+        <link refid="classrocalution_1_1_iterative_linear_solver"/>
+        <childnode refid="447" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="454">
+        <label>rocalution::Vector&lt; int &gt;</label>
+        <link refid="classrocalution_1_1_vector"/>
+        <childnode refid="455" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="455">
+        <label>rocalution::BaseRocalution&lt; ValueType &gt;</label>
+        <link refid="classrocalution_1_1_base_rocalution"/>
+        <childnode refid="452" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="451">
+        <label>rocalution::Solver&lt; OperatorTypeH, VectorTypeH, ValueTypeH &gt;</label>
+        <link refid="classrocalution_1_1_solver"/>
+        <childnode refid="452" relation="public-inheritance">
+        </childnode>
+        <childnode refid="453" relation="usage">
+          <edgelabel>permutation_</edgelabel>
+        </childnode>
+        <childnode refid="451" relation="usage">
+          <edgelabel>precond_</edgelabel>
+        </childnode>
+      </node>
+      <node id="453">
+        <label>rocalution::LocalVector&lt; int &gt;</label>
+        <link refid="classrocalution_1_1_local_vector"/>
+        <childnode refid="454" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="452">
+        <label>rocalution::RocalutionObj</label>
+      </node>
+      <node id="449">
+        <label>rocalution::MixedPrecisionDC&lt; OperatorTypeH, VectorTypeH, ValueTypeH, OperatorTypeL, VectorTypeL, ValueTypeL &gt;</label>
+        <link refid="classrocalution_1_1_mixed_precision_d_c"/>
+        <childnode refid="450" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="450">
+        <label>rocalution::IterativeLinearSolver&lt; OperatorTypeH, VectorTypeH, ValueTypeH &gt;</label>
+        <link refid="classrocalution_1_1_iterative_linear_solver"/>
+        <childnode refid="451" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/tcs/rocALUTION/src/solvers/mixed_precision.hpp" line="61" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/mixed_precision.hpp" bodystart="60" bodyend="97"/>
+    <listofallmembers>
+      <member refid="classrocalution_1_1_mixed_precision_d_c_1a5391da24f6421aab942ca4bba084ca39" prot="public" virt="virtual"><scope>rocalution::MixedPrecisionDC</scope><name>Build</name></member>
+      <member refid="classrocalution_1_1_solver_1a64924a0c87d60d2e4bf9fa295d0152cb" prot="protected" virt="non-virtual"><scope>rocalution::MixedPrecisionDC</scope><name>build_</name></member>
+      <member refid="classrocalution_1_1_solver_1a0d11ee9943f785db285f0ef5c08c64eb" prot="public" virt="virtual"><scope>rocalution::MixedPrecisionDC</scope><name>BuildMoveToAcceleratorAsync</name></member>
+      <member refid="classrocalution_1_1_mixed_precision_d_c_1a67a42841717ae12dcee57d94b168f873" prot="public" virt="virtual"><scope>rocalution::MixedPrecisionDC</scope><name>Clear</name></member>
+      <member refid="classrocalution_1_1_mixed_precision_d_c_1a00f4abcb8b46f3aa0351e29f6a21eaea" prot="private" virt="non-virtual"><scope>rocalution::MixedPrecisionDC</scope><name>d_h_</name></member>
+      <member refid="classrocalution_1_1_mixed_precision_d_c_1a4eed6489dc4fa5cc2733700dba93531c" prot="private" virt="non-virtual"><scope>rocalution::MixedPrecisionDC</scope><name>d_l_</name></member>
+      <member refid="classrocalution_1_1_iterative_linear_solver_1a20f2516ef96cebecbe83ba153bfacc8e" prot="public" virt="virtual"><scope>rocalution::MixedPrecisionDC</scope><name>GetAmaxResidualIndex</name></member>
+      <member refid="classrocalution_1_1_iterative_linear_solver_1a364ed49d060f8c24ba7af2398d1f54f5" prot="public" virt="virtual"><scope>rocalution::MixedPrecisionDC</scope><name>GetCurrentResidual</name></member>
+      <member refid="classrocalution_1_1_iterative_linear_solver_1a7f70fb4d7ce86daa75b2796a0dc12044" prot="public" virt="virtual"><scope>rocalution::MixedPrecisionDC</scope><name>GetIterationCount</name></member>
+      <member refid="classrocalution_1_1_iterative_linear_solver_1a814064201608ca980284fbea51792137" prot="public" virt="virtual"><scope>rocalution::MixedPrecisionDC</scope><name>GetSolverStatus</name></member>
+      <member refid="classrocalution_1_1_rocalution_obj_1a4bba5aeaf4fd705efc00402f1f6ed40b" prot="protected" virt="non-virtual"><scope>rocalution::MixedPrecisionDC</scope><name>global_obj_id_</name></member>
+      <member refid="classrocalution_1_1_iterative_linear_solver_1a30d12c17029094a3f46a0fa1ce491887" prot="protected" virt="non-virtual"><scope>rocalution::MixedPrecisionDC</scope><name>index_</name></member>
+      <member refid="classrocalution_1_1_iterative_linear_solver_1a2a8eebb0b187469ed92c675bd75e34b8" prot="public" virt="non-virtual"><scope>rocalution::MixedPrecisionDC</scope><name>Init</name></member>
+      <member refid="classrocalution_1_1_iterative_linear_solver_1a0c6fb1aeaf491a1e4891dc13d4b893b2" prot="public" virt="non-virtual"><scope>rocalution::MixedPrecisionDC</scope><name>Init</name></member>
+      <member refid="classrocalution_1_1_iterative_linear_solver_1a3b248faab2ff42e9106b6e38e5e0bbe2" prot="public" virt="non-virtual"><scope>rocalution::MixedPrecisionDC</scope><name>InitMaxIter</name></member>
+      <member refid="classrocalution_1_1_iterative_linear_solver_1a025c99dd56f7b09ebfd9df3905093c8e" prot="public" virt="non-virtual"><scope>rocalution::MixedPrecisionDC</scope><name>InitMinIter</name></member>
+      <member refid="classrocalution_1_1_iterative_linear_solver_1a05b570833a869738be46986d255b3c39" prot="public" virt="non-virtual"><scope>rocalution::MixedPrecisionDC</scope><name>InitTol</name></member>
+      <member refid="classrocalution_1_1_iterative_linear_solver_1a6fcfd0b77d13d84d36156abbaa100fa0" prot="public" virt="non-virtual"><scope>rocalution::MixedPrecisionDC</scope><name>IterativeLinearSolver</name></member>
+      <member refid="classrocalution_1_1_mixed_precision_d_c_1a05c56467c7bd367692c2fae183aa04b9" prot="public" virt="non-virtual"><scope>rocalution::MixedPrecisionDC</scope><name>MixedPrecisionDC</name></member>
+      <member refid="classrocalution_1_1_solver_1ab1b6410cd134c9ad00c1851d400cf0f8" prot="public" virt="virtual"><scope>rocalution::MixedPrecisionDC</scope><name>MoveToAccelerator</name></member>
+      <member refid="classrocalution_1_1_mixed_precision_d_c_1a2ec922896d422bf9198669b147308b9c" prot="protected" virt="virtual"><scope>rocalution::MixedPrecisionDC</scope><name>MoveToAcceleratorLocalData_</name></member>
+      <member refid="classrocalution_1_1_solver_1a3c263e65898816f5838184c0af78a044" prot="public" virt="virtual"><scope>rocalution::MixedPrecisionDC</scope><name>MoveToHost</name></member>
+      <member refid="classrocalution_1_1_mixed_precision_d_c_1a9fadd98f12314b051ed20048641ccb52" prot="protected" virt="virtual"><scope>rocalution::MixedPrecisionDC</scope><name>MoveToHostLocalData_</name></member>
+      <member refid="classrocalution_1_1_iterative_linear_solver_1a45c0602171dda0391e5574e0310504fb" prot="protected" virt="non-virtual"><scope>rocalution::MixedPrecisionDC</scope><name>Norm_</name></member>
+      <member refid="classrocalution_1_1_solver_1ad338b5f99cf339fb33218dd8b958cac4" prot="protected" virt="non-virtual"><scope>rocalution::MixedPrecisionDC</scope><name>op_</name></member>
+      <member refid="classrocalution_1_1_mixed_precision_d_c_1ac56bdb1113bdc81a6d729b622d88e67d" prot="private" virt="non-virtual"><scope>rocalution::MixedPrecisionDC</scope><name>op_h_</name></member>
+      <member refid="classrocalution_1_1_mixed_precision_d_c_1ab93e10299d1a1af8c5745d407f2f02d9" prot="private" virt="non-virtual"><scope>rocalution::MixedPrecisionDC</scope><name>op_l_</name></member>
+      <member refid="classrocalution_1_1_solver_1ac46ab4d19fba48ece463666d37a7dc86" prot="protected" virt="non-virtual"><scope>rocalution::MixedPrecisionDC</scope><name>permutation_</name></member>
+      <member refid="classrocalution_1_1_solver_1a2acdb829fa657a7b3e680d1ee6005c9b" prot="protected" virt="non-virtual"><scope>rocalution::MixedPrecisionDC</scope><name>precond_</name></member>
+      <member refid="classrocalution_1_1_mixed_precision_d_c_1aab5b1e59486abf2e806447a8b3478887" prot="public" virt="virtual"><scope>rocalution::MixedPrecisionDC</scope><name>Print</name></member>
+      <member refid="classrocalution_1_1_mixed_precision_d_c_1a92b19b1ffc5a0a6e392ca1f7b708774f" prot="protected" virt="virtual"><scope>rocalution::MixedPrecisionDC</scope><name>PrintEnd_</name></member>
+      <member refid="classrocalution_1_1_mixed_precision_d_c_1a9be28f95aa0a5db88316393fae14b9c6" prot="protected" virt="virtual"><scope>rocalution::MixedPrecisionDC</scope><name>PrintStart_</name></member>
+      <member refid="classrocalution_1_1_mixed_precision_d_c_1aa23c984297649da581d1cdd848cf957d" prot="private" virt="non-virtual"><scope>rocalution::MixedPrecisionDC</scope><name>r_h_</name></member>
+      <member refid="classrocalution_1_1_mixed_precision_d_c_1ae3530441020bb821f421645b4f5b4bb0" prot="private" virt="non-virtual"><scope>rocalution::MixedPrecisionDC</scope><name>r_l_</name></member>
+      <member refid="classrocalution_1_1_mixed_precision_d_c_1a23094047366fbc00a96e2ccdd6e2b445" prot="public" virt="virtual"><scope>rocalution::MixedPrecisionDC</scope><name>ReBuildNumeric</name></member>
+      <member refid="classrocalution_1_1_iterative_linear_solver_1ae13555f823f7cd1a5c3a7ef3b4427f74" prot="public" virt="non-virtual"><scope>rocalution::MixedPrecisionDC</scope><name>RecordHistory</name></member>
+      <member refid="classrocalution_1_1_iterative_linear_solver_1a0a5fd39c7f75f4339eaa41b67868653d" prot="public" virt="non-virtual"><scope>rocalution::MixedPrecisionDC</scope><name>RecordResidualHistory</name></member>
+      <member refid="classrocalution_1_1_iterative_linear_solver_1ae811fa65d83729b92bb9573667162a4c" prot="protected" virt="non-virtual"><scope>rocalution::MixedPrecisionDC</scope><name>res_norm_</name></member>
+      <member refid="classrocalution_1_1_solver_1a91354c5c116742c58d9eb2094cc6a68e" prot="public" virt="virtual"><scope>rocalution::MixedPrecisionDC</scope><name>ResetOperator</name></member>
+      <member refid="classrocalution_1_1_rocalution_obj_1ad60a8b2047aad74e488c552264fa7737" prot="public" virt="non-virtual"><scope>rocalution::MixedPrecisionDC</scope><name>RocalutionObj</name></member>
+      <member refid="classrocalution_1_1_mixed_precision_d_c_1a9f76aa89e2750d225ba74925cb9064e9" prot="public" virt="non-virtual"><scope>rocalution::MixedPrecisionDC</scope><name>Set</name></member>
+      <member refid="classrocalution_1_1_solver_1a12765b63efe75bc88406a8d6ebb5aacc" prot="public" virt="non-virtual"><scope>rocalution::MixedPrecisionDC</scope><name>SetOperator</name></member>
+      <member refid="classrocalution_1_1_iterative_linear_solver_1ac40a58d97330f7bf41d2ae116bc45f80" prot="public" virt="virtual"><scope>rocalution::MixedPrecisionDC</scope><name>SetPreconditioner</name></member>
+      <member refid="classrocalution_1_1_iterative_linear_solver_1a9a7610d7c31f7259f4365d79187cfa78" prot="public" virt="non-virtual"><scope>rocalution::MixedPrecisionDC</scope><name>SetResidualNorm</name></member>
+      <member refid="classrocalution_1_1_iterative_linear_solver_1a4c8e806ae8a7776fa5306598afe7e076" prot="public" virt="virtual"><scope>rocalution::MixedPrecisionDC</scope><name>Solve</name></member>
+      <member refid="classrocalution_1_1_mixed_precision_d_c_1a765bf505d14a758c30c72af3d3331fe2" prot="protected" virt="virtual"><scope>rocalution::MixedPrecisionDC</scope><name>SolveNonPrecond_</name></member>
+      <member refid="classrocalution_1_1_mixed_precision_d_c_1a7ac0487a86c27eb8e0e2470d913483ef" prot="protected" virt="virtual"><scope>rocalution::MixedPrecisionDC</scope><name>SolvePrecond_</name></member>
+      <member refid="classrocalution_1_1_solver_1a009956b05d4d5d1d38e4c24341b14a66" prot="public" virt="non-virtual"><scope>rocalution::MixedPrecisionDC</scope><name>Solver</name></member>
+      <member refid="classrocalution_1_1_mixed_precision_d_c_1ab4c7417510538374862c52d5b7e42a4f" prot="private" virt="non-virtual"><scope>rocalution::MixedPrecisionDC</scope><name>Solver_L_</name></member>
+      <member refid="classrocalution_1_1_solver_1a034b434a4340a52430deed9b210e5003" prot="public" virt="virtual"><scope>rocalution::MixedPrecisionDC</scope><name>SolveZeroSol</name></member>
+      <member refid="classrocalution_1_1_solver_1a17c2830a0ede8d82d1336aa25da6f907" prot="public" virt="virtual"><scope>rocalution::MixedPrecisionDC</scope><name>Sync</name></member>
+      <member refid="classrocalution_1_1_solver_1a2ee162346e0d52543f9d3d25fe70ea8a" prot="protected" virt="non-virtual"><scope>rocalution::MixedPrecisionDC</scope><name>verb_</name></member>
+      <member refid="classrocalution_1_1_iterative_linear_solver_1ac88dc520e41c9d1a2de5ad8c95e644c2" prot="public" virt="virtual"><scope>rocalution::MixedPrecisionDC</scope><name>Verbose</name></member>
+      <member refid="classrocalution_1_1_mixed_precision_d_c_1ac2f8e0857e4eaa8fa5d13037a8c28eaa" prot="private" virt="non-virtual"><scope>rocalution::MixedPrecisionDC</scope><name>x_h_</name></member>
+      <member refid="classrocalution_1_1_iterative_linear_solver_1a89c416ba136cf16ac4b38d41ae4e745b" prot="public" virt="virtual"><scope>rocalution::MixedPrecisionDC</scope><name>~IterativeLinearSolver</name></member>
+      <member refid="classrocalution_1_1_mixed_precision_d_c_1a52d45893f0bf8dfbf7a7f68227259547" prot="public" virt="virtual"><scope>rocalution::MixedPrecisionDC</scope><name>~MixedPrecisionDC</name></member>
+      <member refid="classrocalution_1_1_rocalution_obj_1a55a2f93f798cebdda6343b20db959e2d" prot="public" virt="virtual"><scope>rocalution::MixedPrecisionDC</scope><name>~RocalutionObj</name></member>
+      <member refid="classrocalution_1_1_solver_1af861566a540fc6cc399c844bbc789ec6" prot="public" virt="virtual"><scope>rocalution::MixedPrecisionDC</scope><name>~Solver</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

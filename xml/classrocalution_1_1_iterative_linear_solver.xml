@@ -1,0 +1,750 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classrocalution_1_1_iterative_linear_solver" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>rocalution::IterativeLinearSolver</compoundname>
+    <basecompoundref refid="classrocalution_1_1_solver" prot="public" virt="non-virtual">rocalution::Solver&lt; OperatorType, VectorType, ValueType &gt;</basecompoundref>
+    <derivedcompoundref refid="classrocalution_1_1_base_multi_grid" prot="public" virt="non-virtual">rocalution::BaseMultiGrid&lt; OperatorType, VectorType, ValueType &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classrocalution_1_1_bi_c_g_stab" prot="public" virt="non-virtual">rocalution::BiCGStab&lt; OperatorType, VectorType, ValueType &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classrocalution_1_1_bi_c_g_stabl" prot="public" virt="non-virtual">rocalution::BiCGStabl&lt; OperatorType, VectorType, ValueType &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classrocalution_1_1_c_g" prot="public" virt="non-virtual">rocalution::CG&lt; OperatorType, VectorType, ValueType &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classrocalution_1_1_chebyshev" prot="public" virt="non-virtual">rocalution::Chebyshev&lt; OperatorType, VectorType, ValueType &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classrocalution_1_1_c_r" prot="public" virt="non-virtual">rocalution::CR&lt; OperatorType, VectorType, ValueType &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classrocalution_1_1_f_c_g" prot="public" virt="non-virtual">rocalution::FCG&lt; OperatorType, VectorType, ValueType &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classrocalution_1_1_f_g_m_r_e_s" prot="public" virt="non-virtual">rocalution::FGMRES&lt; OperatorType, VectorType, ValueType &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classrocalution_1_1_fixed_point" prot="public" virt="non-virtual">rocalution::FixedPoint&lt; OperatorType, VectorType, ValueType &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classrocalution_1_1_g_m_r_e_s" prot="public" virt="non-virtual">rocalution::GMRES&lt; OperatorType, VectorType, ValueType &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classrocalution_1_1_i_d_r" prot="public" virt="non-virtual">rocalution::IDR&lt; OperatorType, VectorType, ValueType &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classrocalution_1_1_q_m_r_c_g_stab" prot="public" virt="non-virtual">rocalution::QMRCGStab&lt; OperatorType, VectorType, ValueType &gt;</derivedcompoundref>
+    <includes refid="solver_8hpp" local="no">solver.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>class</type>
+        <declname>OperatorType</declname>
+        <defname>OperatorType</defname>
+      </param>
+      <param>
+        <type>class</type>
+        <declname>VectorType</declname>
+        <defname>VectorType</defname>
+      </param>
+      <param>
+        <type>typename</type>
+        <declname>ValueType</declname>
+        <defname>ValueType</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classrocalution_1_1_iterative_linear_solver_1a727c67c81489a601627a25802b1ad206" prot="private" static="no" mutable="no">
+        <type>IterationControl</type>
+        <definition>IterationControl rocalution::IterativeLinearSolver&lt; OperatorType, VectorType, ValueType &gt;::iter_ctrl_</definition>
+        <argsstring></argsstring>
+        <name>iter_ctrl_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/solver.hpp" line="255" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/solver.hpp" bodystart="255" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classrocalution_1_1_iterative_linear_solver_1ae811fa65d83729b92bb9573667162a4c" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int rocalution::IterativeLinearSolver&lt; OperatorType, VectorType, ValueType &gt;::res_norm_</definition>
+        <argsstring></argsstring>
+        <name>res_norm_</name>
+        <briefdescription>
+<para>Residual norm. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/solver.hpp" line="264" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/solver.hpp" bodystart="264" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrocalution_1_1_iterative_linear_solver_1a30d12c17029094a3f46a0fa1ce491887" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int rocalution::IterativeLinearSolver&lt; OperatorType, VectorType, ValueType &gt;::index_</definition>
+        <argsstring></argsstring>
+        <name>index_</name>
+        <briefdescription>
+<para>Absolute maximum index of residual vector when using <formula id="79">$L_\infty$</formula>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/solver.hpp" line="267" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/solver.hpp" bodystart="267" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classrocalution_1_1_iterative_linear_solver_1a6fcfd0b77d13d84d36156abbaa100fa0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>rocalution::IterativeLinearSolver&lt; OperatorType, VectorType, ValueType &gt;::IterativeLinearSolver</definition>
+        <argsstring>()</argsstring>
+        <name>IterativeLinearSolver</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/solver.hpp" line="194" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/solver.cpp" bodystart="199" bodyend="207"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_iterative_linear_solver_1a89c416ba136cf16ac4b38d41ae4e745b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>rocalution::IterativeLinearSolver&lt; OperatorType, VectorType, ValueType &gt;::~IterativeLinearSolver</definition>
+        <argsstring>()</argsstring>
+        <name>~IterativeLinearSolver</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/solver.hpp" line="195" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/solver.cpp" bodystart="210" bodyend="213"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_iterative_linear_solver_1a2a8eebb0b187469ed92c675bd75e34b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rocalution::IterativeLinearSolver&lt; OperatorType, VectorType, ValueType &gt;::Init</definition>
+        <argsstring>(double abs_tol, double rel_tol, double div_tol, int max_iter)</argsstring>
+        <name>Init</name>
+        <param>
+          <type>double</type>
+          <declname>abs_tol</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>rel_tol</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>div_tol</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>max_iter</declname>
+        </param>
+        <briefdescription>
+<para>Initialize the solver with absolute/relative/divergence tolerance and maximum number of iterations. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/solver.hpp" line="200" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/solver.cpp" bodystart="216" bodyend="224"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_iterative_linear_solver_1a0c6fb1aeaf491a1e4891dc13d4b893b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rocalution::IterativeLinearSolver&lt; OperatorType, VectorType, ValueType &gt;::Init</definition>
+        <argsstring>(double abs_tol, double rel_tol, double div_tol, int min_iter, int max_iter)</argsstring>
+        <name>Init</name>
+        <param>
+          <type>double</type>
+          <declname>abs_tol</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>rel_tol</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>div_tol</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>min_iter</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>max_iter</declname>
+        </param>
+        <briefdescription>
+<para>Initialize the solver with absolute/relative/divergence tolerance and minimum/maximum number of iterations. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/solver.hpp" line="205" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/solver.cpp" bodystart="227" bodyend="233"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_iterative_linear_solver_1a025c99dd56f7b09ebfd9df3905093c8e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rocalution::IterativeLinearSolver&lt; OperatorType, VectorType, ValueType &gt;::InitMinIter</definition>
+        <argsstring>(int min_iter)</argsstring>
+        <name>InitMinIter</name>
+        <param>
+          <type>int</type>
+          <declname>min_iter</declname>
+        </param>
+        <briefdescription>
+<para>Set the minimum number of iterations. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/solver.hpp" line="208" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/solver.cpp" bodystart="236" bodyend="241"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_iterative_linear_solver_1a3b248faab2ff42e9106b6e38e5e0bbe2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rocalution::IterativeLinearSolver&lt; OperatorType, VectorType, ValueType &gt;::InitMaxIter</definition>
+        <argsstring>(int max_iter)</argsstring>
+        <name>InitMaxIter</name>
+        <param>
+          <type>int</type>
+          <declname>max_iter</declname>
+        </param>
+        <briefdescription>
+<para>Set the maximum number of iterations. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/solver.hpp" line="211" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/solver.cpp" bodystart="244" bodyend="249"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_iterative_linear_solver_1a05b570833a869738be46986d255b3c39" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rocalution::IterativeLinearSolver&lt; OperatorType, VectorType, ValueType &gt;::InitTol</definition>
+        <argsstring>(double abs, double rel, double div)</argsstring>
+        <name>InitTol</name>
+        <param>
+          <type>double</type>
+          <declname>abs</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>rel</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>div</declname>
+        </param>
+        <briefdescription>
+<para>Set the absolute/relative/divergence tolerance. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/solver.hpp" line="214" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/solver.cpp" bodystart="252" bodyend="259"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_iterative_linear_solver_1a9a7610d7c31f7259f4365d79187cfa78" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rocalution::IterativeLinearSolver&lt; OperatorType, VectorType, ValueType &gt;::SetResidualNorm</definition>
+        <argsstring>(int resnorm)</argsstring>
+        <name>SetResidualNorm</name>
+        <param>
+          <type>int</type>
+          <declname>resnorm</declname>
+        </param>
+        <briefdescription>
+<para>Set the residual norm to <formula id="78">$L_1$</formula>, <formula id="1">$L_2$</formula> or <formula id="79">$L_\infty$</formula> norm. </para>        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para>resnorm = 1 -&gt; <formula id="78">$L_1$</formula> norm</para></listitem><listitem><para>resnorm = 2 -&gt; <formula id="1">$L_2$</formula> norm</para></listitem><listitem><para>resnorm = 3 -&gt; <formula id="79">$L_\infty$</formula> norm </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/solver.hpp" line="222" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/solver.cpp" bodystart="327" bodyend="334"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_iterative_linear_solver_1a0a5fd39c7f75f4339eaa41b67868653d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rocalution::IterativeLinearSolver&lt; OperatorType, VectorType, ValueType &gt;::RecordResidualHistory</definition>
+        <argsstring>(void)</argsstring>
+        <name>RecordResidualHistory</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Record the residual history. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/solver.hpp" line="225" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/solver.cpp" bodystart="301" bodyend="306"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_iterative_linear_solver_1ae13555f823f7cd1a5c3a7ef3b4427f74" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rocalution::IterativeLinearSolver&lt; OperatorType, VectorType, ValueType &gt;::RecordHistory</definition>
+        <argsstring>(const std::string filename) const</argsstring>
+        <name>RecordHistory</name>
+        <param>
+          <type>const std::string</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+<para>Write the history to file. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/solver.hpp" line="228" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/solver.cpp" bodystart="309" bodyend="315"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_iterative_linear_solver_1ac88dc520e41c9d1a2de5ad8c95e644c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void rocalution::IterativeLinearSolver&lt; OperatorType, VectorType, ValueType &gt;::Verbose</definition>
+        <argsstring>(int verb=1)</argsstring>
+        <name>Verbose</name>
+        <reimplements refid="classrocalution_1_1_solver_1aa2ab9c17de96add5e3ad30e7cabf0ea7">Verbose</reimplements>
+        <param>
+          <type>int</type>
+          <declname>verb</declname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+<para>Set the solver verbosity output. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/solver.hpp" line="231" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/solver.cpp" bodystart="318" bodyend="324"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_iterative_linear_solver_1a4c8e806ae8a7776fa5306598afe7e076" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void rocalution::IterativeLinearSolver&lt; OperatorType, VectorType, ValueType &gt;::Solve</definition>
+        <argsstring>(const VectorType &amp;rhs, VectorType *x)</argsstring>
+        <name>Solve</name>
+        <reimplements refid="classrocalution_1_1_solver_1a69025eb1d2bc7f1266899c2739c82725">Solve</reimplements>
+        <reimplementedby refid="classrocalution_1_1_base_multi_grid_1afbe44b1d105248260a6076d4a1b86138">Solve</reimplementedby>
+        <param>
+          <type>const VectorType &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <param>
+          <type>VectorType *</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+<para>Solve <ref refid="classrocalution_1_1_operator" kindref="compound">Operator</ref> x = rhs. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/solver.hpp" line="234" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/solver.cpp" bodystart="365" bodyend="395"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_iterative_linear_solver_1ac40a58d97330f7bf41d2ae116bc45f80" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void rocalution::IterativeLinearSolver&lt; OperatorType, VectorType, ValueType &gt;::SetPreconditioner</definition>
+        <argsstring>(Solver&lt; OperatorType, VectorType, ValueType &gt; &amp;precond)</argsstring>
+        <name>SetPreconditioner</name>
+        <reimplementedby refid="classrocalution_1_1_base_multi_grid_1a2af851fe4950ab0b6ef06e39444da2e7">SetPreconditioner</reimplementedby>
+        <param>
+          <type><ref refid="classrocalution_1_1_solver" kindref="compound">Solver</ref>&lt; OperatorType, VectorType, ValueType &gt; &amp;</type>
+          <declname>precond</declname>
+        </param>
+        <briefdescription>
+<para>Set a preconditioner of the linear solver. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/solver.hpp" line="237" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/solver.cpp" bodystart="398" bodyend="405"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_iterative_linear_solver_1a7f70fb4d7ce86daa75b2796a0dc12044" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int rocalution::IterativeLinearSolver&lt; OperatorType, VectorType, ValueType &gt;::GetIterationCount</definition>
+        <argsstring>(void)</argsstring>
+        <name>GetIterationCount</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Return the iteration count. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/solver.hpp" line="240" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/solver.cpp" bodystart="262" bodyend="267"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_iterative_linear_solver_1a364ed49d060f8c24ba7af2398d1f54f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>double rocalution::IterativeLinearSolver&lt; OperatorType, VectorType, ValueType &gt;::GetCurrentResidual</definition>
+        <argsstring>(void)</argsstring>
+        <name>GetCurrentResidual</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Return the current residual. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/solver.hpp" line="243" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/solver.cpp" bodystart="270" bodyend="275"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_iterative_linear_solver_1a814064201608ca980284fbea51792137" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int rocalution::IterativeLinearSolver&lt; OperatorType, VectorType, ValueType &gt;::GetSolverStatus</definition>
+        <argsstring>(void)</argsstring>
+        <name>GetSolverStatus</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Return the current status. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/solver.hpp" line="246" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/solver.cpp" bodystart="278" bodyend="283"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_iterative_linear_solver_1a20f2516ef96cebecbe83ba153bfacc8e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int rocalution::IterativeLinearSolver&lt; OperatorType, VectorType, ValueType &gt;::GetAmaxResidualIndex</definition>
+        <argsstring>(void)</argsstring>
+        <name>GetAmaxResidualIndex</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Return absolute maximum index of residual vector when using <formula id="79">$L_\infty$</formula> norm. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/solver.hpp" line="251" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/solver.cpp" bodystart="286" bodyend="298"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classrocalution_1_1_iterative_linear_solver_1a35666e9af2a4abbc6d7e7be278a310e6" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void rocalution::IterativeLinearSolver&lt; OperatorType, VectorType, ValueType &gt;::SolveNonPrecond_</definition>
+        <argsstring>(const VectorType &amp;rhs, VectorType *x)=0</argsstring>
+        <name>SolveNonPrecond_</name>
+        <reimplementedby refid="classrocalution_1_1_bi_c_g_stab_1a94d7fa3a3dae8201fbe2531049ad2663">SolveNonPrecond_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_q_m_r_c_g_stab_1ac72cf24d57a9b5c613ad61e20daf0905">SolveNonPrecond_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_c_r_1aee6027fd407eaee8df648c69f913d9e1">SolveNonPrecond_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_chebyshev_1a1ab571b8d7b97a6c814a5a304e492d89">SolveNonPrecond_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_f_c_g_1ad06481e3a538c0c5ecb22cba594dde2c">SolveNonPrecond_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_bi_c_g_stabl_1ab8da03c868c275be3948576a17cfb4e6">SolveNonPrecond_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_c_g_1a441b2318e7a92dcce8bc523ed9bbb117">SolveNonPrecond_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_g_m_r_e_s_1a779f90031b487d5320e97b477a526b3b">SolveNonPrecond_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_i_d_r_1afe5cb5239986204a3eb1432f52d48adb">SolveNonPrecond_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_f_g_m_r_e_s_1aedd3018559df038f1e9bed1fb1d7e8ca">SolveNonPrecond_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_mixed_precision_d_c_1a765bf505d14a758c30c72af3d3331fe2">SolveNonPrecond_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_base_multi_grid_1ac7b00bcd0349e42f30fdd41189b6ca22">SolveNonPrecond_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_fixed_point_1a2e849b1bfc377d7d476867787546867d">SolveNonPrecond_</reimplementedby>
+        <param>
+          <type>const VectorType &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <param>
+          <type>VectorType *</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+<para>Non-preconditioner solution procedure. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/solver.hpp" line="258" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_iterative_linear_solver_1adfb05c58ea0bf7443c039115dd27bfba" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void rocalution::IterativeLinearSolver&lt; OperatorType, VectorType, ValueType &gt;::SolvePrecond_</definition>
+        <argsstring>(const VectorType &amp;rhs, VectorType *x)=0</argsstring>
+        <name>SolvePrecond_</name>
+        <reimplementedby refid="classrocalution_1_1_bi_c_g_stab_1ae2534b287ab72d8b2979dcf4efe9dd95">SolvePrecond_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_q_m_r_c_g_stab_1ab5d01d10d9932b32e6d1c27295ac738f">SolvePrecond_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_c_r_1ae85ad29b69c9a44af24f319e40fb7bef">SolvePrecond_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_chebyshev_1aaa2f6f507f723edc40de5489f8c57cb2">SolvePrecond_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_f_c_g_1a7cc416b9d4a6494325089cb0b9cf7202">SolvePrecond_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_bi_c_g_stabl_1a7c93b26d023ca83c69bbb25198f8f485">SolvePrecond_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_c_g_1a26856e793c50bfcbbba089e071dad3d6">SolvePrecond_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_g_m_r_e_s_1aabb1a2b87370d09b1992bd0683c5e03a">SolvePrecond_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_i_d_r_1a353018c132eeedb7625b2037f58fdf85">SolvePrecond_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_f_g_m_r_e_s_1af20bf069b1007389f728d4efda41d65f">SolvePrecond_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_mixed_precision_d_c_1a7ac0487a86c27eb8e0e2470d913483ef">SolvePrecond_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_base_multi_grid_1af00f0da1244176857513511b92073cd9">SolvePrecond_</reimplementedby>
+        <reimplementedby refid="classrocalution_1_1_fixed_point_1a3047483789605d524104679f8fae7f05">SolvePrecond_</reimplementedby>
+        <param>
+          <type>const VectorType &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <param>
+          <type>VectorType *</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+<para>Preconditioned solution procedure. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/solver.hpp" line="261" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_iterative_linear_solver_1a45c0602171dda0391e5574e0310504fb" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ValueType</type>
+        <definition>ValueType rocalution::IterativeLinearSolver&lt; OperatorType, VectorType, ValueType &gt;::Norm_</definition>
+        <argsstring>(const VectorType &amp;vec)</argsstring>
+        <name>Norm_</name>
+        <param>
+          <type>const VectorType &amp;</type>
+          <declname>vec</declname>
+        </param>
+        <briefdescription>
+<para>Computes the vector norm. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/solver.hpp" line="270" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/solver.cpp" bodystart="337" bodyend="362"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Base class for all linear iterative solvers. </para>    </briefdescription>
+    <detaileddescription>
+<para>The iterative solvers are controlled by an iteration control object, which monitors the convergence properties of the solver, i.e. maximum number of iteration, relative tolerance, absolute tolerance and divergence tolerance. The iteration control can also record the residual history and store it in an ASCII file.<itemizedlist>
+<listitem><para><ref refid="classrocalution_1_1_iterative_linear_solver_1a2a8eebb0b187469ed92c675bd75e34b8" kindref="member">Init()</ref>, <ref refid="classrocalution_1_1_iterative_linear_solver_1a025c99dd56f7b09ebfd9df3905093c8e" kindref="member">InitMinIter()</ref>, <ref refid="classrocalution_1_1_iterative_linear_solver_1a3b248faab2ff42e9106b6e38e5e0bbe2" kindref="member">InitMaxIter()</ref> and <ref refid="classrocalution_1_1_iterative_linear_solver_1a05b570833a869738be46986d255b3c39" kindref="member">InitTol()</ref> initialize the solver and set the stopping criteria.</para></listitem><listitem><para><ref refid="classrocalution_1_1_iterative_linear_solver_1a0a5fd39c7f75f4339eaa41b67868653d" kindref="member">RecordResidualHistory()</ref> and <ref refid="classrocalution_1_1_iterative_linear_solver_1ae13555f823f7cd1a5c3a7ef3b4427f74" kindref="member">RecordHistory()</ref> start the recording of the residual and write it into a file.</para></listitem><listitem><para><ref refid="classrocalution_1_1_iterative_linear_solver_1ac88dc520e41c9d1a2de5ad8c95e644c2" kindref="member">Verbose()</ref> sets the level of verbose output of the solver (0 - no output, 2 - detailed output, including residual and iteration information).</para></listitem><listitem><para><ref refid="classrocalution_1_1_iterative_linear_solver_1ac40a58d97330f7bf41d2ae116bc45f80" kindref="member">SetPreconditioner()</ref> sets the preconditioning.</para></listitem></itemizedlist>
+</para><para>All iterative solvers are controlled based on<itemizedlist>
+<listitem><para>Absolute stopping criteria, when <formula id="59">$|r_{k}|_{L_{p}} \lt \epsilon_{abs}$</formula></para></listitem><listitem><para>Relative stopping criteria, when <formula id="60">$|r_{k}|_{L_{p}} / |r_{1}|_{L_{p}} \leq \epsilon_{rel}$</formula></para></listitem><listitem><para>Divergence stopping criteria, when <formula id="61">$|r_{k}|_{L_{p}} / |r_{1}|_{L_{p}} \geq \epsilon_{div}$</formula></para></listitem><listitem><para>Maximum number of iteration <formula id="62">$N$</formula>, when <formula id="63">$k = N$</formula></para></listitem></itemizedlist>
+</para><para>where <formula id="64">$k$</formula> is the current iteration, <formula id="65">$r_{k}$</formula> the residual for the current iteration <formula id="64">$k$</formula> (i.e. <formula id="19">$r_{k} = b - Ax_{k}$</formula>) and <formula id="66">$r_{1}$</formula> the starting residual (i.e. <formula id="67">$r_{1} = b - Ax_{init}$</formula>). In addition, the minimum number of iterations <formula id="37">$M$</formula> can be specified. In this case, the solver will not stop to iterate, before <formula id="68">$k \geq M$</formula>.</para><para>The <formula id="69">$L_{p}$</formula> norm is used for the computation, where <formula id="70">$p$</formula> could be 1, 2 and <formula id="71">$\infty$</formula>. The norm computation can be set with <ref refid="classrocalution_1_1_iterative_linear_solver_1a9a7610d7c31f7259f4365d79187cfa78" kindref="member">SetResidualNorm()</ref> with 1 for <formula id="72">$L_{1}$</formula>, 2 for <formula id="73">$L_{2}$</formula> and 3 for <formula id="74">$L_{\infty}$</formula>. For the computation with <formula id="74">$L_{\infty}$</formula>, the index of the maximum value can be obtained with <ref refid="classrocalution_1_1_iterative_linear_solver_1a20f2516ef96cebecbe83ba153bfacc8e" kindref="member">GetAmaxResidualIndex()</ref>. If this function is called and <formula id="74">$L_{\infty}$</formula> was not selected, this function will return -1.</para><para>The reached criteria can be obtained with <ref refid="classrocalution_1_1_iterative_linear_solver_1a814064201608ca980284fbea51792137" kindref="member">GetSolverStatus()</ref>, returning<itemizedlist>
+<listitem><para>0, if no criteria has been reached yet</para></listitem><listitem><para>1, if absolute tolerance has been reached</para></listitem><listitem><para>2, if relative tolerance has been reached</para></listitem><listitem><para>3, if divergence tolerance has been reached</para></listitem><listitem><para>4, if maximum number of iteration has been reached</para></listitem></itemizedlist>
+</para><para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>OperatorType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- can be <ref refid="classrocalution_1_1_local_matrix" kindref="compound">LocalMatrix</ref>, <ref refid="classrocalution_1_1_global_matrix" kindref="compound">GlobalMatrix</ref> or <ref refid="classrocalution_1_1_local_stencil" kindref="compound">LocalStencil</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>VectorType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- can be <ref refid="classrocalution_1_1_local_vector" kindref="compound">LocalVector</ref> or <ref refid="classrocalution_1_1_global_vector" kindref="compound">GlobalVector</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ValueType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- can be float, double, std::complex&lt;float&gt; or std::complex&lt;double&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="368">
+        <label>rocalution::IterativeLinearSolver&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_iterative_linear_solver"/>
+        <childnode refid="369" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="384">
+        <label>rocalution::FCG&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_f_c_g"/>
+        <childnode refid="368" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="378">
+        <label>rocalution::MultiGrid&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_multi_grid"/>
+        <childnode refid="371" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="381">
+        <label>rocalution::CG&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_c_g"/>
+        <childnode refid="368" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="373">
+        <label>rocalution::GlobalPairwiseAMG&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_global_pairwise_a_m_g"/>
+        <childnode refid="372" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="369">
+        <label>rocalution::Solver&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_solver"/>
+        <childnode refid="370" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="385">
+        <label>rocalution::FGMRES&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_f_g_m_r_e_s"/>
+        <childnode refid="368" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="382">
+        <label>rocalution::Chebyshev&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_chebyshev"/>
+        <childnode refid="368" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="370">
+        <label>rocalution::RocalutionObj</label>
+      </node>
+      <node id="379">
+        <label>rocalution::BiCGStab&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_bi_c_g_stab"/>
+        <childnode refid="368" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="387">
+        <label>rocalution::GMRES&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_g_m_r_e_s"/>
+        <childnode refid="368" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="389">
+        <label>rocalution::QMRCGStab&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_q_m_r_c_g_stab"/>
+        <childnode refid="368" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="388">
+        <label>rocalution::IDR&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_i_d_r"/>
+        <childnode refid="368" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="377">
+        <label>rocalution::UAAMG&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_u_a_a_m_g"/>
+        <childnode refid="372" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="380">
+        <label>rocalution::BiCGStabl&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_bi_c_g_stabl"/>
+        <childnode refid="368" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="372">
+        <label>rocalution::BaseAMG&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_base_a_m_g"/>
+        <childnode refid="371" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="386">
+        <label>rocalution::FixedPoint&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_fixed_point"/>
+        <childnode refid="368" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="374">
+        <label>rocalution::PairwiseAMG&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_pairwise_a_m_g"/>
+        <childnode refid="372" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="383">
+        <label>rocalution::CR&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_c_r"/>
+        <childnode refid="368" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="376">
+        <label>rocalution::SAAMG&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_s_a_a_m_g"/>
+        <childnode refid="372" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="371">
+        <label>rocalution::BaseMultiGrid&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_base_multi_grid"/>
+        <childnode refid="368" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="375">
+        <label>rocalution::RugeStuebenAMG&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_ruge_stueben_a_m_g"/>
+        <childnode refid="372" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="390">
+        <label>rocalution::IterativeLinearSolver&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_iterative_linear_solver"/>
+        <childnode refid="391" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="394">
+        <label>rocalution::Vector&lt; int &gt;</label>
+        <link refid="classrocalution_1_1_vector"/>
+        <childnode refid="395" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="395">
+        <label>rocalution::BaseRocalution&lt; ValueType &gt;</label>
+        <link refid="classrocalution_1_1_base_rocalution"/>
+        <childnode refid="392" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="391">
+        <label>rocalution::Solver&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_solver"/>
+        <childnode refid="392" relation="public-inheritance">
+        </childnode>
+        <childnode refid="393" relation="usage">
+          <edgelabel>permutation_</edgelabel>
+        </childnode>
+        <childnode refid="396" relation="usage">
+          <edgelabel>op_</edgelabel>
+        </childnode>
+      </node>
+      <node id="393">
+        <label>rocalution::LocalVector&lt; int &gt;</label>
+        <link refid="classrocalution_1_1_local_vector"/>
+        <childnode refid="394" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="392">
+        <label>rocalution::RocalutionObj</label>
+      </node>
+      <node id="396">
+        <label>OperatorType</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/tcs/rocALUTION/src/solvers/solver.hpp" line="192" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/solver.hpp" bodystart="191" bodyend="271"/>
+    <listofallmembers>
+      <member refid="classrocalution_1_1_solver_1a84754d7422ad3fb35c17c61f0a609c7a" prot="public" virt="virtual"><scope>rocalution::IterativeLinearSolver</scope><name>Build</name></member>
+      <member refid="classrocalution_1_1_solver_1a64924a0c87d60d2e4bf9fa295d0152cb" prot="protected" virt="non-virtual"><scope>rocalution::IterativeLinearSolver</scope><name>build_</name></member>
+      <member refid="classrocalution_1_1_solver_1a0d11ee9943f785db285f0ef5c08c64eb" prot="public" virt="virtual"><scope>rocalution::IterativeLinearSolver</scope><name>BuildMoveToAcceleratorAsync</name></member>
+      <member refid="classrocalution_1_1_solver_1aa8839d3ba527d75fedd29fdbe9bd651f" prot="public" virt="virtual"><scope>rocalution::IterativeLinearSolver</scope><name>Clear</name></member>
+      <member refid="classrocalution_1_1_iterative_linear_solver_1a20f2516ef96cebecbe83ba153bfacc8e" prot="public" virt="virtual"><scope>rocalution::IterativeLinearSolver</scope><name>GetAmaxResidualIndex</name></member>
+      <member refid="classrocalution_1_1_iterative_linear_solver_1a364ed49d060f8c24ba7af2398d1f54f5" prot="public" virt="virtual"><scope>rocalution::IterativeLinearSolver</scope><name>GetCurrentResidual</name></member>
+      <member refid="classrocalution_1_1_iterative_linear_solver_1a7f70fb4d7ce86daa75b2796a0dc12044" prot="public" virt="virtual"><scope>rocalution::IterativeLinearSolver</scope><name>GetIterationCount</name></member>
+      <member refid="classrocalution_1_1_iterative_linear_solver_1a814064201608ca980284fbea51792137" prot="public" virt="virtual"><scope>rocalution::IterativeLinearSolver</scope><name>GetSolverStatus</name></member>
+      <member refid="classrocalution_1_1_rocalution_obj_1a4bba5aeaf4fd705efc00402f1f6ed40b" prot="protected" virt="non-virtual"><scope>rocalution::IterativeLinearSolver</scope><name>global_obj_id_</name></member>
+      <member refid="classrocalution_1_1_iterative_linear_solver_1a30d12c17029094a3f46a0fa1ce491887" prot="protected" virt="non-virtual"><scope>rocalution::IterativeLinearSolver</scope><name>index_</name></member>
+      <member refid="classrocalution_1_1_iterative_linear_solver_1a2a8eebb0b187469ed92c675bd75e34b8" prot="public" virt="non-virtual"><scope>rocalution::IterativeLinearSolver</scope><name>Init</name></member>
+      <member refid="classrocalution_1_1_iterative_linear_solver_1a0c6fb1aeaf491a1e4891dc13d4b893b2" prot="public" virt="non-virtual"><scope>rocalution::IterativeLinearSolver</scope><name>Init</name></member>
+      <member refid="classrocalution_1_1_iterative_linear_solver_1a3b248faab2ff42e9106b6e38e5e0bbe2" prot="public" virt="non-virtual"><scope>rocalution::IterativeLinearSolver</scope><name>InitMaxIter</name></member>
+      <member refid="classrocalution_1_1_iterative_linear_solver_1a025c99dd56f7b09ebfd9df3905093c8e" prot="public" virt="non-virtual"><scope>rocalution::IterativeLinearSolver</scope><name>InitMinIter</name></member>
+      <member refid="classrocalution_1_1_iterative_linear_solver_1a05b570833a869738be46986d255b3c39" prot="public" virt="non-virtual"><scope>rocalution::IterativeLinearSolver</scope><name>InitTol</name></member>
+      <member refid="classrocalution_1_1_iterative_linear_solver_1a727c67c81489a601627a25802b1ad206" prot="private" virt="non-virtual"><scope>rocalution::IterativeLinearSolver</scope><name>iter_ctrl_</name></member>
+      <member refid="classrocalution_1_1_iterative_linear_solver_1a6fcfd0b77d13d84d36156abbaa100fa0" prot="public" virt="non-virtual"><scope>rocalution::IterativeLinearSolver</scope><name>IterativeLinearSolver</name></member>
+      <member refid="classrocalution_1_1_solver_1ab1b6410cd134c9ad00c1851d400cf0f8" prot="public" virt="virtual"><scope>rocalution::IterativeLinearSolver</scope><name>MoveToAccelerator</name></member>
+      <member refid="classrocalution_1_1_solver_1a8ce29de0bdda9f35a6a687fd06ac9b11" prot="protected" virt="pure-virtual"><scope>rocalution::IterativeLinearSolver</scope><name>MoveToAcceleratorLocalData_</name></member>
+      <member refid="classrocalution_1_1_solver_1a3c263e65898816f5838184c0af78a044" prot="public" virt="virtual"><scope>rocalution::IterativeLinearSolver</scope><name>MoveToHost</name></member>
+      <member refid="classrocalution_1_1_solver_1aa1e8be1bd2107543c7390a81f8cee8cb" prot="protected" virt="pure-virtual"><scope>rocalution::IterativeLinearSolver</scope><name>MoveToHostLocalData_</name></member>
+      <member refid="classrocalution_1_1_iterative_linear_solver_1a45c0602171dda0391e5574e0310504fb" prot="protected" virt="non-virtual"><scope>rocalution::IterativeLinearSolver</scope><name>Norm_</name></member>
+      <member refid="classrocalution_1_1_solver_1ad338b5f99cf339fb33218dd8b958cac4" prot="protected" virt="non-virtual"><scope>rocalution::IterativeLinearSolver</scope><name>op_</name></member>
+      <member refid="classrocalution_1_1_solver_1ac46ab4d19fba48ece463666d37a7dc86" prot="protected" virt="non-virtual"><scope>rocalution::IterativeLinearSolver</scope><name>permutation_</name></member>
+      <member refid="classrocalution_1_1_solver_1a2acdb829fa657a7b3e680d1ee6005c9b" prot="protected" virt="non-virtual"><scope>rocalution::IterativeLinearSolver</scope><name>precond_</name></member>
+      <member refid="classrocalution_1_1_solver_1a57992cfc687f3bf260964ad2fc19c467" prot="public" virt="pure-virtual"><scope>rocalution::IterativeLinearSolver</scope><name>Print</name></member>
+      <member refid="classrocalution_1_1_solver_1add2b6aec27eeaffbbd1130cc846c1019" prot="protected" virt="pure-virtual"><scope>rocalution::IterativeLinearSolver</scope><name>PrintEnd_</name></member>
+      <member refid="classrocalution_1_1_solver_1a9e6a5ceb6a8c35cd8d54ebff0664d27e" prot="protected" virt="pure-virtual"><scope>rocalution::IterativeLinearSolver</scope><name>PrintStart_</name></member>
+      <member refid="classrocalution_1_1_solver_1acd20a051f0560a77645e35361df8f87c" prot="public" virt="virtual"><scope>rocalution::IterativeLinearSolver</scope><name>ReBuildNumeric</name></member>
+      <member refid="classrocalution_1_1_iterative_linear_solver_1ae13555f823f7cd1a5c3a7ef3b4427f74" prot="public" virt="non-virtual"><scope>rocalution::IterativeLinearSolver</scope><name>RecordHistory</name></member>
+      <member refid="classrocalution_1_1_iterative_linear_solver_1a0a5fd39c7f75f4339eaa41b67868653d" prot="public" virt="non-virtual"><scope>rocalution::IterativeLinearSolver</scope><name>RecordResidualHistory</name></member>
+      <member refid="classrocalution_1_1_iterative_linear_solver_1ae811fa65d83729b92bb9573667162a4c" prot="protected" virt="non-virtual"><scope>rocalution::IterativeLinearSolver</scope><name>res_norm_</name></member>
+      <member refid="classrocalution_1_1_solver_1a91354c5c116742c58d9eb2094cc6a68e" prot="public" virt="virtual"><scope>rocalution::IterativeLinearSolver</scope><name>ResetOperator</name></member>
+      <member refid="classrocalution_1_1_rocalution_obj_1ad60a8b2047aad74e488c552264fa7737" prot="public" virt="non-virtual"><scope>rocalution::IterativeLinearSolver</scope><name>RocalutionObj</name></member>
+      <member refid="classrocalution_1_1_solver_1a12765b63efe75bc88406a8d6ebb5aacc" prot="public" virt="non-virtual"><scope>rocalution::IterativeLinearSolver</scope><name>SetOperator</name></member>
+      <member refid="classrocalution_1_1_iterative_linear_solver_1ac40a58d97330f7bf41d2ae116bc45f80" prot="public" virt="virtual"><scope>rocalution::IterativeLinearSolver</scope><name>SetPreconditioner</name></member>
+      <member refid="classrocalution_1_1_iterative_linear_solver_1a9a7610d7c31f7259f4365d79187cfa78" prot="public" virt="non-virtual"><scope>rocalution::IterativeLinearSolver</scope><name>SetResidualNorm</name></member>
+      <member refid="classrocalution_1_1_iterative_linear_solver_1a4c8e806ae8a7776fa5306598afe7e076" prot="public" virt="virtual"><scope>rocalution::IterativeLinearSolver</scope><name>Solve</name></member>
+      <member refid="classrocalution_1_1_iterative_linear_solver_1a35666e9af2a4abbc6d7e7be278a310e6" prot="protected" virt="pure-virtual"><scope>rocalution::IterativeLinearSolver</scope><name>SolveNonPrecond_</name></member>
+      <member refid="classrocalution_1_1_iterative_linear_solver_1adfb05c58ea0bf7443c039115dd27bfba" prot="protected" virt="pure-virtual"><scope>rocalution::IterativeLinearSolver</scope><name>SolvePrecond_</name></member>
+      <member refid="classrocalution_1_1_solver_1a009956b05d4d5d1d38e4c24341b14a66" prot="public" virt="non-virtual"><scope>rocalution::IterativeLinearSolver</scope><name>Solver</name></member>
+      <member refid="classrocalution_1_1_solver_1a034b434a4340a52430deed9b210e5003" prot="public" virt="virtual"><scope>rocalution::IterativeLinearSolver</scope><name>SolveZeroSol</name></member>
+      <member refid="classrocalution_1_1_solver_1a17c2830a0ede8d82d1336aa25da6f907" prot="public" virt="virtual"><scope>rocalution::IterativeLinearSolver</scope><name>Sync</name></member>
+      <member refid="classrocalution_1_1_solver_1a2ee162346e0d52543f9d3d25fe70ea8a" prot="protected" virt="non-virtual"><scope>rocalution::IterativeLinearSolver</scope><name>verb_</name></member>
+      <member refid="classrocalution_1_1_iterative_linear_solver_1ac88dc520e41c9d1a2de5ad8c95e644c2" prot="public" virt="virtual"><scope>rocalution::IterativeLinearSolver</scope><name>Verbose</name></member>
+      <member refid="classrocalution_1_1_iterative_linear_solver_1a89c416ba136cf16ac4b38d41ae4e745b" prot="public" virt="virtual"><scope>rocalution::IterativeLinearSolver</scope><name>~IterativeLinearSolver</name></member>
+      <member refid="classrocalution_1_1_rocalution_obj_1a55a2f93f798cebdda6343b20db959e2d" prot="public" virt="virtual"><scope>rocalution::IterativeLinearSolver</scope><name>~RocalutionObj</name></member>
+      <member refid="classrocalution_1_1_solver_1af861566a540fc6cc399c844bbc789ec6" prot="public" virt="virtual"><scope>rocalution::IterativeLinearSolver</scope><name>~Solver</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

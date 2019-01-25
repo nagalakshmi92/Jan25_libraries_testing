@@ -3,10 +3,8 @@
   <compounddef id="fgmres_8cpp" kind="file" language="C++">
     <compoundname>fgmres.cpp</compoundname>
     <includes local="yes">../../utils/def.hpp</includes>
-    <includes local="yes">fgmres.hpp</includes>
-    <includes local="yes">/home/tcs/Jan24/Jan24_libraries_testing/ROCm_Libraries/rocALUTION/src/solvers/solver.hpp</includes>
-    <includes local="no">vector</includes>
-    <includes local="yes">../iter_ctrl.hpp</includes>
+    <includes refid="fgmres_8hpp" local="yes">fgmres.hpp</includes>
+    <includes refid="iter__ctrl_8hpp" local="yes">../iter_ctrl.hpp</includes>
     <includes local="yes">../../base/matrix_formats_ind.hpp</includes>
     <includes refid="local__matrix_8hpp" local="yes">../../base/local_matrix.hpp</includes>
     <includes refid="local__stencil_8hpp" local="yes">../../base/local_stencil.hpp</includes>
@@ -19,234 +17,247 @@
     <includes local="no">math.h</includes>
     <includes local="no">complex</includes>
     <incdepgraph>
-      <node id="456">
+      <node id="769">
+        <label>../base/local_vector.hpp</label>
+        <link refid="local__vector_8hpp_source"/>
+        <childnode refid="770" relation="include">
+        </childnode>
+        <childnode refid="771" relation="include">
+        </childnode>
+      </node>
+      <node id="783">
         <label>limits</label>
       </node>
-      <node id="453">
-        <label>parallel_manager.hpp</label>
-        <link refid="parallel__manager_8hpp_source"/>
-        <childnode refid="439" relation="include">
+      <node id="758">
+        <label>fgmres.hpp</label>
+        <link refid="fgmres_8hpp_source"/>
+        <childnode refid="759" relation="include">
         </childnode>
-        <childnode refid="437" relation="include">
-        </childnode>
-        <childnode refid="454" relation="include">
-        </childnode>
-        <childnode refid="455" relation="include">
-        </childnode>
-        <childnode refid="456" relation="include">
-        </childnode>
-        <childnode refid="444" relation="include">
-        </childnode>
-        <childnode refid="445" relation="include">
+        <childnode refid="761" relation="include">
         </childnode>
       </node>
-      <node id="455">
+      <node id="782">
         <label>assert.h</label>
       </node>
-      <node id="440">
-        <label>backend_manager.hpp</label>
-        <link refid="backend__manager_8hpp_source"/>
-        <childnode refid="441" relation="include">
+      <node id="771">
+        <label>vector.hpp</label>
+        <link refid="vector_8hpp_source"/>
+        <childnode refid="770" relation="include">
         </childnode>
-        <childnode refid="442" relation="include">
+        <childnode refid="763" relation="include">
         </childnode>
-        <childnode refid="443" relation="include">
+        <childnode refid="765" relation="include">
         </childnode>
-        <childnode refid="433" relation="include">
+        <childnode refid="762" relation="include">
         </childnode>
-        <childnode refid="444" relation="include">
+        <childnode refid="772" relation="include">
         </childnode>
       </node>
-      <node id="438">
+      <node id="780">
+        <label>parallel_manager.hpp</label>
+        <link refid="parallel__manager_8hpp_source"/>
+        <childnode refid="763" relation="include">
+        </childnode>
+        <childnode refid="770" relation="include">
+        </childnode>
+        <childnode refid="781" relation="include">
+        </childnode>
+        <childnode refid="782" relation="include">
+        </childnode>
+        <childnode refid="783" relation="include">
+        </childnode>
+        <childnode refid="762" relation="include">
+        </childnode>
+        <childnode refid="768" relation="include">
+        </childnode>
+      </node>
+      <node id="775">
         <label>operator.hpp</label>
         <link refid="operator_8hpp_source"/>
-        <childnode refid="437" relation="include">
+        <childnode refid="770" relation="include">
         </childnode>
-        <childnode refid="439" relation="include">
+        <childnode refid="763" relation="include">
         </childnode>
-        <childnode refid="441" relation="include">
+        <childnode refid="765" relation="include">
         </childnode>
-        <childnode refid="444" relation="include">
+        <childnode refid="762" relation="include">
         </childnode>
-        <childnode refid="446" relation="include">
+        <childnode refid="772" relation="include">
         </childnode>
       </node>
-      <node id="444">
+      <node id="781">
+        <label>/home/tcs/rocALUTION/src/utils/def.hpp</label>
+      </node>
+      <node id="762">
         <label>string</label>
       </node>
-      <node id="443">
+      <node id="767">
         <label>map</label>
       </node>
-      <node id="454">
-        <label>/home/tcs/Jan24/Jan24_libraries_testing/ROCm_Libraries/rocALUTION/src/utils/def.hpp</label>
-      </node>
-      <node id="435">
+      <node id="773">
         <label>../../base/matrix_formats_ind.hpp</label>
       </node>
-      <node id="442">
-        <label>fstream</label>
-      </node>
-      <node id="429">
-        <label>ROCm_Libraries/rocALUTION/src/solvers/krylov/fgmres.cpp</label>
-        <link refid="fgmres_8cpp"/>
-        <childnode refid="430" relation="include">
+      <node id="759">
+        <label>../solver.hpp</label>
+        <link refid="solver_8hpp_source"/>
+        <childnode refid="760" relation="include">
         </childnode>
-        <childnode refid="431" relation="include">
+        <childnode refid="763" relation="include">
         </childnode>
-        <childnode refid="432" relation="include">
-        </childnode>
-        <childnode refid="433" relation="include">
-        </childnode>
-        <childnode refid="434" relation="include">
-        </childnode>
-        <childnode refid="435" relation="include">
-        </childnode>
-        <childnode refid="436" relation="include">
-        </childnode>
-        <childnode refid="448" relation="include">
-        </childnode>
-        <childnode refid="449" relation="include">
-        </childnode>
-        <childnode refid="452" relation="include">
-        </childnode>
-        <childnode refid="457" relation="include">
-        </childnode>
-        <childnode refid="458" relation="include">
-        </childnode>
-        <childnode refid="459" relation="include">
-        </childnode>
-        <childnode refid="460" relation="include">
-        </childnode>
-        <childnode refid="461" relation="include">
-        </childnode>
-        <childnode refid="445" relation="include">
+        <childnode refid="769" relation="include">
         </childnode>
       </node>
-      <node id="452">
+      <node id="779">
         <label>../../base/global_matrix.hpp</label>
         <link refid="global__matrix_8hpp_source"/>
-        <childnode refid="437" relation="include">
+        <childnode refid="770" relation="include">
         </childnode>
-        <childnode refid="438" relation="include">
+        <childnode refid="775" relation="include">
         </childnode>
-        <childnode refid="453" relation="include">
+        <childnode refid="780" relation="include">
         </childnode>
       </node>
-      <node id="451">
+      <node id="766">
+        <label>fstream</label>
+      </node>
+      <node id="778">
         <label>stencil_types.hpp</label>
       </node>
-      <node id="447">
+      <node id="776">
         <label>matrix_formats.hpp</label>
       </node>
-      <node id="449">
-        <label>local_vector.hpp</label>
-        <link refid="local__vector_8hpp_source"/>
-        <childnode refid="437" relation="include">
-        </childnode>
-        <childnode refid="450" relation="include">
-        </childnode>
-      </node>
-      <node id="439">
-        <label>base_rocalution.hpp</label>
-        <link refid="base__rocalution_8hpp_source"/>
-        <childnode refid="440" relation="include">
-        </childnode>
-        <childnode refid="445" relation="include">
-        </childnode>
-        <childnode refid="433" relation="include">
-        </childnode>
-      </node>
-      <node id="436">
-        <label>../../base/local_matrix.hpp</label>
-        <link refid="local__matrix_8hpp_source"/>
-        <childnode refid="437" relation="include">
-        </childnode>
-        <childnode refid="438" relation="include">
-        </childnode>
-        <childnode refid="440" relation="include">
-        </childnode>
-        <childnode refid="447" relation="include">
-        </childnode>
-        <childnode refid="444" relation="include">
-        </childnode>
-      </node>
-      <node id="437">
-        <label>../utils/types.hpp</label>
-      </node>
-      <node id="457">
+      <node id="784">
         <label>../../base/global_vector.hpp</label>
         <link refid="global__vector_8hpp_source"/>
-        <childnode refid="437" relation="include">
+        <childnode refid="770" relation="include">
         </childnode>
-        <childnode refid="450" relation="include">
+        <childnode refid="771" relation="include">
         </childnode>
-        <childnode refid="453" relation="include">
+        <childnode refid="780" relation="include">
         </childnode>
       </node>
-      <node id="433">
+      <node id="770">
+        <label>../utils/types.hpp</label>
+      </node>
+      <node id="763">
+        <label>../base/base_rocalution.hpp</label>
+        <link refid="base__rocalution_8hpp_source"/>
+        <childnode refid="764" relation="include">
+        </childnode>
+        <childnode refid="768" relation="include">
+        </childnode>
+        <childnode refid="761" relation="include">
+        </childnode>
+      </node>
+      <node id="761">
         <label>vector</label>
       </node>
-      <node id="459">
+      <node id="757">
+        <label>../../utils/def.hpp</label>
+      </node>
+      <node id="785">
+        <label>../../utils/log.hpp</label>
+      </node>
+      <node id="788">
+        <label>math.h</label>
+      </node>
+      <node id="772">
+        <label>cstdlib</label>
+      </node>
+      <node id="765">
+        <label>iostream</label>
+      </node>
+      <node id="777">
+        <label>../../base/local_stencil.hpp</label>
+        <link refid="local__stencil_8hpp_source"/>
+        <childnode refid="770" relation="include">
+        </childnode>
+        <childnode refid="775" relation="include">
+        </childnode>
+        <childnode refid="769" relation="include">
+        </childnode>
+        <childnode refid="778" relation="include">
+        </childnode>
+        <childnode refid="762" relation="include">
+        </childnode>
+      </node>
+      <node id="764">
+        <label>backend_manager.hpp</label>
+        <link refid="backend__manager_8hpp_source"/>
+        <childnode refid="765" relation="include">
+        </childnode>
+        <childnode refid="766" relation="include">
+        </childnode>
+        <childnode refid="767" relation="include">
+        </childnode>
+        <childnode refid="761" relation="include">
+        </childnode>
+        <childnode refid="762" relation="include">
+        </childnode>
+      </node>
+      <node id="756">
+        <label>/home/tcs/rocALUTION/src/solvers/krylov/fgmres.cpp</label>
+        <link refid="fgmres_8cpp"/>
+        <childnode refid="757" relation="include">
+        </childnode>
+        <childnode refid="758" relation="include">
+        </childnode>
+        <childnode refid="760" relation="include">
+        </childnode>
+        <childnode refid="773" relation="include">
+        </childnode>
+        <childnode refid="774" relation="include">
+        </childnode>
+        <childnode refid="777" relation="include">
+        </childnode>
+        <childnode refid="769" relation="include">
+        </childnode>
+        <childnode refid="779" relation="include">
+        </childnode>
+        <childnode refid="784" relation="include">
+        </childnode>
+        <childnode refid="785" relation="include">
+        </childnode>
+        <childnode refid="786" relation="include">
+        </childnode>
+        <childnode refid="787" relation="include">
+        </childnode>
+        <childnode refid="788" relation="include">
+        </childnode>
+        <childnode refid="768" relation="include">
+        </childnode>
+      </node>
+      <node id="760">
+        <label>iter_ctrl.hpp</label>
+        <link refid="iter__ctrl_8hpp_source"/>
+        <childnode refid="761" relation="include">
+        </childnode>
+        <childnode refid="762" relation="include">
+        </childnode>
+      </node>
+      <node id="768">
+        <label>complex</label>
+      </node>
+      <node id="786">
         <label>../../utils/allocate_free.hpp</label>
         <link refid="allocate__free_8hpp_source"/>
       </node>
-      <node id="430">
-        <label>../../utils/def.hpp</label>
-      </node>
-      <node id="458">
-        <label>../../utils/log.hpp</label>
-      </node>
-      <node id="461">
-        <label>math.h</label>
-      </node>
-      <node id="448">
-        <label>../../base/local_stencil.hpp</label>
-        <link refid="local__stencil_8hpp_source"/>
-        <childnode refid="437" relation="include">
-        </childnode>
-        <childnode refid="438" relation="include">
-        </childnode>
-        <childnode refid="449" relation="include">
-        </childnode>
-        <childnode refid="451" relation="include">
-        </childnode>
-        <childnode refid="444" relation="include">
-        </childnode>
-      </node>
-      <node id="446">
-        <label>cstdlib</label>
-      </node>
-      <node id="434">
-        <label>../iter_ctrl.hpp</label>
-      </node>
-      <node id="441">
-        <label>iostream</label>
-      </node>
-      <node id="432">
-        <label>/home/tcs/Jan24/Jan24_libraries_testing/ROCm_Libraries/rocALUTION/src/solvers/solver.hpp</label>
-      </node>
-      <node id="431">
-        <label>fgmres.hpp</label>
-      </node>
-      <node id="450">
-        <label>vector.hpp</label>
-        <link refid="vector_8hpp_source"/>
-        <childnode refid="437" relation="include">
-        </childnode>
-        <childnode refid="439" relation="include">
-        </childnode>
-        <childnode refid="441" relation="include">
-        </childnode>
-        <childnode refid="444" relation="include">
-        </childnode>
-        <childnode refid="446" relation="include">
-        </childnode>
-      </node>
-      <node id="445">
-        <label>complex</label>
-      </node>
-      <node id="460">
+      <node id="787">
         <label>../../utils/math_functions.hpp</label>
+      </node>
+      <node id="774">
+        <label>../../base/local_matrix.hpp</label>
+        <link refid="local__matrix_8hpp_source"/>
+        <childnode refid="770" relation="include">
+        </childnode>
+        <childnode refid="775" relation="include">
+        </childnode>
+        <childnode refid="764" relation="include">
+        </childnode>
+        <childnode refid="776" relation="include">
+        </childnode>
+        <childnode refid="762" relation="include">
+        </childnode>
       </node>
     </incdepgraph>
     <innernamespace refid="namespacerocalution">rocalution</innernamespace>
@@ -323,7 +334,7 @@
 <codeline lineno="66"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="67"><highlight class="normal"></highlight></codeline>
 <codeline lineno="68"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="69"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>FGMRES&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::Print(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_f_g_m_r_e_s_1a19804cfcc80fad220ec0bdb934643858" kindref="member">FGMRES&lt;OperatorType, VectorType, ValueType&gt;::Print</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
 <codeline lineno="70"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
 <codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(this-&gt;precond_<sp/>==<sp/>NULL)</highlight></codeline>
 <codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
@@ -337,7 +348,7 @@
 <codeline lineno="80"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="81"><highlight class="normal"></highlight></codeline>
 <codeline lineno="82"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="83"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>FGMRES&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::PrintStart_(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_f_g_m_r_e_s_1a0f59f29afc78053852c77f105ce1dc8d" kindref="member">FGMRES&lt;OperatorType, VectorType, ValueType&gt;::PrintStart_</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
 <codeline lineno="84"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
 <codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(this-&gt;precond_<sp/>==<sp/>NULL)</highlight></codeline>
 <codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
@@ -351,7 +362,7 @@
 <codeline lineno="94"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="95"><highlight class="normal"></highlight></codeline>
 <codeline lineno="96"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="97"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>FGMRES&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::PrintEnd_(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_f_g_m_r_e_s_1af71bd8f9505b49fe21b7933a91918ba9" kindref="member">FGMRES&lt;OperatorType, VectorType, ValueType&gt;::PrintEnd_</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
 <codeline lineno="98"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
 <codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(this-&gt;precond_<sp/>==<sp/>NULL)</highlight></codeline>
 <codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
@@ -364,7 +375,7 @@
 <codeline lineno="107"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="108"><highlight class="normal"></highlight></codeline>
 <codeline lineno="109"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="110"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>FGMRES&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::Build(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_f_g_m_r_e_s_1a414bd37cdda192492b10d3bf1608272c" kindref="member">FGMRES&lt;OperatorType, VectorType, ValueType&gt;::Build</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
 <codeline lineno="111"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/>log_debug(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;FGMRES::Build()&quot;</highlight><highlight class="normal">,<sp/>this-&gt;build_,<sp/></highlight><highlight class="stringliteral">&quot;<sp/>#*#<sp/>begin&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="113"><highlight class="normal"></highlight></codeline>
@@ -382,10 +393,10 @@
 <codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;res_norm_<sp/>=<sp/>2;</highlight></codeline>
 <codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="127"><highlight class="normal"></highlight></codeline>
-<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/>allocate_host(this-&gt;size_basis_,<sp/>&amp;this-&gt;c_);</highlight></codeline>
-<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/>allocate_host(this-&gt;size_basis_,<sp/>&amp;this-&gt;s_);</highlight></codeline>
-<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/>allocate_host(this-&gt;size_basis_<sp/>+<sp/>1,<sp/>&amp;this-&gt;r_);</highlight></codeline>
-<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/>allocate_host((this-&gt;size_basis_<sp/>+<sp/>1)<sp/>*<sp/>this-&gt;size_basis_,<sp/>&amp;this-&gt;H_);</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__backend__module_1gafedca46943a41c98cad95870fa180526" kindref="member">allocate_host</ref>(this-&gt;size_basis_,<sp/>&amp;this-&gt;c_);</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__backend__module_1gafedca46943a41c98cad95870fa180526" kindref="member">allocate_host</ref>(this-&gt;size_basis_,<sp/>&amp;this-&gt;s_);</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__backend__module_1gafedca46943a41c98cad95870fa180526" kindref="member">allocate_host</ref>(this-&gt;size_basis_<sp/>+<sp/>1,<sp/>&amp;this-&gt;r_);</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__backend__module_1gafedca46943a41c98cad95870fa180526" kindref="member">allocate_host</ref>((this-&gt;size_basis_<sp/>+<sp/>1)<sp/>*<sp/>this-&gt;size_basis_,<sp/>&amp;this-&gt;H_);</highlight></codeline>
 <codeline lineno="132"><highlight class="normal"></highlight></codeline>
 <codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;v_<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>VectorType*[this-&gt;size_basis_<sp/>+<sp/>1];</highlight></codeline>
 <codeline lineno="134"><highlight class="normal"></highlight></codeline>
@@ -416,7 +427,7 @@
 <codeline lineno="159"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="160"><highlight class="normal"></highlight></codeline>
 <codeline lineno="161"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="162"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>FGMRES&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::Clear(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_f_g_m_r_e_s_1a8fc9d8bf97cd4f4d8f5b3ad133b7808b" kindref="member">FGMRES&lt;OperatorType, VectorType, ValueType&gt;::Clear</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
 <codeline lineno="163"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/>log_debug(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;FGMRES::Clear()&quot;</highlight><highlight class="normal">,<sp/>this-&gt;build_);</highlight></codeline>
 <codeline lineno="165"><highlight class="normal"></highlight></codeline>
@@ -436,10 +447,10 @@
 <codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;z_<sp/>=<sp/>NULL;</highlight></codeline>
 <codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="181"><highlight class="normal"></highlight></codeline>
-<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>free_host(&amp;this-&gt;c_);</highlight></codeline>
-<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>free_host(&amp;this-&gt;s_);</highlight></codeline>
-<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>free_host(&amp;this-&gt;r_);</highlight></codeline>
-<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>free_host(&amp;this-&gt;H_);</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__backend__module_1ga020251e6c31a4c642dd0181c5022c9ca" kindref="member">free_host</ref>(&amp;this-&gt;c_);</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__backend__module_1ga020251e6c31a4c642dd0181c5022c9ca" kindref="member">free_host</ref>(&amp;this-&gt;s_);</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__backend__module_1ga020251e6c31a4c642dd0181c5022c9ca" kindref="member">free_host</ref>(&amp;this-&gt;r_);</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__backend__module_1ga020251e6c31a4c642dd0181c5022c9ca" kindref="member">free_host</ref>(&amp;this-&gt;H_);</highlight></codeline>
 <codeline lineno="186"><highlight class="normal"></highlight></codeline>
 <codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>this-&gt;size_basis_<sp/>+<sp/>1;<sp/>++i)</highlight></codeline>
 <codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
@@ -456,7 +467,7 @@
 <codeline lineno="199"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="200"><highlight class="normal"></highlight></codeline>
 <codeline lineno="201"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="202"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>FGMRES&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::ReBuildNumeric(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_f_g_m_r_e_s_1a4329cbd6a8ccaf5e99959e989f139376" kindref="member">FGMRES&lt;OperatorType, VectorType, ValueType&gt;::ReBuildNumeric</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
 <codeline lineno="203"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/>log_debug(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;FGMRES::ReBuildNumeric()&quot;</highlight><highlight class="normal">,<sp/>this-&gt;build_);</highlight></codeline>
 <codeline lineno="205"><highlight class="normal"></highlight></codeline>
@@ -485,7 +496,7 @@
 <codeline lineno="228"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="229"><highlight class="normal"></highlight></codeline>
 <codeline lineno="230"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="231"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>FGMRES&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::MoveToHostLocalData_(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_f_g_m_r_e_s_1af3851547b9558db84a79eb058cbca53e" kindref="member">FGMRES&lt;OperatorType, VectorType, ValueType&gt;::MoveToHostLocalData_</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
 <codeline lineno="232"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/>log_debug(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;FGMRES::MoveToHostLocalData_()&quot;</highlight><highlight class="normal">,<sp/>this-&gt;build_);</highlight></codeline>
 <codeline lineno="234"><highlight class="normal"></highlight></codeline>
@@ -509,7 +520,7 @@
 <codeline lineno="252"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="253"><highlight class="normal"></highlight></codeline>
 <codeline lineno="254"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="255"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>FGMRES&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::MoveToAcceleratorLocalData_(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_f_g_m_r_e_s_1ad9fcaedd2b0746b6da5c87276a549cd9" kindref="member">FGMRES&lt;OperatorType, VectorType, ValueType&gt;::MoveToAcceleratorLocalData_</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
 <codeline lineno="256"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/>log_debug(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;FGMRES::MoveToAcceleratorLocalData_()&quot;</highlight><highlight class="normal">,<sp/>this-&gt;build_);</highlight></codeline>
 <codeline lineno="258"><highlight class="normal"></highlight></codeline>
@@ -532,7 +543,7 @@
 <codeline lineno="275"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="276"><highlight class="normal"></highlight></codeline>
 <codeline lineno="277"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="278"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>FGMRES&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::SetBasisSize(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size_basis)</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_f_g_m_r_e_s_1aca2ae523796ca1ec710b6b7f864dd82c" kindref="member">FGMRES&lt;OperatorType, VectorType, ValueType&gt;::SetBasisSize</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size_basis)</highlight></codeline>
 <codeline lineno="279"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/>log_debug(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;FGMRES:SetBasisSize()&quot;</highlight><highlight class="normal">,<sp/>size_basis);</highlight></codeline>
 <codeline lineno="281"><highlight class="normal"></highlight></codeline>
@@ -543,7 +554,7 @@
 <codeline lineno="286"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="287"><highlight class="normal"></highlight></codeline>
 <codeline lineno="288"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="289"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>FGMRES&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::SolveNonPrecond_(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>VectorType&amp;<sp/>rhs,</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_f_g_m_r_e_s_1aedd3018559df038f1e9bed1fb1d7e8ca" kindref="member">FGMRES&lt;OperatorType, VectorType, ValueType&gt;::SolveNonPrecond_</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>VectorType&amp;<sp/>rhs,</highlight></codeline>
 <codeline lineno="290"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>VectorType*<sp/>x)</highlight></codeline>
 <codeline lineno="291"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/>log_debug(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;FGMRES::SolveNonPrecond_()&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;<sp/>#*#<sp/>begin&quot;</highlight><highlight class="normal">,<sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*&amp;)rhs,<sp/>x);</highlight></codeline>
@@ -575,7 +586,7 @@
 <codeline lineno="318"><highlight class="normal"><sp/><sp/><sp/><sp/>v[0]-&gt;ScaleAdd(-one,<sp/>rhs);</highlight></codeline>
 <codeline lineno="319"><highlight class="normal"></highlight></codeline>
 <codeline lineno="320"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>r<sp/>=<sp/>0</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="321"><highlight class="normal"><sp/><sp/><sp/><sp/>set_to_zero_host(size<sp/>+<sp/>1,<sp/>r);</highlight></codeline>
+<codeline lineno="321"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__backend__module_1gaeedb5b330f76db3b821bdfa7eaa60351" kindref="member">set_to_zero_host</ref>(size<sp/>+<sp/>1,<sp/>r);</highlight></codeline>
 <codeline lineno="322"><highlight class="normal"></highlight></codeline>
 <codeline lineno="323"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>r_0<sp/>=<sp/>||v_0||</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="324"><highlight class="normal"><sp/><sp/><sp/><sp/>r[0]<sp/>=<sp/>this-&gt;Norm_(*v[0]);</highlight></codeline>
@@ -667,7 +678,7 @@
 <codeline lineno="410"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>v[0]-&gt;ScaleAdd(-one,<sp/>rhs);</highlight></codeline>
 <codeline lineno="411"><highlight class="normal"></highlight></codeline>
 <codeline lineno="412"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>r<sp/>=<sp/>0</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="413"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>set_to_zero_host(size<sp/>+<sp/>1,<sp/>r);</highlight></codeline>
+<codeline lineno="413"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__backend__module_1gaeedb5b330f76db3b821bdfa7eaa60351" kindref="member">set_to_zero_host</ref>(size<sp/>+<sp/>1,<sp/>r);</highlight></codeline>
 <codeline lineno="414"><highlight class="normal"></highlight></codeline>
 <codeline lineno="415"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>r_0<sp/>=<sp/>||v_0||</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="416"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>r[0]<sp/>=<sp/>this-&gt;Norm_(*v[0]);</highlight></codeline>
@@ -683,7 +694,7 @@
 <codeline lineno="426"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="427"><highlight class="normal"></highlight></codeline>
 <codeline lineno="428"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="429"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>FGMRES&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::SolvePrecond_(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>VectorType&amp;<sp/>rhs,</highlight></codeline>
+<codeline lineno="429"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_f_g_m_r_e_s_1af20bf069b1007389f728d4efda41d65f" kindref="member">FGMRES&lt;OperatorType, VectorType, ValueType&gt;::SolvePrecond_</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>VectorType&amp;<sp/>rhs,</highlight></codeline>
 <codeline lineno="430"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>VectorType*<sp/>x)</highlight></codeline>
 <codeline lineno="431"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="432"><highlight class="normal"><sp/><sp/><sp/><sp/>log_debug(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;FGMRES::SolvePrecond_()&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;<sp/>#*#<sp/>begin&quot;</highlight><highlight class="normal">,<sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*&amp;)rhs,<sp/>x);</highlight></codeline>
@@ -716,7 +727,7 @@
 <codeline lineno="459"><highlight class="normal"><sp/><sp/><sp/><sp/>v[0]-&gt;ScaleAdd(-one,<sp/>rhs);</highlight></codeline>
 <codeline lineno="460"><highlight class="normal"></highlight></codeline>
 <codeline lineno="461"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>r<sp/>=<sp/>0</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="462"><highlight class="normal"><sp/><sp/><sp/><sp/>set_to_zero_host(size<sp/>+<sp/>1,<sp/>r);</highlight></codeline>
+<codeline lineno="462"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__backend__module_1gaeedb5b330f76db3b821bdfa7eaa60351" kindref="member">set_to_zero_host</ref>(size<sp/>+<sp/>1,<sp/>r);</highlight></codeline>
 <codeline lineno="463"><highlight class="normal"></highlight></codeline>
 <codeline lineno="464"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>r_0<sp/>=<sp/>||v_0||</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="465"><highlight class="normal"><sp/><sp/><sp/><sp/>r[0]<sp/>=<sp/>this-&gt;Norm_(*v[0]);</highlight></codeline>
@@ -811,7 +822,7 @@
 <codeline lineno="554"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>v[0]-&gt;ScaleAdd(-one,<sp/>rhs);</highlight></codeline>
 <codeline lineno="555"><highlight class="normal"></highlight></codeline>
 <codeline lineno="556"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>r<sp/>=<sp/>0</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="557"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>set_to_zero_host(size<sp/>+<sp/>1,<sp/>r);</highlight></codeline>
+<codeline lineno="557"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__backend__module_1gaeedb5b330f76db3b821bdfa7eaa60351" kindref="member">set_to_zero_host</ref>(size<sp/>+<sp/>1,<sp/>r);</highlight></codeline>
 <codeline lineno="558"><highlight class="normal"></highlight></codeline>
 <codeline lineno="559"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>r_0<sp/>=<sp/>||v_0||</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="560"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>r[0]<sp/>=<sp/>this-&gt;Norm_(*v[0]);</highlight></codeline>
@@ -827,7 +838,7 @@
 <codeline lineno="570"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="571"><highlight class="normal"></highlight></codeline>
 <codeline lineno="572"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="573"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>FGMRES&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::GenerateGivensRotation_(ValueType<sp/>dx,</highlight></codeline>
+<codeline lineno="573"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_f_g_m_r_e_s_1a071c5ea581c098e9bba96abb212e0213" kindref="member">FGMRES&lt;OperatorType, VectorType, ValueType&gt;::GenerateGivensRotation_</ref>(ValueType<sp/>dx,</highlight></codeline>
 <codeline lineno="574"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ValueType<sp/>dy,</highlight></codeline>
 <codeline lineno="575"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ValueType&amp;<sp/>c,</highlight></codeline>
 <codeline lineno="576"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ValueType&amp;<sp/>s)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
@@ -860,7 +871,7 @@
 <codeline lineno="603"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="604"><highlight class="normal"></highlight></codeline>
 <codeline lineno="605"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="606"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>FGMRES&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::ApplyGivensRotation_(ValueType<sp/>c,</highlight></codeline>
+<codeline lineno="606"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_f_g_m_r_e_s_1add46c663efb7be53f9936a9ea577e97e" kindref="member">FGMRES&lt;OperatorType, VectorType, ValueType&gt;::ApplyGivensRotation_</ref>(ValueType<sp/>c,</highlight></codeline>
 <codeline lineno="607"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ValueType<sp/>s,</highlight></codeline>
 <codeline lineno="608"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ValueType&amp;<sp/>dx,</highlight></codeline>
 <codeline lineno="609"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ValueType&amp;<sp/>dy)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
@@ -905,6 +916,6 @@
 <codeline lineno="648"><highlight class="normal"></highlight></codeline>
 <codeline lineno="649"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>rocalution</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
-    <location file="ROCm_Libraries/rocALUTION/src/solvers/krylov/fgmres.cpp"/>
+    <location file="/home/tcs/rocALUTION/src/solvers/krylov/fgmres.cpp"/>
   </compounddef>
 </doxygen>

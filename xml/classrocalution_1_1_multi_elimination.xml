@@ -1,0 +1,737 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classrocalution_1_1_multi_elimination" kind="class" language="C++" prot="public">
+    <compoundname>rocalution::MultiElimination</compoundname>
+    <basecompoundref refid="classrocalution_1_1_preconditioner" prot="public" virt="non-virtual">rocalution::Preconditioner&lt; OperatorType, VectorType, ValueType &gt;</basecompoundref>
+    <includes refid="preconditioner__multielimination_8hpp" local="no">preconditioner_multielimination.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>class</type>
+        <declname>OperatorType</declname>
+        <defname>OperatorType</defname>
+      </param>
+      <param>
+        <type>class</type>
+        <declname>VectorType</declname>
+        <defname>VectorType</defname>
+      </param>
+      <param>
+        <type>typename</type>
+        <declname>ValueType</declname>
+        <defname>ValueType</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classrocalution_1_1_multi_elimination_1a38a1563eaff8d49042471467846f7e97" prot="protected" static="no" mutable="no">
+        <type>OperatorType</type>
+        <definition>OperatorType rocalution::MultiElimination&lt; OperatorType, VectorType, ValueType &gt;::A_</definition>
+        <argsstring></argsstring>
+        <name>A_</name>
+        <briefdescription>
+<para>A_ is decomposed into <formula id="47">$[D,F;E,C]$</formula>, where <formula id="48">$AA=C-ED^{-1}F$</formula> and <formula id="49">$E=ED^{-1}$</formula>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multielimination.hpp" line="93" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multielimination.hpp" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrocalution_1_1_multi_elimination_1a336a676d6685d7f4a5340f20ff60ff02" prot="protected" static="no" mutable="no">
+        <type>OperatorType</type>
+        <definition>OperatorType rocalution::MultiElimination&lt; OperatorType, VectorType, ValueType &gt;::D_</definition>
+        <argsstring></argsstring>
+        <name>D_</name>
+        <briefdescription>
+<para><ref refid="classrocalution_1_1_operator" kindref="compound">Operator</ref> $D$. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multielimination.hpp" line="95" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multielimination.hpp" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrocalution_1_1_multi_elimination_1abf421eac09c0bb4d0549f1eb88e8467c" prot="protected" static="no" mutable="no">
+        <type>OperatorType</type>
+        <definition>OperatorType rocalution::MultiElimination&lt; OperatorType, VectorType, ValueType &gt;::E_</definition>
+        <argsstring></argsstring>
+        <name>E_</name>
+        <briefdescription>
+<para><ref refid="classrocalution_1_1_operator" kindref="compound">Operator</ref> $E$. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multielimination.hpp" line="97" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multielimination.hpp" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrocalution_1_1_multi_elimination_1ab8ad4e7abc74bf472d8f8e070614878a" prot="protected" static="no" mutable="no">
+        <type>OperatorType</type>
+        <definition>OperatorType rocalution::MultiElimination&lt; OperatorType, VectorType, ValueType &gt;::F_</definition>
+        <argsstring></argsstring>
+        <name>F_</name>
+        <briefdescription>
+<para><ref refid="classrocalution_1_1_operator" kindref="compound">Operator</ref> $F$. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multielimination.hpp" line="99" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multielimination.hpp" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrocalution_1_1_multi_elimination_1a4a6e4d04cf5c628b5776c9b0ea0c1e15" prot="protected" static="no" mutable="no">
+        <type>OperatorType</type>
+        <definition>OperatorType rocalution::MultiElimination&lt; OperatorType, VectorType, ValueType &gt;::C_</definition>
+        <argsstring></argsstring>
+        <name>C_</name>
+        <briefdescription>
+<para><ref refid="classrocalution_1_1_operator" kindref="compound">Operator</ref> $C$. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multielimination.hpp" line="101" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multielimination.hpp" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrocalution_1_1_multi_elimination_1a38f1b0f6a18aba289df31032dc0e56df" prot="protected" static="no" mutable="no">
+        <type>OperatorType</type>
+        <definition>OperatorType rocalution::MultiElimination&lt; OperatorType, VectorType, ValueType &gt;::AA_</definition>
+        <argsstring></argsstring>
+        <name>AA_</name>
+        <briefdescription>
+<para><formula id="48">$AA=C-ED^{-1}F$</formula> </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multielimination.hpp" line="103" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multielimination.hpp" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrocalution_1_1_multi_elimination_1ad390fdf8e26357f5c83b03ba9c166ca2" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int rocalution::MultiElimination&lt; OperatorType, VectorType, ValueType &gt;::AA_nrow_</definition>
+        <argsstring></argsstring>
+        <name>AA_nrow_</name>
+        <briefdescription>
+<para>The sizes of the AA_ matrix. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multielimination.hpp" line="106" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multielimination.hpp" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrocalution_1_1_multi_elimination_1a002483103e06a2b216f3d5079e29bf84" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int rocalution::MultiElimination&lt; OperatorType, VectorType, ValueType &gt;::AA_nnz_</definition>
+        <argsstring></argsstring>
+        <name>AA_nnz_</name>
+        <briefdescription>
+<para>The sizes of the AA_ matrix. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multielimination.hpp" line="108" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multielimination.hpp" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrocalution_1_1_multi_elimination_1a396d6908f2b70e8f91fdb7d48357d2f5" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool rocalution::MultiElimination&lt; OperatorType, VectorType, ValueType &gt;::op_mat_format_</definition>
+        <argsstring></argsstring>
+        <name>op_mat_format_</name>
+        <briefdescription>
+<para>Keep the precond matrix in CSR or not. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multielimination.hpp" line="111" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multielimination.hpp" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrocalution_1_1_multi_elimination_1abc53265e38c6d3d906397f640c1d62cb" prot="protected" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int rocalution::MultiElimination&lt; OperatorType, VectorType, ValueType &gt;::precond_mat_format_</definition>
+        <argsstring></argsstring>
+        <name>precond_mat_format_</name>
+        <briefdescription>
+<para>Precond matrix format. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multielimination.hpp" line="113" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multielimination.hpp" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrocalution_1_1_multi_elimination_1a9f60bd037338af60f67001572351e055" prot="protected" static="no" mutable="no">
+        <type>VectorType</type>
+        <definition>VectorType rocalution::MultiElimination&lt; OperatorType, VectorType, ValueType &gt;::x_</definition>
+        <argsstring></argsstring>
+        <name>x_</name>
+        <briefdescription>
+<para><ref refid="classrocalution_1_1_vector" kindref="compound">Vector</ref> x_. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multielimination.hpp" line="116" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multielimination.hpp" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrocalution_1_1_multi_elimination_1a55a89a86f6c13590fc63154d766944d3" prot="protected" static="no" mutable="no">
+        <type>VectorType</type>
+        <definition>VectorType rocalution::MultiElimination&lt; OperatorType, VectorType, ValueType &gt;::x_1_</definition>
+        <argsstring></argsstring>
+        <name>x_1_</name>
+        <briefdescription>
+<para><ref refid="classrocalution_1_1_vector" kindref="compound">Vector</ref> x_1_. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multielimination.hpp" line="118" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multielimination.hpp" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrocalution_1_1_multi_elimination_1afbe8b61a8af0d33e9002d0e106fa82b4" prot="protected" static="no" mutable="no">
+        <type>VectorType</type>
+        <definition>VectorType rocalution::MultiElimination&lt; OperatorType, VectorType, ValueType &gt;::x_2_</definition>
+        <argsstring></argsstring>
+        <name>x_2_</name>
+        <briefdescription>
+<para><ref refid="classrocalution_1_1_vector" kindref="compound">Vector</ref> x_2_. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multielimination.hpp" line="120" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multielimination.hpp" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrocalution_1_1_multi_elimination_1a947542a57a659412cf223f58fc5c9c60" prot="protected" static="no" mutable="no">
+        <type>VectorType</type>
+        <definition>VectorType rocalution::MultiElimination&lt; OperatorType, VectorType, ValueType &gt;::rhs_</definition>
+        <argsstring></argsstring>
+        <name>rhs_</name>
+        <briefdescription>
+<para><ref refid="classrocalution_1_1_vector" kindref="compound">Vector</ref> rhs_. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multielimination.hpp" line="123" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multielimination.hpp" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrocalution_1_1_multi_elimination_1a46d730d8bb4ffdae92bb8c186ebc9154" prot="protected" static="no" mutable="no">
+        <type>VectorType</type>
+        <definition>VectorType rocalution::MultiElimination&lt; OperatorType, VectorType, ValueType &gt;::rhs_1_</definition>
+        <argsstring></argsstring>
+        <name>rhs_1_</name>
+        <briefdescription>
+<para><ref refid="classrocalution_1_1_vector" kindref="compound">Vector</ref> rhs_1_. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multielimination.hpp" line="125" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multielimination.hpp" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrocalution_1_1_multi_elimination_1ad4defb98ff998a2244d0855ad4c3f809" prot="protected" static="no" mutable="no">
+        <type>VectorType</type>
+        <definition>VectorType rocalution::MultiElimination&lt; OperatorType, VectorType, ValueType &gt;::rhs_2_</definition>
+        <argsstring></argsstring>
+        <name>rhs_2_</name>
+        <briefdescription>
+<para><ref refid="classrocalution_1_1_vector" kindref="compound">Vector</ref> rhs_2_. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multielimination.hpp" line="127" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multielimination.hpp" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrocalution_1_1_multi_elimination_1a605768b1761f21fce8b5a2c713f7d8bd" prot="protected" static="no" mutable="no">
+        <type><ref refid="classrocalution_1_1_multi_elimination" kindref="compound">MultiElimination</ref>&lt; OperatorType, VectorType, ValueType &gt; *</type>
+        <definition>MultiElimination&lt;OperatorType, VectorType, ValueType&gt;* rocalution::MultiElimination&lt; OperatorType, VectorType, ValueType &gt;::AA_me_</definition>
+        <argsstring></argsstring>
+        <name>AA_me_</name>
+        <briefdescription>
+<para>AA me preconditioner. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multielimination.hpp" line="130" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multielimination.hpp" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrocalution_1_1_multi_elimination_1a2fe71dd02982547e77751eb888de18b0" prot="protected" static="no" mutable="no">
+        <type><ref refid="classrocalution_1_1_solver" kindref="compound">Solver</ref>&lt; OperatorType, VectorType, ValueType &gt; *</type>
+        <definition>Solver&lt;OperatorType, VectorType, ValueType&gt;* rocalution::MultiElimination&lt; OperatorType, VectorType, ValueType &gt;::AA_solver_</definition>
+        <argsstring></argsstring>
+        <name>AA_solver_</name>
+        <briefdescription>
+<para>AA solver. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multielimination.hpp" line="132" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multielimination.hpp" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrocalution_1_1_multi_elimination_1a9e52ab71b79583bc277cddfdb0f47ac1" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool rocalution::MultiElimination&lt; OperatorType, VectorType, ValueType &gt;::diag_solver_init_</definition>
+        <argsstring></argsstring>
+        <name>diag_solver_init_</name>
+        <briefdescription>
+<para>Diagonal solver init flag. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multielimination.hpp" line="135" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multielimination.hpp" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrocalution_1_1_multi_elimination_1ac44c864b522f3a5ae0db4d8fb2290ece" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int rocalution::MultiElimination&lt; OperatorType, VectorType, ValueType &gt;::level_</definition>
+        <argsstring></argsstring>
+        <name>level_</name>
+        <briefdescription>
+<para>Level. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multielimination.hpp" line="137" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multielimination.hpp" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrocalution_1_1_multi_elimination_1a22c60739a663fdb31e1cb83d01df9b70" prot="protected" static="no" mutable="no">
+        <type>double</type>
+        <definition>double rocalution::MultiElimination&lt; OperatorType, VectorType, ValueType &gt;::drop_off_</definition>
+        <argsstring></argsstring>
+        <name>drop_off_</name>
+        <briefdescription>
+<para>Drop off. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multielimination.hpp" line="139" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multielimination.hpp" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrocalution_1_1_multi_elimination_1ae9194e3d8f56c8b0b72dd82b616d5c2b" prot="protected" static="no" mutable="no">
+        <type>VectorType</type>
+        <definition>VectorType rocalution::MultiElimination&lt; OperatorType, VectorType, ValueType &gt;::inv_vec_D_</definition>
+        <argsstring></argsstring>
+        <name>inv_vec_D_</name>
+        <briefdescription>
+<para>Inverse diagonal. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multielimination.hpp" line="142" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multielimination.hpp" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrocalution_1_1_multi_elimination_1a26ed77ccc1d0b4e50a9546465997d527" prot="protected" static="no" mutable="no">
+        <type>VectorType</type>
+        <definition>VectorType rocalution::MultiElimination&lt; OperatorType, VectorType, ValueType &gt;::vec_D_</definition>
+        <argsstring></argsstring>
+        <name>vec_D_</name>
+        <briefdescription>
+<para>Diagonal. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multielimination.hpp" line="144" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multielimination.hpp" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrocalution_1_1_multi_elimination_1a013b971558a0674ce4b900e342ed6d1a" prot="protected" static="no" mutable="no">
+        <type><ref refid="classrocalution_1_1_local_vector" kindref="compound">LocalVector</ref>&lt; int &gt;</type>
+        <definition>LocalVector&lt;int&gt; rocalution::MultiElimination&lt; OperatorType, VectorType, ValueType &gt;::permutation_</definition>
+        <argsstring></argsstring>
+        <name>permutation_</name>
+        <briefdescription>
+<para>Permutation vector. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multielimination.hpp" line="146" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multielimination.hpp" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrocalution_1_1_multi_elimination_1a10b6af07b0913829d5d626676e0ba945" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int rocalution::MultiElimination&lt; OperatorType, VectorType, ValueType &gt;::size_</definition>
+        <argsstring></argsstring>
+        <name>size_</name>
+        <briefdescription>
+<para>Size. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multielimination.hpp" line="148" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multielimination.hpp" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classrocalution_1_1_multi_elimination_1aef6e7e09b832f11b2ae9128551aba1c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>rocalution::MultiElimination&lt; OperatorType, VectorType, ValueType &gt;::MultiElimination</definition>
+        <argsstring>()</argsstring>
+        <name>MultiElimination</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multielimination.hpp" line="63" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multielimination.cpp" bodystart="41" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_multi_elimination_1abe39b5a88741c885da363945c55866b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>rocalution::MultiElimination&lt; OperatorType, VectorType, ValueType &gt;::~MultiElimination</definition>
+        <argsstring>()</argsstring>
+        <name>~MultiElimination</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multielimination.hpp" line="64" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multielimination.cpp" bodystart="61" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_multi_elimination_1a1e477e9f38017bea89d7d022d0a5ce0f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int rocalution::MultiElimination&lt; OperatorType, VectorType, ValueType &gt;::GetSizeDiagBlock</definition>
+        <argsstring>(void) const</argsstring>
+        <name>GetSizeDiagBlock</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Returns the size of the first (diagonal) block of the preconditioner. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multielimination.hpp" line="67" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multielimination.hpp" bodystart="67" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_multi_elimination_1ad9da13d305752da8c082d75d3ee477db" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int rocalution::MultiElimination&lt; OperatorType, VectorType, ValueType &gt;::GetLevel</definition>
+        <argsstring>(void) const</argsstring>
+        <name>GetLevel</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Return the depth of the current level. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multielimination.hpp" line="70" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multielimination.hpp" bodystart="70" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_multi_elimination_1ad12a355d05f6379a980af64334703732" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void rocalution::MultiElimination&lt; OperatorType, VectorType, ValueType &gt;::Print</definition>
+        <argsstring>(void) const</argsstring>
+        <name>Print</name>
+        <reimplements refid="classrocalution_1_1_solver_1a57992cfc687f3bf260964ad2fc19c467">Print</reimplements>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Print information about the solver. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multielimination.hpp" line="72" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multielimination.cpp" bodystart="128" bodyend="149"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_multi_elimination_1a68bc12e2a463e6adc4eca8c48c008fc4" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void rocalution::MultiElimination&lt; OperatorType, VectorType, ValueType &gt;::Clear</definition>
+        <argsstring>(void)</argsstring>
+        <name>Clear</name>
+        <reimplements refid="classrocalution_1_1_solver_1aa8839d3ba527d75fedd29fdbe9bd651f">Clear</reimplements>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Clear (free all local data) the solver. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multielimination.hpp" line="73" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multielimination.cpp" bodystart="69" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_multi_elimination_1a332a7c50fb62ccb9631f58b881acb621" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rocalution::MultiElimination&lt; OperatorType, VectorType, ValueType &gt;::Set</definition>
+        <argsstring>(Solver&lt; OperatorType, VectorType, ValueType &gt; &amp;AA_Solver, int level, double drop_off=0.0)</argsstring>
+        <name>Set</name>
+        <param>
+          <type><ref refid="classrocalution_1_1_solver" kindref="compound">Solver</ref>&lt; OperatorType, VectorType, ValueType &gt; &amp;</type>
+          <declname>AA_Solver</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>level</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>drop_off</declname>
+          <defval>0.0</defval>
+        </param>
+        <briefdescription>
+<para>Initialize (recursively) ME-ILU with level (depth of recursion) </para>        </briefdescription>
+        <detaileddescription>
+<para>AA_Solvers - defines the last-block solver <linebreak/>
+ drop_off - defines drop-off tolerance </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multielimination.hpp" line="80" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multielimination.cpp" bodystart="152" bodyend="162"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_multi_elimination_1a6ec26a31af3b2b142bc67af672ca0c9d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rocalution::MultiElimination&lt; OperatorType, VectorType, ValueType &gt;::SetPrecondMatrixFormat</definition>
+        <argsstring>(unsigned int mat_format)</argsstring>
+        <name>SetPrecondMatrixFormat</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>mat_format</declname>
+        </param>
+        <briefdescription>
+<para>Set a specific matrix type of the decomposed block matrices. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multielimination.hpp" line="83" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multielimination.cpp" bodystart="165" bodyend="172"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_multi_elimination_1ab4a54648616d62a3d4a390c6f7b13eaf" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void rocalution::MultiElimination&lt; OperatorType, VectorType, ValueType &gt;::Build</definition>
+        <argsstring>(void)</argsstring>
+        <name>Build</name>
+        <reimplements refid="classrocalution_1_1_solver_1a84754d7422ad3fb35c17c61f0a609c7a">Build</reimplements>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Build the solver (data allocation, structure and numerical computation) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multielimination.hpp" line="85" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multielimination.cpp" bodystart="175" bodyend="310"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_multi_elimination_1a42a0951eda58472c2971761140f5b787" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void rocalution::MultiElimination&lt; OperatorType, VectorType, ValueType &gt;::Solve</definition>
+        <argsstring>(const VectorType &amp;rhs, VectorType *x)</argsstring>
+        <name>Solve</name>
+        <reimplements refid="classrocalution_1_1_solver_1a69025eb1d2bc7f1266899c2739c82725">Solve</reimplements>
+        <param>
+          <type>const VectorType &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <param>
+          <type>VectorType *</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+<para>Solve <ref refid="classrocalution_1_1_operator" kindref="compound">Operator</ref> x = rhs. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multielimination.hpp" line="87" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multielimination.cpp" bodystart="313" bodyend="343"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classrocalution_1_1_multi_elimination_1a5bd792143c25d5d5c8e13d56e2685625" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void rocalution::MultiElimination&lt; OperatorType, VectorType, ValueType &gt;::MoveToHostLocalData_</definition>
+        <argsstring>(void)</argsstring>
+        <name>MoveToHostLocalData_</name>
+        <reimplements refid="classrocalution_1_1_solver_1aa1e8be1bd2107543c7390a81f8cee8cb">MoveToHostLocalData_</reimplements>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Move all local data to the host. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multielimination.hpp" line="150" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multielimination.cpp" bodystart="346" bodyend="378"/>
+      </memberdef>
+      <memberdef kind="function" id="classrocalution_1_1_multi_elimination_1adef57227b295ee3d20084d83267dd7bc" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void rocalution::MultiElimination&lt; OperatorType, VectorType, ValueType &gt;::MoveToAcceleratorLocalData_</definition>
+        <argsstring>(void)</argsstring>
+        <name>MoveToAcceleratorLocalData_</name>
+        <reimplements refid="classrocalution_1_1_solver_1a8ce29de0bdda9f35a6a687fd06ac9b11">MoveToAcceleratorLocalData_</reimplements>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Move all local data to the accelerator. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multielimination.hpp" line="151" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multielimination.cpp" bodystart="381" bodyend="413"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Multi-Elimination Incomplete <ref refid="classrocalution_1_1_l_u" kindref="compound">LU</ref> Factorization <ref refid="classrocalution_1_1_preconditioner" kindref="compound">Preconditioner</ref>. </para>    </briefdescription>
+    <detaileddescription>
+<para>The Multi-Elimination Incomplete <ref refid="classrocalution_1_1_l_u" kindref="compound">LU</ref> preconditioner is based on the following decomposition <formula id="44">\[ A = \begin{pmatrix} D &amp; F \\ E &amp; C \end{pmatrix} = \begin{pmatrix} I &amp; 0 \\ ED^{-1} &amp; I \end{pmatrix} \times \begin{pmatrix} D &amp; F \\ 0 &amp; \hat{A} \end{pmatrix}, \]</formula> where <formula id="45">$\hat{A} = C - ED^{-1} F$</formula>. To make the inversion of <formula id="36">$D$</formula> easier, we permute the preconditioning before the factorization with a permutation <formula id="42">$P$</formula> to obtain only diagonal elements in <formula id="36">$D$</formula>. The permutation here is based on a maximal independent set. This procedure can be applied to the block matrix <formula id="46">$\hat{A}$</formula>, in this way we can perform the factorization recursively. In the last level of the recursion, we need to provide a solution procedure. By the design of the library, this can be any kind of solver. SAAD</para><para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>OperatorType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- can be <ref refid="classrocalution_1_1_local_matrix" kindref="compound">LocalMatrix</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>VectorType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- can be <ref refid="classrocalution_1_1_local_vector" kindref="compound">LocalVector</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ValueType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- can be float, double, std::complex&lt;float&gt; or std::complex&lt;double&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="516">
+        <label>rocalution::MultiElimination&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_multi_elimination"/>
+        <childnode refid="517" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="517">
+        <label>rocalution::Preconditioner&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_preconditioner"/>
+        <childnode refid="518" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="518">
+        <label>rocalution::Solver&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_solver"/>
+        <childnode refid="519" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="519">
+        <label>rocalution::RocalutionObj</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="525">
+        <label>rocalution::Vector&lt; int &gt;</label>
+        <link refid="classrocalution_1_1_vector"/>
+        <childnode refid="526" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="526">
+        <label>rocalution::BaseRocalution&lt; ValueType &gt;</label>
+        <link refid="classrocalution_1_1_base_rocalution"/>
+        <childnode refid="523" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="520">
+        <label>rocalution::MultiElimination&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_multi_elimination"/>
+        <childnode refid="521" relation="public-inheritance">
+        </childnode>
+        <childnode refid="524" relation="usage">
+          <edgelabel>permutation_</edgelabel>
+        </childnode>
+        <childnode refid="527" relation="usage">
+          <edgelabel>F_</edgelabel>
+          <edgelabel>E_</edgelabel>
+          <edgelabel>AA_</edgelabel>
+          <edgelabel>D_</edgelabel>
+          <edgelabel>C_</edgelabel>
+          <edgelabel>A_</edgelabel>
+        </childnode>
+      </node>
+      <node id="521">
+        <label>rocalution::Preconditioner&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_preconditioner"/>
+        <childnode refid="522" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="522">
+        <label>rocalution::Solver&lt; OperatorType, VectorType, ValueType &gt;</label>
+        <link refid="classrocalution_1_1_solver"/>
+        <childnode refid="523" relation="public-inheritance">
+        </childnode>
+        <childnode refid="524" relation="usage">
+          <edgelabel>permutation_</edgelabel>
+        </childnode>
+        <childnode refid="527" relation="usage">
+          <edgelabel>op_</edgelabel>
+        </childnode>
+      </node>
+      <node id="524">
+        <label>rocalution::LocalVector&lt; int &gt;</label>
+        <link refid="classrocalution_1_1_local_vector"/>
+        <childnode refid="525" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="523">
+        <label>rocalution::RocalutionObj</label>
+      </node>
+      <node id="527">
+        <label>OperatorType</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multielimination.hpp" line="61" column="1" bodyfile="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_multielimination.hpp" bodystart="60" bodyend="152"/>
+    <listofallmembers>
+      <member refid="classrocalution_1_1_multi_elimination_1a38a1563eaff8d49042471467846f7e97" prot="protected" virt="non-virtual"><scope>rocalution::MultiElimination</scope><name>A_</name></member>
+      <member refid="classrocalution_1_1_multi_elimination_1a38f1b0f6a18aba289df31032dc0e56df" prot="protected" virt="non-virtual"><scope>rocalution::MultiElimination</scope><name>AA_</name></member>
+      <member refid="classrocalution_1_1_multi_elimination_1a605768b1761f21fce8b5a2c713f7d8bd" prot="protected" virt="non-virtual"><scope>rocalution::MultiElimination</scope><name>AA_me_</name></member>
+      <member refid="classrocalution_1_1_multi_elimination_1a002483103e06a2b216f3d5079e29bf84" prot="protected" virt="non-virtual"><scope>rocalution::MultiElimination</scope><name>AA_nnz_</name></member>
+      <member refid="classrocalution_1_1_multi_elimination_1ad390fdf8e26357f5c83b03ba9c166ca2" prot="protected" virt="non-virtual"><scope>rocalution::MultiElimination</scope><name>AA_nrow_</name></member>
+      <member refid="classrocalution_1_1_multi_elimination_1a2fe71dd02982547e77751eb888de18b0" prot="protected" virt="non-virtual"><scope>rocalution::MultiElimination</scope><name>AA_solver_</name></member>
+      <member refid="classrocalution_1_1_multi_elimination_1ab4a54648616d62a3d4a390c6f7b13eaf" prot="public" virt="virtual"><scope>rocalution::MultiElimination</scope><name>Build</name></member>
+      <member refid="classrocalution_1_1_solver_1a64924a0c87d60d2e4bf9fa295d0152cb" prot="protected" virt="non-virtual"><scope>rocalution::MultiElimination</scope><name>build_</name></member>
+      <member refid="classrocalution_1_1_solver_1a0d11ee9943f785db285f0ef5c08c64eb" prot="public" virt="virtual"><scope>rocalution::MultiElimination</scope><name>BuildMoveToAcceleratorAsync</name></member>
+      <member refid="classrocalution_1_1_multi_elimination_1a4a6e4d04cf5c628b5776c9b0ea0c1e15" prot="protected" virt="non-virtual"><scope>rocalution::MultiElimination</scope><name>C_</name></member>
+      <member refid="classrocalution_1_1_multi_elimination_1a68bc12e2a463e6adc4eca8c48c008fc4" prot="public" virt="virtual"><scope>rocalution::MultiElimination</scope><name>Clear</name></member>
+      <member refid="classrocalution_1_1_multi_elimination_1a336a676d6685d7f4a5340f20ff60ff02" prot="protected" virt="non-virtual"><scope>rocalution::MultiElimination</scope><name>D_</name></member>
+      <member refid="classrocalution_1_1_multi_elimination_1a9e52ab71b79583bc277cddfdb0f47ac1" prot="protected" virt="non-virtual"><scope>rocalution::MultiElimination</scope><name>diag_solver_init_</name></member>
+      <member refid="classrocalution_1_1_multi_elimination_1a22c60739a663fdb31e1cb83d01df9b70" prot="protected" virt="non-virtual"><scope>rocalution::MultiElimination</scope><name>drop_off_</name></member>
+      <member refid="classrocalution_1_1_multi_elimination_1abf421eac09c0bb4d0549f1eb88e8467c" prot="protected" virt="non-virtual"><scope>rocalution::MultiElimination</scope><name>E_</name></member>
+      <member refid="classrocalution_1_1_multi_elimination_1ab8ad4e7abc74bf472d8f8e070614878a" prot="protected" virt="non-virtual"><scope>rocalution::MultiElimination</scope><name>F_</name></member>
+      <member refid="classrocalution_1_1_multi_elimination_1ad9da13d305752da8c082d75d3ee477db" prot="public" virt="non-virtual"><scope>rocalution::MultiElimination</scope><name>GetLevel</name></member>
+      <member refid="classrocalution_1_1_multi_elimination_1a1e477e9f38017bea89d7d022d0a5ce0f" prot="public" virt="non-virtual"><scope>rocalution::MultiElimination</scope><name>GetSizeDiagBlock</name></member>
+      <member refid="classrocalution_1_1_rocalution_obj_1a4bba5aeaf4fd705efc00402f1f6ed40b" prot="protected" virt="non-virtual"><scope>rocalution::MultiElimination</scope><name>global_obj_id_</name></member>
+      <member refid="classrocalution_1_1_multi_elimination_1ae9194e3d8f56c8b0b72dd82b616d5c2b" prot="protected" virt="non-virtual"><scope>rocalution::MultiElimination</scope><name>inv_vec_D_</name></member>
+      <member refid="classrocalution_1_1_multi_elimination_1ac44c864b522f3a5ae0db4d8fb2290ece" prot="protected" virt="non-virtual"><scope>rocalution::MultiElimination</scope><name>level_</name></member>
+      <member refid="classrocalution_1_1_solver_1ab1b6410cd134c9ad00c1851d400cf0f8" prot="public" virt="virtual"><scope>rocalution::MultiElimination</scope><name>MoveToAccelerator</name></member>
+      <member refid="classrocalution_1_1_multi_elimination_1adef57227b295ee3d20084d83267dd7bc" prot="protected" virt="virtual"><scope>rocalution::MultiElimination</scope><name>MoveToAcceleratorLocalData_</name></member>
+      <member refid="classrocalution_1_1_solver_1a3c263e65898816f5838184c0af78a044" prot="public" virt="virtual"><scope>rocalution::MultiElimination</scope><name>MoveToHost</name></member>
+      <member refid="classrocalution_1_1_multi_elimination_1a5bd792143c25d5d5c8e13d56e2685625" prot="protected" virt="virtual"><scope>rocalution::MultiElimination</scope><name>MoveToHostLocalData_</name></member>
+      <member refid="classrocalution_1_1_multi_elimination_1aef6e7e09b832f11b2ae9128551aba1c2" prot="public" virt="non-virtual"><scope>rocalution::MultiElimination</scope><name>MultiElimination</name></member>
+      <member refid="classrocalution_1_1_solver_1ad338b5f99cf339fb33218dd8b958cac4" prot="protected" virt="non-virtual"><scope>rocalution::MultiElimination</scope><name>op_</name></member>
+      <member refid="classrocalution_1_1_multi_elimination_1a396d6908f2b70e8f91fdb7d48357d2f5" prot="protected" virt="non-virtual"><scope>rocalution::MultiElimination</scope><name>op_mat_format_</name></member>
+      <member refid="classrocalution_1_1_multi_elimination_1a013b971558a0674ce4b900e342ed6d1a" prot="protected" virt="non-virtual"><scope>rocalution::MultiElimination</scope><name>permutation_</name></member>
+      <member refid="classrocalution_1_1_solver_1a2acdb829fa657a7b3e680d1ee6005c9b" prot="protected" virt="non-virtual"><scope>rocalution::MultiElimination</scope><name>precond_</name></member>
+      <member refid="classrocalution_1_1_multi_elimination_1abc53265e38c6d3d906397f640c1d62cb" prot="protected" virt="non-virtual"><scope>rocalution::MultiElimination</scope><name>precond_mat_format_</name></member>
+      <member refid="classrocalution_1_1_preconditioner_1a964b8c3f97a675f8a098b7539d8a6600" prot="public" virt="non-virtual"><scope>rocalution::MultiElimination</scope><name>Preconditioner</name></member>
+      <member refid="classrocalution_1_1_multi_elimination_1ad12a355d05f6379a980af64334703732" prot="public" virt="virtual"><scope>rocalution::MultiElimination</scope><name>Print</name></member>
+      <member refid="classrocalution_1_1_preconditioner_1aa16516bd94c4e5a931ec3adad6b2081b" prot="protected" virt="virtual"><scope>rocalution::MultiElimination</scope><name>PrintEnd_</name></member>
+      <member refid="classrocalution_1_1_preconditioner_1abf90b743371c8d0159a6cad44e8595f3" prot="protected" virt="virtual"><scope>rocalution::MultiElimination</scope><name>PrintStart_</name></member>
+      <member refid="classrocalution_1_1_solver_1acd20a051f0560a77645e35361df8f87c" prot="public" virt="virtual"><scope>rocalution::MultiElimination</scope><name>ReBuildNumeric</name></member>
+      <member refid="classrocalution_1_1_solver_1a91354c5c116742c58d9eb2094cc6a68e" prot="public" virt="virtual"><scope>rocalution::MultiElimination</scope><name>ResetOperator</name></member>
+      <member refid="classrocalution_1_1_multi_elimination_1a947542a57a659412cf223f58fc5c9c60" prot="protected" virt="non-virtual"><scope>rocalution::MultiElimination</scope><name>rhs_</name></member>
+      <member refid="classrocalution_1_1_multi_elimination_1a46d730d8bb4ffdae92bb8c186ebc9154" prot="protected" virt="non-virtual"><scope>rocalution::MultiElimination</scope><name>rhs_1_</name></member>
+      <member refid="classrocalution_1_1_multi_elimination_1ad4defb98ff998a2244d0855ad4c3f809" prot="protected" virt="non-virtual"><scope>rocalution::MultiElimination</scope><name>rhs_2_</name></member>
+      <member refid="classrocalution_1_1_rocalution_obj_1ad60a8b2047aad74e488c552264fa7737" prot="public" virt="non-virtual"><scope>rocalution::MultiElimination</scope><name>RocalutionObj</name></member>
+      <member refid="classrocalution_1_1_multi_elimination_1a332a7c50fb62ccb9631f58b881acb621" prot="public" virt="non-virtual"><scope>rocalution::MultiElimination</scope><name>Set</name></member>
+      <member refid="classrocalution_1_1_solver_1a12765b63efe75bc88406a8d6ebb5aacc" prot="public" virt="non-virtual"><scope>rocalution::MultiElimination</scope><name>SetOperator</name></member>
+      <member refid="classrocalution_1_1_multi_elimination_1a6ec26a31af3b2b142bc67af672ca0c9d" prot="public" virt="non-virtual"><scope>rocalution::MultiElimination</scope><name>SetPrecondMatrixFormat</name></member>
+      <member refid="classrocalution_1_1_multi_elimination_1a10b6af07b0913829d5d626676e0ba945" prot="protected" virt="non-virtual"><scope>rocalution::MultiElimination</scope><name>size_</name></member>
+      <member refid="classrocalution_1_1_multi_elimination_1a42a0951eda58472c2971761140f5b787" prot="public" virt="virtual"><scope>rocalution::MultiElimination</scope><name>Solve</name></member>
+      <member refid="classrocalution_1_1_solver_1a009956b05d4d5d1d38e4c24341b14a66" prot="public" virt="non-virtual"><scope>rocalution::MultiElimination</scope><name>Solver</name></member>
+      <member refid="classrocalution_1_1_preconditioner_1a2d2f41ddc040d777783d2591c8324508" prot="public" virt="virtual"><scope>rocalution::MultiElimination</scope><name>SolveZeroSol</name></member>
+      <member refid="classrocalution_1_1_solver_1a17c2830a0ede8d82d1336aa25da6f907" prot="public" virt="virtual"><scope>rocalution::MultiElimination</scope><name>Sync</name></member>
+      <member refid="classrocalution_1_1_multi_elimination_1a26ed77ccc1d0b4e50a9546465997d527" prot="protected" virt="non-virtual"><scope>rocalution::MultiElimination</scope><name>vec_D_</name></member>
+      <member refid="classrocalution_1_1_solver_1a2ee162346e0d52543f9d3d25fe70ea8a" prot="protected" virt="non-virtual"><scope>rocalution::MultiElimination</scope><name>verb_</name></member>
+      <member refid="classrocalution_1_1_solver_1aa2ab9c17de96add5e3ad30e7cabf0ea7" prot="public" virt="virtual"><scope>rocalution::MultiElimination</scope><name>Verbose</name></member>
+      <member refid="classrocalution_1_1_multi_elimination_1a9f60bd037338af60f67001572351e055" prot="protected" virt="non-virtual"><scope>rocalution::MultiElimination</scope><name>x_</name></member>
+      <member refid="classrocalution_1_1_multi_elimination_1a55a89a86f6c13590fc63154d766944d3" prot="protected" virt="non-virtual"><scope>rocalution::MultiElimination</scope><name>x_1_</name></member>
+      <member refid="classrocalution_1_1_multi_elimination_1afbe8b61a8af0d33e9002d0e106fa82b4" prot="protected" virt="non-virtual"><scope>rocalution::MultiElimination</scope><name>x_2_</name></member>
+      <member refid="classrocalution_1_1_multi_elimination_1abe39b5a88741c885da363945c55866b9" prot="public" virt="virtual"><scope>rocalution::MultiElimination</scope><name>~MultiElimination</name></member>
+      <member refid="classrocalution_1_1_preconditioner_1aac6cfbb3d6c5cd248d7b7dabac096a76" prot="public" virt="virtual"><scope>rocalution::MultiElimination</scope><name>~Preconditioner</name></member>
+      <member refid="classrocalution_1_1_rocalution_obj_1a55a2f93f798cebdda6343b20db959e2d" prot="public" virt="virtual"><scope>rocalution::MultiElimination</scope><name>~RocalutionObj</name></member>
+      <member refid="classrocalution_1_1_solver_1af861566a540fc6cc399c844bbc789ec6" prot="public" virt="virtual"><scope>rocalution::MultiElimination</scope><name>~Solver</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

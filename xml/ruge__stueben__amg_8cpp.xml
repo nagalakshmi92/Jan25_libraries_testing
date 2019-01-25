@@ -3,173 +3,218 @@
   <compounddef id="ruge__stueben__amg_8cpp" kind="file" language="C++">
     <compoundname>ruge_stueben_amg.cpp</compoundname>
     <includes local="yes">../../utils/def.hpp</includes>
-    <includes local="yes">ruge_stueben_amg.hpp</includes>
-    <includes local="yes">/home/tcs/Jan24/Jan24_libraries_testing/ROCm_Libraries/rocALUTION/src/solvers/solver.hpp</includes>
-    <includes local="yes">/home/tcs/Jan24/Jan24_libraries_testing/ROCm_Libraries/rocALUTION/src/solvers/multigrid/base_amg.hpp</includes>
-    <includes local="no">vector</includes>
+    <includes refid="ruge__stueben__amg_8hpp" local="yes">ruge_stueben_amg.hpp</includes>
     <includes refid="local__matrix_8hpp" local="yes">../../base/local_matrix.hpp</includes>
     <includes refid="local__vector_8hpp" local="yes">../../base/local_vector.hpp</includes>
-    <includes local="yes">../preconditioners/preconditioner_multicolored_gs.hpp</includes>
-    <includes local="yes">/home/tcs/Jan24/Jan24_libraries_testing/ROCm_Libraries/rocALUTION/src/solvers/preconditioners/preconditioner.hpp</includes>
-    <includes local="yes">/home/tcs/Jan24/Jan24_libraries_testing/ROCm_Libraries/rocALUTION/src/solvers/preconditioners/preconditioner_multicolored.hpp</includes>
+    <includes refid="preconditioner__multicolored__gs_8hpp" local="yes">../preconditioners/preconditioner_multicolored_gs.hpp</includes>
     <includes local="yes">../../utils/log.hpp</includes>
     <includes local="yes">../../utils/math_functions.hpp</includes>
     <incdepgraph>
-      <node id="759">
-        <label>/home/tcs/Jan24/Jan24_libraries_testing/ROCm_Libraries/rocALUTION/src/solvers/preconditioners/preconditioner_multicolored.hpp</label>
-      </node>
-      <node id="747">
-        <label>backend_manager.hpp</label>
-        <link refid="backend__manager_8hpp_source"/>
-        <childnode refid="748" relation="include">
-        </childnode>
-        <childnode refid="749" relation="include">
-        </childnode>
-        <childnode refid="750" relation="include">
-        </childnode>
-        <childnode refid="742" relation="include">
-        </childnode>
-        <childnode refid="751" relation="include">
-        </childnode>
-      </node>
-      <node id="745">
-        <label>operator.hpp</label>
-        <link refid="operator_8hpp_source"/>
-        <childnode refid="744" relation="include">
-        </childnode>
-        <childnode refid="746" relation="include">
-        </childnode>
-        <childnode refid="748" relation="include">
-        </childnode>
-        <childnode refid="751" relation="include">
-        </childnode>
-        <childnode refid="753" relation="include">
-        </childnode>
-      </node>
-      <node id="751">
-        <label>string</label>
-      </node>
-      <node id="750">
-        <label>map</label>
-      </node>
-      <node id="758">
-        <label>/home/tcs/Jan24/Jan24_libraries_testing/ROCm_Libraries/rocALUTION/src/solvers/preconditioners/preconditioner.hpp</label>
-      </node>
-      <node id="749">
-        <label>fstream</label>
-      </node>
-      <node id="754">
-        <label>matrix_formats.hpp</label>
-      </node>
-      <node id="755">
-        <label>../../base/local_vector.hpp</label>
+      <node id="1271">
+        <label>../base/local_vector.hpp</label>
         <link refid="local__vector_8hpp_source"/>
-        <childnode refid="744" relation="include">
+        <childnode refid="1272" relation="include">
         </childnode>
-        <childnode refid="756" relation="include">
-        </childnode>
-      </node>
-      <node id="746">
-        <label>base_rocalution.hpp</label>
-        <link refid="base__rocalution_8hpp_source"/>
-        <childnode refid="747" relation="include">
-        </childnode>
-        <childnode refid="752" relation="include">
-        </childnode>
-        <childnode refid="742" relation="include">
+        <childnode refid="1273" relation="include">
         </childnode>
       </node>
-      <node id="743">
-        <label>../../base/local_matrix.hpp</label>
-        <link refid="local__matrix_8hpp_source"/>
-        <childnode refid="744" relation="include">
-        </childnode>
-        <childnode refid="745" relation="include">
-        </childnode>
-        <childnode refid="747" relation="include">
-        </childnode>
-        <childnode refid="754" relation="include">
-        </childnode>
-        <childnode refid="751" relation="include">
-        </childnode>
-      </node>
-      <node id="744">
-        <label>../utils/types.hpp</label>
-      </node>
-      <node id="742">
-        <label>vector</label>
-      </node>
-      <node id="738">
-        <label>../../utils/def.hpp</label>
-      </node>
-      <node id="760">
-        <label>../../utils/log.hpp</label>
-      </node>
-      <node id="739">
+      <node id="1260">
         <label>ruge_stueben_amg.hpp</label>
+        <link refid="ruge__stueben__amg_8hpp_source"/>
+        <childnode refid="1261" relation="include">
+        </childnode>
+        <childnode refid="1275" relation="include">
+        </childnode>
+        <childnode refid="1263" relation="include">
+        </childnode>
       </node>
-      <node id="753">
-        <label>cstdlib</label>
+      <node id="1281">
+        <label>preconditioner.hpp</label>
+        <link refid="preconditioner_8hpp_source"/>
+        <childnode refid="1261" relation="include">
+        </childnode>
       </node>
-      <node id="741">
-        <label>/home/tcs/Jan24/Jan24_libraries_testing/ROCm_Libraries/rocALUTION/src/solvers/multigrid/base_amg.hpp</label>
-      </node>
-      <node id="748">
-        <label>iostream</label>
-      </node>
-      <node id="740">
-        <label>/home/tcs/Jan24/Jan24_libraries_testing/ROCm_Libraries/rocALUTION/src/solvers/solver.hpp</label>
-      </node>
-      <node id="757">
-        <label>../preconditioners/preconditioner_multicolored_gs.hpp</label>
-      </node>
-      <node id="756">
+      <node id="1273">
         <label>vector.hpp</label>
         <link refid="vector_8hpp_source"/>
-        <childnode refid="744" relation="include">
+        <childnode refid="1272" relation="include">
         </childnode>
-        <childnode refid="746" relation="include">
+        <childnode refid="1265" relation="include">
         </childnode>
-        <childnode refid="748" relation="include">
+        <childnode refid="1267" relation="include">
         </childnode>
-        <childnode refid="751" relation="include">
+        <childnode refid="1264" relation="include">
         </childnode>
-        <childnode refid="753" relation="include">
+        <childnode refid="1274" relation="include">
         </childnode>
       </node>
-      <node id="752">
+      <node id="1277">
+        <label>../../base/operator.hpp</label>
+        <link refid="operator_8hpp_source"/>
+        <childnode refid="1272" relation="include">
+        </childnode>
+        <childnode refid="1265" relation="include">
+        </childnode>
+        <childnode refid="1267" relation="include">
+        </childnode>
+        <childnode refid="1264" relation="include">
+        </childnode>
+        <childnode refid="1274" relation="include">
+        </childnode>
+      </node>
+      <node id="1264">
+        <label>string</label>
+      </node>
+      <node id="1258">
+        <label>/home/tcs/rocALUTION/src/solvers/multigrid/ruge_stueben_amg.cpp</label>
+        <link refid="ruge__stueben__amg_8cpp"/>
+        <childnode refid="1259" relation="include">
+        </childnode>
+        <childnode refid="1260" relation="include">
+        </childnode>
+        <childnode refid="1278" relation="include">
+        </childnode>
+        <childnode refid="1271" relation="include">
+        </childnode>
+        <childnode refid="1280" relation="include">
+        </childnode>
+        <childnode refid="1283" relation="include">
+        </childnode>
+        <childnode refid="1284" relation="include">
+        </childnode>
+      </node>
+      <node id="1269">
+        <label>map</label>
+      </node>
+      <node id="1261">
+        <label>../solver.hpp</label>
+        <link refid="solver_8hpp_source"/>
+        <childnode refid="1262" relation="include">
+        </childnode>
+        <childnode refid="1265" relation="include">
+        </childnode>
+        <childnode refid="1271" relation="include">
+        </childnode>
+      </node>
+      <node id="1280">
+        <label>../preconditioners/preconditioner_multicolored_gs.hpp</label>
+        <link refid="preconditioner__multicolored__gs_8hpp_source"/>
+        <childnode refid="1261" relation="include">
+        </childnode>
+        <childnode refid="1281" relation="include">
+        </childnode>
+        <childnode refid="1282" relation="include">
+        </childnode>
+        <childnode refid="1271" relation="include">
+        </childnode>
+        <childnode refid="1263" relation="include">
+        </childnode>
+      </node>
+      <node id="1268">
+        <label>fstream</label>
+      </node>
+      <node id="1279">
+        <label>matrix_formats.hpp</label>
+      </node>
+      <node id="1276">
+        <label>base_multigrid.hpp</label>
+        <link refid="base__multigrid_8hpp_source"/>
+        <childnode refid="1261" relation="include">
+        </childnode>
+        <childnode refid="1277" relation="include">
+        </childnode>
+      </node>
+      <node id="1272">
+        <label>../utils/types.hpp</label>
+      </node>
+      <node id="1265">
+        <label>../base/base_rocalution.hpp</label>
+        <link refid="base__rocalution_8hpp_source"/>
+        <childnode refid="1266" relation="include">
+        </childnode>
+        <childnode refid="1270" relation="include">
+        </childnode>
+        <childnode refid="1263" relation="include">
+        </childnode>
+      </node>
+      <node id="1263">
+        <label>vector</label>
+      </node>
+      <node id="1259">
+        <label>../../utils/def.hpp</label>
+      </node>
+      <node id="1283">
+        <label>../../utils/log.hpp</label>
+      </node>
+      <node id="1274">
+        <label>cstdlib</label>
+      </node>
+      <node id="1282">
+        <label>preconditioner_multicolored.hpp</label>
+        <link refid="preconditioner__multicolored_8hpp_source"/>
+        <childnode refid="1261" relation="include">
+        </childnode>
+        <childnode refid="1281" relation="include">
+        </childnode>
+        <childnode refid="1271" relation="include">
+        </childnode>
+        <childnode refid="1263" relation="include">
+        </childnode>
+      </node>
+      <node id="1267">
+        <label>iostream</label>
+      </node>
+      <node id="1266">
+        <label>backend_manager.hpp</label>
+        <link refid="backend__manager_8hpp_source"/>
+        <childnode refid="1267" relation="include">
+        </childnode>
+        <childnode refid="1268" relation="include">
+        </childnode>
+        <childnode refid="1269" relation="include">
+        </childnode>
+        <childnode refid="1263" relation="include">
+        </childnode>
+        <childnode refid="1264" relation="include">
+        </childnode>
+      </node>
+      <node id="1275">
+        <label>base_amg.hpp</label>
+        <link refid="base__amg_8hpp_source"/>
+        <childnode refid="1261" relation="include">
+        </childnode>
+        <childnode refid="1276" relation="include">
+        </childnode>
+        <childnode refid="1263" relation="include">
+        </childnode>
+      </node>
+      <node id="1262">
+        <label>iter_ctrl.hpp</label>
+        <link refid="iter__ctrl_8hpp_source"/>
+        <childnode refid="1263" relation="include">
+        </childnode>
+        <childnode refid="1264" relation="include">
+        </childnode>
+      </node>
+      <node id="1270">
         <label>complex</label>
       </node>
-      <node id="737">
-        <label>ROCm_Libraries/rocALUTION/src/solvers/multigrid/ruge_stueben_amg.cpp</label>
-        <link refid="ruge__stueben__amg_8cpp"/>
-        <childnode refid="738" relation="include">
-        </childnode>
-        <childnode refid="739" relation="include">
-        </childnode>
-        <childnode refid="740" relation="include">
-        </childnode>
-        <childnode refid="741" relation="include">
-        </childnode>
-        <childnode refid="742" relation="include">
-        </childnode>
-        <childnode refid="743" relation="include">
-        </childnode>
-        <childnode refid="755" relation="include">
-        </childnode>
-        <childnode refid="757" relation="include">
-        </childnode>
-        <childnode refid="758" relation="include">
-        </childnode>
-        <childnode refid="759" relation="include">
-        </childnode>
-        <childnode refid="760" relation="include">
-        </childnode>
-        <childnode refid="761" relation="include">
-        </childnode>
-      </node>
-      <node id="761">
+      <node id="1284">
         <label>../../utils/math_functions.hpp</label>
+      </node>
+      <node id="1278">
+        <label>../../base/local_matrix.hpp</label>
+        <link refid="local__matrix_8hpp_source"/>
+        <childnode refid="1272" relation="include">
+        </childnode>
+        <childnode refid="1277" relation="include">
+        </childnode>
+        <childnode refid="1266" relation="include">
+        </childnode>
+        <childnode refid="1279" relation="include">
+        </childnode>
+        <childnode refid="1264" relation="include">
+        </childnode>
       </node>
     </incdepgraph>
     <innernamespace refid="namespacerocalution">rocalution</innernamespace>
@@ -232,7 +277,7 @@
 <codeline lineno="52"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="53"><highlight class="normal"></highlight></codeline>
 <codeline lineno="54"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="55"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>RugeStuebenAMG&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::Print(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_ruge_stueben_a_m_g_1a24bed949ec7685f2f81913a71b7e2eee" kindref="member">RugeStuebenAMG&lt;OperatorType, VectorType, ValueType&gt;::Print</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
 <codeline lineno="56"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
 <codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>LOG_INFO(</highlight><highlight class="stringliteral">&quot;AMG<sp/>solver&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>LOG_INFO(</highlight><highlight class="stringliteral">&quot;AMG<sp/>number<sp/>of<sp/>levels<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>this-&gt;levels_);</highlight></codeline>
@@ -244,7 +289,7 @@
 <codeline lineno="64"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="65"><highlight class="normal"></highlight></codeline>
 <codeline lineno="66"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="67"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>RugeStuebenAMG&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::PrintStart_(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_ruge_stueben_a_m_g_1ad8909fc2b44f1528845f33875b2ae4a4" kindref="member">RugeStuebenAMG&lt;OperatorType, VectorType, ValueType&gt;::PrintStart_</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
 <codeline lineno="68"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
 <codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>assert(this-&gt;levels_<sp/>&gt;<sp/>0);</highlight></codeline>
 <codeline lineno="70"><highlight class="normal"></highlight></codeline>
@@ -258,13 +303,13 @@
 <codeline lineno="78"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="79"><highlight class="normal"></highlight></codeline>
 <codeline lineno="80"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="81"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>RugeStuebenAMG&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::PrintEnd_(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_ruge_stueben_a_m_g_1a8462f17320c42c5d13cc5f7d86bd7a4c" kindref="member">RugeStuebenAMG&lt;OperatorType, VectorType, ValueType&gt;::PrintEnd_</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
 <codeline lineno="82"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
 <codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>LOG_INFO(</highlight><highlight class="stringliteral">&quot;AMG<sp/>ends&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="84"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="85"><highlight class="normal"></highlight></codeline>
 <codeline lineno="86"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="87"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>RugeStuebenAMG&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::SetCouplingStrength(ValueType<sp/>eps)</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_ruge_stueben_a_m_g_1a20d71c64006c0d6008d6ce0fbdf58985" kindref="member">RugeStuebenAMG&lt;OperatorType, VectorType, ValueType&gt;::SetCouplingStrength</ref>(ValueType<sp/>eps)</highlight></codeline>
 <codeline lineno="88"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>log_debug(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;RugeStuebenAMG::SetCouplingStrength()&quot;</highlight><highlight class="normal">,<sp/>eps);</highlight></codeline>
 <codeline lineno="90"><highlight class="normal"></highlight></codeline>
@@ -272,7 +317,7 @@
 <codeline lineno="92"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="93"><highlight class="normal"></highlight></codeline>
 <codeline lineno="94"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="95"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>RugeStuebenAMG&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::BuildSmoothers(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_ruge_stueben_a_m_g_1ab3eb89cfda28a8aa74fe56d147652833" kindref="member">RugeStuebenAMG&lt;OperatorType, VectorType, ValueType&gt;::BuildSmoothers</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
 <codeline lineno="96"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>log_debug(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;RugeStuebenAMG::BuildSmoothers()&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;<sp/>#*#<sp/>begin&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="98"><highlight class="normal"></highlight></codeline>
@@ -300,7 +345,7 @@
 <codeline lineno="120"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="121"><highlight class="normal"></highlight></codeline>
 <codeline lineno="122"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="123"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>RugeStuebenAMG&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::ReBuildNumeric(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_ruge_stueben_a_m_g_1a8a5a7518350a5e6d7108e6c7fbf922e3" kindref="member">RugeStuebenAMG&lt;OperatorType, VectorType, ValueType&gt;::ReBuildNumeric</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
 <codeline lineno="124"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/>log_debug(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;RugeStuebenAMG::ReBuildNumeric()&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;<sp/>#*#<sp/>begin&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="126"><highlight class="normal"></highlight></codeline>
@@ -407,7 +452,7 @@
 <codeline lineno="227"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="228"><highlight class="normal"></highlight></codeline>
 <codeline lineno="229"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="230"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>RugeStuebenAMG&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::Aggregate_(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>OperatorType&amp;<sp/>op,</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_ruge_stueben_a_m_g_1a8737c45af98cd6e721dbca5ad13c7b57" kindref="member">RugeStuebenAMG&lt;OperatorType, VectorType, ValueType&gt;::Aggregate_</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>OperatorType&amp;<sp/>op,</highlight></codeline>
 <codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Operator&lt;ValueType&gt;*<sp/>pro,</highlight></codeline>
 <codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Operator&lt;ValueType&gt;*<sp/>res,</highlight></codeline>
 <codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>OperatorType*<sp/>coarse)</highlight></codeline>
@@ -449,6 +494,6 @@
 <codeline lineno="269"><highlight class="normal"></highlight></codeline>
 <codeline lineno="270"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>rocalution</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
-    <location file="ROCm_Libraries/rocALUTION/src/solvers/multigrid/ruge_stueben_amg.cpp"/>
+    <location file="/home/tcs/rocALUTION/src/solvers/multigrid/ruge_stueben_amg.cpp"/>
   </compounddef>
 </doxygen>

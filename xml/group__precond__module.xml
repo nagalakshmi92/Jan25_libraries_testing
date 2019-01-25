@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group__precond__module" kind="group">
+    <compoundname>precond_module</compoundname>
+    <title>Preconditioner Module</title>
+    <innerclass refid="classrocalution_1_1_preconditioner" prot="public">rocalution::Preconditioner</innerclass>
+    <innerclass refid="classrocalution_1_1_jacobi" prot="public">rocalution::Jacobi</innerclass>
+    <innerclass refid="classrocalution_1_1_g_s" prot="public">rocalution::GS</innerclass>
+    <innerclass refid="classrocalution_1_1_s_g_s" prot="public">rocalution::SGS</innerclass>
+    <innerclass refid="classrocalution_1_1_i_l_u" prot="public">rocalution::ILU</innerclass>
+    <innerclass refid="classrocalution_1_1_i_l_u_t" prot="public">rocalution::ILUT</innerclass>
+    <innerclass refid="classrocalution_1_1_i_c" prot="public">rocalution::IC</innerclass>
+    <innerclass refid="classrocalution_1_1_variable_preconditioner" prot="public">rocalution::VariablePreconditioner</innerclass>
+    <innerclass refid="classrocalution_1_1_a_i_chebyshev" prot="public">rocalution::AIChebyshev</innerclass>
+    <innerclass refid="classrocalution_1_1_f_s_a_i" prot="public">rocalution::FSAI</innerclass>
+    <innerclass refid="classrocalution_1_1_s_p_a_i" prot="public">rocalution::SPAI</innerclass>
+    <innerclass refid="classrocalution_1_1_t_n_s" prot="public">rocalution::TNS</innerclass>
+    <innerclass refid="classrocalution_1_1_a_s" prot="public">rocalution::AS</innerclass>
+    <innerclass refid="classrocalution_1_1_r_a_s" prot="public">rocalution::RAS</innerclass>
+    <innerclass refid="classrocalution_1_1_block_jacobi" prot="public">rocalution::BlockJacobi</innerclass>
+    <innerclass refid="classrocalution_1_1_block_preconditioner" prot="public">rocalution::BlockPreconditioner</innerclass>
+    <innerclass refid="classrocalution_1_1_multi_colored" prot="public">rocalution::MultiColored</innerclass>
+    <innerclass refid="classrocalution_1_1_multi_colored_s_g_s" prot="public">rocalution::MultiColoredSGS</innerclass>
+    <innerclass refid="classrocalution_1_1_multi_colored_g_s" prot="public">rocalution::MultiColoredGS</innerclass>
+    <innerclass refid="classrocalution_1_1_multi_colored_i_l_u" prot="public">rocalution::MultiColoredILU</innerclass>
+    <innerclass refid="classrocalution_1_1_multi_elimination" prot="public">rocalution::MultiElimination</innerclass>
+    <innerclass refid="classrocalution_1_1_diag_jacobi_saddle_point_precond" prot="public">rocalution::DiagJacobiSaddlePointPrecond</innerclass>
+    <briefdescription>
+<para>This module contains all preconditioners. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

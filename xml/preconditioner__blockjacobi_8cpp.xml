@@ -3,214 +3,229 @@
   <compounddef id="preconditioner__blockjacobi_8cpp" kind="file" language="C++">
     <compoundname>preconditioner_blockjacobi.cpp</compoundname>
     <includes local="yes">../../utils/def.hpp</includes>
-    <includes local="yes">preconditioner_blockjacobi.hpp</includes>
-    <includes local="yes">/home/tcs/Jan24/Jan24_libraries_testing/ROCm_Libraries/rocALUTION/src/solvers/preconditioners/preconditioner.hpp</includes>
-    <includes local="yes">../solver.hpp</includes>
+    <includes refid="preconditioner__blockjacobi_8hpp" local="yes">preconditioner_blockjacobi.hpp</includes>
+    <includes refid="solver_8hpp" local="yes">../solver.hpp</includes>
     <includes refid="global__matrix_8hpp" local="yes">../../base/global_matrix.hpp</includes>
     <includes refid="local__matrix_8hpp" local="yes">../../base/local_matrix.hpp</includes>
     <includes refid="global__vector_8hpp" local="yes">../../base/global_vector.hpp</includes>
     <includes refid="local__vector_8hpp" local="yes">../../base/local_vector.hpp</includes>
     <includes local="yes">../../utils/log.hpp</includes>
-    <includes local="yes">preconditioner.hpp</includes>
+    <includes refid="preconditioner_8hpp" local="yes">preconditioner.hpp</includes>
     <includes local="no">math.h</includes>
     <includes local="no">complex</includes>
     <incdepgraph>
-      <node id="906">
+      <node id="1548">
+        <label>../base/local_vector.hpp</label>
+        <link refid="local__vector_8hpp_source"/>
+        <childnode refid="1549" relation="include">
+        </childnode>
+        <childnode refid="1550" relation="include">
+        </childnode>
+      </node>
+      <node id="1537">
+        <label>preconditioner.hpp</label>
+        <link refid="preconditioner_8hpp_source"/>
+        <childnode refid="1538" relation="include">
+        </childnode>
+      </node>
+      <node id="1557">
         <label>limits</label>
       </node>
-      <node id="888">
-        <label>preconditioner_blockjacobi.hpp</label>
-      </node>
-      <node id="903">
-        <label>parallel_manager.hpp</label>
-        <link refid="parallel__manager_8hpp_source"/>
-        <childnode refid="894" relation="include">
-        </childnode>
-        <childnode refid="892" relation="include">
-        </childnode>
-        <childnode refid="904" relation="include">
-        </childnode>
-        <childnode refid="905" relation="include">
-        </childnode>
-        <childnode refid="906" relation="include">
-        </childnode>
-        <childnode refid="900" relation="include">
-        </childnode>
-        <childnode refid="901" relation="include">
-        </childnode>
-      </node>
-      <node id="905">
+      <node id="1556">
         <label>assert.h</label>
       </node>
-      <node id="895">
-        <label>backend_manager.hpp</label>
-        <link refid="backend__manager_8hpp_source"/>
-        <childnode refid="896" relation="include">
-        </childnode>
-        <childnode refid="897" relation="include">
-        </childnode>
-        <childnode refid="898" relation="include">
-        </childnode>
-        <childnode refid="899" relation="include">
-        </childnode>
-        <childnode refid="900" relation="include">
-        </childnode>
-      </node>
-      <node id="893">
-        <label>operator.hpp</label>
-        <link refid="operator_8hpp_source"/>
-        <childnode refid="892" relation="include">
-        </childnode>
-        <childnode refid="894" relation="include">
-        </childnode>
-        <childnode refid="896" relation="include">
-        </childnode>
-        <childnode refid="900" relation="include">
-        </childnode>
-        <childnode refid="902" relation="include">
-        </childnode>
-      </node>
-      <node id="900">
-        <label>string</label>
-      </node>
-      <node id="898">
-        <label>map</label>
-      </node>
-      <node id="904">
-        <label>/home/tcs/Jan24/Jan24_libraries_testing/ROCm_Libraries/rocALUTION/src/utils/def.hpp</label>
-      </node>
-      <node id="890">
-        <label>../solver.hpp</label>
-      </node>
-      <node id="889">
-        <label>/home/tcs/Jan24/Jan24_libraries_testing/ROCm_Libraries/rocALUTION/src/solvers/preconditioners/preconditioner.hpp</label>
-      </node>
-      <node id="897">
-        <label>fstream</label>
-      </node>
-      <node id="913">
-        <label>preconditioner.hpp</label>
-      </node>
-      <node id="891">
-        <label>../../base/global_matrix.hpp</label>
-        <link refid="global__matrix_8hpp_source"/>
-        <childnode refid="892" relation="include">
-        </childnode>
-        <childnode refid="893" relation="include">
-        </childnode>
-        <childnode refid="903" relation="include">
-        </childnode>
-      </node>
-      <node id="908">
-        <label>matrix_formats.hpp</label>
-      </node>
-      <node id="911">
-        <label>../../base/local_vector.hpp</label>
-        <link refid="local__vector_8hpp_source"/>
-        <childnode refid="892" relation="include">
-        </childnode>
-        <childnode refid="910" relation="include">
-        </childnode>
-      </node>
-      <node id="894">
-        <label>base_rocalution.hpp</label>
-        <link refid="base__rocalution_8hpp_source"/>
-        <childnode refid="895" relation="include">
-        </childnode>
-        <childnode refid="901" relation="include">
-        </childnode>
-        <childnode refid="899" relation="include">
-        </childnode>
-      </node>
-      <node id="886">
-        <label>ROCm_Libraries/rocALUTION/src/solvers/preconditioners/preconditioner_blockjacobi.cpp</label>
-        <link refid="preconditioner__blockjacobi_8cpp"/>
-        <childnode refid="887" relation="include">
-        </childnode>
-        <childnode refid="888" relation="include">
-        </childnode>
-        <childnode refid="889" relation="include">
-        </childnode>
-        <childnode refid="890" relation="include">
-        </childnode>
-        <childnode refid="891" relation="include">
-        </childnode>
-        <childnode refid="907" relation="include">
-        </childnode>
-        <childnode refid="909" relation="include">
-        </childnode>
-        <childnode refid="911" relation="include">
-        </childnode>
-        <childnode refid="912" relation="include">
-        </childnode>
-        <childnode refid="913" relation="include">
-        </childnode>
-        <childnode refid="914" relation="include">
-        </childnode>
-        <childnode refid="901" relation="include">
-        </childnode>
-      </node>
-      <node id="907">
-        <label>../../base/local_matrix.hpp</label>
-        <link refid="local__matrix_8hpp_source"/>
-        <childnode refid="892" relation="include">
-        </childnode>
-        <childnode refid="893" relation="include">
-        </childnode>
-        <childnode refid="895" relation="include">
-        </childnode>
-        <childnode refid="908" relation="include">
-        </childnode>
-        <childnode refid="900" relation="include">
-        </childnode>
-      </node>
-      <node id="892">
-        <label>../utils/types.hpp</label>
-      </node>
-      <node id="909">
-        <label>../../base/global_vector.hpp</label>
-        <link refid="global__vector_8hpp_source"/>
-        <childnode refid="892" relation="include">
-        </childnode>
-        <childnode refid="910" relation="include">
-        </childnode>
-        <childnode refid="903" relation="include">
-        </childnode>
-      </node>
-      <node id="899">
-        <label>vector</label>
-      </node>
-      <node id="887">
-        <label>../../utils/def.hpp</label>
-      </node>
-      <node id="912">
-        <label>../../utils/log.hpp</label>
-      </node>
-      <node id="914">
-        <label>math.h</label>
-      </node>
-      <node id="902">
-        <label>cstdlib</label>
-      </node>
-      <node id="896">
-        <label>iostream</label>
-      </node>
-      <node id="910">
+      <node id="1550">
         <label>vector.hpp</label>
         <link refid="vector_8hpp_source"/>
-        <childnode refid="892" relation="include">
+        <childnode refid="1549" relation="include">
         </childnode>
-        <childnode refid="894" relation="include">
+        <childnode refid="1542" relation="include">
         </childnode>
-        <childnode refid="896" relation="include">
+        <childnode refid="1544" relation="include">
         </childnode>
-        <childnode refid="900" relation="include">
+        <childnode refid="1541" relation="include">
         </childnode>
-        <childnode refid="902" relation="include">
+        <childnode refid="1551" relation="include">
         </childnode>
       </node>
-      <node id="901">
+      <node id="1554">
+        <label>parallel_manager.hpp</label>
+        <link refid="parallel__manager_8hpp_source"/>
+        <childnode refid="1542" relation="include">
+        </childnode>
+        <childnode refid="1549" relation="include">
+        </childnode>
+        <childnode refid="1555" relation="include">
+        </childnode>
+        <childnode refid="1556" relation="include">
+        </childnode>
+        <childnode refid="1557" relation="include">
+        </childnode>
+        <childnode refid="1541" relation="include">
+        </childnode>
+        <childnode refid="1547" relation="include">
+        </childnode>
+      </node>
+      <node id="1536">
+        <label>preconditioner_blockjacobi.hpp</label>
+        <link refid="preconditioner__blockjacobi_8hpp_source"/>
+        <childnode refid="1537" relation="include">
+        </childnode>
+      </node>
+      <node id="1553">
+        <label>operator.hpp</label>
+        <link refid="operator_8hpp_source"/>
+        <childnode refid="1549" relation="include">
+        </childnode>
+        <childnode refid="1542" relation="include">
+        </childnode>
+        <childnode refid="1544" relation="include">
+        </childnode>
+        <childnode refid="1541" relation="include">
+        </childnode>
+        <childnode refid="1551" relation="include">
+        </childnode>
+      </node>
+      <node id="1555">
+        <label>/home/tcs/rocALUTION/src/utils/def.hpp</label>
+      </node>
+      <node id="1541">
+        <label>string</label>
+      </node>
+      <node id="1546">
+        <label>map</label>
+      </node>
+      <node id="1538">
+        <label>../solver.hpp</label>
+        <link refid="solver_8hpp_source"/>
+        <childnode refid="1539" relation="include">
+        </childnode>
+        <childnode refid="1542" relation="include">
+        </childnode>
+        <childnode refid="1548" relation="include">
+        </childnode>
+      </node>
+      <node id="1552">
+        <label>../../base/global_matrix.hpp</label>
+        <link refid="global__matrix_8hpp_source"/>
+        <childnode refid="1549" relation="include">
+        </childnode>
+        <childnode refid="1553" relation="include">
+        </childnode>
+        <childnode refid="1554" relation="include">
+        </childnode>
+      </node>
+      <node id="1545">
+        <label>fstream</label>
+      </node>
+      <node id="1559">
+        <label>matrix_formats.hpp</label>
+      </node>
+      <node id="1560">
+        <label>../../base/global_vector.hpp</label>
+        <link refid="global__vector_8hpp_source"/>
+        <childnode refid="1549" relation="include">
+        </childnode>
+        <childnode refid="1550" relation="include">
+        </childnode>
+        <childnode refid="1554" relation="include">
+        </childnode>
+      </node>
+      <node id="1549">
+        <label>../utils/types.hpp</label>
+      </node>
+      <node id="1542">
+        <label>../base/base_rocalution.hpp</label>
+        <link refid="base__rocalution_8hpp_source"/>
+        <childnode refid="1543" relation="include">
+        </childnode>
+        <childnode refid="1547" relation="include">
+        </childnode>
+        <childnode refid="1540" relation="include">
+        </childnode>
+      </node>
+      <node id="1540">
+        <label>vector</label>
+      </node>
+      <node id="1535">
+        <label>../../utils/def.hpp</label>
+      </node>
+      <node id="1561">
+        <label>../../utils/log.hpp</label>
+      </node>
+      <node id="1562">
+        <label>math.h</label>
+      </node>
+      <node id="1551">
+        <label>cstdlib</label>
+      </node>
+      <node id="1544">
+        <label>iostream</label>
+      </node>
+      <node id="1543">
+        <label>backend_manager.hpp</label>
+        <link refid="backend__manager_8hpp_source"/>
+        <childnode refid="1544" relation="include">
+        </childnode>
+        <childnode refid="1545" relation="include">
+        </childnode>
+        <childnode refid="1546" relation="include">
+        </childnode>
+        <childnode refid="1540" relation="include">
+        </childnode>
+        <childnode refid="1541" relation="include">
+        </childnode>
+      </node>
+      <node id="1539">
+        <label>iter_ctrl.hpp</label>
+        <link refid="iter__ctrl_8hpp_source"/>
+        <childnode refid="1540" relation="include">
+        </childnode>
+        <childnode refid="1541" relation="include">
+        </childnode>
+      </node>
+      <node id="1547">
         <label>complex</label>
+      </node>
+      <node id="1534">
+        <label>/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_blockjacobi.cpp</label>
+        <link refid="preconditioner__blockjacobi_8cpp"/>
+        <childnode refid="1535" relation="include">
+        </childnode>
+        <childnode refid="1536" relation="include">
+        </childnode>
+        <childnode refid="1538" relation="include">
+        </childnode>
+        <childnode refid="1552" relation="include">
+        </childnode>
+        <childnode refid="1558" relation="include">
+        </childnode>
+        <childnode refid="1560" relation="include">
+        </childnode>
+        <childnode refid="1548" relation="include">
+        </childnode>
+        <childnode refid="1561" relation="include">
+        </childnode>
+        <childnode refid="1537" relation="include">
+        </childnode>
+        <childnode refid="1562" relation="include">
+        </childnode>
+        <childnode refid="1547" relation="include">
+        </childnode>
+      </node>
+      <node id="1558">
+        <label>../../base/local_matrix.hpp</label>
+        <link refid="local__matrix_8hpp_source"/>
+        <childnode refid="1549" relation="include">
+        </childnode>
+        <childnode refid="1553" relation="include">
+        </childnode>
+        <childnode refid="1543" relation="include">
+        </childnode>
+        <childnode refid="1559" relation="include">
+        </childnode>
+        <childnode refid="1541" relation="include">
+        </childnode>
       </node>
     </incdepgraph>
     <innernamespace refid="namespacerocalution">rocalution</innernamespace>
@@ -277,7 +292,7 @@
 <codeline lineno="56"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="57"><highlight class="normal"></highlight></codeline>
 <codeline lineno="58"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="59"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>BlockJacobi&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::Print(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_block_jacobi_1a1d9db043116f4fe7c67458cdf3b55799" kindref="member">BlockJacobi&lt;OperatorType, VectorType, ValueType&gt;::Print</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
 <codeline lineno="60"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
 <codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>LOG_INFO(</highlight><highlight class="stringliteral">&quot;BlockJacobi<sp/>preconditioner&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="62"><highlight class="normal"></highlight></codeline>
@@ -285,7 +300,7 @@
 <codeline lineno="64"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="65"><highlight class="normal"></highlight></codeline>
 <codeline lineno="66"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="67"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>BlockJacobi&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::Set(</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_block_jacobi_1ae3e6bd6708cd0826c616a410161378c5" kindref="member">BlockJacobi&lt;OperatorType, VectorType, ValueType&gt;::Set</ref>(</highlight></codeline>
 <codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>Solver&lt;LocalMatrix&lt;ValueType&gt;,<sp/>LocalVector&lt;ValueType&gt;,<sp/>ValueType&gt;&amp;<sp/>precond)</highlight></codeline>
 <codeline lineno="69"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>log_debug(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;BlockJacobi::Set()&quot;</highlight><highlight class="normal">,<sp/>this-&gt;build_,<sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*&amp;)precond);</highlight></codeline>
@@ -297,7 +312,7 @@
 <codeline lineno="76"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="77"><highlight class="normal"></highlight></codeline>
 <codeline lineno="78"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="79"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>BlockJacobi&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::Build(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_block_jacobi_1a899a0698954ab33853ff4c3860e6da5b" kindref="member">BlockJacobi&lt;OperatorType, VectorType, ValueType&gt;::Build</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
 <codeline lineno="80"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>log_debug(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;BlockJacobi::Build()&quot;</highlight><highlight class="normal">,<sp/>this-&gt;build_,<sp/></highlight><highlight class="stringliteral">&quot;<sp/>#*#<sp/>begin&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="82"><highlight class="normal"></highlight></codeline>
@@ -319,7 +334,7 @@
 <codeline lineno="98"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="99"><highlight class="normal"></highlight></codeline>
 <codeline lineno="100"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="101"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>BlockJacobi&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::ReBuildNumeric(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_block_jacobi_1ad7f5e520bcfd7724f49c4a8fdd8853d8" kindref="member">BlockJacobi&lt;OperatorType, VectorType, ValueType&gt;::ReBuildNumeric</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
 <codeline lineno="102"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/>log_debug(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;BlockJacobi::ReBuildNumeric()&quot;</highlight><highlight class="normal">,<sp/>this-&gt;build_);</highlight></codeline>
 <codeline lineno="104"><highlight class="normal"></highlight></codeline>
@@ -335,7 +350,7 @@
 <codeline lineno="114"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="115"><highlight class="normal"></highlight></codeline>
 <codeline lineno="116"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="117"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>BlockJacobi&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::Clear(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_block_jacobi_1a671699b5f06ba3fa57e094c7161a81fd" kindref="member">BlockJacobi&lt;OperatorType, VectorType, ValueType&gt;::Clear</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
 <codeline lineno="118"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/>log_debug(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;BlockJacobi::Clear()&quot;</highlight><highlight class="normal">,<sp/>this-&gt;build_);</highlight></codeline>
 <codeline lineno="120"><highlight class="normal"></highlight></codeline>
@@ -350,7 +365,7 @@
 <codeline lineno="129"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="130"><highlight class="normal"></highlight></codeline>
 <codeline lineno="131"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="132"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>BlockJacobi&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::Solve(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>VectorType&amp;<sp/>rhs,<sp/>VectorType*<sp/>x)</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_block_jacobi_1ada46c7d22ae45c7199e4be0c3e976b1e" kindref="member">BlockJacobi&lt;OperatorType, VectorType, ValueType&gt;::Solve</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>VectorType&amp;<sp/>rhs,<sp/>VectorType*<sp/>x)</highlight></codeline>
 <codeline lineno="133"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/>log_debug(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;BlockJacobi::Solve()&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;<sp/>#*#<sp/>begin&quot;</highlight><highlight class="normal">,<sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*&amp;)rhs,<sp/>x);</highlight></codeline>
 <codeline lineno="135"><highlight class="normal"></highlight></codeline>
@@ -360,7 +375,7 @@
 <codeline lineno="139"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="140"><highlight class="normal"></highlight></codeline>
 <codeline lineno="141"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="142"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>BlockJacobi&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::SolveZeroSol(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>VectorType&amp;<sp/>rhs,</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_block_jacobi_1a0a570c03d241d1400753bd64efe4cbe5" kindref="member">BlockJacobi&lt;OperatorType, VectorType, ValueType&gt;::SolveZeroSol</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>VectorType&amp;<sp/>rhs,</highlight></codeline>
 <codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>VectorType*<sp/>x)</highlight></codeline>
 <codeline lineno="144"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/>log_debug(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;BlockJacobi::SolveZeroSol()&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;<sp/>#*#<sp/>begin&quot;</highlight><highlight class="normal">,<sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*&amp;)rhs,<sp/>x);</highlight></codeline>
@@ -371,7 +386,7 @@
 <codeline lineno="150"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="151"><highlight class="normal"></highlight></codeline>
 <codeline lineno="152"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="153"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>BlockJacobi&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::MoveToHostLocalData_(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_block_jacobi_1ad62061b2592072f278db6c7806c4b7cd" kindref="member">BlockJacobi&lt;OperatorType, VectorType, ValueType&gt;::MoveToHostLocalData_</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
 <codeline lineno="154"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/>log_debug(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;BlockJacobi::MoveToHostLocalData_()&quot;</highlight><highlight class="normal">,<sp/>this-&gt;build_);</highlight></codeline>
 <codeline lineno="156"><highlight class="normal"></highlight></codeline>
@@ -379,7 +394,7 @@
 <codeline lineno="158"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="159"><highlight class="normal"></highlight></codeline>
 <codeline lineno="160"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>OperatorType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>VectorType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
-<codeline lineno="161"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>BlockJacobi&lt;OperatorType,<sp/>VectorType,<sp/>ValueType&gt;::MoveToAcceleratorLocalData_(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrocalution_1_1_block_jacobi_1a62cb96e202a7f3aa5ac7853451b31780" kindref="member">BlockJacobi&lt;OperatorType, VectorType, ValueType&gt;::MoveToAcceleratorLocalData_</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
 <codeline lineno="162"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/>log_debug(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;BlockJacobi::MoveToAcceleratorLocalData_()&quot;</highlight><highlight class="normal">,<sp/>this-&gt;build_);</highlight></codeline>
 <codeline lineno="164"><highlight class="normal"></highlight></codeline>
@@ -399,6 +414,6 @@
 <codeline lineno="178"><highlight class="normal"></highlight></codeline>
 <codeline lineno="179"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>rocalution</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
-    <location file="ROCm_Libraries/rocALUTION/src/solvers/preconditioners/preconditioner_blockjacobi.cpp"/>
+    <location file="/home/tcs/rocALUTION/src/solvers/preconditioners/preconditioner_blockjacobi.cpp"/>
   </compounddef>
 </doxygen>
